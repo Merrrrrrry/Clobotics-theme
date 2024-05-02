@@ -19,7 +19,6 @@ add_action("init", "disable_gutenberg");
 
 
 // Displaying menu under Appearance in WP backhand 
-
 function demo_register_menus() {
     register_nav_menus(array(
         "main-menus" => "Main Menu Location"
