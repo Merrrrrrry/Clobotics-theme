@@ -10,11 +10,6 @@ add_action("wp_enqueue_scripts", "clobotics_register_stylesheet");
 
 
 // Disable Gutenberg
-function disable_gutenberg() {
-    remove_post_type_support("page", "editor");
-    remove_post_type_support("post", "editor");
-}
-add_action("init", "disable_gutenberg");
 
 
 
