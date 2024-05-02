@@ -5,6 +5,7 @@ function clobotics_register_stylesheet() {
     wp_enqueue_style("sitesecurity-style", get_stylesheet_directory_uri() . "/style.css");
     wp_enqueue_style("materialize-icons", "https://fonts.googleapis.com/icon?family=Material+Icons");
     wp_enqueue_style("din_condensed_font", "https://use.typekit.net/piy2rgn.css");
+    wp_enqueue_script("clobotics", get_stylesheet_directory_uri() . "/javaskript.js");
 }
 add_action("wp_enqueue_scripts", "clobotics_register_stylesheet");
 
