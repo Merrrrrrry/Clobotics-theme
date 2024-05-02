@@ -19,7 +19,12 @@ add_action("init", "disable_gutenberg");
 
 
 // Displaying menu under Appearance in WP backhand 
-
+function demo_register_menus() {
+    register_nav_menus(array(
+        "main-menus" => "Main Menu Location"
+    ));
+}
+add_action("init", "demo_register_menus");
 
 
 //echo '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">';
