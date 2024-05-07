@@ -8,16 +8,4 @@
 </head>
 <body>
 
-<nav id="site-navigation" class="main-navigation" role="navigation">
-    <div class="menu-container">
-        <?php
-      
-        wp_nav_menu(array(
-            'theme_location' => 'main-menus',
-            'container'      => false,
-            'menu_class'     => 'menu', 
-            'fallback_cb'    => false,
-        ));
-        ?>
-    </div>
-</nav>
+<?php wp_nav_menu(array("theme_location"=> "main-menus")) ?>
