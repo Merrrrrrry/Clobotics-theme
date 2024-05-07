@@ -15,43 +15,4 @@ body {
 /* Nav bar style */
 
 
-.main-navigation {
-    background-color: #333;
-}
 
-
-.main-navigation .menu-item {
-    display: inline-block;
-    position: relative;
-}
-
-
-.main-navigation .sub-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #444;
-}
-
-
-.main-navigation .menu-item:hover > .sub-menu {
-    display: block;
-}
-
-.main-navigation .sub-menu .menu-item {
-    display: block;
-}
-
-
-.main-navigation a {
-    display: block;
-    padding: 10px;
-    color: #fff;
-    text-decoration: none;
-}
-
-
-.main-navigation a:hover {
-    background-color: #555;
-}
