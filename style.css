@@ -16,7 +16,7 @@ body {
 
 
 
-.main-menus {
+.menu li {
     display: flex;
    flex-direction: row;
    justify-content: space-between;
