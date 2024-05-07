@@ -12,12 +12,56 @@ body {
 }
 
 
+
 /* Nav bar style */
 
 
 
-.customize-support {
+/*CONTACT FORM*/
+
+.contact-form-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  .contact-form {
     display: flex;
-   flex-direction: row;
-   justify-content: space-between;
-}
+    flex-wrap: wrap;
+  }
+  
+  .contact-form label {
+    flex: 0 0 100%;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="tel"],
+  .contact-form select,
+  .contact-form textarea {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea {
+    height: 100px;
+  }
+  
+  .contact-form input[type="submit"] {
+    width: calc(50% - 20px);
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #007acc;
+  }
+
