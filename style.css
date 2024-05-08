@@ -8,7 +8,7 @@ Author: Maria Grysevych
 }
 
 body {
-    background-color: rgb(194, 141, 36);
+    background-color: #F5F5F5;
 }
 
 
@@ -27,15 +27,12 @@ body {
 .contact-form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center; /* Center the form */
 }
 
 .column {
-  flex: 0 0 calc(50% - 10px);
+  flex: 0 0 45%; /* Adjusted width for responsiveness */
   padding: 10px;
-}
-
-.column:nth-child(odd) {
-  margin-right: 20px;
 }
 
 .contact-form label {
@@ -48,7 +45,7 @@ body {
 .contact-form input[type="email"],
 .contact-form select,
 .contact-form textarea {
-  width: calc(100% - 20px);
+  width: 100%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #000000;
@@ -78,11 +75,20 @@ body {
   display: none;
 }
 
-@media (max-width: 600px) {
+/* Placeholder styling */
+.contact-form input[type="text"]::placeholder,
+.contact-form input[type="tel"]::placeholder,
+.contact-form input[type="email"]::placeholder,
+.contact-form select::placeholder,
+.contact-form textarea::placeholder {
+  color: #777;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
   .column {
     flex: 0 0 100%;
     margin-right: 0;
   }
 }
-
 
