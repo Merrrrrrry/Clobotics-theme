@@ -12,6 +12,27 @@ body {
     font-family: 'Open Sans';
 }
 
+h1{
+  font-size: large;
+  font-family: 'Roboto';
+}
+
+h2{
+  font-size:medium;
+  font-family: 'Roboto';
+}
+
+h3{
+  font-size: 20px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+}
+
+h4{
+  font-size: 20px;
+  font-family: 'Open Sans';
+}
+
 
 main {
     width: 100%;
