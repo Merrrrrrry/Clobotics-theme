@@ -13,12 +13,13 @@ body {
 }
 
 h1{
-  font-size: large;
+  font-size: 40px;
   font-family: 'Roboto';
+  font-weight: lighter;
 }
 
 h2{
-  font-size:medium;
+  font-size:30px;
   font-family: 'Roboto';
 }
 
