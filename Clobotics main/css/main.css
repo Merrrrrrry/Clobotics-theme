@@ -1,0 +1,20 @@
+h1.title {} 
+h2.title {}
+h2.header {}
+p.text {}
+p.text.medium {}
+h3.text {}
+
+a.btn {}
+a.btn.dark {}
+a.btn.light {}
+a.btn.simple {}
+
+ul.group {}
+ul.group li.selected {}
+
+section.dark {}
+section.dark > h2.text {}
+section.dark > h3.text {}
+
+section.history > h2.title {}
