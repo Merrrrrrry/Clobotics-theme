@@ -82,7 +82,7 @@ main {
 
 .contact-form label {
   display: block;
-  margin-bottom: -10px; 
+  margin-bottom: 10px; 
   position: relative; 
 }
 
@@ -110,9 +110,9 @@ main {
 .contact-form select:required::after,
 .contact-form textarea:required::after {
   content: "*"; 
-  color: transparent; 
+  /* color: transparent;  */
   position: absolute; 
-  top: 50%; 
+  top: 10%; 
   right: 10px; 
   transform: translateY(-50%); 
 }
