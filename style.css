@@ -113,8 +113,8 @@ main {
   /* color: transparent;  */
   position: absolute; 
   top: 10%; 
-  right: 10px; 
-  transform: translateY(-50%); 
+  right: 50px; 
+  transform: translateY(-100%); 
 }
 
 .contact-form input[type="text"]:focus::after,
