@@ -13,8 +13,10 @@ add_action("wp_enqueue_scripts", "clobotics_register_stylesheet");
 
 function enqueue_google_fonts() {
     wp_enqueue_style( 'open-sans', 'https://fonts.googleapis.com/css2?family=Open+Sans&display=swap' );
+    wp_enqueue_style( 'roboto', 'https://fonts.googleapis.com/css2?family=Roboto&display=swap' );
 }
 add_action( 'wp_enqueue_scripts', 'enqueue_google_fonts' );
+
 
 
 // Disable Gutenberg
