@@ -77,12 +77,12 @@ main {
 
 .column {
   flex: 1;
-  padding: 10px;
+  padding: 0px;
 }
 
 .contact-form label {
   display: block;
-  margin-bottom: 10px; 
+  margin-bottom: 0px; 
   position: relative; 
 }
 
@@ -92,7 +92,7 @@ main {
 .contact-form select,
 .contact-form textarea {
   width: 100%;
-  padding: 10px;
+  padding: 0px;
   margin-bottom: 10px;
   border: 1px solid #000000;
   border-radius: 10px;
