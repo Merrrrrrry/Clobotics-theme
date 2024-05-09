@@ -60,7 +60,7 @@ main {
 /*CONTACT FORM*/
 
 .contact-form-container {
-  max-width: 80%;
+  max-width:max-content;
   margin: 20px;
   padding: 20px;
   border-radius: 15px;
@@ -77,12 +77,12 @@ main {
 
 .column {
   flex: 1;
-  padding: 0px;
+  padding: 10px;
 }
 
 .contact-form label {
   display: block;
-  margin-bottom: 0px; 
+  margin-bottom: 10px; 
   position: relative; 
 }
 
@@ -92,7 +92,7 @@ main {
 .contact-form select,
 .contact-form textarea {
   width: 100%;
-  padding: 0px;
+  padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #000000;
   border-radius: 10px;
