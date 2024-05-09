@@ -6,3 +6,5 @@ function showInfo() {
         infoText.style.display = "none";
     }
 }
+
+

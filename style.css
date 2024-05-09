@@ -9,6 +9,29 @@ Author: Maria Grysevych
 
 body {
     background-color: #F5F5F5;
+    font-family: 'Open Sans';
+}
+
+h1{
+  font-size: 40px;
+  font-family: 'Roboto';
+  font-weight: lighter;
+}
+
+h2{
+  font-size:30px;
+  font-family: 'Roboto';
+}
+
+h3{
+  font-size: 20px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+}
+
+h4{
+  font-size: 20px;
+  font-family: 'Open Sans';
 }
 
 
@@ -37,9 +60,9 @@ main {
 /*CONTACT FORM*/
 
 .contact-form-container {
-  max-width: 80%;
+  max-width:max-content;
   margin: 20px;
-  padding: 20px;
+  padding: 100px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
@@ -59,7 +82,7 @@ main {
 
 .contact-form label {
   display: block;
-  margin-bottom: -10px; 
+  margin-bottom: 10px; 
   position: relative; 
 }
 
@@ -87,11 +110,11 @@ main {
 .contact-form select:required::after,
 .contact-form textarea:required::after {
   content: "*"; 
-  color: transparent; 
+  /* color: transparent;  */
   position: absolute; 
-  top: 50%; 
-  right: 10px; 
-  transform: translateY(-50%); 
+  top: 10%; 
+  right: 50px; 
+  transform: translateY(-100%); 
 }
 
 .contact-form input[type="text"]:focus::after,
@@ -133,6 +156,7 @@ main {
   font-weight: bold;
   text-decoration: underline #01A7E6;
   text-align: center;
+  font-family: 'Roboto';
 
 }
 
