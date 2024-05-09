@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: single-article
+Template Name: single-new-article
 */
 ?>
 
