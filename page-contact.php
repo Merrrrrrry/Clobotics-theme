@@ -38,15 +38,15 @@ Template Name: Contact
       <div class="contact-info">
         <div class="phone">
             <i class="material-icons">call</i> 
-            <p>000000000</p>
+            <p><?php the_field('china_phone'); ?></p>
         </div>
         <div class="mail">
             <i class="material-icons">mail</i> 
-            <p>example@example.com</p>
+            <p><?php the_field('china_mail'); ?></p>
         </div>
         <div class="location">
             <i class="material-icons">location_on</i> 
-            <p>123 Street, City, Country</p>
+            <p><?php the_field('china_location'); ?></p>
         </div>
         </div>
       </div>
