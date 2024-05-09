@@ -12,6 +12,23 @@ body {
 }
 
 
+main {
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+ }
+
+
+/* Hero Video (referenced from busters world) */
+
+ .hero-section-background {
+     position: relative;
+ }
+ .video-background {
+     width: 100%;
+ }
 
 /* Nav bar style */
 
@@ -179,3 +196,5 @@ body {
     flex-direction: column; 
   }
 }
+
+
