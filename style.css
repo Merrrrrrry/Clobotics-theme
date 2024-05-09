@@ -20,24 +20,30 @@ body {
 /*CONTACT FORM*/
 
 .contact-form-container {
-  max-width: 1000px;
-  margin: 0 auto;
+  max-width: 80%;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-form {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; 
 }
 
 .column {
-  flex: 0 0 45%; 
+  flex: 1;
   padding: 10px;
 }
 
 .contact-form label {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: -10px; 
+  position: relative; 
 }
 
 .contact-form input[type="text"],
@@ -46,8 +52,8 @@ body {
 .contact-form select,
 .contact-form textarea {
   width: 100%;
-  padding: 1px;
-  margin-bottom: 1px;
+  padding: 10px;
+  margin-bottom: 10px;
   border: 1px solid #000000;
   border-radius: 10px;
   background-color: white;
@@ -58,14 +64,34 @@ body {
   appearance: none;
 }
 
+.contact-form input[type="text"]:required::after,
+.contact-form input[type="tel"]:required::after,
+.contact-form input[type="email"]:required::after,
+.contact-form select:required::after,
+.contact-form textarea:required::after {
+  content: "*"; 
+  color: transparent; 
+  position: absolute; 
+  top: 50%; 
+  right: 10px; 
+  transform: translateY(-50%); 
+}
+
+.contact-form input[type="text"]:focus::after,
+.contact-form input[type="tel"]:focus::after,
+.contact-form input[type="email"]:focus::after,
+.contact-form select:focus::after,
+.contact-form textarea:focus::after {
+  color: #000000; 
+}
+
 .wpcf7 input[type="submit"] {
   background-color: #01A7E6;
   color: #fff;
   padding: 10px 20px;
   border: none;
-  border-radius: 15px;
+  border-radius: 10px;
   cursor: pointer;
-  width:200px;
 }
 
 .wpcf7 input[type="submit"]:hover {
@@ -76,27 +102,80 @@ body {
   display: none;
 }
 
-/* Placeholder styling */
-.contact-form input[type="text"]::placeholder,
-.contact-form input[type="tel"]::placeholder,
-.contact-form input[type="email"]::placeholder,
-.contact-form select::placeholder,
-.contact-form textarea::placeholder {
-  color: #777;
+
+
+
+/*CONTACT LOCAL OFFICE CLOBOTICS*/
+
+.contact-section {
+  margin-top: 50px;
 }
 
-/* Adjustments for responsiveness */
-@media (max-width: 768px) {
-  .column {
-    flex: 0 0 100%;
-    margin-right: 0;
-  }
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline #01A7E6;
+  text-align: center;
 
+}
+
+.section-content {
+  display: flex;
+}
+
+.section-one,
+.section-two,
+.section-three,
+.section-four {
+  flex: 1;
+  padding: 20px;
+}
+
+.subsection-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.location-info img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  color: #002D61;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info > div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-info > div i {
+  margin-right: 10px;
+}
+
+.contact-info > div p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
   .section-one,
   .section-two,
   .section-three,
   .section-four {
+    text-align: center; 
+  }
+  
+  .contact-info {
+    align-items: center;
     text-align: center;
   }
-}
 
+  .section-content {
+    flex-direction: column; 
+  }
+}
