@@ -13,6 +13,9 @@ body {
     margin: 0px !important;
 }
 
+body.gray-body {
+    background-color: #F5F5F5;
+}
 
 /* <--- Hero Section ---> */
 
@@ -52,12 +55,6 @@ body {
   color: #fff; 
   padding: 20px; 
 }
-
-.hero-title {
-  font-size: 150px;
-  margin-bottom: 10px; 
-}
-
 
 
 /*!

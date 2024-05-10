@@ -6,7 +6,7 @@ Template Name: Career
 
 <?php get_header(); ?>
 
-
+<body <?php body_class('gray-body'); ?>>
     <main>
 
     <!-- Hero section -->
@@ -71,6 +71,7 @@ Template Name: Career
     <?php endif; ?>
 
 </main>
+</body>
     
 
 <?php get_footer(); ?>
