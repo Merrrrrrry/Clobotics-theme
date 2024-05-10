@@ -8,6 +8,10 @@ Template Name: single-open-position
 <?php get_header(); ?>
 
 <main>
+    <!--- Apply button --->
+
+     <!--- Information about the job position --->
+
     <?php while (have_posts()) : the_post(); ?>
         <article <?php post_class(); ?>>
         <h2><?php the_field('job_title'); ?></h2>
@@ -24,6 +28,10 @@ Template Name: single-open-position
             <p><?php the_field('paragraph-4'); ?></p>
         </article>
 
+        <!--- Find more about Clobotics button --->
+
+
+         <!--- Contact Person --->
 
         <!--- Apply for job contact form --->
 
