@@ -9,6 +9,8 @@ Template Name: Career
 <body> 
     <main>
 
+    <!-- Hero section -->
+
         <div class="hero-section">
             <div class="hero-section-background">
                 <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/11.png" alt="Your Image Alt Text">
@@ -18,8 +20,7 @@ Template Name: Career
                 </div>
         </div>
 
-    
-    <h1>Career at Clobotics</h1>
+    <!-- Search bar -->
 
     <div class="search-bar">
         <form method="get" action="">
@@ -27,6 +28,8 @@ Template Name: Career
             <button type="submit">Search</button>
         </form>
     </div>
+
+    <!-- Open Positions section/Job list -->
 
     <h2>Open Positions</h2>
 
