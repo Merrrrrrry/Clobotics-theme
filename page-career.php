@@ -51,8 +51,8 @@ Template Name: Career
         <ul class="position-list">
             <?php while ($related_positions->have_posts()) : $related_positions->the_post(); ?>
                 <li class="position-item">
-                    <h3 class="title"><?php the_field('job_title'); ?></h3>
-                    <p class="text">
+                    <h3 class="job-title"><?php the_field('job_title'); ?></h3>
+                    <p class="job-subtitle">
                         <?php
                         $job_location = get_field('job_location');
                         $job_type = get_field('job_type');
@@ -67,7 +67,7 @@ Template Name: Career
         wp_reset_postdata();
     else :
         ?>
-        <p class="text">No open positions found for "<?php echo $search_query; ?>"</p>
+        <p class="job-subtitle">No open positions found for "<?php echo $search_query; ?>"</p>
     <?php endif; ?>
 
 </main>
