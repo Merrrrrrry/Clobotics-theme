@@ -121,6 +121,14 @@ Buttons and links styles
   }
 
 
+/* Removing underline from links */
+
+  a {
+    text-decoration: none; 
+  }
+  
+
+
   
   /*    
   
