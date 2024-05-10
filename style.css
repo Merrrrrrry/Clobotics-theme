@@ -93,18 +93,14 @@ Buttons and links styles
 }
 
 .btn:hover {
-  background-color: #002D61;
-}
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 .dark {
   background-color: #002D61;
   color: #fff;
 }
-
-.light {  
-  background-color: #86D0F4;
-  color: #000000;
-}
+.dark:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 .optional {  
     background-color: #F5F5F5;
@@ -116,12 +112,18 @@ Buttons and links styles
   }
 
   .optional:hover {
-    background-color: #002D61;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
     color: #ffffff;
   }
 
 
-  
+.light {  
+  background-color: #86D0F4;
+  color: #000000;
+}
+.light:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+
   /*    
   
   a.btn.optional:clicked ???{
