@@ -140,9 +140,10 @@ p.job-subtitle {
   color: #575353;
 }
 
-li::marker.position-item {
+ul.position-list {
   list-style-type: none;
 }
+
 
 
 /* <--- Buttons and links styles --->*/
