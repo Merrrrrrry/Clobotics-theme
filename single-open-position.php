@@ -10,6 +10,8 @@ Template Name: single-open-position
 <main>
     <!--- Apply button --->
 
+    <a href="#" class="btn">Apply</a>
+
      <!--- Information about the job position --->
 
     <?php while (have_posts()) : the_post(); ?>
@@ -29,6 +31,7 @@ Template Name: single-open-position
         </article>
 
         <!--- Find more about Clobotics button --->
+        <a href="#" class="btn dark">Read more about Clobotics</a>
 
 
          <!--- Contact Person --->
