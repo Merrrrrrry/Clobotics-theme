@@ -140,7 +140,7 @@ p.job-subtitle {
   color: #575353;
 }
 
-li::marker {
+li.position-item {
   text-decoration: none;
 }
 
