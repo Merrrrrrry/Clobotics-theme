@@ -49,13 +49,19 @@ h4.title{
 }
 
 
-.text {
+p.text {
   font-family: 'Open Sans';
   font-size: 22px;
   font-weight: 500;
 }
 
-.subtitle {
+text.medium {
+  font-family: 'Open Sans';
+  font-size: 40px;
+  font-weight: 700;
+}
+
+p.subtitle {
   font-family: 'Open Sans';
   font-size: 40px;
   font-weight: 700;
@@ -69,17 +75,62 @@ h4.title{
   font-weight: 100;
 }
 
+.white { 
+  color: #fff;
+}
 
-p.text {}
-p.text.medium {}
-h3.text {}
 
-a.btn {}
-a.btn.dark {}
-a.btn.light {}
-a.btn.simple {}
-a.btn.simple {}
+/*!
+Buttons and links styles
+*/
 
+a.btn {
+  background-color: #01A7E6;
+  color: #fff;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+a.btn:hover {
+  background-color: #002D61;
+}
+
+a.btn.dark {
+  background-color: #002D61;
+  color: #fff;
+}
+
+a.btn.light {  
+  background-color: #86D0F4;
+  color: #000000;
+}
+
+a.btn.optional {  
+    background-color: #F5F5F5;
+    color: #000000;
+
+    border: solid;
+    border-width: 1px;
+    border-color: #707070;
+    border-radius: 10px;
+  }
+
+  a.btn.optional:hover {
+    background-color: #002D61;
+    color: #ffffff;
+  }
+
+  /*    
+  
+  a.btn.optional:clicked ???{
+    background-color: #002D61;
+    color: #ffffff;
+  }
+
+  */
+  
 
 ul.group {}
 ul.group li.selected {}
