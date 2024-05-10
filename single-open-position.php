@@ -23,8 +23,18 @@ Template Name: single-open-position
             <p><strong><?php the_field('headline-4'); ?></strong></p>
             <p><?php the_field('paragraph-4'); ?></p>
         </article>
-    <?php endwhile; ?>
 
+
+        <!--- Apply for job contact form --->
+
+<section>
+    <div class="contact-form-career">
+        <?php echo do_shortcode( '[contact-form-7 id="c48fb62" title="Apply for the position"]' ); ?>
+    </div>
+</section>
+
+
+    <?php endwhile; ?>
 </main>
 
 <?php get_footer(); ?>
