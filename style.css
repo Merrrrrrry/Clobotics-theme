@@ -130,6 +130,10 @@ p.subtitle {
   margin: 0;
 }
 
+.job-subtitle {
+  margin: 0;
+}
+
 h3.job-title {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
