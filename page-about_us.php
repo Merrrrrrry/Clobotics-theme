@@ -33,7 +33,7 @@ Template Name: About us
 </div>
 
     <div class="hero-section-content">
-        <h1 class="title hero"> Meet Clobotics - vision technology company with offices all around the world </h1>
+        <h1 class="title hero-title"> Meet Clobotics - vision technology company with offices all around the world </h1>
         <p class="hero page-slogan"> </p>
     </div>
 </div>
@@ -45,8 +45,8 @@ Template Name: About us
 
 <div class="article_main who-we-are">
 
-    <h2 class="article_title article_title_who_we_are"><?php the_field('article_title_who_we_are'); ?></h2>
-    <p class="subtitle_of_article subtitle_of_article_who_we_are"><?php the_field('subtitle_of_article_who_we_are'); ?></p>
+    <h2 class="title article_title_who_we_are"><?php the_field('article_title_who_we_are'); ?></h2>
+    <p class="subtitle subtitle_of_article_who_we_are"><?php the_field('subtitle_of_article_who_we_are'); ?></p>
     <p class="article_text_who_we_are"><?php the_field('article_text_who_we_are'); ?></p>
         <a href="<?php echo get_permalink('  ............  ') ?>" class="button blue">Video presentation</a>
         <img class="about-us-page who-we-are-img left" src="  ............  " alt=""> 
@@ -60,7 +60,7 @@ Template Name: About us
 <div class="article_secondary_main one_company_two_directions">
 
     <img class="about-us-page one_company_two_directions_collage_img " src="  ............  " alt=""> 
-        <h3 class="article_title article_title_one_company_two_directions"><?php the_field('article_title_one_company_two_directions'); ?></h3>
+        <h3 class="title article_title_one_company_two_directions"><?php the_field('article_title_one_company_two_directions'); ?></h3>
         <p class="wind_part_text"><?php the_field('wind_part_text'); ?></p>
                 <a href="<?php echo get_permalink('  ............  ') ?>" class="button blue">Discover Wind services</a>
         <p class="retail_part_text"><?php the_field('retail_part_text'); ?></p>
@@ -72,7 +72,7 @@ Template Name: About us
 <!-- Meet our team  Section -->
 
 <div class="meet_our_team">
-    <h4 class="article_title article_title_meet_our_team">Meet our team</h4>
+    <h4 class="title article_title_meet_our_team">Meet our team</h4>
 
 <!-- search function  (meet our team) -->
 
@@ -87,9 +87,9 @@ Template Name: About us
 <!-- Join or Contact us  Section -->
 
 <div class="join_or_contact_us">
-    <h5 class="article_title article_title_want_to_join"><?php the_field('article_title_want_to_join'); ?></h5>
+    <h5 class="title article_title_want_to_join"><?php the_field('article_title_want_to_join'); ?></h5>
     <img class="about-us-page join_or_contact_us_collage_img " src="  ............  " alt=""> 
-        <p class="subtitle_of_article_want_to_join"><?php the_field('subtitle_of_article_want_to_join'); ?></p>
+        <p class="subtitle subtitle_of_article_want_to_join"><?php the_field('subtitle_of_article_want_to_join'); ?></p>
             <a href="<?php echo get_permalink('  ............  ') ?>" class="button blue">Work for us</a>
             <a href="<?php echo get_permalink('  ............  ') ?>" class="button light blue">Work with us</a>
 
@@ -99,7 +99,7 @@ Template Name: About us
 <!-- Company history  Section (povered and coded by atother clobotics team) -->
 
 <div class="company_history">
-    <h6 class="article_title article_title_company_history">Company History</h6>
+    <h6 class="title article_title_company_history">Company History</h6>
 </div>
 <!-- !!!!!!!!!!!!!!! -->
 
@@ -108,7 +108,7 @@ Template Name: About us
 <!-- News Articles linking  Section -->
 
 <div class="company_history">
-    <h7 class="article_title article_title_news_articles_linking">Discover Clobotics with our articles!</h7>
+    <h7 class="title article_title_news_articles_linking">Discover Clobotics with our articles!</h7>
 
 </div>
 
@@ -116,7 +116,7 @@ Template Name: About us
 <!-- Subscribes for more  Section -->
 
 <div class="subscribes_for_more">
-    <p class="article_title_subscribes_for_more">Subscribes for more!</p>
+    <p class="title medium article_title_subscribes_for_more">Subscribes for more!</p>
 
     <div class="social_media">
         <a class="social_media icon_vimeo" href="<?php echo get_permalink('  ............  ') ?>" class="button">Work for us</a>

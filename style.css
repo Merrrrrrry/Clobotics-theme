@@ -13,35 +13,63 @@ body {
 }
 
 
+/*!
+Headlines and text styles
+*/
 
-h2{
-  font-size:30px;
-  font-family: 'Roboto';
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
 }
 
-h3{
-  font-size: 20px;
+h1.hero-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+} 
+
+h2.title {
+    font-family: "Roboto", sans-serif;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+h3.title{
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+
+h4.title{
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+
+.text {
   font-family: 'Open Sans';
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.subtitle {
+  font-family: 'Open Sans';
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.bold {
   font-weight: bold;
 }
 
-h4{
-  font-size: 20px;
-  font-family: 'Open Sans';
+.thin { 
+  font-weight: 100;
 }
 
 
-
-
-h1.title {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 100px;
-} 
-
-h2.title {}
-h2.header {}
 p.text {}
 p.text.medium {}
 h3.text {}
