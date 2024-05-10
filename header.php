@@ -13,3 +13,14 @@
 <body>
 
 <?php wp_nav_menu(array("theme_location"=> "main-menus")) ?>
+
+
+<nav class="navbar">
+    <?php
+    wp_nav_menu(array(
+        'theme_location' => 'primary',
+        'container' => false,
+        'menu_class' => 'navbar-nav'
+    ));
+    ?>
+</nav>
