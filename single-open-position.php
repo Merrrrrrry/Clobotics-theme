@@ -10,7 +10,7 @@ Template Name: single-open-position
 <main>
     <?php while (have_posts()) : the_post(); ?>
         <article <?php post_class(); ?>>
-        <h2><?php the_field('job_title'); ?></h2>
+            <h2><?php the_field('job_title'); ?></h2>
             <p><strong>Location:</strong> <?php the_field('job_location'); ?></p>
             <p><strong>Job Type:</strong> <?php the_field('job_type'); ?></p>
             <p><strong>Deadline:</strong> <?php the_field('deadline'); ?></p>
@@ -28,8 +28,6 @@ Template Name: single-open-position
 </main>
 
 <?php get_footer(); ?>
-
-
 
 
 

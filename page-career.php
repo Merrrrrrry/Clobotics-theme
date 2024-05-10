@@ -8,36 +8,18 @@ Template Name: Career
 
 <main>
 
-    <h2>Career at Clobotics</h2>
-
-    <div class="search-bar">
-        <form method="get" action="">
-            <input type="text" name="search_query" id="search-input" placeholder="Search...">
-            <button type="submit">Search</button>
-        </form>
-    </div>
-
     <h2>Open Positions</h2>
 
     <?php
     
-    $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
+    $related_positions = get_field('related_job_positions');
 
-    
-    $args = array(
-        'post_type' => 'open-position', 
-        'posts_per_page' => -1, 
-        's' => $search_query, 
-    );
-
-    $related_positions = new WP_Query($args);
-
-    if ($related_positions->have_posts()) :
+    if ($related_positions) :
         ?>
         <ul class="position-list">
-            <?php while ($related_positions->have_posts()) : $related_positions->the_post(); ?>
+            <?php foreach ($related_positions as $post) : setup_postdata($post); ?>
                 <li class="position-item">
-                    <h3><?php the_field('job_title'); ?></h3>
+                    <h2><?php the_field('job_title'); ?></h2>
                     <p>
                         <?php
                         $job_location = get_field('job_location');
@@ -47,13 +29,15 @@ Template Name: Career
                     </p>
                     <a href="<?php the_permalink(); ?>" class="learn-more">Learn more</a>
                 </li>
-            <?php endwhile; ?>
+            <?php endforeach; ?>
         </ul>
+
         <?php
+       
         wp_reset_postdata();
     else :
         ?>
-        <p>No open positions found for "<?php echo $search_query; ?>"</p>
+        <p>No open positions currently available.</p>
     <?php endif; ?>
 
 </main>
