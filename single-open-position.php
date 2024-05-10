@@ -25,7 +25,7 @@ Template Name: single-open-position
         </article>
 
 
-        <!--- Apply for job --->
+        <!--- Apply for job contact form --->
 
 <section>
     <div class="contact-form-career">
