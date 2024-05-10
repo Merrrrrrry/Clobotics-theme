@@ -57,7 +57,7 @@ body.gray-body {
 }
 
 
-/* <--- Headlines and text styles ---> */
+/* <--- Headlines and text styles --->*/
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
@@ -79,7 +79,7 @@ h2.title {
 
 h3.title{
   font-family: "Roboto", sans-serif;
-  font-size: 22px;
+  font-size: 40px;
   font-weight: lighter;
 }
 
@@ -93,7 +93,7 @@ h4.title{
 
 p.text {
   font-family: 'Open Sans';
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 500;
 }
 
