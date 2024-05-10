@@ -13,7 +13,7 @@ body {
 }
 
 
-/* <-- Hero Section --> */
+/* <--- Hero Section ---> */
 
 /* Hero section container */
 .hero-section {
@@ -52,15 +52,11 @@ body {
   padding: 20px; 
 }
 
-.hero.page-title {
-  font-size: 2.5rem; 
+.hero-title {
+  font-size: 150px;
   margin-bottom: 10px; 
 }
 
-.hero.page-slogan {
-  font-size: 1.5rem; 
-  margin-top: 10px; 
-}
 
 
 /*!
