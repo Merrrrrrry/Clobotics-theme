@@ -9,7 +9,7 @@ Author: Maria Grysevych
 
 body {
     background-color: #F5F5F5;
-    font-family: 'Roboto';
+    font-family: 'Open Sans';
 }
 
 h1{
@@ -43,6 +43,7 @@ h1.title {
   font-style: normal;
   font-size: 100px;
 } 
+
 h2.title {}
 h2.header {}
 p.text {}
@@ -97,7 +98,7 @@ main {
 .contact-form-container {
   max-width:max-content;
   margin: 20px;
-  padding: 50px 20px;
+  padding: 100px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
