@@ -11,7 +11,18 @@ Template Name: Contact
 <body>
 
 
+<div class="hero-section">
+<div class="hero-section-background">
+    <image="image-hero"> 
+        <source src="<?php echo get_template_directory_uri(); ?>/media/11.mp4" type="photo/png">
+    </image>
 
+</div>
+    <div class="hero-section-content">
+        <h1 class="hero page-title"> Meet Clobotics - vision technology company with offices all around the world </h1>
+        <p class="hero page-slogan"> </p>
+    </div>
+</div>
 
 <!--- Contact form section --->
 
