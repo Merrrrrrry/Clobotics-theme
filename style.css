@@ -128,10 +128,12 @@ p.subtitle {
 
 .job-title {
   margin: 0;
+  padding-bottom: 3px;
 }
 
 .job-subtitle {
   margin: 0;
+  padding-bottom: 3px;
 }
 
 h3.job-title {
