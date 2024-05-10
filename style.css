@@ -35,6 +35,41 @@ h4{
 }
 
 
+
+
+h1.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 100px;
+} 
+h2.title {}
+h2.header {}
+p.text {}
+p.text.medium {}
+h3.text {}
+
+a.btn {}
+a.btn.dark {}
+a.btn.light {}
+a.btn.simple {}
+a.btn.simple {}
+
+
+ul.group {}
+ul.group li.selected {}
+
+section.dark {}
+section.dark > h2.text {}
+section.dark > h3.text {}
+
+section.history > h2.title {}
+
+
+
+
+
+
 main {
     width: 100%;
     height: auto;

@@ -33,7 +33,7 @@ Template Name: About us
 </div>
 
     <div class="hero-section-content">
-        <h1 class="hero page-title"> Meet Clobotics - vision technology company with offices all around the world </h1>
+        <h1 class="hero title"> Meet Clobotics - vision technology company with offices all around the world </h1>
         <p class="hero page-slogan"> </p>
     </div>
 </div>
