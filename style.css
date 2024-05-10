@@ -126,6 +126,11 @@ p.subtitle {
 
 /* <--- Career page --->*/
 
+.job-title {
+  margin: 0;
+  margin-bottom: 5px !important;
+}
+
 h3.job-title {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
