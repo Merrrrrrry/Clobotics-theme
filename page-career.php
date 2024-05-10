@@ -59,7 +59,7 @@ Template Name: Career
                         echo $job_location . ' | ' . $job_type;
                         ?>
                     </p>
-                    <a href="<?php the_permalink(); ?>" class="learn-more">Learn more</a>
+                    <a href="single-open-position.php" class="btn">Learn more</a>
                 </li>
             <?php endwhile; ?>
         </ul>
