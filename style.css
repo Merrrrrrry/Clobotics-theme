@@ -84,7 +84,7 @@ p.subtitle {
 Buttons and links styles
 */
 
-a.btn {
+.btn {
   background-color: #01A7E6;
   color: #fff;
   padding: 8px 20px;
@@ -92,21 +92,21 @@ a.btn {
   cursor: pointer;
 }
 
-a.btn:hover {
+.btn:hover {
   background-color: #002D61;
 }
 
-a.btn.dark {
+.btn.dark {
   background-color: #002D61;
   color: #fff;
 }
 
-a.btn.light {  
+.btn.light {  
   background-color: #86D0F4;
   color: #000000;
 }
 
-a.btn.optional {  
+.btn.optional {  
     background-color: #F5F5F5;
     color: #000000;
 
@@ -116,7 +116,7 @@ a.btn.optional {
     border-radius: 10px;
   }
 
-  a.btn.optional:hover {
+  .btn.optional:hover {
     background-color: #002D61;
     color: #ffffff;
   }
