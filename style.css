@@ -12,26 +12,145 @@ body {
     font-family: 'Open Sans';
 }
 
-h1{
+
+/*!
+Headlines and text styles
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1.hero-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  font-style: normal;
+  color: #fff;
+} 
+
+h2.title {
+    font-family: "Roboto", sans-serif;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+h3.title{
+  font-family: "Roboto", sans-serif;
   font-size: 40px;
-  font-family: 'Roboto';
+  font-weight: 100;
 }
 
-h2{
-  font-size:30px;
-  font-family: 'Roboto';
+
+h4.title{
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: 100;
 }
 
-h3{
-  font-size: 20px;
+
+p.text {
   font-family: 'Open Sans';
+  font-size: 22px;
+  font-weight: 500;
+}
+
+text.medium {
+  font-family: 'Open Sans';
+  font-size: 40px;
+  font-weight: 700;
+}
+
+p.subtitle {
+  font-family: 'Open Sans';
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.bold {
   font-weight: bold;
 }
 
-h4{
-  font-size: 20px;
-  font-family: 'Open Sans';
+.thin { 
+  font-weight: 100;
 }
+
+.white { 
+  color: #fff;
+}
+
+
+/*!
+Buttons and links styles
+*/
+
+.btn {
+  background-color: #01A7E6;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+
+.dark {
+  background-color: #002D61;
+  color: #fff;
+}
+.dark:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+
+.optional {  
+    background-color: #F5F5F5;
+    color: #000000;
+    border: solid;
+    border-width: 1px;
+    border-color: #707070;
+    border-radius: 20px;
+  }
+
+  .optional:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);    
+    color: #ffffff;
+  }
+
+  
+.light {  
+  background-color: #86D0F4;
+  color: #000000;
+}
+.light:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+
+
+  
+/* Removing underline from links */
+
+  a {
+    text-decoration: none; 
+  }
+
+  /*    
+  
+  a.btn.optional:clicked ???{
+    background-color: #002D61;
+    color: #ffffff;
+  }
+
+ul.group {}
+ul.group li.selected {}
+
+section.dark {}
+section.dark > h2.text {}
+section.dark > h3.text {}
+
+section.history > h2.title {}
+
+ */
+
+
 
 
 main {
@@ -61,7 +180,7 @@ main {
 .contact-form-container {
   max-width:max-content;
   margin: 20px;
-  padding: 50px 20px;
+  padding: 100px;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;

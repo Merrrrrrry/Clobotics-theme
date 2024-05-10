@@ -8,9 +8,15 @@ Template Name: single-open-position
 <?php get_header(); ?>
 
 <main>
+    <!--- Apply button --->
+
+    <a href="#" class="btn">Apply</a>
+
+     <!--- Information about the job position --->
+
     <?php while (have_posts()) : the_post(); ?>
         <article <?php post_class(); ?>>
-            <h2><?php the_title(); ?></h2>
+        <h2><?php the_field('job_title'); ?></h2>
             <p><strong>Location:</strong> <?php the_field('job_location'); ?></p>
             <p><strong>Job Type:</strong> <?php the_field('job_type'); ?></p>
             <p><strong>Deadline:</strong> <?php the_field('deadline'); ?></p>
@@ -23,8 +29,23 @@ Template Name: single-open-position
             <p><strong><?php the_field('headline-4'); ?></strong></p>
             <p><?php the_field('paragraph-4'); ?></p>
         </article>
-    <?php endwhile; ?>
 
+        <!--- Find more about Clobotics button --->
+        <a href="#" class="btn dark">Read more about Clobotics</a>
+
+
+         <!--- Contact Person --->
+
+        <!--- Apply for job contact form --->
+
+<section>
+    <div class="contact-form-career">
+        <?php echo do_shortcode( '[contact-form-7 id="c48fb62" title="Apply for the position"]' ); ?>
+    </div>
+</section>
+
+
+    <?php endwhile; ?>
 </main>
 
 <?php get_footer(); ?>

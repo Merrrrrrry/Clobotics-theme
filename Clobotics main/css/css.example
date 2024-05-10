@@ -9,6 +9,8 @@ a.btn {}
 a.btn.dark {}
 a.btn.light {}
 a.btn.simple {}
+a.btn.simple {}
+
 
 ul.group {}
 ul.group li.selected {}
