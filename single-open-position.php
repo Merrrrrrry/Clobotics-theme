@@ -10,7 +10,7 @@ Template Name: single-open-position
 <main>
     <!--- Apply button --->
 
-    <a href="#" class="btn">Applyy</a>
+    <a href="#" class="button">Apply</a>
 
      <!--- Information about the job position --->
 
