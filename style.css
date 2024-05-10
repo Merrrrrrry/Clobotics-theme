@@ -63,19 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
 }
 
-h3.job-title {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  color: #000000;
-}
 
-p.job-subtitle {
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  font-weight: normal;
-  color: #575353;
-}
 
 h1.hero-title {
   font-family: "Roboto", sans-serif;
@@ -136,9 +124,29 @@ p.subtitle {
 }
 
 
-/*!
-Buttons and links styles
-*/
+/* <--- Career page --->*/
+
+h3.job-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+}
+
+p.job-subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #575353;
+}
+
+li::marker {
+  text-decoration: none;
+}
+
+
+/* <--- Buttons and links styles --->*/
+
 
 .btn {
   background-color: #01A7E6;
