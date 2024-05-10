@@ -140,7 +140,7 @@ p.job-subtitle {
   color: #575353;
 }
 
-li.position-item {
+li::marker.position-item {
   list-style-type: none;
 }
 
