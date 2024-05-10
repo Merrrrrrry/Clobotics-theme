@@ -79,7 +79,7 @@ h2.title {
 
 h3.title{
   font-family: "Roboto", sans-serif;
-  font-size: 40px;
+  font-size: 22px;
   font-weight: lighter;
 }
 
@@ -93,7 +93,7 @@ h4.title{
 
 p.text {
   font-family: 'Open Sans';
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 500;
 }
 
