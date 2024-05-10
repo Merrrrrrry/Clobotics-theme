@@ -45,12 +45,12 @@ Template Name: About us
 
 <div class="article_main who-we-are">
 
-    <h2 class="title article_title_who_we_are"><?php the_field('article_title_who_we_are'); ?></h2>
-    <p class="subtitle subtitle_of_article_who_we_are"><?php the_field('subtitle_of_article_who_we_are'); ?></p>
-    <p class="article_text_who_we_are"><?php the_field('article_text_who_we_are'); ?></p>
-        <a href="<?php echo get_permalink('  ............  ') ?>" class="button blue">Video presentation</a>
-        <img class="about-us-page who-we-are-img left" src="  ............  " alt=""> 
-        <img class="about-us-page who-we-are-img right" src="  ............  " alt=""> 
+    <h2 class="title"><?php the_field('article_title_who_we_are'); ?></h2>
+    <p class="subtitle"><?php the_field('subtitle_of_article_who_we_are'); ?></p>
+    <p class="text"><?php the_field('article_text_who_we_are'); ?></p>
+        <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Video presentation</a>
+        <img class="who-we-are-img left" src="  ............  " alt=""> 
+        <img class="who-we-are-img right" src="  ............  " alt=""> 
 </div>
 
 
@@ -59,12 +59,12 @@ Template Name: About us
 
 <div class="article_secondary_main one_company_two_directions">
 
-    <img class="about-us-page one_company_two_directions_collage_img " src="  ............  " alt=""> 
-        <h3 class="title article_title_one_company_two_directions"><?php the_field('article_title_one_company_two_directions'); ?></h3>
-        <p class="wind_part_text"><?php the_field('wind_part_text'); ?></p>
+    <img class="two_directions_collage_img " src="  ............  " alt=""> 
+        <h3 class="title"><?php the_field('article_title_one_company_two_directions'); ?></h3>
+        <p class="text"><?php the_field('wind_part_text'); ?></p>
                 <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Discover Wind services</a>
-        <p class="retail_part_text"><?php the_field('retail_part_text'); ?></p>
-                <a href="<?php echo get_permalink('  ............  ') ?>" class="btn light">Discover Retail services</a>
+        <p class="text"><?php the_field('retail_part_text'); ?></p>
+                <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Discover Retail services</a>
 
 </div>
 
@@ -72,14 +72,14 @@ Template Name: About us
 <!-- Meet our team  Section -->
 
 <div class="meet_our_team">
-    <h4 class="title article_title_meet_our_team">Meet our team</h4>
+    <h4 class="title">Meet our team</h4>
 
 <!-- search function  (meet our team) -->
 
 <!-- button "Show more" with hover efect  (meet our team) -->
 
 
-            <a href="<?php echo get_permalink('  ............  ') ?>" class="button blue">Show more</a> <!-- ???? -->
+            <a href="<?php echo get_permalink('  ............  ') ?>" class="btn optional">Show more</a> <!-- ???? -->
 
 </div>
 
@@ -87,11 +87,12 @@ Template Name: About us
 <!-- Join or Contact us  Section -->
 
 <div class="join_or_contact_us">
-    <h5 class="title article_title_want_to_join"><?php the_field('article_title_want_to_join'); ?></h5>
-    <img class="about-us-page join_or_contact_us_collage_img " src="  ............  " alt=""> 
-        <p class="subtitle subtitle_of_article_want_to_join"><?php the_field('subtitle_of_article_want_to_join'); ?></p>
-            <a href="<?php echo get_permalink('  ............  ') ?>" class="button blue">Work for us</a>
-            <a href="<?php echo get_permalink('  ............  ') ?>" class="button light blue">Work with us</a>
+
+    <h5 class="title"><?php the_field('article_title_want_to_join'); ?></h5>
+    <img class="join_or_contact_collage_img " src="  ............  " alt=""> 
+        <p class="subtitle"><?php the_field('subtitle_of_article_want_to_join'); ?></p>
+            <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Work for us</a>
+            <a href="<?php echo get_permalink('  ............  ') ?>" class="btn light">Work with us</a>
 
 </div>
 
@@ -99,7 +100,7 @@ Template Name: About us
 <!-- Company history  Section (povered and coded by atother clobotics team) -->
 
 <div class="company_history">
-    <h6 class="title article_title_company_history">Company History</h6>
+    <h6 class="title">Company History</h6>
 </div>
 <!-- !!!!!!!!!!!!!!! -->
 
@@ -108,7 +109,7 @@ Template Name: About us
 <!-- News Articles linking  Section -->
 
 <div class="company_history">
-    <h7 class="title article_title_news_articles_linking">Discover Clobotics with our articles!</h7>
+    <h7 class="title">Discover Clobotics with our articles!</h7>
 
 </div>
 
@@ -116,15 +117,15 @@ Template Name: About us
 <!-- Subscribes for more  Section -->
 
 <div class="subscribes_for_more">
-    <p class="title medium article_title_subscribes_for_more">Subscribes for more!</p>
+    <p class="title medium">Subscribes for more!</p>
 
     <div class="social_media">
-        <a class="social_media icon_vimeo" href="<?php echo get_permalink('  ............  ') ?>" class="button">Work for us</a>
-        <p class="social_media text">Wind</p>
-        <a class="social_media icon_linkedin_1" href="<?php echo get_permalink('  ............  ') ?>" class="button">Work for us</a>
-        <p class="social_media text">Retail</p>
-        <a class="social_media icon_linkedin_2" href="<?php echo get_permalink('  ............  ') ?>" class="button">Work for us</a>
-        <p class="social_media text">Vimeo</p>
+        <a class="social_media icon_vimeo" href="<?php echo get_permalink('  ............  ') ?>" >Work for us</a>
+        <p class="social_media_ text">Wind</p>
+        <a class="social_media icon_linkedin_1" href="<?php echo get_permalink('  ............  ') ?>" >Work for us</a>
+        <p class="social_media_ text">Retail</p>
+        <a class="social_media icon_linkedin_2" href="<?php echo get_permalink('  ............  ') ?>" >Work for us</a>
+        <p class="social_media_ text">Vimeo</p>
     </div>
 
 </div>
