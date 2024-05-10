@@ -130,9 +130,6 @@ Template Name: About us
 </div>
 
 
-
-
-
 </body>
     <?php endwhile; ?>
 
