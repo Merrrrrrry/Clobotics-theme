@@ -31,7 +31,7 @@ Template Name: Career
 
     <!-- Open Positions section/Job list -->
 
-    <h2>Open Positions</h2>
+    <h2 class="title">Open Positions</h2>
 
     <?php
     
