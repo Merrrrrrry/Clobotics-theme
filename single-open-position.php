@@ -31,7 +31,7 @@ Template Name: single-open-position
         </article>
 
         <!--- Find more about Clobotics button --->
-        <a href="#" class="btn dark">Read more about Clobotics</a>
+        <a href="page-about_us.php" class="btn dark">Read more about Clobotics</a>
 
 
          <!--- Contact Person --->
