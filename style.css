@@ -116,7 +116,16 @@ Buttons and links styles
     color: #ffffff;
   }
 
+  
+.light {  
+  background-color: #86D0F4;
+  color: #000000;
+}
+.light:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
+
+  
 /* Removing underline from links */
 
   a {
@@ -125,12 +134,6 @@ Buttons and links styles
   
 
 
-.light {  
-  background-color: #86D0F4;
-  color: #000000;
-}
-.light:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
   /*    
   
