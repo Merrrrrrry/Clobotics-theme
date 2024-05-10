@@ -71,17 +71,41 @@ Template Name: About us
 
 <!-- Meet our team  Section -->
 
-<div class="meet_our_team">
+<section id="meet_our_team" style="background-size: cover; height: auto;">
     <h4 class="title">Meet our team</h4>
 
 <!-- search function  (meet our team) -->
 
+
+<!-- loop function  (meet our team) -->
+<!--  <div class="loops_main_content_and_image" > -->
+
+        <?php $loop = new WP_Query( array( 'post_type' => 'empoyee', 'posts_per_page' => -1 ) ); ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+            <div class="meet-our-team_main_content">
+                    <div class="meet-our-team-box-content">
+                        
+                        <div style="background-image: <?php $image = get_field('portrait_image'); ?> url('<?php echo esc_url($image["url"]); ?>'); background-position: auto; background-repeat: no-repeat; width: 80px; height: 80px;" ></div>  
+                        <p class="title thin" style="margin-right: 30px;" ><?php echo get_field("name_and_surname"); ?></p>
+                        <p class="subtitle" style="fond-size: 24px; margin-right: 30px;" ><?php echo get_field("job_position"); ?></p>
+                        <p style="margin-right: 30px;" ><?php echo get_field("name_and_surname"); ?></p>
+                    </div>
+                </div>
+            </div>
+        <?php endwhile; wp_reset_query(); ?>
+    
+
+    <a href="<?php echo get_permalink( get_page_by_path( 'services' ) ) ?>" class="button_grey">Read more</a> 
+ </section>
+
+
 <!-- button "Show more" with hover efect  (meet our team) -->
 
 
-            <a href="<?php echo get_permalink('  ............  ') ?>" class="btn optional">Show more</a> <!-- ???? -->
+    <a href="<?php echo get_permalink('  ............  ') ?>" class="btn optional">Show more</a> <!-- ???? -->
 
-</div>
+</section>
 
 
 <!-- Join or Contact us  Section -->
