@@ -117,6 +117,14 @@ Buttons and links styles
   }
 
 
+/* Removing underline from links */
+
+  a {
+    text-decoration: none; 
+  }
+  
+
+
 .light {  
   background-color: #86D0F4;
   color: #000000;
