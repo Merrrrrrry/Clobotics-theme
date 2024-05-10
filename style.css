@@ -57,9 +57,7 @@ body.gray-body {
 }
 
 
-/*!
-Headlines and text styles
-*/
+/* <--- Headlines and text styles ---> */
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
@@ -76,20 +74,20 @@ h1.hero-title {
 h2.title {
     font-family: "Roboto", sans-serif;
     font-size: 45px;
-    font-weight: 100;
+    font-weight: lighter;
 }
 
 h3.title{
   font-family: "Roboto", sans-serif;
   font-size: 40px;
-  font-weight: 100;
+  font-weight: lighter;
 }
 
 
 h4.title{
   font-family: "Roboto", sans-serif;
   font-size: 30px;
-  font-weight: 100;
+  font-weight: lighter;
 }
 
 
