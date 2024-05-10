@@ -56,7 +56,7 @@ Template Name: Career
                         <?php
                         $job_location = get_field('job_location');
                         $job_type = get_field('job_type');
-                        echo $job_location . ' | ' . $job_type;
+                        echo $job_location . ' ' . $job_type;
                         ?>
                      <a href="<?php the_permalink(); ?>" class="btn">Learn more</a>
                 </p>
