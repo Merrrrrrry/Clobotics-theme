@@ -28,7 +28,7 @@ Template Name: single-open-position
         <!--- Apply for job --->
 
 <section>
-    <div class="contact-form">
+    <div class="contact-form-career">
         <?php echo do_shortcode( '[contact-form-7 id="c48fb62" title="Apply for the position"]' ); ?>
     </div>
 </section>
