@@ -101,21 +101,21 @@ Buttons and links styles
   color: #fff;
 }
 
-.btn.light {  
+.light {  
   background-color: #86D0F4;
   color: #000000;
 }
 
-.btn.optional {  
+.optional {  
     background-color: #F5F5F5;
     color: #000000;
     border: solid;
     border-width: 1px;
     border-color: #707070;
-    border-radius: 10px;
+    border-radius: 20px;
   }
 
-  .btn.optional:hover {
+  .optional:hover {
     background-color: #002D61;
     color: #ffffff;
   }
