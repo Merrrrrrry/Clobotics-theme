@@ -10,7 +10,7 @@ Template Name: single-open-position
 <main>
     <!--- Apply button --->
 
-    <a href="#" class="btn">Apply</a>
+    <a id="apply-button" href="#" class="btn">Apply</a>
 
      <!--- Information about the job position --->
 
@@ -38,11 +38,12 @@ Template Name: single-open-position
 
         <!--- Apply for job contact form --->
 
-<section>
-    <div class="contact-form-career">
-        <?php echo do_shortcode( '[contact-form-7 id="c48fb62" title="Apply for the position"]' ); ?>
-    </div>
-</section>
+
+    <section id="contact-form-section">
+        <div class="contact-form-career">
+             <?php echo do_shortcode( '[contact-form-7 id="c48fb62" title="Apply for the position"]' ); ?>
+        </div>
+    </section>
 
 
     <?php endwhile; ?>
