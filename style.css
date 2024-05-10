@@ -21,7 +21,7 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
-  height: 600px; 
+  height: 700px; 
 }
 
 /* Hero section background image */
@@ -32,17 +32,12 @@ body {
   width: 100%;
   height: 100%;
   z-index: -1;
-  border-bottom-left-radius: 40%; 
-  border-bottom-right-radius: 40%;
-  overflow: hidden; 
 }
 
 .image-hero {
   width: 100%;
   height: auto;
   object-fit: cover; 
-  border-bottom-left-radius: 40%; 
-  border-bottom-right-radius: 40%; 
 }
 
 /* Hero section content */
@@ -58,7 +53,7 @@ body {
 }
 
 .hero.page-title {
-  font-size: 2.5rem;
+  font-size: 2.5rem; 
   margin-bottom: 10px; 
 }
 
