@@ -264,6 +264,7 @@ main {
 }
 
 /* Style individual menu items */
+ul.inline li,
 .navbar-nav li {
   display: inline-block; /* Display menu items inline */
   margin-right: 20px; /* Add some space between menu items */

@@ -23,3 +23,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+// Function to show one of three pictures
+function show_our(type) {
+    document.getElementById("image_of_our_offices").style.display = 'none';
+    document.getElementById("image_of_our_partners").style.display = 'none';
+    document.getElementById("image_of_our_work").style.display = 'none';
+    document.getElementById(type).style.display = 'inline';
+}
