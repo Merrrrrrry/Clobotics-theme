@@ -88,7 +88,6 @@ Template Name: About us
             <p class="title thin" style="margin-right: 30px;" ><?php echo get_field("name_and_surname"); ?></p>
             <p class="subtitle" style="fond-size: 24px; margin-right: 30px;" ><?php echo get_field("job_position"); ?></p>
             <div class="employee_sm_container"> 
-                <p style="margin-right: 30px;" ><?php echo get_field("name_and_surname"); ?></p>
                 <a href="<?php echo get_field("link_for_employees_first_social_media") ?>" ><img class="employee_sm_single_img" src="<?php $image = get_field('picture_of_employees_first_social_media'); echo esc_url($image["url"]); ?>" alt="icon of first social media"></a>
                 <a href="<?php echo get_field("link_for_employees_second_social_media") ?>" ><img class="employee_sm_single_img" src="<?php $image = get_field('picture_of_employees_second_social_media'); echo esc_url($image["url"]); ?>" alt="icon of second social media"></a>
             </div>

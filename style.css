@@ -312,6 +312,17 @@ main {
   box-shadow: inset;
 }
 
+.employee_sm_container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.employee_sm_single_img {
+  width: 17%;
+  height: auto;
+}
+
+
 
 
 
