@@ -48,14 +48,14 @@ Template Name: Wind services
 <!-- Article  Section -->
 <!-- We operate globally -->
 
-<div class="article_main we_operate_globally"> 
+<div class="we_operate_globally_container"> 
 
-    <h2 class="article_title article_title_we_operate_globally"><?php the_field('article_title_we_operate_globally'); ?></h2>
-    <p class="subtitle_of_article article_text_we_operate_globally"><?php the_field('article_text_we_operate_globally'); ?></p>
+    <h2 class="article_title"><?php the_field('article_title_we_operate_globally'); ?></h2>
+    <p class="subtitle"><?php the_field('article_text_we_operate_globally'); ?></p>
 
-        <img class="we_operate_globally-img image_of_our_offices_we_operate_globally_section " src="<?php the_field('image_of_our_offices_we_operate_globally_section'); ?>" alt=""> 
-        <img class="we_operate_globally-img image_of_our_partners_we_operate_globally_section " src="<?php the_field('image_of_our_partners_we_operate_globally_section'); ?>" alt=""> 
-        <img class="we_operate_globally-img image_of_our_work_we_operate_globally_section " src="<?php the_field('image_of_our_work_we_operate_globally_section'); ?>" alt=""> 
+        <img class="we_operate_globally-img" id="image_of_our_offices" src="<?php $image = the_field('image_of_our_offices_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our offices (We operate globally section)"> 
+        <img class="we_operate_globally-img" id="image_of_our_partners" src="<?php $image = the_field('image_of_our_partners_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our partners (We operate globally section)"> 
+        <img class="we_operate_globally-img" id="image_of_our_work" src="<?php $image = the_field('image_of_our_work_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our work (We operate globally section)"> 
 
 </div>
 
