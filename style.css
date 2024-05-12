@@ -284,6 +284,37 @@ main {
 
 
 
+
+/*MEET OUR TEAM LOOP SECTION*/
+
+.meet-our-team_main_content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.meet-our-team-box-content {
+  width: 25%;
+  text-align: center;
+}
+
+.meet-our-team-box-content > img {
+  max-width: 100%;
+}
+
+ /*
+.box-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+*/
+
+.box-shadow-inset {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: inset;
+}
+
+
+
+
 /*CONTACT FORM*/
 
 .contact-form-container {
