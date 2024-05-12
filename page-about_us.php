@@ -80,7 +80,7 @@ Template Name: About us
 <!-- loop function  (meet our team) -->
 <!--  <div class="loops_main_content_and_image" > -->
 
-        <?php $loop = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => -1 ) ); ?>
+        <?php $loop = new WP_Query( array( 'post_type' => 'Employee', 'posts_per_page' => -1 ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
             <div class="meet-our-team_main_content">
