@@ -336,8 +336,11 @@ ul.inline li.selected {
   cursor: pointer;
 }
 
-ul.inline li.selected:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+ul.inline li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+
+
+.we_operate_globally_container {text-align: center;}
+.we_operate_globally_container img.we_operate_globally-img {max-height: 80vh;}
 
 
 

@@ -58,10 +58,10 @@ Template Name: Wind services
         <li onclick=show_our(this)>partners</li>
         <li onclick=show_our(this)>work</li>
     </ul>
-        <?php echo "<pre><hr>"; $image = get_field('image_of_our_offices_we_operate_globally_section'); print_r($image); echo "<hr></pre>" ?>
-        <img class="we_operate_globally-img" id="image_of_our_offices" src="<?php echo esc_url($image["url"]); ?>" alt="Image of our offices (We operate globally section)" /> 
-        <img class="we_operate_globally-img hidden" id="image_of_our_partners" src="<?php $image = the_field('image_of_our_partners_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our partners (We operate globally section)" /> 
-        <img class="we_operate_globally-img hidden" id="image_of_our_work" src="<?php $image = the_field('image_of_our_work_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our work (We operate globally section)" /> 
+
+        <img class="we_operate_globally-img" id="image_of_our_offices" src="<?php $image = get_field('image_of_our_offices_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our offices (We operate globally section)" /> 
+        <img class="we_operate_globally-img hidden" id="image_of_our_partners" src="<?php $image = get_field('image_of_our_partners_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our partners (We operate globally section)" /> 
+        <img class="we_operate_globally-img hidden" id="image_of_our_work" src="<?php $image = get_field('image_of_our_work_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our work (We operate globally section)" /> 
 
 </div>
 
