@@ -25,9 +25,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Function to show one of three pictures
-function show_our(type) {
+function show_our(btn) {
     document.getElementById("image_of_our_offices").style.display = 'none';
     document.getElementById("image_of_our_partners").style.display = 'none';
     document.getElementById("image_of_our_work").style.display = 'none';
-    document.getElementById("image_of_our_" + type).style.display = 'inline';
+    document.getElementById("image_of_our_" + btn.innerText).style.display = 'inline';
+
+    var img_selector_btns = document.querySelector('ul.img_selector > li');
+    img_selector_btns.forEach((el)=>{el.classList.remove('selected');});
+
+    btn.classList.add('selected');
 }
