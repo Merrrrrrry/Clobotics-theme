@@ -54,7 +54,7 @@ Template Name: Wind services
     <p class="subtitle"><?php the_field('article_text_we_operate_globally'); ?></p>
 
     <ul class="inline img_selector">
-        <li onclick=show_our(this)>offices</li>
+        <li onclick=show_our(this) class="selected">offices</li>
         <li onclick=show_our(this)>partners</li>
         <li onclick=show_our(this)>work</li>
     </ul>
