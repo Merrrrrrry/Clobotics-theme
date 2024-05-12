@@ -85,7 +85,9 @@ Template Name: About us
 
             <div class="meet-our-team_main_content">
                 <div class="meet-our-team-box-content">
-                    <div style="background-image: <?php $image = get_field('portrait_image'); ?> url('<?php echo esc_url($image["url"]); ?>'); background-position: auto; background-repeat: no-repeat; width: 80px; height: 80px;" ></div>  
+                    <div style="background-image: <?php $image = get_field('portrait_image'); ?> url('<?php echo esc_url($image["url"]); ?>'); background-position: auto; background-repeat: no-repeat; width: 80px; height: 80px;" ></div>
+                        <p class="title thin" style="margin-right: 30px;" ><?php echo get_field("title"); ?></p>
+                        <p class="subtitle" style="fond-size: 24px; margin-right: 30px;" ><?php echo get_field("subtitle"); ?></p>
                         <p class="title thin" style="margin-right: 30px;" ><?php echo get_field("name_and_surname"); ?></p>
                         <p class="subtitle" style="fond-size: 24px; margin-right: 30px;" ><?php echo get_field("job_position"); ?></p>
                         <p style="margin-right: 30px;" ><?php echo get_field("name_and_surname"); ?></p>
