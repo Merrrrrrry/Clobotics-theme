@@ -326,6 +326,18 @@ ul.inline li,
 }
 
 
+/*WIND SERVICES*/
+
+ul.inline li.selected {
+  background-color: #01A7E6;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+ul.inline li.selected:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 
 

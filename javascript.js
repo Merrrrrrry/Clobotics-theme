@@ -31,7 +31,7 @@ function show_our(btn) {
     document.getElementById("image_of_our_work").style.display = 'none';
     document.getElementById("image_of_our_" + btn.innerText).style.display = 'inline';
 
-    var img_selector_btns = document.querySelector('ul.img_selector > li');
+    var img_selector_btns = document.querySelectorAll('ul.img_selector > li');
     img_selector_btns.forEach((el)=>{el.classList.remove('selected');});
 
     btn.classList.add('selected');
