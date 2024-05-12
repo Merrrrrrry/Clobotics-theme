@@ -66,4 +66,10 @@ Template Name: Wind services
         <source src="<?php echo get_template_directory_uri(); ?> /....../..... .mp4" type="video/mp4">
     </video>
 </div>
+
+
+</body>
+    <?php endwhile; ?>
+
+</main>
 <?php get_footer(); ?>
