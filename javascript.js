@@ -29,5 +29,5 @@ function show_our(type) {
     document.getElementById("image_of_our_offices").style.display = 'none';
     document.getElementById("image_of_our_partners").style.display = 'none';
     document.getElementById("image_of_our_work").style.display = 'none';
-    document.getElementById(type).style.display = 'inline';
+    document.getElementById("image_of_our_" + type).style.display = 'inline';
 }
