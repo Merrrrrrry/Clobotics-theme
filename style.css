@@ -279,7 +279,7 @@ h4.text {
 .job-info {
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin: 20px 40px; 
 }
 
 .info-item {
@@ -294,12 +294,12 @@ h4.text {
 }
 
 .info-label span {
-  margin-left: 5px; /* Add margin to separate the icon and text */
+  margin-left: 5px; 
 }
 
 .info-value {
   font-weight: bold;
-  text-align: left; /* Align the field text to the left */
+  text-align: left; 
 }
 
 .material-icons {
