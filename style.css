@@ -227,17 +227,17 @@ ul.position-list {
 }
 
 
-.number h4 {
+.number {
   color: #05A3E4;
   margin-bottom: 5px;
-  font-weight: lighter; 
+  font-weight: lighter !important; 
 }
 
 
-.text h4 {
+.text {
   color: #05A3E4;
   margin-top: 5px;
-  font-weight: lighter; 
+  font-weight: lighter !important; 
 }
 
 
