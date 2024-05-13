@@ -131,13 +131,19 @@ p.subtitle {
 .job-title {
   margin: 0;
   padding-bottom: 5px;
+  text-align: left; /* Align to the left */
 }
 
 .job-subtitle {
   margin: 0;
   padding-bottom: 20px;
   border-bottom: 0.5px solid #cfcfcf; 
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
+  text-align: left; /* Align to the left */
+}
+
+.job-subtitle span { /* Add a span around the job_type to style it */
+  margin-right: 50px; /* Adjust the space between job_location and job_type */
 }
 
 h3.job-title {
