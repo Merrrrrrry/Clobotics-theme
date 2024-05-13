@@ -180,6 +180,45 @@ ul.position-list {
 }
 
 
+/* Open Positions section */
+.open-positions {
+  text-align: center; 
+  margin: 0 40px; 
+}
+
+.open-positions .title {
+  margin-bottom: 20px; 
+}
+
+
+.open-positions .position-list {
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+/* Gap between sections */
+.image-container {
+  margin-top: 100px; /* Space between Open Positions section and Image scroll */
+}
+
+/* United Numbers Career section */
+.united-numbers-career {
+  text-align: center; 
+  margin-top: 100px; 
+}
+
+.numbers-row {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.numbers-row .number,
+.numbers-row .text {
+  margin: 10px; 
+}
+
+
 
 
 
