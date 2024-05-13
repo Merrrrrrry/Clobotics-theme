@@ -222,7 +222,7 @@ ul.position-list {
 /* United Numbers Career section */
 .united-numbers-career .numbers-row {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column; /* Set flex direction to column */
   align-items: center;
 }
 
