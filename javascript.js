@@ -33,14 +33,8 @@ window.addEventListener('scroll', function() {
 
 
 
-
-<<<<<<< HEAD
-// Function to show one of three pictures
-=======
-
-
 // Function to show one of three pictures - we work globally section on Wind services page
->>>>>>> 5859035990ffb69dc6f24c825e4c8451b2350742
+
 function show_our(btn) {
     document.getElementById("image_of_our_offices").style.display = 'none';
     document.getElementById("image_of_our_partners").style.display = 'none';
