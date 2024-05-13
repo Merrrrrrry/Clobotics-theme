@@ -26,7 +26,13 @@ document.addEventListener("DOMContentLoaded", function() {
 // Parallax effect on the images with the class 'parallax-image'
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
-    document.querySelector('.parallax-container').style.backgroundPositionX = -scrollPosition * 0.5 + 'px';
+    var parallaxImages = document.querySelectorAll('.parallax-image');
+    
+    parallaxImages.forEach(function(image) {
+        var parallaxSpeed = 0.5; // Adjust this value to control the parallax effect
+        var translateValue = scrollPosition * parallaxSpeed;
+        image.style.transform = 'translateX(' + translateValue + 'px)';
+    });
 });
 
 
