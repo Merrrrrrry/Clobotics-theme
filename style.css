@@ -218,21 +218,27 @@ ul.position-list {
 
 /* <--- United Numbers Career section ---> */
 
-.united-numbers-career .numbers-row {
+.united-numbers-career {
+  margin-top: 50px;
+}
+
+.numbers-row {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
 }
 
-.united-numbers-career .number-container {
-  text-align: center; 
+.number-container {
+  text-align: center;
 }
 
-.united-numbers-career .number-container .number,
-.united-numbers-career .number-container .text  {
-  color: #05A3E4;
+.number {
+  color: #05A3E4; 
 }
 
+.text {
+  color: #05A3E4; 
+}
 
 
 
