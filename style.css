@@ -227,16 +227,13 @@ ul.position-list {
 }
 
 
-.number {
+.number .text {
   color: #05A3E4;
   margin-bottom: 5px;
 }
 
 
-.text {
-  color: #05A3E4;
-  margin-top: 5px;
-}
+
 
 
 
