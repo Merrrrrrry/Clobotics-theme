@@ -83,28 +83,37 @@ Template Name: Career
 
 
 
-        <!-- United Numbers Career section -->
-<div class="united-numbers-career">
-    <?php
-    // Retrieve custom field data from the options page
-    $team = get_field('team');
-    $team_members = get_field('team_members');
-    $countries = get_field('countries');
-    $cities = get_field('cities');
-    ?>
+            <!-- United Numbers Career section -->
+                <div class="united-numbers-career">
+                    <?php
+    
+                        $team = get_field('team');
+                        $team_members = get_field('team_members');
+                        $countries = get_field('countries');
+                        $cities = get_field('cities');
+                    ?>
 
-    <!-- Display retrieved data -->
-    <div class="numbers-row">
-        <div class="number"><?php echo $team; ?></div>
-        <div class="text">Team</div>
-        <div class="number"><?php echo $team_members; ?></div>
-        <div class="text">Team Members</div>
-        <div class="number"><?php echo $countries; ?></div>
-        <div class="text">Countries</div>
-        <div class="number"><?php echo $cities; ?></div>
-        <div class="text">Cities</div>
-    </div>
-</div>
+                <!-- Display retrieved data -->
+                    <div class="numbers-row">
+                        <div class="number-container">
+                        <div class="number"><?php echo $team; ?></div>
+                        <div class="text">Team</div>
+                    </div>
+                        <div class="number-container">
+                        <div class="number"><?php echo $team_members; ?></div>
+                        <div class="text">Team Members</div>
+                     </div>
+                         <div class="number-container">
+                         <div class="number"><?php echo $countries; ?></div>
+                         <div class="text">Countries</div>
+                     </div>
+                        <div class="number-container">
+                         <div class="number"><?php echo $cities; ?></div>
+                        <div class="text">Cities</div>
+                    </div>
+                    </div>
+                    </div>
+
 
    <!-- Gap between sections -->
    <div style="height: 1000px;"></div>
