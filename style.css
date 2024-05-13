@@ -218,13 +218,18 @@ ul.position-list {
 
 /* <--- United Numbers Career section ---> */
 
+.numbers-row {
+  text-align: center;
+  margin: 0 40px; 
+}
 
 .number-container {
   display: inline-block;
-  width: 150px; 
+  width: 150px;
   text-align: center;
-  margin: 0 20px; 
+  margin: 20px; 
 }
+
 
 
 .number, .text {
@@ -232,7 +237,13 @@ ul.position-list {
   margin-bottom: 5px;
 }
 
+h4.number {
+  font-weight: lighter;
+}
 
+h4.text {
+  font-weight: lighter;
+}
 
 
 
