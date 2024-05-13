@@ -327,16 +327,27 @@ ul.inline li,
 
 
 /*WIND SERVICES*/
+/*We operate globally section*/
 
-ul.inline li.selected {
-  background-color: #01A7E6;
-  color: #fff;
-  padding: 8px 20px;
+
+ul.img_selector li {
+  background-color: #F5F5F5;
+  color: #000000;
+  border: solid;
+  border-width: 1px;
+  border-color: #707070;
   border-radius: 20px;
+  padding: 8px 20px;
   cursor: pointer;
 }
 
-ul.inline li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+ul.img_selector li.selected {
+  background-color: #01A7E6;
+  color: #fff;
+  border-color: none;
+}
+
+ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 
 .we_operate_globally_container {text-align: center;}

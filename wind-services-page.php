@@ -52,9 +52,9 @@ Template Name: Wind services
     <p class="subtitle"><?php the_field('article_text_we_operate_globally'); ?></p>
 
     <ul class="inline img_selector">
-        <li onclick=show_our(this) class="selected">offices</li>
-        <li onclick=show_our(this)>partners</li>
-        <li onclick=show_our(this)>work</li>
+        <li onclick=show_our(this) class="selected">Our offices</li>
+        <li onclick=show_our(this)>Our partners</li>
+        <li onclick=show_our(this)>Our work</li>
     </ul>
 
         <img class="we_operate_globally-img" id="image_of_our_offices" src="<?php $image = get_field('image_of_our_offices_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our offices (We operate globally section)" /> 
