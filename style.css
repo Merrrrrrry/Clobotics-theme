@@ -278,18 +278,18 @@ h4.text {
 
 .job-info {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Align items to the left and spread them out */
   margin-top: 20px;
-  text-align: center;
 }
 
 .info-item {
-  margin-right: 20px;
+  display: flex;
+  flex-direction: column; /* Align items in a column */
 }
 
 .info-label {
   display: flex;
-  align-items: center;
+  align-items: center; /* Align icon and text vertically */
   margin-bottom: 5px;
 }
 
@@ -300,21 +300,6 @@ h4.text {
 .info-value {
   font-weight: bold;
   text-align: left; /* Align the field text to the left */
-}
-
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
 }
 
 
