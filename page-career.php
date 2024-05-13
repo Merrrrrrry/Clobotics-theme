@@ -114,7 +114,7 @@ Template Name: Career
 
 
    <!-- Gap between sections -->
-   <div style="height: 1000px;"></div>
+   <div style="height: 100px;"></div>
 
 
     </main>
