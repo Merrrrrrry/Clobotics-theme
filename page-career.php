@@ -79,14 +79,11 @@ Template Name: Career
 </div>
 
 <!-- Image scroll -->
-<div class="parallax-container">
-            <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-1.png" alt="career-img-1">
-            <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-2.png" alt="career-img-2">
-            <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-3.png" alt="career-img-3">
-            <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-4.png" alt="career-img-4">
-            <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-5.png" alt="career-img-5">
-            <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-6.png" alt="career-img-6">
+
+        <div class="collage-container">
+            <img src="<?php echo get_template_directory_uri(); ?>/media/image-collage.png" alt="Collage Image">
         </div>
+
 
 
 

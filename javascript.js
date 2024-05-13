@@ -26,13 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Parallax effect on the images with the class 'parallax-image'
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
-    var parallaxImages = document.querySelectorAll('.parallax-image');
-    
-    parallaxImages.forEach(function(image) {
-        var parallaxSpeed = 0.5; // Adjust this value to control the parallax effect
-        var translateValue = scrollPosition * parallaxSpeed;
-        image.style.transform = 'translateX(' + translateValue + 'px)';
-    });
+    document.querySelector('.collage-container img').style.left = -scrollPosition * 0.5 + 'px';
 });
 
 
@@ -40,9 +34,13 @@ window.addEventListener('scroll', function() {
 
 
 
+<<<<<<< HEAD
+// Function to show one of three pictures
+=======
 
 
 // Function to show one of three pictures - we work globally section on Wind services page
+>>>>>>> 5859035990ffb69dc6f24c825e4c8451b2350742
 function show_our(btn) {
     document.getElementById("image_of_our_offices").style.display = 'none';
     document.getElementById("image_of_our_partners").style.display = 'none';
