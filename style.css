@@ -201,22 +201,7 @@ ul.position-list {
   margin-top: 100px; /* Space between Open Positions section and Image scroll */
 }
 
-/* United Numbers Career section */
-.united-numbers-career {
-  text-align: center; 
-  margin-top: 100px; 
-}
 
-.numbers-row {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-}
-
-.numbers-row .number,
-.numbers-row .text {
-  margin: 10px; 
-}
 
 
 
