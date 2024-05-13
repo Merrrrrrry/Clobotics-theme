@@ -427,9 +427,21 @@ ul.inline li,
 }
 
 
+
+
+
+
 /*WIND SERVICES*/
 /*We operate globally section*/
 
+.flex {
+  display: flex;
+}
+
+.half-size {
+ width: 50%;
+ height: auto;
+}
 
 ul.img_selector li {
   background-color: #F5F5F5;
@@ -453,6 +465,12 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 .we_operate_globally_container {text-align: center;}
 .we_operate_globally_container img.we_operate_globally-img {max-height: 80vh;}
+
+
+
+
+
+
 
 
 

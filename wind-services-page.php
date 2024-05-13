@@ -46,21 +46,24 @@ Template Name: Wind services
 <!-- Article  Section -->
 <!-- We operate globally -->
 
-<div class="we_operate_globally_container"> 
-
+<div class="we_operate_globally_container flex"> 
     <h2 class="title"><?php the_field('article_title_we_operate_globally'); ?></h2>
-    <p class="text"><?php the_field('article_text_we_operate_globally'); ?></p>
 
-    <ul class="inline img_selector">
-        <li onclick=show_our(this) class="selected">Our offices</li>
-        <li onclick=show_our(this)>Our partners</li>
-        <li onclick=show_our(this)>Our work</li>
-    </ul>
+    <div class="half-size" id="text_container">
+        <p class="text"><?php the_field('article_text_we_operate_globally'); ?></p> 
+    </div>
 
-        <img class="we_operate_globally-img" id="image_of_our_offices" src="<?php $image = get_field('image_of_our_offices_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our offices (We operate globally section)" /> 
-        <img class="we_operate_globally-img hidden" id="image_of_our_partners" src="<?php $image = get_field('image_of_our_partners_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our partners (We operate globally section)" /> 
-        <img class="we_operate_globally-img hidden" id="image_of_our_work" src="<?php $image = get_field('image_of_our_work_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our work (We operate globally section)" /> 
+    <div  class="half-size" id="buttons_switcher_container">
+        <ul class="inline img_selector">
+            <li onclick=show_our(this) class="selected">Our offices</li>
+            <li onclick=show_our(this)>Our partners</li>
+            <li onclick=show_our(this)>Our work</li>
+        </ul>
 
+            <img class="we_operate_globally-img" id="image_of_our_offices" src="<?php $image = get_field('image_of_our_offices_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our offices (We operate globally section)" /> 
+            <img class="we_operate_globally-img hidden" id="image_of_our_partners" src="<?php $image = get_field('image_of_our_partners_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our partners (We operate globally section)" /> 
+            <img class="we_operate_globally-img hidden" id="image_of_our_work" src="<?php $image = get_field('image_of_our_work_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our work (We operate globally section)" /> 
+    </div>
 </div>
 
 
