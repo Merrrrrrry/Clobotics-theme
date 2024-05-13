@@ -222,15 +222,19 @@ ul.position-list {
 /* United Numbers Career section */
 .united-numbers-career .numbers-row {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 
 .united-numbers-career .numbers-row .number,
 .united-numbers-career .numbers-row .text {
   color: #05A3E4;
-  font-size: 24px; 
-  margin: 5px 0; 
+  font-size: 24px; /* Adjust font size as needed */
+  margin-top: 10px; /* Add top margin */
+}
+
+.united-numbers-career .numbers-row .number {
+  font-weight: bold; /* Optionally make the numbers bold */
 }
 
 
