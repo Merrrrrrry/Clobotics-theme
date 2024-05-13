@@ -86,7 +86,7 @@ Template Name: Career
             <!-- United Numbers Career section -->
             <div class="numbers-row">
                 <div class="number-container">
-                    <h4 class="number"><?php echo $team; ?></h4>
+                    <div class="number"><?php echo $team; ?></div>
                     <h4 class="text">Team</h4>
                 </div>
             <div class="number-container">
