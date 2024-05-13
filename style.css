@@ -276,28 +276,27 @@ h4.text {
   transform: translateX(-50%);
 }
 
-/* Styling for job info */
 .job-info {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  text-align: center;
 }
 
 .info-item {
-  display: flex;
-  align-items: center;
   margin-right: 20px;
 }
 
 .info-label {
-  margin-right: 5px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
 .info-value {
   font-weight: bold;
 }
 
-/* Material Icons */
 .material-icons {
   font-family: 'Material Icons';
   font-weight: normal;
@@ -312,10 +311,6 @@ h4.text {
   direction: ltr;
   -webkit-font-smoothing: antialiased;
 }
-
-
-
-
 
 
 
