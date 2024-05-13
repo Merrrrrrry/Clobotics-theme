@@ -198,27 +198,6 @@ ul.position-list {
 
 
 
-/*.image-container {
-  display: flex;
-  overflow-x: auto; 
-  overflow-y: hidden; 
-  white-space: nowrap; 
- 
-}
-
-
-.image-container::-webkit-scrollbar {
-  display: none; 
-}
-
-.image-container img {
-  width: calc(33.33% - 10px);
-  flex: 0 0 auto; 
-  margin-right: 0; 
-  box-sizing: border-box;
-}           */
-
-
 /* Open Positions section */
 .open-positions {
   text-align: center; 
@@ -241,20 +220,17 @@ ul.position-list {
 }
 
 /* United Numbers Career section */
-.united-numbers-career {
-  text-align: center; 
-  margin-top: 100px; 
+.united-numbers-career .numbers-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.numbers-row {
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-}
-
-.numbers-row .number,
-.numbers-row .text {
-  margin: 10px; 
+.united-numbers-career .numbers-row .number,
+.united-numbers-career .numbers-row .text {
+  color: #05A3E4;
+  font-size: 24px; 
+  margin: 5px 0; 
 }
 
 
