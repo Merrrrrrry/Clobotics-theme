@@ -150,6 +150,9 @@ p.subtitle {
   display: inline-block; 
 }
 
+.job-subtitle a.btn {
+  float: right; 
+}
 
 
 h3.job-title {
