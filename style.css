@@ -180,21 +180,22 @@ ul.position-list {
 }
 
 
-.collage-container {
-  width: 100%; /* Adjust width as needed */
-  height: 400px; /* Adjust height as needed */
+.carousel-container {
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
 
-.collage-container img {
+.carousel-container img {
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.5s ease; 
   position: absolute;
   top: 0;
   left: 0;
 }
+
 
 
 /*.image-container {

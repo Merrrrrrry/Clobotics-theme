@@ -23,13 +23,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Parallax effect on the images with the class 'parallax-image'
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
-    document.querySelector('.collage-container img').style.left = -scrollPosition * 0.5 + 'px';
+    var images = document.querySelectorAll('.carousel-container img');
+
+    images.forEach(function(img) {
+        var imgPosition = img.getBoundingClientRect().left + window.scrollX;
+        var distanceToCenter = (window.innerWidth - img.width) / 2 - (imgPosition - window.innerWidth / 2);
+        var move = Math.min(100, Math.max(-100, distanceToCenter / 10));
+
+        img.style.transform = 'translateX(' + move + 'px)';
+    });
 });
-
-
 
 
 
