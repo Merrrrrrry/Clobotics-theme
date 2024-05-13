@@ -77,15 +77,14 @@ h1.hero-title {
 
 .hero-slogan {
   font-family: "Roboto", sans-serif;
-  font-size: 50px;
+  font-size: 45px;
   font-weight: 400;
-  font-style: normal;
   color: #fff;
 }
 
 h2.title {
     font-family: "Roboto", sans-serif;
-    font-size: 45px;
+    font-size: 49px;
     font-weight: lighter;
 }
 
@@ -117,7 +116,7 @@ text.medium {
 
 p.subtitle {
   font-family: 'Open Sans';
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
 }
 
