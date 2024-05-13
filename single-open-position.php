@@ -15,18 +15,30 @@ Template Name: single-open-position
         </div>
         <div class="hero-section-content">
             <h1 class="hero-title"><?php the_field('job_title'); ?></h1>
+            <a id="apply-button" href="#" class="btn">Apply</a>
         </div>
     </div>
-
-    <!-- Apply button -->
-    <a id="apply-button" href="#" class="btn">Apply</a>
 
     <!-- Information about the job position -->
     <?php while (have_posts()) : the_post(); ?>
         <article <?php post_class(); ?>>
-            <p><strong>Location:</strong> <?php the_field('job_location'); ?></p>
-            <p><strong>Job Type:</strong> <?php the_field('job_type'); ?></p>
-            <p><strong>Deadline:</strong> <?php the_field('deadline'); ?></p>
+            <div class="job-info">
+                <div class="info-item">
+                    <i class="material-icons">date_range</i>
+                    <span class="info-label">Deadline</span>
+                    <span class="info-value"><?php the_field('deadline'); ?></span>
+                </div>
+                <div class="info-item">
+                    <i class="material-icons">work</i>
+                    <span class="info-label">Job Title</span>
+                    <span class="info-value"><?php the_field('job_type'); ?></span>
+                </div>
+                <div class="info-item">
+                    <i class="material-icons">location_on</i>
+                    <span class="info-label">Location</span>
+                    <span class="info-value"><?php the_field('job_location'); ?></span>
+                </div>
+            </div>
             <p><strong><?php the_field('headline-1'); ?></strong></p>
             <p><?php the_field('paragraph-1'); ?></p>
             <p><strong><?php the_field('headline-2'); ?></strong></p>
