@@ -73,13 +73,11 @@ Template Name: Career
 
         <!-- Image scroll -->
         <div class="parallax-container">
-            <div class="parallax-image" style="background-image: url('/media/career-img-1.png');"></div>
-            <div class="parallax-image" style="background-image: url('/media/career-img-2.png');"></div>
-            <div class="parallax-image" style="background-image: url('/media/career-img-3.png');"></div>
-            <div class="parallax-image" style="background-image: url('/media/career-img-4.png');"></div>
-            <div class="parallax-image" style="background-image: url('/media/career-img-5.png');"></div>
-            <div class="parallax-image" style="background-image: url('/media/career-img-6.png');"></div>
-        </div>
+    <?php for ($i = 1; $i <= 6; $i++) : ?>
+        <div class="parallax-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/media/career-img-<?php echo $i; ?>.png');"></div>
+    <?php endfor; ?>
+</div>
+
 
 
         <!-- United Numbers Career section -->
