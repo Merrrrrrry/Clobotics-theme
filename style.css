@@ -227,7 +227,7 @@ ul.position-list {
 }
 
 
-.number .text {
+.number, .text {
   color: #05A3E4;
   margin-bottom: 5px;
 }
