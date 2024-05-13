@@ -71,15 +71,8 @@ Template Name: Career
         <!-- Gap between sections -->
         <div style="height: 100px;"></div>
 
-        <!-- Image scroll -->
-        <div class="parallax-container">
-    <?php for ($i = 1; $i <= 6; $i++) : ?>
-        <div class="parallax-image" style="background-image: url('<?php echo get_template_directory_uri(); ?>/media/career-img-<?php echo $i; ?>.png');"></div>
-    <?php endfor; ?>
-</div>
-
-        <!-- Image carousel -->
-        <div class="carousel-container">
+    <!-- Image carousel -->
+    <div class="carousel-container">
             <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-1.png" alt="career-img-1">
             <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-2.png" alt="career-img-2">
             <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-3.png" alt="career-img-3">
@@ -87,7 +80,6 @@ Template Name: Career
             <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-5.png" alt="career-img-5">
             <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-6.png" alt="career-img-6">
         </div>
-
 
 
 
