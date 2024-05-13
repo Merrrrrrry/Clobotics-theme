@@ -31,6 +31,9 @@ Template Name: Career
         <div class="open-positions">
             <h2 class="title">Open Positions</h2>
 
+              <!-- Gap -->
+        <div style="height: 50px;"></div>
+
             <?php
             $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
             $args = array(
