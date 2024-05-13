@@ -395,12 +395,13 @@ ul.inline li,
 
 .employee_sm_container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .employee_sm_single_img {
-  width: 17%;
+  width: 60px;
   height: auto;
+  margin: 0 0.5em 1em;
 }
 
 
@@ -434,7 +435,7 @@ ul.img_selector li {
 ul.img_selector li.selected {
   background-color: #01A7E6;
   color: #fff;
-  border-color: none;
+  border-color: transparent;
 }
 
 ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}

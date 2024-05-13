@@ -83,13 +83,22 @@ Template Name: About us
     <div class="meet-our-team_main_content">
         <?php $loop = new WP_Query( array( 'post_type' => 'Employee', 'posts_per_page' => -1 ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
         <div class="meet-our-team-box-content box-shadow-inset">
             <img src="<?php $image = get_field('portrait_image'); echo esc_url($image["url"]); ?>" alt="Portrait of <?php echo get_field("name_and_surname"); ?>">
             <p class="title thin" style="margin-right: 30px;" ><?php echo get_field("name_and_surname"); ?></p>
             <p class="subtitle" style="fond-size: 24px; margin-right: 30px;" ><?php echo get_field("job_position"); ?></p>
-            <div class="employee_sm_container"> 
-                <a href="<?php echo get_field("link_for_employees_first_social_media") ?>" ><img class="employee_sm_single_img" src="<?php $image = get_field('picture_of_employees_first_social_media'); echo esc_url($image["url"]); ?>" alt="icon of first social media"></a>
-                <a href="<?php echo get_field("link_for_employees_second_social_media") ?>" ><img class="employee_sm_single_img" src="<?php $image = get_field('picture_of_employees_second_social_media'); echo esc_url($image["url"]); ?>" alt="icon of second social media"></a>
+
+            <div class="employee_sm_container">
+                <!-- <li onclick=show_our(this) class="selected">Our offices</li> -->
+                <a id="link_for_employees_first_social_media" href="<?php echo get_field("link_for_employees_first_social_media") ?>" ><img class="employee_sm_single_img" src="<?php $image = get_field('picture_of_employees_first_social_media'); echo esc_url($image["url"]); ?>" alt="icon of first social media"></a>
+                <?php 
+                    $image = get_field('picture_of_employees_second_social_media');
+                    // echo "<pre>"; print_r($image); echo "</pre>";
+                    if(isset($image["url"])) {
+                        echo '<a id="link_for_employees_second_social_media" href="'.get_field("link_for_employees_second_social_media").'" ><img class="employee_sm_single_img test" src="'.esc_url($image["url"]).'" alt="icon of second social media"></a>';                                               
+                    }
+                ?>
             </div>
         </div>
         <?php endwhile; wp_reset_query(); ?>
