@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+
 // Function to update the scroll position of the image container
 function updateImageContainerScroll() {
     var scrollPosition = window.scrollX;
