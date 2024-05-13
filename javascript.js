@@ -23,18 +23,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Function to update the position of the image container based on scroll
-function updateImageContainerPosition() {
-    var scrollPosition = window.scrollX;
-    var imageContainer = document.querySelector('.image-container');
-    imageContainer.style.left = -scrollPosition + 'px';
-}
+// Parallax effect on the images with the class 'parallax-image'
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    var parallaxImages = document.querySelectorAll('.parallax-image');
+    
+    parallaxImages.forEach(function(image) {
+        var parallaxSpeed = 0.5; // Adjust this value to control the parallax effect
+        var translateValue = scrollPosition * parallaxSpeed;
+        image.style.transform = 'translateX(' + translateValue + 'px)';
+    });
+});
 
-// Event listener for window scroll to update the image container position
-window.addEventListener('scroll', updateImageContainerPosition);
-
-// Initial call to update the image container position when the page loads
-document.addEventListener('DOMContentLoaded', updateImageContainerPosition);
 
 
 
