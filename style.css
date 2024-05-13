@@ -278,13 +278,13 @@ h4.text {
 
 .job-info {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-top: 20px;
-  text-align: center;
 }
 
 .info-item {
-  margin-right: 20px;
+  text-align: center;
+  flex-basis: 33.33%;
 }
 
 .info-label {
@@ -317,6 +317,7 @@ h4.text {
   -webkit-font-smoothing: antialiased;
   color: #05A3E4;
 }
+
 
 
 

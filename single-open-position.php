@@ -22,29 +22,30 @@ Template Name: single-open-position
     <!-- Information about the job position -->
                     <?php while (have_posts()) : the_post(); ?>
                         <article <?php post_class(); ?>>
-                            <div class="job-info">
+                        <div class="job-info">
                             <div class="info-item">
                             <div class="info-label">
-                            <i class="material-icons">calendar_month</i>
-                             <span>Deadline</span>
+                                 <i class="material-icons">calendar_month</i>
+                                 <span>Deadline</span>
+                            </div>
+                                     <div class="info-value"><?php the_field('deadline'); ?></div>
+                                </div>
+                                    <div class="info-item">
+                                      <div class="info-label">
+                                          <i class="material-icons">work</i>
+                                             <span>Job Type</span>
+                                     </div>
+                             <div class="info-value"><?php the_field('job_type'); ?></div>
                          </div>
-                            <div class="info-value"><?php the_field('deadline'); ?></div>
-                        </div>
                             <div class="info-item">
-                             <div class="info-label">
-                            <i class="material-icons">work</i>
-                            <span>Job Type</span>
-                        </div>
-                         <div class="info-value"><?php the_field('job_type'); ?></div>
-                        </div>
-                    <div class="info-item">
-                        <div class="info-label">
-                            <i class="material-icons">location_on</i>
-                             <span>Location</span>
+                            <div class="info-label">
+                                 <i class="material-icons">location_on</i>
+                                <span>Location</span>
                         </div>
                             <div class="info-value"><?php the_field('job_location'); ?></div>
+                         </div>
                     </div>
-                </div>
+
            
             <p><strong><?php the_field('headline-1'); ?></strong></p>
             <p><?php the_field('paragraph-1'); ?></p>
