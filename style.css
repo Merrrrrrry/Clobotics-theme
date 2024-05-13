@@ -271,10 +271,12 @@ h4.text {
 
 #apply-button {
   position: absolute;
-  bottom: -150%;
+  bottom: 20px; 
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1; 
 }
+
 
 .job-info {
   display: flex;
