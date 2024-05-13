@@ -23,17 +23,21 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-// Function to update the scroll position of the image container
-function updateImageContainerScroll() {
+// Function to update the position of the image container based on scroll
+function updateImageContainerPosition() {
     var scrollPosition = window.scrollX;
-    document.querySelector('.image-container').scrollLeft = scrollPosition;
+    var imageContainer = document.querySelector('.image-container');
+    imageContainer.style.left = -scrollPosition + 'px';
 }
 
-// Event listener for window scroll to update the image container scroll
-window.addEventListener('scroll', updateImageContainerScroll);
+// Event listener for window scroll to update the image container position
+window.addEventListener('scroll', updateImageContainerPosition);
 
-// Initial call to update the image container scroll when the page loads
-document.addEventListener('DOMContentLoaded', updateImageContainerScroll);
+// Initial call to update the image container position when the page loads
+document.addEventListener('DOMContentLoaded', updateImageContainerPosition);
+
+
+
 
 
 
