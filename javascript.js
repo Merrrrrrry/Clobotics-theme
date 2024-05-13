@@ -8,11 +8,11 @@ function showInfo() {
 }
 
 // Function to scroll to the contact form section
-function scrollToContactForm() {
+function scrollToContactForm(event) {
+    event.preventDefault(); // Prevent default behavior of anchor tag
     var contactFormSection = document.getElementById("contact-form-section");
     contactFormSection.scrollIntoView({ behavior: "smooth" });
 }
-
 
 // Event listener to the Apply button to scroll to the contact form section
 document.addEventListener("DOMContentLoaded", function() {
