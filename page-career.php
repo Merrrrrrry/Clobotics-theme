@@ -94,25 +94,25 @@ Template Name: Career
                     ?>
 
                 <!-- Display retrieved data -->
-                    <div class="numbers-row">
-                        <div class="number-container">
-                        <div class="number"><?php echo $team; ?></div>
-                        <div class="text">Team</div>
+            <div class="numbers-row">
+                    <div class="number-container">
+                        <h4 class="number"><?php echo $team; ?></div>
+                        <h4  class="text">Team</div>
                     </div>
-                        <div class="number-container">
-                        <div class="number"><?php echo $team_members; ?></div>
-                        <div class="text">Team Members</div>
-                     </div>
-                         <div class="number-container">
-                         <div class="number"><?php echo $countries; ?></div>
-                         <div class="text">Countries</div>
-                     </div>
-                        <div class="number-container">
-                         <div class="number"><?php echo $cities; ?></div>
-                        <div class="text">Cities</div>
+                    <div class="number-container">
+                        <h4  class="number"><?php echo $team_members; ?></div>
+                        <h4  class="text">Team Members</div>
                     </div>
+                    <div class="number-container">
+                        <h4  class="number"><?php echo $countries; ?></div>
+                        <h4  class="text">Countries</div>
                     </div>
+                    <div class="number-container">
+                        <h4  class="number"><?php echo $cities; ?></div>
+                        <h4  class="text">Cities</div>
                     </div>
+                </div>
+            </div>
 
 
    <!-- Gap between sections -->

@@ -198,7 +198,7 @@ ul.position-list {
 
 
 
-/* Open Positions section */
+/* <--- Open Positions section ---> */
 .open-positions {
   text-align: center; 
   margin: 0 40px; 
@@ -214,31 +214,26 @@ ul.position-list {
   margin-right: auto; 
 }
 
-/* Gap between sections */
-.image-container {
-  margin-top: 100px; /* Space between Open Positions section and Image scroll */
-}
 
-/* United Numbers Career section */
+
+/* <--- United Numbers Career section ---> */
+
 .united-numbers-career .numbers-row {
   display: flex;
-  justify-content: space-between; /* Add space between items */
+  justify-content: space-between; 
   align-items: center;
 }
 
 .united-numbers-career .number-container {
-  text-align: center; /* Center align the content */
+  text-align: center; 
 }
 
 .united-numbers-career .number-container .number,
-.united-numbers-career .number-container .text {
+.united-numbers-career .number-container .text .h4 {
   color: #05A3E4;
-  font-size: 24px; /* Adjust font size as needed */
 }
 
-.united-numbers-career .number-container .number {
-  font-weight: bold; /* Optionally make the numbers bold */
-}
+
 
 
 
