@@ -233,7 +233,7 @@ ul.position-list {
 .number, .text {
   color: #05A3E4;
   margin-bottom: 5px;
-  font-size: 16px; 
+  font-size: 16px !important; 
 }
 
 h4.text {
