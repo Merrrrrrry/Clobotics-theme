@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-// Function to show one of three pictures
+// Function to show one of three pictures - we work globally section on Wind services page
 function show_our(btn) {
     document.getElementById("image_of_our_offices").style.display = 'none';
     document.getElementById("image_of_our_partners").style.display = 'none';
