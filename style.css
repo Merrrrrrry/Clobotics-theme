@@ -173,9 +173,14 @@ ul.position-list {
 }
 
 .image-container img {
+  width: calc(33.33% - 10px);
   flex: 0 0 auto; 
   margin-right: 0; 
+  box-sizing: border-box;
 }
+
+
+
 
 
 
