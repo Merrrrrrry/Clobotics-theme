@@ -80,10 +80,10 @@ Template Name: Career
 <div class="united-numbers-career">
     <?php
     // Retrieve custom field data from the options page
-    $team = get_field('team', 'option');
-    $team_members = get_field('team_members', 'option');
-    $countries = get_field('countries', 'option');
-    $cities = get_field('cities', 'option');
+    $team = get_field('team');
+    $team_members = get_field('team_members');
+    $countries = get_field('countries');
+    $cities = get_field('cities');
     ?>
 
     <!-- Display retrieved data -->
