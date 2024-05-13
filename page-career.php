@@ -77,27 +77,28 @@ Template Name: Career
         </div>
 
         <!-- United Numbers Career section -->
-        <div class="united-numbers-career">
-            <?php
-            
-            $team = get_field('team');
-            $team_members = get_field('team_members');
-            $countries = get_field('countries');
-            $cities = get_field('cities');
-            ?>
+<div class="united-numbers-career">
+    <?php
+    // Retrieve custom field data from the options page
+    $team = get_field('team', 'option');
+    $team_members = get_field('team_members', 'option');
+    $countries = get_field('countries', 'option');
+    $cities = get_field('cities', 'option');
+    ?>
 
-            
-            <div class="numbers-row">
-                <div class="number"><?php echo $team; ?></div>
-                <div class="text">Team</div>
-                <div class="number"><?php echo $team_members; ?></div>
-                <div class="text">Team Members</div>
-                <div class="number"><?php echo $countries; ?></div>
-                <div class="text">Countries</div>
-                <div class="number"><?php echo $cities; ?></div>
-                <div class="text">Cities</div>
-            </div>
-        </div>
+    <!-- Display retrieved data -->
+    <div class="numbers-row">
+        <div class="number"><?php echo $team; ?></div>
+        <div class="text">Team</div>
+        <div class="number"><?php echo $team_members; ?></div>
+        <div class="text">Team Members</div>
+        <div class="number"><?php echo $countries; ?></div>
+        <div class="text">Countries</div>
+        <div class="number"><?php echo $cities; ?></div>
+        <div class="text">Cities</div>
+    </div>
+</div>
+
 
     </main>
 </body>
