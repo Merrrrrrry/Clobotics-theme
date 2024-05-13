@@ -131,7 +131,7 @@ p.subtitle {
 .job-title {
   margin: 0;
   padding-bottom: 5px;
-  text-align: left; /* Align to the left */
+  text-align: left; 
 }
 
 .job-subtitle {
@@ -139,12 +139,18 @@ p.subtitle {
   padding-bottom: 20px;
   border-bottom: 0.5px solid #cfcfcf; 
   margin-bottom: 20px;
-  text-align: left; /* Align to the left */
+  text-align: left; 
 }
 
-.job-subtitle span { /* Add a span around the job_type to style it */
-  margin-right: 50px; /* Adjust the space between job_location and job_type */
+.job-subtitle span {
+  margin-right: 50px; 
 }
+
+.job-subtitle .job-type {
+  display: inline-block; 
+}
+
+
 
 h3.job-title {
   font-family: "Open Sans", sans-serif;

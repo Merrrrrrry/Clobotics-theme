@@ -50,12 +50,13 @@ Template Name: Career
                     <h3 class="job-title"><?php the_field('job_title'); ?></h3>
                     <p class="job-subtitle">
                         <?php
-                        $job_location = get_field('job_location');
-                        $job_type = get_field('job_type');
-                        echo $job_location . ' <span style="margin-right: 50px;"></span>' . $job_type;
-                        ?>
-                        <a href="<?php the_permalink(); ?>" class="btn" style="float: right;">Learn more</a>
+                            $job_location = get_field('job_location');
+                            $job_type = get_field('job_type');
+                             echo $job_location . ' <span class="job-type">' . $job_type . '</span>';
+                         ?>
+                            <a href="<?php the_permalink(); ?>" class="btn">Learn more</a>
                     </p>
+
                 </li>
             <?php endwhile; ?>
         </ul>
