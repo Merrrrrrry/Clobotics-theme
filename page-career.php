@@ -75,12 +75,12 @@ Template Name: Career
 
         <!-- Image scroll -->
         <div class="image-container">
-            <img src="<?php echo get_template_directory_uri(); ?>/career-img-1.png" alt="career-img-1">
-            <img src="<?php echo get_template_directory_uri(); ?>/career-img-2.png" alt="career-img-2">
-            <img src="<?php echo get_template_directory_uri(); ?>/career-img-3.png" alt="career-img-3">
-            <img src="<?php echo get_template_directory_uri(); ?>/career-img-4.png" alt="career-img-4">
-            <img src="<?php echo get_template_directory_uri(); ?>/career-img-5.png" alt="career-img-5">
-            <img src="<?php echo get_template_directory_uri(); ?>/career-img-6.png" alt="career-img-6">
+            <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-1.png" alt="career-img-1">
+            <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-2.png" alt="career-img-2">
+            <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-3.png" alt="career-img-3">
+            <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-4.png" alt="career-img-4">
+            <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-5.png" alt="career-img-5">
+            <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-6.png" alt="career-img-6">
         </div>
 
 
