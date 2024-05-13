@@ -22,15 +22,17 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-// Scroll effect for the image container in career page
-
-window.addEventListener('scroll', function() {
-    // Horizontal scroll position
+// Function to update the scroll position of the image container
+function updateImageContainerScroll() {
     var scrollPosition = window.scrollX;
-
-    // Horizontal scroll position of the image container
     document.querySelector('.image-container').scrollLeft = scrollPosition;
-});
+}
+
+// Event listener for window scroll to update the image container scroll
+window.addEventListener('scroll', updateImageContainerScroll);
+
+// Initial call to update the image container scroll when the page loads
+document.addEventListener('DOMContentLoaded', updateImageContainerScroll);
 
 
 

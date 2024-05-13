@@ -143,9 +143,11 @@ p.subtitle {
 }
 
 .job-subtitle .job-type {
-  display: inline-block; 
+  display: inline-block;
   margin-left: 50px; 
+  margin-right: 50px; 
 }
+
 
 .job-subtitle a.btn {
   float: right; 
