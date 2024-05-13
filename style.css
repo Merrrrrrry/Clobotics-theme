@@ -218,7 +218,7 @@ ul.position-list {
 
 /* <--- United Numbers Career section ---> */
 
-/* Style for number-container */
+
 .number-container {
   display: inline-block;
   width: 150px; 
@@ -226,16 +226,18 @@ ul.position-list {
   margin: 0 20px; 
 }
 
-/* Style for number */
+
 .number {
-  color: #05A3E4; 
-  margin-bottom: 5px; 
+  color: #05A3E4;
+  margin-bottom: 5px;
+  font-weight: lighter; 
 }
 
-/* Style for text */
+
 .text {
-  color: #05A3E4; 
-  margin-top: 5px; 
+  color: #05A3E4;
+  margin-top: 5px;
+  font-weight: lighter; 
 }
 
 
