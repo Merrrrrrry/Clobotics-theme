@@ -25,7 +25,7 @@ Template Name: single-open-position
                             <div class="job-info">
                             <div class="info-item">
                             <div class="info-label">
-                            <i class="material-icons">event</i>
+                            <i class="material-icons">calendar_month</i>
                              <span>Deadline</span>
                          </div>
                             <div class="info-value"><?php the_field('deadline'); ?></div>
