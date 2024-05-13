@@ -8,8 +8,6 @@ Template Name: Wind services
 
 <main>
 
-    <?php while(have_posts()): the_post(); ?>
-        <?php the_content(); ?>
 
 <body>
 
@@ -75,7 +73,6 @@ Template Name: Wind services
 
 
 </body>
-    <?php endwhile; ?>
 
 </main>
 <?php get_footer(); ?>
