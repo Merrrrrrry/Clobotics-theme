@@ -49,7 +49,7 @@ Template Name: Wind services
 <div class="we_operate_globally_container"> 
 
     <h2 class="title"><?php the_field('article_title_we_operate_globally'); ?></h2>
-    <p class="subtitle"><?php the_field('article_text_we_operate_globally'); ?></p>
+    <p class="text"><?php the_field('article_text_we_operate_globally'); ?></p>
 
     <ul class="inline img_selector">
         <li onclick=show_our(this) class="selected">Our offices</li>
