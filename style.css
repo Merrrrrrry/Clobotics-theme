@@ -227,14 +227,14 @@ ul.position-list {
 }
 
 
-.number {
+.number h4 {
   color: #05A3E4;
   margin-bottom: 5px;
   font-weight: lighter; 
 }
 
 
-.text {
+.text h4 {
   color: #05A3E4;
   margin-top: 5px;
   font-weight: lighter; 
