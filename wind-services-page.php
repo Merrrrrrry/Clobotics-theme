@@ -8,8 +8,6 @@ Template Name: Wind services
 
 <main>
 
-    <?php while(have_posts()): the_post(); ?>
-        <?php the_content(); ?>
 
 <body>
 
@@ -33,8 +31,8 @@ Template Name: Wind services
     </div>
 
     <div class="hero-section-content">
-        <h1 class="hero page-title"> Wind services </h1>
-        <p class="hero page-slogan"> </p>
+        <h1 class="hero-title"> Wind services </h1>
+        <p class="hero-slogan"> </p>
     </div>
 </div>
 
@@ -50,13 +48,13 @@ Template Name: Wind services
 
 <div class="we_operate_globally_container"> 
 
-    <h2 class="article_title"><?php the_field('article_title_we_operate_globally'); ?></h2>
+    <h2 class="title"><?php the_field('article_title_we_operate_globally'); ?></h2>
     <p class="subtitle"><?php the_field('article_text_we_operate_globally'); ?></p>
 
     <ul class="inline img_selector">
-        <li onclick=show_our(this) class="selected">offices</li>
-        <li onclick=show_our(this)>partners</li>
-        <li onclick=show_our(this)>work</li>
+        <li onclick=show_our(this) class="selected">Our offices</li>
+        <li onclick=show_our(this)>Our partners</li>
+        <li onclick=show_our(this)>Our work</li>
     </ul>
 
         <img class="we_operate_globally-img" id="image_of_our_offices" src="<?php $image = get_field('image_of_our_offices_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our offices (We operate globally section)" /> 
@@ -75,7 +73,6 @@ Template Name: Wind services
 
 
 </body>
-    <?php endwhile; ?>
 
 </main>
 <?php get_footer(); ?>

@@ -34,12 +34,18 @@ window.addEventListener('scroll', function() {
 
 
 
+<<<<<<< HEAD
 // Function to show one of three pictures
+=======
+
+
+// Function to show one of three pictures - we work globally section on Wind services page
+>>>>>>> 5859035990ffb69dc6f24c825e4c8451b2350742
 function show_our(btn) {
     document.getElementById("image_of_our_offices").style.display = 'none';
     document.getElementById("image_of_our_partners").style.display = 'none';
     document.getElementById("image_of_our_work").style.display = 'none';
-    document.getElementById("image_of_our_" + btn.innerText).style.display = 'inline';
+    document.getElementById("image_of_our_" + btn.innerText.replace("Our ", '')).style.display = 'inline';
 
     var img_selector_btns = document.querySelectorAll('ul.img_selector > li');
     img_selector_btns.forEach((el)=>{el.classList.remove('selected');});

@@ -8,7 +8,7 @@ Author: Maria Grysevych
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #fff;
     font-family: 'Open Sans';
     margin: 0px !important;
 }
@@ -70,14 +70,21 @@ h1, h2, h3, h4, h5, h6 {
 h1.hero-title {
   font-family: "Roboto", sans-serif;
   font-size: 50px;
-  font-weight: lighter;
+  font-weight: 200;
   font-style: normal;
   color: #fff;
 } 
 
+.hero-slogan {
+  font-family: "Roboto", sans-serif;
+  font-size: 45px;
+  font-weight: 400;
+  color: #fff;
+}
+
 h2.title {
     font-family: "Roboto", sans-serif;
-    font-size: 45px;
+    font-size: 49px;
     font-weight: lighter;
 }
 
@@ -109,7 +116,7 @@ text.medium {
 
 p.subtitle {
   font-family: 'Open Sans';
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -421,16 +428,27 @@ ul.inline li,
 
 
 /*WIND SERVICES*/
+/*We operate globally section*/
 
-ul.inline li.selected {
-  background-color: #01A7E6;
-  color: #fff;
-  padding: 8px 20px;
+
+ul.img_selector li {
+  background-color: #F5F5F5;
+  color: #000000;
+  border: solid;
+  border-width: 1px;
+  border-color: #707070;
   border-radius: 20px;
+  padding: 8px 20px;
   cursor: pointer;
 }
 
-ul.inline li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
+ul.img_selector li.selected {
+  background-color: #01A7E6;
+  color: #fff;
+  border-color: none;
+}
+
+ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 
 .we_operate_globally_container {text-align: center;}
