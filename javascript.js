@@ -14,13 +14,25 @@ function scrollToContactForm() {
 }
 
 
-// Add event listener to the Apply button to scroll to the contact form section
+// Event listener to the Apply button to scroll to the contact form section
 document.addEventListener("DOMContentLoaded", function() {
     var applyButton = document.getElementById("apply-button"); 
     if (applyButton) {
         applyButton.addEventListener("click", scrollToContactForm);
     }
 });
+
+
+// Parallax effect on the images with the class 'parallax-image'
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    document.querySelector('.parallax-container').style.backgroundPositionX = -scrollPosition * 0.5 + 'px';
+});
+
+
+
+
+
 
 
 

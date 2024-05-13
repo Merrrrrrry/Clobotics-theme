@@ -131,14 +131,28 @@ p.subtitle {
 .job-title {
   margin: 0;
   padding-bottom: 5px;
+  text-align: left; 
 }
 
 .job-subtitle {
   margin: 0;
   padding-bottom: 20px;
   border-bottom: 0.5px solid #cfcfcf; 
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
+  text-align: left; 
 }
+
+.job-subtitle .job-type {
+  display: inline-block;
+  margin-left: 50px; 
+  margin-right: 50px; 
+}
+
+
+.job-subtitle a.btn {
+  float: right; 
+}
+
 
 h3.job-title {
   font-family: "Open Sans", sans-serif;
@@ -157,6 +171,86 @@ p.job-subtitle {
 ul.position-list {
   list-style-type: none;
 }
+
+
+.parallax-container {
+  overflow-x: auto;
+  white-space: nowrap;
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+}
+
+.parallax-image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+/*.image-container {
+  display: flex;
+  overflow-x: auto; 
+  overflow-y: hidden; 
+  white-space: nowrap; 
+ 
+}
+
+
+.image-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.image-container img {
+  width: calc(33.33% - 10px);
+  flex: 0 0 auto; 
+  margin-right: 0; 
+  box-sizing: border-box;
+}           */
+
+
+/* Open Positions section */
+.open-positions {
+  text-align: center; 
+  margin: 0 40px; 
+}
+
+.open-positions .title {
+  margin-bottom: 20px; 
+}
+
+
+.open-positions .position-list {
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+/* Gap between sections */
+.image-container {
+  margin-top: 100px; /* Space between Open Positions section and Image scroll */
+}
+
+/* United Numbers Career section */
+.united-numbers-career {
+  text-align: center; 
+  margin-top: 100px; 
+}
+
+.numbers-row {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.numbers-row .number,
+.numbers-row .text {
+  margin: 10px; 
+}
+
+
+
 
 
 
