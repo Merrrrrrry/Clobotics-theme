@@ -95,7 +95,7 @@ Template Name: About us
                 <?php 
                     $image = get_field('picture_of_employees_second_social_media');
                     if($image["url"] !== "") {
-                        echo '<a id="link_for_employees_second_social_media" href="'.get_field("link_for_employees_second_social_media").'" ><img class="employee_sm_single_img" src="'.esc_url($image["url"]).'" alt="icon of second social media"></a>';                                               
+                        echo '<a id="link_for_employees_second_social_media" href="'.get_field("link_for_employees_second_social_media").'" ><img class="employee_sm_single_img test" src="'.esc_url($image["url"]).'" alt="icon of second social media"></a>';                                               
                     }
                 ?>
             </div>
