@@ -32,7 +32,7 @@ Template Name: Career
             <h2 class="title">Open Positions</h2>
 
               <!-- Gap -->
-        <div style="height: 30px;"></div>
+        <div style="height: 20px;"></div>
 
             <?php
             $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
