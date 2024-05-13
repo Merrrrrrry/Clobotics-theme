@@ -84,35 +84,35 @@ Template Name: Career
 
 
             <!-- United Numbers Career section -->
-                <div class="united-numbers-career">
-                    <?php
-    
-                        $team = get_field('team');
-                        $team_members = get_field('team_members');
-                        $countries = get_field('countries');
-                        $cities = get_field('cities');
-                    ?>
+<div class="united-numbers-career">
+    <?php
+    $team = get_field('team');
+    $team_members = get_field('team_members');
+    $countries = get_field('countries');
+    $cities = get_field('cities');
+    ?>
 
-                <!-- Display retrieved data -->
-            <div class="numbers-row">
-                    <div class="number-container">
-                        <h4 class="number"><?php echo $team; ?></div>
-                        <h4  class="text">Team</div>
-                    </div>
-                    <div class="number-container">
-                        <h4  class="number"><?php echo $team_members; ?></div>
-                        <h4  class="text">Team Members</div>
-                    </div>
-                    <div class="number-container">
-                        <h4  class="number"><?php echo $countries; ?></div>
-                        <h4  class="text">Countries</div>
-                    </div>
-                    <div class="number-container">
-                        <h4  class="number"><?php echo $cities; ?></div>
-                        <h4  class="text">Cities</div>
-                    </div>
-                </div>
-            </div>
+    <!-- Display retrieved data -->
+    <div class="numbers-row">
+        <div class="number-container">
+            <h4 class="number"><?php echo $team; ?></h4>
+            <h4 class="text">Team</h4>
+        </div>
+        <div class="number-container">
+            <h4 class="number"><?php echo $team_members; ?></h4>
+            <h4 class="text">Team Members</h4>
+        </div>
+        <div class="number-container">
+            <h4 class="number"><?php echo $countries; ?></h4>
+            <h4 class="text">Countries</h4>
+        </div>
+        <div class="number-container">
+            <h4 class="number"><?php echo $cities; ?></h4>
+            <h4 class="text">Cities</h4>
+        </div>
+    </div>
+</div>
+
 
 
    <!-- Gap between sections -->
