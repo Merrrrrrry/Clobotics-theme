@@ -14,13 +14,24 @@ function scrollToContactForm() {
 }
 
 
-// Add event listener to the Apply button to scroll to the contact form section
+// Event listener to the Apply button to scroll to the contact form section
 document.addEventListener("DOMContentLoaded", function() {
     var applyButton = document.getElementById("apply-button"); 
     if (applyButton) {
         applyButton.addEventListener("click", scrollToContactForm);
     }
 });
+
+// Scroll effect for the image container in career page
+
+window.addEventListener('scroll', function() {
+    // Horizontal scroll position
+    var scrollPosition = window.scrollX;
+
+    // Horizontal scroll position of the image container
+    document.querySelector('.image-container').scrollLeft = scrollPosition;
+});
+
 
 
 

@@ -71,6 +71,18 @@ Template Name: Career
         <p class="job-subtitle">No open positions found for "<?php echo $search_query; ?>"</p>
     <?php endif; ?>
 
+         <!-- Image scroll -->
+
+         <div class="image-container">
+    <img src="career-img-1.png" alt="career-img-1">
+    <img src="career-img-2.png" alt="career-img-2">
+    <img src="career-img-3.png" alt="career-img-3">
+    <img src="career-img-4.png" alt="career-img-4">
+    <img src="career-img-5.png" alt="career-img-5">
+    <img src="career-img-6.png" alt="career-img-6">
+</div>
+
+
 </main>
 </body>
     

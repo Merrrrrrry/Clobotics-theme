@@ -158,6 +158,25 @@ ul.position-list {
   list-style-type: none;
 }
 
+.image-container {
+  display: flex;
+  overflow-x: auto; 
+  overflow-y: hidden; 
+  white-space: nowrap; 
+  -webkit-overflow-scrolling: touch; 
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+.image-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.image-container img {
+  flex: 0 0 auto; 
+  margin-right: 0; 
+}
+
 
 
 /* <--- Buttons and links styles --->*/
