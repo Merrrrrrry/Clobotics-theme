@@ -8,7 +8,7 @@
             <li><a href="<?php echo get_permalink( 'about-us' ); ?>">About us</a></li>
             <li><a href="<?php echo get_permalink( 'career' ); ?>">Career</a></li>
             <li><a href="<?php echo get_permalink( 'articles' ); ?>">Articles</a></li>
-            <li><a href="<?php echo get_permalink( 'media' ); ?>">Media</a></li>
+            <li><a href="media">Media</a></li>
         </ul>
     </div>
     <div class="footer-column">
