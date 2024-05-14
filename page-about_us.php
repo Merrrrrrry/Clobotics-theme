@@ -151,7 +151,7 @@ Template Name: About us
     if ($company_history_query->have_posts()) :
         while ($company_history_query->have_posts()) : $company_history_query->the_post();
 
-            
+            // Retrieve custom fields
             $month_history = get_field('month_history');
             $year_history = get_field('year_history');
             $logo_history = get_field('logo_history');
