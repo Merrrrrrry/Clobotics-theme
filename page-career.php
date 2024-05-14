@@ -20,12 +20,37 @@ Template Name: Career
         </div>
 
         <!-- Search bar -->
-        <div class="search-bar">
-            <form method="get" action="<?php echo esc_url(get_permalink()); ?>">
-                <input type="text" name="search_query" id="search-input" placeholder="Search...">
-                <button type="submit">Search</button>
-            </form>
-        </div>
+<div class="search-bar" id="search-bar">
+    <form id="search-form" method="get" action="<?php echo esc_url(get_permalink()); ?>">
+        <input type="text" name="search_query" id="search-input" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Add event listener to the search form
+    document.getElementById('search-form').addEventListener('submit', function(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+
+        // Get the search query
+        var searchQuery = document.getElementById('search-input').value;
+
+        // Fetch search results using AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '<?php echo esc_url(get_permalink()); ?>?search_query=' + encodeURIComponent(searchQuery), true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Replace the content with the search results
+                document.getElementById('search-results').innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+    });
+});
+</script>
+
 
         <!-- Open Positions section/Job list -->
         <div class="open-positions">
