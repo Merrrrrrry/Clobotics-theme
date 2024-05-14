@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Fetch search results using AJAX
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', '<?php echo esc_url(get_permalink()); ?>?search_query=' + encodeURIComponent(searchQuery), true);
+        xhr.open('GET', ajax_object.ajax_url + '?action=search_positions&search_query=' + encodeURIComponent(searchQuery), true);
         xhr.onreadystatechange = function() {
             if (xhr.readyState === 4 && xhr.status === 200) {
                 // Replace the content with the search results
@@ -66,8 +66,6 @@ document.addEventListener('DOMContentLoaded', function() {
         xhr.send();
     });
 });
-
-
 
 
 // Function to show one of three pictures - we work globally section on Wind services page
