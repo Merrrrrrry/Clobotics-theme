@@ -29,7 +29,7 @@
     
     <div class="social-icons">
         <a href="https://www.linkedin.com/company/cloboticswindservices/">
-            <img src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png" with="35px" height="35px" alt="LinkedIn"> <br>
+            <img src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png" width="45px" height="45px" alt="LinkedIn"> <br>
             <span>Wind</span>
         </a>
         <a href="https://www.linkedin.com/company/clobotics/">
