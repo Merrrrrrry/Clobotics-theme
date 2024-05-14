@@ -38,6 +38,9 @@ Template Name: Career
             // Check if there is a search query
             $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
 
+            // Normalize search query to handle spaces and hyphens
+            $normalized_search_query = str_replace(array(' ', '-'), '_', $search_query);
+
             // Construct query arguments
             $args = array(
                 'post_type' => 'open-position',
@@ -58,7 +61,12 @@ Template Name: Career
                         'key' => 'job_type',
                         'value' => $search_query,
                         'compare' => 'LIKE'
-                    )
+                    ),
+                    array(
+                        'key' => 'job_type',
+                        'value' => $normalized_search_query,
+                        'compare' => 'LIKE'
+                    ),
                 )
             );
 
@@ -134,4 +142,3 @@ Template Name: Career
 </body>
 
 <?php get_footer(); ?>
-
