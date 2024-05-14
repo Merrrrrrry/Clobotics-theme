@@ -6,6 +6,9 @@ Template Name: About us
 
 <?php get_header(); ?>
 
+<link rel="stylesheet" href="/js/plug-ins/OwlCarousel2/owl.carousel.min.css">
+<link rel="stylesheet" href="/js/plug-ins/OwlCarousel2/owl.theme.default.min.css">
+
 <main>
 
     <?php while(have_posts()): the_post(); ?>
@@ -80,7 +83,7 @@ Template Name: About us
 <!-- loop function  (meet our team) -->
 <!--  <div class="loops_main_content_and_image" > -->
 
-    <div class="meet-our-team_main_content">
+    <div class="meet-our-team_main_content clobotics-carousel">
         <?php $loop = new WP_Query( array( 'post_type' => 'Employee', 'posts_per_page' => -1 ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
@@ -165,5 +168,14 @@ Template Name: About us
     <?php endwhile; ?>
 
 </main>
+
+<script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="/js/plug-ins/OwlCarousel2/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $(".clobotics-carousel").owlCarousel();
+    });
+</script>
 
 <?php get_footer(); ?>
