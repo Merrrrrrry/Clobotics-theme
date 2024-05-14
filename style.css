@@ -644,6 +644,14 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   display: flex;
 }
 
+
+.sectionVideo {
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
 .section-one,
 .section-two,
 .section-three,
@@ -861,18 +869,11 @@ img.footer-logo {
   display: inline-block;
 }
 
-.footer-menu a:hover {
-  color: #ffcc00;
-}
 
 .footer-contact-link {
   color: #fff;
   text-decoration: none;
   display: inline-block;
-}
-
-.footer-contact-link:hover {
-  color: #ffcc00;
 }
 
 .fa-arrow-right {
