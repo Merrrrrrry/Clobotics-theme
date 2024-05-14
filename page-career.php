@@ -36,27 +36,84 @@ Template Name: Career
             <div style="height: 10px;"></div>
 
             <?php
-            if (have_posts()) : ?>
-                <ul class="position-list">
-                    <?php while (have_posts()) : the_post(); ?>
-                        <li class="position-item">
-                            <h3 class="job-title"><?php the_field('job_title'); ?></h3>
-                            <p class="job-subtitle">
-                                <?php
-                                $job_location = get_field('job_location');
-                                $job_type = get_field('job_type');
-                                echo $job_location . ' <span class="job-type">' . $job_type . '</span>';
-                                ?>
-                                <a href="<?php the_permalink(); ?>" class="btn">Learn more</a>
-                            </p>
-                        </li>
-                    <?php endwhile; ?>
-                </ul>
-                <?php
-                wp_reset_postdata();
-            else : ?>
-                <p class="job-subtitle">No open positions found for "<?php echo get_search_query(); ?>"</p>
-            <?php endif; ?>
+            // Check if this is a search
+            if (isset($_GET['s']) && !empty($_GET['s'])) {
+                $search_query = sanitize_text_field($_GET['s']);
+                $args = array(
+                    'post_type' => 'open-position',
+                    'posts_per_page' => -1,
+                    's' => $search_query,
+                    'meta_query' => array(
+                        'relation' => 'OR',
+                        array(
+                            'key' => 'job_title',
+                            'value' => $search_query,
+                            'compare' => 'LIKE'
+                        ),
+                        array(
+                            'key' => 'job_location',
+                            'value' => $search_query,
+                            'compare' => 'LIKE'
+                        ),
+                        array(
+                            'key' => 'job_type',
+                            'value' => $search_query,
+                            'compare' => 'LIKE'
+                        )
+                    )
+                );
+                $related_positions = new WP_Query($args);
+
+                if ($related_positions->have_posts()) : ?>
+                    <ul class="position-list">
+                        <?php while ($related_positions->have_posts()) : $related_positions->the_post(); ?>
+                            <li class="position-item">
+                                <h3 class="job-title"><?php the_field('job_title'); ?></h3>
+                                <p class="job-subtitle">
+                                    <?php
+                                    $job_location = get_field('job_location');
+                                    $job_type = get_field('job_type');
+                                    echo esc_html($job_location) . ' <span class="job-type">' . esc_html($job_type) . '</span>';
+                                    ?>
+                                    <a href="<?php the_permalink(); ?>" class="btn">Learn more</a>
+                                </p>
+                            </li>
+                        <?php endwhile; ?>
+                    </ul>
+                    <?php wp_reset_postdata();
+                else : ?>
+                    <p class="job-subtitle">No open positions found for "<?php echo esc_html($search_query); ?>"</p>
+                <?php endif; 
+            } else {
+                // If not a search, display all open positions
+                $args = array(
+                    'post_type' => 'open-position',
+                    'posts_per_page' => -1
+                );
+                $all_positions = new WP_Query($args);
+
+                if ($all_positions->have_posts()) : ?>
+                    <ul class="position-list">
+                        <?php while ($all_positions->have_posts()) : $all_positions->the_post(); ?>
+                            <li class="position-item">
+                                <h3 class="job-title"><?php the_field('job_title'); ?></h3>
+                                <p class="job-subtitle">
+                                    <?php
+                                    $job_location = get_field('job_location');
+                                    $job_type = get_field('job_type');
+                                    echo esc_html($job_location) . ' <span class="job-type">' . esc_html($job_type) . '</span>';
+                                    ?>
+                                    <a href="<?php the_permalink(); ?>" class="btn">Learn more</a>
+                                </p>
+                            </li>
+                        <?php endwhile; ?>
+                    </ul>
+                    <?php wp_reset_postdata();
+                else : ?>
+                    <p class="job-subtitle">No open positions available at the moment.</p>
+                <?php endif;
+            }
+            ?>
         </div>
 
         <!-- Gap between sections -->
@@ -82,19 +139,19 @@ Template Name: Career
         <!-- United Numbers Career section -->
         <div class="numbers-row">
             <div class="number-container">
-                <h4 class="number"><?php echo $team; ?></h4>
+                <h4 class="number"><?php echo esc_html($team); ?></h4>
                 <h4 class="text">Team</h4>
             </div>
             <div class="number-container">
-                <h4 class="number"><?php echo $team_members; ?></h4>
+                <h4 class="number"><?php echo esc_html($team_members); ?></h4>
                 <h4 class="text">Team Members</h4>
             </div>
             <div class="number-container">
-                <h4 class="number"><?php echo $countries; ?></h4>
+                <h4 class="number"><?php echo esc_html($countries); ?></h4>
                 <h4 class="text">Countries</h4>
             </div>
             <div class="number-container">
-                <h4 class="number"><?php echo $cities; ?></h4>
+                <h4 class="number"><?php echo esc_html($cities); ?></h4>
                 <h4 class="text">Cities</h4>
             </div>
         </div>
