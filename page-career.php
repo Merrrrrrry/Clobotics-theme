@@ -42,7 +42,6 @@ Template Name: Career
             $args = array(
                 'post_type' => 'open-position',
                 'posts_per_page' => -1,
-                's' => $search_query,
                 'meta_query' => array(
                     'relation' => 'OR',
                     array(
@@ -135,3 +134,4 @@ Template Name: Career
 </body>
 
 <?php get_footer(); ?>
+
