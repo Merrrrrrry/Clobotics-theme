@@ -170,11 +170,11 @@ Template Name: About us
     
 </main>
 
-<script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
 <!-- <script src="/js/plug-ins/OwlCarousel2/owl.carousel.min.js"></script> -->
 
 <?php 
-    // wp_enqueue_script("clobotics", "https://code.jquery.com/jquery-1.12.1.min.js");
+    wp_enqueue_script("clobotics", "https://code.jquery.com/jquery-1.12.1.min.js");
     wp_enqueue_script("clobotics-carousel", get_stylesheet_directory_uri()."/js/plug-ins/OwlCarousel2/owl.carousel.min.js");
 ?>
 
