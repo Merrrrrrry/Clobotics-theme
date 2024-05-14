@@ -174,6 +174,12 @@ Template Name: About us
                 <div class="company-history-text"><h6><?php echo wp_kses_post($text); ?></h6></div>
             </div>
         </div>
+    <?php
+        endwhile;
+    endif; 
+    wp_reset_postdata();
+    ?>
+</div>
 
 <!-- !!!!!!!!!!!!!!! -->
 
