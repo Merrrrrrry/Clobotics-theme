@@ -21,8 +21,9 @@ Template Name: Career
 
         <!-- Search bar -->
         <div class="search-bar">
-            <form method="get" action="">
-                <input type="text" name="search_query" id="search-input" placeholder="Search...">
+            <form method="get" action="<?php echo esc_url(home_url('/')); ?>">
+                <input type="text" name="s" id="search-input" placeholder="Search...">
+                <input type="hidden" name="post_type" value="open-position">
                 <button type="submit">Search</button>
             </form>
         </div>
@@ -35,39 +36,9 @@ Template Name: Career
             <div style="height: 10px;"></div>
 
             <?php
-            $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
-
-            $meta_query = array(
-                'relation' => 'OR',
-                array(
-                    'key' => 'job_title',
-                    'value' => $search_query,
-                    'compare' => 'LIKE'
-                ),
-                array(
-                    'key' => 'job_location',
-                    'value' => $search_query,
-                    'compare' => 'LIKE'
-                ),
-                array(
-                    'key' => 'job_type',
-                    'value' => $search_query,
-                    'compare' => 'LIKE'
-                )
-            );
-
-            $args = array(
-                'post_type' => 'open-position',
-                'posts_per_page' => -1,
-                's' => $search_query,
-                'meta_query' => $meta_query
-            );
-
-            $related_positions = new WP_Query($args);
-
-            if ($related_positions->have_posts()) : ?>
+            if (have_posts()) : ?>
                 <ul class="position-list">
-                    <?php while ($related_positions->have_posts()) : $related_positions->the_post(); ?>
+                    <?php while (have_posts()) : the_post(); ?>
                         <li class="position-item">
                             <h3 class="job-title"><?php the_field('job_title'); ?></h3>
                             <p class="job-subtitle">
@@ -84,16 +55,12 @@ Template Name: Career
                 <?php
                 wp_reset_postdata();
             else : ?>
-                <p class="job-subtitle">No open positions found for "<?php echo $search_query; ?>"</p>
+                <p class="job-subtitle">No open positions found for "<?php echo get_search_query(); ?>"</p>
             <?php endif; ?>
         </div>
 
-
-
         <!-- Gap between sections -->
         <div style="height: 100px;"></div>
-
-
 
         <!-- Image carousel -->
         <div class="carousel-container">
@@ -104,18 +71,15 @@ Template Name: Career
             <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-5.png" alt="career-img-5">
             <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-6.png" alt="career-img-6">
         </div>
-       
-       
-       
-        <!-- United Numbers Career section -->
-        
+
         <?php
         $team = get_field('team');
         $team_members = get_field('team_members');
         $countries = get_field('countries');
         $cities = get_field('cities');
         ?>
-        
+
+        <!-- United Numbers Career section -->
         <div class="numbers-row">
             <div class="number-container">
                 <h4 class="number"><?php echo $team; ?></h4>

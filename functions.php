@@ -38,3 +38,33 @@ add_action("init", "demo_register_menus");
 
 
 //echo '<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">';
+
+
+// Function for search bar to include custom fields
+function include_custom_fields_in_search($query) {
+    if (!is_admin() && $query->is_main_query() && $query->is_search()) {
+        $search_query = $query->get('s');
+
+        $meta_query = array(
+            'relation' => 'OR',
+            array(
+                'key' => 'job_title',
+                'value' => $search_query,
+                'compare' => 'LIKE'
+            ),
+            array(
+                'key' => 'job_location',
+                'value' => $search_query,
+                'compare' => 'LIKE'
+            ),
+            array(
+                'key' => 'job_type',
+                'value' => $search_query,
+                'compare' => 'LIKE'
+            )
+        );
+
+        $query->set('meta_query', $meta_query);
+    }
+}
+add_action('pre_get_posts', 'include_custom_fields_in_search');
