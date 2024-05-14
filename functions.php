@@ -29,6 +29,9 @@ function demo_register_menus() {
 }
 add_action("init", "demo_register_menus");
 
+
+
+
 // Function for search bar to include custom fields
 
 function include_custom_fields_in_search($query) {
@@ -70,60 +73,3 @@ add_action('pre_get_posts', 'include_custom_fields_in_search');
 
 
 
-
-
-
-// AJAX handler for searching positions
-
-add_action('wp_ajax_search_positions', 'search_positions');
-add_action('wp_ajax_nopriv_search_positions', 'search_positions');
-
-function search_positions() {
-    // Check if the search query is set
-    if (isset($_GET['search_query'])) {
-        $search_query = sanitize_text_field($_GET['search_query']);
-
-        // Construct the WP_Query arguments for searching positions
-        $args = array(
-            'post_type' => 'open-position',
-            'posts_per_page' => -1,
-            's' => $search_query,
-        );
-
-        // Perform the WP_Query
-        $related_positions = new WP_Query($args);
-
-        // Output the search results
-        ob_start();
-        if ($related_positions->have_posts()) {
-            ?>
-            <ul class="position-list">
-                <?php while ($related_positions->have_posts()) : $related_positions->the_post(); ?>
-                    <li class="position-item">
-                        <h3 class="job-title"><?php the_field('job_title'); ?></h3>
-                        <p class="job-subtitle">
-                            <?php
-                            $job_location = get_field('job_location');
-                            $job_type = get_field('job_type');
-                            echo esc_html($job_location) . ' <span class="job-type">' . esc_html($job_type) . '</span>';
-                            ?>
-                            <a href="<?php the_permalink(); ?>" class="btn">Learn more</a>
-                        </p>
-                    </li>
-                <?php endwhile; ?>
-            </ul>
-            <?php
-        } else {
-            echo '<p class="job-subtitle">No open positions found for "' . esc_html($search_query) . '"</p>';
-        }
-        wp_reset_postdata();
-        $output = ob_get_clean();
-
-        // Send the search results as JSON response
-        wp_send_json_success($output);
-    } else {
-        // If search query is not set, send error response
-        wp_send_json_error('Search query is missing.');
-    }
-    exit;
-}
