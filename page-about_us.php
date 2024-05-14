@@ -19,30 +19,24 @@ Template Name: About us
 
 
 
-<!-- Hero Section WITHOUT navbar -->
-
+<!-- Hero section -->
 <div class="hero-section">
-        <!-- <div class="navbar">
-            <a class="home" href="<  ?php echo get_permalink(get_page_by_path('home')) ?>" style="order: -1;">Home</a>
-            <a href="<  ?php echo get_permalink(get_page_by_path('contact')) ?>">Contacts</a>
-            <a href="<  ?php echo get_permalink(get_page_by_path('faq')) ?>">FAQ</a>
-            <a href="<  ?php echo get_permalink(get_page_by_path('services')) ?>">Services</a>
-        </div> -->
-
-
-<!-- Hero Video (referenced from busters world) -->
-<div class="hero-section-background">
-    <video autoplay muted loop class="video-background"> 
-        <source src="<?php echo get_template_directory_uri(); ?>/video/video-top.mp4" type="video/mp4">
-    </video>
-
-</div>
+    <div class="hero-section-background">
+        <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_about_us_page_1.jpg" alt="Hero_about_us_page">
+    </div>
 
     <div class="hero-section-content">
         <h1 class="title hero-title"> Meet Clobotics - vision technology company with offices all around the world </h1>
         <p class="hero-slogan"> </p>
     </div>
 </div>
+
+
+<!-- Hero Video (referenced from busters world) -->
+
+    <video autoplay muted loop class="video-background"> 
+        <source src="<?php echo get_template_directory_uri(); ?>/video/video-top.mp4" type="video/mp4">
+    </video>
 
 
 
@@ -86,7 +80,7 @@ Template Name: About us
 <!-- loop function  (meet our team) -->
 <!--  <div class="loops_main_content_and_image" > -->
 
-    <div class="meet-our-team_main_content clobotics-carousel">
+    <div class="meet-our-team_main_content owl-carousel clobotics-carousel">
         <?php $loop = new WP_Query( array( 'post_type' => 'Employee', 'posts_per_page' => -1 ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
@@ -196,6 +190,32 @@ Template Name: About us
 
 
 <!-- News Articles linking  Section -->
+
+
+
+<!-- <section class="we_operate_globally">
+    <h2 class="title"><?php the_field('article_title_we_operate_globally'); ?></h2>
+
+    <div class="we_operate_globally_container flex"> 
+
+        <div class="half-size" id="text_container">
+            <p class="text"><?php the_field('article_text_we_operate_globally'); ?></p> 
+        </div>
+
+        <div  class="half-size" id="buttons_switcher_container">
+            <ul class="inline img_selector">
+                <li onclick=show_our(this) class="selected">Our offices</li>
+                <li onclick=show_our(this)>Our partners</li>
+                <li onclick=show_our(this)>Our work</li>
+            </ul>
+
+                <img class="we_operate_globally-img" id="image_of_our_offices" src="<?php $image = get_field('image_of_our_offices_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our offices (We operate globally section)" /> 
+                <img class="we_operate_globally-img hidden" id="image_of_our_partners" src="<?php $image = get_field('image_of_our_partners_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our partners (We operate globally section)" /> 
+                <img class="we_operate_globally-img hidden" id="image_of_our_work" src="<?php $image = get_field('image_of_our_work_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our work (We operate globally section)" /> 
+        </div>
+    </div> -->
+
+
 
 <div class="company_history">
     <h7 class="title">Discover Clobotics with our articles!</h7>
