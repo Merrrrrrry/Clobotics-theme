@@ -818,6 +818,14 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 
 /*  ---------------- FOOTER -------------------- */
+
+.footer-logo img {
+  max-width: 100px; 
+  max-height: 50px; 
+}
+
+
+
 .footer {
   background-color: #222222;
   color: #fff;
