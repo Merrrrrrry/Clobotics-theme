@@ -5,9 +5,10 @@ Template Name: About us
 ?>
 
 <?php get_header(); ?>
-
-<link rel="stylesheet" href="/js/plug-ins/OwlCarousel2/owl.carousel.min.css">
-<link rel="stylesheet" href="/js/plug-ins/OwlCarousel2/owl.theme.default.min.css">
+<?php 
+    wp_enqueue_style("clobotics-carousel-style", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.carousel.min.css");
+    wp_enqueue_style("clobotics-carousel-style", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.theme.default.min.css");
+?>
 
 <main>
 
@@ -166,11 +167,16 @@ Template Name: About us
 
 </body>
     <?php endwhile; ?>
-
+    
 </main>
 
 <script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="/js/plug-ins/OwlCarousel2/owl.carousel.min.js"></script>
+<!-- <script src="/js/plug-ins/OwlCarousel2/owl.carousel.min.js"></script> -->
+
+<?php 
+    // wp_enqueue_script("clobotics", "https://code.jquery.com/jquery-1.12.1.min.js");
+    wp_enqueue_script("clobotics-carousel", get_stylesheet_directory_uri()."/js/plug-ins/OwlCarousel2/owl.carousel.min.js");
+?>
 
 <script>
     $(document).ready(function() {
