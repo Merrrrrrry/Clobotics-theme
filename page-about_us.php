@@ -178,10 +178,4 @@ Template Name: About us
     wp_enqueue_script("clobotics-carousel", get_stylesheet_directory_uri()."/js/plug-ins/OwlCarousel2/owl.carousel.min.js");
 ?>
 
-<script>
-    $(document).ready(function() {
-        $(".clobotics-carousel").owlCarousel();
-    });
-</script>
-
 <?php get_footer(); ?>
