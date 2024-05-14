@@ -277,7 +277,6 @@ h4.text {
   z-index: 1; 
 }
 
-
 .job-info {
   display: flex;
   justify-content: space-between;
@@ -329,7 +328,6 @@ h4.text {
     margin-bottom: 20px;
   }
 }
-
 
 
 /* <--- Buttons and links styles --->*/
