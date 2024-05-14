@@ -134,8 +134,6 @@ Template Name: About us
 
 
 <!-- Company History Timeline Section -->
-
-
 <h6 class="title">Company History</h6>
 
 <div class="company-history-container">
@@ -143,17 +141,17 @@ Template Name: About us
     $args = array(
         'post_type' => 'company_history',
         'posts_per_page' => -1,
-        'meta_key' => 'year',
+        'meta_key' => 'year_history',
         'orderby' => 'meta_value_num',
         'order' => 'ASC'
     );
     $company_history_query = new WP_Query($args);
     if ($company_history_query->have_posts()) :
         while ($company_history_query->have_posts()) : $company_history_query->the_post();
-            $month = get_field('month');
-            $year = get_field('year');
-            $logo = get_field('logo');
-            $text = get_field('text');
+            $month = get_field('month_history');
+            $year = get_field('year_history');
+            $logo = get_field('logo_history');
+            $text = get_field('text_history');
     ?>
         <div class="company-history-item">
             <div class="company-history-left">
@@ -176,12 +174,6 @@ Template Name: About us
                 <div class="company-history-text"><h6><?php echo wp_kses_post($text); ?></h6></div>
             </div>
         </div>
-    <?php
-        endwhile;
-    endif;
-    wp_reset_postdata();
-    ?>
-</div>
 
 <!-- !!!!!!!!!!!!!!! -->
 
