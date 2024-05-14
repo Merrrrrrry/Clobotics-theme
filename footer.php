@@ -5,8 +5,8 @@
     <div class="footer-column">
         <h2 class="footer-title">Company</h2>
         <ul class="footer-menu">
-            <li><a href="<?php echo get_permalink( 'about-us' ); ?>">About us</a></li>
-            <li><a href="<?php echo get_permalink( 'career' ); ?>">Career</a></li>
+            <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>">About us</a></li>
+            <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('career'))); ?>">Career</a></li>
             <li><a href="<?php echo get_permalink( 'articles' ); ?>">Articles</a></li>
             <li><a href="media">Media</a></li>
         </ul>
