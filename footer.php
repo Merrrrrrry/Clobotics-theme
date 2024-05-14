@@ -5,16 +5,16 @@
     <div class="footer-column">
         <h2 class="footer-title">Company</h2>
         <ul class="footer-menu">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Career</a></li>
-            <li><a href="#">Articles</a></li>
-            <li><a href="#">Media</a></li>
+            <li><a href="<?php echo get_permalink( 'about-us' ); ?>">About us</a></li>
+            <li><a href="<?php echo get_permalink( 'career' ); ?>">Career</a></li>
+            <li><a href="<?php echo get_permalink( 'articles' ); ?>">Articles</a></li>
+            <li><a href="<?php echo get_permalink( 'media' ); ?>">Media</a></li>
         </ul>
     </div>
     <div class="footer-column">
         <h2 class="footer-title">Services</h2>
         <ul class="footer-menu">
-            <li><a href="wind-services-page">Wind</a></li>
+            <li><a href="wind-services">Wind</a></li>
             <li><a href="retail-services-page">Retail</a></li>
         </ul>
     </div>
