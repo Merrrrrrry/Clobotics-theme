@@ -7,7 +7,7 @@ Template Name: About us
 <?php get_header(); ?>
 <?php 
     wp_enqueue_style("clobotics-carousel-style", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.carousel.min.css");
-    wp_enqueue_style("clobotics-carousel-style", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.theme.default.min.css");
+    wp_enqueue_style("clobotics-carousel-style-theme", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.theme.default.min.css");
 ?>
 <!-- <link rel="stylesheet" href="/clobotics/wp-content/themes/Clobotics-theme/js/plug-ins/OwlCarousel2/owl.carousel.min.css"> -->
 <!-- <link rel="stylesheet" href="/clobotics/wp-content/themes/Clobotics-theme/js/plug-ins/OwlCarousel2/owl.theme.default.min.css"> -->
