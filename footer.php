@@ -7,33 +7,39 @@
         <ul class="footer-menu">
             <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>">About us</a></li>
             <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('career'))); ?>">Career</a></li>
-            <li><a href="<?php echo get_permalink( 'articles' ); ?>">Articles</a></li>
-            <li><a href="media">Media</a></li>
+            <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('articles'))); ?>">Articles</a></li>
+            <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('media'))); ?>">Media</a></li>
         </ul>
     </div>
     <div class="footer-column">
         <h2 class="footer-title">Services</h2>
         <ul class="footer-menu">
-            <li><a href="wind-services">Wind</a></li>
-            <li><a href="retail-services-page">Retail</a></li>
+            <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('wind-services'))); ?>">Wind</a></li>
+            <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('retail-services'))); ?>">Retail</a></li>
         </ul>
     </div>
     <div class="footer-column">
         <h2 class="footer-title">Get in touch</h2>
-        <a href="contact-us" class="footer-contact-link">Contact us <i class="arrow_right_alt"></i></a>
+        <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="footer-contact-link">Contact us <i class="arrow_right_alt"></i></a>
     </div>
     
     <div class="copyright">
-        © 2024 CLOBOTICS ALL RIGHTS RESERVED - <a href="privacy-cookie-policy">PRIVACY & COOKIE POLICY</a>
+        © 2024 CLOBOTICS ALL RIGHTS RESERVED - <a href="<?php echo esc_url(get_permalink(get_page_by_path('privacy-&-cookie-policy'))); ?>">PRIVACY & COOKIE POLICY</a>
     </div>
     
     <div class="social-icons">
-        <img src=".png" alt="LinkedIn">
-        <span>Wind</span>
-        <img src=".png" alt="LinkedIn">
-        <span>Retail</span>
-        <img src="n.png" alt="Vimeo">
-        <span>Vimeo</span>
+        <a href="https://www.linkedin.com/company/cloboticswindservices/mycompany/verification/">
+            <img src=".....png" alt="LinkedIn">
+            <span>Wind</span>
+        </a>
+        <a href="https://www.linkedin.com/company/clobotics/">
+            <img src=".....png" alt="LinkedIn">
+            <span>Retail</span>
+        </a>
+        <a href="https://vimeo.com/681845431">
+            <img src="......png" alt="Vimeo">
+            <span>Vimeo</span>
+        </a>
     </div>
 </footer>
 
