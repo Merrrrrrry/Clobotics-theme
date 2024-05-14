@@ -36,7 +36,7 @@ Template Name: Contact
   <h2 class="section-title">Contact Your Local Office</h2>
   <div class="section-content">
         <div class="section-one">
-        <video id="sectionVideo" controls loop preload="metadata" width="100" height="100">
+        <video id="sectionVideo" controls loop preload="metadata" width="320" height="240">
         <source src="<?php echo get_template_directory_uri(); ?>/media/Earth Globe 2.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
