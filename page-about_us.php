@@ -135,6 +135,9 @@ Template Name: About us
 
 <!-- Company History Timeline Section -->
 
+
+<h6 class="title">Company History</h6>
+
 <div class="company-history-container">
     <?php
     $args = array(
