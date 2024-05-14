@@ -31,48 +31,72 @@ Template Name: Career
         <div class="open-positions">
             <h2 class="title">Open Positions</h2>
 
-        <!-- Gap -->
+            <!-- Gap -->
             <div style="height: 10px;"></div>
 
-        <?php
+            <?php
             $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
+
+            $meta_query = array(
+                'relation' => 'OR',
+                array(
+                    'key' => 'job_title',
+                    'value' => $search_query,
+                    'compare' => 'LIKE'
+                ),
+                array(
+                    'key' => 'job_location',
+                    'value' => $search_query,
+                    'compare' => 'LIKE'
+                ),
+                array(
+                    'key' => 'job_type',
+                    'value' => $search_query,
+                    'compare' => 'LIKE'
+                )
+            );
+
             $args = array(
-            'post_type' => 'open-position',
-            'posts_per_page' => -1,
-            's' => $search_query,
-                 );
+                'post_type' => 'open-position',
+                'posts_per_page' => -1,
+                's' => $search_query,
+                'meta_query' => $meta_query
+            );
+
             $related_positions = new WP_Query($args);
 
-    if ($related_positions->have_posts()) : ?>
-        <ul class="position-list">
-            <?php while ($related_positions->have_posts()) : $related_positions->the_post(); ?>
-                <li class="position-item">
-                    <h3 class="job-title"><?php the_field('job_title'); ?></h3>
-                    <p class="job-subtitle">
-                        <?php
-                            $job_location = get_field('job_location');
-                            $job_type = get_field('job_type');
-                             echo $job_location . ' <span class="job-type">' . $job_type . '</span>';
-                         ?>
-                            <a href="<?php the_permalink(); ?>" class="btn">Learn more</a>
-                    </p>
+            if ($related_positions->have_posts()) : ?>
+                <ul class="position-list">
+                    <?php while ($related_positions->have_posts()) : $related_positions->the_post(); ?>
+                        <li class="position-item">
+                            <h3 class="job-title"><?php the_field('job_title'); ?></h3>
+                            <p class="job-subtitle">
+                                <?php
+                                $job_location = get_field('job_location');
+                                $job_type = get_field('job_type');
+                                echo $job_location . ' <span class="job-type">' . $job_type . '</span>';
+                                ?>
+                                <a href="<?php the_permalink(); ?>" class="btn">Learn more</a>
+                            </p>
+                        </li>
+                    <?php endwhile; ?>
+                </ul>
+                <?php
+                wp_reset_postdata();
+            else : ?>
+                <p class="job-subtitle">No open positions found for "<?php echo $search_query; ?>"</p>
+            <?php endif; ?>
+        </div>
 
-                </li>
-            <?php endwhile; ?>
-        </ul>
-        <?php
-        wp_reset_postdata();
-    else : ?>
-        <p class="job-subtitle">No open positions found for "<?php echo $search_query; ?>"</p>
-    <?php endif; ?>
-</div>
 
 
         <!-- Gap between sections -->
         <div style="height: 100px;"></div>
 
-    <!-- Image carousel -->
-    <div class="carousel-container">
+
+
+        <!-- Image carousel -->
+        <div class="carousel-container">
             <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-1.png" alt="career-img-1">
             <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-2.png" alt="career-img-2">
             <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-3.png" alt="career-img-3">
@@ -80,40 +104,39 @@ Template Name: Career
             <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-5.png" alt="career-img-5">
             <img src="<?php echo get_template_directory_uri(); ?>/media/career-img-6.png" alt="career-img-6">
         </div>
-
-
-
-             <?php
-                $team = get_field('team');
-                $team_members = get_field('team_members');
-                $countries = get_field('countries');
-                $cities = get_field('cities');
-            ?>
-
-                    <!-- United Numbers Career section -->
-            <div class="numbers-row">
-                <div class="number-container">
-                    <h4 class="number"><?php echo $team; ?></h4>
-                    <h4 class="text">Team</h4>
-                </div>
+       
+       
+       
+        <!-- United Numbers Career section -->
+        
+        <?php
+        $team = get_field('team');
+        $team_members = get_field('team_members');
+        $countries = get_field('countries');
+        $cities = get_field('cities');
+        ?>
+        
+        <div class="numbers-row">
             <div class="number-container">
-                    <h4 class="number"><?php echo $team_members; ?></h4>
-                    <h4 class="text">Team Members</h4>
-                </div>
-            <div class="number-container">
-                    <h4 class="number"><?php echo $countries; ?></h4>
-                    <h4 class="text">Countries</h4>
+                <h4 class="number"><?php echo $team; ?></h4>
+                <h4 class="text">Team</h4>
             </div>
-                <div class="number-container">
-                    <h4 class="number"><?php echo $cities; ?></h4>
-                    <h4 class="text">Cities</h4>
+            <div class="number-container">
+                <h4 class="number"><?php echo $team_members; ?></h4>
+                <h4 class="text">Team Members</h4>
+            </div>
+            <div class="number-container">
+                <h4 class="number"><?php echo $countries; ?></h4>
+                <h4 class="text">Countries</h4>
+            </div>
+            <div class="number-container">
+                <h4 class="number"><?php echo $cities; ?></h4>
+                <h4 class="text">Cities</h4>
             </div>
         </div>
 
-
-   <!-- Gap between sections -->
-   <div style="height: 100px;"></div>
-
+        <!-- Gap between sections -->
+        <div style="height: 100px;"></div>
 
     </main>
 </body>
