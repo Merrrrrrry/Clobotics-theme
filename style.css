@@ -271,7 +271,7 @@ h4.text {
 
 #apply-button {
   position: absolute;
-  bottom: -178px; 
+  bottom: -179px; 
   left: 50%;
   transform: translateX(-50%);
   z-index: 1; 
