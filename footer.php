@@ -1,4 +1,4 @@
-<footer class="site-footer">
+<footer class="footer">
     <div class="footer-column">
         <img class="footer-logo" src="/media/11.png" alt="Logo">
     </div>
