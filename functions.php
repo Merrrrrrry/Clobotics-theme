@@ -34,10 +34,7 @@ add_action("init", "demo_register_menus");
 function include_custom_fields_in_search($query) {
     if (!is_admin() && $query->is_main_query() && $query->is_search()) {
         $search_query = $query->get('s');
-
-        // Normalize search query to handle spaces and hyphens
-        $normalized_search_query = str_replace(array(' ', '-'), '_', $search_query);
-
+        
         $meta_query = array(
             'relation' => 'OR',
             array(
@@ -54,15 +51,11 @@ function include_custom_fields_in_search($query) {
                 'key' => 'job_type',
                 'value' => $search_query,
                 'compare' => 'LIKE'
-            ),
-            array(
-                'key' => 'job_type',
-                'value' => $normalized_search_query,
-                'compare' => 'LIKE'
-            ),
+            )
         );
 
         $query->set('meta_query', $meta_query);
     }
 }
 add_action('pre_get_posts', 'include_custom_fields_in_search');
+
