@@ -28,20 +28,20 @@ Template Name: Career
         </div>
 
         <!-- Open Positions section/Job list -->
-<div class="open-positions">
-    <h2 class="title">Open Positions</h2>
+        <div class="open-positions">
+            <h2 class="title">Open Positions</h2>
 
-    <!-- Gap -->
-    <div style="height: 10px;"></div>
+        <!-- Gap -->
+            <div style="height: 10px;"></div>
 
-    <?php
-    $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
-    $args = array(
-        'post_type' => 'open-position',
-        'posts_per_page' => -1,
-        's' => $search_query,
-    );
-    $related_positions = new WP_Query($args);
+        <?php
+            $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
+            $args = array(
+            'post_type' => 'open-position',
+            'posts_per_page' => -1,
+            's' => $search_query,
+                 );
+            $related_positions = new WP_Query($args);
 
     if ($related_positions->have_posts()) : ?>
         <ul class="position-list">
@@ -109,8 +109,6 @@ Template Name: Career
                     <h4 class="text">Cities</h4>
             </div>
         </div>
-
-
 
 
    <!-- Gap between sections -->

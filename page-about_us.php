@@ -148,10 +148,10 @@ Template Name: About us
     $company_history_query = new WP_Query($args);
     if ($company_history_query->have_posts()) :
         while ($company_history_query->have_posts()) : $company_history_query->the_post();
-            $month = get_field('month_history');
-            $year = get_field('year_history');
-            $logo = get_field('logo_history');
-            $text = get_field('text_history');
+            $month_history = get_field('month_history');
+            $year_history = get_field('year_history');
+            $logo_history = get_field('logo_history');
+            $text_history = get_field('text_history');
     ?>
         <div class="company-history-item">
             <div class="company-history-left">
