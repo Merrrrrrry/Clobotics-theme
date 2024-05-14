@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="footer-column">
-        <img class="footer-logo" src="/media/clobotics-logo.png" alt="Logo">
+        <img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/media/clobotics-logo.png" alt="Clobotics Logo">
     </div>
     <div class="footer-column">
         <h2 class="footer-title">Company</h2>
