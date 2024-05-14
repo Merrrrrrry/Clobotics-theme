@@ -42,6 +42,31 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Search functionality using AJAX
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Event listener to the search form
+    document.getElementById('search-form').addEventListener('submit', function(event) {
+        // Get the search query
+        var searchQuery = document.getElementById('search-input').value;
+
+        // Fetch search results using AJAX
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '<?php echo esc_url(get_permalink()); ?>?search_query=' + encodeURIComponent(searchQuery), true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Replace the content with the search results
+                document.getElementById('search-results').innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send();
+
+        // Prevent the default form submission behavior
+        event.preventDefault();
+    });
+});
+
+
 
 // Function to show one of three pictures - we work globally section on Wind services page
 

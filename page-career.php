@@ -27,31 +27,6 @@ Template Name: Career
     </form>
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    // Add event listener to the search form
-    document.getElementById('search-form').addEventListener('submit', function(event) {
-        // Prevent the default form submission behavior
-        event.preventDefault();
-
-        // Get the search query
-        var searchQuery = document.getElementById('search-input').value;
-
-        // Fetch search results using AJAX
-        var xhr = new XMLHttpRequest();
-        xhr.open('GET', '<?php echo esc_url(get_permalink()); ?>?search_query=' + encodeURIComponent(searchQuery), true);
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                // Replace the content with the search results
-                document.getElementById('search-results').innerHTML = xhr.responseText;
-            }
-        };
-        xhr.send();
-    });
-});
-</script>
-
-
         <!-- Open Positions section/Job list -->
         <div class="open-positions">
             <h2 class="title">Open Positions</h2>
