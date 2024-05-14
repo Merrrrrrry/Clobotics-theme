@@ -29,15 +29,15 @@
     
     <div class="social-icons">
         <a href="https://www.linkedin.com/company/cloboticswindservices/">
-            <img src=".....png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png" alt="">
             <span>Wind</span>
         </a>
         <a href="https://www.linkedin.com/company/clobotics/">
-            <img src=".....png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png" alt="">
             <span>Retail</span>
         </a>
         <a href="https://vimeo.com/681845431">
-            <img src="......png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/media/vimeo-logo.png" alt="">
             <span>Vimeo</span>
         </a>
     </div>
