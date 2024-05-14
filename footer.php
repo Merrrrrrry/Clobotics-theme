@@ -1,6 +1,6 @@
 <footer class="footer">
     <div class="footer-column">
-        <img class="footer-logo" src="/media/11.png" alt="Logo">
+        <img class="footer-logo" src="/media/clobotics-logo.png" alt="Logo">
     </div>
     <div class="footer-column">
         <h2 class="footer-title">Company</h2>
