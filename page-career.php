@@ -21,9 +21,8 @@ Template Name: Career
 
         <!-- Search bar -->
         <div class="search-bar">
-            <form method="get" action="<?php echo esc_url(home_url('/')); ?>">
-                <input type="text" name="s" id="search-input" placeholder="Search...">
-                <input type="hidden" name="post_type" value="open-position">
+            <form method="get" action="<?php echo esc_url(get_permalink()); ?>">
+                <input type="text" name="search_query" id="search-input" placeholder="Search...">
                 <button type="submit">Search</button>
             </form>
         </div>
@@ -37,39 +36,34 @@ Template Name: Career
 
             <?php
             // Check if there is a search query
-            if (isset($_GET['s']) && !empty($_GET['s'])) {
-                $search_query = sanitize_text_field($_GET['s']);
-                $args = array(
-                    'post_type' => 'open-position',
-                    'posts_per_page' => -1,
-                    's' => $search_query,
-                    'meta_query' => array(
-                        'relation' => 'OR',
-                        array(
-                            'key' => 'job_title',
-                            'value' => $search_query,
-                            'compare' => 'LIKE'
-                        ),
-                        array(
-                            'key' => 'job_location',
-                            'value' => $search_query,
-                            'compare' => 'LIKE'
-                        ),
-                        array(
-                            'key' => 'job_type',
-                            'value' => $search_query,
-                            'compare' => 'LIKE'
-                        )
-                    )
-                );
-            } else {
-                // If no search query, show all open positions
-                $args = array(
-                    'post_type' => 'open-position',
-                    'posts_per_page' => -1
-                );
-            }
+            $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
 
+            // Construct query arguments
+            $args = array(
+                'post_type' => 'open-position',
+                'posts_per_page' => -1,
+                's' => $search_query,
+                'meta_query' => array(
+                    'relation' => 'OR',
+                    array(
+                        'key' => 'job_title',
+                        'value' => $search_query,
+                        'compare' => 'LIKE'
+                    ),
+                    array(
+                        'key' => 'job_location',
+                        'value' => $search_query,
+                        'compare' => 'LIKE'
+                    ),
+                    array(
+                        'key' => 'job_type',
+                        'value' => $search_query,
+                        'compare' => 'LIKE'
+                    )
+                )
+            );
+
+            // Perform query
             $related_positions = new WP_Query($args);
 
             if ($related_positions->have_posts()) : ?>

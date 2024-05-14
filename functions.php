@@ -32,9 +32,9 @@ add_action("init", "demo_register_menus");
 // Function for search bar to include custom fields
 
 function include_custom_fields_in_search($query) {
-    if (!is_admin() && $query->is_main_query() && $query->is_search() && isset($_GET['post_type']) && $_GET['post_type'] === 'open-position') {
+    if (!is_admin() && $query->is_main_query() && $query->is_search()) {
         $search_query = $query->get('s');
-
+        
         $meta_query = array(
             'relation' => 'OR',
             array(
@@ -58,6 +58,4 @@ function include_custom_fields_in_search($query) {
     }
 }
 add_action('pre_get_posts', 'include_custom_fields_in_search');
-?>
-
 
