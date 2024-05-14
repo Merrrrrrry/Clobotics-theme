@@ -45,10 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
 // Search functionality using AJAX
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Event listener to the search form
+    // Add event listener to the search form
     document.getElementById('search-form').addEventListener('submit', function(event) {
+        // Prevent the default form submission behavior
+        event.preventDefault();
+
         // Get the search query
         var searchQuery = document.getElementById('search-input').value;
+        console.log('Search Query:', searchQuery); // Log the search query
 
         // Fetch search results using AJAX
         var xhr = new XMLHttpRequest();
@@ -60,11 +64,9 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         };
         xhr.send();
-
-        // Prevent the default form submission behavior
-        event.preventDefault();
     });
 });
+
 
 
 
