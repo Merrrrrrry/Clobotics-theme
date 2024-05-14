@@ -36,7 +36,7 @@ Template Name: Career
             <div style="height: 10px;"></div>
 
             <?php
-            // Check if this is a search
+            // Check if there is a search query
             if (isset($_GET['s']) && !empty($_GET['s'])) {
                 $search_query = sanitize_text_field($_GET['s']);
                 $args = array(
@@ -62,58 +62,36 @@ Template Name: Career
                         )
                     )
                 );
-                $related_positions = new WP_Query($args);
-
-                if ($related_positions->have_posts()) : ?>
-                    <ul class="position-list">
-                        <?php while ($related_positions->have_posts()) : $related_positions->the_post(); ?>
-                            <li class="position-item">
-                                <h3 class="job-title"><?php the_field('job_title'); ?></h3>
-                                <p class="job-subtitle">
-                                    <?php
-                                    $job_location = get_field('job_location');
-                                    $job_type = get_field('job_type');
-                                    echo esc_html($job_location) . ' <span class="job-type">' . esc_html($job_type) . '</span>';
-                                    ?>
-                                    <a href="<?php the_permalink(); ?>" class="btn">Learn more</a>
-                                </p>
-                            </li>
-                        <?php endwhile; ?>
-                    </ul>
-                    <?php wp_reset_postdata();
-                else : ?>
-                    <p class="job-subtitle">No open positions found for "<?php echo esc_html($search_query); ?>"</p>
-                <?php endif; 
             } else {
-                // If not a search, display all open positions
+                // If no search query, show all open positions
                 $args = array(
                     'post_type' => 'open-position',
                     'posts_per_page' => -1
                 );
-                $all_positions = new WP_Query($args);
-
-                if ($all_positions->have_posts()) : ?>
-                    <ul class="position-list">
-                        <?php while ($all_positions->have_posts()) : $all_positions->the_post(); ?>
-                            <li class="position-item">
-                                <h3 class="job-title"><?php the_field('job_title'); ?></h3>
-                                <p class="job-subtitle">
-                                    <?php
-                                    $job_location = get_field('job_location');
-                                    $job_type = get_field('job_type');
-                                    echo esc_html($job_location) . ' <span class="job-type">' . esc_html($job_type) . '</span>';
-                                    ?>
-                                    <a href="<?php the_permalink(); ?>" class="btn">Learn more</a>
-                                </p>
-                            </li>
-                        <?php endwhile; ?>
-                    </ul>
-                    <?php wp_reset_postdata();
-                else : ?>
-                    <p class="job-subtitle">No open positions available at the moment.</p>
-                <?php endif;
             }
-            ?>
+
+            $related_positions = new WP_Query($args);
+
+            if ($related_positions->have_posts()) : ?>
+                <ul class="position-list">
+                    <?php while ($related_positions->have_posts()) : $related_positions->the_post(); ?>
+                        <li class="position-item">
+                            <h3 class="job-title"><?php the_field('job_title'); ?></h3>
+                            <p class="job-subtitle">
+                                <?php
+                                $job_location = get_field('job_location');
+                                $job_type = get_field('job_type');
+                                echo esc_html($job_location) . ' <span class="job-type">' . esc_html($job_type) . '</span>';
+                                ?>
+                                <a href="<?php the_permalink(); ?>" class="btn">Learn more</a>
+                            </p>
+                        </li>
+                    <?php endwhile; ?>
+                </ul>
+                <?php wp_reset_postdata(); ?>
+            <?php else : ?>
+                <p class="job-subtitle">No open positions found for "<?php echo esc_html($search_query); ?>"</p>
+            <?php endif; ?>
         </div>
 
         <!-- Gap between sections -->
