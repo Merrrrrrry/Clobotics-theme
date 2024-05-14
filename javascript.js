@@ -42,7 +42,8 @@ function show_our(btn) {
 }
 
 function applyOwl() {
-    $(".clobotics-carousel").owlCarousel();
+    jQuery(".clobotics-carousel").owlCarousel();
 }
+
 // $(document).ready(function() {
 // });
