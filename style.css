@@ -829,7 +829,7 @@ img.footer-logo {
 .footer {
   background-color: #222222;
   color: #fff;
-  padding: 40px;
+  padding: 60px 120px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

@@ -19,7 +19,6 @@
         </ul>
     </div>
     <div class="footer-column">
-        <h2 class="footer-title">Get in touch</h2>
         <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="footer-contact-link">Contact us <i class="arrow_right_alt"></i></a>
     </div>
     
