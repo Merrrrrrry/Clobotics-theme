@@ -28,16 +28,16 @@
     </div>
     
     <div class="social-icons">
-        <a href="https://www.linkedin.com/company/cloboticswindservices/mycompany/verification/">
-            <img src=".....png" alt="LinkedIn">
+        <a href="https://www.linkedin.com/company/cloboticswindservices/">
+            <img src=".....png" alt="">
             <span>Wind</span>
         </a>
         <a href="https://www.linkedin.com/company/clobotics/">
-            <img src=".....png" alt="LinkedIn">
+            <img src=".....png" alt="">
             <span>Retail</span>
         </a>
         <a href="https://vimeo.com/681845431">
-            <img src="......png" alt="Vimeo">
+            <img src="......png" alt="">
             <span>Vimeo</span>
         </a>
     </div>
