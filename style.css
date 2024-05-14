@@ -282,11 +282,14 @@ h4.text {
   display: flex;
   justify-content: space-between;
   margin: 20px 40px; 
+  text-align: left; 
 }
 
 .info-item {
-  text-align: center;
   flex-basis: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
 }
 
 .info-label {
@@ -301,7 +304,6 @@ h4.text {
 
 .info-value {
   font-weight: bold;
-  text-align: left; 
 }
 
 .material-icons {
@@ -319,7 +321,6 @@ h4.text {
   -webkit-font-smoothing: antialiased;
   color: #05A3E4;
 }
-
 
 
 
