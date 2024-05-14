@@ -6,11 +6,11 @@ Template Name: About us
 
 <?php get_header(); ?>
 <?php 
-    // wp_enqueue_style("clobotics-carousel-style", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.carousel.min.css");
-    // wp_enqueue_style("clobotics-carousel-style", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.theme.default.min.css");
+    wp_enqueue_style("clobotics-carousel-style", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.carousel.min.css");
+    wp_enqueue_style("clobotics-carousel-style", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.theme.default.min.css");
 ?>
-<link rel="stylesheet" href="/clobotics/wp-content/themes/Clobotics-theme/js/plug-ins/OwlCarousel2/owl.carousel.min.css">
-<link rel="stylesheet" href="/clobotics/wp-content/themes/Clobotics-theme/js/plug-ins/OwlCarousel2/owl.theme.default.min.css">
+<!-- <link rel="stylesheet" href="/clobotics/wp-content/themes/Clobotics-theme/js/plug-ins/OwlCarousel2/owl.carousel.min.css"> -->
+<!-- <link rel="stylesheet" href="/clobotics/wp-content/themes/Clobotics-theme/js/plug-ins/OwlCarousel2/owl.theme.default.min.css"> -->
 
 <main>
 
@@ -172,12 +172,12 @@ Template Name: About us
     
 </main>
 
-<script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-<script src="/clobotics/wp-content/themes/Clobotics-theme/js/plug-ins/OwlCarousel2/owl.carousel.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
+<!-- <script src="/clobotics/wp-content/themes/Clobotics-theme/js/plug-ins/OwlCarousel2/owl.carousel.min.js"></script> -->
 
 <?php 
-    // wp_enqueue_script("jquery", "https://code.jquery.com/jquery-1.12.1.min.js");
-    // wp_enqueue_script("clobotics-carousel", get_stylesheet_directory_uri()."/js/plug-ins/OwlCarousel2/owl.carousel.min.js");
+    wp_enqueue_script("jquery", "https://code.jquery.com/jquery-1.12.1.min.js");
+    wp_enqueue_script("clobotics-carousel", get_stylesheet_directory_uri()."/js/plug-ins/OwlCarousel2/owl.carousel.min.js");
 ?>
 
 <?php get_footer(); ?>
