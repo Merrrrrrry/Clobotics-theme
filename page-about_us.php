@@ -134,60 +134,61 @@ Template Name: About us
 
 
 <!-- Company History Timeline Section -->
-
 <h6 class="title">Company History</h6>
 
 <div class="company-history-container">
     <?php
+    // Query the company history posts
     $args = array(
         'post_type' => 'company_history',
         'posts_per_page' => -1,
-        'meta_key' => 'year_history',
-        'orderby' => 'meta_value_num',
+        'orderby' => 'meta_value',
+        'meta_key' => 'year_history', // assuming year_history is a meta field
         'order' => 'ASC'
     );
     $company_history_query = new WP_Query($args);
+
     if ($company_history_query->have_posts()) :
         while ($company_history_query->have_posts()) : $company_history_query->the_post();
+
             // Retrieve custom fields
             $month_history = get_field('month_history');
             $year_history = get_field('year_history');
             $logo_history = get_field('logo_history');
             $text_history = get_field('text_history');
-            // Debugging output
-            echo '<pre>';
-            print_r($month_history);
-            print_r($year_history);
-            print_r($logo_history);
-            print_r($text_history);
-            echo '</pre>';
-    ?>
-        <div class="company-history-item">
-            <div class="company-history-left">
-                <div class="company-history-date">
-                    <h6 class="company-history-month"><?php echo esc_html($month_history); ?></h6>
-                    <h6 class="company-history-year"><?php echo esc_html($year_history); ?></h6>
+
+            ?>
+            <div class="company-history-item">
+                <div class="company-history-left">
+                    <div class="company-history-date">
+                        <h6 class="company-history-month"><?php echo esc_html($month_history); ?></h6>
+                        <h6 class="company-history-year"><?php echo esc_html($year_history); ?></h6>
+                    </div>
+                </div>
+                <div class="company-history-center">
+                    <?php if ($logo_history) : ?>
+                        <div class="company-history-logo">
+                            <img src="<?php echo esc_url($logo_history['url']); ?>" alt="<?php echo esc_attr($logo_history['alt']); ?>">
+                        </div>
+                    <?php else : ?>
+                        <div class="company-history-dot"></div> <!-- Use a bullet point if no logo -->
+                    <?php endif; ?>
+                    <div class="company-history-line"></div>
+                </div>
+                <div class="company-history-right">
+                    <div class="company-history-text">
+                        <h6><?php echo wp_kses_post($text_history); ?></h6>
+                    </div>
                 </div>
             </div>
-            <div class="company-history-center">
-                <?php if ($logo_history) : ?>
-                    <div class="company-history-logo">
-                        <img src="<?php echo esc_url($logo_history['url']); ?>" alt="<?php echo esc_attr($logo_history['alt']); ?>">
-                    </div>
-                <?php else : ?>
-                    <div class="company-history-dot"></div>
-                <?php endif; ?>
-                <div class="company-history-line"></div>
-            </div>
-            <div class="company-history-right">
-                <div class="company-history-text"><h6><?php echo wp_kses_post($text_history); ?></h6></div>
-            </div>
-        </div>
-    <?php
+        <?php
         endwhile;
-    endif; 
-    wp_reset_postdata();
-    ?>
+        wp_reset_postdata();
+    else :
+        // No posts found
+        ?>
+        <p>No company history found.</p>
+    <?php endif; ?>
 </div>
 
 <!-- !!!!!!!!!!!!!!! -->
