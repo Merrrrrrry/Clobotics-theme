@@ -9,7 +9,7 @@ function showInfo() {
 
 // Function to scroll to the contact form section
 function scrollToContactForm(event) {
-    event.preventDefault(); // Prevent default behavior of anchor tag
+    event.preventDefault(); 
     var contactFormSection = document.getElementById("contact-form-section");
     contactFormSection.scrollIntoView({ behavior: "smooth" });
 }
@@ -22,7 +22,26 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-// Image scroll on the Career page
+// Company History Timeline JS
+
+document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll(".company-history-item");
+
+    window.addEventListener("scroll", function() {
+        const triggerBottom = window.innerHeight / 5 * 4;
+
+        items.forEach(item => {
+            const itemTop = item.getBoundingClientRect().top;
+
+            if (itemTop < triggerBottom) {
+                item.classList.add("show");
+            } else {
+                item.classList.remove("show");
+            }
+        });
+    });
+});
+
 
 
 

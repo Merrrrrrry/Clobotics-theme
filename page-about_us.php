@@ -11,13 +11,13 @@ Template Name: About us
 ?>
 <!-- <link rel="stylesheet" href="/clobotics/wp-content/themes/Clobotics-theme/js/plug-ins/OwlCarousel2/owl.carousel.min.css"> -->
 <!-- <link rel="stylesheet" href="/clobotics/wp-content/themes/Clobotics-theme/js/plug-ins/OwlCarousel2/owl.theme.default.min.css"> -->
-
+<body>
 <main>
 
     <?php while(have_posts()): the_post(); ?>
         <?php the_content(); ?>
 
-<body>
+
 
 <!-- Hero Section WITHOUT navbar -->
 
@@ -133,11 +133,53 @@ Template Name: About us
 </div>
 
 
-<!-- Company history  Section (povered and coded by atother clobotics team) -->
+<!-- Company History Timeline Section -->
 
-<div class="company_history">
-    <h6 class="title">Company History</h6>
+<div class="company-history-container">
+    <?php
+    $args = array(
+        'post_type' => 'company_history',
+        'posts_per_page' => -1,
+        'meta_key' => 'year',
+        'orderby' => 'meta_value_num',
+        'order' => 'ASC'
+    );
+    $company_history_query = new WP_Query($args);
+    if ($company_history_query->have_posts()) :
+        while ($company_history_query->have_posts()) : $company_history_query->the_post();
+            $month = get_field('month');
+            $year = get_field('year');
+            $logo = get_field('logo');
+            $text = get_field('text');
+    ?>
+        <div class="company-history-item">
+            <div class="company-history-left">
+                <div class="company-history-date">
+                    <h6 class="company-history-month"><?php echo esc_html($month); ?></h6>
+                    <h6 class="company-history-year"><?php echo esc_html($year); ?></h6>
+                </div>
+            </div>
+            <div class="company-history-center">
+                <?php if ($logo) : ?>
+                    <div class="company-history-logo">
+                        <img src="<?php echo esc_url($logo['url']); ?>" alt="<?php echo esc_attr($logo['alt']); ?>">
+                    </div>
+                <?php else : ?>
+                    <div class="company-history-dot"></div>
+                <?php endif; ?>
+                <div class="company-history-line"></div>
+            </div>
+            <div class="company-history-right">
+                <div class="company-history-text"><h6><?php echo wp_kses_post($text); ?></h6></div>
+            </div>
+        </div>
+    <?php
+        endwhile;
+    endif;
+    wp_reset_postdata();
+    ?>
 </div>
+
 <!-- !!!!!!!!!!!!!!! -->
 
 
@@ -166,11 +208,11 @@ Template Name: About us
 
 </div>
 
-
+</main>
 </body>
     <?php endwhile; ?>
     
-</main>
+
 
 <!-- <script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
 <!-- <script src="/clobotics/wp-content/themes/Clobotics-theme/js/plug-ins/OwlCarousel2/owl.carousel.min.js"></script> -->
