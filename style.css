@@ -282,10 +282,6 @@ ul.position-list {
   border-radius: 20px; 
 }
 
-.search-button .material-icons {
-  font-size: 30px; 
-  color: white;
-}
 
 /* Filters */
 .filters {
@@ -312,9 +308,15 @@ ul.position-list {
   justify-content: center;
 }
 
-.filter-button .material-icons {
-  font-size: 30px; 
+.filter-button .search-button .material-icons {
+  font-size: 35px; 
   color: white;
+}
+
+/* Adjusting search bar width */
+#search-input {
+  width: calc(100% - 140px); /* Adjust the width as needed */
+  /* This calculation ensures that the input width is adjusted to match the filter bar width */
 }
 
 
