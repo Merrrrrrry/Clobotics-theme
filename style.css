@@ -494,7 +494,7 @@ h4.text {
     margin-top: 20px; 
   }
   
-  .download-buttons  {
+  .download-buttons .btn {
     color: #fff;
     padding: 8px 20px;
     border-radius: 20px;
