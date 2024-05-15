@@ -19,11 +19,13 @@ jQuery(document).ready(function($) {
             },
             success: function(response) {
                 $('#position-list').html(response);
+                $('html, body').animate({
+                    scrollTop: $("#position-list").offset().top - 20
+                }, 500); // Adjusted scrolling offset
             }
         });
     });
 });
 
 
-
-// This JavaScript code is used to perform a search on the server without reloading the page!!!
+// This file is so the page would stop reloading after pressing search button in the career page
