@@ -16,17 +16,20 @@ Template Name: Privacy & cookie policy
             <div class="hero-section-content">
                 <h1 class="hero-title">Privacy & Cookie Policy</h1>
             </div>
-            <!-- Download buttons -->
-            <div class="download-buttons">
-                <a href="<?php echo get_template_directory_uri(); ?>/media/download/Privacy_Policy.pdf" class="btn" download>
-                    <span class="material-icons">get_app</span>
-                    Download our Privacy Policy here
-                </a>
-                <a href="<?php echo get_template_directory_uri(); ?>/media/download/Cookie_Policy.pdf" class="btn" download>
-                    <span class="material-icons">get_app</span>
-                    Download our Cookie Policy here
-                </a>
-            </div>
+        </div>
+
+        
+
+        <!-- Download buttons -->
+        <div class="download-buttons">
+            <a href="<?php echo get_template_directory_uri(); ?>/media/download/Privacy_Policy.pdf" class="btn" download>
+                <span class="material-icons">get_app</span>
+                Download our Privacy Policy here
+            </a>
+            <a href="<?php echo get_template_directory_uri(); ?>/media/download/Cookie_Policy.pdf" class="btn" download>
+                <span class="material-icons">get_app</span>
+                Download our Cookie Policy here
+            </a>
         </div>
 
         <!-- Gap section -->
@@ -36,5 +39,4 @@ Template Name: Privacy & cookie policy
 </body>
 
 <?php get_footer(); ?>
-
 
