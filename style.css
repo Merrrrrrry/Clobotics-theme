@@ -195,6 +195,10 @@ ul.position-list {
   white-space: nowrap;
 }
 
+.images-career:hover .image-slide {
+  animation-play-state: paused;
+}
+
 .image-slide {
   display: inline-block;
   font-size: 0;
