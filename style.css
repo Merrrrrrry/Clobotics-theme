@@ -255,7 +255,7 @@ ul.position-list {
 } */
 
 /* Search bar */
-/*.search-bar {
+.search-bar {
   display: flex;
   border: 2px solid transparent; 
   border-radius: 20px; 
@@ -281,11 +281,11 @@ ul.position-list {
   align-items: center;
   justify-content: center;
   border-radius: 20px; 
-} */
+} 
 
 
 /* Filters */
-/*.filters {
+.filters {
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -316,7 +316,7 @@ ul.position-list {
 .material-icons.search-icon {
   font-size: 30px;
   color: #ffffff; 
-} */
+} 
 
 
 
