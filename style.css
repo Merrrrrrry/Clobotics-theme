@@ -309,7 +309,7 @@ ul.position-list {
 }
 
 
-.search-icon .material-icons {
+.material-icons.search-icon {
   font-size: 30px;
   color: #ffffff; 
 }
