@@ -199,7 +199,7 @@ ul.position-list {
 .image-slide {
   white-space: nowrap;
   font-size: 0;
-  animation: 35s slide infinite linear;
+  animation: 25s slide infinite linear;
 }
 
 .image-slide img {
