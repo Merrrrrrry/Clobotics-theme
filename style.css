@@ -181,7 +181,10 @@ ul.position-list {
 
 /* <--- Image slideshow on Career page ---> */
 
-
+.image-slide img {
+  height: 50px;
+  
+}
 
 
 /* <--- Open Positions section ---> */
