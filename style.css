@@ -675,7 +675,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 /* -----------------WE TAKE CARE OF YOUR BLADES------------------- */
 .we-take-care{
-  padding-bottom: 100px;
+  padding-bottom: 850px;
 }
 
 .we-take-care-background-image {
@@ -740,6 +740,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 .we-take-care-social-media-item p {
   margin: 0;
   color: rgb(255, 255, 255);
+  size: 10px;
 }
 
 /* -----------------NAVBAR------------------- */
