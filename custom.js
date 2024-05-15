@@ -26,4 +26,4 @@ jQuery(document).ready(function($) {
 
 
 
-// This file is for AJAX to function properly with the search bar in the Career page.
+// This JavaScript code is used to perform a search on the server without reloading the page!!!
