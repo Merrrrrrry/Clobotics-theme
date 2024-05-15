@@ -194,10 +194,11 @@ ul.position-list {
 
 .images-career {
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .image-slide {
-  white-space: nowrap;
+  display: inline-block;
   font-size: 0;
   animation: 25s slide infinite linear;
 }
