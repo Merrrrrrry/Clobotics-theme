@@ -495,7 +495,6 @@ h4.text {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1; 
-    padding-bottom: 50px;
   }
   
 
