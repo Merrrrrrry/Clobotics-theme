@@ -43,6 +43,29 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+// For Search bar in Career page
+
+document.addEventListener('DOMContentLoaded', function() {
+    const searchForm = document.querySelector('.search-form');
+    searchForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const formData = new FormData(searchForm);
+        const queryString = new URLSearchParams(formData).toString();
+        fetch(`${searchForm.action}?${queryString}`)
+            .then(response => response.text())
+            .then(html => {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(html, 'text/html');
+                const newPositions = doc.querySelector('.open-positions').innerHTML;
+                document.querySelector('.open-positions').innerHTML = newPositions;
+                window.scrollTo({
+                    top: document.querySelector('.open-positions').offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+    });
+});
+
 
 
 // Function to show one of three pictures - we work globally section on Wind services page

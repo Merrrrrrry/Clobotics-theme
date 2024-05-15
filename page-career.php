@@ -19,33 +19,63 @@ Template Name: Career
             </div>
         </div>
 
-        <!-- Search bar -->
-<div class="search-bar" id="search-bar">
-    <form id="search-form" method="get" action="<?php echo esc_url(get_permalink()); ?>">
-        <input type="text" name="search_query" id="search-input" placeholder="Search...">
-        <button type="submit">Search</button>
+       
+ <<!-- Search bar and filters -->
+<div class="search-bar-container">
+    <form id="search-form" method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form">
+        <div class="search-bar">
+            <input type="text" name="search_query" id="search-input" placeholder="Search...">
+            <button type="submit" class="search-button">
+                <span class="material-icons">search</span>
+            </button>
+        </div>
+        <div class="filters">
+            <select name="sector" id="sector">
+                <option value="">Sector</option>
+                <option value="wind">Wind</option>
+                <option value="retail">Retail</option>
+            </select>
+            <select name="region" id="region">
+                <option value="">Region</option>
+                <option value="europe">Europe</option>
+                <option value="americas">Americas</option>
+                <option value="asia">Asia</option>
+            </select>
+            <select name="job_type" id="job_type">
+                <option value="">Job type</option>
+                <option value="full_time">Full time</option>
+                <option value="part_time">Part time</option>
+            </select>
+            <button type="submit" class="filter-button">
+                <span class="material-icons">search</span>
+            </button>
+        </div>
     </form>
 </div>
 
-        <!-- Open Positions section/Job list -->
-        <div class="open-positions">
-            <h2 class="title">Open Positions</h2>
+<!-- Open Positions section/Job list -->
+<div class="open-positions">
+    <h2 class="title">Open Positions</h2>
 
-            <!-- Gap -->
-            <div style="height: 10px;"></div>
+    <!-- Gap -->
+    <div style="height: 10px;"></div>
+
+    <ul id="position-list" class="position-list">
+        <!-- AJAX-loaded positions will appear here -->
+    </ul>
+</div>
 
             <?php
             // Check if there is a search query
             $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
+            $sector = isset($_GET['sector']) ? sanitize_text_field($_GET['sector']) : '';
+            $region = isset($_GET['region']) ? sanitize_text_field($_GET['region']) : '';
+            $job_type = isset($_GET['job_type']) ? sanitize_text_field($_GET['job_type']) : '';
 
-            // Normalize search query to handle spaces and hyphens
-            $normalized_search_query = str_replace(array(' ', '-'), '_', $search_query);
-
-            // Construct query arguments
-            $args = array(
-                'post_type' => 'open-position',
-                'posts_per_page' => -1,
-                'meta_query' => array(
+            // Construct meta query arguments
+            $meta_query = array('relation' => 'AND');
+            if ($search_query) {
+                $meta_query[] = array(
                     'relation' => 'OR',
                     array(
                         'key' => 'job_title',
@@ -64,10 +94,38 @@ Template Name: Career
                     ),
                     array(
                         'key' => 'job_type',
-                        'value' => $normalized_search_query,
+                        'value' => str_replace(array(' ', '-'), '_', $search_query),
                         'compare' => 'LIKE'
-                    ),
-                )
+                    )
+                );
+            }
+            if ($sector) {
+                $meta_query[] = array(
+                    'key' => 'sector',
+                    'value' => $sector,
+                    'compare' => 'LIKE'
+                );
+            }
+            if ($region) {
+                $meta_query[] = array(
+                    'key' => 'region',
+                    'value' => $region,
+                    'compare' => 'LIKE'
+                );
+            }
+            if ($job_type) {
+                $meta_query[] = array(
+                    'key' => 'job_type',
+                    'value' => str_replace(array(' ', '-'), '_', $job_type),
+                    'compare' => 'LIKE'
+                );
+            }
+
+            // Construct WP_Query arguments
+            $args = array(
+                'post_type' => 'open-position',
+                'posts_per_page' => -1,
+                'meta_query' => $meta_query
             );
 
             // Perform query

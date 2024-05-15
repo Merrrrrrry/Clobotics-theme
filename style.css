@@ -179,6 +179,93 @@ ul.position-list {
   list-style-type: none;
 }
 
+
+
+
+
+/*   <--- Search bar in Career page ---> */
+
+
+/* Search bar container */
+.search-bar-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: -50px;
+}
+
+/* Search form */
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  border: 2px solid #0073e6;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+#search-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-button {
+  background-color: #0073e6;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button .material-icons {
+  font-size: 20px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  gap: 10px;
+}
+
+.filters select, .filter-button {
+  border: 2px solid #0073e6;
+  border-radius: 25px;
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+.filter-button {
+  background-color: #0073e6;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-button .material-icons {
+  font-size: 20px;
+}
+
+
+
+
+
 /*   <--- Image slideshow on Career page ---> */
 
 @keyframes slide {
