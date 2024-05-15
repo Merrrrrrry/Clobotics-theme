@@ -23,11 +23,11 @@ Template Name: Privacy & cookie policy
 
         <!-- Download buttons -->
         <div class="download-buttons">
-            <a href="<?php echo get_template_directory_uri(); ?>/media/download/Privacy_Policy.pdf" class="btn btn:hover" download>
+            <a href="<?php echo get_template_directory_uri(); ?>/media/download/Privacy_Policy.pdf" class="btn" download>
                 <span class="material-icons">get_app</span>
                 Download our Privacy Policy here
             </a>
-            <a href="<?php echo get_template_directory_uri(); ?>/media/download/Cookie_Policy.pdf" class="btn btn::hover" download>
+            <a href="<?php echo get_template_directory_uri(); ?>/media/download/Cookie_Policy.pdf" class="btn" download>
                 <span class="material-icons">get_app</span>
                 Download our Cookie Policy here
             </a>
