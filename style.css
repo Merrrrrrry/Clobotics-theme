@@ -245,6 +245,7 @@ ul.position-list {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
   margin-top: -70px; 
   height: 120px; 
+  max-width: 500px; 
 }
 
 /* Search form */
@@ -269,7 +270,7 @@ ul.position-list {
   border: none;
   outline: none;
   font-size: 16px;
-  width: 100px;
+  width: 100%;
 }
 
 .search-button {
@@ -288,6 +289,7 @@ ul.position-list {
 .filters {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .filters select, .filter-button {
@@ -299,6 +301,7 @@ ul.position-list {
   font-size: 16px;
   color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center;
 }
 
 .filter-button {
