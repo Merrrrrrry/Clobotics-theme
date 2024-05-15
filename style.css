@@ -243,7 +243,7 @@ ul.position-list {
   margin: 0 auto;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
   height: 120px; 
- /* max-width: 485px; */
+  max-width: 485px;
 }    
 
 /* Search form */
