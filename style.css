@@ -285,22 +285,25 @@ ul.position-list {
 
 
 /* Filters */
-.filters {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
-
 .filters select, .filter-button {
   cursor: pointer;
   border: 2px solid transparent; 
   border-radius: 20px; 
-  padding: 10px;
+  padding: 12px 24px; /* Adjusted padding to match the search button */
   outline: none;
   font-size: 16px;
   color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   text-align: center;
+}
+
+.filter-button {
+  background-color: #00B3EC;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .filter-button {
