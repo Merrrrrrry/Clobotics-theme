@@ -23,11 +23,11 @@ Template Name: Privacy & cookie policy
 
         <!-- Download buttons -->
         <div class="download-buttons">
-            <a href="<?php echo get_template_directory_uri(); ?>http://maria-grysevych.dk/clobotics/wp-content/uploads/2024/05/Privacy_Policy.pdf" class="btn" download>
+            <a href="<?php echo get_template_directory_uri(); ?>/media/download/Privacy_Policy.pdf" class="btn" onclick="openPdf('<?php echo get_template_directory_uri(); ?>/media/download/Privacy_Policy.pdf');">
                 <span class="material-icons">get_app</span>
                 Download our Privacy Policy here
             </a>
-            <a href="<?php echo get_template_directory_uri(); ?>http://maria-grysevych.dk/clobotics/wp-content/uploads/2024/05/Cookie_Policy.pdf" class="btn" download>
+            <a href="<?php echo get_template_directory_uri(); ?>/media/download/Cookie_Policy.pdf" class="btn" onclick="openPdf('<?php echo get_template_directory_uri(); ?>/media/download/Cookie_Policy.pdf');">
                 <span class="material-icons">get_app</span>
                 Download our Cookie Policy here
             </a>
@@ -37,7 +37,12 @@ Template Name: Privacy & cookie policy
         <div style="height: 40px;"></div>
 
     </main>
+    
+    <script>
+        function openPdf(pdfUrl) {
+            window.open(pdfUrl, '_blank');
+        }
+    </script>
 </body>
 
 <?php get_footer(); ?>
-
