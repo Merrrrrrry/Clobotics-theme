@@ -248,11 +248,11 @@ ul.position-list {
 }    */
 
 /* Search form */
-/*.search-form {
+.search-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-} */
+} 
 
 /* Search bar */
 .search-bar {
