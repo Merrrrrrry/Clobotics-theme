@@ -495,6 +495,7 @@ h4.text {
     left: 50%;
     transform: translateX(-50%);
     z-index: 1; 
+    padding-bottom: 50px;
   }
   
 
@@ -503,7 +504,7 @@ h4.text {
     padding: 8px 20px;
     border-radius: 20px;
     cursor: pointer;
-    margin-bottom: 50px; 
+    margin-bottom: 20px; 
     display: flex;
     align-items: center;
   }
