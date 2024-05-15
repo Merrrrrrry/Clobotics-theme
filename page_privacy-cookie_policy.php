@@ -18,8 +18,7 @@ Template Name: Privacy & cookie policy
             </div>
         </div>
 
-        <!-- Space under hero section -->
-        <div style="height: 50px;"></div>
+        
 
         <!-- Download buttons -->
         <div class="download-buttons">
@@ -32,6 +31,9 @@ Template Name: Privacy & cookie policy
                 Download our Cookie Policy here
             </a>
         </div>
+
+        <!-- Gap section -->
+        <div style="height: 30px;"></div>
 
     </main>
 </body>
