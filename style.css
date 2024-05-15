@@ -179,14 +179,25 @@ ul.position-list {
   list-style-type: none;
 }
 
-/* <--- Image slideshow on Career page ---> */
+/*   <--- Image slideshow on Career page ---> */
+
+
+.images-career {
+  overflow: hidden;
+}
+
+.image-slide {
+  white-space: nowrap;
+}
 
 .image-slide img {
   height: 700px;
 }
 
 
-/* <--- Open Positions section ---> */
+
+
+/*   <--- Open Positions section ---> */
 .open-positions {
   text-align: center; 
   margin: 0 70px; 
