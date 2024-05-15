@@ -106,14 +106,14 @@ p.subtitle {
 }
 
 .btn:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);}
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);}
 
 .dark {
   background-color: #002D61;
   color: #fff;
 }
 .dark:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);}
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);}
 
 .optional {  
     background-color: #F5F5F5;
@@ -125,7 +125,7 @@ p.subtitle {
   }
 
   .optional:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);    
     color: #ffffff;  }
 
   
@@ -133,7 +133,7 @@ p.subtitle {
   background-color: #86D0F4; }
   
 .light:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);}
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);}
 
   
 /* Removing underline from links */
