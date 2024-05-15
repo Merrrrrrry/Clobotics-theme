@@ -78,6 +78,15 @@ Template Name: Wind services
 </div>
 
 
+
+
+
+
+
+<section id="meet_our_team" style="background-size: cover; height: auto;">
+    <h2 class="title">Our customers are Global Wind Companies</h2>
+
+
 </body>
 
 </main>
