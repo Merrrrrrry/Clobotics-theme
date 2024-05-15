@@ -679,6 +679,8 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   left: 0;
   background-size: cover;
   z-index: -1;
+  width: 100vw;
+  height: 100%;
 }
 
 .we-take-care-text{
@@ -686,6 +688,27 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   text-align: right;
 }
 
+
+.we-take-care {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.we-take-care-content {
+  text-align: right;
+  padding: 20px;
+  color: white;
+  z-index: 1;
+}
+
+.we-take-care-text h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 1.2;
+}
 
 
 /* -----------------NAVBAR------------------- */
