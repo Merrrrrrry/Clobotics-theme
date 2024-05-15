@@ -184,8 +184,6 @@ ul.position-list {
 
 .images-career {
   overflow: hidden;
-  margin: 0 0;
-  padding: 0 0;
 }
 
 .image-slide {
@@ -194,6 +192,9 @@ ul.position-list {
 
 .image-slide img {
   height: 700px;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 
