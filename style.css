@@ -285,17 +285,22 @@ ul.position-list {
 
 
 /* Filters */
+.filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
 .filters select, .filter-button {
   cursor: pointer;
   border: 2px solid transparent; 
   border-radius: 20px; 
-  padding: 12px 24px; 
+  padding: 10px;
   outline: none;
   font-size: 16px;
   color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   text-align: center;
-  width: calc(100% - 44px); 
 }
 
 .filter-button {
@@ -305,11 +310,6 @@ ul.position-list {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 10px; 
-}
-
-.filter-button:first-child {
-  margin-left: 0; 
 }
 
 
