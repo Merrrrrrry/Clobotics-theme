@@ -308,10 +308,16 @@ ul.position-list {
   justify-content: center;
 }
 
-.filter-button .search-button .material-icons {
-  font-size: 35px; 
+.filter-button .material-icons {
+  font-size: 30px; 
   color: white;
 }
+
+.search-button .material-icons {
+  font-size: 30px; 
+  color: white;
+}
+
 
 /* Adjusting search bar width */
 #search-input {
