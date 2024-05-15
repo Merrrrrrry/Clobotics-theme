@@ -223,7 +223,6 @@ ul.position-list {
 .search-button {
   background-color: #00B3EC;
   border: none;
-  color: white;
   padding: 10px 20px;
   cursor: pointer;
   display: flex;
@@ -248,7 +247,7 @@ ul.position-list {
   padding: 10px;
   outline: none;
   font-size: 16px;
-  
+  color: white;
 }
 
 .filter-button {
@@ -262,7 +261,6 @@ ul.position-list {
 
 .filter-button .material-icons {
   font-size: 20px;
-  
 }
 
 
