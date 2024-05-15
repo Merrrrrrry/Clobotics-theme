@@ -31,8 +31,6 @@ Template Name: Privacy & cookie policy
             </a>
         </div>
 
-        <!-- Gap section -->
-        <div style="height: 40px;"></div>
 
     </main>
 </body>
