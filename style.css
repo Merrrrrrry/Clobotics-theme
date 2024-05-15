@@ -484,7 +484,31 @@ h4.text {
   }
 
 
+/* <------ Privacy & Cookie Policy style ------> */
 
+
+  .download-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; 
+  }
+  
+  .download-buttons .btn {
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px; 
+    display: flex;
+    align-items: center;
+  }
+  
+  .download-buttons .btn .material-icons {
+    color: white; 
+    margin-right: 8px; 
+  }
+  
 
   
   /*    
