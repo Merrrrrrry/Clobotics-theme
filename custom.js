@@ -26,3 +26,5 @@ jQuery(document).ready(function($) {
         });
     });
 });
+
+// This file is for AJAX to function properly with the search bar in the Career page.
