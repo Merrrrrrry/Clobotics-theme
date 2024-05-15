@@ -606,7 +606,7 @@ ul.inline li,
 
 
 
-/*WIND SERVICES*/
+/*-----------------WIND SERVICES--------------------*/
 /*We operate globally section*/
 
 .flex {
@@ -641,6 +641,25 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 .we_operate_globally_container {text-align: center;}
 .we_operate_globally_container img.we_operate_globally-img {max-height: 80vh;}
 
+
+
+
+
+/* -----------------WE TAKE CARE OF YOUR BLADES------------------- */
+.we-take-care-background-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  z-index: -1;
+}
+
+.we-take-care-text{
+  color: #ffffff;
+  text-align: right;
+}
 
 
 
