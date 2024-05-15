@@ -309,7 +309,7 @@ ul.position-list {
 }
 
 
-.search-icon {
+.search-icon .material-icons {
   font-size: 30px;
   color: #ffffff; 
 }
@@ -320,6 +320,8 @@ ul.position-list {
   width: calc(100% - 140px); /* Adjust the width as needed */
   /* This calculation ensures that the input width is adjusted to match the filter bar width */
 }
+
+
 
 
 
