@@ -707,7 +707,8 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 .we-take-care-content {
   text-align: right;
   padding: 20px;
-  margin-right: 200px;
+  margin-right: 190px;
+  margin-right: 250px;
   color: white;
   z-index: 1;
 }
