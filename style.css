@@ -236,7 +236,7 @@ ul.position-list {
 
 
 /* Search bar container */
-/*.search-bar-container {
+.search-bar-container {
   background-color: white;
   border-radius: 18px;
   padding: 20px;
@@ -245,7 +245,7 @@ ul.position-list {
   margin-top: -70px; 
   height: 120px; 
   max-width: 485px; 
-}    */
+}    
 
 /* Search form */
 .search-form {
