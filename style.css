@@ -182,6 +182,16 @@ ul.position-list {
 /*   <--- Image slideshow on Career page ---> */
 
 
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
 .images-career {
   overflow: hidden;
 }
@@ -189,6 +199,7 @@ ul.position-list {
 .image-slide {
   white-space: nowrap;
   font-size: 0;
+  animation: 35s slide infinite linear;
 }
 
 .image-slide img {
