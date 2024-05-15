@@ -83,7 +83,7 @@ Template Name: Wind services
 
 
 
-<section id="meet_our_team" style="background-size: cover; height: auto;">
+<section id="meet_our_teamtransparent_png_of_customer_logo" style="background-size: cover; height: auto;">
     <h2 class="title">Our customers are Global Wind Companies</h2>
 
 
