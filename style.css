@@ -737,7 +737,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   display: block;
 }
 
-.we-take-care-social-media-item span {
+.social_media_icon_text {
   margin: 0;
   color: rgb(255, 255, 255);
   size: 10px;
