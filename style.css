@@ -232,7 +232,7 @@ ul.position-list {
 
 .search-button .material-icons {
   font-size: 20px;
-  color:white;
+  color: white; 
 }
 
 /* Filters */
@@ -247,12 +247,12 @@ ul.position-list {
   padding: 10px;
   outline: none;
   font-size: 16px;
-  color: white;
+  color: black; 
 }
 
 .filter-button {
   background-color: #00B3EC;
-  color: white;
+  color: black; 
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -261,6 +261,7 @@ ul.position-list {
 
 .filter-button .material-icons {
   font-size: 20px;
+  color: black; 
 }
 
 
