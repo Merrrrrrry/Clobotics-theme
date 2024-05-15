@@ -248,7 +248,7 @@ ul.position-list {
   padding: 10px;
   outline: none;
   font-size: 16px;
-  color: white;
+  
 }
 
 .filter-button {
@@ -262,6 +262,7 @@ ul.position-list {
 
 .filter-button .material-icons {
   font-size: 20px;
+  
 }
 
 
