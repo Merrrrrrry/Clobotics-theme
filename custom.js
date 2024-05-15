@@ -20,11 +20,12 @@ jQuery(document).ready(function($) {
             success: function(response) {
                 $('#position-list').html(response);
                 $('html, body').animate({
-                    scrollTop: $("#position-list").offset().top
-                }, 500);
+                    scrollTop: $("#position-list").offset().top - 50
+                }, 500); // Adjusted scrolling offset
             }
         });
     });
 });
+
 
 // This file is for AJAX to function properly with the search bar in the Career page.

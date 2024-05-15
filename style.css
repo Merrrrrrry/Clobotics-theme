@@ -207,7 +207,7 @@ ul.position-list {
 /* Search bar */
 .search-bar {
   display: flex;
-  border: 2px solid #0073e6;
+  border: 2px solid #00B3EC;
   border-radius: 25px;
   overflow: hidden;
 }
@@ -221,7 +221,7 @@ ul.position-list {
 }
 
 .search-button {
-  background-color: #0073e6;
+  background-color: #00B3EC;
   border: none;
   color: white;
   padding: 10px 20px;
@@ -233,6 +233,7 @@ ul.position-list {
 
 .search-button .material-icons {
   font-size: 20px;
+  color:white;
 }
 
 /* Filters */

@@ -1,6 +1,5 @@
 <?php
 function clobotics_register_stylesheet() {
-     //wp_enqueue_style("bootstrap", "https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css");
     wp_enqueue_style("clobotics-style", get_stylesheet_directory_uri() . "/style.css?v=" . mktime());
     wp_enqueue_script("clobotics", get_stylesheet_directory_uri() . "/javascript.js?v=" . mktime(), array(), false, true);
     wp_enqueue_style("materialize-icons", "https://fonts.googleapis.com/icon?family=Material+Icons");
@@ -20,8 +19,7 @@ function disable_gutenberg() {
 }
 add_action("init", "disable_gutenberg");
 
-
-// Displaying menu under Appearance in WP backhand 
+// Displaying menu under Appearance in WP backend
 function demo_register_menus() {
     register_nav_menus(array(
         "main-menus" => "Main Menu Location"
@@ -29,11 +27,7 @@ function demo_register_menus() {
 }
 add_action("init", "demo_register_menus");
 
-
-
-
 // Function for search bar to include custom fields
-
 function include_custom_fields_in_search($query) {
     if (!is_admin() && $query->is_main_query() && $query->is_search()) {
         $search_query = $query->get('s');
@@ -70,10 +64,6 @@ function include_custom_fields_in_search($query) {
 }
 add_action('pre_get_posts', 'include_custom_fields_in_search');
 
-
-
-
-
 // Enqueue custom JavaScript
 function clobotics_enqueue_scripts() {
     wp_enqueue_script('clobotics-custom', get_template_directory_uri() . '/custom.js', array('jquery'), null, true);
@@ -85,7 +75,7 @@ function clobotics_enqueue_scripts() {
 }
 add_action('wp_enqueue_scripts', 'clobotics_enqueue_scripts');
 
-// Handle AJAX search
+// Handle AJAX search and filters
 function clobotics_ajax_search() {
     $search_query = isset($_POST['search_query']) ? sanitize_text_field($_POST['search_query']) : '';
     $sector = isset($_POST['sector']) ? sanitize_text_field($_POST['sector']) : '';
@@ -165,13 +155,12 @@ function clobotics_ajax_search() {
                 </p>
             </li>
         <?php endwhile;
+        wp_reset_postdata();
     else : ?>
-        <p class="job-subtitle">No open positions found for "<?php echo esc_html($search_query); ?>"</p>
+        <p class="job-subtitle">No open positions found for your criteria.</p>
     <?php endif;
 
     wp_die();
 }
 add_action('wp_ajax_clobotics_search', 'clobotics_ajax_search');
 add_action('wp_ajax_nopriv_clobotics_search', 'clobotics_ajax_search');
-
-
