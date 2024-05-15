@@ -181,16 +181,14 @@ ul.position-list {
 
 /*   <--- Image slideshow on Career page ---> */
 
-
 @keyframes slide {
-  from {
+  0% {
     transform: translateX(0);
   }
-  to {
-    transform: translateX(-100%);
+  100% {
+    transform: translateX(-50%);
   }
 }
-
 
 .images-career {
   overflow: hidden;
@@ -206,8 +204,8 @@ ul.position-list {
 .image-slide img {
   height: 700px;
   display: inline-block;
-  margin: 0 0;
-  padding: 0 0;
+  margin: 0;
+  padding: 0;
   font-size: initial;
 }
 
