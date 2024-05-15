@@ -195,19 +195,12 @@ ul.position-list {
 .images-career {
   overflow: hidden;
   white-space: nowrap;
-  margin: 0 0;
-  padding: 0 0;
-  font-size: initial;
 }
 
 .image-slide {
   display: inline-block;
   font-size: 0;
   animation: 30s slide infinite linear;
-  margin: 0 0;
-  padding: 0 0;
-  font-size: initial;
-  
 }
 
 .image-slide img {
