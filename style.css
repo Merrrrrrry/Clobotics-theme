@@ -193,6 +193,7 @@ ul.position-list {
 .images-career {
   overflow: hidden;
   white-space: nowrap;
+  padding-top: 40px;
 }
 
 .images-career:hover .image-slide {
