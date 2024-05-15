@@ -496,6 +496,7 @@ h4.text {
   
   .download-buttons  {
     color: #fff;
+    margin-bottom: 20px; 
     display: flex;
     align-items: center;
   }
