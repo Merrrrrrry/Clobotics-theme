@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<?php wp_nav_menu(array("theme_location"=> "main-menus")) ?>
+<?php wp_nav_menu(array("theme_location"=> "main-menu")) ?>
 
 
 <nav class="navbar">
@@ -26,7 +26,7 @@
     <div class="navbar-menu">
         <?php
         wp_nav_menu(array(
-            'theme_location' => 'main-menus', 
+            'theme_location' => 'main-menu', 
             'container' => false,
             'menu_class' => 'navbar-nav'
         ));
