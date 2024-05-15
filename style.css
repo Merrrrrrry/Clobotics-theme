@@ -490,10 +490,15 @@ h4.text {
 
 
   .download-buttons {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    align-items: center;
-    bottom: -100px;
+    align-items: center; */
+    position: absolute; 
+    bottom: -100px; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; 
+    
   }
   
   .download-buttons .btn {
