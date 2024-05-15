@@ -188,12 +188,15 @@ ul.position-list {
 
 .image-slide {
   white-space: nowrap;
+  font-size: 0;
 }
 
 .image-slide img {
   height: 700px;
+  display: inline-block;
   margin: 0 0;
   padding: 0 0;
+  font-size: initial;
 }
 
 
