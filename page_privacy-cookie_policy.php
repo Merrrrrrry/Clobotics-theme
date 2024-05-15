@@ -19,7 +19,7 @@ Template Name: Privacy & cookie policy
         </div>
 
          <!-- Gap section -->
-         <div style="height: 40px;"></div>
+         <div style="height: 20px;"></div>
 
         <!-- Download buttons -->
         <div class="download-buttons">
