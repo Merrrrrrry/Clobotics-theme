@@ -203,7 +203,7 @@ ul.position-list {
 .image-slide {
   display: inline-block;
   font-size: 0;
-  animation: 25s slide infinite linear;
+  animation: 30s slide infinite linear;
   
 }
 
