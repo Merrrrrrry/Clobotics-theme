@@ -24,7 +24,7 @@ Template Name: Career
                 <div class="search-bar">
                     <input type="text" name="search_query" id="search-input" placeholder="Search...">
                     <button type="submit" class="search-button">
-                        <span class="material-icons">search</span>
+                        <span class="material-icons search-icon">search</span>
                     </button>
                 </div>
                 <div class="filters">
@@ -45,7 +45,7 @@ Template Name: Career
                         <option value="part_time">Part time</option>
                     </select>
                     <button type="submit" class="filter-button">
-                        <span class="material-icons">search</span>
+                        <span class="material-icons search-icon">search</span>
                     </button>
                 </div>
             </form>

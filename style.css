@@ -308,14 +308,10 @@ ul.position-list {
   justify-content: center;
 }
 
-.filter-button .material-icons {
-  font-size: 30px; 
-  color: white;
-}
 
-.search-button .material-icons {
-  font-size: 30px; 
-  color: white;
+.search-icon {
+  font-size: 30px;
+  color: #ffffff; 
 }
 
 
