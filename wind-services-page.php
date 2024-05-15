@@ -83,7 +83,6 @@ Template Name: Wind services
 
 
 
-<section id="......" style="background-size: cover; height: auto;">
     <h2 class="title">Our customers are Global Wind Companies</h2>
 
 

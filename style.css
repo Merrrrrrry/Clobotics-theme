@@ -681,7 +681,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   bottom: 0;
   left: 0;
   background-size: cover;
-  /* z-index: 0; */
+  z-index: 0;
   width: 100vw;
   height: auto;
 }
@@ -704,7 +704,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   text-align: right;
   padding: 20px;
   color: white;
-  /* z-index: 1; */
+  z-index: 1;
 }
 
 .we-take-care-text h2 {
