@@ -21,12 +21,12 @@ add_action("init", "disable_gutenberg");
 
 // Displaying menu under Appearance in WP backend
 
-//function demo_register_menus() {
- //   register_nav_menus(array(
-  //      "main-menus" => "Main Menu Location"
-  //  ));
-//}
-//add_action("init", "demo_register_menus");
+function demo_register_menus() {
+  register_nav_menus(array(
+       "main-menus" => "Main Menu Location"
+    ));
+}
+add_action("init", "demo_register_menus");
 
 
 
