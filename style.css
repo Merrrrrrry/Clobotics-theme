@@ -230,10 +230,29 @@ ul.position-list {
 
 
 /* svg in career page */
+
 .cls-1 {
   fill: #f5f5f5;
   stroke-width: 0px;
 }
+
+.hero_svg {
+
+}
+
+.hero_svg:after {
+content: url(media/Hero-imgs/hero cut forms/cut form grey website format.svg);
+position: absolute;
+bottom: 0;
+width: 100%;
+height:auto;
+}
+
+
+
+
+
+
 
 /*   <--- Search bar in Career page ---> */
 
