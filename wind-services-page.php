@@ -106,8 +106,6 @@ Template Name: Wind services
                     <img src="<?php $image = get_field('transparent_png_of_customer_logo'); echo esc_url($image["url"]); ?>" alt="Logo of customer" class="customers_logo_image">
                 </a>
             <?php endwhile; wp_reset_query(); ?>
-                </a>
-            <?php endwhile; wp_reset_query(); ?>
         </div>
     </div>
 </div>
