@@ -199,18 +199,17 @@ p.subtitle {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
 }
 
 .job-title {
+  display: inline-block;
   flex-grow: 1; 
 }
 
 .job-subtitle .job-type {
   display: inline-block;
-  margin-left: 40px;
-  margin-right: 40px;
-  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .job-subtitle a.btn {
@@ -226,7 +225,6 @@ h3.job-title {
   font-weight: bold;
   color: #000000;
   flex-grow: 1;
-  text-align: left !important;
 }
 
 p.job-subtitle {
@@ -238,7 +236,6 @@ p.job-subtitle {
 
 ul.position-list {
   list-style-type: none;
-  overflow: hidden;
 }
 
 
@@ -259,7 +256,7 @@ width: 100%;
 .hero_svg:after {
 content: url(media/Hero-imgs/hero-cut-forms/cut-form-grey-website-format.svg);
 position: absolute;
-bottom: -40px;
+bottom: 0;
 width: 100%;
 height:auto;
 }
@@ -474,7 +471,7 @@ h4.text {
 
 #apply-button {
   position: absolute;
-  bottom: -320px; 
+  bottom: -100px; 
   left: 50%;
   transform: translateX(-50%);
   z-index: 1; 
@@ -713,8 +710,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 @keyframes slideAnimation {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-100% - 10px)); } 
-}  */
-
+}   */
 
 
 
@@ -735,20 +731,24 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 }
 
 
-
-.slide {
+.slides {
   display: inline-block;
   font-size: 0;
   animation: 30s slide infinite linear;
 }
-
-.customers_logo_link {
-  height: 700px;
+.customers_logo_image {
+  max-width: 140px; 
+  height: auto;
   display: inline-block;
   margin: 0;
   padding: 0;
   font-size: initial;
 }
+
+
+
+
+
 
 
 /* -----------------WE TAKE CARE OF YOUR BLADES------------------- */

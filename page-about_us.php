@@ -191,16 +191,13 @@ Template Name: About us
 
 <!-- News Articles linking  Section -->
 
-
-
-<!-- <section class="we_operate_globally">
-    <h2 class="title"><?php the_field('article_title_we_operate_globally'); ?></h2>
+ <section class="news_articles_linking">
+    <h3 class="title">Discover Clobotics with our articles!</h3>
 
     <div class="we_operate_globally_container flex"> 
+        <h4 class="title"><?php the_field('article_title_we_operate_globally'); ?></h4>
+        <p class="subtitle"><?php the_field('meta_description_short'); ?></p> 
 
-        <div class="half-size" id="text_container">
-            <p class="text"><?php the_field('article_text_we_operate_globally'); ?></p> 
-        </div>
 
         <div  class="half-size" id="buttons_switcher_container">
             <ul class="inline img_selector">
@@ -213,12 +210,12 @@ Template Name: About us
                 <img class="we_operate_globally-img hidden" id="image_of_our_partners" src="<?php $image = get_field('image_of_our_partners_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our partners (We operate globally section)" /> 
                 <img class="we_operate_globally-img hidden" id="image_of_our_work" src="<?php $image = get_field('image_of_our_work_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our work (We operate globally section)" /> 
         </div>
-    </div> -->
+    </div> 
 
 
 
 <div class="company_history">
-    <h7 class="title">Discover Clobotics with our articles!</h7>
+
 
 </div>
 
