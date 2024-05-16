@@ -205,7 +205,8 @@ p.subtitle {
 }
 
 .position-item {
-  display: inline;
+  display: flex;
+  flex-direction: row;
 }
 
 .job-subtitle a.btn {
