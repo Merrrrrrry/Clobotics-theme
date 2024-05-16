@@ -52,7 +52,7 @@ Template Name: Privacy & cookie policy
 
     </main>
 </body>    
-
+        
     <script>
         function openPdf(pdfUrl) {
             window.open(pdfUrl, '_blank');
