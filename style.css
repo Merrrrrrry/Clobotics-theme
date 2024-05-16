@@ -687,7 +687,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 /*----------------------CUSTOMERS' LOGOS -----------------------*/
 
 
-.customers_logo_link {
+/* .customers_logo_link {
   display: inline-block !important;
   margin-right: 30px !important;
 }
@@ -716,8 +716,17 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 @keyframes slideAnimation {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-100% - 10px)); }
-}
+} */
 
+
+.logos-slide {
+  white-space: nowrap;
+  }
+
+
+.logos-slide img{
+height:60px;
+}
 
 
 
