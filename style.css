@@ -780,13 +780,13 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   margin-right: 20px; 
 }
 
-.navbar-nav ul {
+.menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.navbar-nav li {
+.menu li {
   margin-right: 20px; 
   position: relative;
 }
