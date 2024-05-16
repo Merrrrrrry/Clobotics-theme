@@ -14,13 +14,6 @@ Template Name: Career
 <body <?php body_class('gray-body'); ?>>
     <main>
         <div class="hero_svg">
-            <!-- <object data="media/Hero-imgs/hero cut forms/cut form white mobile format.svg" width="1200" height="auto"> </object> -->
-
-<svg class="svg-white-website-format" id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.5 17.92">
-  <g id="Layer_1-2" data-name="Layer 1">
-    <path class="cls-1" d="M0,17.92h44.5V0C29.63,2.58,13.9,2.53,0,.21v17.7Z"/>
-  </g>
-</svg>
         </div>
 
 
