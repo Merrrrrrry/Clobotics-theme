@@ -225,6 +225,7 @@ h3.job-title {
   font-weight: bold;
   color: #000000;
   flex-grow: 1;
+  text-align: left !important;
 }
 
 p.job-subtitle {
