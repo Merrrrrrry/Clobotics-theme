@@ -379,6 +379,11 @@ ul.position-list {
   margin-right: auto; 
 }
 
+.position-list {
+  list-style-type: none;
+  padding: 10 0px; 
+}
+
 
 
 /* <--- United Numbers Career section ---> */
