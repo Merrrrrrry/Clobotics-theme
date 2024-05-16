@@ -6,6 +6,14 @@ Template Name: Career
 
 <?php get_header(); ?>
 
+
+        <div class="hero_svg">
+            <object data="media/Hero-imgs/hero cut forms/cut form white mobile format.svg" width="1200" height="auto"> </object>
+        </div>
+
+
+        
+
 <body <?php body_class('gray-body'); ?>>
     <main>
         <!-- Hero section -->
