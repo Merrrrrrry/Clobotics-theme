@@ -691,9 +691,15 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 /*----------------------CUSTOMERS' LOGOS -----------------------*/
 
 
+<<<<<<< Updated upstream
 /* .customers_logo_link {
   display: inline-block;
   margin-right: 30px; 
+=======
+.customers_logo_link {
+  display: inline-block !important;
+  margin-right: 30px !important;
+>>>>>>> Stashed changes
 }
 
 .customers_logo_image {
@@ -713,8 +719,29 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 @keyframes slideAnimation {
   0% { transform: translateX(0); }
+<<<<<<< Updated upstream
   100% { transform: translateX(calc(-100% - 10px)); } 
 }   */
+=======
+  100% { transform: translateX(calc(-100% - 10px)); }
+}
+
+
+
+/* .logos-container{
+box-sizing:border-box;
+margin: 0;
+padding: 0;
+}
+
+.logos-slide {
+  white-space: nowrap;
+  }
+
+.logos-slide img{
+height:60px;
+} */
+>>>>>>> Stashed changes
 
 
 
