@@ -381,7 +381,8 @@ ul.position-list {
 
 .position-list {
   list-style-type: none;
-  padding: 10 0px; 
+  padding: 0px; 
+  padding-bottom: 20px;
 }
 
 
