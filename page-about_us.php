@@ -72,7 +72,7 @@ Template Name: About us
 <!-- Meet our team  Section -->
 
 <section id="meet_our_team" style="background-size: cover; height: auto;">
-    <h4 class="title">Meet our team</h4>
+    <h2 class="title">Meet our team</h2>
 
 <!-- search function  (meet our team) -->
 
