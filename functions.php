@@ -20,15 +20,12 @@ function disable_gutenberg() {
 add_action("init", "disable_gutenberg");
 
 // Displaying menu under Appearance in WP backend
-
 function demo_register_menus() {
-  register_nav_menus(array(
-       "main-menus" => "Main Menu Location"
+    register_nav_menus(array(
+        "main-menus" => "Main Menu Location"
     ));
 }
 add_action("init", "demo_register_menus");
-
-
 
 // Function for search bar to include custom fields
 function include_custom_fields_in_search($query) {
@@ -78,7 +75,7 @@ function clobotics_enqueue_scripts() {
 }
 add_action('wp_enqueue_scripts', 'clobotics_enqueue_scripts');
 
-// Handle AJAX search and filters
+// Handle AJAX search and filters for career positions
 function clobotics_ajax_search() {
     $search_query = isset($_POST['search_query']) ? sanitize_text_field($_POST['search_query']) : '';
     $sector = isset($_POST['sector']) ? sanitize_text_field($_POST['sector']) : '';
@@ -168,20 +165,6 @@ function clobotics_ajax_search() {
 add_action('wp_ajax_clobotics_search', 'clobotics_ajax_search');
 add_action('wp_ajax_nopriv_clobotics_search', 'clobotics_ajax_search');
 
-
-// For wind services search bar:
-
-// Enqueue custom JavaScript
-function clobotics_enqueue_scripts() {
-    wp_enqueue_script('clobotics-custom', get_template_directory_uri() . '/custom.js', array('jquery'), null, true);
-
-    // Localize script to use AJAX URL in JavaScript
-    wp_localize_script('clobotics-custom', 'clobotics_ajax', array(
-        'ajax_url' => admin_url('admin-ajax.php')
-    ));
-}
-add_action('wp_enqueue_scripts', 'clobotics_enqueue_scripts');
-
 // Handle AJAX search for wind services
 function clobotics_ajax_search_wind_services() {
     $search_query = isset($_POST['search_query']) ? sanitize_text_field($_POST['search_query']) : '';
@@ -270,3 +253,4 @@ function clobotics_ajax_search_wind_services() {
 }
 add_action('wp_ajax_clobotics_search_wind_services', 'clobotics_ajax_search_wind_services');
 add_action('wp_ajax_nopriv_clobotics_search_wind_services', 'clobotics_ajax_search_wind_services');
+?>
