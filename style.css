@@ -281,11 +281,12 @@ height:auto;
   background-color: white;
   border-radius: 18px;
   padding: 20px;
-  margin: 0 auto;
+  margin-top: -50px;
+  margin: -50px auto 0 auto;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
   height: 120px; 
   max-width: 485px;
-  margin-top: -50px;
+
 }    
 
 /* Search form */
