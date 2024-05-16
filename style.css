@@ -193,23 +193,29 @@ p.subtitle {
 .job-subtitle {
   margin: 0;
   padding-bottom: 20px;
-  border-bottom: 0.5px solid #cfcfcf; 
+  border-bottom: 0.5px solid #cfcfcf;
   margin-bottom: 26px;
-  text-align: left; 
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.job-title {
+  display: inline-block;
+  flex-grow: 1; 
 }
 
 .job-subtitle .job-type {
   display: inline-block;
-  margin-left: 50px; 
-  margin-right: 50px; 
-}
-
-.position-list .position-item .btn {
-  align-items: baseline;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .job-subtitle a.btn {
-  float: right; 
+  float: none;
+  display: inline-block;
+  margin-left: auto;
 }
 
 
@@ -218,6 +224,7 @@ h3.job-title {
   font-size: 16px;
   font-weight: bold;
   color: #000000;
+  flex-grow: 1;
 }
 
 p.job-subtitle {
@@ -680,7 +687,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 /*----------------------CUSTOMERS' LOGOS -----------------------*/
 
 
-.customers_logo_link {
+/* .customers_logo_link {
   display: inline-block;
   margin-right: 30px; 
 }
@@ -689,6 +696,95 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   max-width: 140px; 
   height: auto;
 }
+
+.slideshow-container {
+  overflow-x: auto; 
+  white-space: nowrap; 
+}
+
+.slides {
+  display: inline-block; 
+  animation: slideAnimation 20s linear infinite; 
+}
+
+@keyframes slideAnimation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% - 10px)); } 
+}  */
+
+
+
+
+
+/* @keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.images-career {
+  overflow: hidden;
+  white-space: nowrap;
+  padding-top: 40px;
+}
+
+.images-career:hover .image-slide {
+  animation-play-state: paused;
+}
+
+.image-slide {
+  display: inline-block;
+  font-size: 0;
+  animation: 30s slide infinite linear;
+}
+
+.image-slide img {
+  height: 700px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: initial;
+} */
+
+
+
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+.slideshow-container {
+  overflow: hidden;
+  white-space: nowrap;
+  padding-top: 40px;
+}
+
+.slideshow-container:hover .slides {
+  animation-play-state: paused;
+}
+
+.slides {
+  display: inline-block;
+  font-size: 0;
+  animation: 30s slide infinite linear;
+}
+
+.slides img {
+  height: 700px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: initial;
+}
+
 
 /* -----------------WE TAKE CARE OF YOUR BLADES------------------- */
 .we-take-care{

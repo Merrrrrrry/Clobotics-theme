@@ -20,12 +20,15 @@ function disable_gutenberg() {
 add_action("init", "disable_gutenberg");
 
 // Displaying menu under Appearance in WP backend
+
 function demo_register_menus() {
-    register_nav_menus(array(
-        "main-menus" => "Main Menu Location"
+  register_nav_menus(array(
+       "main-menus" => "Main Menu Location"
     ));
 }
 add_action("init", "demo_register_menus");
+
+
 
 // Function for search bar to include custom fields
 function include_custom_fields_in_search($query) {
