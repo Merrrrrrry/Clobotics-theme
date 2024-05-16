@@ -13,11 +13,14 @@ Template Name: Career
 
 <body <?php body_class('gray-body'); ?>>
     <main>
-        <div class="hero_svg">
+        <div class="hero_svg hero-section">
+        <div class="hero-section-content">
+                <h1 class="hero-title">Career at Clobotics</h1>
+            </div>
         </div>
 
-
-        <!-- Hero section -->
+<!-- 
+        Hero section 
         <div class="hero-section">
             <div class="hero-section-background">
                 <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/11.png" alt="Your Image Alt Text">
@@ -25,7 +28,6 @@ Template Name: Career
             <div class="hero-section-content">
                 <h1 class="hero-title">Career at Clobotics</h1>
             </div>
-        </div>
 
 
         <!-- Search bar and filters -->
