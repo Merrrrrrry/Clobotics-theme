@@ -701,15 +701,16 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   height: auto !important;
 }
 
-.slideshow-container {
-  overflow-x: auto !important;
-  white-space: nowrap !important;
+.slides .customers_logo_link {
+  display: inline-block !important;
 }
 
 .slides {
   display: inline-block !important;
   animation: slideAnimation 20s linear infinite !important;
   overflow: hidden;
+  overflow-x: auto !important;
+  white-space: nowrap !important;
 }
 
 @keyframes slideAnimation {
