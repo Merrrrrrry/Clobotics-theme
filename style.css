@@ -205,7 +205,7 @@ p.subtitle {
 }
 
 .position-item {
-  flex-direction: row;
+  align-items: baseline;
 }
 
 .job-subtitle a.btn {
