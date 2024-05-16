@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
 // Function to show one of three pictures - we work globally section on Wind services page
 
 function show_our(btn) {

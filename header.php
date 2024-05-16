@@ -12,15 +12,24 @@
 </head>
 <body>
 
-<?php wp_nav_menu(array("theme_location"=> "main-menus")) ?>
+<?php wp_nav_menu(array("theme_location"=> "main-menu")) ?>
 
 
 <nav class="navbar">
-    <?php
-    wp_nav_menu(array(
-        'theme_location' => 'primary',
-        'container' => false,
-        'menu_class' => 'navbar-nav'
-    ));
-    ?>
+    <div class="navbar-nav">
+        <?php if (has_custom_logo()) {
+            echo '<div class="navbar-logo">' . get_custom_logo() . '</div>';
+        } else {
+            echo '<h1 class="navbar-title">' . get_bloginfo('description') . '</h1>';
+        } ?>
+    </div>
+    <div class="navbar-menu">
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'main-menu', 
+            'container' => false,
+            'menu_class' => 'navbar-nav'
+        ));
+        ?>
+    </div>
 </nav>

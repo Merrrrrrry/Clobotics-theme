@@ -20,7 +20,7 @@
     </div>
     <div class="footer-column">
         <h2 class="footer-title">Get in touch</h2>
-        <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="footer-contact-link">Contact us <i class="arrow_right_alt"></i></a>
+        <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="footer-contact-link">Contact us<i class="material-icons">arrow_right_alt</i></a>
     </div>
     
     <div class="copyright">
@@ -29,15 +29,15 @@
     
     <div class="social-icons">
         <a href="https://www.linkedin.com/company/cloboticswindservices/">
-            <img src=".....png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png"  alt="LinkedIn"> <br>
             <span>Wind</span>
         </a>
         <a href="https://www.linkedin.com/company/clobotics/">
-            <img src=".....png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png" alt="LinkedIn"> <br>
             <span>Retail</span>
         </a>
         <a href="https://vimeo.com/681845431">
-            <img src="......png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/media/vimeo-logo.png" alt="Vimeo"> <br>
             <span>Vimeo</span>
         </a>
     </div>

@@ -78,6 +78,39 @@ Template Name: Wind services
 </div>
 
 
+
+
+
+
+
+    <h2 class="title">Our customers are Global Wind Companies</h2>
+
+
+
+<section class="we-take-care">
+<img class="we-take-care-background-image" src="<?php echo get_template_directory_uri(); ?>/media/wind_blade.png" alt="We take care of your blades"> <br>
+    <div class="we-take-care-content">
+        <h2 class="we-take-care-text">
+            WE TAKE <br>
+            CARE OF <br>
+            YOUR BLADES
+        </h2>
+        <div class="we-take-care-social-media">
+        <div class="social-icons">
+                    <a href="https://www.linkedin.com/company/cloboticswindservices/">
+                    <img src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png"  alt="LinkedIn"> <br>
+                    <span class="social_media_icon_text">Wind</span>
+                </a>
+                <a href="https://vimeo.com/681845431">
+                    <img src="<?php echo get_template_directory_uri(); ?>/media/vimeo-logo.png" alt="Vimeo"> <br>
+                    <span class="social_media_icon_text">Vimeo</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 </body>
 
 </main>
