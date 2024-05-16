@@ -150,7 +150,8 @@ p.subtitle {
   overflow: hidden;
   display: flex;
   align-items: center;
-  height: 700px; 
+  height: 700px;
+  overflow: hidden;; 
 }
 
 /* Hero section background image */
@@ -248,8 +249,9 @@ ul.position-list {
 
 .image-hero {
   width: 1920px;
-  height: 500px;
-  object-fit: contain;
+  height: 1012px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .hero-section-background:after {
@@ -283,6 +285,7 @@ height:auto;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
   height: 120px; 
   max-width: 485px;
+  margin-top: -120px;
 }    
 
 /* Search form */
