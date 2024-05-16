@@ -690,6 +690,20 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   height: auto;
 }
 
+.slideshow-container {
+  overflow: hidden;
+}
+
+.slides {
+  white-space: nowrap;
+  animation: slideAnimation 20s linear infinite; 
+}
+
+@keyframes slideAnimation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+
 /* -----------------WE TAKE CARE OF YOUR BLADES------------------- */
 .we-take-care{
   padding-bottom: 850px;
