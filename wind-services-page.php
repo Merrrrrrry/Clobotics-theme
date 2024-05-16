@@ -88,8 +88,8 @@ Template Name: Wind services
     <div class="....">
         <?php $loop = new WP_Query( array( 'post_type' => 'customers-logo', 'posts_per_page' => -1 ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-        
-        <a href="<?php echo esc_url(get_field('link_to_their_website')); ?>" class="customers_logo_link">
+
+       <a href="<?php echo esc_url(get_field('link_to_their_website')); ?>" class="customers_logo_link">
             <img src="<?php $image = get_field('transparent_png_of_customer_logo'); echo esc_url($image["url"]); ?>" alt="Logo of customer" class="customers_logo_image">
         </a>
 
