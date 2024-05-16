@@ -710,54 +710,17 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 @keyframes slideAnimation {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-100% - 10px)); } 
-}  */
+}   */
 
 
 
 
-
-/* @keyframes slide {
+@keyframes slideAnimation {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
-  }
-}
-
-.images-career {
-  overflow: hidden;
-  white-space: nowrap;
-  padding-top: 40px;
-}
-
-.images-career:hover .image-slide {
-  animation-play-state: paused;
-}
-
-.image-slide {
-  display: inline-block;
-  font-size: 0;
-  animation: 30s slide infinite linear;
-}
-
-.image-slide img {
-  height: 700px;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  font-size: initial;
-} */
-
-
-
-
-@keyframes slide {
-  0% {
-      transform: translateX(0);
-  }
-  100% {
-      transform: translateX(-50%);
   }
 }
 
@@ -767,23 +730,25 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   padding-top: 40px;
 }
 
-.slideshow-container:hover .slides {
-  animation-play-state: paused;
-}
 
 .slides {
   display: inline-block;
   font-size: 0;
   animation: 30s slide infinite linear;
 }
-
-.slides img {
-  height: 700px;
+.customers_logo_image {
+  max-width: 140px; 
+  height: auto;
   display: inline-block;
   margin: 0;
   padding: 0;
   font-size: initial;
 }
+
+
+
+
+
 
 
 /* -----------------WE TAKE CARE OF YOUR BLADES------------------- */
