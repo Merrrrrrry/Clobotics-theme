@@ -244,7 +244,7 @@ width: 100%;
 .hero_svg:after {
 content: url(media/Hero-imgs/hero-cut-forms/cut-form-grey-website-format.svg);
 position: absolute;
-bottom: 0;
+bottom: -40%;
 width: 100%;
 height:auto;
 }
