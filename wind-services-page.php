@@ -11,16 +11,16 @@ Template Name: Wind services
 
 <body>
 
-<!-- Hero Section WITHOUT navbar -->
-
+<!-- Hero section -->
 <div class="hero-section">
-        <!-- <div class="navbar">
-            <a class="home" href="<  ?php echo get_permalink(get_page_by_path('home')) ?>" style="order: -1;">Home</a>
-            <a href="<  ?php echo get_permalink(get_page_by_path('contact')) ?>">Contacts</a>
-            <a href="<  ?php echo get_permalink(get_page_by_path('faq')) ?>">FAQ</a>
-            <a href="<  ?php echo get_permalink(get_page_by_path('services')) ?>">Services</a>
-        </div> -->
+    <div class="hero-section-background">
+        <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_wind_services.jpg" alt="Hero image">
+    </div>
 
+    <div class="hero-section-content">
+        <h1 class="title hero-title">Wind Services</h1>
+    </div>
+</div>
 
     <!-- Hero Video (referenced from busters world) -->
     <div class="hero-section-background">
@@ -65,6 +65,7 @@ Template Name: Wind services
                 <img class="we_operate_globally-img" id="image_of_our_offices" src="<?php $image = get_field('image_of_our_offices_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our offices (We operate globally section)" /> 
                 <img class="we_operate_globally-img hidden" id="image_of_our_partners" src="<?php $image = get_field('image_of_our_partners_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our partners (We operate globally section)" /> 
                 <img class="we_operate_globally-img hidden" id="image_of_our_work" src="<?php $image = get_field('image_of_our_work_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our work (We operate globally section)" /> 
+                <img class="article_main_img" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt="Main image of article" /> 
         </div>
     </div>
 </section>

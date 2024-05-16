@@ -20,16 +20,16 @@ Template Name: About us
 
 
 <!-- Hero section -->
-<div class="hero-section">
-    <div class="hero-section-background">
-        <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_about_us_page_1.jpg" alt="Hero_about_us_page">
-    </div>
-
-    <div class="hero-section-content">
-        <h1 class="title hero-title"> Meet Clobotics - vision technology company with offices all around the world </h1>
-        <p class="hero-slogan"> </p>
-    </div>
-</div>
+    
+        <div class="hero-section">
+            <div class="hero-section-background white_svg">
+                <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_about_us_page_1.jpg" alt="Hero image">
+            </div>
+            <div class="hero-section-content">
+                <h1 class="title hero-title"> Meet Clobotics - vision technology company with offices all around the world </h1>
+                <p class="hero-slogan"> </p>
+            </div>
+        </div> 
 
 
 <!-- Hero Video (referenced from busters world) -->

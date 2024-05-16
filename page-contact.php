@@ -10,16 +10,17 @@ Template Name: Contact
   
 <body>
 
- <!-- Hero section -->
+<!--  Hero section  -->
 
         <div class="hero-section">
-             <div class="hero-section-background">
-                    <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/11.png" alt="hero image alt">
-             </div>
-                    <div class="hero-section-content">
-                        <h1 class="hero-title">Meet Clobotics - a vision technology company <br> with offices all around the world</h1>
-                </div>
-         </div>
+            <div class="hero-section-background">
+                <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_contact_us.jpg" alt="Hero image">
+            </div>
+            <div class="hero-section-content">
+                <h1 class="hero-title">Meet Clobotics - a vision technology company <br> with offices all around the world</h1>
+            </div>
+        </div> 
+
 
 
 <!--- Contact form section --->
@@ -100,19 +101,6 @@ Template Name: Contact
     </div>
   </div>
 </section>
-
-
-
-
-
-<p>FONT TEST</p>
-
-<h1>This is H1</h1>
-<h2>This is H2</h2>
-<h3>This is H3</h3>
-<h4>This is H4</h4>
-<h5>This is H5</h5>
-<p>This is paragraph</p>
 
 
 </body>

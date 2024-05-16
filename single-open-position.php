@@ -7,15 +7,16 @@ Template Name: single-open-position
 <?php get_header(); ?>
 
 <main>
-    <!-- Hero section -->
-    <div class="hero-section">
-        <div class="hero-section-background">
-            <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/11.png" alt="Your Image Alt Text">
-        </div>
-        <div class="hero-section-content">
-            <h1 class="hero-title"><?php the_field('job_title'); ?></h1>
-        </div>
+<!-- Hero section -->
+<div class="hero-section">
+    <div class="hero-section-background">
+        <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_single_career_page.jpg" alt="Hero image">
     </div>
+
+    <div class="hero-section-content">
+        <h1 class="title hero-title"><?php the_field('new_article_title'); ?></h1>
+    </div>
+</div>
 
     <a id="apply-button" href="#" class="btn">Apply</a>
 
