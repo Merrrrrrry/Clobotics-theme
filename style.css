@@ -236,6 +236,7 @@ ul.position-list {
 }
 
 .hero_svg {
+position: relative;
 background-image: url("media/Hero-imgs/Hero_career_page.jpg");
 background-color: #ffffff;
 width: 100%;
