@@ -682,11 +682,11 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 .customers_logo_link {
   display: inline-block;
-  margin-right: 10px; 
+  margin-right: 30px; 
 }
 
 .customers_logo_image {
-  max-width: 100px; 
+  max-width: 140px; 
   height: auto;
 }
 
