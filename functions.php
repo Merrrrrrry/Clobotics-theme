@@ -167,3 +167,106 @@ function clobotics_ajax_search() {
 }
 add_action('wp_ajax_clobotics_search', 'clobotics_ajax_search');
 add_action('wp_ajax_nopriv_clobotics_search', 'clobotics_ajax_search');
+
+
+// For wind services search bar:
+
+// Enqueue custom JavaScript
+function clobotics_enqueue_scripts() {
+    wp_enqueue_script('clobotics-custom', get_template_directory_uri() . '/custom.js', array('jquery'), null, true);
+
+    // Localize script to use AJAX URL in JavaScript
+    wp_localize_script('clobotics-custom', 'clobotics_ajax', array(
+        'ajax_url' => admin_url('admin-ajax.php')
+    ));
+}
+add_action('wp_enqueue_scripts', 'clobotics_enqueue_scripts');
+
+// Handle AJAX search for wind services
+function clobotics_ajax_search_wind_services() {
+    $search_query = isset($_POST['search_query']) ? sanitize_text_field($_POST['search_query']) : '';
+
+    // Construct meta query arguments
+    $meta_query = array(
+        'relation' => 'OR',
+        array(
+            'key' => 'service_title',
+            'value' => $search_query,
+            'compare' => 'LIKE'
+        ),
+        array(
+            'key' => '1st_keypoint',
+            'value' => $search_query,
+            'compare' => 'LIKE'
+        ),
+        array(
+            'key' => '2nd_keypoint',
+            'value' => $search_query,
+            'compare' => 'LIKE'
+        ),
+        array(
+            'key' => '3rd_keypoint',
+            'value' => $search_query,
+            'compare' => 'LIKE'
+        )
+    );
+
+    // Construct WP_Query arguments
+    $args = array(
+        'post_type' => 'wind-service',
+        'posts_per_page' => -1,
+        'meta_query' => $meta_query
+    );
+
+    // Perform query
+    $all_services = new WP_Query($args);
+
+    if ($all_services->have_posts()) :
+        while ($all_services->have_posts()) : $all_services->the_post(); ?>
+            <li class="service-item">
+                <h3 class="service-title"><?php the_field('service_title'); ?></h3>
+                <div class="service-main-image">
+                    <?php
+                    $image = get_field('service_main_image');
+                    if (!empty($image)) : ?>
+                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                    <?php endif; ?>
+                </div>
+                <div class="service-keypoints">
+                    <div class="keypoint">
+                        <p><?php the_field('1st_keypoint'); ?></p>
+                        <?php
+                        $icon1 = get_field('icon_of_the_keypoint_1');
+                        if ($icon1) : ?>
+                            <img src="<?php echo esc_url($icon1['url']); ?>" alt="<?php echo esc_attr($icon1['alt']); ?>">
+                        <?php endif; ?>
+                    </div>
+                    <div class="keypoint">
+                        <p><?php the_field('2nd_keypoint'); ?></p>
+                        <?php
+                        $icon2 = get_field('icon_of_the_keypoint_2');
+                        if ($icon2) : ?>
+                            <img src="<?php echo esc_url($icon2['url']); ?>" alt="<?php echo esc_attr($icon2['alt']); ?>">
+                        <?php endif; ?>
+                    </div>
+                    <div class="keypoint">
+                        <p><?php the_field('3rd_keypoint'); ?></p>
+                        <?php
+                        $icon3 = get_field('icon_of_the_keypoint_3');
+                        if ($icon3) : ?>
+                            <img src="<?php echo esc_url($icon3['url']); ?>" alt="<?php echo esc_attr($icon3['alt']); ?>">
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
+            </li>
+        <?php endwhile;
+        wp_reset_postdata();
+    else : ?>
+        <p class="service-subtitle">No wind services available.</p>
+    <?php endif;
+
+    wp_die();
+}
+add_action('wp_ajax_clobotics_search_wind_services', 'clobotics_ajax_search_wind_services');
+add_action('wp_ajax_nopriv_clobotics_search_wind_services', 'clobotics_ajax_search_wind_services');
