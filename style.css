@@ -202,7 +202,6 @@ p.subtitle {
 }
 
 .job-title {
-  display: inline-block;
   flex-grow: 1; 
 }
 
