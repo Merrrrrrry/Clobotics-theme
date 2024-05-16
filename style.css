@@ -237,6 +237,7 @@ p.job-subtitle {
 
 ul.position-list {
   list-style-type: none;
+  overflow: hidden;
 }
 
 
