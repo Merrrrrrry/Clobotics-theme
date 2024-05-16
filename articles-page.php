@@ -6,6 +6,21 @@ Template Name: Articles
 
 <?php get_header(); ?>
 
+
+<!-- Hero section -->
+<div class="hero-section">
+    <div class="hero-section-background">
+        <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_about_us_page_1.jpg" alt="Hero_about_us_page">
+    </div>
+
+    <div class="hero-section-content">
+        <h1 class="title hero-title"> Meet Clobotics - vision technology company with offices all around the world </h1>
+        <p class="hero-slogan"> </p>
+    </div>
+</div>
+
+
+
 <main>
     <h2>Clobotics Articles</h2>
 

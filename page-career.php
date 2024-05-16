@@ -19,6 +19,26 @@ Template Name: Career
             </div>
         </div>
 
+
+
+        <!-- Hero section -->
+        <div class="hero-section">
+            <div class="hero-section-background">
+            <img src="form white website format.svg"
+            alt="background hero cutting svg"
+            srcset="form white website format.svgequilateral.svg" />
+            <div class="hero-section-content">
+                <h1 class="hero-title">Career at Clobotics</h1>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
         <!-- Search bar -->
         <div class="search-bar">
             <form method="get" action="">
