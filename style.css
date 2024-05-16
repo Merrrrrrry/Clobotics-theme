@@ -702,7 +702,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 }
 
 .slides {
-  display: inline-block; 
+  display: flex; 
   animation: slideAnimation 20s linear infinite; 
 }
 @keyframes slideAnimation {
