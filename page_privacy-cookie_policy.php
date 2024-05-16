@@ -51,12 +51,13 @@ Template Name: Privacy & cookie policy
         <div style="height: 40px;"></div>
 
     </main>
-    
+</body>    
+
     <script>
         function openPdf(pdfUrl) {
             window.open(pdfUrl, '_blank');
         }
     </script>
-</body>
+
 
 <?php get_footer(); ?>
