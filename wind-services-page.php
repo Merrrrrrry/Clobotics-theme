@@ -82,9 +82,19 @@ Template Name: Wind services
 
 
 
-
+<section>
     <h2 class="title">Our customers are Global Wind Companies</h2>
 
+    <div class="....">
+        <?php $loop = new WP_Query( array( 'post_type' => 'customers-logo', 'posts_per_page' => -1 ) ); ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+        <div class="....">
+            <img src="<?php $image = get_field('transparent_png_of_customer_logo'); echo esc_url($image["url"]); ?>" alt="Logo of customer">
+        </div>
+        <?php endwhile; wp_reset_query(); ?>
+    </div>
+</section>
 
 
 <section class="we-take-care">
