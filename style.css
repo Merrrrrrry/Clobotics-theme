@@ -198,7 +198,7 @@ p.subtitle {
   text-align: left;
   display: flex;
   align-items: center;
-  justify-content: flex-start; 
+  justify-content: space-between;
 }
 
 .job-title {
@@ -224,6 +224,7 @@ h3.job-title {
   font-size: 16px;
   font-weight: bold;
   color: #000000;
+  flex-grow: 1;
 }
 
 p.job-subtitle {
