@@ -204,7 +204,7 @@ p.subtitle {
   margin-right: 50px; 
 }
 
-.position-item {
+li.position-item {
   align-items: baseline;
 }
 
