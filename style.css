@@ -655,6 +655,43 @@ main {
 /*---------------------------WIND SERVICES PAGE----------------------------*/
 
 
+/* <------- Wind services section -------> */
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-item {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.service-main-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.keypoint {
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
 
 /*We operate globally section*/
 
