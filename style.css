@@ -194,7 +194,6 @@ p.subtitle {
   margin: 0;
   padding-bottom: 20px;
   border-bottom: 0.5px solid #cfcfcf; 
-  margin-bottom: 25px;
   text-align: left; 
 }
 
@@ -227,31 +226,6 @@ p.job-subtitle {
 ul.position-list {
   list-style-type: none;
 }
-
-
-/* svg in career page */
-
-.cls-1 {
-  fill: #f5f5f5;
-  stroke-width: 0px;
-}
-
-.hero_svg {
-background-image: url("media/Hero-imgs/Hero_career_page.jpg");
-background-color: transparent;
-}
-
-.hero_svg:after {
-content: url(media/Hero-imgs/hero-cut-forms/cut-form-grey-website-format.svg);
-position: absolute;
-bottom: 0;
-width: 100%;
-height:auto;
-}
-
-
-
-
 
 
 
@@ -400,11 +374,6 @@ height:auto;
 .open-positions .position-list {
   margin-left: auto;
   margin-right: auto; 
-}
-
-.position-list {
-  list-style-type: none;
-  padding: 10 0px; 
 }
 
 
@@ -679,6 +648,16 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 /*----------------------CUSTOMERS' LOGOS -----------------------*/
 
+
+.customers_logo_link {
+  display: inline-block;
+  margin-right: 10px; 
+}
+
+.customers_logo_image {
+  max-width: 100px; 
+  height: auto;
+}
 
 /* -----------------WE TAKE CARE OF YOUR BLADES------------------- */
 .we-take-care{
