@@ -202,13 +202,14 @@ p.subtitle {
 }
 
 .job-title {
+  display: inline-block;
   flex-grow: 1; 
 }
 
 .job-subtitle .job-type {
   display: inline-block;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .job-subtitle a.btn {
@@ -718,26 +719,28 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 
 .slides {
-  overflow-x: auto !important;
-  white-space: nowrap !important;
   display: flex; /* Use flexbox to ensure all images are in one line */
+  overflow-x: auto; /* Enable horizontal scrolling */
   animation: slideAnimation 20s linear infinite; /* Adjust animation duration as needed */
 }
 
 .slides .customers_logo_link {
-  display: inline-block !important;
-  margin-right: 30px !important; /* Adjust margin as needed */
+  display: inline-block; /* Display images inline */
 }
 
-.slides .customers_logo_link:last-child {
-  margin-right: 0; /* Remove margin from the last image to avoid extra space */
+.slides .customers_logo_image {
+  max-width: 140px; /* Adjust maximum width of images */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.slides .customers_logo_link:not(:last-child) {
+  margin-right: 30px; /* Add margin between images except for the last one */
 }
 
 @keyframes slideAnimation {
   0% { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  100% { transform: translateX(-100%); } /* Slide all images to the left by the width of one image */
 }
-
 
 /* @keyframes slideAnimation {
   0% {
