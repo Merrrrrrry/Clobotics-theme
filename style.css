@@ -694,16 +694,15 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   max-width: 140px; 
   height: auto;
 }
-
 .slideshow-container {
   overflow: hidden;
+  white-space: nowrap; 
 }
 
 .slides {
-  white-space: nowrap;
+  display: inline-block; 
   animation: slideAnimation 20s linear infinite; 
 }
-
 @keyframes slideAnimation {
   0% { transform: translateX(0); }
   100% { transform: translateX(-100%); }
