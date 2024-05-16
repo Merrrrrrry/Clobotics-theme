@@ -85,10 +85,11 @@ Template Name: Wind services
 <section>
     <h2 class="title">Our customers are Global Wind Companies</h2>
 
-    <div class="logos_container">
+
         <?php $loop = new WP_Query( array( 'post_type' => 'customers-logo', 'posts_per_page' => -1 ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
+    
+    <div class="logos_container">
     <div class="logos">
     <div class="logos-slide">
        <a href="<?php echo esc_url(get_field('link_to_their_website')); ?>" class="customers_logo_link">

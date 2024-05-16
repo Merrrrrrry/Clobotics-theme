@@ -718,13 +718,18 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   100% { transform: translateX(calc(-100% - 10px)); }
 } */
 
+
+
 .logos-container{
 box-sizing:border-box;
+margin: 0;
+padding: 0;
 }
+
+
 .logos-slide {
   white-space: nowrap;
   }
-
 
 .logos-slide img{
 height:60px;
