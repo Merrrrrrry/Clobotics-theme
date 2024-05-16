@@ -237,7 +237,8 @@ ul.position-list {
 }
 
 .hero_svg {
-
+background-image: url("media/Hero-imgs/Hero_career_page.jpg");
+background-color: transparent;
 }
 
 .hero_svg:after {
