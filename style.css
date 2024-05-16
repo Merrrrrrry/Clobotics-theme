@@ -718,7 +718,9 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   100% { transform: translateX(calc(-100% - 10px)); }
 } */
 
-
+.logos-container{
+box-sizing:border-box;
+}
 .logos-slide {
   white-space: nowrap;
   }
