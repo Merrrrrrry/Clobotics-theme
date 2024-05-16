@@ -74,7 +74,7 @@ Template Name: Wind services
 
 
 
-
+<!-- 
 
 <section>
     <h2 class="title">Our customers are Global Wind Companies</h2>
@@ -105,7 +105,7 @@ Template Name: Wind services
 
         <?php endwhile; wp_reset_query(); ?>
     </div>
-</section>
+</section> -->
 
 
 <section class="we-take-care">
