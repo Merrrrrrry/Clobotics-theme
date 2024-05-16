@@ -5,6 +5,7 @@ Template Name: Media
 ?>
 
 <?php get_header(); ?>
+<body class="gray-body">
 
 <main>
 
@@ -26,5 +27,6 @@ Template Name: Media
 
 
 </main>
-
+    
+</body>
 <?php get_footer(); ?>

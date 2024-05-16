@@ -6,7 +6,8 @@ Template Name: Home
 
 <?php get_header(); ?>
 
-<main>
+<body class="gray-body">
+  <main>
 
     <?php while(have_posts()): the_post(); ?>
         <?php the_content(); ?>
@@ -26,5 +27,6 @@ Template Name: Home
 
 
 
-</main>
+  </main>
+</body>
 <?php get_footer(); ?>

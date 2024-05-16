@@ -8,7 +8,8 @@ Template Name: Contact
     
     <?php while(have_posts()): the_post() ?>
   
-<body>
+ <body class="gray-body">
+
 
 <!--  Hero section  -->
 

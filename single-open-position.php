@@ -9,7 +9,7 @@ Template Name: single-open-position
 <main>
 <!-- Hero section -->
 <div class="hero-section">
-    <div class="hero-section-background">
+    <div class="hero-section-background white_svg">
         <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_single_career_page.jpg" alt="Hero image">
     </div>
 

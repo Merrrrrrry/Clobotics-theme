@@ -8,6 +8,9 @@ Template Name: Articles
 
 
 <!-- Hero section -->
+<body class="gray-body">
+    
+
 <div class="hero-section">
     <div class="hero-section-background">
         <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_articles_page.jpg" alt="Hero image">
@@ -90,4 +93,5 @@ Template Name: Articles
     ?>
 </main>
 
+</body>
 <?php get_footer(); ?>

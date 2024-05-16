@@ -12,7 +12,7 @@ Template Name: single-new-article
 
 <!-- Hero section -->
         <div class="hero-section">
-            <div class="hero-section-background">
+            <div class="hero-section-background white_svg">
                 <img class="image-hero" id="article_main_img" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt="Main image of article" /> 
             </div>
 
