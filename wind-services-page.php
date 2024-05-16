@@ -75,10 +75,10 @@ Template Name: Wind services
     <!-- Wind Services Section -->
 
         <!-- Search bar -->
-        <div class="search-bar-container">
-            <form id="search-form" method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form">
-                <div class="search-bar">
-                     <input type="text" name="search_query" id="search-input" placeholder="Search...">
+        <div class="search-bar-container-2">
+            <form id="search-form-2" method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form-2">
+                <div class="search-bar-2">
+                     <input type="text" name="search_query" id="search-input-2" placeholder="Search...">
                      <button type="submit" class="search-button">
                     <span class="material-icons search-icon">search</span>
                 </button>
