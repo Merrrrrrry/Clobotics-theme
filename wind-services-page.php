@@ -74,61 +74,83 @@ Template Name: Wind services
 
     <!-- Wind Services Section -->
         
+        <!-- Search bar -->
+    <div class="search-bar-container">
+        <form id="search-form" method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form">
+            <div class="search-bar">
+                <input type="text" name="search_query" id="search-input" placeholder="Search...">
+                <button type="submit" class="search-button">
+                    <span class="material-icons search-icon">search</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Wind Services Section -->
+    <div class="wind-services">
+        <h2 class="title">Wind Services</h2>
+
+        <!-- Gap -->
+        <div style="height: 10px;"></div>
+
         <ul id="service-list" class="service-list">
             <?php
-            
+            $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
+
+            // Retrieve wind services
             $args = array(
                 'post_type' => 'wind-service',
                 'posts_per_page' => -1,
+                's' => $search_query,
             );
 
             $all_services = new WP_Query($args);
 
             if ($all_services->have_posts()) :
                 $counter = 0;
-                while ($all_services->have_posts()) : $all_services->the_post(); 
+                while ($all_services->have_posts()) : $all_services->the_post();
                     if ($counter % 3 === 0 && $counter !== 0) {
-                        echo '</ul><ul id="service-list" class="service-list">'; 
+                        echo '</ul><ul id="service-list" class="service-list">'; // Close the row and start a new one every 3 items
                     }
                     ?>
                     <li class="service-item">
                         <h3 class="service-title"><?php the_field('service_title'); ?></h3>
                         <div class="service-main-image">
-                            <?php 
+                            <?php
                             $image = get_field('service_main_image');
-                            if( !empty($image) ): ?>
-                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+                            if (!empty($image)) : ?>
+                                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
                             <?php endif; ?>
                         </div>
                         <div class="service-keypoints">
                             <div class="keypoint">
                                 <p><?php the_field('1st_keypoint'); ?></p>
-                                <?php 
+                                <?php
                                 $icon1 = get_field('icon_of_the_keypoint_1');
-                                if( $icon1 ): ?>
-                                    <img src="<?php echo esc_url($icon1['url']); ?>" alt="<?php echo esc_attr($icon1['alt']); ?>" />
+                                if ($icon1) : ?>
+                                    <img src="<?php echo esc_url($icon1['url']); ?>" alt="<?php echo esc_attr($icon1['alt']); ?>">
                                 <?php endif; ?>
                             </div>
                             <div class="keypoint">
                                 <p><?php the_field('2nd_keypoint'); ?></p>
-                                <?php 
+                                <?php
                                 $icon2 = get_field('icon_of_the_keypoint_2');
-                                if( $icon2 ): ?>
-                                    <img src="<?php echo esc_url($icon2['url']); ?>" alt="<?php echo esc_attr($icon2['alt']); ?>" />
+                                if ($icon2) : ?>
+                                    <img src="<?php echo esc_url($icon2['url']); ?>" alt="<?php echo esc_attr($icon2['alt']); ?>">
                                 <?php endif; ?>
                             </div>
                             <div class="keypoint">
                                 <p><?php the_field('3rd_keypoint'); ?></p>
-                                <?php 
+                                <?php
                                 $icon3 = get_field('icon_of_the_keypoint_3');
-                                if( $icon3 ): ?>
-                                    <img src="<?php echo esc_url($icon3['url']); ?>" alt="<?php echo esc_attr($icon3['alt']); ?>" />
+                                if ($icon3) : ?>
+                                    <img src="<?php echo esc_url($icon3['url']); ?>" alt="<?php echo esc_attr($icon3['alt']); ?>">
                                 <?php endif; ?>
                             </div>
                         </div>
                         <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
                     </li>
-                    <?php 
+                    <?php
                     $counter++;
                 endwhile;
                 wp_reset_postdata();
