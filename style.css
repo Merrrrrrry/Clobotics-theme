@@ -558,39 +558,7 @@ main {
      width: 100%;
  }
 
-/* Nav bar style */
-/* Style the navigation bar */
-.navbar {
-  background-color: #333; /* Background color */
-  padding: 10px; /* Add some padding */
-}
 
-/* Style the list of menu items */
-.navbar-nav {
-  list-style: none; /* Remove default list styles */
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-}
-
-/* Style individual menu items */
-ul.inline li,
-.navbar-nav li {
-  display: inline-block; /* Display menu items inline */
-  margin-right: 20px; /* Add some space between menu items */
-}
-
-/* Style links within menu items */
-.navbar-nav li a {
-  color: #fff; /* Text color */
-  text-decoration: none; /* Remove underline */
-  font-size: 16px; /* Font size */
-  font-weight: bold; /* Font weight */
-}
-
-/* Hover effect for links */
-.navbar-nav li a:hover {
-  color: #ffcc00; /* Change text color on hover */
-}
 
 
 
