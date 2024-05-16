@@ -199,18 +199,17 @@ p.subtitle {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  overflow: hidden;
 }
 
 .job-title {
+  display: inline-block;
   flex-grow: 1; 
 }
 
 .job-subtitle .job-type {
   display: inline-block;
-  margin-left: 40px;
-  margin-right: 40px;
-  overflow: hidden;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .job-subtitle a.btn {
@@ -226,7 +225,6 @@ h3.job-title {
   font-weight: bold;
   color: #000000;
   flex-grow: 1;
-  text-align: left !important;
 }
 
 p.job-subtitle {
@@ -238,7 +236,6 @@ p.job-subtitle {
 
 ul.position-list {
   list-style-type: none;
-  overflow: hidden;
 }
 
 
@@ -474,7 +471,7 @@ h4.text {
 
 #apply-button {
   position: absolute;
-  bottom: -320px; 
+  bottom: -100px; 
   left: 50%;
   transform: translateX(-50%);
   z-index: 1; 
@@ -719,12 +716,48 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 
 
-@keyframes slideAnimation {
+/* @keyframes slide {
   0% {
     transform: translateX(0);
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+.images-career {
+  overflow: hidden;
+  white-space: nowrap;
+  padding-top: 40px;
+}
+
+.images-career:hover .image-slide {
+  animation-play-state: paused;
+}
+
+.image-slide {
+  display: inline-block;
+  font-size: 0;
+  animation: 30s slide infinite linear;
+}
+
+.image-slide img {
+  height: 700px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: initial;
+} */
+
+
+
+
+@keyframes slide {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
   }
 }
 
@@ -734,15 +767,17 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   padding-top: 40px;
 }
 
+.slideshow-container:hover .slides {
+  animation-play-state: paused;
+}
 
-
-.slide {
+.slides {
   display: inline-block;
   font-size: 0;
   animation: 30s slide infinite linear;
 }
 
-.customers_logo_link {
+.slides img {
   height: 700px;
   display: inline-block;
   margin: 0;
