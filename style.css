@@ -691,93 +691,31 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 /*----------------------CUSTOMERS' LOGOS -----------------------*/
 
 
-<<<<<<< Updated upstream
-/* .customers_logo_link {
-  display: inline-block;
-  margin-right: 30px; 
-=======
 .customers_logo_link {
   display: inline-block !important;
   margin-right: 30px !important;
->>>>>>> Stashed changes
 }
 
 .customers_logo_image {
-  max-width: 140px; 
-  height: auto;
+  max-width: 140px !important;
+  height: auto !important;
 }
 
 .slideshow-container {
-  overflow-x: auto; 
-  white-space: nowrap; 
+  overflow-x: auto !important;
+  white-space: nowrap !important;
 }
 
 .slides {
-  display: inline-block; 
-  animation: slideAnimation 20s linear infinite; 
+  display: inline-block !important;
+  animation: slideAnimation 20s linear infinite !important;
+  overflow: hidden;
 }
 
 @keyframes slideAnimation {
   0% { transform: translateX(0); }
-<<<<<<< Updated upstream
-  100% { transform: translateX(calc(-100% - 10px)); } 
-}   */
-=======
   100% { transform: translateX(calc(-100% - 10px)); }
 }
-
-
-
-/* .logos-container{
-box-sizing:border-box;
-margin: 0;
-padding: 0;
-}
-
-.logos-slide {
-  white-space: nowrap;
-  }
-
-.logos-slide img{
-height:60px;
-} */
->>>>>>> Stashed changes
-
-
-
-
-@keyframes slideAnimation {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-.slideshow-container {
-  overflow: hidden;
-  white-space: nowrap;
-  padding-top: 40px;
-}
-
-
-.slides {
-  display: inline-block;
-  font-size: 0;
-  animation: 30s slide infinite linear;
-}
-.customers_logo_image {
-  max-width: 140px; 
-  height: auto;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  font-size: initial;
-}
-
-
-
 
 
 
