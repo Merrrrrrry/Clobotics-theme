@@ -72,93 +72,85 @@ Template Name: Wind services
 </div>
 
 
-    <!-- Wind Services Section -->
+    
+<!-- Search bar -->
+<div class="search-bar-container-2">
+    <form id="search-form-2" method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form-2">
+        <div class="search-bar-2">
+            <input type="text" name="search_query" id="search-input-2" placeholder="Search...">
+            <button type="submit" class="search-button">
+                <span class="material-icons search-icon">search</span>
+            </button>
+        </div>
+    </form>
+</div>
 
-        <!-- Search bar -->
-        <div class="search-bar-container-2">
-            <form id="search-form-2" method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form-2">
-                <div class="search-bar-2">
-                     <input type="text" name="search_query" id="search-input-2" placeholder="Search...">
-                     <button type="submit" class="search-button">
-                    <span class="material-icons search-icon">search</span>
-                </button>
-            </div>
-        </form>
-    </div>
+<!-- Wind services list -->
+<ul id="service-list" class="service-list">
+    <?php
+    $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
 
-<!-- Wind Services Section -->
-<div class="wind-services">
-    <h2 class="title">Wind Services</h2>
+    // Retrieve wind services
+    $args = array(
+        'post_type' => 'wind-service',
+        'posts_per_page' => -1,
+        's' => $search_query,
+    );
 
-    <!-- Gap -->
-    <div style="height: 10px;"></div>
+    $all_services = new WP_Query($args);
 
-    <ul id="service-list" class="service-list">
-        <?php
-        $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
-
-        // Retrieve wind services
-        $args = array(
-            'post_type' => 'wind-service',
-            'posts_per_page' => -1,
-            's' => $search_query,
-        );
-
-        $all_services = new WP_Query($args);
-
-        if ($all_services->have_posts()) :
-            $counter = 0;
-            while ($all_services->have_posts()) : $all_services->the_post();
-                if ($counter % 3 === 0 && $counter !== 0) {
-                    echo '</ul><ul id="service-list" class="service-list">'; // Close the row and start a new one every 3 items
-                }
-                ?>
-                <li class="service-item">
-                    <h3 class="service-title"><?php the_field('service_title'); ?></h3>
-                    <div class="service-main-image">
+    if ($all_services->have_posts()) :
+        $counter = 0;
+        while ($all_services->have_posts()) : $all_services->the_post();
+            if ($counter % 3 === 0 && $counter !== 0) {
+                echo '</ul><ul id="service-list" class="service-list">'; // Close the row and start a new one every 3 items
+            }
+            ?>
+            <li class="service-item">
+                <h3 class="service-title"><?php the_field('service_title'); ?></h3>
+                <div class="service-main-image">
+                    <?php
+                    $image = get_field('service_main_image');
+                    if (!empty($image)) : ?>
+                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                    <?php endif; ?>
+                </div>
+                <div class="service-keypoints">
+                    <div class="keypoint">
+                        <p><?php the_field('1st_keypoint'); ?></p>
                         <?php
-                        $image = get_field('service_main_image');
-                        if (!empty($image)) : ?>
-                            <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                        $icon1 = get_field('icon_of_the_keypoint_1');
+                        if ($icon1) : ?>
+                            <img src="<?php echo esc_url($icon1['url']); ?>" alt="<?php echo esc_attr($icon1['alt']); ?>">
                         <?php endif; ?>
                     </div>
-                    <div class="service-keypoints">
-                        <div class="keypoint">
-                            <p><?php the_field('1st_keypoint'); ?></p>
-                            <?php
-                            $icon1 = get_field('icon_of_the_keypoint_1');
-                            if ($icon1) : ?>
-                                <img src="<?php echo esc_url($icon1['url']); ?>" alt="<?php echo esc_attr($icon1['alt']); ?>">
-                            <?php endif; ?>
-                        </div>
-                        <div class="keypoint">
-                            <p><?php the_field('2nd_keypoint'); ?></p>
-                            <?php
-                            $icon2 = get_field('icon_of_the_keypoint_2');
-                            if ($icon2) : ?>
-                                <img src="<?php echo esc_url($icon2['url']); ?>" alt="<?php echo esc_attr($icon2['alt']); ?>">
-                            <?php endif; ?>
-                        </div>
-                        <div class="keypoint">
-                            <p><?php the_field('3rd_keypoint'); ?></p>
-                            <?php
-                            $icon3 = get_field('icon_of_the_keypoint_3');
-                            if ($icon3) : ?>
-                                <img src="<?php echo esc_url($icon3['url']); ?>" alt="<?php echo esc_attr($icon3['alt']); ?>">
-                            <?php endif; ?>
-                        </div>
+                    <div class="keypoint">
+                        <p><?php the_field('2nd_keypoint'); ?></p>
+                        <?php
+                        $icon2 = get_field('icon_of_the_keypoint_2');
+                        if ($icon2) : ?>
+                            <img src="<?php echo esc_url($icon2['url']); ?>" alt="<?php echo esc_attr($icon2['alt']); ?>">
+                        <?php endif; ?>
                     </div>
-                    <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
-                </li>
-                <?php
-                $counter++;
-            endwhile;
-            wp_reset_postdata();
-        else : ?>
-            <p class="service-subtitle">No wind services available.</p>
-        <?php endif; ?>
-    </ul>
-</div>
+                    <div class="keypoint">
+                        <p><?php the_field('3rd_keypoint'); ?></p>
+                        <?php
+                        $icon3 = get_field('icon_of_the_keypoint_3');
+                        if ($icon3) : ?>
+                            <img src="<?php echo esc_url($icon3['url']); ?>" alt="<?php echo esc_attr($icon3['alt']); ?>">
+                        <?php endif; ?>
+                    </div>
+                </div>
+                <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
+            </li>
+            <?php
+            $counter++;
+        endwhile;
+        wp_reset_postdata();
+    else : ?>
+        <p class="service-subtitle">No wind services available.</p>
+    <?php endif; ?>
+</ul>
 
 
 
