@@ -246,19 +246,28 @@ ul.position-list {
   stroke-width: 0px;
 }
 
-.hero_svg {
-position: relative;
+.hero_img_career {
 background-image: url("media/Hero-imgs/Hero_career_page.jpg");
-background-color: #ffffff;
-width: 100%;
+background-repeat: no-repeat;
 }
 
-.hero_svg:after {
+.image-hero {
+  width: 1920px;
+  height: 500px;
+  object-fit: contain;
+}
+
+.hero-section-background:after {
 content: url(media/Hero-imgs/hero-cut-forms/cut-form-grey-website-format.svg);
 position: absolute;
-bottom: 0;
-width: 100%;
+left: 0;
+bottom: -6px;
+width: calc(100% + 2px);
 height:auto;
+}
+
+.hero-section-background.white_svg:after {
+  content: url(media/Hero-imgs/hero-cut-forms/cut-form-white-website-format.svg);
 }
 
 
