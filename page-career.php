@@ -20,12 +20,20 @@ Template Name: Career
 
 
 
-        <!-- Hero section -->
+        <!-- Hero section
         <div class="hero-section">
             <div class="hero-section-background">
             <img src="form white website format.svg"
             alt="background hero cutting svg"
             srcset="form white website format.svgequilateral.svg" />
+            <div class="hero-section-content">
+                <h1 class="hero-title">Career at Clobotics</h1>
+            </div>
+        </div> -->
+
+        <div>
+            <object data="media/Hero-imgs/hero cut forms/cut form white mobile format.svg" width="300" height="300"> </object>
+
             <div class="hero-section-content">
                 <h1 class="hero-title">Career at Clobotics</h1>
             </div>
