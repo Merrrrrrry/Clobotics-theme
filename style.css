@@ -193,23 +193,28 @@ p.subtitle {
 .job-subtitle {
   margin: 0;
   padding-bottom: 20px;
-  border-bottom: 0.5px solid #cfcfcf; 
+  border-bottom: 0.5px solid #cfcfcf;
   margin-bottom: 26px;
-  text-align: left; 
+  text-align: left;
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+}
+
+.job-title {
+  display: inline-block; 
 }
 
 .job-subtitle .job-type {
-  display: inline-block;
-  margin-left: 50px; 
-  margin-right: 50px; 
-}
-
-.position-list .position-item .btn {
-  align-items: baseline;
+  display: inline-block; 
+  margin-left: 10px; 
+  margin-right: 10px; 
 }
 
 .job-subtitle a.btn {
-  float: right; 
+  float: none; 
+  display: inline-block; 
+  margin-left: auto; 
 }
 
 
