@@ -10,7 +10,7 @@ Template Name: single-new-article
 <main>
     <?php while (have_posts()) : the_post(); ?>
         <article>
-            <h2><?php the_field('new_article_headline'); ?></h2>
+            <h2><?php the_field('new_article_title'); ?></h2>
             <h3><?php the_field('new_article_subtitle_1'); ?></h3>
             <p><?php the_field('new_article_paragraph_1'); ?></p>
             <h3><?php the_field('new_article_subtitle_2'); ?></h3>
