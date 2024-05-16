@@ -203,14 +203,13 @@ p.subtitle {
 }
 
 .job-title {
-  display: inline-block;
   flex-grow: 1; 
 }
 
 .job-subtitle .job-type {
   display: inline-block;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .job-subtitle a.btn {
