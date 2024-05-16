@@ -690,7 +690,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 /*----------------------CUSTOMERS' LOGOS -----------------------*/
 
 
-.customers_logo_link {
+/* .customers_logo_link {
   display: inline-block;
   margin-right: 30px; 
 }
@@ -713,7 +713,43 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 @keyframes slideAnimation {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-100% - 10px)); } 
+}  */
+
+
+
+
+
+@keyframes slideAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
+
+.slideshow-container {
+  overflow: hidden;
+  white-space: nowrap;
+  padding-top: 40px;
+}
+
+
+
+.slide {
+  display: inline-block;
+  font-size: 0;
+  animation: 30s slide infinite linear;
+}
+
+.customers_logo_link {
+  height: 700px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  font-size: initial;
+}
+
 
 /* -----------------WE TAKE CARE OF YOUR BLADES------------------- */
 .we-take-care{
