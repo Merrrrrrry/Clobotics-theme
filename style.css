@@ -686,7 +686,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 /*----------------------CUSTOMERS' LOGOS -----------------------*/
 
 
-.customers_logo_link {
+/* .customers_logo_link {
   display: inline-block !important;
   margin-right: 30px !important;
 }
@@ -713,8 +713,30 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 @keyframes slideAnimation {
   0% { transform: translateX(0); }
   100% { transform: translateX(calc(-100% - 10px)); }
+} */
+
+
+
+.slides {
+  overflow-x: auto !important;
+  white-space: nowrap !important;
+  display: flex; /* Use flexbox to ensure all images are in one line */
+  animation: slideAnimation 20s linear infinite; /* Adjust animation duration as needed */
 }
 
+.slides .customers_logo_link {
+  display: inline-block !important;
+  margin-right: 30px !important; /* Adjust margin as needed */
+}
+
+.slides .customers_logo_link:last-child {
+  margin-right: 0; /* Remove margin from the last image to avoid extra space */
+}
+
+@keyframes slideAnimation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
 
 
 /* @keyframes slideAnimation {
