@@ -204,6 +204,9 @@ p.subtitle {
   margin-right: 50px; 
 }
 
+.position-item {
+  display: inline-block;
+}
 
 .job-subtitle a.btn {
   float: right; 
