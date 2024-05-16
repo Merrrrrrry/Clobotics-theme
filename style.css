@@ -246,12 +246,12 @@ ul.position-list {
   stroke-width: 0px;
 }
 
-.image-hero {
+/* .image-hero {
   width: 1920px;
   height: 1012px;
   object-fit: cover;
   object-position: top;
-}
+} */
 
 .hero-section-background:after {
 content: url(media/Hero-imgs/hero-cut-forms/cut-form-grey-website-format.svg);
