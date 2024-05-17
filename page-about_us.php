@@ -9,8 +9,6 @@ Template Name: About us
     wp_enqueue_style("clobotics-carousel-style", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.carousel.min.css");
     wp_enqueue_style("clobotics-carousel-style-theme", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.theme.default.min.css");
 ?>
-<!-- <link rel="stylesheet" href="/clobotics/wp-content/themes/Clobotics-theme/js/plug-ins/OwlCarousel2/owl.carousel.min.css"> -->
-<!-- <link rel="stylesheet" href="/clobotics/wp-content/themes/Clobotics-theme/js/plug-ins/OwlCarousel2/owl.theme.default.min.css"> -->
 <body>
 <main>
 
@@ -80,7 +78,7 @@ Template Name: About us
 <!-- loop function  (meet our team) -->
 <!--  <div class="loops_main_content_and_image" > -->
 
-    <div class="meet-our-team_main_content owl-carousel clobotics-carousel">
+    <div class="meet-our-team_main_content">
         <?php $loop = new WP_Query( array( 'post_type' => 'Employee', 'posts_per_page' => -1 ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
@@ -194,17 +192,18 @@ Template Name: About us
  <section class="news_articles_linking">
     <h3 class="title">Discover Clobotics with our articles!</h3>
 
-    <?php $loop = new WP_Query( array( 'post_type' => 'new-article', 'posts_per_page' => -1 ) ); ?>
-    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+    <div class="news_articles_linking_container owl-carousel clobotics-carousel">
+        <?php $loop = new WP_Query( array( 'post_type' => 'new-article', 'posts_per_page' => -1 ) ); ?>
+        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+    
+            <div class="news_articles_single_container"> 
+                <img class="article_linking_img" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt="Article image" /> 
+                <h4 class="title"><?php the_field('new_article_title'); ?></h4>
+                <p class="subtitle"><?php the_field('meta_description_short'); ?></p>              
+            </div> 
 
-        <div class="news_articles_linking_container"> 
-            <img class="article_linking_img" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt="Article image" /> 
-            <h4 class="title"><?php the_field('new_article_title'); ?></h4>
-            <p class="subtitle"><?php the_field('meta_description_short'); ?></p>              
-        </div> 
-
-    <?php endwhile; wp_reset_query(); ?>
-
+        <?php endwhile; wp_reset_query(); ?>
+    </div>
 
 </section>
 
@@ -231,13 +230,9 @@ Template Name: About us
     <?php endwhile; ?>
     
 
-
-<!-- <script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> -->
-<!-- <script src="/clobotics/wp-content/themes/Clobotics-theme/js/plug-ins/OwlCarousel2/owl.carousel.min.js"></script> -->
-
 <?php 
     wp_enqueue_script("jquery", "https://code.jquery.com/jquery-1.12.1.min.js");
-    wp_enqueue_script("clobotics-carousel", get_stylesheet_directory_uri()."/js/plug-ins/OwlCarousel2/owl.carousel.min.js");
+    wp_enqueue_script("carousel-script", get_stylesheet_directory_uri()."/js/plug-ins/OwlCarousel2/owl.carousel.min.js");
 ?>
 <script>
     applyOwlCarousel();
