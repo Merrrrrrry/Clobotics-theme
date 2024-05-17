@@ -237,9 +237,10 @@ Template Name: About us
 <script>
     jQuery(document).ready(function($) {
         applyOwlCarousel({
+            loop: true,
             items:1,
             nav: true,
-            loop: true,
+            dots: true,
             autoplay: true,
             autoplayTimeout: 3000,
             animateOut: 'fadeOut',
