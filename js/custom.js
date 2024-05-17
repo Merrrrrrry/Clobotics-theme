@@ -51,24 +51,5 @@ jQuery(document).ready(function($) {
     });
 });
 
-// AJAX request for the Article search bar
-jQuery(document).ready(function($) {
-    $('#article-search-form').on('submit', function(event) {
-        event.preventDefault();
 
-        var searchQuery = $('#article-search-input').val();
-        
-        $.ajax({
-            url: clobotics_ajax.ajax_url,
-            type: 'post',
-            data: {
-                action: 'clobotics_search_articles',
-                search_query: searchQuery
-            },
-            success: function(response) {
-                $('#articles-container').html(response);
-            }
-        });
-    });
-});
 
