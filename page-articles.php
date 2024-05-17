@@ -24,8 +24,17 @@ Template Name: Articles
 <main>
     <h2>Clobotics Articles</h2>
 
-    <!-- Search bar and filters -->
-
+    <!-- Search bar and filter buttons -->
+    <div class="search-bar-container-2">
+    <form id="article-search-form" class="search-form-2">
+        <div class="search-bar-2">
+            <input type="text" id="article-search-input" placeholder="Search articles...">
+            <button type="submit" class="search-button">
+                <span class="material-icons search-icon">search</span>
+            </button>
+        </div>
+    </form>
+</div>
     
     <div id="articles-container">
         <?php
