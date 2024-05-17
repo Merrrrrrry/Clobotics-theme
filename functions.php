@@ -1,6 +1,6 @@
 <?php
 function clobotics_register_stylesheet() {
-    wp_enqueue_style("clobotics-style", get_stylesheet_directory_uri() . "/css/style.css?v=" . mktime());
+    wp_enqueue_style("clobotics-style", get_stylesheet_directory_uri() . "/style.css?v=" . mktime());
     wp_enqueue_script("clobotics", get_stylesheet_directory_uri() . "/js/javascript.js?v=" . mktime(), array(), false, true);
     wp_enqueue_style("materialize-icons", "https://fonts.googleapis.com/icon?family=Material+Icons");
 }
