@@ -47,6 +47,39 @@ Template Name: single-wind-service
         </article>
     <?php endwhile; ?>
 
+
+
+
+
+    <!-- Other wind services linking  Section    Wind service -->
+
+ <section class="wind_services_linking">
+    <h3 class="title">Discover Clobotics with our articles!</h3>
+
+    <?php $loop = new WP_Query( array( 'post_type' => 'wind-service', 'posts_per_page' => -1 ) ); ?>
+    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+        <div class="news_articles_linking_container"> 
+            <img class="service_image_in_loop" src="<?php $image = get_field('service_main_image');  echo esc_url($image["url"]); ?>" alt="Article image" /> 
+            <h4 class="title"><?php the_field('service_title'); ?></h4>
+
+            <div class="keypoints_container">
+                <img class="icon" src="<?php $image = get_field('icon_of_the_keypoint_1');  echo esc_url($image["url"]); ?>" alt="Service keypoint icon 1" /> 
+                <p class="subtitle"><?php the_field('meta_description_short'); ?></p>  
+                <img class="icon" src="<?php $image = get_field('icon_of_the_keypoint_2');  echo esc_url($image["url"]); ?>" alt="Service keypoint icon 2" /> 
+                <p class="subtitle"><?php the_field('meta_description_short'); ?></p> 
+                <img class="icon" src="<?php $image = get_field('icon_of_the_keypoint_3');  echo esc_url($image["url"]); ?>" alt="Service keypoint icon 3" /> 
+                <p class="subtitle"><?php the_field('meta_description_short'); ?></p>  
+            </div>            
+        </div> 
+
+    <?php endwhile; wp_reset_query(); ?>
+
+
+</section>
+
+
+
 </main>
 
 <?php get_footer(); ?>

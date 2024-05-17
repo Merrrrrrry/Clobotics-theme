@@ -194,30 +194,20 @@ Template Name: About us
  <section class="news_articles_linking">
     <h3 class="title">Discover Clobotics with our articles!</h3>
 
-    <div class="we_operate_globally_container flex"> 
-        <h4 class="title"><?php the_field('article_title_we_operate_globally'); ?></h4>
-        <p class="subtitle"><?php the_field('meta_description_short'); ?></p> 
+    <?php $loop = new WP_Query( array( 'post_type' => 'New article', 'posts_per_page' => -1 ) ); ?>
+    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+        <div class="news_articles_linking_container"> 
+            <img class="" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt="Article image" /> 
+            <h4 class="title"><?php the_field('new_article_title'); ?></h4>
+            <p class="subtitle"><?php the_field('meta_description_short'); ?></p>              
+        </div> 
+
+    <?php endwhile; wp_reset_query(); ?>
 
 
-        <div  class="half-size" id="buttons_switcher_container">
-            <ul class="inline img_selector">
-                <li onclick=show_our(this) class="selected">Our offices</li>
-                <li onclick=show_our(this)>Our partners</li>
-                <li onclick=show_our(this)>Our work</li>
-            </ul>
+</section>
 
-                <img class="we_operate_globally-img" id="image_of_our_offices" src="<?php $image = get_field('image_of_our_offices_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our offices (We operate globally section)" /> 
-                <img class="we_operate_globally-img hidden" id="image_of_our_partners" src="<?php $image = get_field('image_of_our_partners_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our partners (We operate globally section)" /> 
-                <img class="we_operate_globally-img hidden" id="image_of_our_work" src="<?php $image = get_field('image_of_our_work_we_operate_globally_section');  echo esc_url($image["url"]); ?>" alt="Image of our work (We operate globally section)" /> 
-        </div>
-    </div> 
-
-
-
-<div class="company_history">
-
-
-</div>
 
 
 <!-- Subscribes for more  Section -->
