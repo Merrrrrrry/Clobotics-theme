@@ -6,10 +6,12 @@ Template Name: Wind services
 
 <?php get_header(); ?>
 
+
+<body>
 <main>
 
 
-<body>
+
 
 <!-- Hero section -->
 <div class="hero-section">
