@@ -14,7 +14,7 @@ Template Name: single-open-position
     </div>
 
     <div class="hero-section-content">
-        <h1 class="title hero-title"><?php the_field('new_article_title'); ?></h1>
+        <h1 class="title hero-title"><?php the_field('job_title'); ?></h1>
     </div>
 </div>
 
