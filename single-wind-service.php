@@ -5,6 +5,12 @@ Template Name: single-wind-service
 ?>
 
 <?php get_header(); ?>
+<?php 
+    wp_enqueue_style("owl-carousel-style", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.carousel.min.css");
+    wp_enqueue_style("owl-carousel-style-theme", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.theme.default.min.css");
+    wp_enqueue_style("owl-carousel-custom-styles", get_stylesheet_directory_uri() . "/css/custom.owl-carousel.css");
+?>
+<body>
 
 <main>
 
@@ -56,7 +62,8 @@ Template Name: single-wind-service
  <section class="wind_services_linking">
     <h3 class="title">Discover Clobotics with our articles!</h3>
 
-    <div class="news_articles_linking_container"> 
+    <div class="news_articles_linking_container  owl-carousel owl-theme">
+
         <?php $loop = new WP_Query( array( 'post_type' => 'wind-service', 'posts_per_page' => -1 ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
@@ -79,9 +86,28 @@ Template Name: single-wind-service
 
 </section>
 
+<?php 
+    wp_enqueue_script("jquery", "https://code.jquery.com/jquery-1.12.1.min.js");
+    wp_enqueue_script("carousel-script", get_stylesheet_directory_uri()."/js/plug-ins/OwlCarousel2/owl.carousel.min.js");
+?>
+<script>
+    jQuery(document).ready(function($) {
+        applyOwlCarousel({
+            loop: true,
+            items:3,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            animateOut: 'fadeOut',
+            lazyLoad: true,
+        })
+    });
+</script>
 
 
 </main>
-
+   
+</body>
 <?php get_footer(); ?>
 
