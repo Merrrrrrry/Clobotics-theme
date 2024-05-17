@@ -257,7 +257,7 @@ ul.position-list {
 } 
 
 .hero-section-background:after {
-content: url(media/Hero-imgs/hero-cut-forms/cut-form-grey-website-format.svg);
+content: url(../media/Hero-imgs/hero-cut-forms/cut-form-grey-website-format.svg);
 position: absolute;
 left: 0;
 bottom: -6px;
@@ -266,7 +266,7 @@ height:auto;
 }
 
 .hero-section-background.white_svg:after {
-  content: url(media/Hero-imgs/hero-cut-forms/cut-form-white-website-format.svg);
+  content: url(../media/Hero-imgs/hero-cut-forms/cut-form-white-website-format.svg);
 }
 
 
