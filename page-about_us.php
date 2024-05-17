@@ -194,11 +194,11 @@ Template Name: About us
  <section class="news_articles_linking">
     <h3 class="title">Discover Clobotics with our articles!</h3>
 
-    <?php $loop = new WP_Query( array( 'post_type' => 'New article', 'posts_per_page' => -1 ) ); ?>
+    <?php $loop = new WP_Query( array( 'post_type' => 'new-article', 'posts_per_page' => -1 ) ); ?>
     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
         <div class="news_articles_linking_container"> 
-            <img class="" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt="Article image" /> 
+            <img class="article_linking_img" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt="Article image" /> 
             <h4 class="title"><?php the_field('new_article_title'); ?></h4>
             <p class="subtitle"><?php the_field('meta_description_short'); ?></p>              
         </div> 
