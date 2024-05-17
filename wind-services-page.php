@@ -178,8 +178,8 @@ Template Name: Wind services
     </div>
 </section>
 
-
+</main>
 </body>
 
-</main>
+
 <?php get_footer(); ?>
