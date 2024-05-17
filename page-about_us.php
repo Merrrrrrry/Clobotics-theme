@@ -239,5 +239,8 @@ Template Name: About us
     wp_enqueue_script("jquery", "https://code.jquery.com/jquery-1.12.1.min.js");
     wp_enqueue_script("clobotics-carousel", get_stylesheet_directory_uri()."/js/plug-ins/OwlCarousel2/owl.carousel.min.js");
 ?>
+<script>
+    applyOwlCarousel();
+</script>
 
 <?php get_footer(); ?>
