@@ -614,7 +614,7 @@ main {
   flex-wrap: wrap;
 }
 
-.meet-our-team-box-content {
+.meet-our-team_main_content > .meet-our-team-box-content {
   width: 25%;
   text-align: center;
 }

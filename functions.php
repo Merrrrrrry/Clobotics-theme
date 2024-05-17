@@ -1,7 +1,7 @@
 <?php
 function clobotics_register_stylesheet() {
     wp_enqueue_style("clobotics-style", get_stylesheet_directory_uri() . "/style.css?v=" . mktime());
-    wp_enqueue_script("clobotics", get_stylesheet_directory_uri() . "/javascript.js?v=" . mktime(), array(), false, true);
+    wp_enqueue_script("clobotics", get_stylesheet_directory_uri() . "/js/javascript.js?v=" . mktime(), array(), false, true);
     wp_enqueue_style("materialize-icons", "https://fonts.googleapis.com/icon?family=Material+Icons");
 }
 add_action("wp_enqueue_scripts", "clobotics_register_stylesheet");
@@ -66,7 +66,7 @@ add_action('pre_get_posts', 'include_custom_fields_in_search');
 
 // Enqueue custom JavaScript
 function clobotics_enqueue_scripts() {
-    wp_enqueue_script('clobotics-custom', get_template_directory_uri() . '/custom.js', array('jquery'), null, true);
+    wp_enqueue_script('clobotics-custom', get_template_directory_uri() . '/js/custom.js', array('jquery'), null, true);
 
     // Localize script to use AJAX URL in JavaScript
     wp_localize_script('clobotics-custom', 'clobotics_ajax', array(
