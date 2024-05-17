@@ -58,6 +58,6 @@ function show_our(btn) {
     btn.classList.add('selected');
 }
 
-function applyOwlCarousel() {
-    jQuery(".clobotics-carousel").owlCarousel();
+function applyOwlCarousel(settings_array) {
+    jQuery(".owl-carousel").owlCarousel(settings_array);
 }
