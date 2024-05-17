@@ -193,7 +193,7 @@ Template Name: About us
  <section class="news_articles_linking">
     <h3 class="title">Discover Clobotics with our articles!</h3>
 
-    <div class="news_articles_linking_container owl-carousel">
+    <div class="news_articles_linking_container owl-carousel owl-theme">
         <?php $loop = new WP_Query( array( 'post_type' => 'new-article', 'posts_per_page' => -1 ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
     
