@@ -32,10 +32,6 @@ Template Name: Wind services
 
 
 
-
-
-
-
 <!-- Article  Section -->
 <!-- We operate globally -->
 
