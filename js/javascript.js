@@ -59,7 +59,5 @@ function show_our(btn) {
 }
 
 function applyOwlCarousel() {
-    jQuery(document).ready(function($) {
-        jQuery(".clobotics-carousel").owlCarousel();
-    });
+    jQuery(".clobotics-carousel").owlCarousel();
 }

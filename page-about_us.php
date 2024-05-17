@@ -235,7 +235,9 @@ Template Name: About us
     wp_enqueue_script("carousel-script", get_stylesheet_directory_uri()."/js/plug-ins/OwlCarousel2/owl.carousel.min.js");
 ?>
 <script>
-    applyOwlCarousel();
+    jQuery(document).ready(function($) {
+        applyOwlCarousel();
+    });
 </script>
 
 <?php get_footer(); ?>
