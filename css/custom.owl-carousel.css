@@ -18,6 +18,11 @@
     padding: 0 0.5em;
     box-sizing: border-box;
 }
+.owl-theme .owl-nav [class*=owl-]:hover {
+    color: #9de4ff;
+    background: transparent;
+}
+
 
 .news_articles_linking .owl-dots {
     position: absolute;
