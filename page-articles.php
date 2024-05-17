@@ -25,12 +25,17 @@ Template Name: Articles
     <h2>Clobotics Articles</h2>
 
     <!-- Search bar and filter buttons -->
-    <div class="article-filters">
-        <input type="text" id="article-search" placeholder="Search articles...">
-        <button class="filter-button" data-filter="retail">Retail</button>
-        <button class="filter-button" data-filter="wind">Wind</button>
-    </div>
-
+    <div class="search-bar-container-2">
+    <form id="article-search-form" class="search-form-2">
+        <div class="search-bar-2">
+            <input type="text" id="article-search-input" placeholder="Search articles...">
+            <button type="submit" class="search-button">
+                <span class="material-icons search-icon">search</span>
+            </button>
+        </div>
+    </form>
+</div>
+    
     <div id="articles-container">
         <?php
         $articles_per_page = 6; // 2 rows with 3 articles each
