@@ -18,7 +18,7 @@ Template Name: Contact
                 <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_contact_us.jpg" alt="Hero image">
             </div>
             <div class="hero-section-content">
-                <h1 class="hero-title">Contact Clobotics using our contact form <br> and we will get in touch with you.</h1>
+                <h1 class="hero-title">Contact Clobotics filling our contact form <br> and we will get in touch with you.</h1>
             </div>
         </div> 
 
