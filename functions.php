@@ -260,8 +260,6 @@ add_action('wp_ajax_nopriv_clobotics_search_wind_services', 'clobotics_ajax_sear
 
 
 // Handle AJAX search for articles
-add_action('wp_ajax_clobotics_search_articles', 'clobotics_search_articles');
-add_action('wp_ajax_nopriv_clobotics_search_articles', 'clobotics_search_articles');
 
 function clobotics_search_articles() {
     $search_query = sanitize_text_field($_POST['search_query']);
@@ -274,14 +272,15 @@ function clobotics_search_articles() {
         's' => $search_query,
         'posts_per_page' => $posts_per_page,
         'paged' => $paged,
-        'tax_query' => array()
     );
 
     if ($filter) {
-        $args['tax_query'][] = array(
-            'taxonomy' => 'article_category',
-            'field'    => 'slug',
-            'terms'    => $filter,
+        $args['tax_query'] = array(
+            array(
+                'taxonomy' => 'article_category',
+                'field'    => 'slug',
+                'terms'    => $filter,
+            ),
         );
     }
 
@@ -336,7 +335,41 @@ function clobotics_search_articles() {
 
     wp_die();
 }
+add_action('wp_ajax_clobotics_search_articles', 'clobotics_search_articles');
+add_action('wp_ajax_nopriv_clobotics_search_articles', 'clobotics_search_articles');
 
+
+
+
+
+
+
+
+function register_new_article_post_type() {
+    register_post_type('new-article', array(
+        'labels' => array(
+            'name' => __('Articles'),
+            'singular_name' => __('Article')
+        ),
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array('title', 'editor', 'thumbnail'),
+    ));
+}
+add_action('init', 'register_new_article_post_type');
+
+function create_article_taxonomy() {
+    register_taxonomy(
+        'article_category',
+        'new-article',
+        array(
+            'label' => __('Categories'),
+            'rewrite' => array('slug' => 'article-category'),
+            'hierarchical' => true,
+        )
+    );
+}
+add_action('init', 'create_article_taxonomy');
 
 
 
