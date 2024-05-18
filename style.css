@@ -969,7 +969,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   background-color: white;
 }
 
-h2 .section-title {
+.section-title {
   text-decoration: underline #01A7E6;
   text-align: center;
   font-family: 'Roboto';
@@ -978,7 +978,6 @@ h2 .section-title {
 
 .section-content {
   display: flex;
-  padding: 0 50px;
 }
 
 
