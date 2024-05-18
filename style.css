@@ -1262,12 +1262,13 @@ img.footer-logo {
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  padding: 10px 20px;
+  padding: 30px 50px;
   width: 100%;
 }
 
 .navbar-logo img {
   height: 50px;
+  vertical-align: middle;
 }
 
 .navbar-nav {
@@ -1298,8 +1299,8 @@ img.footer-logo {
   bottom: -2px;
   width: 0;
   height: 2px;
-  background: blue; 
-  transition: width 0.3s ease;
+  background: rgb(255, 255, 255); 
+  transition: width 0.5s ease;
 }
 
 .nav-link:hover::after {

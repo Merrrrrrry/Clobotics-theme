@@ -35,7 +35,7 @@
                 </div>
             </li>
             <li class="nav-item">
-               <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="nav-link footer-contact-link">Contact us<i class="material-icons">arrow_right_alt</i></a>
+               <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="nav-link footer-contact-link">Contact us</a>
             </li>
             <li class="nav-item">
                 <a href="https://iris-eu.clobotics.com/#/login" class="nav-link external-link">
