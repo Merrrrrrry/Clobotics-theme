@@ -968,7 +968,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 /*CONTACT LOCAL OFFICE CLOBOTICS*/
 
 .contact-section {
-  margin-top: 50px;
+  padding: 50px;
   background-color: white;
 }
 
