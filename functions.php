@@ -64,6 +64,7 @@ function include_custom_fields_in_search($query) {
 }
 add_action('pre_get_posts', 'include_custom_fields_in_search');
 
+
 // Enqueue custom JavaScript
 function clobotics_enqueue_scripts() {
     wp_enqueue_script('clobotics-custom', get_template_directory_uri() . '/js/custom.js', array('jquery'), null, true);
@@ -256,70 +257,39 @@ add_action('wp_ajax_nopriv_clobotics_search_wind_services', 'clobotics_ajax_sear
 
 
 
+
+
 // Handle AJAX search for articles
-function clobotics_ajax_search_articles() {
-    $search_query = isset($_POST['search_query']) ? sanitize_text_field($_POST['search_query']) : '';
-    $filter = isset($_POST['filter']) ? sanitize_text_field($_POST['filter']) : '';
+add_action('wp_ajax_clobotics_search_articles', 'clobotics_search_articles');
+add_action('wp_ajax_nopriv_clobotics_search_articles', 'clobotics_search_articles');
 
-    $meta_query = array(
-        'relation' => 'AND'
-    );
-
-    if ($search_query) {
-        $meta_query[] = array(
-            'relation' => 'OR',
-            array(
-                'key' => 'new_article_title',
-                'value' => $search_query,
-                'compare' => 'LIKE'
-            ),
-            array(
-                'key' => 'meta_description_short',
-                'value' => $search_query,
-                'compare' => 'LIKE'
-            ),
-            array(
-                'key' => 'new_article_subtitle_1',
-                'value' => $search_query,
-                'compare' => 'LIKE'
-            ),
-            array(
-                'key' => 'new_article_paragraph_1',
-                'value' => $search_query,
-                'compare' => 'LIKE'
-            ),
-            array(
-                'key' => 'new_article_subtitle_2',
-                'value' => $search_query,
-                'compare' => 'LIKE'
-            ),
-            array(
-                'key' => 'new_article_paragraph_2',
-                'value' => $search_query,
-                'compare' => 'LIKE'
-            ),
-            // Add more fields as needed
-        );
-    }
-
-    if ($filter) {
-        $meta_query[] = array(
-            'key' => 'category',
-            'value' => $filter,
-            'compare' => 'LIKE'
-        );
-    }
+function clobotics_search_articles() {
+    $search_query = sanitize_text_field($_POST['search_query']);
+    $filter = sanitize_text_field($_POST['filter']);
 
     $args = array(
         'post_type' => 'new-article',
-        'posts_per_page' => -1,
-        'meta_query' => $meta_query
+        's' => $search_query,
+        'meta_query' => array()
     );
 
-    $articles_query = new WP_Query($args);
+    if ($filter) {
+        $args['meta_query'][] = array(
+            'key' => 'article_category',
+            'value' => $filter,
+            'compare' => '='
+        );
+    }
 
-    if ($articles_query->have_posts()) :
-        while ($articles_query->have_posts()) : $articles_query->the_post(); ?>
+    $query = new WP_Query($args);
+
+    if ($query->have_posts()) :
+        $count = 0;
+        while ($query->have_posts()) : $query->the_post();
+            if ($count % 3 == 0) {
+                echo '<div class="row">';
+            }
+            ?>
             <article class="col">
                 <a href="<?php the_permalink(); ?>">
                     <?php
@@ -330,9 +300,32 @@ function clobotics_ajax_search_articles() {
                     ?>
                     <h3><?php the_field('new_article_title'); ?></h3>
                     <p><?php the_field('meta_description_short'); ?></p>
+                    <p class="article-category"><?php echo get_field('article_category'); ?></p>
                 </a>
             </article>
-        <?php endwhile;
+            <?php
+            $count++;
+            if ($count % 3 == 0) {
+                echo '</div>';
+            }
+        endwhile;
+
+        if ($count % 3 != 0) {
+            echo '</div>';
+        }
+
+        if ($query->max_num_pages > 1) :
+            ?>
+            <div class="pagination">
+                <?php echo paginate_links(array(
+                    'total' => $query->max_num_pages,
+                    'current' => max(1, get_query_var('paged')),
+                    'prev_text' => __('« Previous'),
+                    'next_text' => __('Next »'),
+                )); ?>
+            </div>
+        <?php endif;
+
         wp_reset_postdata();
     else :
         echo '<p>No articles found.</p>';
@@ -340,5 +333,3 @@ function clobotics_ajax_search_articles() {
 
     wp_die();
 }
-add_action('wp_ajax_clobotics_search_articles', 'clobotics_ajax_search_articles');
-add_action('wp_ajax_nopriv_clobotics_search_articles', 'clobotics_ajax_search_articles');

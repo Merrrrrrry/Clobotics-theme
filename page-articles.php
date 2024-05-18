@@ -21,20 +21,24 @@ Template Name: Articles
     <h2>Clobotics Articles</h2>
 
     <!-- Search bar and filter buttons -->
-    <div class="search-bar-container">
-        <form id="article-search-form" class="search-form">
-            <div class="search-bar">
+    <div class="search-bar-container-3">
+        <form id="article-search-form" class="search-form-3">
+            <div class="search-bar-3">
                 <input type="text" id="article-search-input" placeholder="Search articles...">
                 <button type="submit" class="search-button">
                     <span class="material-icons search-icon">search</span>
                 </button>
             </div>
             <div class="filters">
-                <select id="article-category-filter">
-                    <option value="">All Categories</option>
-                    <option value="wind">Wind</option>
-                    <option value="retail">Retail</option>
-                </select>
+                <label>
+                    <input type="radio" name="category" value="" checked> All
+                </label>
+                <label>
+                    <input type="radio" name="category" value="wind"> Wind
+                </label>
+                <label>
+                    <input type="radio" name="category" value="retail"> Retail
+                </label>
             </div>
         </form>
     </div>
@@ -67,6 +71,7 @@ Template Name: Articles
                         ?>
                         <h3><?php the_field('new_article_title'); ?></h3>
                         <p><?php the_field('meta_description_short'); ?></p>
+                        <p class="article-category"><?php echo get_field('article_category'); ?></p>
                     </a>
                 </article>
                 <?php
@@ -103,8 +108,8 @@ Template Name: Articles
 <script>
 jQuery(document).ready(function($) {
     function fetchArticles() {
-        var search_query = $('#article-search-input').val();
-        var filter = $('#article-category-filter').val();
+        var search_query = $('#article-search-input').val().trim();
+        var filter = $('input[name="category"]:checked').val();
         
         $.ajax({
             url: clobotics_ajax.ajax_url,
@@ -129,7 +134,7 @@ jQuery(document).ready(function($) {
         fetchArticles();
     });
 
-    $('#article-category-filter').on('change', function() {
+    $('input[name="category"]').on('change', function() {
         fetchArticles();
     });
 });
@@ -137,3 +142,4 @@ jQuery(document).ready(function($) {
 
 </body>
 <?php get_footer(); ?>
+

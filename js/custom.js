@@ -52,9 +52,9 @@ jQuery(document).ready(function($) {
 
 jQuery(document).ready(function($) {
     function fetchArticles() {
-        var search_query = $('#article-search-input').val();
+        var search_query = $('#article-search-input').val().trim();
         var filter = $('#article-category-filter').val();
-        
+
         $.ajax({
             url: clobotics_ajax.ajax_url,
             type: 'POST',
@@ -74,13 +74,7 @@ jQuery(document).ready(function($) {
         fetchArticles();
     });
 
-    $('#article-search-input').on('input', function() {
-        fetchArticles();
-    });
-
     $('#article-category-filter').on('change', function() {
         fetchArticles();
     });
 });
-
-
