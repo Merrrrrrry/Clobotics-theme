@@ -266,7 +266,7 @@ add_action('wp_ajax_nopriv_clobotics_search_articles', 'clobotics_search_article
 function clobotics_search_articles() {
     $search_query = sanitize_text_field($_POST['search_query']);
     $filter = sanitize_text_field($_POST['filter']);
-    $paged = sanitize_text_field($_POST['paged']) ? intval($_POST['paged']) : 1;
+    $paged = isset($_POST['paged']) ? intval($_POST['paged']) : 1;
     $posts_per_page = 6;
 
     $args = array(
@@ -340,7 +340,6 @@ function clobotics_search_articles() {
 
 //Taxonomy for Articles page:
 
-    // Register Custom Taxonomy for Article Categories
 function clobotics_article_category_taxonomy() {
     $labels = array(
         'name'                       => _x('Article Categories', 'taxonomy general name', 'textdomain'),
