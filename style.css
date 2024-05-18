@@ -152,6 +152,8 @@ p.subtitle {
   align-items: center;
   height: 700px;
   overflow: hidden;; 
+    z-index: 1;
+    padding-top: 100px;
 }
 
 /* Hero section background image */
@@ -1240,4 +1242,97 @@ img.footer-logo {
 .social-icons img {
   width: 45px;
   margin-left: 10px;
+}
+
+
+
+  
+/* -------------------------------NAVBAR--------------------------------*/
+
+.main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.navbar-logo img {
+  height: 50px;
+}
+
+.navbar-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  position: relative;
+  margin-left: 30px; 
+}
+
+.nav-link {
+  color: #fff; 
+  text-decoration: none;
+  padding: 10px 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: blue; 
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8); 
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.dropdown-menu a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.dropdown-menu a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.external-link img {
+  vertical-align: middle;
+  margin-right: 5px;
+  height: 20px;
 }

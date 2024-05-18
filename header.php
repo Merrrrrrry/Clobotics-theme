@@ -12,24 +12,36 @@
 </head>
 <body>
 
- 
-
-
 <nav class="navbar">
-    <div class="navbar-nav">
-        <?php if (has_custom_logo()) {
-            echo '<div class="navbar-logo">' . get_custom_logo() . '</div>';
-        } else {
-            echo '<h1 class="navbar-title">' . get_bloginfo('description') . '</h1>';
-        } ?>
-    </div>
-    <div class="navbar-menu">
-        <?php
-        wp_nav_menu(array(
-            'theme_location' => 'main-menu', 
-            'container' => false,
-            'menu_class' => 'navbar-nav'
-        ));
-        ?>
-    </div>
-</nav>
+        <div class="navbar-logo">
+            <a href="<?php echo home_url(); ?>">
+                <img src="<?php echo get_template_directory_uri(); ?>/media/clobotics-logo-white.png" alt="Logo">
+            </a>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <span class="nav-link">About</span>
+                <div class="dropdown-menu">
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>">About us</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('career'))); ?>">Career</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('articles'))); ?>">Articles</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('media'))); ?>">Media</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('wind-services'))); ?>" class="nav-link">Wind</a>
+                <div class="dropdown-menu">
+                    <!-- we will add loop with wind single later-->
+                </div>
+            </li>
+            <li class="nav-item">
+               <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="nav-link footer-contact-link">Contact us<i class="material-icons">arrow_right_alt</i></a>
+            </li>
+            <li class="nav-item">
+                <a href="https://iris-eu.clobotics.com/#/login" class="nav-link external-link">
+                    <img class="image-iris-logo" src="<?php echo get_template_directory_uri(); ?>/media/iris-tm-logo.png" alt="IrisTM Login"> IrisTM Login
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
