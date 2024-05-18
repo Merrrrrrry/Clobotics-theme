@@ -52,7 +52,7 @@ jQuery(document).ready(function($) {
 
 jQuery(document).ready(function($) {
     function fetchArticles(page = 1) {
-        var search_query = $('#article-search-input').val().trim();
+        var search_query = $('#article-search-input').val();
         var filter = $('input[name="category"]:checked').val();
 
         $.ajax({
@@ -75,12 +75,8 @@ jQuery(document).ready(function($) {
         fetchArticles();
     });
 
-    $('#article-search-input').on('input', function() {
-        fetchArticles();
-    });
-
     $('input[name="category"]').on('change', function() {
-        fetchArticles();
+        $('#article-search-form').submit();
     });
 
     $(document).on('click', '.pagination a', function(e) {
