@@ -76,7 +76,7 @@ jQuery(document).ready(function($) {
     });
 
     $('input[name="category"]').on('change', function() {
-        fetchArticles();
+        $('#article-search-form').submit();
     });
 
     $(document).on('click', '.pagination a', function(e) {
