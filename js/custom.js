@@ -26,9 +26,6 @@ jQuery(document).ready(function($) {
     });
 });
 
-
-
-
 // AJAX request for the wind services search bar
 
 jQuery(document).ready(function($) {
@@ -51,5 +48,39 @@ jQuery(document).ready(function($) {
     });
 });
 
+// AJAX request for articles search bar
+
+jQuery(document).ready(function($) {
+    function fetchArticles() {
+        var search_query = $('#article-search-input').val();
+        var filter = $('#article-category-filter').val();
+        
+        $.ajax({
+            url: clobotics_ajax.ajax_url,
+            type: 'POST',
+            data: {
+                action: 'clobotics_search_articles',
+                search_query: search_query,
+                filter: filter
+            },
+            success: function(response) {
+                $('#articles-container').html(response);
+            }
+        });
+    }
+
+    $('#article-search-form').on('submit', function(event) {
+        event.preventDefault();
+        fetchArticles();
+    });
+
+    $('#article-search-input').on('input', function() {
+        fetchArticles();
+    });
+
+    $('#article-category-filter').on('change', function() {
+        fetchArticles();
+    });
+});
 
 

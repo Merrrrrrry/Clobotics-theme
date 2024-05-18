@@ -6,18 +6,14 @@ Template Name: Articles
 
 <?php get_header(); ?>
 
-
-<!-- Hero section -->
 <body class="gray-body">
-    
-
 <div class="hero-section">
     <div class="hero-section-background">
         <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_articles_page.jpg" alt="Hero image">
     </div>
 
     <div class="hero-section-content">
-        <h1 class="title hero-title"> Explore Clobotics potential!</h1>
+        <h1 class="title hero-title">Explore Clobotics potential!</h1>
     </div>
 </div>
 
@@ -26,42 +22,44 @@ Template Name: Articles
 
     <!-- Search bar and filter buttons -->
     <div class="search-bar-container-2">
-    <form id="article-search-form" class="search-form-2">
-        <div class="search-bar-2">
-            <input type="text" id="article-search-input" placeholder="Search articles...">
-            <button type="submit" class="search-button">
-                <span class="material-icons search-icon">search</span>
-            </button>
-        </div>
-    </form>
-</div>
-    
+        <form id="article-search-form" class="search-form-2">
+            <div class="search-bar-2">
+                <input type="text" id="article-search-input" placeholder="Search articles...">
+                <button type="submit" class="search-button">
+                    <span class="material-icons search-icon">search</span>
+                </button>
+            </div>
+            <div class="filters">
+                <select id="article-category-filter">
+                    <option value="">All Categories</option>
+                    <option value="wind">Wind</option>
+                    <option value="retail">Retail</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
     <div id="articles-container">
         <?php
-        $articles_per_page = 6; // 2 rows with 3 articles each
+        $articles_per_page = 6;
+        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-        // Get current page number
-        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-
-        // Query articles
         $articles_query = new WP_Query(array(
-            'post_type' => 'new-article', // Custom post type name
+            'post_type' => 'new-article',
             'posts_per_page' => $articles_per_page,
-            'paged' => $paged // Pagination
+            'paged' => $paged
         ));
 
         if ($articles_query->have_posts()) :
             $count = 0;
             while ($articles_query->have_posts()) : $articles_query->the_post();
                 if ($count % 3 == 0) {
-                    // Start a new row after every third article
                     echo '<div class="row">';
                 }
                 ?>
                 <article class="col">
                     <a href="<?php the_permalink(); ?>">
-                        <?php 
-                        // Retrieve and display the main article image/thumbnail
+                        <?php
                         $image = get_field('article_main_image');
                         if ($image) :
                             echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '">';
@@ -74,17 +72,14 @@ Template Name: Articles
                 <?php
                 $count++;
                 if ($count % 3 == 0) {
-                    // Close the row after every third article
                     echo '</div>';
                 }
             endwhile;
 
-            // Close the row if the last row contains less than 3 articles
             if ($count % 3 != 0) {
                 echo '</div>';
             }
 
-            // Pagination
             if ($articles_query->max_num_pages > 1) :
                 ?>
                 <div class="pagination">
@@ -107,10 +102,9 @@ Template Name: Articles
 
 <script>
 jQuery(document).ready(function($) {
-    // Handle search and filter
     function fetchArticles() {
-        var search_query = $('#article-search').val();
-        var filter = $('.filter-button.active').data('filter');
+        var search_query = $('#article-search-input').val();
+        var filter = $('#article-category-filter').val();
         
         $.ajax({
             url: clobotics_ajax.ajax_url,
@@ -126,13 +120,16 @@ jQuery(document).ready(function($) {
         });
     }
 
-    $('#article-search').on('input', function() {
+    $('#article-search-form').on('submit', function(event) {
+        event.preventDefault();
         fetchArticles();
     });
 
-    $('.filter-button').on('click', function() {
-        $('.filter-button').removeClass('active');
-        $(this).addClass('active');
+    $('#article-search-input').on('input', function() {
+        fetchArticles();
+    });
+
+    $('#article-category-filter').on('change', function() {
         fetchArticles();
     });
 });
@@ -140,4 +137,3 @@ jQuery(document).ready(function($) {
 
 </body>
 <?php get_footer(); ?>
-

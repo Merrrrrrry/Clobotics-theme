@@ -254,4 +254,91 @@ function clobotics_ajax_search_wind_services() {
 add_action('wp_ajax_clobotics_search_wind_services', 'clobotics_ajax_search_wind_services');
 add_action('wp_ajax_nopriv_clobotics_search_wind_services', 'clobotics_ajax_search_wind_services');
 
+
+
 // Handle AJAX search for articles
+function clobotics_ajax_search_articles() {
+    $search_query = isset($_POST['search_query']) ? sanitize_text_field($_POST['search_query']) : '';
+    $filter = isset($_POST['filter']) ? sanitize_text_field($_POST['filter']) : '';
+
+    $meta_query = array(
+        'relation' => 'AND'
+    );
+
+    if ($search_query) {
+        $meta_query[] = array(
+            'relation' => 'OR',
+            array(
+                'key' => 'new_article_title',
+                'value' => $search_query,
+                'compare' => 'LIKE'
+            ),
+            array(
+                'key' => 'meta_description_short',
+                'value' => $search_query,
+                'compare' => 'LIKE'
+            ),
+            array(
+                'key' => 'new_article_subtitle_1',
+                'value' => $search_query,
+                'compare' => 'LIKE'
+            ),
+            array(
+                'key' => 'new_article_paragraph_1',
+                'value' => $search_query,
+                'compare' => 'LIKE'
+            ),
+            array(
+                'key' => 'new_article_subtitle_2',
+                'value' => $search_query,
+                'compare' => 'LIKE'
+            ),
+            array(
+                'key' => 'new_article_paragraph_2',
+                'value' => $search_query,
+                'compare' => 'LIKE'
+            ),
+            // Add more fields as needed
+        );
+    }
+
+    if ($filter) {
+        $meta_query[] = array(
+            'key' => 'category',
+            'value' => $filter,
+            'compare' => 'LIKE'
+        );
+    }
+
+    $args = array(
+        'post_type' => 'new-article',
+        'posts_per_page' => -1,
+        'meta_query' => $meta_query
+    );
+
+    $articles_query = new WP_Query($args);
+
+    if ($articles_query->have_posts()) :
+        while ($articles_query->have_posts()) : $articles_query->the_post(); ?>
+            <article class="col">
+                <a href="<?php the_permalink(); ?>">
+                    <?php
+                    $image = get_field('article_main_image');
+                    if ($image) :
+                        echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '">';
+                    endif;
+                    ?>
+                    <h3><?php the_field('new_article_title'); ?></h3>
+                    <p><?php the_field('meta_description_short'); ?></p>
+                </a>
+            </article>
+        <?php endwhile;
+        wp_reset_postdata();
+    else :
+        echo '<p>No articles found.</p>';
+    endif;
+
+    wp_die();
+}
+add_action('wp_ajax_clobotics_search_articles', 'clobotics_ajax_search_articles');
+add_action('wp_ajax_nopriv_clobotics_search_articles', 'clobotics_ajax_search_articles');
