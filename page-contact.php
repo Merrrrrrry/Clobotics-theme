@@ -14,6 +14,7 @@ Template Name: Contact
 <!--  Hero section  -->
 
         <div class="hero-section">
+<<<<<<< Updated upstream
             <div class="hero-section-background">
                 <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_contact_us.jpg" alt="Hero image">
             </div>
@@ -22,6 +23,15 @@ Template Name: Contact
             </div>
         </div> 
 
+=======
+             <div class="hero-section-background">
+                    <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/11.png" alt="hero image alt">
+             </div>
+                    <div class="hero-section-content">
+                        <h1 class="hero-title">Contact Clobotics using our contact form <br> and we will get in touch with you.</h1>
+                </div>
+         </div>
+>>>>>>> Stashed changes
 
 
 <!--- Contact form section --->

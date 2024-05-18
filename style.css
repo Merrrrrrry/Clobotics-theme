@@ -888,6 +888,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%
 }
 
 .contact-form {
@@ -968,6 +969,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 .contact-section {
   margin-top: 50px;
+  background-color: white;
 }
 
 .section-title {
@@ -981,6 +983,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 .section-content {
   display: flex;
+  padding: 0 50px;
 }
 
 
