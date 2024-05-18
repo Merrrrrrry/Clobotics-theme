@@ -1184,6 +1184,11 @@ img.footer-logo {
   margin-bottom: 20px;
 }
 
+.footer-column .material-icons{
+  color:#ffffff;
+  padding-bottom: -20px;
+}
+
 .footer-title {
   font-weight: bold;
   margin-bottom: 10px;
