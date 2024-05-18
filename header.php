@@ -39,7 +39,7 @@
             </li>
             <li class="nav-item">
                 <a href="https://iris-eu.clobotics.com/#/login" class="nav-link external-link">
-                    <img class="image-iris-logo" src="<?php echo get_template_directory_uri(); ?>/media/iris-tm-logo.png" alt="IrisTM Login"> IrisTM Login
+                    <img class="image-iris-logo" src="<?php echo get_template_directory_uri(); ?>/media/iris-tm-logo.png" alt="Iris™ Login"> Iris™ Login
                 </a>
             </li>
         </ul>
