@@ -8,7 +8,7 @@ Author: Maria Grysevych
 }
 
 body {
-    background-color: #fff;
+    background-color: #867f7f;
     font-family: 'Open Sans';
     margin: 0px !important;
 }
@@ -1334,5 +1334,5 @@ img.footer-logo {
 .external-link img {
   vertical-align: middle;
   margin-right: 5px;
-  height: 20px;
+  height: 30px;
 }
