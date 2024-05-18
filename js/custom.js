@@ -75,6 +75,10 @@ jQuery(document).ready(function($) {
         fetchArticles();
     });
 
+    $('input[name="category"]').on('change', function() {
+        fetchArticles();
+    });
+
     $(document).on('click', '.pagination a', function(e) {
         e.preventDefault();
         var page = $(this).attr('href').split('paged=')[1];
