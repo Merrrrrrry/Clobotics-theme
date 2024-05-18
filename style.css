@@ -1186,7 +1186,8 @@ img.footer-logo {
 
 .footer-column .material-icons{
   color:#ffffff;
-  padding-bottom: -20px;
+  position: relative;
+            top: 10px;
 }
 
 .footer-title {
