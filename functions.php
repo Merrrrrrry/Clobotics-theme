@@ -266,18 +266,22 @@ add_action('wp_ajax_nopriv_clobotics_search_articles', 'clobotics_search_article
 function clobotics_search_articles() {
     $search_query = sanitize_text_field($_POST['search_query']);
     $filter = sanitize_text_field($_POST['filter']);
+    $paged = sanitize_text_field($_POST['paged']) ? intval($_POST['paged']) : 1;
+    $posts_per_page = 6;
 
     $args = array(
         'post_type' => 'new-article',
         's' => $search_query,
-        'meta_query' => array()
+        'posts_per_page' => $posts_per_page,
+        'paged' => $paged,
+        'tax_query' => array()
     );
 
     if ($filter) {
-        $args['meta_query'][] = array(
-            'key' => 'article_category',
-            'value' => $filter,
-            'compare' => '='
+        $args['tax_query'][] = array(
+            'taxonomy' => 'article_category',
+            'field'    => 'slug',
+            'terms'    => $filter,
         );
     }
 
@@ -300,7 +304,6 @@ function clobotics_search_articles() {
                     ?>
                     <h3><?php the_field('new_article_title'); ?></h3>
                     <p><?php the_field('meta_description_short'); ?></p>
-                    <p class="article-category"><?php echo get_field('article_category'); ?></p>
                 </a>
             </article>
             <?php
@@ -319,7 +322,7 @@ function clobotics_search_articles() {
             <div class="pagination">
                 <?php echo paginate_links(array(
                     'total' => $query->max_num_pages,
-                    'current' => max(1, get_query_var('paged')),
+                    'current' => $paged,
                     'prev_text' => __('« Previous'),
                     'next_text' => __('Next »'),
                 )); ?>
@@ -333,3 +336,36 @@ function clobotics_search_articles() {
 
     wp_die();
 }
+
+
+//Taxonomy for Articles page:
+
+    // Register Custom Taxonomy for Article Categories
+function clobotics_article_category_taxonomy() {
+    $labels = array(
+        'name'                       => _x('Article Categories', 'taxonomy general name', 'textdomain'),
+        'singular_name'              => _x('Article Category', 'taxonomy singular name', 'textdomain'),
+        'search_items'               => __('Search Categories', 'textdomain'),
+        'all_items'                  => __('All Categories', 'textdomain'),
+        'parent_item'                => __('Parent Category', 'textdomain'),
+        'parent_item_colon'          => __('Parent Category:', 'textdomain'),
+        'edit_item'                  => __('Edit Category', 'textdomain'),
+        'update_item'                => __('Update Category', 'textdomain'),
+        'add_new_item'               => __('Add New Category', 'textdomain'),
+        'new_item_name'              => __('New Category Name', 'textdomain'),
+        'menu_name'                  => __('Article Categories', 'textdomain'),
+    );
+
+    $args = array(
+        'hierarchical'               => true,
+        'labels'                     => $labels,
+        'show_ui'                    => true,
+        'show_admin_column'          => true,
+        'query_var'                  => true,
+        'rewrite'                    => array('slug' => 'article-category'),
+    );
+
+    register_taxonomy('article_category', array('new-article'), $args);
+}
+
+add_action('init', 'clobotics_article_category_taxonomy', 0);

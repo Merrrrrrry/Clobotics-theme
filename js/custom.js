@@ -51,9 +51,9 @@ jQuery(document).ready(function($) {
 // AJAX request for articles search bar
 
 jQuery(document).ready(function($) {
-    function fetchArticles() {
-        var search_query = $('#article-search-input').val().trim();
-        var filter = $('#article-category-filter').val();
+    function fetchArticles(page = 1) {
+        var search_query = $('#article-search-input').val();
+        var filter = $('input[name="category"]:checked').val();
 
         $.ajax({
             url: clobotics_ajax.ajax_url,
@@ -61,7 +61,8 @@ jQuery(document).ready(function($) {
             data: {
                 action: 'clobotics_search_articles',
                 search_query: search_query,
-                filter: filter
+                filter: filter,
+                paged: page
             },
             success: function(response) {
                 $('#articles-container').html(response);
@@ -74,7 +75,9 @@ jQuery(document).ready(function($) {
         fetchArticles();
     });
 
-    $('#article-category-filter').on('change', function() {
-        fetchArticles();
+    $(document).on('click', '.pagination a', function(e) {
+        e.preventDefault();
+        var page = $(this).attr('href').split('paged=')[1];
+        fetchArticles(page);
     });
 });

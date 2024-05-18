@@ -566,6 +566,21 @@ h4.text {
   outline: none;
 }
 
+.search-button-3 {
+  background: #0099ff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button-3 .search-icon-3 {
+  color: #fff;
+}
+
 
 .filters {
   margin-top: 10px;
@@ -621,12 +636,6 @@ h4.text {
 #articles-container .col p {
   padding: 0 15px 15px;
   color: #666;
-}
-
-.article-category {
-  font-size: 0.8em;
-  color: #999;
-  padding: 0 15px 15px;
 }
 
 .pagination {

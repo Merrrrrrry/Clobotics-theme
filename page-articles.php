@@ -20,28 +20,29 @@ Template Name: Articles
 <main>
     <h2>Clobotics Articles</h2>
 
-    <!-- Search bar and filter buttons -->
-    <div class="search-bar-container-3">
-        <form id="article-search-form" class="search-form-3">
-            <div class="search-bar-3">
-                <input type="text" id="article-search-input" placeholder="Search articles...">
-                <button type="submit" class="search-button">
-                    <span class="material-icons search-icon">search</span>
-                </button>
-            </div>
-            <div class="filters">
-                <label>
-                    <input type="radio" name="category" value="" checked> All
-                </label>
-                <label>
-                    <input type="radio" name="category" value="wind"> Wind
-                </label>
-                <label>
-                    <input type="radio" name="category" value="retail"> Retail
-                </label>
-            </div>
-        </form>
-    </div>
+        <!-- Search bar and filter buttons -->
+        <div class="search-bar-container-3">
+            <form id="article-search-form" class="search-form-3">
+                <div class="search-bar-3">
+                    <input type="text" id="article-search-input" placeholder="Search articles...">
+                        <button type="submit" class="search-button-3">
+                             <span class="material-icons search-icon-3">search</span>
+                        </button>
+                    </div>
+             <div class="filters">
+                    <label>
+                        <input type="radio" name="category" value="" checked> All
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="wind"> Wind
+                    </label>
+                    <label>
+                        <input type="radio" name="category" value="retail"> Retail
+                    </label>
+                </div>
+            </form>
+        </div>
+
 
     <div id="articles-container">
         <?php
