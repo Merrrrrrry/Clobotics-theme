@@ -260,6 +260,9 @@ add_action('wp_ajax_nopriv_clobotics_search_wind_services', 'clobotics_ajax_sear
 
 
 // Handle AJAX search for articles
+add_action('wp_ajax_clobotics_search_articles', 'clobotics_search_articles');
+add_action('wp_ajax_nopriv_clobotics_search_articles', 'clobotics_search_articles');
+
 function clobotics_search_articles() {
     $search_query = sanitize_text_field($_POST['search_query']);
     $filter = sanitize_text_field($_POST['filter']);
@@ -274,7 +277,7 @@ function clobotics_search_articles() {
         'tax_query' => array()
     );
 
-    if (!empty($filter)) {
+    if ($filter) {
         $args['tax_query'][] = array(
             'taxonomy' => 'article_category',
             'field'    => 'slug',
@@ -333,7 +336,6 @@ function clobotics_search_articles() {
 
     wp_die();
 }
-
 
 
 
