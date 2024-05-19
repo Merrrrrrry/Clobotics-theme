@@ -1417,6 +1417,7 @@ img.footer-logo {
 .navbar-logo img {
   height: 70px;
   vertical-align: middle;
+  padding: 30px;
 }
 
 .navbar-nav {

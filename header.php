@@ -15,7 +15,7 @@
 <nav class="navbar">
         <div class="navbar-logo">
             <a href="<?php echo home_url(); ?>">
-                <img src="<?php echo get_template_directory_uri(); ?>/media/clobotics-logo-white.png" alt="Logo">
+                <img src="<?php echo get_template_directory_uri(); ?>/media/clobotics-logo-all-white.png" alt="Logo">
             </a>
         </div>
         <ul class="navbar-nav">
