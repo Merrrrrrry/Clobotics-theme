@@ -1487,10 +1487,6 @@ img.footer-logo {
   transition: background 0.7s ease, color 0.3s ease;
 }
 
-.dropdown-menu a:hover {
-  background: #000000;
-}
-
 .nav-item.dropdown:hover .dropdown-menu {
   display: block;
 }
