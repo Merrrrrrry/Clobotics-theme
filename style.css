@@ -1441,7 +1441,6 @@ img.footer-logo {
   position: relative;
   display: inline-block;
   vertical-align: bottom;
-
 }
 
 .nav-link:hover::after {
@@ -1457,28 +1456,27 @@ img.footer-logo {
 
 .nav-link:hover::after {
   content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0;
-    height: 2px;
-    background: rgb(255, 255, 255); 
-    transition: width 0.7s ease;
-    width: 100%;
-    
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background: rgb(255, 255, 255); 
+  transition: width 0.7s ease;
+  width: 100%;
 }
 
 .dropdown-menu {
   display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: rgba(0, 0, 0, 0.9);
-    padding: 15px 20px;
-    border-radius: 8px; 
-    width: 200px; 
-    box-shadow: 0 4px 8px #ffffff; 
-    z-index: 1000; 
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 15px 20px;
+  border-radius: 8px; 
+  width: 200px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  z-index: 1000; 
 }
 
 .dropdown-menu a {
@@ -1486,8 +1484,7 @@ img.footer-logo {
   color: #009FE8;
   text-decoration: none;
   padding: 5px 10px;
-  
-    transition: background 0.7s ease, color 0.3s ease;
+  transition: background 0.7s ease, color 0.3s ease;
 }
 
 .dropdown-menu a:hover {
