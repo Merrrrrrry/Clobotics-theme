@@ -146,7 +146,7 @@ p.subtitle {
 
 /* Hero section container */
 .hero-section {
-  position: relative;
+  position: absolute;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -159,6 +159,7 @@ p.subtitle {
 
 /* Hero section background image */
 .hero-section-background {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -168,6 +169,7 @@ p.subtitle {
 }
 
 .image-hero {
+  position: absolute;
   width: 100%;
   height: auto;
   object-fit: cover; 
@@ -1384,7 +1386,7 @@ img.footer-logo {
 /* -------------------------------NAVBAR--------------------------------*/
 
 .main-header {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;
@@ -1472,7 +1474,7 @@ img.footer-logo {
   text-decoration: none;
   padding: 5px 10px;
   
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: background 0.9s ease, color 0.3s ease;
 }
 
 .dropdown-menu a:hover {
