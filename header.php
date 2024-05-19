@@ -23,7 +23,7 @@
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" id="navbar-nav">
             <li class="nav-item dropdown">
                 <span class="nav-link">About</span>
                 <div class="dropdown-menu">
