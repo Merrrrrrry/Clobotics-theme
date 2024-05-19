@@ -1431,6 +1431,7 @@ img.footer-logo {
 .nav-item {
   position: relative;
   margin-left: 30px; 
+  vertical-align: bottom;
 }
 
 .nav-link {
@@ -1439,7 +1440,8 @@ img.footer-logo {
   padding: 10px 15px;
   position: relative;
   display: inline-block;
-  padding: 15px;
+  vertical-align: bottom;
+
 }
 
 .nav-link:hover::after {
@@ -1450,7 +1452,7 @@ img.footer-logo {
   width: 0;
   height: 2px;
   background: rgb(255, 255, 255); 
-  transition: width 0.7s ease;
+  transition: width 2s ease;
 }
 
 .nav-link:hover::after {
@@ -1461,7 +1463,7 @@ img.footer-logo {
     width: 0;
     height: 2px;
     background: rgb(255, 255, 255); 
-    transition: width 0.7s ease;
+    transition: width 2s ease;
     width: 100%;
     
 }
@@ -1485,7 +1487,7 @@ img.footer-logo {
   text-decoration: none;
   padding: 5px 10px;
   
-    transition: background 0.9s ease, color 0.3s ease;
+    transition: background 2s ease, color 0.3s ease;
 }
 
 .dropdown-menu a:hover {
