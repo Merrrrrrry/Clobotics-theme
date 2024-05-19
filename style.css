@@ -1477,13 +1477,13 @@ img.footer-logo {
     padding: 15px 20px;
     border-radius: 8px; 
     width: 200px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px #ffffff; 
     z-index: 1000; 
 }
 
 .dropdown-menu a {
   display: block;
-  color: #fff;
+  color: #009FE8;
   text-decoration: none;
   padding: 5px 10px;
   
@@ -1491,7 +1491,7 @@ img.footer-logo {
 }
 
 .dropdown-menu a:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: #000000;
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
@@ -1503,7 +1503,6 @@ img.footer-logo {
   margin-right: 5px;
   height: 30px;
 }
-
 
 .burger-menu {
   display: none;
