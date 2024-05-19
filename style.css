@@ -152,9 +152,9 @@ p.subtitle {
   align-items: center;
   height: 700px;
   overflow: hidden;; 
-    z-index: 1;
-    padding-top: 100px;
-    margin-top: 0;
+  z-index: 1;
+  padding-top: 0px;
+ margin-top: 0;
 }
 
 /* Hero section background image */
@@ -1402,6 +1402,9 @@ img.footer-logo {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
+  position:absolute;
+  top: 0;
+  left: 0;
 }
 
 .navbar-logo img {
