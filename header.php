@@ -25,21 +25,21 @@
                 <div class="line"></div>
             </div>
             <ul class="navbar-nav" id="navbar-nav">
-                <li class="nav-item dropdown">
-                    <span class="nav-link">About</span>
-                    <div class="dropdown-menu">
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>">About us</a>
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('career'))); ?>">Career</a>
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('articles'))); ?>">Articles</a>
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('media'))); ?>">Media</a>
-                    </div>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('wind-services'))); ?>" class="nav-link">Wind</a>
-                    <div class="dropdown-menu">
-                        <!-- we will add loop with wind single later-->
-                    </div>
-                </li>
+                        <li class="nav-item dropdown">
+                <span class="nav-link">About <span class="dropdown-arrow">&#9662;</span></span>
+                <div class="dropdown-menu">
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>">About us</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('career'))); ?>">Career</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('articles'))); ?>">Articles</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('media'))); ?>">Media</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="<?php echo esc_url(get_permalink(get_page_by_path('wind-services'))); ?>" class="nav-link">Wind <span class="dropdown-arrow">&#9662;</span></a>
+                <div class="dropdown-menu">
+                    <!-- we will add loop with wind single later-->
+                </div>
+            </li>
                 <li class="nav-item">
                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="nav-link footer-contact-link">Contact us</a>
                 </li>

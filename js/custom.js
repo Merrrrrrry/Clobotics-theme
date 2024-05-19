@@ -87,9 +87,3 @@ jQuery(document).ready(function($) {
 });
 
 
-// Navbar burger menu
-document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('burger-menu').addEventListener('click', function () {
-      document.getElementById('navbar-nav').classList.toggle('active');
-    });
-  });

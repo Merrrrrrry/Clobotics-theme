@@ -1517,7 +1517,16 @@ img.footer-logo {
   border-radius: 2px;
 }
 
+.dropdown-arrow {
+  margin-left: 5px;
+}
+
 @media (max-width: 768px) {
+  
+  .navbar{
+    padding: 15px;
+  }
+  
   .navbar-nav {
     display: none;
     flex-direction: column;
@@ -1526,6 +1535,10 @@ img.footer-logo {
     position: absolute;
     top: 100%;
     left: 0;
+  }
+
+  .navbar-logo img {
+    padding: 0;
   }
 
   .navbar-nav.active {
