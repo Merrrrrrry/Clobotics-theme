@@ -18,6 +18,11 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/media/clobotics-logo-all-white.png" alt="Logo">
             </a>
         </div>
+            <div class="burger-menu" id="burger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
                 <span class="nav-link">About</span>
