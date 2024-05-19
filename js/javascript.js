@@ -7,6 +7,13 @@ function showInfo() {
     }
 }
 
+// Navbar burber menu
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('burger-menu').addEventListener('click', function () {
+      document.getElementById('navbar-nav').classList.toggle('active');
+    });
+  });
+  
 
 // Function to scroll to the contact form section
 function scrollToContactForm(event) {
