@@ -52,8 +52,7 @@ Template Name: Career
     </form>
 </div>
 
-<!-- Container for displaying the career positions -->
-<div id="career-results"></div>
+
 
     
             <!-- Gap -->
