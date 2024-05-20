@@ -22,39 +22,38 @@ Template Name: single-open-position
     <!-- Gap -->
     <div style="height: 50px;"></div>
 
-     <!-- Information about the job position -->
-     <?php while (have_posts()) : the_post(); ?>
+    <!-- Information about the job position -->
+    <?php while (have_posts()) : the_post(); ?>
         <article <?php post_class(); ?>>
-            <div class="job-info">
-                <div class="info-item info-item-1">
+        <div class="job-info">
+                <div class="info-item">
                     <div class="info-label">
                         <i class="material-icons">calendar_month</i>
-                        <span>Deadline</span>
                     </div>
                     <div class="info-value">
+                        <span>Deadline</span>
                         <?php the_field('deadline'); ?>
                     </div>
                 </div>
-                <div class="info-item info-item-2">
+                <div class="info-item">
                     <div class="info-label">
                         <i class="material-icons">work</i>
-                        <span>Job Type</span>
                     </div>
                     <div class="info-value">
+                        <span>Job Type</span>
                         <?php the_field('job_type'); ?>
                     </div>
                 </div>
-                <div class="info-item info-item-3">
+                <div class="info-item">
                     <div class="info-label">
                         <i class="material-icons">location_on</i>
-                        <span>Location</span>
                     </div>
                     <div class="info-value">
+                        <span>Location</span>
                         <?php the_field('job_location'); ?>
                     </div>
                 </div>
             </div>
-
 
             <div class="job-description">
                 <p class="text"><?php the_field('headline-1'); ?></p>
