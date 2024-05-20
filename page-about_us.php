@@ -47,9 +47,12 @@ Template Name: About us
     <h2 class="title"><?php the_field('article_title_who_we_are'); ?></h2>
     <p class="subtitle"><?php the_field('subtitle_of_article_who_we_are'); ?></p>
     <p class="text"><?php the_field('article_text_who_we_are'); ?></p>
-        <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Video presentation</a>
-        <img class="who-we-are-img left" src="  ............  " alt=""> 
-        <img class="who-we-are-img right" src="  ............  " alt=""> 
+        <!-- <div class="container_to_center"> <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Video presentation</a></div> -->
+
+        <img class="who-we-are-img left" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt=""> 
+        <img class="who-we-are-img right" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt="">
+        
+        <img class="" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt="Article image" /> 
 </div>
 
 
@@ -58,7 +61,7 @@ Template Name: About us
 
 <div class="article_secondary_main one_company_two_directions">
 
-    <img class="two_directions_collage_img " src="  ............  " alt=""> 
+    <img class="two_directions_collage_img " src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt=""> 
         <h3 class="title"><?php the_field('article_title_one_company_two_directions'); ?></h3>
         <p class="text"><?php the_field('wind_part_text'); ?></p>
                 <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Discover Wind services</a>
@@ -138,21 +141,23 @@ Template Name: About us
 
 <!-- Join or Contact us  Section -->
 
-<div class="join_or_contact_us">
+<div class="join_or_contact_us container_to_center">
 
-    <h5 class="title"><?php the_field('article_title_want_to_join'); ?></h5>
-    <img class="join_or_contact_collage_img " src="  ............  " alt=""> 
+    <h3 class="title"><?php the_field('article_title_want_to_join'); ?></h3>
+    <img class="join_or_contact_collage_img " src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt=""> 
         <p class="subtitle"><?php the_field('subtitle_of_article_want_to_join'); ?></p>
+        <div class="flex space-around">
             <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Work for us</a>
             <a href="<?php echo get_permalink('  ............  ') ?>" class="btn light">Work with us</a>
+        </div>
 
 </div>
 
 
 <!-- Company History Timeline Section -->
-<h6 class="title">Company History</h6>
+<h2 class="title">Company History</h2>
 
-<div class="company-history-container">
+<section class="company-history-container">
     <?php
     // Query the company history posts
     $args = array(
@@ -205,7 +210,7 @@ Template Name: About us
         ?>
         <p>No company history found.</p>
     <?php endif; ?>
-</div>
+</section>
 
 <!-- !!!!!!!!!!!!!!! -->
 

@@ -108,6 +108,7 @@ p.subtitle {
 .dark {
   background-color: #002D61;
   color: #fff;
+
 }
 .dark:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);}
@@ -117,13 +118,15 @@ p.subtitle {
     color: #000000;
     border: solid;
     border-width: 1px;
-    /* border-color: #707070; */
+    border-color: transparent; 
     border-radius: 20px;
   }
 
   .optional:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);    
-    background-color: #86D0F4;  }
+    background-color: #002D61;
+    color: #fff; 
+}
 
   
 .light {  
@@ -966,6 +969,8 @@ main {
 .flex {
   display: flex;
 }
+.space-around {
+justify-content: space-around;}
 
 .half-size {
  width: 50%;
