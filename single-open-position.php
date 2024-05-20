@@ -20,6 +20,9 @@ Template Name: single-open-position
 
     <a id="apply-button" href="#" class="btn">Apply</a>
 
+     <!-- Gap -->
+     <div style="height: 50px;"></div>
+
     <!-- Information about the job position -->
     <?php while (have_posts()) : the_post(); ?>
         <article <?php post_class(); ?>>
@@ -48,23 +51,20 @@ Template Name: single-open-position
             </div>
 
             <div class="job-description">
-                <p><?php the_field('headline-1'); ?></p>
-                <p><?php the_field('paragraph-1'); ?></p>
-                <p><?php the_field('headline-2'); ?></p>
-                <p><?php the_field('paragraph-2'); ?></p>
-                <p><?php the_field('headline-3'); ?></p>
-                <p><?php the_field('paragraph-3'); ?></p>
-                <p><?php the_field('headline-4'); ?></p>
-                <p><?php the_field('paragraph-4'); ?></p>
+                    <p class="text"><?php the_field('headline-1'); ?></p>
+                    <p class="text"><?php the_field('paragraph-1'); ?></p>
+                    <p class="text"><?php the_field('headline-2'); ?></p>
+                    <p class="text"><?php the_field('paragraph-2'); ?></p>
+                    <p class="text"><?php the_field('headline-3'); ?></p>
+                    <p class="text"><?php the_field('paragraph-3'); ?></p>
+                    <p class="text"><?php the_field('headline-4'); ?></p>
+                    <p class="text"><?php the_field('paragraph-4'); ?></p>
+                    <!-- Find more about Clobotics button -->
+                <a href="page-about_us.php" class="btn dark">Read more about Clobotics</a>
             </div>
-
         </article>
 
 
-        <!-- Find more about Clobotics button -->
-        <a href="page-about_us.php" class="btn dark">Read more about Clobotics</a>
-
-       
 
          <!-- Career contact person -->
 

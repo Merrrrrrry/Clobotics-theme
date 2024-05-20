@@ -5,11 +5,7 @@ Template Name: Career
 ?>
 
 <?php get_header(); ?>
-
-
-
-
-        
+ 
 
 <body <?php body_class('gray-body'); ?>>
     <main>
@@ -23,6 +19,7 @@ Template Name: Career
             </div>
         </div>
 
+          
 
         <!-- Search bar and filters -->
         <div class="search-bar-container">
@@ -57,12 +54,14 @@ Template Name: Career
             </form>
         </div>
 
-        <!-- Open Positions section/Job list -->
-        <div class="open-positions">
-            <h2 class="title">Open job positions</h2>
-
             <!-- Gap -->
-            <div style="height: 10px;"></div>
+            <div style="height: 30px;"></div>
+
+             <!-- Open Positions section/Job list -->
+            <div class="open-positions">
+                <h2 class="title">Open job positions</h2>
+
+            
 
             <ul id="position-list" class="position-list">
                 <?php
@@ -127,19 +126,19 @@ Template Name: Career
         <div class="numbers-row">
             <div class="number-container">
                 <h4 class="number"><?php echo esc_html($team); ?></h4>
-                <h4 class="text">Team</h4>
+                <h4 class="text-career">Team</h4>
             </div>
             <div class="number-container">
                 <h4 class="number"><?php echo esc_html($team_members); ?></h4>
-                <h4 class="text">Team Members</h4>
+                <h4 class="text-career">Team Members</h4>
             </div>
             <div class="number-container">
                 <h4 class="number"><?php echo esc_html($countries); ?></h4>
-                <h4 class="text">Countries</h4>
+                <h4 class="text-career">Countries</h4>
             </div>
             <div class="number-container">
                 <h4 class="number"><?php echo esc_html($cities); ?></h4>
-                <h4 class="text">Cities</h4>
+                <h4 class="text-career">Cities</h4>
             </div>
         </div>
 
