@@ -1324,8 +1324,20 @@ img.footer-logo {
 }
 
 .footer-column {
-  width: calc(25% - 20px);
   margin-bottom: 20px;
+  width: calc(67% - 20px);
+}
+
+.footer-column {
+  width: calc(67% - 20px);
+}
+
+.footer-column:first-child {
+  width: 33%; 
+}
+
+.footer-column:last-child {
+  width: 100%;
 }
 
 .footer-column .material-icons{
@@ -1368,6 +1380,9 @@ img.footer-logo {
 .copyright {
   font-size: 12px;
   margin-top: 20px;
+  margin-top: auto;
+  display: flex;
+  align-items: flex-end;
 }
 
 .copyright a {
@@ -1379,6 +1394,7 @@ img.footer-logo {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  margin-left: 20px;
 }
 
 .social-icons img {
