@@ -75,22 +75,22 @@ Template Name: About us
     
     <!-- Filters for Positions -->
     <div id="position-filters" class="filters">
-        <button class="filter-btn" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="CEO">CEO</button>
-        <button class="filter-btn" data-filter="Engineer">Engineer</button>
-        <button class="filter-btn" data-filter="Sales Manager">Sales Manager</button>
-        <button class="filter-btn" data-filter="Project Coordinator">Project Coordinator</button>
+        <button class="filter-btn filter-button" data-filter="all">All</button>
+        <button class="filter-btn filter-button" data-filter="CEO">CEO</button>
+        <button class="filter-btn filter-button" data-filter="Engineer">Engineer</button>
+        <button class="filter-btn filter-button" data-filter="Sales Manager">Sales Manager</button>
+        <button class="filter-btn filter-button" data-filter="Project Coordinator">Project Coordinator</button>
     </div>
     
-    <!-- Filters for Regions
+    <!-- Filters for Regions -->
     <div id="region-filters" class="filters">
         <select id="region-select" class="filter-select">
-            <option value="all">Region</option>
-            <option value="Asia">Asia</option>
-            <option value="Europe">Europe</option>
-            <option value="America">America</option>
+            <option class="filter-sellect filter-button" value="all">Region</option>
+            <option class="filter-sellect filter-button" value="Asia">Asia</option>
+            <option class="filter-sellect filter-button" value="Europe">Europe</option>
+            <option class="filter-sellect filter-button" value="America">America</option>
         </select>
-    </div> -->
+    </div> 
 
     <!-- loop function  (meet our team) -->
     <div class="meet-our-team_main_content">
@@ -99,7 +99,7 @@ Template Name: About us
         while ($loop->have_posts()) : $loop->the_post(); 
             $name = get_field("name_and_surname");
             $position = get_field("job_position");
-            // $region = get_field("region"); // Assume 'region' is a custom field you will create
+            $region = get_field("region"); // 'region' is a custom field 
             $image = get_field('portrait_image');
             $first_social_media_link = get_field("link_for_employees_first_social_media");
             $first_social_media_icon = get_field('picture_of_employees_first_social_media');
