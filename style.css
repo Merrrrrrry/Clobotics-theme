@@ -1187,6 +1187,10 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   margin: 0;
 }
 
+.contact-info .material-icons {
+  color: #002D61;
+}
+
 @media (max-width: 768px) {
   .section-one,
   .section-two,
