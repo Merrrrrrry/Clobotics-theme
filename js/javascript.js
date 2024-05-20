@@ -94,31 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// Show more items - function - "meet our team" on About us page
-
-document.addEventListener('DOMContentLoaded', function () {
-    const showMoreBtn = document.getElementById('show-more-btn');
-    let currentIndex = 8;
-
-    showMoreBtn.addEventListener('click', function () {
-        const employeeBoxes = document.querySelectorAll('.meet-our-team-box-content');
-        const totalBoxes = employeeBoxes.length;
-        let nextIndex = currentIndex + 8;
-
-        for (let i = currentIndex; i < nextIndex && i < totalBoxes; i++) {
-            employeeBoxes[i].style.display = 'block';
-        }
-
-        currentIndex = nextIndex;
-
-        // Hide the button if all items are displayed
-        if (currentIndex >= totalBoxes) {
-            showMoreBtn.style.display = 'none';
-        }
-    });
-});
-
-// Show less btn - "meet our team" on About us page
+// Show more and Show less buttons - "meet our team" on About us page
 
 document.addEventListener('DOMContentLoaded', function() {
     let showMoreBtn = document.getElementById('show-more-btn');
@@ -129,6 +105,11 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateButtonVisibility() {
         let visibleItems = document.querySelectorAll('.meet-our-team-box-content:not([style*="display: none"])').length;
         showLessBtn.style.display = visibleItems > itemsToShow ? 'inline-block' : 'none';
+    }
+
+    // Initially hide all but the first 8 items
+    for (let i = itemsToShow; i < employeeBlocks.length; i++) {
+        employeeBlocks[i].style.display = 'none';
     }
 
     showMoreBtn.addEventListener('click', function() {
@@ -142,6 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
         updateButtonVisibility();
     });
 
+// Show less btn - "meet our team" on About us page
     showLessBtn.addEventListener('click', function() {
         let visibleItems = document.querySelectorAll('.meet-our-team-box-content:not([style*="display: none"])');
         for (let i = visibleItems.length - 1; i >= Math.max(visibleItems.length - itemsToShow, itemsToShow); i--) {
@@ -151,8 +133,11 @@ document.addEventListener('DOMContentLoaded', function() {
         updateButtonVisibility();
     });
 
-    updateButtonVisibility();
+    // Ensure the "Show Less" button is initially hidden
+    showLessBtn.style.display = 'none';
 });
+
+
 
 
 // Function to show one of three pictures - we work globally section on Wind services page
