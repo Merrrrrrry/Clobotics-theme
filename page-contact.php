@@ -31,7 +31,7 @@ Template Name: Contact
     </div>
 </section>
 
-
+<div class="background-white">
  <!-- Clobotics contact your office -->
  <section class="contact-section">
   <h2 class="section-title">Contact Your Local Office</h2>
@@ -102,6 +102,8 @@ Template Name: Contact
   </div>
 </section>
 
+</div>
+
 
 
 <!-- Subscribes for more  Section -->
@@ -124,7 +126,6 @@ Template Name: Contact
             </a>
         </div>
     </div>
-</section>
 </section>
 
 
