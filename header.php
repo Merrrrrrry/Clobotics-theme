@@ -31,7 +31,7 @@
                     <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>">About us</a>
                     <a href="<?php echo esc_url(get_permalink(get_page_by_path('career'))); ?>">Career</a>
                     <a href="<?php echo esc_url(get_permalink(get_page_by_path('articles'))); ?>">Articles</a>
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('media'))); ?>">Media</a>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('media-files'))); ?>">Media</a>
                 </div>
             </li>
             <li class="nav-item dropdown">

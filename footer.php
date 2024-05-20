@@ -8,7 +8,7 @@
             <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>">About us</a></li>
             <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('career'))); ?>">Career</a></li>
             <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('articles'))); ?>">Articles</a></li>
-            <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('media'))); ?>">Media</a></li>
+            <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('media-files'))); ?>">Media</a></li>
         </ul>
     </div>
     <div class="footer-column">
@@ -24,7 +24,7 @@
     </div>
     <div class="copyright_sm">
     <div class="copyright">
-        © 2024 CLOBOTICS ALL RIGHTS RESERVED - <a href="<?php echo esc_url(get_permalink(get_page_by_path('privacy-&-cookie-policy'))); ?>">PRIVACY & COOKIE POLICY</a>
+        © 2024 CLOBOTICS ALL RIGHTS RESERVED - <a href="<?php echo esc_url(get_permalink(get_page_by_path('privacy-cookie-policy'))); ?>">PRIVACY & COOKIE POLICY</a>
     </div>
     
     <div class="social-icons">
