@@ -19,6 +19,7 @@ Template Name: Career
             </div>
         <div class="hero-section-content">
                 <h1 class="hero-title">Career at Clobotics</h1>
+                <p class="hero-slogan"> Work at Clobotics - Your career in technology awaits</p>
             </div>
         </div>
 
@@ -58,7 +59,7 @@ Template Name: Career
 
         <!-- Open Positions section/Job list -->
         <div class="open-positions">
-            <h2 class="title">Open Positions</h2>
+            <h2 class="title">Open job positions</h2>
 
             <!-- Gap -->
             <div style="height: 10px;"></div>

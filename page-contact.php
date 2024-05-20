@@ -18,10 +18,9 @@ Template Name: Contact
                 <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_contact_us.jpg" alt="Hero image">
             </div>
             <div class="hero-section-content">
-                <h1 class="hero-title">Meet Clobotics - a vision technology company <br> with offices all around the world</h1>
+                <h1 class="hero-title">Contact Clobotics filling our contact form <br> and we will get in touch with you.</h1>
             </div>
         </div> 
-
 
 
 <!--- Contact form section --->
@@ -32,13 +31,13 @@ Template Name: Contact
     </div>
 </section>
 
-
+<div class="background-white">
  <!-- Clobotics contact your office -->
  <section class="contact-section">
   <h2 class="section-title">Contact Your Local Office</h2>
   <div class="section-content">
         <div class="section-one">
-        <video id="sectionVideo" autoplay loop muted playsinline preload="auto" width="360px">
+        <video id="sectionVideo" autoplay loop muted playsinline preload="auto" width="210px">
         <source src="<?php echo get_template_directory_uri(); ?>/media/Earth Globe 2.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -102,6 +101,33 @@ Template Name: Contact
     </div>
   </div>
 </section>
+
+
+
+
+
+<!-- Subscribes for more  Section -->
+
+<section class="subscribe-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/media/sm-bg-rounded.png">
+    <div class="content-wrapper">
+        <h2>Subscribe for more!</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/company/cloboticswindservices/">
+                <img src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png" alt="LinkedIn"> <br>
+                <span>Wind</span>
+            </a>
+            <a href="https://www.linkedin.com/company/clobotics/">
+                <img src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png" alt="LinkedIn"> <br>
+                <span>Retail</span>
+            </a>
+            <a href="https://vimeo.com/681845431">
+                <img src="<?php echo get_template_directory_uri(); ?>/media/vimeo-logo.png" alt="Vimeo"> <br>
+                <span>Vimeo</span>
+            </a>
+        </div>
+    </div>
+</section>
+</div>
 
 
 </body>

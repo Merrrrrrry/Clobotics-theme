@@ -64,6 +64,7 @@ function include_custom_fields_in_search($query) {
 }
 add_action('pre_get_posts', 'include_custom_fields_in_search');
 
+
 // Enqueue custom JavaScript
 function clobotics_enqueue_scripts() {
     wp_enqueue_script('clobotics-custom', get_template_directory_uri() . '/js/custom.js', array('jquery'), null, true);
@@ -254,4 +255,88 @@ function clobotics_ajax_search_wind_services() {
 add_action('wp_ajax_clobotics_search_wind_services', 'clobotics_ajax_search_wind_services');
 add_action('wp_ajax_nopriv_clobotics_search_wind_services', 'clobotics_ajax_search_wind_services');
 
+
+
+
+
 // Handle AJAX search for articles
+add_action('wp_ajax_clobotics_search_articles', 'clobotics_search_articles');
+add_action('wp_ajax_nopriv_clobotics_search_articles', 'clobotics_search_articles');
+
+function clobotics_search_articles() {
+    $search_query = sanitize_text_field($_POST['search_query']);
+    $filter = sanitize_text_field($_POST['filter']);
+    $paged = isset($_POST['paged']) ? intval($_POST['paged']) : 1;
+    $posts_per_page = 6;
+
+    $args = array(
+        'post_type' => 'new-article',
+        's' => $search_query,
+        'posts_per_page' => $posts_per_page,
+        'paged' => $paged,
+        'tax_query' => array()
+    );
+
+    if ($filter) {
+        $args['tax_query'][] = array(
+            'taxonomy' => 'article_category',
+            'field'    => 'slug',
+            'terms'    => $filter,
+        );
+    }
+
+    $query = new WP_Query($args);
+
+    if ($query->have_posts()) :
+        $count = 0;
+        while ($query->have_posts()) : $query->the_post();
+            if ($count % 3 == 0) {
+                echo '<div class="row">';
+            }
+            ?>
+            <article class="col">
+                <a href="<?php the_permalink(); ?>">
+                    <?php
+                    $image = get_field('article_main_image');
+                    if ($image) :
+                        echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '">';
+                    endif;
+                    ?>
+                    <h3><?php the_field('new_article_title'); ?></h3>
+                    <p><?php the_field('meta_description_short'); ?></p>
+                </a>
+            </article>
+            <?php
+            $count++;
+            if ($count % 3 == 0) {
+                echo '</div>';
+            }
+        endwhile;
+
+        if ($count % 3 != 0) {
+            echo '</div>';
+        }
+
+        if ($query->max_num_pages > 1) :
+            ?>
+            <div class="pagination">
+                <?php echo paginate_links(array(
+                    'total' => $query->max_num_pages,
+                    'current' => $paged,
+                    'prev_text' => __('« Previous'),
+                    'next_text' => __('Next »'),
+                )); ?>
+            </div>
+        <?php endif;
+
+        wp_reset_postdata();
+    else :
+        echo '<p>No articles found.</p>';
+    endif;
+
+    wp_die();
+}
+
+
+
+
