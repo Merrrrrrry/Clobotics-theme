@@ -619,7 +619,7 @@ h4.text-career {
   color: #ffffff; 
 } 
 
-/* Filters style for btn-section abow meet our team*/
+/* Filters style for btn-section above meet our team*/
 
 .filter-btn.active {
   background-color: #00B3EC;
@@ -785,9 +785,17 @@ main {
 
 
 
+/*---------------------------ABOUT US PAGE----------------------------*/
 
 
-/*MEET OUR TEAM LOOP SECTION*/
+/*MEET OUR TEAM SECTION (filters)*/
+.filters_container {
+  display: inline;
+}
+
+
+
+/*MEET OUR TEAM LOOP */
 
 .meet-our-team_main_content {
   display: flex;
@@ -824,6 +832,7 @@ main {
   height: auto;
   margin: 0 0.5em 1em;
 }
+
 
 
 
@@ -1330,16 +1339,19 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   padding: 0 20px;
 }
 
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
 /* Title Styling */
-.title {
+ .title {
   font-size: 2em;
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  .company-history-item {
+ .company-history-item {
       flex-direction: column;
       align-items: center;
   }

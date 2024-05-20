@@ -73,6 +73,7 @@ Template Name: About us
 <section id="meet_our_team" style="background-size: cover; height: auto;">
     <h2 class="title">Meet our team</h2>
     
+    <section class="filters_container">
     <!-- Filters for Positions -->
     <div id="position-filters" class="filters">
         <button class="filter-btn" data-filter="all">All</button>
@@ -91,7 +92,8 @@ Template Name: About us
             <option class=" " value="America">America</option>
         </select>
     </div> 
-
+    </section>
+    
     <!-- loop function  (meet our team) -->
     <div class="meet-our-team_main_content">
         <?php 
