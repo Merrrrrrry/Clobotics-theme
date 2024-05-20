@@ -497,9 +497,6 @@ h4.text-career {
 
 .info-item {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
-  text-align: left;
 }
 
 .info-item .info-label {
