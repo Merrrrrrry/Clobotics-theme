@@ -142,6 +142,10 @@ p.subtitle {
     text-decoration: none; 
   }
 
+
+
+  .article_secondary_main one_company_two_directions
+
 /* <--- Hero Section ---> */
 
 
@@ -681,7 +685,7 @@ h4.text {
 /* <------ Privacy & Cookie Policy style ------> */
 
 
-  .download-buttons {
+  /* .download-buttons {
     position: absolute; 
     bottom: -250px; 
     left: 50%;
@@ -703,7 +707,47 @@ h4.text {
   .download-buttons .btn .material-icons {
     color: white; 
     margin-right: 8px; 
-  }
+  } */
+
+  .download-buttons {
+    padding-top: 260px; 
+    padding-bottom: 40px; 
+    text-align: center; 
+}
+
+.download-buttons .btn {
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px; 
+    display: inline-flex;
+    align-items: center;
+    background-color: #01A7E6;
+    text-decoration: none;
+}
+
+.download-buttons .btn .material-icons {
+    color: white; 
+    margin-left: 10px; 
+}
+
+@media (max-width: 768px) {
+    .download-buttons {
+        padding-top: 200px; 
+        padding-bottom: 20px; 
+    }
+
+    .download-buttons .btn {
+        width: 80%; 
+        justify-content: center; 
+    }
+
+    .download-buttons .btn .material-icons {
+        margin-left: 5px; 
+    }
+}
+
   
 
   
