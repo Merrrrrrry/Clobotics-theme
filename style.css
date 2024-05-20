@@ -144,7 +144,7 @@ p.subtitle {
 
 
 
-  .article_secondary_main one_company_two_directions
+ /* .article_secondary_main one_company_two_directions */
 
 /* <--- Hero Section ---> */
 
@@ -195,6 +195,16 @@ p.subtitle {
   color: #fff; 
   padding: 20px; 
 }
+
+/*.hero-section-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: #fff;
+} */
 
 
 /* <--- Career page --->*/
@@ -482,15 +492,6 @@ h4.text {
 
 /* <--- Single open position style ---> */
 
-.hero-section-content {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  text-align: center;
-  color: #fff;
-}
 
 #apply-button {
   position: absolute;
