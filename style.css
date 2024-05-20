@@ -146,13 +146,10 @@ p.subtitle {
 
  /* .article_secondary_main one_company_two_directions */
 
-/* <--- Hero Section ---> */
+
+/* <--------- Hero Section ---------> */
 
 
-
-
-
-/* Hero section container */
 .hero-section {
   position: relative;
   display: flex;
@@ -163,7 +160,7 @@ p.subtitle {
   margin-top: 0;
 }
 
-/* Hero section background image */
+
 .hero-section-background {
   position: absolute;
   top: 0;
@@ -179,7 +176,7 @@ p.subtitle {
   object-fit: cover;
 }
 
-/* Hero section content */
+
 .hero-section-content {
   position: absolute;
   top: 50%;
@@ -191,15 +188,8 @@ p.subtitle {
   z-index: 1;
 }
 
-/*.hero-section-content {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  text-align: center;
-  color: #fff;
-} */
+
+
 
 
 /* <--- Career page --->*/
