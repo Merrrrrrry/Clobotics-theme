@@ -5,11 +5,7 @@ Template Name: Career
 ?>
 
 <?php get_header(); ?>
-
-
-
-
-        
+ 
 
 <body <?php body_class('gray-body'); ?>>
     <main>
@@ -23,6 +19,7 @@ Template Name: Career
             </div>
         </div>
 
+          
 
         <!-- Search bar and filters -->
         <div class="search-bar-container">
@@ -57,9 +54,12 @@ Template Name: Career
             </form>
         </div>
 
-        <!-- Open Positions section/Job list -->
-        <div class="open-positions">
-            <h2 class="title">Open job positions</h2>
+            <!-- Gap -->
+            <div style="height: 10px;"></div>
+
+             <!-- Open Positions section/Job list -->
+            <div class="open-positions">
+                <h2 class="title">Open job positions</h2>
 
             <!-- Gap -->
             <div style="height: 10px;"></div>
