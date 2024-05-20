@@ -531,6 +531,11 @@ i.material-icons {
 .contact-person-career {
   display: flex;
   justify-content: center;
+  
+}
+
+.contact-person-details {
+  display: flex;
   flex-direction: column;
 }
 
