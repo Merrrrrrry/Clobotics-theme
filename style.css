@@ -481,7 +481,6 @@ h4.text-career {
   margin-top: 35px; /* Just to make a gap in between the paragraph and button */
 }
 
-
 #apply-button {
   position: absolute;
   bottom: 110px; 
@@ -498,25 +497,32 @@ h4.text-career {
 }
 
 .info-item {
-  text-align: left; 
   flex-basis: 33.33%;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: flex-start; 
+  text-align: left;
 }
 
-.info-label {
+.info-item .info-label {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
 }
 
-.info-label span {
-  margin-left: 5px; 
+.info-item .info-label i {
+  margin-right: 5px;
 }
 
-.info-value {
-  font-weight: bold;
+.info-item .info-value {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.info-item .info-value span {
+  font-weight: normal;
+  margin-bottom: 3px; /* Adjust the spacing between the label and value */
 }
 
 .material-icons {
@@ -539,6 +545,7 @@ h4.text-career {
   margin: 40px 60px; 
   text-align: left; 
 }
+
 
 /* <------ Article page style ------> */
 
