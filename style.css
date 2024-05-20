@@ -498,11 +498,12 @@ h4.text-career {
 .info-item .info-label {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
 }
 
 .info-item .info-label i {
-  margin-right: 5px;
+  margin-right: 6px;
+  margin-top: 6px;
+  font-size: 40px;
 }
 
 .info-item .info-value {
@@ -516,19 +517,7 @@ h4.text-career {
   margin-bottom: 3px; 
 }
 
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-smoothing: antialiased;
+.info-label {
   color: #05A3E4;
 }
 
@@ -537,6 +526,37 @@ h4.text-career {
   text-align: left; 
 }
 
+/* <------ Contact Person Career style ------> */
+
+
+.contact-person-career {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+.contact-person-details {
+  text-align: center; 
+  margin-top: 20px; 
+}
+
+.contact-person-image img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover; 
+}
+
+.phone-career {
+  display: flex;
+  align-items: center; 
+  
+}
+
+.phone-career i {
+  font-size: 24px;
+  color:#000000;
+  margin-right: 5px;
+}
 
 
 /* <------ Article page style ------> */

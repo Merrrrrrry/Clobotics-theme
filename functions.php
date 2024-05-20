@@ -127,10 +127,11 @@ function clobotics_ajax_search() {
     if ($job_type) {
         $meta_query[] = array(
             'key' => 'job_type',
-            'value' => str_replace(array(' ', '-'), '_', $job_type),
+            'value' => $job_type,
             'compare' => 'LIKE'
         );
     }
+    
 
     // Construct WP_Query arguments
     $args = array(
