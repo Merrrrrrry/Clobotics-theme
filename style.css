@@ -102,7 +102,7 @@ p.subtitle {
   cursor: pointer;
 }
 
-.btn:hover {
+.btn:hover, .btn-shadow {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);}
 
 .dark {
@@ -117,7 +117,7 @@ p.subtitle {
     color: #000000;
     border: solid;
     border-width: 1px;
-    border-color: #707070;
+    /* border-color: #707070; */
     border-radius: 20px;
   }
 
@@ -841,6 +841,18 @@ main {
 }
 */
 
+
+/* Show more items btn*/
+
+.meet-our-team-box-content {
+  display: none; /* to hide all boxes */
+}
+.meet-our-team-box-content:nth-child(-n+8) {
+  display: block; /* to show the first 8 boxes of loop*/
+}
+
+
+
 .box-shadow-inset {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-shadow: inset;
@@ -862,8 +874,6 @@ main {
 
 
 
-
-/*---------------------------WIND SERVICES PAGE----------------------------*/
 /*---------------------------WIND SERVICES PAGE----------------------------*/
 /*---------------------------WIND SERVICES PAGE----------------------------*/
 

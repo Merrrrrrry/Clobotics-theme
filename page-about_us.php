@@ -124,17 +124,11 @@ Template Name: About us
         
         <?php endwhile; wp_reset_query(); ?>
     </div>
+
+ <!-- Show More Button -->
+ <a href="javascript:void(0);" class="btn optional btn-shadow" id="show-more-btn" class="btn optional">Show more</a>
 </section>
-
-
-
-
-
-<!-- button "Show more" with hover efect  (meet our team) -->
-
-
-    <a href="<?php echo get_permalink('  ............  ') ?>" class="btn optional">Show more</a> <!-- ???? -->
-
+</section>
 
 
 <!-- Join or Contact us  Section -->
