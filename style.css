@@ -685,29 +685,29 @@ h4.text {
 /* <------ Privacy & Cookie Policy style ------> */
 
 
-  .download-buttons {
-    position: absolute; 
-    bottom: -250px; 
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1; 
-  }
-  
+.download-buttons {
+  position: absolute; 
+  bottom: -250px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; 
+}
 
-  .download-buttons .btn {
-    color: #fff;
-    padding: 8px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-bottom: 20px; 
-    display: flex;
-    align-items: center;
-  }
-  
-  .download-buttons .btn .material-icons {
-    color: white; 
-    margin-right: 8px; 
-  }
+
+.download-buttons .btn {
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-bottom: 20px; 
+  display: flex;
+  align-items: center;
+}
+
+.download-buttons .btn .material-icons {
+  color: white; 
+  margin-right: 8px; 
+}
 
 
   
