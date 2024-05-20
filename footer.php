@@ -22,7 +22,7 @@
         <h2 class="footer-title">Get in touch</h2>
         <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="footer-contact-link">Contact us<i class="material-icons">arrow_right_alt</i></a>
     </div>
-    
+    <div class="copyright_sm">
     <div class="copyright">
         © 2024 CLOBOTICS ALL RIGHTS RESERVED - <a href="<?php echo esc_url(get_permalink(get_page_by_path('privacy-&-cookie-policy'))); ?>">PRIVACY & COOKIE POLICY</a>
     </div>
@@ -40,6 +40,7 @@
             <img src="<?php echo get_template_directory_uri(); ?>/media/vimeo-logo.png" alt="Vimeo"> <br>
             <span>Vimeo</span>
         </a>
+    </div>
     </div>
 </footer>
 
