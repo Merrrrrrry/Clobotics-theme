@@ -810,7 +810,9 @@ main {
 
 /*MEET OUR TEAM SECTION (filters)*/
 .filters_container {
-  display: inline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 
