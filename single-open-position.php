@@ -84,11 +84,6 @@ Template Name: single-open-position
                     <p><?php the_field('contact_person_phone'); ?></p>
                 </div>
             </div>
-            <div class="contact-person-socials">
-                        <img class="contact-person-social-icon" src="<?php echo get_template_directory_uri(); ?>/media/mail-logo.png" alt="mail-logo">
-                        <img class="contact-person-socials-icon" src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png" alt="mail-logo">
-                        <img class="contact-person-socials-icon" src="<?php echo get_template_directory_uri(); ?>/media/vimeo-logo.png" alt="mail-logo">
-            </div>
         </div>
 
         <!-- Apply for job contact form -->
