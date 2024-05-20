@@ -1592,6 +1592,12 @@ img.footer-logo {
   text-align: center;
 }
 
+
+.social-icons img{
+  align-items: center;  
+  text-align: center;
+}
+
 .social-icons span {
   margin-top: 5px;
   color: white; 
