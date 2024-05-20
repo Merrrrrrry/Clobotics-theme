@@ -1575,3 +1575,9 @@ img.footer-logo {
   margin-bottom: 20px;
 }
 
+.social-icons span {
+  display: block;
+  margin-top: 5px;
+  color: white;
+}
+
