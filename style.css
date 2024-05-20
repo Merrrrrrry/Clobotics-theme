@@ -1129,7 +1129,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   content: "";
   display: block;
   width: 450px; 
-  height: 2px; 
+  height: 1px; 
   background-color: #01A7E6;
   margin: 0 auto;
   margin-top: 7px;
