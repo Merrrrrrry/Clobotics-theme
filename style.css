@@ -598,6 +598,43 @@ h4.text-career {
   gap: 10px;
 }
 
+.filters select, .filter-button, .fitler-btn {
+  cursor: pointer;
+  border: 2px solid transparent; 
+  border-radius: 20px; 
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+}
+
+.filter-button {
+  background-color: #00B3EC;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.material-icons.search-icon {
+  font-size: 30px;
+  color: #ffffff; 
+} 
+
+/* Filters style for btn-section abow meet our team*/
+
+.filter-btn.active {
+  background-color: #00B3EC;
+  color: white;
+}
+
+
+
+
 .filters label {
   cursor: pointer;
   display: inline-block;
