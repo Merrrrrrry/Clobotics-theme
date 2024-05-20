@@ -1551,3 +1551,27 @@ img.footer-logo {
     display: flex;
   }
 }
+
+
+/* ------------------------SUBSCTIBE FOR MORE!--------------------------*/
+
+.subscribe-section {
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  text-align: center;
+  color: white; 
+}
+
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); 
+  border-radius: 10px; 
+}
+
+.subscribe-section h2 {
+  margin-bottom: 20px;
+}
+
