@@ -1401,6 +1401,10 @@ img.footer-logo {
   color: white; 
 }
 
+.copyright-sm {
+  display: flex; 
+  align-items: flex-end;
+}
 
 
 
