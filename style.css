@@ -1379,7 +1379,6 @@ img.footer-logo {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  justify-content: center;
 }
 
 .social-icons img {
@@ -1387,9 +1386,7 @@ img.footer-logo {
 }
 
 .footer .social-icons span {
-  margin-top: 5px;
   color: white; 
-  text-align: center;
 }
 
 
@@ -1572,7 +1569,7 @@ img.footer-logo {
 .content-wrapper {
   max-width: 800px;
   margin: 0 auto;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .subscribe-section h2 {
@@ -1602,7 +1599,6 @@ img.footer-logo {
 .social-icons a:last-child {
     margin-right: 0;
 }
-
 
 .social-icons img{
   align-items: center;  
