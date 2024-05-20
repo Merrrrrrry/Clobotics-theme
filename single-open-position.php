@@ -20,6 +20,9 @@ Template Name: single-open-position
 
     <a id="apply-button" href="#" class="btn">Apply</a>
 
+     <!-- Gap -->
+     <div style="height: 30px;"></div>
+
     <!-- Information about the job position -->
     <?php while (have_posts()) : the_post(); ?>
         <article <?php post_class(); ?>>
