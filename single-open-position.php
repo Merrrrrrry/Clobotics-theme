@@ -47,7 +47,7 @@ Template Name: single-open-position
                 </div>
             </div>
 
-            <div class="job-info">
+            <div class="job-description">
                 <p><strong><?php the_field('headline-1'); ?></strong></p>
                 <p><?php the_field('paragraph-1'); ?></p>
                 <p><strong><?php the_field('headline-2'); ?></strong></p>
