@@ -503,6 +503,7 @@ h4.text-career {
 .info-item .info-label i {
   margin-right: 6px;
   margin-top: 6px;
+  font-size: 40px;
 }
 
 .info-item .info-value {
@@ -517,7 +518,6 @@ h4.text-career {
 }
 
 .info-label {
-  font-size: 40px;
   color: #05A3E4;
 }
 
