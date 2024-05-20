@@ -50,7 +50,48 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Function for filtering REGIONs and JOB positons for ""meet our team on About us page
 
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const regionSelect = document.getElementById('region-select');
+    const employeeBoxes = document.querySelectorAll('.meet-our-team-box-content');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.getAttribute('data-filter');
+            filterEmployees(filter, regionSelect.value);
+        });
+    });
+
+    regionSelect.addEventListener('change', () => {
+        const region = regionSelect.value;
+        const positionFilter = document.querySelector('.filter-btn.active')?.getAttribute('data-filter') || 'all';
+        filterEmployees(positionFilter, region);
+    });
+
+    function filterEmployees(position, region) {
+        employeeBoxes.forEach(box => {
+            const matchesPosition = (position === 'all' || box.getAttribute('data-position') === position);
+            const matchesRegion = (region === 'all' || box.getAttribute('data-region') === region);
+
+            if (matchesPosition && matchesRegion) {
+                box.style.display = 'block';
+            } else {
+                box.style.display = 'none';
+            }
+        });
+
+        // Set the active class on the position filter buttons
+        filterButtons.forEach(button => {
+            if (button.getAttribute('data-filter') === position) {
+                button.classList.add('active');
+            } else {
+                button.classList.remove('active');
+            }
+        });
+    }
+});
 
 // Function to show one of three pictures - we work globally section on Wind services page
 
