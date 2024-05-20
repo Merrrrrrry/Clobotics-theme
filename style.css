@@ -1128,11 +1128,11 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 .section-title::after {
   content: "";
   display: block;
-  width: 300px; 
+  width: 450px; 
   height: 1px; 
   background-color: #01A7E6;
   margin: 0 auto;
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 .section-content {
