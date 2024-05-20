@@ -546,6 +546,10 @@ h4.text-career {
   object-fit: cover; 
 }
 
+.phone-career {
+  display: flex;
+}
+
 .phone-career i {
   font-size: 24px;
   color:#000000;
