@@ -25,8 +25,8 @@ Template Name: single-open-position
     <!-- Information about the job position -->
     <?php while (have_posts()) : the_post(); ?>
         <article <?php post_class(); ?>>
-            <div class="job-info">
-                <div class="info-item info-item-1">
+        <div class="job-info">
+                <div class="info-item">
                     <div class="info-label">
                         <i class="material-icons">calendar_month</i>
                     </div>
@@ -35,7 +35,7 @@ Template Name: single-open-position
                         <?php the_field('deadline'); ?>
                     </div>
                 </div>
-                <div class="info-item info-item-2">
+                <div class="info-item">
                     <div class="info-label">
                         <i class="material-icons">work</i>
                     </div>
@@ -44,7 +44,7 @@ Template Name: single-open-position
                         <?php the_field('job_type'); ?>
                     </div>
                 </div>
-                <div class="info-item info-item-3">
+                <div class="info-item">
                     <div class="info-label">
                         <i class="material-icons">location_on</i>
                     </div>
@@ -64,8 +64,9 @@ Template Name: single-open-position
                 <p class="text"><?php the_field('paragraph-3'); ?></p>
                 <p class="text"><?php the_field('headline-4'); ?></p>
                 <p class="text"><?php the_field('paragraph-4'); ?></p>
-                <!-- Find more about Clobotics button -->
-                <a href="page-about_us.php" class="btn dark">Read more about Clobotics</a>
+                    <div class="read-more-career-button">
+                        <a href="page-about_us.php" class="btn dark">Read more about Clobotics</a>
+                </div>
             </div>
         </article>
 
@@ -76,9 +77,9 @@ Template Name: single-open-position
                 <img src="<?php echo get_field('contact_person_image')['url']; ?>" alt="<?php echo get_field('contact_person_image')['alt']; ?>">
             </div>
             <div class="contact-person-details">
-                <p><strong>Name:</strong> <?php the_field('contact_person_name'); ?></p>
-                <p><strong>Position:</strong> <?php the_field('contact_person_position'); ?></p>
-                <p><strong>Phone:</strong> <?php the_field('contact_person_phone'); ?></p>
+                <p><?php the_field('contact_person_name'); ?></p>
+                <p><?php the_field('contact_person_position'); ?></p>
+                <p><?php the_field('contact_person_phone'); ?></p>
             </div>
         </div>
 
