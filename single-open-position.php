@@ -51,14 +51,14 @@ Template Name: single-open-position
             </div>
 
             <div class="job-description">
-                    <p><?php the_field('headline-1'); ?></p>
-                    <p><?php the_field('paragraph-1'); ?></p>
-                    <p><?php the_field('headline-2'); ?></p>
-                    <p><?php the_field('paragraph-2'); ?></p>
-                    <p><?php the_field('headline-3'); ?></p>
-                    <p><?php the_field('paragraph-3'); ?></p>
-                    <p><?php the_field('headline-4'); ?></p>
-                    <p><?php the_field('paragraph-4'); ?></p>
+                    <p class="text"><?php the_field('headline-1'); ?></p>
+                    <p class="text"><?php the_field('paragraph-1'); ?></p>
+                    <p class="text"><?php the_field('headline-2'); ?></p>
+                    <p class="text"><?php the_field('paragraph-2'); ?></p>
+                    <p class="text">><?php the_field('headline-3'); ?></p>
+                    <p class="text"><?php the_field('paragraph-3'); ?></p>
+                    <p class="text"><?php the_field('headline-4'); ?></p>
+                    <p class="text"><?php the_field('paragraph-4'); ?></p>
                 <a href="page-about_us.php" class="btn dark">Read more about Clobotics</a>
             </div>
         </article>
