@@ -23,17 +23,17 @@ Template Name: Privacy & cookie policy
 
 
          <!-- Gap section -->
-         <div style="height: 40px;"></div>
+         <div style="height: 300px;"></div>
 
         <!-- Download buttons -->
         <div class="download-buttons">
             <a class="btn" onclick="openPdf('<?php echo get_template_directory_uri(); ?>/media/download/Privacy_Policy.pdf');">
-                <span class="material-icons">get_app</span>
                 Download our Privacy Policy here
+                <span class="material-icons">get_app</span>
             </a>
             <a class="btn" onclick="openPdf('<?php echo get_template_directory_uri(); ?>/media/download/Cookie_Policy.pdf');">
-                <span class="material-icons">get_app</span>
                 Download our Cookie Policy here
+                <span class="material-icons">get_app</span>
             </a>
         </div>
 
