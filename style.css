@@ -685,7 +685,7 @@ h4.text {
 /* <------ Privacy & Cookie Policy style ------> */
 
 
-  /* .download-buttons {
+  .download-buttons {
     position: absolute; 
     bottom: -250px; 
     left: 50%;
@@ -707,9 +707,9 @@ h4.text {
   .download-buttons .btn .material-icons {
     color: white; 
     margin-right: 8px; 
-  } */
+  }
 
-  .download-buttons {
+  /* .download-buttons {
     padding-top: 260px; 
     padding-bottom: 40px; 
     text-align: center; 
@@ -746,7 +746,7 @@ h4.text {
     .download-buttons .btn .material-icons {
         margin-left: 5px; 
     }
-}
+} */
 
   
 
