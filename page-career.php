@@ -126,19 +126,19 @@ Template Name: Career
         <div class="numbers-row">
             <div class="number-container">
                 <h4 class="number"><?php echo esc_html($team); ?></h4>
-                <h4 class="text">Team</h4>
+                <h4 class="text-career">Team</h4>
             </div>
             <div class="number-container">
                 <h4 class="number"><?php echo esc_html($team_members); ?></h4>
-                <h4 class="text">Team Members</h4>
+                <h4 class="text-career">Team Members</h4>
             </div>
             <div class="number-container">
                 <h4 class="number"><?php echo esc_html($countries); ?></h4>
-                <h4 class="text">Countries</h4>
+                <h4 class="text-career">Countries</h4>
             </div>
             <div class="number-container">
                 <h4 class="number"><?php echo esc_html($cities); ?></h4>
-                <h4 class="text">Cities</h4>
+                <h4 class="text-career">Cities</h4>
             </div>
         </div>
 
