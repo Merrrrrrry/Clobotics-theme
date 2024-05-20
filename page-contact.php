@@ -102,7 +102,7 @@ Template Name: Contact
   </div>
 </section>
 
-</div>
+
 
 
 
@@ -127,6 +127,7 @@ Template Name: Contact
         </div>
     </div>
 </section>
+</div>
 
 
 </body>
