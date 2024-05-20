@@ -1581,7 +1581,7 @@ img.footer-logo {
 
 .social-icons span {
   display: block;
-  margin-top: 5px;
+  /* margin-top: 5px; */
   color: rgb(0, 0, 0);
   text-align: center;
 }
@@ -1596,17 +1596,16 @@ img.footer-logo {
   flex-direction: column;  
   align-items: center;  
   text-align: center;
+  margin-right: 20px; 
+}
+
+.social-icons a:last-child {
+    margin-right: 0;
 }
 
 
 .social-icons img{
   align-items: center;  
-  text-align: center;
-}
-
-.social-icons span {
-  margin-top: 5px;
-  color: rgb(0, 0, 0); 
   text-align: center;
 }
 
