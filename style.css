@@ -968,24 +968,30 @@ main {
 
 /* <------- List of wind services -------> */
 
-.service-box {
+.service-list {
   display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  margin: 20px;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.service-item {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  position: relative;
+  background-color: #fff;
 }
 
 .service-background {
   position: relative;
+  height: 200px;
   background-size: cover;
   background-position: center;
-  height: 200px;
 }
 
-.service-background .service-title {
+.overlay {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -993,7 +999,6 @@ main {
   color: #fff;
   padding: 10px;
   text-align: center;
-  margin: 0;
 }
 
 .service-content {
@@ -1003,23 +1008,24 @@ main {
 .service-keypoints {
   display: flex;
   flex-direction: column;
+  margin-bottom: 15px;
 }
 
 .keypoint {
   display: flex;
   align-items: center;
-  margin-bottom: 15px;
-}
-
-.keypoint h3 {
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
 }
 
 .keypoint-icon {
   margin-right: 15px;
 }
 
-.read-more {
+.keypoint p {
+  margin: 0;
+}
+
+.btn {
   display: block;
   text-align: center;
   margin: 20px auto 0;
@@ -1031,29 +1037,17 @@ main {
   transition: background-color 0.3s;
 }
 
-.read-more:hover {
+.btn:hover {
   background-color: #005f8a;
 }
 
-@media (min-width: 768px) {
-  .service-box {
-      flex: 1 1 calc(33.333% - 40px);
-  }
-
-  .service-box:nth-child(3n) {
-      margin-right: 0;
-  }
-
-  .service-box {
-      margin-right: 20px;
+@media (max-width: 768px) {
+  .service-item {
+      flex: 1 1 100%;
+      margin: 10px 0;
   }
 }
 
-@media (min-width: 1024px) {
-  .service-box {
-      flex: 1 1 calc(33.333% - 40px);
-  }
-}
 
 
 
