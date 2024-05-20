@@ -44,7 +44,7 @@ h1.hero-title {
   color: #fff;
 }
 
-h2.title {
+h2 {
     font-family: "Roboto", sans-serif;
     font-size: 49px;
     font-weight: lighter;
@@ -1112,7 +1112,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 .contact-section {
   padding: 50px;
-  /* background-color: white; */
+  background-color: white;
 }
 
 .section-title {
