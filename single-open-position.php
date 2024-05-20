@@ -28,7 +28,7 @@ Template Name: single-open-position
         <div class="job-info">
                 <div class="info-item">
                     <div class="info-label">
-                        <i class="material-icons">calendar_month</i>
+                        <i class="material-icons info-label">calendar_month</i>
                     </div>
                     <div class="info-value">
                         <span>Deadline</span>
@@ -37,7 +37,7 @@ Template Name: single-open-position
                 </div>
                 <div class="info-item">
                     <div class="info-label">
-                        <i class="material-icons">work</i>
+                        <i class="material-icons info-label">work</i>
                     </div>
                     <div class="info-value">
                         <span>Job Type</span>
@@ -46,7 +46,7 @@ Template Name: single-open-position
                 </div>
                 <div class="info-item">
                     <div class="info-label">
-                        <i class="material-icons">location_on</i>
+                        <i class="material-icons info-label">location_on</i>
                     </div>
                     <div class="info-value">
                         <span>Location</span>
