@@ -1306,7 +1306,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 /*  ---------------- FOOTER -------------------- */
 
-/* img.footer-logo {
+img.footer-logo {
   max-width: 200px;
   max-height: 100px;
 }
@@ -1385,7 +1385,14 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 .social-icons img {
   width: 45px;
   margin-left: 15px;
-} */
+}
+
+.footer.social-icons span {
+  margin-top: 5px;
+  color: white; 
+  text-align: center;
+}
+
 
 
 
@@ -1600,7 +1607,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 .social-icons span {
   margin-top: 5px;
-  color: white; 
+  color: rgb(0, 0, 0); 
   text-align: center;
 }
 
