@@ -1384,10 +1384,9 @@ img.footer-logo {
 
 .social-icons img {
   width: 45px;
-  margin-left: 15px;
 }
 
-.footer.social-icons span {
+.footer .social-icons span {
   margin-top: 5px;
   color: white; 
   text-align: center;
