@@ -498,7 +498,6 @@ h4.text-career {
 .info-item .info-label {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
 }
 
 .info-item .info-label i {
