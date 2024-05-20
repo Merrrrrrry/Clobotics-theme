@@ -336,6 +336,43 @@ height:auto;
 } 
 
 
+/* Filters */
+.filters {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.filters select, .filter-button {
+  cursor: pointer;
+  border: 2px solid transparent; 
+  border-radius: 20px; 
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+}
+
+.filter-button {
+  background-color: #00B3EC;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.material-icons.search-icon {
+  font-size: 30px;
+  color: #ffffff; 
+} 
+
+
+
+
 
 
 
@@ -556,10 +593,6 @@ h4.text-career {
 }
 
 
-
-
-
-/* Filters */
 .filters {
   margin-top: 10px;
   display: flex;
@@ -567,7 +600,7 @@ h4.text-career {
   gap: 10px;
 }
 
-.filters select, .filter-button, .filter-btn {
+.filters select, .filter-button, .fitler-btn {
   cursor: pointer;
   border: 2px solid transparent; 
   border-radius: 20px; 
