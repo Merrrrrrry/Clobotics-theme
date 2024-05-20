@@ -541,6 +541,9 @@ h4.text-career {
   text-align: left; 
 }
 
+.bold-span {
+  font-weight: bold;
+}
 
 /* <------ Article page style ------> */
 
