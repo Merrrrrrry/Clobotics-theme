@@ -1377,8 +1377,6 @@ img.footer-logo {
 .copyright {
   font-size: 12px;
   margin-top: auto;
-  display: flex;
-  align-items: flex-end;
 }
 
 .copyright a {
