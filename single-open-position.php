@@ -83,12 +83,13 @@ Template Name: single-open-position
                     <i class="material-icons phone-career">call</i>
                     <p><?php the_field('contact_person_phone'); ?></p>
                 </div>
-                    <div class="contact-person-socials">
+            </div>
+            <div class="contact-person-socials">
                         <img class="contact-person-social-icon" src="<?php echo get_template_directory_uri(); ?>/media/mail-logo.png" alt="mail-logo">
                         <img class="contact-person-socials-icon" src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png" alt="mail-logo">
                         <img class="contact-person-socials-icon" src="<?php echo get_template_directory_uri(); ?>/media/vimeo-logo.png" alt="mail-logo">
-                    </div>
             </div>
+        </div>
 
         <!-- Apply for job contact form -->
         <h2 class="title">Apply for the position</h2>
