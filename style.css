@@ -154,7 +154,7 @@ p.subtitle {
 
 /* Hero section container */
 .hero-section {
-  /* position: relative; */
+  position: relative;
   overflow: hidden;
   display: flex;
   align-items: center;
