@@ -7,21 +7,20 @@ Template Name: single-open-position
 <?php get_header(); ?>
 
 <main>
-<!-- Hero section -->
-<div class="hero-section">
-    <div class="hero-section-background white_svg">
-        <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_single_career_page.jpg" alt="Hero image">
+    <!-- Hero section -->
+    <div class="hero-section">
+        <div class="hero-section-background white_svg">
+            <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_single_career_page.jpg" alt="Hero image">
+        </div>
+        <div class="hero-section-content">
+            <h1 class="title hero-title"><?php the_field('job_title'); ?></h1>
+        </div>
     </div>
-
-    <div class="hero-section-content">
-        <h1 class="title hero-title"><?php the_field('job_title'); ?></h1>
-    </div>
-</div>
 
     <a id="apply-button" href="#" class="btn">Apply</a>
 
-     <!-- Gap -->
-     <div style="height: 50px;"></div>
+    <!-- Gap -->
+    <div style="height: 50px;"></div>
 
     <!-- Information about the job position -->
     <?php while (have_posts()) : the_post(); ?>
@@ -51,58 +50,35 @@ Template Name: single-open-position
             </div>
 
             <div class="job-description">
-                    <p class="text"><?php the_field('headline-1'); ?></p>
-                    <p class="text"><?php the_field('paragraph-1'); ?></p>
-                    <p class="text"><?php the_field('headline-2'); ?></p>
-                    <p class="text"><?php the_field('paragraph-2'); ?></p>
-                    <p class="text"><?php the_field('headline-3'); ?></p>
-                    <p class="text"><?php the_field('paragraph-3'); ?></p>
-                    <p class="text"><?php the_field('headline-4'); ?></p>
-                    <p class="text"><?php the_field('paragraph-4'); ?></p>
-                    <!-- Find more about Clobotics button -->
-                <a href="page-about_us.php" class="btn dark">Read more about Clobotics</a>
+                <p class="text"><?php the_field('headline-1'); ?></p>
+                <p class="text"><?php the_field('paragraph-1'); ?></p>
+                <p class="text"><?php the_field('headline-2'); ?></p>
+                <p class="text"><?php the_field('paragraph-2'); ?></p>
+                <p class="text"><?php the_field('headline-3'); ?></p>
+                <p class="text"><?php the_field('paragraph-3'); ?></p>
+                <p class="text"><?php the_field('headline-4'); ?></p>
+                <p class="text"><?php the_field('paragraph-4'); ?></p>
+                    <div class="read-more-career-button">
+                        <a href="page-about_us.php" class="btn dark">Read more about Clobotics</a>
+                </div>
             </div>
         </article>
 
-
-
-         <!-- Career contact person -->
-
-            <h2 class="title">Contact person</h2>
-        
-            <div class="contact-person-career">
-                <?php
-           
-                $args = array(
-                    'post_type' => 'contact-person',
-                    'posts_per_page' => 1
-                );
-
-                $contact_person_query = new WP_Query($args);
-
-                if ($contact_person_query->have_posts()) :
-                    while ($contact_person_query->have_posts()) : $contact_person_query->the_post();
-                ?>
-                    <div class="contact-person-image">
-                        <img src="<?php echo get_field('contact_person_image')['url']; ?>" alt="<?php echo get_field('contact_person_image')['alt']; ?>">
-                    </div>
-                    <div class="contact-person-details">
-                        <p><strong>Name:</strong> <?php the_field('contact_person_name'); ?></p>
-                        <p><strong>Position:</strong> <?php the_field('contact_person_position'); ?></p>
-                        <p><strong>Phone:</strong> <?php the_field('contact_person_phone'); ?></p>
-                    </div>
-                <?php
-                    endwhile;
-                    wp_reset_postdata();
-                endif;
-                ?>
+        <!-- Career contact person -->
+        <h2 class="title">Contact person</h2>
+        <div class="contact-person-career">
+            <div class="contact-person-image">
+                <img src="<?php echo get_field('contact_person_image')['url']; ?>" alt="<?php echo get_field('contact_person_image')['alt']; ?>">
             </div>
-
+            <div class="contact-person-details">
+                <p><?php the_field('contact_person_name'); ?></p>
+                <p><?php the_field('contact_person_position'); ?></p>
+                <p><?php the_field('contact_person_phone'); ?></p>
+            </div>
+        </div>
 
         <!-- Apply for job contact form -->
-
         <h2 class="title">Apply for the position</h2>
-
         <section id="contact-form-section">
             <div class="contact-form-career">
                 <?php echo do_shortcode('[contact-form-7 id="c48fb62" title="Apply for the position"]'); ?>
@@ -110,6 +86,5 @@ Template Name: single-open-position
         </section>
     <?php endwhile; ?>
 </main>
-
 
 <?php get_footer(); ?>

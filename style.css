@@ -477,6 +477,10 @@ h4.text-career {
 
 /* <--- Single open position style ---> */
 
+.read-more-career-button {
+  margin-top: 35px; /* Just to make a gap in between the paragraph and button */
+}
+
 
 #apply-button {
   position: absolute;
