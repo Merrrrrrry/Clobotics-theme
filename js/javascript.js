@@ -94,28 +94,41 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// Show more items - function - "meet our team" on About us page
 
-document.addEventListener('DOMContentLoaded', function () {
-    const showMoreBtn = document.getElementById('show-more-btn');
-    let currentIndex = 8;
+// Show less btn - "meet our team" on About us page
 
-    showMoreBtn.addEventListener('click', function () {
-        const employeeBoxes = document.querySelectorAll('.meet-our-team-box-content');
-        const totalBoxes = employeeBoxes.length;
-        let nextIndex = currentIndex + 8;
+document.addEventListener('DOMContentLoaded', function() {
+    let showMoreBtn = document.getElementById('show-more-btn');
+    let showLessBtn = document.getElementById('show-less-btn');
+    let employeeBlocks = document.querySelectorAll('.meet-our-team-box-content');
+    let itemsToShow = 8;
 
-        for (let i = currentIndex; i < nextIndex && i < totalBoxes; i++) {
-            employeeBoxes[i].style.display = 'block';
+    function updateButtonVisibility() {
+        let visibleItems = document.querySelectorAll('.meet-our-team-box-content:not([style*="display: none"])').length;
+        showLessBtn.style.display = visibleItems > itemsToShow ? 'inline-block' : 'none';
+    }
+
+    showMoreBtn.addEventListener('click', function() {
+        let hiddenItems = document.querySelectorAll('.meet-our-team-box-content[style*="display: none"]');
+        for (let i = 0; i < Math.min(itemsToShow, hiddenItems.length); i++) {
+            hiddenItems[i].style.display = 'block';
         }
-
-        currentIndex = nextIndex;
-
-        // Hide the button if all items are displayed
-        if (currentIndex >= totalBoxes) {
+        if (document.querySelectorAll('.meet-our-team-box-content[style*="display: none"]').length === 0) {
             showMoreBtn.style.display = 'none';
         }
+        updateButtonVisibility();
     });
+
+    showLessBtn.addEventListener('click', function() {
+        let visibleItems = document.querySelectorAll('.meet-our-team-box-content:not([style*="display: none"])');
+        for (let i = visibleItems.length - 1; i >= Math.max(visibleItems.length - itemsToShow, itemsToShow); i--) {
+            visibleItems[i].style.display = 'none';
+        }
+        showMoreBtn.style.display = 'inline-block';
+        updateButtonVisibility();
+    });
+
+    updateButtonVisibility();
 });
 
 
