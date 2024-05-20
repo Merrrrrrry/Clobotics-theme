@@ -516,7 +516,7 @@ h4.text-career {
   margin-bottom: 3px; 
 }
 
-i.material-icons {
+i.material-icons.info-label {
   font-size: 40px;
   color: #05A3E4;
 }
@@ -546,6 +546,10 @@ i.material-icons {
   object-fit: cover; 
 }
 
+.phone-career i.material-icons {
+  color:#000000;
+  font-size: 20px;
+}
 
 
 

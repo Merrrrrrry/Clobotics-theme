@@ -79,7 +79,10 @@ Template Name: single-open-position
             <div class="contact-person-details">
                 <p><?php the_field('contact_person_name'); ?></p>
                 <p><?php the_field('contact_person_position'); ?></p>
-                <p><i class="material-icon">call</i><?php the_field('contact_person_phone'); ?></p>
+                <div class="phone-career">
+                    <i class="material-icon">call</i>
+                    <p><?php the_field('contact_person_phone'); ?></p>
+                </div>
             </div>
         </div>
 
