@@ -55,14 +55,13 @@ Template Name: Career
         </div>
 
             <!-- Gap -->
-            <div style="height: 10px;"></div>
+            <div style="height: 30px;"></div>
 
              <!-- Open Positions section/Job list -->
             <div class="open-positions">
                 <h2 class="title">Open job positions</h2>
 
-            <!-- Gap -->
-            <div style="height: 10px;"></div>
+            
 
             <ul id="position-list" class="position-list">
                 <?php
