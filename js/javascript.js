@@ -94,6 +94,29 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// Show more items - function - "meet our team" on About us page
+
+document.addEventListener('DOMContentLoaded', function () {
+    const showMoreBtn = document.getElementById('show-more-btn');
+    let currentIndex = 8;
+
+    showMoreBtn.addEventListener('click', function () {
+        const employeeBoxes = document.querySelectorAll('.meet-our-team-box-content');
+        const totalBoxes = employeeBoxes.length;
+        let nextIndex = currentIndex + 8;
+
+        for (let i = currentIndex; i < nextIndex && i < totalBoxes; i++) {
+            employeeBoxes[i].style.display = 'block';
+        }
+
+        currentIndex = nextIndex;
+
+        // Hide the button if all items are displayed
+        if (currentIndex >= totalBoxes) {
+            showMoreBtn.style.display = 'none';
+        }
+    });
+});
 
 // Show less btn - "meet our team" on About us page
 
