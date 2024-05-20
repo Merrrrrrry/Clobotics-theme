@@ -145,6 +145,7 @@ p.subtitle {
 
 /* To center objects */
 
+
 .container_to_center {
   display: flex;
   flex-direction: row;
@@ -158,6 +159,12 @@ p.subtitle {
 .item_to_center {
   display: inline-block;
 } */
+
+/* Section margin */
+
+section {
+ margin: 4em 0;
+}
 
 
 /* <--------- Hero Section ---------> */
@@ -970,7 +977,9 @@ main {
   display: flex;
 }
 .space-around {
-justify-content: space-around;}
+justify-content: space-around;
+flex-direction: column;
+}
 
 .half-size {
  width: 50%;

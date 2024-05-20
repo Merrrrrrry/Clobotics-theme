@@ -3,7 +3,7 @@
         <img class="footer-logo" src="<?php echo get_template_directory_uri(); ?>/media/clobotics-logo-white.png" alt="Clobotics Logo">
     </div>
     <div class="footer-column">
-        <h2 class="footer-title">Company</h2>
+        <p class="footer-title">Company</p>
         <ul class="footer-menu">
             <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>">About us</a></li>
             <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('career'))); ?>">Career</a></li>
@@ -12,14 +12,14 @@
         </ul>
     </div>
     <div class="footer-column">
-        <h2 class="footer-title">Services</h2>
+        <p class="footer-title">Services</p>
         <ul class="footer-menu">
             <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('wind-services'))); ?>">Wind</a></li>
             <li><a href="<?php echo esc_url(get_permalink(get_page_by_path('retail-services'))); ?>">Retail</a></li>
         </ul>
     </div>
     <div class="footer-column">
-        <h2 class="footer-title">Get in touch</h2>
+        <p class="footer-title">Get in touch</p>
         <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>" class="footer-contact-link">Contact us<i class="material-icons">arrow_right_alt</i></a>
     </div>
     <div class="copyright_sm">
