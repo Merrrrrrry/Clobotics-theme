@@ -969,46 +969,39 @@ main {
 /* <------- List of wind services -------> */
 
 .service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .service-item {
-  flex: 1 1 calc(33.333% - 20px);
-  margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  background-color: #fff;
-}
-
-.service-background {
   position: relative;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
+  flex: 0 0 calc(33.333% - 20px);
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .overlay {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 10px;
-  text-align: center;
+  box-sizing: border-box;
 }
 
 .service-content {
-  padding: 20px;
+  padding: 15px;
+  background-color: #fff;
 }
 
 .service-keypoints {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15px;
+  padding-right: 15px;
 }
 
 .keypoint {
@@ -1017,36 +1010,26 @@ main {
   margin-bottom: 10px;
 }
 
-.keypoint-icon {
-  margin-right: 15px;
-}
-
 .keypoint p {
   margin: 0;
 }
 
+.keypoint-icon {
+  margin-right: 10px;
+}
+
 .btn {
   display: block;
-  text-align: center;
   margin: 20px auto 0;
   padding: 10px 20px;
   background-color: #0073aa;
   color: #fff;
   text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+  text-align: center;
+  border-radius: 5px;
 }
 
-.btn:hover {
-  background-color: #005f8a;
-}
 
-@media (max-width: 768px) {
-  .service-item {
-      flex: 1 1 100%;
-      margin: 10px 0;
-  }
-}
 
 
 

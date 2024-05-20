@@ -174,11 +174,9 @@ Template Name: Wind services
                 echo '</ul><ul id="service-list" class="service-list">'; // Close the row and start a new one every 3 items
             }
             ?>
-            <li class="service-item">
-                <div class="service-background" style="background-image: url('<?php the_field('service_main_image'); ?>');">
-                    <div class="overlay">
-                        <h3 class="service-title"><?php the_field('service_title'); ?></h3>
-                    </div>
+            <li class="service-item" style="background-image: url('<?php the_field('service_main_image'); ?>');">
+                <div class="overlay">
+                    <h3 class="service-title"><?php the_field('service_title'); ?></h3>
                 </div>
                 <div class="service-content">
                     <div class="service-keypoints">
