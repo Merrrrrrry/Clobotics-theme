@@ -19,42 +19,41 @@ Template Name: Career
             </div>
         </div>
 
-          <!-- Search bar and filters -->
-<div class="search-bar-container">
-    <form id="search-form" method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form">
-        <div class="search-bar">
-            <input type="text" name="search_query" id="search-input" placeholder="Search...">
-            <button type="submit" class="search-button">
-                <span class="material-icons search-icon">search</span>
-            </button>
+          
+
+        <!-- Search bar and filters -->
+        <div class="search-bar-container">
+            <form id="search-form" method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form">
+                <div class="search-bar">
+                    <input type="text" name="search_query" id="search-input" placeholder="Search...">
+                    <button type="submit" class="search-button">
+                        <span class="material-icons search-icon">search</span>
+                    </button>
+                </div>
+                <div class="filters">
+                    <select name="sector" id="sector">
+                        <option value="">All Sectors</option>
+                        <option value="wind">Wind</option>
+                        <option value="retail">Retail</option>
+                    </select>
+                    <select name="region" id="region">
+                        <option value="">All Regions</option>
+                        <option value="europe">Europe</option>
+                        <option value="americas">Americas</option>
+                        <option value="asia">Asia</option>
+                    </select>
+                    <select name="job_type" id="job_type">
+                        <option value="">All Job Types</option>
+                        <option value="full_time">Full time</option>
+                        <option value="part_time">Part time</option>
+                    </select>
+                    <button type="submit" class="filter-button">
+                        <span class="material-icons search-icon">search</span>
+                    </button>
+                </div>
+            </form>
         </div>
-        <div class="filters">
-            <select name="sector" id="sector">
-                <option value="">All Sectors</option>
-                <option value="Wind">Wind</option>
-                <option value="Retail">Retail</option>
-            </select>
-            <select name="region" id="region">
-                <option value="">All Regions</option>
-                <option value="Europe">Europe</option>
-                <option value="Americas">Americas</option>
-                <option value="Asia">Asia</option>
-            </select>
-            <select name="job_type" id="job_type">
-                <option value="">All Job Types</option>
-                <option value="Full time">Full time</option>
-                <option value="Part time">Part time</option>
-            </select>
-            <button type="submit" class="filter-button">
-                <span class="material-icons search-icon">search</span>
-            </button>
-        </div>
-    </form>
-</div>
 
-
-
-    
             <!-- Gap -->
             <div style="height: 30px;"></div>
 

@@ -12,19 +12,6 @@ function enqueue_google_fonts() {
 }
 add_action('wp_enqueue_scripts', 'enqueue_google_fonts');
 
-
-// Enqueue custom JavaScript
-function clobotics_enqueue_scripts() {
-    wp_enqueue_script('clobotics-custom', get_template_directory_uri() . '/js/custom.js', array('jquery'), null, true);
-
-    // Localize script to use AJAX URL in JavaScript
-    wp_localize_script('clobotics-custom', 'clobotics_ajax', array(
-        'ajax_url' => admin_url('admin-ajax.php')
-    ));
-}
-add_action('wp_enqueue_scripts', 'clobotics_enqueue_scripts');
-
-
 // Disable Gutenberg
 function disable_gutenberg() {
     remove_post_type_support("page", "editor");
@@ -78,10 +65,16 @@ function include_custom_fields_in_search($query) {
 add_action('pre_get_posts', 'include_custom_fields_in_search');
 
 
+// Enqueue custom JavaScript
+function clobotics_enqueue_scripts() {
+    wp_enqueue_script('clobotics-custom', get_template_directory_uri() . '/js/custom.js', array('jquery'), null, true);
 
-
-
-
+    // Localize script to use AJAX URL in JavaScript
+    wp_localize_script('clobotics-custom', 'clobotics_ajax', array(
+        'ajax_url' => admin_url('admin-ajax.php')
+    ));
+}
+add_action('wp_enqueue_scripts', 'clobotics_enqueue_scripts');
 
 // Handle AJAX search and filters for career positions
 function clobotics_ajax_search() {
@@ -92,7 +85,6 @@ function clobotics_ajax_search() {
 
     // Construct meta query arguments
     $meta_query = array('relation' => 'AND');
-
     if ($search_query) {
         $meta_query[] = array(
             'relation' => 'OR',
@@ -118,27 +110,24 @@ function clobotics_ajax_search() {
             )
         );
     }
-
-    if ($sector && $sector !== 'All Sectors') {
+    if ($sector) {
         $meta_query[] = array(
             'key' => 'sector',
             'value' => $sector,
             'compare' => 'LIKE'
         );
     }
-    
-    if ($region && $region !== 'All Regions') {
+    if ($region) {
         $meta_query[] = array(
             'key' => 'region',
             'value' => $region,
             'compare' => 'LIKE'
         );
     }
-
-    if ($job_type && $job_type !== 'All Job Types') {
+    if ($job_type) {
         $meta_query[] = array(
             'key' => 'job_type',
-            'value' => $job_type,
+            'value' => str_replace(array(' ', '-'), '_', $job_type),
             'compare' => 'LIKE'
         );
     }
@@ -176,8 +165,6 @@ function clobotics_ajax_search() {
 }
 add_action('wp_ajax_clobotics_search', 'clobotics_ajax_search');
 add_action('wp_ajax_nopriv_clobotics_search', 'clobotics_ajax_search');
-
-
 
 // Handle AJAX search for wind services
 function clobotics_ajax_search_wind_services() {

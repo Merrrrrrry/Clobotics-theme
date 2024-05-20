@@ -1,38 +1,30 @@
 // This file is so the page would stop reloading after pressing search button in the career page
 
 jQuery(document).ready(function($) {
-    function fetch_career_positions() {
-        var search_query = $('#search-input').val();
+    $('#search-form').on('submit', function(event) {
+        event.preventDefault();
+
+        var searchQuery = $('#search-input').val();
         var sector = $('#sector').val();
         var region = $('#region').val();
-        var job_type = $('#job_type').val();
+        var jobType = $('#job_type').val();
 
         $.ajax({
             url: clobotics_ajax.ajax_url,
-            type: 'POST',
+            type: 'post',
             data: {
                 action: 'clobotics_search',
-                search_query: search_query,
+                search_query: searchQuery,
                 sector: sector,
                 region: region,
-                job_type: job_type
+                job_type: jobType
             },
             success: function(response) {
-                $('#career-results').html(response);
+                $('#position-list').html(response);
             }
         });
-    }
-
-    $('.filter-button').click(function(event) {
-        event.preventDefault();
-        fetch_career_positions();
     });
-
-    // Initial fetch on page load
-    fetch_career_positions();
 });
-
-
 
 // AJAX request for the wind services search bar
 
