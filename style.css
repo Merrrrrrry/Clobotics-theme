@@ -1386,8 +1386,8 @@ img.footer-logo {
 
 .footer .social-icons {
   width: 100%;
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex; */
+  /* justify-content: flex-end; */
   margin-left: 20px;
 }
 
