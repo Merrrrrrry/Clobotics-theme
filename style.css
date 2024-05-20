@@ -528,9 +528,14 @@ i.material-icons {
 
 /* <------ Contact Person Career style ------> */
 
+.contact-person-career {
+  display: flex;
+  justify-content: center;
+}
+
 .contact-person-image img {
-  width: 100px;
-  height: 100px;
+  width: 400px;
+  height: 400px;
 }
 
 
