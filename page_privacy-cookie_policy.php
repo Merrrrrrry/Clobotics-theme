@@ -36,4 +36,4 @@ Template Name: Privacy & cookie policy
     </script>
 
 
-<?php get_footer(); ?>
+
