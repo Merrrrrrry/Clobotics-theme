@@ -528,19 +528,24 @@ i.material-icons {
 
 /* <------ Contact Person Career style ------> */
 
+
 .contact-person-career {
   display: flex;
-  justify-content: center;
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .contact-person-details {
-  display: flex;
+  text-align: center; 
+  margin-top: 20px; 
 }
 
 .contact-person-image img {
   width: 400px;
   height: 400px;
+  object-fit: cover; 
 }
+
 
 
 
