@@ -548,13 +548,14 @@ h4.text-career {
 
 .phone-career {
   display: flex;
-  align-items: center; 
+  align-items: baseline; 
+  
 }
 
 .phone-career i {
   font-size: 24px;
   color:#000000;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 
