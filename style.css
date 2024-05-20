@@ -493,9 +493,6 @@ h4.text-career {
 
 .info-item {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; 
-  text-align: left;
 }
 
 .info-item .info-label {
@@ -515,7 +512,7 @@ h4.text-career {
 }
 
 .info-item .info-value span {
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 3px; 
 }
 
@@ -539,6 +536,7 @@ h4.text-career {
   margin: 40px 60px; 
   text-align: left; 
 }
+
 
 
 /* <------ Article page style ------> */
