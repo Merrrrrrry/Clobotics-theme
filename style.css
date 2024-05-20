@@ -123,7 +123,7 @@ p.subtitle {
 
   .optional:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);    
-    color: #ffffff;  }
+    background-color: #86D0F4;  }
 
   
 .light {  
@@ -140,8 +140,21 @@ p.subtitle {
   }
 
 
+/* To center objects */
 
- /* .article_secondary_main one_company_two_directions */
+.container_to_center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* 
+.container_to_center_text {
+  text-align: center;
+}
+
+.item_to_center {
+  display: inline-block;
+} */
 
 
 /* <--------- Hero Section ---------> */

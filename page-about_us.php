@@ -125,11 +125,13 @@ Template Name: About us
         
         <?php endwhile; wp_reset_query(); ?>
     </div>
-
- <!-- Show More Button -->
+    
+<!-- Show More Button -->
+<div class="container_to_center"> 
     <a href="javascript:void(0);" class="btn optional btn-shadow" id="show-more-btn" class="btn optional">Show more</a>
  <!-- Show Less Button -->
     <a href="javascript:void(0);" class="btn optional btn-shadow" id="show-less-btn" style="display: none;">Show less</a>
+</div>
 </section>
 
 
