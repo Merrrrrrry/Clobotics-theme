@@ -70,9 +70,9 @@ Template Name: single-open-position
                 <img src="<?php echo get_field('contact_person_image')['url']; ?>" alt="<?php echo get_field('contact_person_image')['alt']; ?>">
             </div>
             <div class="contact-person-details">
-                <p>Name: <?php the_field('contact_person_name'); ?></p>
-                <p>Position:<?php the_field('contact_person_position'); ?></p>
-                <p>Phone:<?php the_field('contact_person_phone'); ?></p>
+                <p><?php the_field('contact_person_name'); ?></p>
+                <p><?php the_field('contact_person_position'); ?></p>
+                <p><?php the_field('contact_person_phone'); ?></p>
             </div>
         </div>
 
