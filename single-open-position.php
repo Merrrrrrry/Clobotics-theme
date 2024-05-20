@@ -48,13 +48,13 @@ Template Name: single-open-position
             </div>
 
             <div class="job-description">
-                <p><strong><?php the_field('headline-1'); ?></strong></p>
+                <p><?php the_field('headline-1'); ?></p>
                 <p><?php the_field('paragraph-1'); ?></p>
-                <p><strong><?php the_field('headline-2'); ?></strong></p>
+                <p><?php the_field('headline-2'); ?></p>
                 <p><?php the_field('paragraph-2'); ?></p>
-                <p><strong><?php the_field('headline-3'); ?></strong></p>
+                <p><?php the_field('headline-3'); ?></p>
                 <p><?php the_field('paragraph-3'); ?></p>
-                <p><strong><?php the_field('headline-4'); ?></strong></p>
+                <p><?php the_field('headline-4'); ?></p>
                 <p><?php the_field('paragraph-4'); ?></p>
             </div>
 
