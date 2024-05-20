@@ -493,7 +493,6 @@ h4.text-career {
   display: flex;
   justify-content: space-between;
   margin: 20px 60px; 
-  text-align: left; 
 }
 
 .info-item {
@@ -522,7 +521,7 @@ h4.text-career {
 
 .info-item .info-value span {
   font-weight: normal;
-  margin-bottom: 3px; /* Adjust the spacing between the label and value */
+  margin-bottom: 3px; 
 }
 
 .material-icons {
