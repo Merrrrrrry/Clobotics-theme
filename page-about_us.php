@@ -85,10 +85,10 @@ Template Name: About us
     <!-- Filters for Regions -->
     <div id="region-filters" class="filters">
         <select id="region-select" class="filter-select">
-            <option class="filter-sellect filter-button" value="all">Region</option>
-            <option class="filter-sellect filter-button" value="Asia">Asia</option>
-            <option class="filter-sellect filter-button" value="Europe">Europe</option>
-            <option class="filter-sellect filter-button" value="America">America</option>
+            <option class="filter-buttond" value="all">Region</option>
+            <option class="filter-buttond" value="Asia">Asia</option>
+            <option class="filter-button" value="Europe">Europe</option>
+            <option class="filter-button" value="America">America</option>
         </select>
     </div> 
 
