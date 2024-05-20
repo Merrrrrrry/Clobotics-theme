@@ -44,8 +44,8 @@ Template Name: Career
                     </select>
                     <select name="job_type" id="job_type">
                         <option value="">All Job Types</option>
-                        <option value="full_time">Full time</option>
-                        <option value="part_time">Part time</option>
+                        <option value="full time">Full time</option>
+                        <option value="part time">Part time</option>
                     </select>
                     <button type="submit" class="filter-button">
                         <span class="material-icons search-icon">search</span>
