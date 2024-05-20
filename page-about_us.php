@@ -236,24 +236,6 @@ Template Name: About us
 
 <!-- Subscribes for more  Section -->
 
-<div class="subscribes_for_more">
-    <p class="title medium">Subscribes for more!</p>
-
-    <div class="social_media">
-        <a class="social_media icon_vimeo" href="<?php echo get_permalink('  ............  ') ?>" >Work for us</a>
-        <p class="social_media_ text">Wind</p>
-        <a class="social_media icon_linkedin_1" href="<?php echo get_permalink('  ............  ') ?>" >Work for us</a>
-        <p class="social_media_ text">Retail</p>
-        <a class="social_media icon_linkedin_2" href="<?php echo get_permalink('  ............  ') ?>" >Work for us</a>
-        <p class="social_media_ text">Vimeo</p>
-    </div>
-
-</div>
-
-
-
-<!-- Subscribes for more  Section -->
-
 <section class="subscribe-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/media/sm-bg-rounded.png">
     <div class="content-wrapper">
         <h2>Subscribe for more!</h2>
