@@ -1386,8 +1386,8 @@ img.footer-logo {
 
 .footer .social-icons {
   width: 100%;
-  /* display: flex; */
-  /* justify-content: flex-end; */
+  display: flex;
+  justify-content: flex-end;
   margin-left: 20px;
 }
 
@@ -1401,7 +1401,7 @@ img.footer-logo {
 
 .copyright-sm {
   display: flex; 
-  align-items: flex-end;
+  align-items:bottom;
 }
 
 
