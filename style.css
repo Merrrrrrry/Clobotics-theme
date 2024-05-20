@@ -1328,17 +1328,14 @@ img.footer-logo {
   width: calc(67% - 20px);
 }
 
-.footer-column {
-  width: calc(67% - 20px);
-}
-
 .footer-column:first-child {
   width: 33%; 
 }
 
-.footer-column:last-child {
-  width: 100%;
+.footer-column:nth-child(n+2) {
+  width: calc(67% / 3 - 20px);
 }
+
 
 .footer-column .material-icons{
   color:#ffffff;
@@ -1379,7 +1376,6 @@ img.footer-logo {
 
 .copyright {
   font-size: 12px;
-  margin-top: 20px;
   margin-top: auto;
   display: flex;
   align-items: flex-end;
