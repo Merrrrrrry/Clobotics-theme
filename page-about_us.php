@@ -68,42 +68,64 @@ Template Name: About us
 </div>
 
 
-<!-- Meet our team  Section -->
 
+<!-- Meet our team Section (new, with filters)-->
 <section id="meet_our_team" style="background-size: cover; height: auto;">
     <h2 class="title">Meet our team</h2>
-
-<!-- search function  (meet our team) -->
-
-
-<!-- loop function  (meet our team) -->
-<!--  <div class="loops_main_content_and_image" > -->
-
-    <div class="meet-our-team_main_content">
-        <?php $loop = new WP_Query( array( 'post_type' => 'Employee', 'posts_per_page' => -1 ) ); ?>
-        <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
-        <div class="meet-our-team-box-content box-shadow-inset">
-            <img src="<?php $image = get_field('portrait_image'); echo esc_url($image["url"]); ?>" alt="Portrait of <?php echo get_field("name_and_surname"); ?>">
-            <p class="title thin" style="margin-right: 30px;" ><?php echo get_field("name_and_surname"); ?></p>
-            <p class="subtitle" style="fond-size: 24px; margin-right: 30px;" ><?php echo get_field("job_position"); ?></p>
-
-            <div class="employee_sm_container">
-                <!-- <li onclick=show_our(this) class="selected">Our offices</li> -->
-                <a id="link_for_employees_first_social_media" href="<?php echo get_field("link_for_employees_first_social_media") ?>" ><img class="employee_sm_single_img" src="<?php $image = get_field('picture_of_employees_first_social_media'); echo esc_url($image["url"]); ?>" alt="icon of first social media"></a>
-                <?php 
-                    $image = get_field('picture_of_employees_second_social_media');
-                    // echo "<pre>"; print_r($image); echo "</pre>";
-                    if(isset($image["url"])) {
-                        echo '<a id="link_for_employees_second_social_media" href="'.get_field("link_for_employees_second_social_media").'" ><img class="employee_sm_single_img test" src="'.esc_url($image["url"]).'" alt="icon of second social media"></a>';                                               
-                    }
-                ?>
-            </div>
-        </div>
-        <?php endwhile; wp_reset_query(); ?>
+    
+    <!-- Filters for Positions -->
+    <div id="position-filters" class="filters">
+        <button class="filter-btn" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="CEO">CEO</button>
+        <button class="filter-btn" data-filter="Engineer">Engineer</button>
+        <button class="filter-btn" data-filter="Sales Manager">Sales Manager</button>
+        <button class="filter-btn" data-filter="Project Coordinator">Project Coordinator</button>
     </div>
     
- </section>
+    <!-- Filters for Regions
+    <div id="region-filters" class="filters">
+        <select id="region-select" class="filter-select">
+            <option value="all">Region</option>
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="America">America</option>
+        </select>
+    </div> -->
+
+    <!-- loop function  (meet our team) -->
+    <div class="meet-our-team_main_content">
+        <?php 
+        $loop = new WP_Query(array('post_type' => 'Employee', 'posts_per_page' => -1)); 
+        while ($loop->have_posts()) : $loop->the_post(); 
+            $name = get_field("name_and_surname");
+            $position = get_field("job_position");
+            // $region = get_field("region"); // Assume 'region' is a custom field you will create
+            $image = get_field('portrait_image');
+            $first_social_media_link = get_field("link_for_employees_first_social_media");
+            $first_social_media_icon = get_field('picture_of_employees_first_social_media');
+            $second_social_media_link = get_field("link_for_employees_second_social_media");
+            $second_social_media_icon = get_field('picture_of_employees_second_social_media');
+        ?>
+        
+        <div class="meet-our-team-box-content box-shadow-inset" data-position="<?php echo esc_attr($position); ?>" data-region="<?php echo esc_attr($region); ?>">
+            <img src="<?php echo esc_url($image["url"]); ?>" alt="Portrait of <?php echo esc_attr($name); ?>">
+            <p class="title thin" style="margin-right: 30px;"><?php echo esc_html($name); ?></p>
+            <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($position); ?></p>
+
+            <div class="employee_sm_container">
+                <a id="link_for_employees_first_social_media" href="<?php echo esc_url($first_social_media_link); ?>"><img class="employee_sm_single_img" src="<?php echo esc_url($first_social_media_icon["url"]); ?>" alt="icon of first social media"></a>
+                <?php if ($second_social_media_icon) { ?>
+                    <a id="link_for_employees_second_social_media" href="<?php echo esc_url($second_social_media_link); ?>"><img class="employee_sm_single_img" src="<?php echo esc_url($second_social_media_icon["url"]); ?>" alt="icon of second social media"></a>
+                <?php } ?>
+            </div>
+        </div>
+        
+        <?php endwhile; wp_reset_query(); ?>
+    </div>
+</section>
+
+
+
 
 
 <!-- button "Show more" with hover efect  (meet our team) -->
