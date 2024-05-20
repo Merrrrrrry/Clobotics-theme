@@ -75,20 +75,20 @@ Template Name: About us
     
     <!-- Filters for Positions -->
     <div id="position-filters" class="filters">
-        <button class="filter-btn" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="CEO">CEO</button>
-        <button class="filter-btn" data-filter="Engineer">Engineer</button>
-        <button class="filter-btn" data-filter="Sales Manager">Sales Manager</button>
-        <button class="filter-btn" data-filter="Project Coordinator">Project Coordinator</button>
+        <button class="filter-btn filter-button" data-filter="all">All</button>
+        <button class="filter-btn filter-button" data-filter="CEO">CEO</button>
+        <button class="filter-btn filter-button" data-filter="Engineer">Engineer</button>
+        <button class="filter-btn filter-button" data-filter="Sales Manager">Sales Manager</button>
+        <button class="filter-btn filter-button" data-filter="Project Coordinator">Project Coordinator</button>
     </div>
     
     <!-- Filters for Regions -->
     <div id="region-filters" class="filters">
         <select id="region-select" class="filter-select">
-            <option value="all">Region</option>
-            <option value="Asia">Asia</option>
-            <option value="Europe">Europe</option>
-            <option value="America">America</option>
+            <option class="filter-sellect filter-button" value="all">Region</option>
+            <option class="filter-sellect filter-button" value="Asia">Asia</option>
+            <option class="filter-sellect filter-button" value="Europe">Europe</option>
+            <option class="filter-sellect filter-button" value="America">America</option>
         </select>
     </div> 
 
