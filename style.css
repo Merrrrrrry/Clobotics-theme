@@ -482,22 +482,13 @@ h4.text {
 
 /* <--- Single open position style ---> */
 
-.hero-section-content {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  text-align: center;
-  color: #fff;
-}
 
 #apply-button {
   position: absolute;
-  bottom: -100px; 
+  bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1; 
+  z-index: 1;
 }
 
 .job-info {
