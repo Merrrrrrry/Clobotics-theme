@@ -595,7 +595,7 @@ h4.text-career {
   gap: 10px;
 }
 
-.filters select, .filter-button, .fitler-btn {
+.filters select, .filter-button, .filter-btn {
   cursor: pointer;
   border: 2px solid transparent; 
   border-radius: 20px; 
