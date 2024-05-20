@@ -546,11 +546,13 @@ h4.text-career {
   object-fit: cover; 
 }
 
-.phone-career i.material-icons {
+.phone-career {
   color:#000000;
-  font-size: 20px;
 }
 
+.phone-career i {
+  font-size: 30px;
+}
 
 
 /* <------ Article page style ------> */
