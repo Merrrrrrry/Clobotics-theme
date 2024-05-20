@@ -1402,6 +1402,7 @@ img.footer-logo {
 .copyright-sm {
   display: flex; 
   align-items:bottom;
+  flex-direction: row;
 }
 
 
