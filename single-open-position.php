@@ -63,39 +63,7 @@ Template Name: single-open-position
 
        
 
-         <!-- Career contact person -->
-
-            <h2 class="title">Contact person</h2>
         
-            <div class="contact-person-career">
-                <?php
-           
-                $args = array(
-                    'post_type' => 'contact-person',
-                    'posts_per_page' => 1
-                );
-
-                $contact_person_query = new WP_Query($args);
-
-                if ($contact_person_query->have_posts()) :
-                    while ($contact_person_query->have_posts()) : $contact_person_query->the_post();
-                ?>
-                    <div class="contact-person-image">
-                        <img src="<?php echo get_field('contact_person_image')['url']; ?>" alt="<?php echo get_field('contact_person_image')['alt']; ?>">
-                    </div>
-                    <div class="contact-person-details">
-                        <p><strong>Name:</strong> <?php the_field('contact_person_name'); ?></p>
-                        <p><strong>Position:</strong> <?php the_field('contact_person_position'); ?></p>
-                        <p><strong>Phone:</strong> <?php the_field('contact_person_phone'); ?></p>
-                    </div>
-                <?php
-                    endwhile;
-                    wp_reset_postdata();
-                endif;
-                ?>
-            </div>
-
-
         <!-- Apply for job contact form -->
 
         <h2 class="title">Apply for the position</h2>
