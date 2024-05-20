@@ -1384,7 +1384,7 @@ img.footer-logo {
 
 .social-icons img {
   width: 45px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 
@@ -1576,6 +1576,12 @@ img.footer-logo {
 .social-icons span {
   display: block;
   margin-top: 5px;
-  color: white;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.social-icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
