@@ -516,7 +516,7 @@ h4.text-career {
 }
 
 .info-item .info-value span {
-  font-weight: normal;
+  font-weight: bold;
   margin-bottom: 3px; 
 }
 
@@ -541,9 +541,7 @@ h4.text-career {
   text-align: left; 
 }
 
-span.bold-span {
-  font-weight: bold;
-}
+
 
 /* <------ Article page style ------> */
 

@@ -31,7 +31,7 @@ Template Name: single-open-position
                         <i class="material-icons">calendar_month</i>
                     </div>
                     <div class="info-value">
-                        <span class="bold-span">Deadline</span>
+                        <span>Deadline</span>
                         <?php the_field('deadline'); ?>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ Template Name: single-open-position
                         <i class="material-icons">work</i>
                     </div>
                     <div class="info-value">
-                        <span class="bold-span">Job Type</span>
+                        <span>Job Type</span>
                         <?php the_field('job_type'); ?>
                     </div>
                 </div>
@@ -49,7 +49,7 @@ Template Name: single-open-position
                         <i class="material-icons">location_on</i>
                     </div>
                     <div class="info-value">
-                        <span class="bold-span">Location</span>
+                        <span>Location</span>
                         <?php the_field('job_location'); ?>
                     </div>
                 </div>
