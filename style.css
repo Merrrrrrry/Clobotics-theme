@@ -526,6 +526,13 @@ i.material-icons {
   text-align: left; 
 }
 
+/* <------ Contact Person Career style ------> */
+
+.contact-person-image {
+  width: 100px;
+  height: 100px;
+}
+
 
 
 /* <------ Article page style ------> */
