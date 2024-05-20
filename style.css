@@ -46,7 +46,7 @@ h1.hero-title {
 
 h2 {
     font-family: "Roboto", sans-serif;
-    font-size: 49px;
+    font-size: 40px;
     font-weight: lighter;
 }
 
@@ -1115,11 +1115,25 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   background-color: white;
 }
 
-.section-title {
+/* .section-title {
   text-decoration: underline #01A7E6;
   text-align: center;
   font-family: 'Roboto';
+} */
 
+.section-title {
+  text-align: center;
+  font-family: 'Roboto';
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 50px; /* Adjust the width as needed */
+  height: 2px; /* Adjust the thickness of the underline as needed */
+  background-color: #01A7E6;
+  margin: 0 auto;
+  margin-top: 5px; /* Adjust the space between the title and the underline as needed */
 }
 
 .section-content {
