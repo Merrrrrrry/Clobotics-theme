@@ -9,10 +9,16 @@ function showInfo() {
 
 // Navbar burber menu
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('burger-menu').addEventListener('click', function () {
-      document.getElementById('navbar-nav').classList.toggle('active');
-    });
-  });
+    const burgerMenu = document.getElementById('burger-menu');
+    const navbarNav = document.getElementById('navbar-nav');
+
+    if (burgerMenu && navbarNav) {
+        burgerMenu.addEventListener('click', function () {
+            navbarNav.classList.toggle('active');
+        });
+    }
+});
+
   
 
 // Function to scroll to the contact form section
