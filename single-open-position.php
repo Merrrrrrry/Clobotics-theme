@@ -55,7 +55,7 @@ Template Name: single-open-position
                     <p class="text"><?php the_field('paragraph-1'); ?></p>
                     <p class="text"><?php the_field('headline-2'); ?></p>
                     <p class="text"><?php the_field('paragraph-2'); ?></p>
-                    <p class="text">><?php the_field('headline-3'); ?></p>
+                    <p class="text"><?php the_field('headline-3'); ?></p>
                     <p class="text"><?php the_field('paragraph-3'); ?></p>
                     <p class="text"><?php the_field('headline-4'); ?></p>
                     <p class="text"><?php the_field('paragraph-4'); ?></p>
