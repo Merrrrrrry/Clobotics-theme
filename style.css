@@ -30,7 +30,6 @@ h1, h2, h3, h4, h5, h6 {
 
 
 h1.hero-title {
-  font-family: "Roboto", sans-serif;
   font-size: 50px;
   font-weight: 200;
   font-style: normal;
@@ -38,20 +37,17 @@ h1.hero-title {
 } 
 
 .hero-slogan {
-  font-family: "Roboto", sans-serif;
   font-size: 35px;
   font-weight: 400;
   color: #fff;
 }
 
 h2 {
-    font-family: "Roboto", sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: lighter;
 }
 
 h3.title{
-  font-family: "Roboto", sans-serif;
   font-size: 40px;
   font-weight: lighter;
 }
