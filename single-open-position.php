@@ -58,8 +58,9 @@ Template Name: single-open-position
                 <p class="text"><?php the_field('paragraph-3'); ?></p>
                 <p class="text"><?php the_field('headline-4'); ?></p>
                 <p class="text"><?php the_field('paragraph-4'); ?></p>
-                <!-- Find more about Clobotics button -->
-                <a href="page-about_us.php" class="btn dark">Read more about Clobotics</a>
+                    <div class="read-more-career-button">
+                        <a href="page-about_us.php" class="btn dark">Read more about Clobotics</a>
+                </div>
             </div>
         </article>
 
