@@ -111,6 +111,9 @@ Template Name: single-open-position
                 <?php echo do_shortcode('[contact-form-7 id="c48fb62" title="Apply for the position"]'); ?>
             </div>
         </div>
+
+        <div class="gray-half-circle"></div>
+        
     <?php endwhile; ?>
 </main>
 

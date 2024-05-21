@@ -759,6 +759,18 @@ h4.text-career {
 }
 
 
+
+.gray-half-circle {
+  width: 100px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
+  background-color: #ccc; /* Gray color */
+  border-radius: 0 0 50px 50px; /* Half-circle shape */
+}
+
+
+
+
+
 /* <------ Article page style ------> */
 
 
