@@ -93,7 +93,7 @@ Template Name: single-wind-service
                 <div class="keypoint">
                     <h3><?php the_field('3rd_keypoint'); ?></h3>
                     <?php
-                    $icon3 = get_field('icon_of_the_keypoint_3');
+                    $icon3 = get_field('icon_of_the_keypoint_(3)');
                     if ($icon3) : ?>
                         <img src="<?php echo esc_url($icon3['url']); ?>" alt="<?php echo esc_attr($icon3['alt']); ?>" class="keypoint-icon">
                     <?php endif; ?>
