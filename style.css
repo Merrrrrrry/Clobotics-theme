@@ -1147,6 +1147,7 @@ main {
 
 .half-size p{
   text-align: left;
+  padding-top: 30px;
 }
 
 #buttons_switcher_container {
