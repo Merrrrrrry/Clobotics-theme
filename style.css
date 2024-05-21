@@ -709,6 +709,12 @@ h4.text-career {
   }
 }
 
+.codedropz-upload-inner h3 {
+  font-size: 16px !important;
+  font-weight: 200;
+  line-height: 0px !important;
+  font-family: 'Roboto', sans-serif;
+}
 
 
 /* <------ Article page style ------> */
