@@ -632,10 +632,11 @@ h4.text-career {
 /* <------ Contact Form Career style ------> */
 
 .contact-form-career {
-  width: 80%;
-  margin: 0 auto;
-  background-color: #fff;
+  display: flex;
   justify-content: center;
+  align-items: center; 
+  gap: 20px;
+  flex-wrap: wrap; 
 }
 
 .contact-form-career input,
@@ -751,7 +752,8 @@ h4.text-career {
 @media (min-width: 769px) {
   .contact-form-container-career {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center; 
   }
 
   .contact-person-career, .contact-form-career {
@@ -759,10 +761,6 @@ h4.text-career {
   }
 }
 
-.wpcf7-f226-p663-o1.wpcf7-js  {
-  display: flex;
-  justify-content: center !important;
-}
 
 
 /* <------ Article page style ------> */
