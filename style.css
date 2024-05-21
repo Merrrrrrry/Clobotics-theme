@@ -151,18 +151,6 @@ p.subtitle {
   flex-direction: row;
   justify-content: center;
 }
-.join_us_container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.join_or_contact_us_btns {
-  justify-content: center;
-  flex-direction: row;
-}
-.join_or_contact_us_btns a.btn {
-  margin: 0 5em 0 0;
-}
 
 /* 
 .container_to_center_text {
@@ -1005,10 +993,40 @@ main {
   height: auto;
   overflow: hidden;
 }
-
-.join_us_content_container {
-  margin-top: -10em;
+.join_us_container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
+.join_us_content_container {
+  margin-top: -24em;
+  padding: 0 0 18em 0;
+}
+
+.join_or_contact_us_btns {
+  justify-content: center;
+  flex-direction: row;
+}
+.join_or_contact_us_btns a.btn.light {
+  margin: 0 0 0 5em;
+}
+
+
+.title_special {
+  width: 55%;
+  padding: 0;
+  margin: auto;
+}
+
+.subtitle_special {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 54px;
+    margin-top: 10px;
+    margin-bottom: 2em;
+}
+
+
 
 /*MEET OUR TEAM SECTION (filters)*/
 .filters_container {
