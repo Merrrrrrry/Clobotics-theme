@@ -44,8 +44,8 @@ Template Name: About us
 
 <section class="article_main who-we-are">
     <img  class="who-we-are-img_1" src="<?php echo get_template_directory_uri(); ?>/media/about_us_imgs/Group1.png" alt="Article img">
-    <div class="who-we-are_content container_to_center">
-        <h2 class="title"><?php the_field('article_title_who_we_are'); ?></h2>
+    <div class="who-we-are_content">
+        <h2 class="title section-title"><?php the_field('article_title_who_we_are'); ?></h2>
         <p class="subtitle"><?php the_field('subtitle_of_article_who_we_are'); ?></p>
         <p class="text"><?php the_field('article_text_who_we_are'); ?></p>
     </div>        <!-- <div class="container_to_center"> <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Video presentation</a></div> -->
@@ -57,12 +57,19 @@ Template Name: About us
 <!-- One company Two directions --> 
 
 <section class="article_secondary_main one_company_two_directions" style="text-align: center;">
+    <h3 class="title section-title dark_line"><?php the_field('article_title_one_company_two_directions'); ?></h3>
+
     <img  class="two_directions_collage_img" src="<?php echo get_template_directory_uri(); ?>/media/about_us_imgs/Group2.png" alt="Article img">
-        <h3 class="title"><?php the_field('article_title_one_company_two_directions'); ?></h3>
-        <p class="text"><?php the_field('wind_part_text'); ?></p>
+    <div class="right_and_left">        
+        <div class="right flex">
+                <p class="text"><?php the_field('wind_part_text'); ?></p>
                 <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Discover Wind services</a>
-        <p class="text"><?php the_field('retail_part_text'); ?></p>
+        </div>
+        <div class="left flex">
+                <p class="text"><?php the_field('retail_part_text'); ?></p>
                 <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Discover Retail services</a>
+        </div>
+    </div>
 
 </section>
 

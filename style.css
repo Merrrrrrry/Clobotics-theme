@@ -982,13 +982,32 @@ main {
  z-index: -1;
 }
 
+.who-we-are_content {
+  text-align: center;
+  width: 38%;
+  margin: auto;
+  margin-top: -47em;
+}
+
 .two_directions_collage_img {
   width: 45%;
+  padding: 22em 0 0 0;
   height: auto;
   display: inline-block;
   overflow: hidden;
   z-index: -1;
 }
+
+.right {
+  flex-direction: column;
+  text-align: right;
+}
+
+.left {
+  flex-direction: column;
+  text-align: left;
+}
+
 
 .join_or_contact_collage_img {
   width: 100%;
@@ -1493,6 +1512,14 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   background-color: #01A7E6;
   margin: 0 auto;
   margin-top: 7px;
+}
+.section-title.dark_line::after {
+  content: "";
+  background-color: #002D61;
+}
+.section-title.light_line::after {
+  content: "";
+  background-color: #86D0F4;
 }
 
 .section-content {
