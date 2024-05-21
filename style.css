@@ -630,6 +630,8 @@ h4.text-career {
 
 /* <------ Contact Form Career style ------> */
 
+/* <------ Contact Form Career style ------> */
+
 .contact-form-career {
   width: 80%;
   margin: 0 auto;
@@ -670,6 +672,11 @@ h4.text-career {
   display: block;
 }
 
+.contact-form-career .column {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-form-career .upload-section {
   display: flex;
   justify-content: space-between;
@@ -708,8 +715,6 @@ h4.text-career {
     width: 100%;
   }
 }
-
-
 
 /* <------ Article page style ------> */
 
