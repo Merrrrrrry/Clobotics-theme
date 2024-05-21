@@ -628,6 +628,7 @@ h4.text-career {
 }
 
 
+
 /* <------ Contact Form Career style ------> */
 
 .contact-form-career {
@@ -643,6 +644,12 @@ h4.text-career {
   padding: 10px;
   border: 1px solid #bdbdbd;
   border-radius: 13px;
+  box-sizing: border-box;
+}
+
+.contact-form-career input:focus,
+.contact-form-career textarea:focus {
+  border-color: #757575;
 }
 
 .contact-form-career textarea {
@@ -674,18 +681,18 @@ h4.text-career {
 
 .contact-form-career .upload-section {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   width: 100%;
 }
 
 .contact-form-career .upload-section label {
-  width: 48%;
+  width: 100%;
 }
 
 .contact-form-career p {
   margin: 0; 
 }
-
 
 @media (max-width: 768px) {
   .contact-form-container-career {
@@ -728,6 +735,29 @@ h4.text-career {
   text-overflow: ellipsis;
   font-weight: inherit;
 }
+
+.contact-form-container-career h2 {
+  display: inline-block;
+  margin: 0;
+  padding: 0 10px 20px;
+}
+
+.contact-form-container-career .contact-person-title {
+  margin-right: 20px;
+}
+
+@media (min-width: 769px) {
+  .contact-form-container-career {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact-person-career, .contact-form-career {
+    width: 48%;
+  }
+}
+
 
 /* <------ Article page style ------> */
 
