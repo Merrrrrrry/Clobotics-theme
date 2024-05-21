@@ -670,11 +670,6 @@ h4.text-career {
   display: block;
 }
 
-.contact-form-career .column {
-  display: flex;
-  flex-direction: column;
-}
-
 .contact-form-career .upload-section {
   display: flex;
   justify-content: space-between;
@@ -713,7 +708,6 @@ h4.text-career {
     width: 100%;
   }
 }
-
 
 
 
