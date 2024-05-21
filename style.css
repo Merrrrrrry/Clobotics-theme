@@ -663,6 +663,7 @@ h4.text-career {
   border-radius: 20px !important;
   cursor: pointer;
   margin-bottom: 100px;
+  width: 100% !important;
 }
 
 .contact-form-career input[type="submit"]:hover {
