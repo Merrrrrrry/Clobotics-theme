@@ -978,10 +978,12 @@ main {
 .who-we-are-img_1 {
  width: 100%;
  height: auto;
+ overflow: hidden;
+ z-index: -1;
 }
 
 .two_directions_collage_img {
-  width: 60%;
+  width: 45%;
   height: auto;
   display: inline-block;
   overflow: hidden;
@@ -1000,7 +1002,7 @@ main {
 }
 .join_us_content_container {
   margin-top: -24em;
-  padding: 0 0 18em 0;
+  padding: 0 0 15em 0;
 }
 
 .join_or_contact_us_btns {
@@ -1656,9 +1658,16 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 @media screen and (max-width: 768px) {
 
 /* Title Styling */
- .title {
+h2.title, h3.title, h4.title, h2, h3, h4, h5 {
   font-size: 2em;
   text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  text-align: center;
+  margin: auto;
   margin-bottom: 20px;
 }
 

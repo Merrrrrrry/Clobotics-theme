@@ -44,11 +44,11 @@ Template Name: About us
 
 <section class="article_main who-we-are">
     <img  class="who-we-are-img_1" src="<?php echo get_template_directory_uri(); ?>/media/about_us_imgs/Group1.png" alt="Article img">
-
-    <h2 class="title"><?php the_field('article_title_who_we_are'); ?></h2>
-    <p class="subtitle"><?php the_field('subtitle_of_article_who_we_are'); ?></p>
-    <p class="text"><?php the_field('article_text_who_we_are'); ?></p>
-        <!-- <div class="container_to_center"> <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Video presentation</a></div> -->
+    <div class="who-we-are_content container_to_center">
+        <h2 class="title"><?php the_field('article_title_who_we_are'); ?></h2>
+        <p class="subtitle"><?php the_field('subtitle_of_article_who_we_are'); ?></p>
+        <p class="text"><?php the_field('article_text_who_we_are'); ?></p>
+    </div>        <!-- <div class="container_to_center"> <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Video presentation</a></div> -->
 
 </section>
 
