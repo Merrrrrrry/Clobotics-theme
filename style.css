@@ -991,6 +991,7 @@ main {
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .service-item {
@@ -998,19 +999,26 @@ main {
   padding: 15px;
   box-sizing: border-box;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .service-main-image {
   position: relative;
+  height: 200px; /* Adjust height as needed */
   overflow: hidden;
-  border-radius: 5px;
+  margin: 0;
+  padding: 0;
 }
 
 .service-main-image img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
-  border-radius: 5px;
 }
 
 .overlay {
@@ -1030,9 +1038,12 @@ main {
 }
 
 .service-content {
-  background: #fff;
   padding: 20px;
   box-sizing: border-box;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .service-keypoints .keypoint {
