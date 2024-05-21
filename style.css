@@ -1006,6 +1006,9 @@ main {
   overflow: hidden;
 }
 
+.join_us_content_container {
+  margin-top: -10em;
+}
 
 /*MEET OUR TEAM SECTION (filters)*/
 .filters_container {
