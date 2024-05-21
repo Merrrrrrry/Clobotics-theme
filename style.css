@@ -979,6 +979,59 @@ main {
 
 
 
+/* <------- List of wind services -------> */
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  position: relative;
+  flex: 0 0 calc(33.333% - 20px);
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.service-content {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.service-keypoints {
+  padding-right: 15px;
+}
+
+.keypoint {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.keypoint p {
+  margin: 0;
+}
+
+.keypoint-icon {
+  margin-right: 10px;
+}
+
+
 
 
 
