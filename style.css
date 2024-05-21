@@ -648,7 +648,7 @@ h4.text-career {
 
 .contact-form-career input:focus,
 .contact-form-career textarea:focus {
-  border-color: #757575;
+  border-color: #757575 !important;
 }
 
 .contact-form-career textarea {
@@ -684,6 +684,7 @@ h4.text-career {
   flex-direction: column;
   gap: 10px;
   width: 100%;
+  color: #bdbdbd;
 }
 
 .contact-form-career .upload-section label {
