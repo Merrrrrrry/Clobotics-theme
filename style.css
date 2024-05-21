@@ -604,11 +604,10 @@ h4.text-career {
 }
 
 .contact-person-name {
-  margin: 0; 
   font-family: 'Roboto', sans-serif;
   font-size: 25px;
   font-weight: 200;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 1px;
 }
 
