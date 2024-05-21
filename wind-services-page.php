@@ -161,11 +161,6 @@ Template Name: Wind services
 
 
 
-
-
-
-
-
 <section class="we-take-care">
 <img class="we-take-care-background-image" src="<?php echo get_template_directory_uri(); ?>/media/wind_blade.png" alt="We take care of your blades"> <br>
     <div class="we-take-care-content">

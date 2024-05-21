@@ -986,70 +986,50 @@ main {
 
 /* <------- List of wind services -------> */
 
-.service-list {
+#service-list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
 .service-item {
+  width: 33.33%;
+  padding: 15px;
+  box-sizing: border-box;
   position: relative;
-  flex: 1 1 calc(33.333% - 20px);
-  margin: 10px;
-  overflow: hidden;
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
-  padding: 0;
+  color: #fff;
 }
 
 .overlay {
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
 }
 
 .service-content {
-  padding: 15px;
-  background-color: #fff;
+  background: #fff;
+  padding: 20px;
   box-sizing: border-box;
+  text-align: center;
+  color: #000;
 }
 
-.service-keypoints {
-  padding-right: 15px;
-}
-
-.keypoint {
+.service-keypoints .keypoint {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.keypoint p {
-  margin: 0;
-}
-
 .keypoint-icon {
-  margin-right: 10px;
+  margin-right: 15px;
 }
-
-
-@media (max-width: 768px) {
-  .service-item {
-      flex: 1 1 100%;
-      margin: 10px 0;
-  }
-}
-
-
 
 
 
