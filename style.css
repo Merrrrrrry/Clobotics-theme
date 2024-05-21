@@ -936,11 +936,8 @@ h4.text-career {
 
 
 .download-buttons {
-  position: absolute; 
-  bottom: -250px; 
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1; 
+  display: flex;
+  justify-content: center;
 }
 
 
