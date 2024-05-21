@@ -43,16 +43,13 @@ Template Name: About us
 <!-- Who we are -->
 
 <section class="article_main who-we-are">
+    <img  class="who-we-are-img_1" src="<?php echo get_template_directory_uri(); ?>/media/about_us_imgs/Group1.png" alt="Article img">
 
     <h2 class="title"><?php the_field('article_title_who_we_are'); ?></h2>
     <p class="subtitle"><?php the_field('subtitle_of_article_who_we_are'); ?></p>
     <p class="text"><?php the_field('article_text_who_we_are'); ?></p>
         <!-- <div class="container_to_center"> <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Video presentation</a></div> -->
 
-        <img class="who-we-are-img left" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt=""> 
-        <img class="who-we-are-img right" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt="">
-        
-        <img class="" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt="Article image" /> 
 </section>
 
 
@@ -60,8 +57,7 @@ Template Name: About us
 <!-- One company Two directions --> 
 
 <section class="article_secondary_main one_company_two_directions">
-
-    <img class="two_directions_collage_img " src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt=""> 
+    <img  class="two_directions_collage_img" src="<?php echo get_template_directory_uri(); ?>/media/about_us_imgs/Group2.png" alt="Article img">
         <h3 class="title"><?php the_field('article_title_one_company_two_directions'); ?></h3>
         <p class="text"><?php the_field('wind_part_text'); ?></p>
                 <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Discover Wind services</a>
@@ -144,7 +140,7 @@ Template Name: About us
 <section class="join_us_container">
 
     <h3 class="title"><?php the_field('article_title_want_to_join'); ?></h3>
-    <img class="join_or_contact_collage_img " src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt=""> 
+    <img  class="join_or_contact_collage_img" src="<?php echo get_template_directory_uri(); ?>/media/about_us_imgs/Group3.png" alt="Article img">
         <p class="subtitle"><?php the_field('subtitle_of_article_want_to_join'); ?></p>
         <div class="join_or_contact_us_btns">
             <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Work for us</a>

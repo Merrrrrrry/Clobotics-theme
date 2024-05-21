@@ -845,6 +845,26 @@ main {
 /*---------------------------ABOUT US PAGE----------------------------*/
 
 
+
+
+
+
+
+/*Articles with images */
+
+.who-we-are-img_1 {
+
+}
+
+.two_directions_collage_img {
+
+}
+
+.join_or_contact_collage_img {
+  
+}
+
+
 /*MEET OUR TEAM SECTION (filters)*/
 .filters_container {
   display: flex;
