@@ -559,7 +559,6 @@ h4.text-career {
 
 .contact-form-container-career {
   display: flex;
-  padding-left: 50px;
   gap: 20px;
 }
 
@@ -737,7 +736,6 @@ h4.text-career {
 }
 
 .contact-form-container-career h2 {
-  display: inline-block;
   margin: 0;
   padding: 0 10px 20px;
 }
