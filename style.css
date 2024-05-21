@@ -786,6 +786,7 @@ h4.text-career {
 
 .filter-btn {
   cursor: pointer;
+  background-color: #fff;
   border: 2px solid transparent; 
   border-radius: 20px; 
   padding: 10px;
