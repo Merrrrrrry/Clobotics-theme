@@ -629,7 +629,6 @@ h4.text-career {
 
 
 /* <------ Contact Form Career style ------> */
-
 /* <------ Contact Form Career style ------> */
 
 .contact-form-career {
@@ -679,21 +678,16 @@ h4.text-career {
 
 .contact-form-career .upload-section {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
   width: 100%;
 }
 
 .contact-form-career .upload-section label {
   width: 48%;
-  text-align: center;
 }
 
-.contact-form-career .codedropz-upload-wrapper {
-  height: 100px;
-}
-
-.contact-form-career .codedropz-upload-wrapper p {
-  margin: 0;
+.contact-form-career p {
+  margin: 0; /* Remove margins from paragraphs */
 }
 
 /* Media Query for Responsive Design */
@@ -707,14 +701,15 @@ h4.text-career {
     width: 100%;
   }
 
-  .contact-form-career .upload-section {
-    flex-direction: column;
+  .codedropz-upload-wrapper {
+    width: 100%;
   }
 
   .contact-form-career .upload-section label {
     width: 100%;
   }
 }
+
 
 /* <------ Article page style ------> */
 

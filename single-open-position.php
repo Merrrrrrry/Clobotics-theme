@@ -25,7 +25,7 @@ Template Name: single-open-position
     <!-- Information about the job position -->
     <?php while (have_posts()) : the_post(); ?>
         <article <?php post_class(); ?>>
-        <div class="job-info">
+            <div class="job-info">
                 <div class="info-item">
                     <div class="info-label">
                         <i class="material-icons info-label">calendar_month</i>
@@ -64,18 +64,17 @@ Template Name: single-open-position
                 <p class="text"><?php the_field('paragraph-3'); ?></p>
                 <p class="text"><strong><?php the_field('headline-4'); ?></strong></p>
                 <p class="text"><?php the_field('paragraph-4'); ?></p>
-                    <div class="read-more-career-button">
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>" class="btn dark">Read more about Clobotics</a>
+                <div class="read-more-career-button">
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>" class="btn dark">Read more about Clobotics</a>
                 </div>
             </div>
         </article>
 
-            <!-- Gap between sections -->
+        <!-- Gap between sections -->
         <div style="height: 30px;"></div>
 
-
         <div class="contact-form-container-career" id="contact-form-container-career">
-            <!---- Career contact person ---->
+            <!-- Career contact person -->
             <div class="contact-person-career">
                 <h2 class="title">Contact person</h2>
                 <div class="contact-person-image">
@@ -118,3 +117,4 @@ Template Name: single-open-position
 </main>
 
 <?php get_footer(); ?>
+
