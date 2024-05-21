@@ -760,7 +760,7 @@ h4.text-career {
 
 .wpcf7-f226-p663-o1.wpcf7-js  {
   display: flex;
-  justify-content: center;
+  justify-content: center !important;
 }
 
 
