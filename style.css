@@ -990,13 +990,12 @@ main {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 30px 120px;
 }
 
 .service-item {
   width: 33.33%;
-  padding: 15px;
+  padding: 0px;
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -1008,7 +1007,7 @@ main {
 
 .service-main-image {
   position: relative;
-  height: 200px; /* Adjust height as needed */
+  height: 170px; 
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -1025,16 +1024,15 @@ main {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  background: #ffffff;
+  padding: 0px;
   box-sizing: border-box;
   text-align: center;
 }
 
 .service-title {
   margin: 0;
-  color: #fff;
-  font-size: 18px;
+  color: #000000;
 }
 
 .service-content {
