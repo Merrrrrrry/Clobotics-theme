@@ -103,7 +103,9 @@ p.subtitle {
 }
 
 .btn:hover, .btn-shadow {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);}
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
 
 .dark {
   background-color: #002D61;
@@ -647,13 +649,22 @@ h4.text-career {
 
 .contact-form-career input[type="submit"] {
   width: 100%;
+  background-color: #01A7E6;
   color: #fff;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
+  padding: 8px 20px;
+  border-radius: 20px;
   cursor: pointer;
-  margin-bottom: 30px;
+  margin-bottom: 100px;
 }
+
+.contact-form-career input[type="submit"]:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+
 
 .contact-form-career label {
   display: block;
