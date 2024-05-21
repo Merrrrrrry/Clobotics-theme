@@ -104,16 +104,17 @@ Template Name: Wind services
                 echo '</ul><ul id="service-list" class="service-list">'; // Close the row and start a new one every 3 items
             }
             ?>
-            <li class="service-item">
-                <h3 class="service-title"><?php the_field('service_title'); ?></h3>
-                <div class="service-main-image">
+            <li class="service-item" style="background-image: url('<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>');">
+                <div class= "overlay">
+                    <h3 class="service-title"><?php the_field('service_title'); ?></h3>
+                </div>
                     <?php
                     $image = get_field('service_main_image');
                     if (!empty($image)) : ?>
-                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
                     <?php endif; ?>
                 </div>
-                <div class="service-keypoints">
+                <div class="service-content">
+                    <div class="service-keypoints">
                     <div class="keypoint">
                         <p><?php the_field('1st_keypoint'); ?></p>
                         <?php
@@ -140,6 +141,7 @@ Template Name: Wind services
                     </div>
                 </div>
                 <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
+                </div>
             </li>
             <?php
             $counter++;
