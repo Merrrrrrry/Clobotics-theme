@@ -140,7 +140,7 @@ Template Name: About us
 <section class="join_us_container">
 
     <h3 class="title"><?php the_field('article_title_want_to_join'); ?></h3>
-    <img  class="join_or_contact_collage_img" src="<?php echo get_template_directory_uri(); ?>/media/about_us_imgs/Group3.png" alt="Article img">
+    <img  class="join_or_contact_collage_img" src="<?php echo get_template_directory_uri(); ?>/media/about_us_imgs/Group3.jpg" alt="Article img">
         <p class="subtitle"><?php the_field('subtitle_of_article_want_to_join'); ?></p>
         <div class="join_or_contact_us_btns">
             <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Work for us</a>
