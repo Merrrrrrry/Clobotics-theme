@@ -710,12 +710,27 @@ h4.text-career {
 }
 
 .codedropz-upload-inner h3 {
-  font-size: 16px !important;
-  font-weight: 200;
-  line-height: 0px !important;
+  font-size: 18px !important;
+  font-weight: 300;
+  line-height: 20px !important;
   font-family: 'Roboto', sans-serif;
 }
 
+.codedropz-upload-handler {
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.codedropz-upload-inner {
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-weight: inherit;
+}
 
 /* <------ Article page style ------> */
 
