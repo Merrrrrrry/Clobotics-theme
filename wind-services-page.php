@@ -104,42 +104,39 @@ Template Name: Wind services
                 echo '</ul><ul id="service-list" class="service-list">'; // Close the row and start a new one every 3 items
             }
             ?>
-            <li class="service-item">
-                <h3 class="service-title"><?php the_field('service_title'); ?></h3>
-                <div class="service-main-image">
-                    <?php
-                    $image = get_field('service_main_image');
-                    if (!empty($image)) : ?>
-                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
-                    <?php endif; ?>
+            <li class="service-item" style="background-image: url('<?php the_field('service_main_image'); ?>');">
+                <div class="overlay">
+                    <h3 class="service-title"><?php the_field('service_title'); ?></h3>
                 </div>
-                <div class="service-keypoints">
-                    <div class="keypoint">
-                        <p><?php the_field('1st_keypoint'); ?></p>
-                        <?php
-                        $icon1 = get_field('icon_of_the_keypoint_1');
-                        if ($icon1) : ?>
-                            <img src="<?php echo esc_url($icon1['url']); ?>" alt="<?php echo esc_attr($icon1['alt']); ?>">
-                        <?php endif; ?>
+                <div class="service-content">
+                    <div class="service-keypoints">
+                        <div class="keypoint">
+                            <?php
+                            $icon1 = get_field('icon_of_the_keypoint_1');
+                            if ($icon1) : ?>
+                                <img src="<?php echo esc_url($icon1['url']); ?>" alt="<?php echo esc_attr($icon1['alt']); ?>" class="keypoint-icon">
+                            <?php endif; ?>
+                            <p><?php the_field('1st_keypoint'); ?></p>
+                        </div>
+                        <div class="keypoint">
+                            <?php
+                            $icon2 = get_field('icon_of_the_keypoint_2');
+                            if ($icon2) : ?>
+                                <img src="<?php echo esc_url($icon2['url']); ?>" alt="<?php echo esc_attr($icon2['alt']); ?>" class="keypoint-icon">
+                            <?php endif; ?>
+                            <p><?php the_field('2nd_keypoint'); ?></p>
+                        </div>
+                        <div class="keypoint">
+                            <?php
+                            $icon3 = get_field('icon_of_the_keypoint_3');
+                            if ($icon3) : ?>
+                                <img src="<?php echo esc_url($icon3['url']); ?>" alt="<?php echo esc_attr($icon3['alt']); ?>" class="keypoint-icon">
+                            <?php endif; ?>
+                            <p><?php the_field('3rd_keypoint'); ?></p>
+                        </div>
                     </div>
-                    <div class="keypoint">
-                        <p><?php the_field('2nd_keypoint'); ?></p>
-                        <?php
-                        $icon2 = get_field('icon_of_the_keypoint_2');
-                        if ($icon2) : ?>
-                            <img src="<?php echo esc_url($icon2['url']); ?>" alt="<?php echo esc_attr($icon2['alt']); ?>">
-                        <?php endif; ?>
-                    </div>
-                    <div class="keypoint">
-                        <p><?php the_field('3rd_keypoint'); ?></p>
-                        <?php
-                        $icon3 = get_field('icon_of_the_keypoint_3');
-                        if ($icon3) : ?>
-                            <img src="<?php echo esc_url($icon3['url']); ?>" alt="<?php echo esc_attr($icon3['alt']); ?>">
-                        <?php endif; ?>
-                    </div>
+                    <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
                 </div>
-                <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
             </li>
             <?php
             $counter++;

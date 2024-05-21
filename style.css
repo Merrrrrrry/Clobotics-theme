@@ -987,19 +987,22 @@ main {
 /* <------- List of wind services -------> */
 
 .service-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .service-item {
   position: relative;
-  flex: 0 0 calc(33.333% - 20px);
+  flex: 1 1 calc(33.333% - 20px);
   margin: 10px;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
+  padding: 0;
 }
 
 .overlay {
@@ -1011,11 +1014,13 @@ main {
   color: #fff;
   padding: 10px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .service-content {
   padding: 15px;
   background-color: #fff;
+  box-sizing: border-box;
 }
 
 .service-keypoints {
@@ -1035,6 +1040,29 @@ main {
 .keypoint-icon {
   margin-right: 10px;
 }
+
+.btn {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #0073aa;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #005f8a;
+}
+
+@media (max-width: 768px) {
+  .service-item {
+      flex: 1 1 100%;
+      margin: 10px 0;
+  }
+}
+
 
 
 
