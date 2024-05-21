@@ -103,43 +103,57 @@ Template Name: Wind services
             if ($counter % 3 === 0 && $counter !== 0) {
                 echo '</ul><ul id="service-list" class="service-list">'; // Close the row and start a new one every 3 items
             }
+
+            // Retrieve the main image
+            $image = get_field('service_main_image');
             ?>
             <li class="service-item">
-                <h3 class="service-title"><?php the_field('service_title'); ?></h3>
                 <div class="service-main-image">
-                    <?php
-                    $image = get_field('service_main_image');
-                    if (!empty($image)) : ?>
+                    <?php if (!empty($image)) : ?>
                         <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
                     <?php endif; ?>
+                    <div class="overlay">
+                        <h3 class="service-title"><?php the_field('service_title'); ?></h3>
+                    </div>
                 </div>
+                <div class="service-content">
                 <div class="service-keypoints">
-                    <div class="keypoint">
-                        <p><?php the_field('1st_keypoint'); ?></p>
-                        <?php
-                        $icon1 = get_field('icon_of_the_keypoint_1');
-                        if ($icon1) : ?>
-                            <img src="<?php echo esc_url($icon1['url']); ?>" alt="<?php echo esc_attr($icon1['alt']); ?>">
-                        <?php endif; ?>
-                    </div>
-                    <div class="keypoint">
-                        <p><?php the_field('2nd_keypoint'); ?></p>
-                        <?php
-                        $icon2 = get_field('icon_of_the_keypoint_2');
-                        if ($icon2) : ?>
-                            <img src="<?php echo esc_url($icon2['url']); ?>" alt="<?php echo esc_attr($icon2['alt']); ?>">
-                        <?php endif; ?>
-                    </div>
-                    <div class="keypoint">
-                        <p><?php the_field('3rd_keypoint'); ?></p>
-                        <?php
-                        $icon3 = get_field('icon_of_the_keypoint_3');
-                        if ($icon3) : ?>
-                            <img src="<?php echo esc_url($icon3['url']); ?>" alt="<?php echo esc_attr($icon3['alt']); ?>">
-                        <?php endif; ?>
+    <div class="keypoint">
+        <?php
+        $icon1 = get_field('icon_of_the_keypoint_1');
+        if ($icon1) : ?>
+            <div class="list_icon">
+                <img class="list_icon_img" src="<?php echo esc_url($icon1['url']); ?>" alt="<?php echo esc_attr($icon1['alt']); ?>">
+            </div>
+        <?php endif; ?>
+        <p><?php the_field('1st_keypoint'); ?></p>
+    </div>
+    <div class="keypoint">
+        <?php
+        $icon2 = get_field('icon_of_the_keypoint_2');
+        if ($icon2) : ?>
+            <div class="list_icon">
+                <img class="list_icon_img" src="<?php echo esc_url($icon2['url']); ?>" alt="<?php echo esc_attr($icon2['alt']); ?>">
+            </div>
+        <?php endif; ?>
+        <p><?php the_field('2nd_keypoint'); ?></p>
+    </div>
+    <div class="keypoint">
+        <?php
+        $icon3 = get_field('icon_of_the_keypoint_3');
+        if ($icon3) : ?>
+            <div class="list_icon">
+                <img class="list_icon_img" src="<?php echo esc_url($icon3['url']); ?>" alt="<?php echo esc_attr($icon3['alt']); ?>">
+            </div>
+        <?php endif; ?>
+        <p><?php the_field('3rd_keypoint'); ?></p>
+    </div>
+</div>
+
+                    <div class="btn-wrapper">
+                        <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
                     </div>
                 </div>
-                <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
             </li>
             <?php
             $counter++;
@@ -149,10 +163,6 @@ Template Name: Wind services
         <p class="service-subtitle">No wind services available.</p>
     <?php endif; ?>
 </ul>
-
-
-
-
 
 
 
