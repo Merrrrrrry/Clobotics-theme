@@ -368,9 +368,13 @@ height:auto;
 } 
 
 button.filter-button {
-  padding: 12px 15px; 
+  padding: 12px 13px; 
   border-radius: 23px; 
-  
+}
+
+span.material-icons.search-icon {
+  font-size: 30px;
+  color: #ffffff; 
 }
 
 
