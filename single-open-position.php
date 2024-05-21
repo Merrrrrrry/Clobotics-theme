@@ -73,6 +73,7 @@ Template Name: single-open-position
         <div class="contact-form-container-career">
             <!-- Career contact person -->
             <div class="contact-person-career">
+                <h2 class="title">Contact person</h2>
                 <div class="contact-person-image">
                     <img src="<?php echo get_field('contact_person_image')['url']; ?>" alt="<?php echo get_field('contact_person_image')['alt']; ?>">
                 </div>
@@ -105,6 +106,7 @@ Template Name: single-open-position
 
             <!-- Apply for job contact form -->
             <div class="contact-form-career">
+                <h2 class="title">Apply for the position</h2>
                 <?php echo do_shortcode('[contact-form-7 id="c48fb62" title="Apply for the position"]'); ?>
             </div>
         </div>

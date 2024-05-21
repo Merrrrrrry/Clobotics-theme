@@ -570,15 +570,24 @@ h4.text-career {
 
 /* <------ Contact Person Career style ------> */
 
-.contact-person-career {
+.contact-form-container-career {
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-person-career, .contact-form-career {
   background: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border-radius: 10px;
   padding: 20px;
   width: 45%;
+}
+
+.contact-person-career {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .contact-person-details {
@@ -589,6 +598,7 @@ h4.text-career {
 .contact-person-image img {
   width: 300px;
   height: 300px;
+  object-fit: cover;
 }
 
 .phone-career {
@@ -614,20 +624,6 @@ h4.text-career {
 }
 
 /* <------ Contact Form Career style ------> */
-
-.contact-form-container-career {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.contact-form-career {
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  border-radius: 10px;
-  padding: 20px;
-  width: 45%;
-}
 
 .contact-form-career input,
 .contact-form-career textarea {
