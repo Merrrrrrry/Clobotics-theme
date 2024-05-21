@@ -78,8 +78,8 @@ Template Name: single-open-position
                     <img src="<?php echo get_field('contact_person_image')['url']; ?>" alt="<?php echo get_field('contact_person_image')['alt']; ?>">
                 </div>
                 <div class="contact-person-details">
-                    <p><?php the_field('contact_person_name'); ?></p>
-                    <p><?php the_field('contact_person_position'); ?></p>
+                    <p class="contact-person-name"><?php the_field('contact_person_name'); ?></p>
+                    <p class="contact-person-position"><?php the_field('contact_person_position'); ?></p>
                     <div class="phone-career">
                         <i class="material-icons phone-career">call</i>
                         <p><?php the_field('contact_person_phone'); ?></p>
