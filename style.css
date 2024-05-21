@@ -937,7 +937,8 @@ h4.text-career {
 
 .download-buttons {
   display: flex;
-  justify-content: column;
+  justify-content: center;
+  flex-direction:column;
   margin-bottom: 50px;
 }
 
