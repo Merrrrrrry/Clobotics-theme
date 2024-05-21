@@ -324,11 +324,10 @@ height:auto;
 .search-bar-container {
   background-color: white;
   border-radius: 18px;
-  padding: 20px;
+  padding: 40px;
   margin: -50px auto 0 auto;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
-  height: 120px; 
-  max-width: 485px;
+  max-width: 475px;
 
 }    
 
