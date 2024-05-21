@@ -82,7 +82,7 @@ Template Name: single-open-position
                     <p class="contact-person-position"><?php the_field('contact_person_position'); ?></p>
                     <div class="phone-career">
                         <i class="material-icons phone-career">call</i>
-                        <p><?php the_field('contact_person_phone'); ?></p>
+                        <p class="contact-person-phone><?php the_field('contact_person_phone'); ?></p>
                     </div>
                     <div class="contact-links">
                         <?php if ($contact_mail_icon = get_field('contact_mail_icon')): ?>
