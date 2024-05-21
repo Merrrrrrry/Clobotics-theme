@@ -19,7 +19,12 @@ document.addEventListener('DOMContentLoaded', function () {
 function scrollToContactForm(event) {
     event.preventDefault(); 
     var contactSection = document.getElementById("contact-form-container-career");
-    contactSection.scrollIntoView({ behavior: "smooth" });
+    if (contactSection) {
+        console.log("Contact section found:", contactSection);
+        contactSection.scrollIntoView({ behavior: "smooth" });
+    } else {
+        console.error("Contact section not found.");
+    }
 }
 
 // Event listener to the Apply button to scroll to the contact form section
@@ -27,8 +32,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var applyButton = document.getElementById("apply-button"); 
     if (applyButton) {
         applyButton.addEventListener("click", scrollToContactForm);
+    } else {
+        console.error("Apply button not found.");
     }
 });
+
 
 // Company History Timeline JS
 
