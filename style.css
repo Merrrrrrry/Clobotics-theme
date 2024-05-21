@@ -1131,14 +1131,14 @@ main {
 
 
 .we_operate_globally {
-  padding: 30px 140px;
+  padding: 30px 120px;
 }
 
 .we_operate_globally_container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  flex-wrap: wrap; 
 }
 
 .half-size {
