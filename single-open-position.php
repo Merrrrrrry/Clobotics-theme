@@ -56,13 +56,13 @@ Template Name: single-open-position
             </div>
 
             <div class="job-description">
-                <p class="text"><?php the_field('headline-1'); ?></p>
+                <p class="text"><strong><?php the_field('headline-1'); ?></strong></p>
                 <p class="text"><?php the_field('paragraph-1'); ?></p>
-                <p class="text"><?php the_field('headline-2'); ?></p>
+                <p class="text"><strong><?php the_field('headline-2'); ?></strong></p>
                 <p class="text"><?php the_field('paragraph-2'); ?></p>
-                <p class="text"><?php the_field('headline-3'); ?></p>
+                <p class="text"><strong><?php the_field('headline-3'); ?></strong></p>
                 <p class="text"><?php the_field('paragraph-3'); ?></p>
-                <p class="text"><?php the_field('headline-4'); ?></p>
+                <p class="text"><strong><?php the_field('headline-4'); ?></strong></p>
                 <p class="text"><?php the_field('paragraph-4'); ?></p>
                     <div class="read-more-career-button">
                         <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>" class="btn dark">Read more about Clobotics</a>
