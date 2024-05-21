@@ -935,7 +935,15 @@ h4.text-career {
 /* <------ Privacy & Cookie Policy style ------> */
 
 
+.download-buttons-container {
+  max-width: 600px; 
+  margin: 0 auto; 
+}
+
 .download-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
 }
 
@@ -953,7 +961,6 @@ h4.text-career {
   color: white;
   margin-right: 8px;
 }
-
 
 
   
