@@ -570,11 +570,15 @@ h4.text-career {
 
 /* <------ Contact Person Career style ------> */
 
-
 .contact-person-career {
   display: flex;
   flex-direction: column; 
   align-items: center; 
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
 }
 
 .contact-person-details {
@@ -583,22 +587,89 @@ h4.text-career {
 }
 
 .contact-person-image img {
-  width: 400px;
-  height: 400px;
+  width: 150px;
+  height: 150px;
   object-fit: cover; 
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .phone-career {
   display: flex;
   align-items: center; 
-  
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .phone-career i {
   font-size: 24px;
-  color:#000000;
+  color: #000000;
   margin-right: 5px;
 }
+
+.contact-links a {
+  margin: 0 5px;
+}
+
+.contact-links img {
+  width: 30px;
+  height: 30px;
+}
+
+/* <------ Contact Form Career style ------> */
+
+.contact-form-container-career {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.contact-form-career {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 45%;
+}
+
+.contact-form-career input,
+.contact-form-career textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form-career input[type="submit"] {
+  width: 100%;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contact-form-career input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.contact-form-career label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-form-career .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-career .upload-section {
+  display: flex;
+  gap: 10px;
+}
+
 
 
 /* <------ Article page style ------> */

@@ -70,47 +70,46 @@ Template Name: single-open-position
             </div>
         </article>
 
-         <!-- Career contact person -->
-         <h2 class="title">Contact person</h2>
-        <div class="contact-person-career">
-            <div class="contact-person-image">
-                <img src="<?php echo get_field('contact_person_image')['url']; ?>" alt="<?php echo get_field('contact_person_image')['alt']; ?>">
-            </div>
-            <div class="contact-person-details">
-                <p><?php the_field('contact_person_name'); ?></p>
-                <p><?php the_field('contact_person_position'); ?></p>
-                <div class="phone-career">
-                    <i class="material-icons phone-career">call</i>
-                    <p><?php the_field('contact_person_phone'); ?></p>
+        <div class="contact-form-container-career">
+            <!-- Career contact person -->
+            <div class="contact-person-career">
+                <div class="contact-person-image">
+                    <img src="<?php echo get_field('contact_person_image')['url']; ?>" alt="<?php echo get_field('contact_person_image')['alt']; ?>">
                 </div>
-                <div class="contact-links">
-                    <?php if ($contact_mail_icon = get_field('contact_mail_icon')): ?>
-                        <a href="mailto:<?php the_field('contact_person_mail'); ?>">
-                            <img src="<?php echo $contact_mail_icon['url']; ?>" alt="<?php echo $contact_mail_icon['alt']; ?>">
-                        </a>
-                    <?php endif; ?>
-                    <?php if ($contact_linkedin_icon = get_field('contact_linkedin_icon')): ?>
-                        <a href="<?php the_field('contact_person_linkedin'); ?>" target="_blank">
-                            <img src="<?php echo $contact_linkedin_icon['url']; ?>" alt="<?php echo $contact_linkedin_icon['alt']; ?>">
-                        </a>
-                    <?php endif; ?>
-                    <?php if ($contact_vimeo_icon = get_field('contact_vimeo_icon')): ?>
-                        <a href="<?php the_field('contact_person_vimeo'); ?>" target="_blank">
-                            <img src="<?php echo $contact_vimeo_icon['url']; ?>" alt="<?php echo $contact_vimeo_icon['alt']; ?>">
-                        </a>
-                    <?php endif; ?>
+                <div class="contact-person-details">
+                    <p><?php the_field('contact_person_name'); ?></p>
+                    <p><?php the_field('contact_person_position'); ?></p>
+                    <div class="phone-career">
+                        <i class="material-icons phone-career">call</i>
+                        <p><?php the_field('contact_person_phone'); ?></p>
+                    </div>
+                    <div class="contact-links">
+                        <?php if ($contact_mail_icon = get_field('contact_mail_icon')): ?>
+                            <a href="mailto:<?php the_field('contact_person_mail'); ?>">
+                                <img src="<?php echo $contact_mail_icon['url']; ?>" alt="<?php echo $contact_mail_icon['alt']; ?>">
+                            </a>
+                        <?php endif; ?>
+                        <?php if ($contact_linkedin_icon = get_field('contact_linkedin_icon')): ?>
+                            <a href="<?php the_field('contact_person_linkedin'); ?>" target="_blank">
+                                <img src="<?php echo $contact_linkedin_icon['url']; ?>" alt="<?php echo $contact_linkedin_icon['alt']; ?>">
+                            </a>
+                        <?php endif; ?>
+                        <?php if ($contact_vimeo_icon = get_field('contact_vimeo_icon')): ?>
+                            <a href="<?php the_field('contact_person_vimeo'); ?>" target="_blank">
+                                <img src="<?php echo $contact_vimeo_icon['url']; ?>" alt="<?php echo $contact_vimeo_icon['alt']; ?>">
+                            </a>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Apply for job contact form -->
-        <h2 class="title">Apply for the position</h2>
-        <section id="contact-form-section">
+            <!-- Apply for job contact form -->
             <div class="contact-form-career">
                 <?php echo do_shortcode('[contact-form-7 id="c48fb62" title="Apply for the position"]'); ?>
             </div>
-        </section>
+        </div>
     <?php endwhile; ?>
 </main>
 
 <?php get_footer(); ?>
+
