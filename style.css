@@ -635,9 +635,6 @@ h4.text-career {
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
-  border: 1px solid #bdbdbd;
-  border-radius: 13px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form-career input,
