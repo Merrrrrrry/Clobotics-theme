@@ -70,8 +70,8 @@ Template Name: single-open-position
             </div>
         </article>
 
-        <!-- Career contact person -->
-        <h2 class="title">Contact person</h2>
+         <!-- Career contact person -->
+         <h2 class="title">Contact person</h2>
         <div class="contact-person-career">
             <div class="contact-person-image">
                 <img src="<?php echo get_field('contact_person_image')['url']; ?>" alt="<?php echo get_field('contact_person_image')['alt']; ?>">
@@ -82,6 +82,23 @@ Template Name: single-open-position
                 <div class="phone-career">
                     <i class="material-icons phone-career">call</i>
                     <p><?php the_field('contact_person_phone'); ?></p>
+                </div>
+                <div class="contact-links">
+                    <?php if ($contact_mail_icon = get_field('contact_mail_icon')): ?>
+                        <a href="mailto:<?php the_field('contact_person_mail'); ?>">
+                            <img src="<?php echo $contact_mail_icon['url']; ?>" alt="<?php echo $contact_mail_icon['alt']; ?>">
+                        </a>
+                    <?php endif; ?>
+                    <?php if ($contact_linkedin_icon = get_field('contact_linkedin_icon')): ?>
+                        <a href="<?php the_field('contact_person_linkedin'); ?>" target="_blank">
+                            <img src="<?php echo $contact_linkedin_icon['url']; ?>" alt="<?php echo $contact_linkedin_icon['alt']; ?>">
+                        </a>
+                    <?php endif; ?>
+                    <?php if ($contact_vimeo_icon = get_field('contact_vimeo_icon')): ?>
+                        <a href="<?php the_field('contact_person_vimeo'); ?>" target="_blank">
+                            <img src="<?php echo $contact_vimeo_icon['url']; ?>" alt="<?php echo $contact_vimeo_icon['alt']; ?>">
+                        </a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
