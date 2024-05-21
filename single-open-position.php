@@ -25,7 +25,7 @@ Template Name: single-open-position
     <!-- Information about the job position -->
     <?php while (have_posts()) : the_post(); ?>
         <article <?php post_class(); ?>>
-        <div class="job-info">
+            <div class="job-info">
                 <div class="info-item">
                     <div class="info-label">
                         <i class="material-icons info-label">calendar_month</i>
@@ -56,33 +56,35 @@ Template Name: single-open-position
             </div>
 
             <div class="job-description">
-                <p class="text"><?php the_field('headline-1'); ?></p>
+                <p class="text"><strong><?php the_field('headline-1'); ?></strong></p>
                 <p class="text"><?php the_field('paragraph-1'); ?></p>
-                <p class="text"><?php the_field('headline-2'); ?></p>
+                <p class="text"><strong><?php the_field('headline-2'); ?></strong></p>
                 <p class="text"><?php the_field('paragraph-2'); ?></p>
-                <p class="text"><?php the_field('headline-3'); ?></p>
+                <p class="text"><strong><?php the_field('headline-3'); ?></strong></p>
                 <p class="text"><?php the_field('paragraph-3'); ?></p>
-                <p class="text"><?php the_field('headline-4'); ?></p>
+                <p class="text"><strong><?php the_field('headline-4'); ?></strong></p>
                 <p class="text"><?php the_field('paragraph-4'); ?></p>
-                    <div class="read-more-career-button">
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>" class="btn dark">Read more about Clobotics</a>
+                <div class="read-more-career-button">
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>" class="btn dark">Read more about Clobotics</a>
                 </div>
             </div>
         </article>
 
+        <!-- Gap between sections -->
+        <div style="height: 50px;"></div>
+
         <div class="contact-form-container-career" id="contact-form-container-career">
-            <!-- Career contact person -->
             <div class="contact-person-career">
-                <h2 class="title">Contact person</h2>
+                <h2 class="title contact-person-title">Contact person</h2>
                 <div class="contact-person-image">
                     <img src="<?php echo get_field('contact_person_image')['url']; ?>" alt="<?php echo get_field('contact_person_image')['alt']; ?>">
                 </div>
                 <div class="contact-person-details">
-                    <p><?php the_field('contact_person_name'); ?></p>
-                    <p><?php the_field('contact_person_position'); ?></p>
+                    <p class="contact-person-name"><?php the_field('contact_person_name'); ?></p>
+                    <p class="contact-person-position"><?php the_field('contact_person_position'); ?></p>
                     <div class="phone-career">
                         <i class="material-icons phone-career">call</i>
-                        <p><?php the_field('contact_person_phone'); ?></p>
+                        <p class="contact-person-phone"><?php the_field('contact_person_phone'); ?></p>
                     </div>
                     <div class="contact-links">
                         <?php if ($contact_mail_icon = get_field('contact_mail_icon')): ?>
@@ -104,12 +106,15 @@ Template Name: single-open-position
                 </div>
             </div>
 
-            <!-- Apply for job contact form -->
             <div class="contact-form-career">
-                <h2 class="title">Apply for the position</h2>
+                <h2 class="title apply-position-title">Apply for the position</h2>
                 <?php echo do_shortcode('[contact-form-7 id="c48fb62" title="Apply for the position"]'); ?>
             </div>
         </div>
+
+        
+
+
     <?php endwhile; ?>
 </main>
 
