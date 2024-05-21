@@ -117,38 +117,35 @@ Template Name: Wind services
                     </div>
                 </div>
                 <div class="service-content">
+
                 <div class="service-keypoints">
-    <div class="keypoint">
-        <?php
-        $icon1 = get_field('icon_of_the_keypoint_1');
-        if ($icon1) : ?>
-            <div class="list_icon">
-                <img class="list_icon_img" src="<?php echo esc_url($icon1['url']); ?>" alt="<?php echo esc_attr($icon1['alt']); ?>">
-            </div>
-        <?php endif; ?>
-        <p><?php the_field('1st_keypoint'); ?></p>
-    </div>
-    <div class="keypoint">
-        <?php
-        $icon2 = get_field('icon_of_the_keypoint_2');
-        if ($icon2) : ?>
-            <div class="list_icon">
-                <img class="list_icon_img" src="<?php echo esc_url($icon2['url']); ?>" alt="<?php echo esc_attr($icon2['alt']); ?>">
-            </div>
-        <?php endif; ?>
-        <p><?php the_field('2nd_keypoint'); ?></p>
-    </div>
-    <div class="keypoint">
-        <?php
-        $icon3 = get_field('icon_of_the_keypoint_3');
-        if ($icon3) : ?>
-            <div class="list_icon">
-                <img class="list_icon_img" src="<?php echo esc_url($icon3['url']); ?>" alt="<?php echo esc_attr($icon3['alt']); ?>">
-            </div>
-        <?php endif; ?>
-        <p><?php the_field('3rd_keypoint'); ?></p>
-    </div>
-</div>
+                        <div class="keypoint">
+                            <?php
+                            $icon1 = get_field('icon_of_the_keypoint_1');
+                            if ($icon1) : ?>
+                                <div class="list_icon">
+                                    <img class="list_icon_img" src="<?php echo esc_url($icon1['url']); ?>" alt="<?php echo esc_attr($icon1['alt']); ?>">
+                                </div>
+                            <?php endif; ?>
+                            <p><?php the_field('1st_keypoint'); ?></p>
+                        </div>
+                        <div class="keypoint">
+                                <div class="list_icon">
+                                <img class="list_icon_img" src="<?php $image = get_field('icon_of_the_keypoint_2');  echo esc_url($image["url"]); ?>" alt="icon image" /> 
+                                </div>
+                            <p><?php the_field('2nd_keypoint'); ?></p>
+                        </div>
+                        <div class="keypoint">
+                            <?php
+                            $icon3 = get_field('icon_of_the_keypoint_3');
+                            if ($icon3) : ?>
+                                <div class="list_icon">
+                                <img class="list_icon_img" src="<?php $image = get_field('icon_of_the_keypoint_3');  echo esc_url($image["url"]); ?>" alt="icon image" /> 
+                                </div>
+                            <?php endif; ?>
+                            <p><?php the_field('3rd_keypoint'); ?></p>
+                        </div>
+                    </div>
 
                     <div class="btn-wrapper">
                         <a href="<?php the_permalink(); ?>" class="btn">Read more</a>

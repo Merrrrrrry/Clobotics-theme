@@ -595,6 +595,115 @@ h4.text-career {
   margin-right: 5px;
 }
 
+.contact-links a {
+  margin: 0 5px;
+}
+
+.contact-links img {
+  width: 30px;
+  height: 30px;
+}
+
+/* <------ Contact Form Career style ------> */
+
+.contact-form-career input,
+.contact-form-career textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #bdbdbd;
+  border-radius: 13px;
+}
+
+.contact-form-career input[type="submit"] {
+  width: 100%;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.contact-form-career input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.contact-form-career label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-form-career .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-career .upload-section {
+  display: flex;
+  gap: 10px;
+}
+
+/* <------ Drag and Drop File Upload Style ------> */
+
+.codedropz-upload-wrapper {
+  width: 48%;
+  margin: 0;
+}
+
+.codedropz-upload-handler {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  border: 1px dashed #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f9f9f9;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.codedropz-upload-handler h3,
+.codedropz-upload-handler span,
+.codedropz-btn-wrap a {
+  font-size: 12px;
+  color: #666;
+  margin: 5px 0;
+  text-transform: none;
+}
+
+.codedropz-btn-wrap a {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.codedropz-btn-wrap a:hover {
+  background-color: #0056b3;
+}
+
+.dnd-upload-counter {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .contact-form-container-career {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-person-career, .contact-form-career {
+    width: 100%;
+  }
+
+  .codedropz-upload-wrapper {
+    width: 100%;
+  }
+}
 
 /* <------ Article page style ------> */
 
