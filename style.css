@@ -760,13 +760,7 @@ h4.text-career {
 
 
 
-.full-width-half-circle {
-  width: 100%;
-  height: 50vh; /* Half of the viewport height */
-  background-color: #ccc; /* Gray color */
-  border-radius: 100% 100% 0 0; /* Half-circle shape with round side up */
-  overflow: hidden;
-}
+
 
 
 

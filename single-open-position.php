@@ -112,7 +112,7 @@ Template Name: single-open-position
             </div>
         </div>
 
-        <div class="full-width-half-circle"></div>
+        
 
 
     <?php endwhile; ?>
