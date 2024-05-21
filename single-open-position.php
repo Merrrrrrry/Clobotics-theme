@@ -70,7 +70,7 @@ Template Name: single-open-position
             </div>
         </article>
 
-        <div class="contact-form-container-career">
+        <div class="contact-form-container-career" id="contact-form-container-career">
             <!-- Career contact person -->
             <div class="contact-person-career">
                 <h2 class="title">Contact person</h2>
