@@ -141,7 +141,7 @@ Template Name: Wind services
                             <?php endif; ?>
                             <p><?php the_field('3rd_keypoint'); ?></p>
                         </div>
-                    </div>
+                    </div class="wind_list_button">
                     <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
                 </div>
             </li>

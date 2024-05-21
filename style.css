@@ -991,10 +991,11 @@ main {
   flex-wrap: wrap;
   list-style: none;
   padding: 30px 120px;
+  margin: 0; /* Added to ensure no extra space around */
 }
 
 .service-item {
-  width: 33.33%;
+  width: 33.3333%;
   padding: 0;
   box-sizing: border-box;
   position: relative;
@@ -1003,11 +1004,12 @@ main {
   background: #fff;
   border-radius: 5px;
   overflow: hidden;
+  min-height: 400px; /* Ensures consistent height */
 }
 
 .service-main-image {
   position: relative;
-  height: 200px;
+  height: 200px; /* Adjust height as needed */
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -1024,7 +1026,7 @@ main {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: #ffffff;
   padding: 10px 0;
   box-sizing: border-box;
   text-align: center;
@@ -1032,7 +1034,7 @@ main {
 
 .service-title {
   margin: 0;
-  color: #fff;
+  color: #000000;
 }
 
 .service-content {
@@ -1054,7 +1056,7 @@ main {
   margin-right: 15px;
 }
 
-.btn {
+.wind_list_button .btn {
   width: auto;
   align-self: center;
   padding: 10px 20px;
@@ -1065,8 +1067,6 @@ main {
     width: 100%;
   }
 }
-
-
 
 
 
