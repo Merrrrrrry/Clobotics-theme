@@ -33,16 +33,16 @@ Template Name: About us
 
 <!-- Hero Video (referenced from busters world) -->
 
-    <video autoplay muted loop class="video-background"> 
+    <!-- <video autoplay muted loop class="video-background"> 
         <source src="<?php echo get_template_directory_uri(); ?>/video/video-top.mp4" type="video/mp4">
-    </video>
+    </video> -->
 
 
 
 <!-- Article  Section -->
 <!-- Who we are -->
 
-<div class="article_main who-we-are">
+<section class="article_main who-we-are">
 
     <h2 class="title"><?php the_field('article_title_who_we_are'); ?></h2>
     <p class="subtitle"><?php the_field('subtitle_of_article_who_we_are'); ?></p>
@@ -53,13 +53,13 @@ Template Name: About us
         <img class="who-we-are-img right" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt="">
         
         <img class="" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt="Article image" /> 
-</div>
+</section>
 
 
 <!-- Article  Section -->
-<!-- One company Two directions -->
+<!-- One company Two directions --> 
 
-<div class="article_secondary_main one_company_two_directions">
+<section class="article_secondary_main one_company_two_directions">
 
     <img class="two_directions_collage_img " src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt=""> 
         <h3 class="title"><?php the_field('article_title_one_company_two_directions'); ?></h3>
@@ -68,7 +68,7 @@ Template Name: About us
         <p class="text"><?php the_field('retail_part_text'); ?></p>
                 <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Discover Retail services</a>
 
-</div>
+</section>
 
 
 
@@ -77,6 +77,15 @@ Template Name: About us
     <h2 class="title">Meet our team</h2>
     
     <section class="filters_container">
+        <!-- Filters for Regions -->
+        <div id="region-filters" class="filters">
+        <select id="region-select" class="filter-select">
+            <option class=" " value="all">Region</option>
+            <option class=" " value="Asia">Asia</option>
+            <option class=" " value="Europe">Europe</option>
+            <option class=" " value="America">America</option>
+        </select>
+    </div> 
     <!-- Filters for Positions -->
     <div id="position-filters" class="filters">
         <button class="filter-btn" data-filter="all">All</button>
@@ -85,18 +94,9 @@ Template Name: About us
         <button class="filter-btn" data-filter="Sales Manager">Sales Manager</button>
         <button class="filter-btn" data-filter="Project Coordinator">Project Coordinator</button>
     </div>
-    
-    <!-- Filters for Regions -->
-    <div id="region-filters" class="filters">
-        <select id="region-select" class="filter-select">
-            <option class=" " value="all">Region</option>
-            <option class=" " value="Asia">Asia</option>
-            <option class=" " value="Europe">Europe</option>
-            <option class=" " value="America">America</option>
-        </select>
-    </div> 
-    </section>
-    
+     </section>
+
+
     <!-- loop function  (meet our team) -->
     <div class="meet-our-team_main_content">
         <?php 
@@ -130,28 +130,28 @@ Template Name: About us
     </div>
     
 <!-- Show More Button -->
-<div class="container_to_center"> 
+<section class="container_to_center"> 
     <a href="javascript:void(0);" class="btn optional btn-shadow" id="show-more-btn" class="btn optional">Show more</a>
  <!-- Show Less Button -->
     <a href="javascript:void(0);" class="btn optional btn-shadow" id="show-less-btn" style="display: none;">Show less</a>
-</div>
+</section>
 </section>
 
 
 
 <!-- Join or Contact us  Section -->
 
-<div class="join_or_contact_us container_to_center">
+<section class="join_us_container">
 
     <h3 class="title"><?php the_field('article_title_want_to_join'); ?></h3>
     <img class="join_or_contact_collage_img " src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt=""> 
         <p class="subtitle"><?php the_field('subtitle_of_article_want_to_join'); ?></p>
-        <div class="flex space-around">
+        <div class="join_or_contact_us_btns">
             <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Work for us</a>
             <a href="<?php echo get_permalink('  ............  ') ?>" class="btn light">Work with us</a>
         </div>
 
-</div>
+</section>
 
 
 <!-- Company History Timeline Section -->

@@ -151,6 +151,19 @@ p.subtitle {
   flex-direction: row;
   justify-content: center;
 }
+.join_us_container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.join_or_contact_us_btns {
+  justify-content: center;
+  flex-direction: row;
+}
+.join_or_contact_us_btns a.btn {
+  margin: 0 5em 0 0;
+}
+
 /* 
 .container_to_center_text {
   text-align: center;
@@ -1339,6 +1352,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 .company-history-left {
   flex: 1;
   display: flex;
+  font-size: 25px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -1363,10 +1377,12 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 }
 
 .company-history-logo img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-bottom: 10px;
+    width: 16em;
+    overflow: overlay;
+    max-height: 10em;
+    border-radius: 17%;
+    margin-bottom: 10px;
+    object-fit: cover;
 }
 
 .company-history-dot {
@@ -1396,10 +1412,10 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 }
 
 .company-history-right .company-history-text {
-  text-align: left;
-  padding: 0 20px;
+  text-align: center;
+  padding: 0 5em 0 11em;
+  font-size: 20px;
 }
-
 
 
 /* Responsive Design */
