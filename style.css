@@ -569,12 +569,12 @@ h4.text-career {
 
 .contact-form-container-career {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
 }
 
 .contact-person-career, .contact-form-career {
-  width: 50%;
+  width: 48%; /* Make the sections narrower */
 }
 
 .contact-person-career {
@@ -611,20 +611,23 @@ h4.text-career {
 }
 
 .contact-links img {
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
 }
 
 /* <------ Contact Form Career style ------> */
 
 .contact-form-career {
-  width: 80%; /* Make the form more narrow */
-  margin: 0 auto; /* Center align the form */
+  padding: 20px;
+  background-color: #fff; /* Add white background */
+  border: 1px solid #bdbdbd;
+  border-radius: 13px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add slight shadow for better visibility */
 }
 
 .contact-form-career input,
 .contact-form-career textarea {
-  width: 100%;
+  width: calc(100% - 22px); /* Make the fields narrower */
   padding: 10px;
   border: 1px solid #bdbdbd;
   border-radius: 13px;
@@ -718,19 +721,18 @@ h4.text-career {
 /* Media Query for Responsive Design */
 @media (max-width: 768px) {
   .contact-form-container-career {
-    flex-direction: column;
-    width: 100%;
+      flex-direction: column;
+      width: 100%;
   }
 
   .contact-person-career, .contact-form-career {
-    width: 100%;
+      width: 100%;
   }
 
   .codedropz-upload-wrapper {
-    width: 100%;
+      width: 100%;
   }
 }
-
 
 
 
