@@ -999,24 +999,24 @@ main {
 }
 
 .right_and_left {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -20em;
-    padding: 0 0 8em 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0 8em 0;
+  margin: 7em 0 0 0;
 }
 
 .left {
   flex-direction: column;
   text-align: left;
-  width: 30%;
-  margin: 20px;
+  width: 20%;
+  margin: 0 2em 0 3em;
 }
 
 .right {
   flex-direction: column;
   text-align: right;
-  width: 30%;
-  margin: 20px;
+  width: 20%;
+  margin: 0 2em 0 3em;
 }
 
 

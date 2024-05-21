@@ -59,16 +59,16 @@ Template Name: About us
 <section class="article_secondary_main one_company_two_directions" style="text-align: center;">
 
     <img  class="two_directions_collage_img" src="<?php echo get_template_directory_uri(); ?>/media/about_us_imgs/Group2.png" alt="Article img">
-    <h3 class="title section-title dark_line" style="margin: -2em 0 0 0;"><?php the_field('article_title_one_company_two_directions'); ?></h3>
+    <h3 class="title section-title dark_line" style="margin: -13em 0 0 0;"><?php the_field('article_title_one_company_two_directions'); ?></h3>
 
     <div class="right_and_left">        
         <div class="left flex">
                 <p class="text"><?php the_field('wind_part_text'); ?></p>
-                <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Discover Wind services</a>
+                <a style="margin: 1em 43px auto;;" href="<?php echo get_permalink('  ............  ') ?>" class="btn">Discover Wind services</a>
         </div>
         <div class="right flex">
                 <p class="text"><?php the_field('retail_part_text'); ?></p>
-                <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Discover Retail services</a>
+                <a style="margin: 1em auto 43px;" href="<?php echo get_permalink('  ............  ') ?>" class="btn">Discover Retail services</a>
         </div>
     </div>
 
