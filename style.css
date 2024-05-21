@@ -618,8 +618,8 @@ h4.text-career {
 /* <------ Contact Form Career style ------> */
 
 .contact-form-career {
-  width: 80%; /* Make the form more narrow */
-  margin: 0 auto; /* Center align the form */
+  width: 80%; 
+  margin: 0 auto; 
 }
 
 .contact-form-career input,
@@ -628,11 +628,10 @@ h4.text-career {
   padding: 10px;
   border: 1px solid #bdbdbd;
   border-radius: 13px;
-  margin-bottom: 5px; /* Reduce margin between fields */
 }
 
 .contact-form-career textarea {
-  height: 150px; /* Set height according to your preference */
+  height: 150px; 
 }
 
 .contact-form-career input[type="submit"] {
@@ -643,7 +642,6 @@ h4.text-career {
   border-radius: 5px;
   padding: 10px;
   cursor: pointer;
-  margin-top: 5px; /* Adjust margin from previous field */
 }
 
 .contact-form-career input[type="submit"]:hover {
@@ -652,7 +650,6 @@ h4.text-career {
 
 .contact-form-career label {
   display: block;
-  margin-bottom: 5px; /* Reduce margin between labels */
 }
 
 .contact-form-career .column {
@@ -679,14 +676,14 @@ h4.text-career {
 
 .codedropz-upload-handler {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 100px;
-  border: 1px solid #bdbdbd; /* Match border color with contact form */
+  border: 1px solid #bdbdbd; 
   border-radius: 13px;
   text-align: center;
-  background-color: #fff; /* Set background color to white */
+  background-color: #fff; 
   font-family: 'Open Sans', sans-serif;
 }
 
