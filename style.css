@@ -604,14 +604,20 @@ h4.text-career {
 
 .contact-person-name {
   margin: 0; 
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
 }
 
 .contact-person-position {
   margin: 0; 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .contact-person-phone {
   margin: 0; 
+  font-size: 15px;
 }
 
 
