@@ -758,6 +758,7 @@ h4.text-career {
     flex-direction: column;
     width: 100%;
   }
+}
 
   .contact-person-career, .contact-form-career {
     width: 100%;
@@ -2013,5 +2014,5 @@ img.footer-logo {
 .social-icons img{
   align-items: center;  
   text-align: center;
-}
 
+}
