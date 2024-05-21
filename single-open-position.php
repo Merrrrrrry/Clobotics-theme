@@ -71,7 +71,7 @@ Template Name: single-open-position
         </article>
 
         <!-- Gap between sections -->
-        <div style="height: 30px;"></div>
+        <div style="height: 40px;"></div>
 
         <div class="contact-form-container-career" id="contact-form-container-career">
             <div class="contact-person-career">
