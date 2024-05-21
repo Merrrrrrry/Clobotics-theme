@@ -1527,7 +1527,8 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 }
 .section-title.dark_line::after {
   background-color: #002D61;
-  height: 1px; 
+  height: 1.5px;
+  max-width: 800px; 
 }
 .section-title.light_line::after {
   background-color: #86D0F4;

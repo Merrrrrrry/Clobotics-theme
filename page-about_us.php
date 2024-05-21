@@ -59,7 +59,7 @@ Template Name: About us
 <section class="article_secondary_main one_company_two_directions" style="text-align: center;">
 
     <img  class="two_directions_collage_img" src="<?php echo get_template_directory_uri(); ?>/media/about_us_imgs/Group2.png" alt="Article img">
-    <h3 class="title section-title dark_line" style="margin: 22em 0 0 0;"><?php the_field('article_title_one_company_two_directions'); ?></h3>
+    <h3 class="title section-title dark_line" style="margin: -2em 0 0 0;"><?php the_field('article_title_one_company_two_directions'); ?></h3>
 
     <div class="right_and_left">        
         <div class="left flex">
