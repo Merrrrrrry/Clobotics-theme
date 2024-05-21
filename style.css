@@ -1145,6 +1145,73 @@ main {
 
 /*---------------------------WIND SERVICES PAGE----------------------------*/
 /*---------------------------WIND SERVICES PAGE----------------------------*/
+/* Section Title */
+.we_operate_globally .title {
+  text-align: center;
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+/* Flex Container */
+.we_operate_globally_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 10%;
+}
+
+/* Half-size Containers */
+.half-size {
+  width: 48%;
+}
+
+/* Text Container */
+#text_container .text {
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Buttons and Images Container */
+#buttons_switcher_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Button Styling */
+.img_selector {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.img_selector li {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.img_selector li:hover {
+  background-color: #f0f0f0;
+}
+
+
+.we_operate_globally-img {
+  max-width: 100%;
+  display: none;
+}
+
+.we_operate_globally-img.hidden {
+  display: none;
+}
+
+.we_operate_globally-img:not(.hidden) {
+  display: block;
+}
 
 
 /* <------- Wind services search bar -------> */
