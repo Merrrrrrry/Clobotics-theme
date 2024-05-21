@@ -1190,6 +1190,26 @@ main {
 }
 
 
+@media (max-width: 768px) {
+  .we_operate_globally {
+    padding: 20px 40px;
+  }
+
+  .half-size {
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+
+  .half-size p {
+    padding-top: 30px;
+  }
+
+  .img_selector {
+    justify-content: center;
+  }
+}
+
+/* Phone Styles */
 @media (max-width: 480px) {
   .we_operate_globally {
     padding: 15px 20px;
