@@ -104,11 +104,15 @@ Template Name: Wind services
                 echo '</ul><ul id="service-list" class="service-list">'; // Close the row and start a new one every 3 items
             }
 
-            // Retrieve the image URL and alt text
-            $image = get_field('service_main_image');
-            $image_url = !empty($image) ? esc_url($image['url']) : '';
             ?>
-            <li class="service-item" style="background-image: url('<?php echo $image_url; ?>');">
+            <li class="service-item">
+                <div class="service-main-image">
+                    <?php
+                    $image = get_field('service_main_image');
+                    if (!empty($image)) : ?>
+                        <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                    <?php endif; ?>
+                </div>
                 <div class="overlay">
                     <h3 class="service-title"><?php the_field('service_title'); ?></h3>
                 </div>
@@ -150,7 +154,6 @@ Template Name: Wind services
         <p class="service-subtitle">No wind services available.</p>
     <?php endif; ?>
 </ul>
-
 
 
 
