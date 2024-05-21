@@ -7,7 +7,7 @@ function showInfo() {
     }
 }
 
-// Navbar burber menu
+// Navbar burger menu
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('burger-menu').addEventListener('click', function () {
       document.getElementById('navbar-nav').classList.toggle('active');

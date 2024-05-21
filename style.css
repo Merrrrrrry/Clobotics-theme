@@ -1126,6 +1126,74 @@ main {
 
 /*---------------------------WIND SERVICES PAGE----------------------------*/
 /*---------------------------WIND SERVICES PAGE----------------------------*/
+<<<<<<< Updated upstream
+=======
+
+
+
+
+/* We operate globaly */
+
+
+.we_operate_globally{
+  padding: 30px 120px;
+}
+
+.we_operate_globally_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 10%;
+}
+
+
+.half-size {
+  width: 45%;
+  margin: 0 2%;
+}
+
+
+/* Buttons and Images Container */
+#buttons_switcher_container {
+  display: flex;
+  align-items: center;
+}
+
+/* Button Styling */
+.img_selector {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.img_selector li {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.img_selector li:hover {
+  background-color: #f0f0f0;
+}
+
+
+.we_operate_globally-img {
+  max-width: 100%;
+  display: none;
+}
+
+.we_operate_globally-img.hidden {
+  display: none;
+}
+
+.we_operate_globally-img:not(.hidden) {
+  display: block;
+}
+>>>>>>> Stashed changes
 
 
 /* <------- Wind services search bar -------> */
