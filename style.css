@@ -176,7 +176,7 @@ p.subtitle {
 /* Section margin */
 
 section {
- margin: 4em 0;
+  margin: 7em 0 0 0;
 }
 
 
@@ -993,9 +993,11 @@ main {
 }
 
 .two_directions_collage_img {
-  width: 100%;
+  width: 60%;
   height: auto;
   display: inline-block;
+  overflow: hidden;
+  z-index: -1;
 }
 
 .join_or_contact_collage_img {
@@ -1004,6 +1006,9 @@ main {
   overflow: hidden;
 }
 
+.join_us_content_container {
+  margin-top: -10em;
+}
 
 /*MEET OUR TEAM SECTION (filters)*/
 .filters_container {
@@ -1012,8 +1017,6 @@ main {
   justify-content: space-between;
   padding: 0 6em 2em;
 }
-
-
 
 /*MEET OUR TEAM LOOP */
 
