@@ -605,13 +605,14 @@ h4.text-career {
 .contact-person-name {
   margin: 0; 
   font-family: 'Roboto', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
+  font-weight: lighter;
 }
 
 .contact-person-position {
   margin: 0; 
   font-family: 'Open Sans', sans-serif;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 
