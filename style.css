@@ -359,13 +359,19 @@ height:auto;
 .search-button {
   background-color: #00B3EC;
   border: none;
-  padding: 12px 24px; 
+  padding: 12px 15px; 
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px; 
+  border-radius: 23px; 
 } 
+
+button.filter-button {
+  padding: 12px 15px; 
+  border-radius: 23px; 
+  
+}
 
 
 /* Filters */
