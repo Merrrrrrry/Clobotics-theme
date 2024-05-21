@@ -772,7 +772,7 @@ h4.text-career {
   gap: 10px;
 }
 
-.filters select, .filter-button, .filter-btn {
+.filters select, .filter-button {
   cursor: pointer;
   border: 2px solid transparent; 
   border-radius: 20px; 
@@ -781,6 +781,17 @@ h4.text-career {
   font-size: 16px;
   color: black;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+}
+
+.filter-btn {
+  cursor: pointer;
+  border: 2px solid transparent; 
+  border-radius: 20px; 
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  color: black;
   text-align: center;
 }
 
@@ -1077,7 +1088,7 @@ main {
 }
 
 .meet-our-team_main_content > .meet-our-team-box-content {
-  width: 25%;
+  width: 20%;
   text-align: center;
 }
 
@@ -1108,10 +1119,10 @@ main {
     margin: 2rem;
 }
 
-.position-filters {
+#position-filters {
   border: 2px solid transparent;
   border-radius: 20px;
-  padding: 20px;
+  padding: 5px;
   outline: none;
   box-shadow: 0 2px 9px rgba(0, 0, 0, 0.1);
   text-align: center;
