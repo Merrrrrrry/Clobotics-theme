@@ -563,8 +563,19 @@ h4.text-career {
   text-align: left; 
 }
 
+
+
 /* <------ Contact Person Career style ------> */
 
+.contact-form-container-career {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-person-career, .contact-form-career {
+  width: 50%;
+}
 
 .contact-person-career {
   display: flex;
@@ -574,24 +585,24 @@ h4.text-career {
 
 .contact-person-details {
   text-align: center; 
-  margin-top: 20px; 
 }
 
 .contact-person-image img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover; 
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
 .phone-career {
   display: flex;
   align-items: center; 
-  
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .phone-career i {
   font-size: 24px;
-  color:#000000;
+  color: #000000;
   margin-right: 5px;
 }
 
@@ -600,18 +611,27 @@ h4.text-career {
 }
 
 .contact-links img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 /* <------ Contact Form Career style ------> */
 
+.contact-form-career {
+  width: 80%; 
+  margin: 0 auto; 
+}
+
 .contact-form-career input,
 .contact-form-career textarea {
-  width: calc(100% - 20px);
+  width: 100%;
   padding: 10px;
   border: 1px solid #bdbdbd;
   border-radius: 13px;
+}
+
+.contact-form-career textarea {
+  height: 150px; 
 }
 
 .contact-form-career input[type="submit"] {
@@ -630,7 +650,6 @@ h4.text-career {
 
 .contact-form-career label {
   display: block;
-  margin-bottom: 10px;
 }
 
 .contact-form-career .column {
@@ -641,6 +660,11 @@ h4.text-career {
 .contact-form-career .upload-section {
   display: flex;
   gap: 10px;
+  width: 100%;
+}
+
+.contact-form-career p {
+  margin: 0; /* Remove margins from paragraphs */
 }
 
 /* <------ Drag and Drop File Upload Style ------> */
@@ -652,20 +676,19 @@ h4.text-career {
 
 .codedropz-upload-handler {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 100px;
-  border: 1px dashed #ccc;
-  border-radius: 5px;
+  border: 1px solid #bdbdbd; 
+  border-radius: 13px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #fff; 
   font-family: 'Open Sans', sans-serif;
 }
 
 .codedropz-upload-handler h3,
-.codedropz-upload-handler span,
-.codedropz-btn-wrap a {
+.codedropz-upload-handler span {
   font-size: 12px;
   color: #666;
   margin: 5px 0;
@@ -673,23 +696,23 @@ h4.text-career {
 }
 
 .codedropz-btn-wrap a {
-  display: inline-block;
-  padding: 5px 10px;
-  background-color: #007BFF;
-  color: #fff;
-  border-radius: 3px;
-  text-decoration: none;
+  color: #007BFF; /* Change button text color to blue */
+  text-decoration: underline;
   font-size: 12px;
+  border: none; /* Remove button border */
+  background: none; /* Remove button background */
+  padding: 0; /* Remove padding */
 }
 
 .codedropz-btn-wrap a:hover {
-  background-color: #0056b3;
+  text-decoration: underline; /* Keep text decoration on hover */
 }
 
 .dnd-upload-counter {
   display: none;
 }
 
+/* Media Query for Responsive Design */
 @media (max-width: 768px) {
   .contact-form-container-career {
     flex-direction: column;
@@ -704,6 +727,9 @@ h4.text-career {
     width: 100%;
   }
 }
+
+
+
 
 /* <------ Article page style ------> */
 
@@ -1951,5 +1977,5 @@ img.footer-logo {
 .social-icons img{
   align-items: center;  
   text-align: center;
-}
 
+}
