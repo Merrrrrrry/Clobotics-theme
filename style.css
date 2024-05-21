@@ -745,16 +745,8 @@ h4.text-career {
   margin-right: 20px;
 }
 
-@media (min-width: 769px) {
-  .contact-form-container-career {
-    display: flex;
-    justify-content: space-between;
-  }
 
-  .contact-person-career, .contact-form-career {
-    width: 48%;
-  }
-}
+
 
 .contact-form-container-career .contact-person-title {
   margin-right: 0px !important;
