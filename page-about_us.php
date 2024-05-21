@@ -56,7 +56,7 @@ Template Name: About us
 <!-- Article  Section -->
 <!-- One company Two directions --> 
 
-<section class="article_secondary_main one_company_two_directions">
+<section class="article_secondary_main one_company_two_directions" style="text-align: center;">
     <img  class="two_directions_collage_img" src="<?php echo get_template_directory_uri(); ?>/media/about_us_imgs/Group2.png" alt="Article img">
         <h3 class="title"><?php the_field('article_title_one_company_two_directions'); ?></h3>
         <p class="text"><?php the_field('wind_part_text'); ?></p>
