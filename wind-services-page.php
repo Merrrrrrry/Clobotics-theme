@@ -103,12 +103,13 @@ Template Name: Wind services
             if ($counter % 3 === 0 && $counter !== 0) {
                 echo '</ul><ul id="service-list" class="service-list">'; // Close the row and start a new one every 3 items
             }
+
+            // Retrieve the image
+            $image = get_field('service_main_image');
             ?>
             <li class="service-item">
                 <div class="service-main-image">
-                    <?php
-                    $image = get_field('service_main_image');
-                    if (!empty($image)) : ?>
+                    <?php if (!empty($image)) : ?>
                         <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
                     <?php endif; ?>
                     <div class="overlay">
@@ -141,8 +142,10 @@ Template Name: Wind services
                             <?php endif; ?>
                             <p><?php the_field('3rd_keypoint'); ?></p>
                         </div>
-                    </div class="wind_list_button">
-                    <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
+                    </div>
+                    <div class="btn-wrapper">
+                        <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
+                    </div>
                 </div>
             </li>
             <?php
@@ -153,6 +156,7 @@ Template Name: Wind services
         <p class="service-subtitle">No wind services available.</p>
     <?php endif; ?>
 </ul>
+
 
 
 

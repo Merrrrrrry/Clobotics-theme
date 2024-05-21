@@ -991,7 +991,7 @@ main {
   flex-wrap: wrap;
   list-style: none;
   padding: 30px 120px;
-  margin: 0; /* Added to ensure no extra space around */
+  margin: 0; /* Ensure no extra space around */
 }
 
 .service-item {
@@ -1026,7 +1026,7 @@ main {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
   padding: 10px 0;
   box-sizing: border-box;
   text-align: center;
@@ -1034,7 +1034,7 @@ main {
 
 .service-title {
   margin: 0;
-  color: #000000;
+  color: #fff;
 }
 
 .service-content {
@@ -1056,9 +1056,13 @@ main {
   margin-right: 15px;
 }
 
-.wind_list_button .btn {
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
   width: auto;
-  align-self: center;
   padding: 10px 20px;
 }
 
@@ -1067,6 +1071,7 @@ main {
     width: 100%;
   }
 }
+
 
 
 
