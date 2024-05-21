@@ -566,6 +566,18 @@ h4.text-career {
 /* <------ Contact Person Career style ------> */
 
 
+/* <------ Contact Person Career style ------> */
+
+.contact-form-container-career {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-person-career, .contact-form-career {
+  width: 50%;
+}
+
 .contact-person-career {
   display: flex;
   flex-direction: column; 
@@ -574,24 +586,24 @@ h4.text-career {
 
 .contact-person-details {
   text-align: center; 
-  margin-top: 20px; 
 }
 
 .contact-person-image img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover; 
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
 .phone-career {
   display: flex;
   align-items: center; 
-  
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .phone-career i {
   font-size: 24px;
-  color:#000000;
+  color: #000000;
   margin-right: 5px;
 }
 
@@ -603,6 +615,7 @@ h4.text-career {
   width: 30px;
   height: 30px;
 }
+
 
 /* <------ Contact Form Career style ------> */
 
@@ -643,7 +656,11 @@ h4.text-career {
   gap: 10px;
 }
 
+
+
+
 /* <------ Drag and Drop File Upload Style ------> */
+
 
 .codedropz-upload-wrapper {
   width: 48%;
@@ -656,10 +673,10 @@ h4.text-career {
   align-items: center;
   justify-content: center;
   height: 100px;
-  border: 1px dashed #ccc;
-  border-radius: 5px;
+  border: 1px solid #bdbdbd; /* Match border color with contact form */
+  border-radius: 13px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #fff; /* Set background color to white */
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -675,21 +692,67 @@ h4.text-career {
 .codedropz-btn-wrap a {
   display: inline-block;
   padding: 5px 10px;
-  background-color: #007BFF;
-  color: #fff;
+  color: #007BFF; /* Change button text color to blue */
+  border: 1px solid #007BFF; /* Set border color to blue */
   border-radius: 3px;
   text-decoration: none;
   font-size: 12px;
 }
 
 .codedropz-btn-wrap a:hover {
-  background-color: #0056b3;
+  background-color: #f9f9f9; /* Change button background color on hover */
 }
 
 .dnd-upload-counter {
   display: none;
 }
 
+/* Adjustments to Contact Form Fields */
+.contact-form-career input,
+.contact-form-career textarea {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #bdbdbd; /* Match border color with drag and drop section */
+  border-radius: 13px;
+  margin-bottom: 5px; /* Reduce margin between fields */
+}
+
+.contact-form-career input[type="submit"] {
+  width: 100%;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 5px; /* Adjust margin from previous field */
+}
+
+.contact-form-career input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.contact-form-career label {
+  display: block;
+  margin-bottom: 5px; /* Reduce margin between labels */
+}
+
+.contact-form-career .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-career .upload-section {
+  display: flex;
+  gap: 10px;
+}
+
+/* Adjust height of message field */
+.contact-form-career textarea {
+  height: 150px; /* Set height according to your preference */
+}
+
+/* Media Query for Responsive Design */
 @media (max-width: 768px) {
   .contact-form-container-career {
     flex-direction: column;
@@ -703,7 +766,6 @@ h4.text-career {
   .codedropz-upload-wrapper {
     width: 100%;
   }
-}
 
 /* <------ Article page style ------> */
 
