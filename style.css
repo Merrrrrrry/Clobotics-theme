@@ -995,7 +995,7 @@ main {
 
 .service-item {
   width: 33.33%;
-  padding: 0px;
+  padding: 0;
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -1007,7 +1007,7 @@ main {
 
 .service-main-image {
   position: relative;
-  height: 200px; 
+  height: 200px;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -1024,25 +1024,25 @@ main {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background: #ffffff;
-  padding: 0px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 0;
   box-sizing: border-box;
   text-align: center;
 }
 
 .service-title {
   margin: 0;
-  color: #000000;
+  color: #fff;
 }
 
-.service-content { 
+.service-content {
   padding: 20px;
   box-sizing: border-box;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}  
+}
 
 .service-keypoints .keypoint {
   display: flex;
@@ -1052,6 +1052,18 @@ main {
 
 .keypoint-icon {
   margin-right: 15px;
+}
+
+.btn {
+  width: auto;
+  align-self: center;
+  padding: 10px 20px;
+}
+
+@media (max-width: 768px) {
+  .service-item {
+    width: 100%;
+  }
 }
 
 
