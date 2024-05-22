@@ -231,7 +231,7 @@ Template Name: About us
         <?php $loop = new WP_Query( array( 'post_type' => 'new-article', 'posts_per_page' => -1 ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
             
-            <div class="news_articles_single_container col">
+            <div class="news_articles_single_container">
                     <a href="<?php the_permalink(); ?>">
                         <?php
                         $image = get_field('article_main_image');
@@ -239,9 +239,11 @@ Template Name: About us
                             echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '">';
                         endif;
                         ?>
-                        <h3><?php the_field('new_article_title'); ?></h3>
-                        <p><?php the_field('meta_description_short'); ?></p>
-                        <p class="article-category"><?php echo get_field('article_category'); ?></p>
+                        <div class="white_container_for_linking">
+                            <h3><?php the_field('new_article_title'); ?></h3>
+                            <p><?php the_field('meta_description_short'); ?></p>
+                            <p class="article-category"><?php echo get_field('article_category'); ?></p>
+                        </div>
                     </a>
                     </div>           
 
