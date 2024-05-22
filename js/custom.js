@@ -63,6 +63,36 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //articles
   jQuery(document).ready(function($) {
+    function applyArticleStyles() {
+        $('#articles-container').find('article').each(function() {
+            $(this).css({
+                'flex': '0 0 calc(30% - 20px)',
+                'max-width': 'calc(30% - 20px)',
+                'margin-bottom': '20px',
+                'box-shadow': '0 0 10px rgba(0, 0, 0, 0.1)',
+                'border-radius': '10px',
+                'overflow': 'hidden',
+                'background': '#fff'
+            });
+            $(this).find('img').css({
+                'width': '100%',
+                'height': 'auto'
+            });
+            $(this).find('h3').css({
+                'padding': '15px',
+                'font-size': '1.2em',
+                'color': '#333'
+            });
+            $(this).find('p').css({
+                'padding': '0 15px 15px',
+                'color': '#666'
+            });
+        });
+    }
+
+    // Apply article styles initially
+    applyArticleStyles();
+
     $('#search-form-articles').on('submit', function(event) {
         event.preventDefault();
 
@@ -76,19 +106,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 search_query: searchQuery
             },
             success: function(response) {
-                $('#articles-container').html(response); // Reload articles container with updated content
-                
-                // Re-apply styles to the dynamically loaded content
+                $('#articles-container').html(response);
+                // Apply article styles after search
                 applyArticleStyles();
             }
         });
     });
-
-    // Function to apply styles to articles
-    function applyArticleStyles() {
-        // Apply styles to articles
-        $('#articles-container article').each(function() {
-            $(this).addClass('col'); // Add 'col' class to each article
-        });
-    }
 });
