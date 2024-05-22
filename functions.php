@@ -261,8 +261,14 @@ add_action('wp_ajax_nopriv_clobotics_search_wind_services', 'clobotics_ajax_sear
 
 
 // Handle AJAX search for new articles
-<?php
-// Handle AJAX search for articles
+// Handle AJAX search for wind services
+function clobotics_ajax_search_wind_services() {
+    // Function code...
+}
+add_action('wp_ajax_clobotics_search_wind_services', 'clobotics_ajax_search_wind_services');
+add_action('wp_ajax_nopriv_clobotics_search_wind_services', 'clobotics_ajax_search_wind_services');
+
+// Handle AJAX search for new articles
 function clobotics_ajax_search_articles() {
     $searchQuery = isset($_POST['search_query']) ? sanitize_text_field($_POST['search_query']) : '';
     $page = isset($_POST['page']) ? intval($_POST['page']) : 1;
