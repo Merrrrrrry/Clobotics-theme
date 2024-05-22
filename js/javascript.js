@@ -58,18 +58,11 @@ document.addEventListener('DOMContentLoaded', function () {
     const showLessBtn = document.getElementById('show-less-btn');
     let itemsToShow = 8;
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const filter = button.getAttribute('data-filter');
-            filterEmployees(filter, regionSelect.value);
-        });
-    });
-
-    regionSelect.addEventListener('change', () => {
-        const region = regionSelect.value;
-        const positionFilter = document.querySelector('.filter-btn.active')?.getAttribute('data-filter') || 'all';
-        filterEmployees(positionFilter, region);
-    });
+    function updateButtonVisibility() {
+        const visibleItems = Array.from(employeeBoxes).filter(box => box.style.display !== 'none');
+        showMoreBtn.style.display = (visibleItems.length < employeeBoxes.length) ? 'inline-block' : 'none';
+        showLessBtn.style.display = (visibleItems.length > itemsToShow) ? 'inline-block' : 'none';
+    }
 
     function filterEmployees(position, region) {
         let visibleCount = 0;
@@ -85,7 +78,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Set the active class on the position filter buttons
         filterButtons.forEach(button => {
             if (button.getAttribute('data-filter') === position) {
                 button.classList.add('active');
@@ -94,49 +86,42 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
 
-        // Update button visibility
         updateButtonVisibility();
     }
 
-    function updateButtonVisibility() {
-        let hiddenItems = document.querySelectorAll('.meet-our-team-box-content[style*="display: none"]');
-        let visibleItems = document.querySelectorAll('.meet-our-team-box-content:not([style*="display: none"])').length;
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.getAttribute('data-filter');
+            filterEmployees(filter, regionSelect.value);
+        });
+    });
 
-        showMoreBtn.style.display = hiddenItems.length > 0 ? 'inline-block' : 'none';
-        showLessBtn.style.display = visibleItems > itemsToShow ? 'inline-block' : 'none';
-    }
+    regionSelect.addEventListener('change', () => {
+        const region = regionSelect.value;
+        const positionFilter = document.querySelector('.filter-btn.active')?.getAttribute('data-filter') || 'all';
+        filterEmployees(positionFilter, region);
+    });
 
-    // Show more button functionality
     showMoreBtn.addEventListener('click', function() {
-        let hiddenItems = document.querySelectorAll('.meet-our-team-box-content[style*="display: none"]');
-        if (hiddenItems.length === 0) {
-            // Switch to "all" filter if no more items to show
-            document.querySelector('.filter-btn[data-filter="all"]').click();
-            regionSelect.value = 'all';
-            filterEmployees('all', 'all');
-        } else {
-            for (let i = 0; i < Math.min(itemsToShow, hiddenItems.length); i++) {
-                hiddenItems[i].style.display = 'block';
-            }
+        const hiddenItems = Array.from(employeeBoxes).filter(box => box.style.display === 'none');
+        for (let i = 0; i < Math.min(itemsToShow, hiddenItems.length); i++) {
+            hiddenItems[i].style.display = 'block';
         }
         updateButtonVisibility();
     });
 
-    // Show less button functionality
     showLessBtn.addEventListener('click', function() {
-        let visibleItems = document.querySelectorAll('.meet-our-team-box-content:not([style*="display: none"])');
-        for (let i = visibleItems.length - 1; i >= Math.max(visibleItems.length - itemsToShow, itemsToShow); i--) {
+        const visibleItems = Array.from(employeeBoxes).filter(box => box.style.display !== 'none');
+        for (let i = visibleItems.length - 1; i >= itemsToShow; i--) {
             visibleItems[i].style.display = 'none';
         }
         updateButtonVisibility();
     });
 
-    // Initially hide all but the first 8 items
     for (let i = itemsToShow; i < employeeBoxes.length; i++) {
         employeeBoxes[i].style.display = 'none';
     }
 
-    // Ensure the "Show Less" button is initially hidden
     showLessBtn.style.display = 'none';
     updateButtonVisibility();
 });
