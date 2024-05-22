@@ -48,7 +48,7 @@ Template Name: About us
         <h2 class="title section-title"><?php the_field('article_title_who_we_are'); ?></h2>
         <p class="subtitle"><?php the_field('subtitle_of_article_who_we_are'); ?></p>
         <p class="text"><?php the_field('article_text_who_we_are'); ?></p>
-    </div>        <!-- <div class="container_to_center"> <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Video presentation</a></div> -->
+    </div>        <!-- <div class="container_to_center"> <a href="" class="btn">Video presentation</a></div> -->
 
 </section>
 
@@ -64,11 +64,11 @@ Template Name: About us
     <div class="right_and_left">        
         <div class="left flex">
                 <p class="text"><?php the_field('wind_part_text'); ?></p>
-                <a style="margin: 1em 43px auto;;" href="<?php echo get_permalink('  ............  ') ?>" class="btn">Discover Wind services</a>
+                <a style="margin: 1em 43px auto;;" href="http://maria-grysevych.dk/clobotics/home/wind-services/" class="btn">Discover Wind services</a>
         </div>
         <div class="right flex">
                 <p class="text"><?php the_field('retail_part_text'); ?></p>
-                <a style="margin: 1em auto 43px;" href="<?php echo get_permalink('  ............  ') ?>" class="btn">Discover Retail services</a>
+                <a style="margin: 1em auto 43px;" href="http://maria-grysevych.dk/clobotics/home/retail-services/" class="btn">Discover Retail services</a>
         </div>
     </div>
 
