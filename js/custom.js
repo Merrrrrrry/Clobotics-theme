@@ -58,3 +58,27 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('navbar-nav').classList.toggle('active');
     });
   });
+
+
+
+  //articles
+
+  jQuery(document).ready(function($) {
+    $('#search-form-articles').on('submit', function(event) {
+        event.preventDefault();
+
+        var searchQuery = $('#search-input-articles').val();
+
+        $.ajax({
+            url: clobotics_ajax.ajax_url,
+            type: 'get',
+            data: {
+                action: 'clobotics_search_new_articles',
+                search_query: searchQuery
+            },
+            success: function(response) {
+                $('#articles-container').html(response);
+            }
+        });
+    });
+});

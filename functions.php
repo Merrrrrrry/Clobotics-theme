@@ -256,3 +256,58 @@ function clobotics_ajax_search_wind_services() {
 add_action('wp_ajax_clobotics_search_wind_services', 'clobotics_ajax_search_wind_services');
 add_action('wp_ajax_nopriv_clobotics_search_wind_services', 'clobotics_ajax_search_wind_services');
 
+
+
+
+//articles search bar
+
+
+// Handle AJAX search for new articles
+function clobotics_ajax_search_new_articles() {
+    $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
+
+    // Define meta query arguments
+    $meta_query = array(
+        'relation' => 'OR',
+        array(
+            'key' => 'new_article_title',
+            'value' => $search_query,
+            'compare' => 'LIKE'
+        )
+    );
+
+    // Define WP_Query arguments
+    $args = array(
+        'post_type' => 'new-article',
+        'posts_per_page' => -1,
+        'meta_query' => $meta_query
+    );
+
+    // Perform the query
+    $articles_query = new WP_Query($args);
+
+    if ($articles_query->have_posts()) :
+        while ($articles_query->have_posts()) : $articles_query->the_post(); ?>
+            <article>
+                <a href="<?php the_permalink(); ?>">
+                    <?php
+                    $image = get_field('article_main_image');
+                    if ($image) :
+                        echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '">';
+                    endif;
+                    ?>
+                    <h3><?php the_field('new_article_title'); ?></h3>
+                    <p><?php the_field('meta_description_short'); ?></p>
+                </a>
+            </article>
+        <?php endwhile;
+
+        wp_reset_postdata();
+    else :
+        echo '<p>No articles found.</p>';
+    endif;
+
+    wp_die();
+}
+add_action('wp_ajax_clobotics_search_new_articles', 'clobotics_ajax_search_new_articles');
+add_action('wp_ajax_nopriv_clobotics_search_new_articles', 'clobotics_ajax_search_new_articles');

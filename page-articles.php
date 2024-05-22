@@ -21,11 +21,11 @@ Template Name: New Articles
     <h2>Clobotics Articles</h2>
 
     <!-- Search bar -->
-    <div class="search-bar-container">
-        <form id="search-form" method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form">
-            <div class="search-bar">
-                <input type="text" name="search_query" id="search-input" placeholder="Search..." value="<?php echo isset($_GET['search_query']) ? esc_attr($_GET['search_query']) : ''; ?>">
-                <button type="submit" class="search-button">
+    <div class="search-bar-container-articles">
+        <form id="search-form-articles" method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form-articles">
+            <div class="search-bar-articles">
+                <input type="text" name="search_query" id="search-input-articles" placeholder="Search..." value="<?php echo isset($_GET['search_query']) ? esc_attr($_GET['search_query']) : ''; ?>">
+                <button type="submit" class="search-button-articles">
                     <span class="material-icons search-icon">search</span>
                 </button>
             </div>
@@ -82,3 +82,4 @@ Template Name: New Articles
 
 </body>
 <?php get_footer(); ?>
+
