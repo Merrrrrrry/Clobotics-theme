@@ -20,30 +20,7 @@ Template Name: Articles
 <main>
     <h2>Clobotics Articles</h2>
 
-        <!-- Search bar and filter buttons -->
-        <div class="search-bar-container-3">
-            <form id="article-search-form" class="search-form-3">
-                <div class="search-bar-3">
-                    <input type="text" id="article-search-input" placeholder="Search articles...">
-                        <button type="submit" class="search-button-3">
-                             <span class="material-icons search-icon-3">search</span>
-                        </button>
-                    </div>
-             <div class="filters">
-                    <label>
-                        <input type="radio" name="category" value="" checked> All
-                    </label>
-                    <label>
-                        <input type="radio" name="category" value="wind"> Wind
-                    </label>
-                    <label>
-                        <input type="radio" name="category" value="retail"> Retail
-                    </label>
-                </div>
-            </form>
-        </div>
-
-
+       
     <div id="articles-container">
         <?php
         $articles_per_page = 6;
@@ -106,40 +83,6 @@ Template Name: Articles
     </div>
 </main>
 
-<script>
-jQuery(document).ready(function($) {
-    function fetchArticles() {
-        var search_query = $('#article-search-input').val().trim();
-        var filter = $('input[name="category"]:checked').val();
-        
-        $.ajax({
-            url: clobotics_ajax.ajax_url,
-            type: 'POST',
-            data: {
-                action: 'clobotics_search_articles',
-                search_query: search_query,
-                filter: filter
-            },
-            success: function(response) {
-                $('#articles-container').html(response);
-            }
-        });
-    }
-
-    $('#article-search-form').on('submit', function(event) {
-        event.preventDefault();
-        fetchArticles();
-    });
-
-    $('#article-search-input').on('input', function() {
-        fetchArticles();
-    });
-
-    $('input[name="category"]').on('change', function() {
-        fetchArticles();
-    });
-});
-</script>
 
 </body>
 <?php get_footer(); ?>
