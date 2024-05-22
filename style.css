@@ -308,10 +308,12 @@ height:auto;
 /*   <--- Search bar in Career page ---> */
 
 .search-bar-container-articles {
-  display: flex;
-  align-items: center;
-  padding-top: 20px;
-  margin-top: 30px;
+  background-color: white;
+  border-radius: 18px;
+  padding: 20px;
+  margin: -50px auto 0 auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+  height: 100px; 
   max-width: 485px;
 }
 
