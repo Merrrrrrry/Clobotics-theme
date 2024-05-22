@@ -561,9 +561,6 @@ h4.text-career {
   padding-right: 50px;
 }
 
-.contact-person-career, .contact-form-career {
-  width: 48%;
-}
 
 .contact-person-career {
   display: flex;
@@ -694,9 +691,6 @@ h4.text-career {
     width: 100%;
   }
 
-  .contact-person-career, .contact-form-career {
-    width: 100%;
-  }
 
   .codedropz-upload-wrapper {
     width: 100%;
@@ -745,7 +739,7 @@ h4.text-career {
   }
 
   .contact-person-career, .contact-form-career {
-    width: 48%;
+    width: 60%;
   }
 }
 
