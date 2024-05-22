@@ -804,12 +804,23 @@ h4.text-career {
 }
 
 
+/* <------ Article linking section ------> */
+
+.news_articles_single_container .white_container_for_linking {
+  background-color: #fff;
+  border-top: #86D0F4 6px solid;
+  text-align: left;
+  width: 30%;
+  color: #000000;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 6px;
+  right: 7px;
+  padding: 0.5em 2em;
+  opacity: 0.8;
+}
+
 /* <------ Article page style ------> */
-
-
-
-
-
 
 #articles-container .row {
   display: flex;
