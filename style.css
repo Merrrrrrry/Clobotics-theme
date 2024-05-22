@@ -561,9 +561,6 @@ h4.text-career {
   padding-right: 50px;
 }
 
-.contact-person-career, .contact-form-career {
-  width: 48%;
-}
 
 .contact-person-career {
   display: flex;
@@ -694,9 +691,6 @@ h4.text-career {
     width: 100%;
   }
 
-  .contact-person-career, .contact-form-career {
-    width: 100%;
-  }
 
   .codedropz-upload-wrapper {
     width: 100%;
@@ -745,9 +739,34 @@ h4.text-career {
   }
 
   .contact-person-career, .contact-form-career {
-    width: 48%;
+    width: 60%;
   }
 }
+
+
+
+.contact-form-career label,
+.contact-form-career .upload-section label,
+.contact-form-career .codedropz-upload-inner h3,
+.contact-form-career p {
+  color: gray;
+}
+
+
+.contact-form-career input::placeholder,
+.contact-form-career textarea::placeholder {
+  color: gray;
+}
+
+
+.contact-form-career input,
+.contact-form-career textarea {
+  color: gray;
+}
+
+
+
+
 
 /* <------ Article page style ------> */
 
