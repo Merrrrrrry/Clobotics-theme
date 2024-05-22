@@ -765,6 +765,12 @@ h4.text-career {
   color: #01A7E6;
 }
 
+.wpcf7 form .wpcf7-response-output {
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+  text-align: center;
+}
 
 /* <------ Article page style ------> */
 
