@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Privacy & cookie policy
+Template Name: Retail services
 */
 ?>
 
