@@ -19,7 +19,7 @@ Template Name: single-new-article
             </div>
         </div>
 
-        <article>
+        <article style="margin: 5em;">
             <h2><?php the_field('meta_description_short'); ?></h2>
 
             <?php for ($i = 1; $i <= 6; $i++): ?>
