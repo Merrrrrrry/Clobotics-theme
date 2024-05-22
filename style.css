@@ -557,10 +557,8 @@ h4.text-career {
 
 .contact-form-container-career {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start; 
-  gap: 20px;
-  flex-wrap: wrap;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .contact-person-career, .contact-form-career {
@@ -631,7 +629,6 @@ h4.text-career {
 
 .contact-form-career {
   width: 100%;
-  padding: 20px;
   background-color: #fff;
 }
 
@@ -739,13 +736,6 @@ h4.text-career {
   padding-bottom: 20px;
 }
 
-.contact-form-container-career .contact-person-title {
-  text-align: left;
-}
-
-.contact-form-container-career .apply-position-title {
-  text-align: left;
-}
 
 @media (min-width: 769px) {
   .contact-form-container-career {
@@ -1687,7 +1677,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  width: calc(100% - 40px);
+  width: 100%;
 }
 
 .wpcf7 span.wpcf7-not-valid-tip {
