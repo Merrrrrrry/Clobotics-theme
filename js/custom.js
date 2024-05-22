@@ -76,9 +76,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 search_query: searchQuery
             },
             success: function(response) {
-                console.log(response); // Log the response content to the console
                 $('#articles-container').html(response); // Reload articles container with updated content
+                
+                // Re-apply styles to the dynamically loaded content
+                applyArticleStyles();
             }
         });
     });
+
+    // Function to apply styles to articles
+    function applyArticleStyles() {
+        // Apply styles to articles
+        $('#articles-container article').each(function() {
+            $(this).addClass('col'); // Add 'col' class to each article
+        });
+    }
 });
