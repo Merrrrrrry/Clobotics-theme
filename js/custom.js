@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 search_query: searchQuery
             },
             success: function(response) {
-                $('#articles-container').html(response);
+                $('#articles-container').html(response); 
             }
         });
     });
