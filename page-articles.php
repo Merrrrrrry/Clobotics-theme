@@ -42,18 +42,15 @@ Template Name: Articles
             'post_type' => 'new-article',
             'posts_per_page' => $articles_per_page,
             'paged' => $paged,
-        );
-
-        // If search query exists, add meta query to filter by new_article_title
-        if (!empty($search_query)) {
-            $args['meta_query'] = array(
+            'meta_query' => array(
+                'relation' => 'OR',
                 array(
                     'key' => 'new_article_title',
                     'value' => $search_query,
                     'compare' => 'LIKE'
                 )
-            );
-        }
+            )
+        );
 
         // Perform WP_Query
         $articles_query = new WP_Query($args);
