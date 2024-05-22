@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 search_query: searchQuery
             },
             success: function(response) {
+                console.log(response); 
                 $('#articles-container').html(response); 
             }
         });
