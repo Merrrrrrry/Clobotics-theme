@@ -392,6 +392,13 @@ height:auto;
 } 
 
 
+
+
+
+
+
+
+
 /*   <--- Image slideshow on Career page ---> */
 
 @keyframes slide {
@@ -797,15 +804,78 @@ h4.text-career {
 }
 
 
-/* <------ Article linking section ------> */
-
-.white_container_for_linking {
-  background-color: #fff;
-  border-top: #86D0F4 2px solid;
-}
-
 /* <------ Article page style ------> */
 
+
+
+
+.filters {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.filters select, .filter-button {
+  cursor: pointer;
+  border: 2px solid transparent; 
+  border-radius: 20px; 
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  text-align: center;
+}
+
+.filter-btn {
+  cursor: pointer;
+  background-color: #fff;
+  border: 2px solid transparent; 
+  border-radius: 20px; 
+  padding: 10px;
+  outline: none;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+}
+
+.filter-button {
+  background-color: #00B3EC;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.material-icons.search-icon {
+  font-size: 30px;
+  color: #ffffff; 
+} 
+
+
+
+
+
+
+.filters label {
+  cursor: pointer;
+  display: inline-block;
+  background: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.filters input[type="radio"] {
+  display: none;
+}
+
+.filters input[type="radio"]:checked + label {
+  background: #0099ff;
+  color: #fff;
+}
 
 #articles-container .row {
   display: flex;
