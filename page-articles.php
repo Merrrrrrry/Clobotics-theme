@@ -37,6 +37,7 @@ Template Name: New Articles
             // Check if search query exists
             $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
 
+<<<<<<< Updated upstream
             // Define WP_Query args
             $args = array(
                 'post_type' => 'new-article',
@@ -53,6 +54,16 @@ Template Name: New Articles
 
             // Perform WP_Query
             $articles_query = new WP_Query($args);
+=======
+    <div style="margin: 4em;" id="articles-container">
+        <!-- Articles will be loaded dynamically here via AJAX -->
+    </div>
+
+    <div style="margin: 4em;"class="pagination">
+        <!-- Pagination links will be loaded dynamically here via AJAX -->
+    </div>
+</main>
+>>>>>>> Stashed changes
 
             if ($articles_query->have_posts()) :
                 while ($articles_query->have_posts()) : $articles_query->the_post();
