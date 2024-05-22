@@ -26,9 +26,8 @@
             </div>
             <ul class="navbar-nav" id="navbar-nav">
                 <li class="nav-item dropdown">
-                    <span class="nav-link">About <span class="dropdown-arrow">&#9662;</span></span>
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>" class="nav-link">About us <span class="dropdown-arrow">&#9662;</span></a>
                     <div class="dropdown-menu">
-                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>">About us</a>
                         <a href="http://maria-grysevych.dk/clobotics/home/wind-services/articles/">Articles</a>
                         <a href="http://maria-grysevych.dk/clobotics/home/wind-services/media-files/">Media</a>
                     </div>
