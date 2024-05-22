@@ -25,24 +25,23 @@
                 <div class="line"></div>
             </div>
             <ul class="navbar-nav" id="navbar-nav">
-                        <li class="nav-item dropdown">
-                <span class="nav-link">About <span class="dropdown-arrow">&#9662;</span></span>
-                <div class="dropdown-menu">
-                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>">About us</a>
-                    <a href="http://maria-grysevych.dk/clobotics/home/wind-services/articles/">Articles</a>
-                    <a href="http://maria-grysevych.dk/clobotics/home/wind-services/media-files/">Media</a>
-                </div>
-            </li>
-            <li class="nav-item">
-            <a href="<?php echo esc_url(get_permalink(get_page_by_path('career'))); ?>" class="nav-link footer-contact-link">Career</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a href="http://maria-grysevych.dk/clobotics/home/wind-services/" class="nav-link">Wind <span class="dropdown-arrow">&#9662;</span></a>
-                <div class="dropdown-menu">
-                    <!-- we will add loop with wind single later-->
-                </div>
-            </li>
-                
+                <li class="nav-item dropdown">
+                    <span class="nav-link">About <span class="dropdown-arrow">&#9662;</span></span>
+                    <div class="dropdown-menu">
+                        <a href="<?php echo esc_url(get_permalink(get_page_by_path('about-us'))); ?>">About us</a>
+                        <a href="http://maria-grysevych.dk/clobotics/home/wind-services/articles/">Articles</a>
+                        <a href="http://maria-grysevych.dk/clobotics/home/wind-services/media-files/">Media</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="http://maria-grysevych.dk/clobotics/home/wind-services/" class="nav-link">Wind <span class="dropdown-arrow">&#9662;</span></a>
+                    <div class="dropdown-menu">
+                        <!-- we will add loop with wind single later-->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="<?php echo esc_url(get_permalink(get_page_by_path('career'))); ?>" class="nav-link footer-contact-link">Career</a>
+                </li>
                 <li class="nav-item">
                    <a href="http://maria-grysevych.dk/clobotics/home/wind-services/contact" class="nav-link footer-contact-link">Contact us</a>
                 </li>
