@@ -770,8 +770,38 @@ h4.text-career {
   padding: 0;
   border: none;
   text-align: center;
-  color: red;
+  color: #01A7E6;
 }
+
+.dnd-upload-status .dnd-upload-image {
+  width: 40px;
+  height: 30px;
+  border: 1px solid gray;
+  text-align: center;
+  border-radius: 100%;
+  position: relative;
+}
+
+.dnd-upload-status .dnd-upload-details .name {
+  color: gray;
+}
+
+.dnd-upload-status .dnd-upload-details .name em {
+  color: gray;
+  font-weight: 500;
+}
+
+.dnd-upload-status .dnd-upload-details .dnd-progress-bar span {
+  background: #01A7E6;
+  display: block;
+  font-size: 11px;
+  text-align: right;
+  color: #fff;
+  height: 100%;
+  width: 0;
+  line-height: 14px;
+}
+
 
 /* <------ Article page style ------> */
 
