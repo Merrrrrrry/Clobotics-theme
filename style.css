@@ -816,7 +816,7 @@ h4.text-career {
   position: absolute;
   bottom: 6px;
   right: 7px;
-  padding: 2em;
+  padding: 0.5em 2em;
   opacity: 0.8;
 }
 
