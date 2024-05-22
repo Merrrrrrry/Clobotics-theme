@@ -555,11 +555,13 @@ h4.text-career {
 
 /* <------ Contact Person Career style ------> */
 
+
 .contact-form-container-career {
   display: flex;
   justify-content: center;
-  padding-left: 60px;
-  padding-right: 60px;
+  align-items: center; /* Center align items vertically */
+  gap: 20px;
+  flex-wrap: wrap; /* Ensure elements wrap on smaller screens */
 }
 
 .contact-person-career, .contact-form-career {
