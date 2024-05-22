@@ -5,6 +5,11 @@ Template Name: New Articles
 ?>
 
 <?php get_header(); ?>
+<?php 
+    wp_enqueue_style("owl-carousel-style", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.carousel.min.css");
+    wp_enqueue_style("owl-carousel-style-theme", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.theme.default.min.css");
+    wp_enqueue_style("owl-carousel-custom-styles", get_stylesheet_directory_uri() . "/css/custom.owl-carousel.css");
+?>
 
 <body class="gray-body">
     <div class="hero-section">
@@ -82,4 +87,24 @@ Template Name: New Articles
     </main>
 
 </body>
+
+<?php 
+    wp_enqueue_script("jquery", "https://code.jquery.com/jquery-1.12.1.min.js");
+    wp_enqueue_script("carousel-script", get_stylesheet_directory_uri()."/js/plug-ins/OwlCarousel2/owl.carousel.min.js");
+?>
+<script>
+    jQuery(document).ready(function($) {
+        applyOwlCarousel({
+            loop: true,
+            items:1,
+            nav: true,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            animateOut: 'fadeOut',
+            lazyLoad: true,
+        })
+    });
+</script>
+
 <?php get_footer(); ?>
