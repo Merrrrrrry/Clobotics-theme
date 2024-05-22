@@ -907,34 +907,33 @@ h4.text-career {
 /* <------ Privacy & Cookie Policy style ------> */
 
 
-.download-buttons {
-  position: absolute; 
-  bottom: -250px; 
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1; 
+.download-buttons-container {
+  max-width: 600px; 
+  margin: 0 auto; 
 }
 
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .download-buttons .btn {
   color: #fff;
   padding: 8px 20px;
   border-radius: 20px;
   cursor: pointer;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
 }
 
 .download-buttons .btn .material-icons {
-  color: white; 
-  margin-right: 8px; 
+  color: white;
+  margin-right: 8px;
 }
 
-
-  
-
-  
   /*    
   
   a.btn.optional:clicked ???{
