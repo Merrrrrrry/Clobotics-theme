@@ -638,10 +638,6 @@ h4.text-career {
   box-sizing: border-box;
 }
 
-.contact-form-career input:focus,
-.contact-form-career textarea:focus {
-  border-color: #757575;
-}
 
 .contact-form-career textarea {
   height: 150px;
@@ -772,6 +768,7 @@ h4.text-career {
 /* Change background color and border color on focus */
 .contact-form-career input:focus,
 .contact-form-career textarea:focus {
+  background-color: #ffffff !important; 
   border-color: #ff0000 !important; 
 }
 
