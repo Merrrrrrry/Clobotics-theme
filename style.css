@@ -806,6 +806,7 @@ h4.text-career {
 
 /* <------ Article linking section ------> */
 
+
 .news_articles_single_container .white_container_for_linking {
   background-color: #fff;
   border-top: #86D0F4 6px solid;
@@ -817,6 +818,13 @@ h4.text-career {
   bottom: 6px;
   right: 7px;
   padding: 0.5em 2em;
+}
+
+/* <------ Article single page  ------> */
+
+.news_article_content_img {
+  text-align: center;
+  margin: auto;
 }
 
 /* <------ Article page style ------> */
