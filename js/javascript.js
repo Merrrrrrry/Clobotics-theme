@@ -97,6 +97,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateButtonVisibility() {
         let visibleItems = document.querySelectorAll('.meet-our-team-box-content:not([style*="display: none"])').length;
         showLessBtn.style.display = visibleItems > itemsToShow ? 'inline-block' : 'none';
+        showMoreBtn.style.display = document.querySelectorAll('.meet-our-team-box-content[style*="display: none"]').length > 0 ? 'inline-block' : 'none';
     }
 
     // Initially hide all but the first 8 items
@@ -115,6 +116,8 @@ document.addEventListener('DOMContentLoaded', function() {
         updateButtonVisibility();
     });
 
+    
+
 // Show less btn - "meet our team" on About us page
     showLessBtn.addEventListener('click', function() {
         let visibleItems = document.querySelectorAll('.meet-our-team-box-content:not([style*="display: none"])');
@@ -124,7 +127,25 @@ document.addEventListener('DOMContentLoaded', function() {
         showMoreBtn.style.display = 'inline-block';
         updateButtonVisibility();
     });
+// Show less btn - update visibility
+    document.querySelectorAll('.filter-btn').forEach(button => {
+        button.addEventListener('click', function() {
+            let filter = this.getAttribute('data-filter');
+            employeeBlocks.forEach(block => {
+                block.style.display = (filter === 'all' || block.getAttribute('data-position') === filter) ? 'block' : 'none';
+            });
+            updateButtonVisibility();
+        });
+    });
+// Region filter - update visibility
 
+    document.getElementById('region-select').addEventListener('change', function() {
+        let filter = this.value;
+        employeeBlocks.forEach(block => {
+            block.style.display = (filter === 'all' || block.getAttribute('data-region') === filter) ? 'block' : 'none';
+        });
+        updateButtonVisibility();
+    });
     // Ensure the "Show Less" button is initially hidden
     showLessBtn.style.display = 'none';
 });
