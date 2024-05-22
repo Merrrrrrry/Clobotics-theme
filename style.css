@@ -765,7 +765,15 @@ h4.text-career {
 }
 
 
+.cd-upload-btn {
+  color: #01A7E6;
+}
 
+/* Change background color and border color on focus */
+.contact-form-career input:focus,
+.contact-form-career textarea:focus {
+  border-color: #ff0000 !important; 
+}
 
 
 /* <------ Article page style ------> */
