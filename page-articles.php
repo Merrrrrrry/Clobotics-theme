@@ -37,7 +37,7 @@ Template Name: New Articles
             </form>
         </div>
 
-        <div id="articles-container" class="row">
+        <div id="articles-container" class="owl-carousel owl-theme row" style="margin: 4em;">
             <?php
             // Check if search query exists
             $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
@@ -63,7 +63,7 @@ Template Name: New Articles
             if ($articles_query->have_posts()) :
                 while ($articles_query->have_posts()) : $articles_query->the_post();
                     ?>
-                    <article class="col">
+                    <article class="col" style="margin: 1em;">
                         <a href="<?php the_permalink(); ?>">
                             <?php
                             $image = get_field('article_main_image');
@@ -96,9 +96,9 @@ Template Name: New Articles
     jQuery(document).ready(function($) {
         applyOwlCarousel({
             loop: true,
-            items:1,
+            items:6,
             nav: true,
-            dots: true,
+            dots: false,
             autoplay: true,
             autoplayTimeout: 3000,
             animateOut: 'fadeOut',
