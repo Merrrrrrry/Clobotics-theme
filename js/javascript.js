@@ -49,10 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
-
 // Function for filtering REGIONs and JOB positons for "meet our team" on About us page
-
 document.addEventListener('DOMContentLoaded', function () {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const regionSelect = document.getElementById('region-select');
@@ -109,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
         showLessBtn.style.display = visibleItems > itemsToShow ? 'inline-block' : 'none';
     }
 
-    // Show more button functionality - "meet our team" on About us page
+    // Show more button functionality
     showMoreBtn.addEventListener('click', function() {
         let hiddenItems = document.querySelectorAll('.meet-our-team-box-content[style*="display: none"]');
         if (hiddenItems.length === 0) {
@@ -125,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
         updateButtonVisibility();
     });
 
-    // Show less button functionality - "meet our team" on About us page
+    // Show less button functionality
     showLessBtn.addEventListener('click', function() {
         let visibleItems = document.querySelectorAll('.meet-our-team-box-content:not([style*="display: none"])');
         for (let i = visibleItems.length - 1; i >= Math.max(visibleItems.length - itemsToShow, itemsToShow); i--) {
@@ -143,7 +140,6 @@ document.addEventListener('DOMContentLoaded', function () {
     showLessBtn.style.display = 'none';
     updateButtonVisibility();
 });
-
 
 
 // Function to show one of three pictures - we work globally section on Wind services page
