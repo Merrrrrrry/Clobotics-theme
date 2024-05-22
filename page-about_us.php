@@ -84,7 +84,7 @@ Template Name: About us
         <!-- Filters for Regions -->
         <div id="region-filters" class="filters">
         <select id="region-select" class="filter-select">
-            <option class=" " value="all">Region</option>
+            <option class=" " value="all">All regions</option>
             <option class=" " value="Asia">Asia</option>
             <option class=" " value="Europe">Europe</option>
             <option class=" " value="America">America</option>

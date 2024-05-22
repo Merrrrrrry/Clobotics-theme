@@ -7,7 +7,7 @@ function showInfo() {
     }
 }
 
-// Navbar burger menu
+// Navbar burber menu
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('burger-menu').addEventListener('click', function () {
       document.getElementById('navbar-nav').classList.toggle('active');
@@ -15,16 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   
 
-// Function to scroll to the contact form section when the Apply button is clicked
+// Function to scroll to the contact form section
 function scrollToContactForm(event) {
     event.preventDefault(); 
-    var contactSection = document.getElementById("contact-form-container-career");
-    if (contactSection) {
-        console.log("Contact section found:", contactSection);
-        contactSection.scrollIntoView({ behavior: "smooth" });
-    } else {
-        console.error("Contact section not found.");
-    }
+    var contactFormSection = document.getElementById("contact-form-section");
+    contactFormSection.scrollIntoView({ behavior: "smooth" });
 }
 
 // Event listener to the Apply button to scroll to the contact form section
@@ -32,14 +27,28 @@ document.addEventListener("DOMContentLoaded", function() {
     var applyButton = document.getElementById("apply-button"); 
     if (applyButton) {
         applyButton.addEventListener("click", scrollToContactForm);
-    } else {
-        console.error("Apply button not found.");
     }
 });
 
-
 // Company History Timeline JS
 
+document.addEventListener("DOMContentLoaded", function() {
+    const items = document.querySelectorAll(".company-history-item");
+
+    window.addEventListener("scroll", function() {
+        const triggerBottom = window.innerHeight / 5 * 4;
+
+        items.forEach(item => {
+            const itemTop = item.getBoundingClientRect().top;
+
+            if (itemTop < triggerBottom) {
+                item.classList.add("show");
+            } else {
+                item.classList.remove("show");
+            }
+        });
+    });
+});
 
 
 // Function for filtering REGIONs and JOB positons for "meet our team" on About us page
@@ -48,6 +57,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const filterButtons = document.querySelectorAll('.filter-btn');
     const regionSelect = document.getElementById('region-select');
     const employeeBoxes = document.querySelectorAll('.meet-our-team-box-content');
+    const showMoreBtn = document.getElementById('show-more-btn');
+    const showLessBtn = document.getElementById('show-less-btn');
+    let itemsToShow = 8;
 
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
@@ -63,12 +75,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     function filterEmployees(position, region) {
+        let visibleCount = 0;
         employeeBoxes.forEach(box => {
             const matchesPosition = (position === 'all' || box.getAttribute('data-position') === position);
             const matchesRegion = (region === 'all' || box.getAttribute('data-region') === region);
 
             if (matchesPosition && matchesRegion) {
-                box.style.display = 'block';
+                box.style.display = (visibleCount < itemsToShow) ? 'block' : 'none';
+                visibleCount++;
             } else {
                 box.style.display = 'none';
             }
@@ -82,74 +96,53 @@ document.addEventListener('DOMContentLoaded', function () {
                 button.classList.remove('active');
             }
         });
+
+        // Update button visibility
+        updateButtonVisibility();
     }
-});
-
-
-// Show more and Show less buttons - "meet our team" on About us page
-
-document.addEventListener('DOMContentLoaded', function() {
-    let showMoreBtn = document.getElementById('show-more-btn');
-    let showLessBtn = document.getElementById('show-less-btn');
-    let employeeBlocks = document.querySelectorAll('.meet-our-team-box-content');
-    let itemsToShow = 8;
 
     function updateButtonVisibility() {
+        let hiddenItems = document.querySelectorAll('.meet-our-team-box-content[style*="display: none"]');
         let visibleItems = document.querySelectorAll('.meet-our-team-box-content:not([style*="display: none"])').length;
+
+        showMoreBtn.style.display = hiddenItems.length > 0 ? 'inline-block' : 'none';
         showLessBtn.style.display = visibleItems > itemsToShow ? 'inline-block' : 'none';
-        showMoreBtn.style.display = document.querySelectorAll('.meet-our-team-box-content[style*="display: none"]').length > 0 ? 'inline-block' : 'none';
     }
 
-    // Initially hide all but the first 8 items
-    for (let i = itemsToShow; i < employeeBlocks.length; i++) {
-        employeeBlocks[i].style.display = 'none';
-    }
-
+    // Show more button functionality - "meet our team" on About us page
     showMoreBtn.addEventListener('click', function() {
         let hiddenItems = document.querySelectorAll('.meet-our-team-box-content[style*="display: none"]');
-        for (let i = 0; i < Math.min(itemsToShow, hiddenItems.length); i++) {
-            hiddenItems[i].style.display = 'block';
-        }
-        if (document.querySelectorAll('.meet-our-team-box-content[style*="display: none"]').length === 0) {
-            showMoreBtn.style.display = 'none';
+        if (hiddenItems.length === 0) {
+            // Switch to "all" filter if no more items to show
+            document.querySelector('.filter-btn[data-filter="all"]').click();
+            regionSelect.value = 'all';
+            filterEmployees('all', 'all');
+        } else {
+            for (let i = 0; i < Math.min(itemsToShow, hiddenItems.length); i++) {
+                hiddenItems[i].style.display = 'block';
+            }
         }
         updateButtonVisibility();
     });
 
-    
-
-// Show less btn - "meet our team" on About us page
+    // Show less button functionality - "meet our team" on About us page
     showLessBtn.addEventListener('click', function() {
         let visibleItems = document.querySelectorAll('.meet-our-team-box-content:not([style*="display: none"])');
         for (let i = visibleItems.length - 1; i >= Math.max(visibleItems.length - itemsToShow, itemsToShow); i--) {
             visibleItems[i].style.display = 'none';
         }
-        showMoreBtn.style.display = 'inline-block';
         updateButtonVisibility();
     });
-// Show less btn - update visibility
-    document.querySelectorAll('.filter-btn').forEach(button => {
-        button.addEventListener('click', function() {
-            let filter = this.getAttribute('data-filter');
-            employeeBlocks.forEach(block => {
-                block.style.display = (filter === 'all' || block.getAttribute('data-position') === filter) ? 'block' : 'none';
-            });
-            updateButtonVisibility();
-        });
-    });
-// Region filter - update visibility
 
-    document.getElementById('region-select').addEventListener('change', function() {
-        let filter = this.value;
-        employeeBlocks.forEach(block => {
-            block.style.display = (filter === 'all' || block.getAttribute('data-region') === filter) ? 'block' : 'none';
-        });
-        updateButtonVisibility();
-    });
+    // Initially hide all but the first 8 items
+    for (let i = itemsToShow; i < employeeBoxes.length; i++) {
+        employeeBoxes[i].style.display = 'none';
+    }
+
     // Ensure the "Show Less" button is initially hidden
     showLessBtn.style.display = 'none';
+    updateButtonVisibility();
 });
-
 
 
 
