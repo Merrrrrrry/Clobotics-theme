@@ -1982,9 +1982,7 @@ h1 {
 
 
 
-/* ---------------- FOOTER -------------------- */
-
-/* ---------------- FOOTER -------------------- */
+/*  ---------------- FOOTER -------------------- */
 
 img.footer-logo {
   max-width: 200px;
@@ -2007,7 +2005,7 @@ img.footer-logo {
 }
 
 .footer-column:first-child {
-  width: 33%;
+  width: 33%; 
 }
 
 .footer-column:nth-child(n+2) {
@@ -2051,38 +2049,38 @@ img.footer-logo {
 }
 
 /* Adjusted CSS for Copyright and Social Icons */
-.footer-bottom-line-copyright-sm {
+.footer-column:last-child {
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 30px; /* Add margin to separate from footer content */
 }
 
-.footer-bottom-line-copyright-sm .copyright {
+.footer-column:last-child .copyright {
   font-size: 12px;
 }
 
-.footer-bottom-line-copyright-sm .copyright a {
+.footer-column:last-child .copyright a {
   color: #fff;
   text-decoration: none;
 }
 
-.footer-bottom-line-copyright-sm .social-icons {
+.footer-column:last-child .social-icons {
   display: flex;
 }
 
-.footer-bottom-line-copyright-sm .social-icons a {
-  margin-left: 30px; /* Adjust spacing between social icons */
+.footer-column:last-child .social-icons a {
+  margin-left: 20px; /* Adjust spacing between social icons */
 }
 
-.footer-bottom-line-copyright-sm .social-icons img {
+.footer-column:last-child .social-icons img {
   width: 45px;
 }
 
-.footer-bottom-line-copyright-sm .social-icons span {
+.footer-column:last-child .social-icons span {
   color: white;
 }
 
+  
 /* -------------------------------NAVBAR--------------------------------*/
 
 .main-header {

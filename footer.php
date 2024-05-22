@@ -24,31 +24,9 @@
         <p class="footer-title">Get in touch</p>
         <a href="http://maria-grysevych.dk/clobotics/home/wind-services/contact" class="footer-contact-link">Contact us<i class="material-icons">arrow_right_alt</i></a>
     </div>
-
-    <div class="footer-bottom-line-copyright-sm">
-        <div class="copyright_sm">
-        <div class="copyright">
-            © 2024 CLOBOTICS ALL RIGHTS RESERVED - <a href="<?php echo esc_url(get_permalink(get_page_by_path('privacy-cookie-policy'))); ?>">PRIVACY & COOKIE POLICY</a>
-        </div>
-    
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/company/cloboticswindservices/">
-                <img src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png"  alt="LinkedIn"> <br>
-                <span>Wind</span>
-            </a>
-            <a href="https://www.linkedin.com/company/clobotics/">
-                <img src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png" alt="LinkedIn"> <br>
-                <span>Retail</span>
-            </a>
-            <a href="https://vimeo.com/681845431">
-                <img src="<?php echo get_template_directory_uri(); ?>/media/vimeo-logo.png" alt="Vimeo"> <br>
-                <span>Vimeo</span>
-            </a>
-            </div>
-        </div>
-    </div>
 </footer>
 
 <?php wp_footer(); ?>
 </body>
 </html>
+
