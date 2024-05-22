@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Articles
+Template Name: New Articles
 */
 ?>
 
@@ -20,28 +20,27 @@ Template Name: Articles
 <main>
     <h2>Clobotics Articles</h2>
 
-    <!-- Search form -->
-    <form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
-        <label>
-            <span class="screen-reader-text"><?php echo _x('Search for:', 'label'); ?></span>
-            <input type="search" class="search-field" placeholder="<?php echo esc_attr_x('Search articles', 'placeholder'); ?>" value="<?php echo get_search_query(); ?>" name="s" />
-        </label>
-        <input type="submit" class="search-submit" value="<?php echo esc_attr_x('Search', 'submit button'); ?>" />
-    </form>
+    <!-- Search bar -->
+    <div class="search-bar-container">
+        <form id="search-form" method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form">
+            <div class="search-bar">
+                <input type="text" name="search_query" id="search-input" placeholder="Search...">
+                <button type="submit" class="search-button">
+                    <span class="material-icons search-icon">search</span>
+                </button>
+            </div>
+        </form>
+    </div>
 
     <div id="articles-container">
         <?php
-        $articles_per_page = 6;
-        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
-
         // Check if search query exists
-        $search_query = isset($_GET['s']) ? sanitize_text_field($_GET['s']) : '';
+        $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
 
         // Define WP_Query args
         $args = array(
             'post_type' => 'new-article',
-            'posts_per_page' => $articles_per_page,
-            'paged' => $paged,
+            'posts_per_page' => -1,
             'meta_query' => array(
                 'relation' => 'OR',
                 array(
@@ -56,13 +55,9 @@ Template Name: Articles
         $articles_query = new WP_Query($args);
 
         if ($articles_query->have_posts()) :
-            $count = 0;
             while ($articles_query->have_posts()) : $articles_query->the_post();
-                if ($count % 3 == 0) {
-                    echo '<div class="row">';
-                }
                 ?>
-                <article class="col">
+                <article>
                     <a href="<?php the_permalink(); ?>">
                         <?php
                         $image = get_field('article_main_image');
@@ -72,19 +67,10 @@ Template Name: Articles
                         ?>
                         <h3><?php the_field('new_article_title'); ?></h3>
                         <p><?php the_field('meta_description_short'); ?></p>
-                        <p class="article-category"><?php echo get_field('article_category'); ?></p>
                     </a>
                 </article>
                 <?php
-                $count++;
-                if ($count % 3 == 0) {
-                    echo '</div>';
-                }
             endwhile;
-
-            if ($count % 3 != 0) {
-                echo '</div>';
-            }
 
             wp_reset_postdata();
         else :
