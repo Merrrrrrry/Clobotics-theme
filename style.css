@@ -1984,12 +1984,12 @@ h1 {
 
 /*  ---------------- FOOTER -------------------- */
 
+/*  ---------------- FOOTER -------------------- */
+
 img.footer-logo {
   max-width: 200px;
   max-height: 100px;
 }
-
-
 
 .footer {
   background-color: #222222;
@@ -2014,11 +2014,10 @@ img.footer-logo {
   width: calc(67% / 3 - 20px);
 }
 
-
-.footer-column .material-icons{
-  color:#ffffff;
+.footer-column .material-icons {
+  color: #ffffff;
   position: relative;
-            top: 6px;
+  top: 6px;
 }
 
 .footer-title {
@@ -2041,7 +2040,6 @@ img.footer-logo {
   display: inline-block;
 }
 
-
 .footer-contact-link {
   color: #fff;
   text-decoration: none;
@@ -2052,37 +2050,39 @@ img.footer-logo {
   margin-left: 5px;
 }
 
-.copyright {
-  font-size: 12px;
-  margin-top: auto;
+/* Adjusted CSS for Copyright and Social Icons */
+.footer-column--social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.copyright a {
+.footer-column--social .copyright {
+  font-size: 12px;
+}
+
+.footer-column--social .copyright a {
   color: #fff;
   text-decoration: none;
 }
 
-.footer .social-icons {
-  width: 100%;
+.footer-column--social .social-icons {
   display: flex;
   justify-content: flex-end;
-  margin-left: 20px;
+  align-items: center;
 }
 
-.social-icons img {
+.footer-column--social .social-icons a {
+  margin-left: 20px; /* Adjust spacing between social icons */
+}
+
+.footer-column--social .social-icons img {
   width: 45px;
 }
 
-.footer .social-icons span {
-  color: white; 
+.footer-column--social .social-icons span {
+  color: white;
 }
-
-.copyright-sm {
-  display: flex; 
-  align-items: flex-end;
-}
-
-
 
   
 /* -------------------------------NAVBAR--------------------------------*/
