@@ -230,12 +230,27 @@ Template Name: About us
     <div class="news_articles_linking_container owl-carousel owl-theme">
         <?php $loop = new WP_Query( array( 'post_type' => 'new-article', 'posts_per_page' => -1 ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-    
-            <div class="news_articles_single_container"> 
+                
+<!--         <div class="news_articles_single_container"> 
                 <img class="article_linking_img" src="<?php $image = get_field('article_main_image');  echo esc_url($image["url"]); ?>" alt="Article image" /> 
                 <h4 class="title"><?php the_field('new_article_title'); ?></h4>
                 <p class="subtitle"><?php the_field('meta_description_short'); ?></p>              
-            </div> 
+            </div>  -->
+
+            
+            <article class="news_articles_single_container col">
+                    <a href="<?php the_permalink(); ?>">
+                        <?php
+                        $image = get_field('article_main_image');
+                        if ($image) :
+                            echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '">';
+                        endif;
+                        ?>
+                        <h3><?php the_field('new_article_title'); ?></h3>
+                        <p><?php the_field('meta_description_short'); ?></p>
+                        <p class="article-category"><?php echo get_field('article_category'); ?></p>
+                    </a>
+            </article>           
 
         <?php endwhile; wp_reset_query(); ?>
     </div>
