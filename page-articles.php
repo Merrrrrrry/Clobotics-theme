@@ -20,70 +20,70 @@ Template Name: Articles
 <main>
     <h2>Clobotics Articles</h2>
 
-       
+    <!-- Search bar -->
+    <div class="search-bar-container">
+        <form id="articles-search-form" class="search-form">
+            <div class="search-bar">
+                <input type="text" id="articles-search-input" placeholder="Search...">
+                <button type="submit" class="search-button">
+                    <span class="material-icons search-icon">search</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
     <div id="articles-container">
-        <?php
-        $articles_per_page = 6;
-        $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+        <!-- Articles will be loaded dynamically here via AJAX -->
+    </div>
 
-        $articles_query = new WP_Query(array(
-            'post_type' => 'new-article',
-            'posts_per_page' => $articles_per_page,
-            'paged' => $paged
-        ));
-
-        if ($articles_query->have_posts()) :
-            $count = 0;
-            while ($articles_query->have_posts()) : $articles_query->the_post();
-                if ($count % 3 == 0) {
-                    echo '<div class="row">';
-                }
-                ?>
-                <article class="col">
-                    <a href="<?php the_permalink(); ?>">
-                        <?php
-                        $image = get_field('article_main_image');
-                        if ($image) :
-                            echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '">';
-                        endif;
-                        ?>
-                        <h3><?php the_field('new_article_title'); ?></h3>
-                        <p><?php the_field('meta_description_short'); ?></p>
-                        <p class="article-category"><?php echo get_field('article_category'); ?></p>
-                    </a>
-                </article>
-                <?php
-                $count++;
-                if ($count % 3 == 0) {
-                    echo '</div>';
-                }
-            endwhile;
-
-            if ($count % 3 != 0) {
-                echo '</div>';
-            }
-
-            if ($articles_query->max_num_pages > 1) :
-                ?>
-                <div class="pagination">
-                    <?php echo paginate_links(array(
-                        'total' => $articles_query->max_num_pages,
-                        'current' => max(1, $paged),
-                        'prev_text' => __('« Previous'),
-                        'next_text' => __('Next »'),
-                    )); ?>
-                </div>
-            <?php endif;
-
-            wp_reset_postdata();
-        else :
-            echo '<p>No articles found.</p>';
-        endif;
-        ?>
+    <div class="pagination">
+        <!-- Pagination links will be loaded dynamically here via AJAX -->
     </div>
 </main>
 
+<script>
+    jQuery(function($) {
+        // AJAX search for articles
+        $('#articles-search-form').on('submit', function(e) {
+            e.preventDefault();
+            var searchQuery = $('#articles-search-input').val();
+
+            $.ajax({
+                url: '<?php echo admin_url('admin-ajax.php'); ?>',
+                type: 'POST',
+                data: {
+                    action: 'clobotics_ajax_search_articles',
+                    search_query: searchQuery,
+                    page: 1 // Start from page 1 when searching
+                },
+                success: function(response) {
+                    $('#articles-container').html(response.articles);
+                    $('.pagination').html(response.pagination);
+                }
+            });
+        });
+
+        // AJAX pagination for articles
+        $(document).on('click', '.pagination a', function(e) {
+            e.preventDefault();
+            var page = $(this).attr('href').split('/').pop();
+
+            $.ajax({
+                url: '<?php echo admin_url('admin-ajax.php'); ?>',
+                type: 'POST',
+                data: {
+                    action: 'clobotics_ajax_search_articles',
+                    search_query: $('#articles-search-input').val(),
+                    page: page
+                },
+                success: function(response) {
+                    $('#articles-container').html(response.articles);
+                    $('.pagination').html(response.pagination);
+                }
+            });
+        });
+    });
+</script>
 
 </body>
 <?php get_footer(); ?>
-

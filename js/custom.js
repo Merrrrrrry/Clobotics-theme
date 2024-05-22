@@ -48,7 +48,6 @@ jQuery(document).ready(function($) {
     });
 });
 
-// AJAX request for articles search bar
 
 
 
