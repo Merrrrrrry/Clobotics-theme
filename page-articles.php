@@ -24,7 +24,7 @@ Template Name: New Articles
     <div class="search-bar-container">
         <form id="search-form" method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form">
             <div class="search-bar">
-                <input type="text" name="search_query" id="search-input" placeholder="Search...">
+                <input type="text" name="search_query" id="search-input" placeholder="Search..." value="<?php echo isset($_GET['search_query']) ? esc_attr($_GET['search_query']) : ''; ?>">
                 <button type="submit" class="search-button">
                     <span class="material-icons search-icon">search</span>
                 </button>
