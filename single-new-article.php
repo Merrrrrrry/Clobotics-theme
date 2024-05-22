@@ -116,7 +116,7 @@ Template Name: single-new-article
             nav: true,
             dots: true,
             autoplay: true,
-            autoplayTimeout: 3000,
+            autoplayTimeout: 6000,
             animateOut: 'fadeOut',
             lazyLoad: true,
         })
