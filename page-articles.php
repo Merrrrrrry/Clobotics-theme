@@ -20,17 +20,34 @@ Template Name: Articles
 <main>
     <h2>Clobotics Articles</h2>
 
-       
     <div id="articles-container">
         <?php
         $articles_per_page = 6;
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 
-        $articles_query = new WP_Query(array(
+        // Check if search query exists
+        $search_query = isset($_GET['s']) ? sanitize_text_field($_GET['s']) : '';
+
+        // Define WP_Query args
+        $args = array(
             'post_type' => 'new-article',
             'posts_per_page' => $articles_per_page,
-            'paged' => $paged
-        ));
+            'paged' => $paged,
+        );
+
+        // If search query exists, add meta query to filter by new_article_title
+        if (!empty($search_query)) {
+            $args['meta_query'] = array(
+                array(
+                    'key' => 'new_article_title',
+                    'value' => $search_query,
+                    'compare' => 'LIKE'
+                )
+            );
+        }
+
+        // Perform WP_Query
+        $articles_query = new WP_Query($args);
 
         if ($articles_query->have_posts()) :
             $count = 0;
@@ -63,27 +80,22 @@ Template Name: Articles
                 echo '</div>';
             }
 
-            if ($articles_query->max_num_pages > 1) :
-                ?>
-                <div class="pagination">
-                    <?php echo paginate_links(array(
-                        'total' => $articles_query->max_num_pages,
-                        'current' => max(1, $paged),
-                        'prev_text' => __('« Previous'),
-                        'next_text' => __('Next »'),
-                    )); ?>
-                </div>
-            <?php endif;
-
             wp_reset_postdata();
         else :
             echo '<p>No articles found.</p>';
         endif;
         ?>
     </div>
-</main>
 
+    <!-- Search form -->
+    <form role="search" method="get" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
+        <label>
+            <span class="screen-reader-text"><?php echo _x('Search for:', 'label'); ?></span>
+            <input type="search" class="search-field" placeholder="<?php echo esc_attr_x('Search articles', 'placeholder'); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+        </label>
+        <input type="submit" class="search-submit" value="<?php echo esc_attr_x('Search', 'submit button'); ?>" />
+    </form>
+</main>
 
 </body>
 <?php get_footer(); ?>
-
