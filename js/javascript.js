@@ -18,17 +18,27 @@ document.addEventListener('DOMContentLoaded', function () {
 // Function to scroll to the contact form 
 function scrollToContactForm(event) {
     event.preventDefault(); 
-    var contactFormSection = document.getElementById("contact-form-section");
-    contactFormSection.scrollIntoView({ behavior: "smooth" });
+    var contactSection = document.getElementById("contact-form-container-career");
+    if (contactSection) {
+        console.log("Contact section found:", contactSection);
+        contactSection.scrollIntoView({ behavior: "smooth" });
+    } else {
+        console.error("Contact section not found.");
+    }
 }
 
 // Event listener to the Apply button to scroll to the contact form section
+
 document.addEventListener("DOMContentLoaded", function() {
     var applyButton = document.getElementById("apply-button"); 
     if (applyButton) {
         applyButton.addEventListener("click", scrollToContactForm);
+    } else {
+        console.error("Apply button not found.");
     }
 });
+
+
 
 // Company History Timeline JS
 

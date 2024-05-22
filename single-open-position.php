@@ -106,7 +106,7 @@ Template Name: single-open-position
                 </div>
             </div>
 
-            <div class="contact-form-career">
+            <div class="contact-form-container-career" id="contact-form-container-career">
                 <h2 class="title apply-position-title">Apply for the position</h2>
                 <?php echo do_shortcode('[contact-form-7 id="c48fb62" title="Apply for the position"]'); ?>
             </div>
