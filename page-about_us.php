@@ -152,8 +152,8 @@ Template Name: About us
         <h3 class="title title_special white"><?php the_field('article_title_want_to_join'); ?></h3>
         <p class="subtitle_special white"><?php the_field('subtitle_of_article_want_to_join'); ?></p>
         <div class="join_or_contact_us_btns">
-            <a href="<?php echo get_permalink('  ............  ') ?>" class="btn">Work for us</a>
-            <a href="<?php echo get_permalink('  ............  ') ?>" class="btn light">Work with us</a>
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('career'))); ?>"class="btn">Work for us</a>  
+            <a href="<?php echo esc_url(get_permalink(get_page_by_path('contact'))); ?>"class="btn light">Work with us</a>  
         </div>
     </div>
 
