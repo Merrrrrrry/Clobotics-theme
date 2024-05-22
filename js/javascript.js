@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   
 
-// Function to scroll to the contact form section
+// Function to scroll to the contact form 
 function scrollToContactForm(event) {
     event.preventDefault(); 
     var contactFormSection = document.getElementById("contact-form-section");
