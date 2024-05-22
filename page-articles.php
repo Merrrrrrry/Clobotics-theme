@@ -54,10 +54,18 @@ Template Name: New Articles
         // Perform WP_Query
         $articles_query = new WP_Query($args);
 
+        $counter = 0; // Initialize counter for grouping articles into rows
+
         if ($articles_query->have_posts()) :
             while ($articles_query->have_posts()) : $articles_query->the_post();
+                $counter++;
+
+                // Start a new row after every third article
+                if ($counter % 3 == 1) {
+                    echo '<div class="row">';
+                }
                 ?>
-                <article>
+                <article class="col">
                     <a href="<?php the_permalink(); ?>">
                         <?php
                         $image = get_field('article_main_image');
@@ -70,7 +78,16 @@ Template Name: New Articles
                     </a>
                 </article>
                 <?php
+                // Close the row after every third article
+                if ($counter % 3 == 0) {
+                    echo '</div>'; // Close the row
+                }
             endwhile;
+
+            // Close the row if the total number of articles is not a multiple of three
+            if ($counter % 3 != 0) {
+                echo '</div>'; // Close the row
+            }
 
             wp_reset_postdata();
         else :
@@ -82,4 +99,3 @@ Template Name: New Articles
 
 </body>
 <?php get_footer(); ?>
-
