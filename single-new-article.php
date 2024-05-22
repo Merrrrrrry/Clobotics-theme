@@ -40,7 +40,9 @@ Template Name: single-new-article
                 <?php for ($j = 1; $j <= 2; $j++): ?>
                     <?php $image = get_field("new_article_image_" . (($i - 1) * 2 + $j)); ?>
                     <?php if ($image): ?>
-                        <img class="news_article_content_img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                        <div class="image_container">
+                            <img class="news_article_content_img" src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                        </div>
                     <?php endif; ?>
                 <?php endfor; ?>
             <?php endfor; ?>
