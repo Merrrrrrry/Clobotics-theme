@@ -99,25 +99,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function updateButtonVisibility() {
-        let hiddenItems = document.querySelectorAll('.meet-our-team-box-content[style*="display: none"]');
-        let visibleItems = document.querySelectorAll('.meet-our-team-box-content:not([style*="display: none"])').length;
-
-        showMoreBtn.style.display = hiddenItems.length > 0 ? 'inline-block' : 'none';
-        showLessBtn.style.display = visibleItems > itemsToShow ? 'inline-block' : 'none';
+        const totalItems = document.querySelectorAll('.meet-our-team-box-content:not([style*="display: none"])').length;
+        showMoreBtn.style.display = totalItems > 8 ? 'inline-block' : 'none';
+        showLessBtn.style.display = totalItems > itemsToShow ? 'inline-block' : 'none';
     }
 
     // Show more button functionality
     showMoreBtn.addEventListener('click', function() {
         let hiddenItems = document.querySelectorAll('.meet-our-team-box-content[style*="display: none"]');
-        if (hiddenItems.length === 0) {
-            // Switch to "all" filter if no more items to show
-            document.querySelector('.filter-btn[data-filter="all"]').click();
-            regionSelect.value = 'all';
-            filterEmployees('all', 'all');
-        } else {
-            for (let i = 0; i < Math.min(itemsToShow, hiddenItems.length); i++) {
-                hiddenItems[i].style.display = 'block';
-            }
+        for (let i = 0; i < Math.min(itemsToShow, hiddenItems.length); i++) {
+            hiddenItems[i].style.display = 'block';
         }
         updateButtonVisibility();
     });
@@ -140,7 +131,6 @@ document.addEventListener('DOMContentLoaded', function () {
     showLessBtn.style.display = 'none';
     updateButtonVisibility();
 });
-
 
 // Function to show one of three pictures - we work globally section on Wind services page
 
