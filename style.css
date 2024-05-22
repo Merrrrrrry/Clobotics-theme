@@ -765,13 +765,6 @@ h4.text-career {
   color: #01A7E6;
 }
 
-/* Place at the end of your CSS file */
-.contact-form-career input:focus,
-.contact-form-career textarea:focus {
-  background-color: #ffffff !important;
-}
-
-
 
 /* <------ Article page style ------> */
 
