@@ -743,6 +743,31 @@ h4.text-career {
   }
 }
 
+
+
+.contact-form-career label,
+.contact-form-career .upload-section label,
+.contact-form-career .codedropz-upload-inner h3,
+.contact-form-career p {
+  color: gray;
+}
+
+
+.contact-form-career input::placeholder,
+.contact-form-career textarea::placeholder {
+  color: gray;
+}
+
+
+.contact-form-career input,
+.contact-form-career textarea {
+  color: gray;
+}
+
+
+
+
+
 /* <------ Article page style ------> */
 
 
