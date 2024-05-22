@@ -555,10 +555,6 @@ h4.text-career {
 
 /* <------ Contact Person Career style ------> */
 
-.contact-form-container-career .contact-person-title {
-  margin-right: 0px !important;
-}
-
 .contact-form-container-career {
   display: flex;
   justify-content: center;
@@ -759,6 +755,8 @@ h4.text-career {
 @media (min-width: 769px) {
   .contact-form-container-career {
     display: flex;
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
   }
 
   .contact-person-career, .contact-form-career {
