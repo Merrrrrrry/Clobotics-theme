@@ -555,17 +555,18 @@ h4.text-career {
 
 /* <------ Contact Person Career style ------> */
 
-
 .contact-form-container-career {
   display: flex;
-  justify-content: center;
-  align-items: center; /* Center align items vertically */
+  justify-content: space-between;
+  align-items: flex-start; 
   gap: 20px;
-  flex-wrap: wrap; /* Ensure elements wrap on smaller screens */
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .contact-person-career, .contact-form-career {
   width: 48%;
+  box-sizing: border-box;
 }
 
 .contact-person-career {
@@ -630,12 +631,10 @@ h4.text-career {
 /* <------ Contact Form Career style ------> */
 
 .contact-form-career {
-  width: 100%; /* Adjusted to 100% to utilize full width */
-  margin: 0 auto;
   background-color: #fff;
   display: flex;
-  flex-direction: column; /* Ensure column layout */
-  align-items: center; /* Center align items */
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-form-career .title {
@@ -645,11 +644,12 @@ h4.text-career {
 
 .contact-form-career input,
 .contact-form-career textarea {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   border: 1px solid #bdbdbd;
   border-radius: 13px;
   box-sizing: border-box;
+  margin-bottom: 10px; /* Add margin for spacing */
 }
 
 .contact-form-career input:focus,
@@ -662,14 +662,13 @@ h4.text-career {
 }
 
 .contact-form-career input[type="submit"] {
-  width: 100%;
+  width: 90%;
   background-color: #01A7E6;
   color: #fff;
-  padding: 8px 20px;
+  padding: 15px 20px;
   border-radius: 20px !important;
   cursor: pointer;
-  margin-bottom: 100px;
-  width: 100% !important;
+  margin-bottom: 20px; /* Adjusted for smaller bottom margin */
 }
 
 .contact-form-career input[type="submit"]:hover {
@@ -678,13 +677,14 @@ h4.text-career {
 
 .contact-form-career label {
   display: block;
-  width: 100%; /* Ensure labels take full width */
+  width: 90%;
+  margin-bottom: 5px;
 }
 
 .contact-form-career .column {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center align items */
+  align-items: center;
   width: 100%;
 }
 
@@ -692,7 +692,7 @@ h4.text-career {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 100%;
+  width: 90%;
   color: #888888;
 }
 
@@ -708,6 +708,7 @@ h4.text-career {
   .contact-form-container-career {
     flex-direction: column;
     width: 100%;
+    align-items: center; /* Center align items */
   }
 
   .contact-person-career, .contact-form-career {
@@ -747,7 +748,6 @@ h4.text-career {
 }
 
 .contact-form-container-career h2 {
-  display: inline-block;
   margin: 0;
   padding: 0 10px 20px;
   text-align: center;
@@ -757,8 +757,8 @@ h4.text-career {
 @media (min-width: 769px) {
   .contact-form-container-career {
     display: flex;
-    justify-content: center; /* Center align items horizontally */
-    align-items: center; /* Center align items vertically */
+    justify-content: space-between;
+    align-items: flex-start;
   }
 
   .contact-person-career, .contact-form-career {
