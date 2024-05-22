@@ -1984,6 +1984,8 @@ h1 {
 
 /* ---------------- FOOTER -------------------- */
 
+/* ---------------- FOOTER -------------------- */
+
 img.footer-logo {
   max-width: 200px;
   max-height: 100px;
@@ -2048,11 +2050,12 @@ img.footer-logo {
   margin-left: 5px;
 }
 
-
+/* Adjusted CSS for Copyright and Social Icons */
 .footer-bottom-line-copyright-sm {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 30px; /* Add margin to separate from footer content */
 }
 
 .footer-bottom-line-copyright-sm .copyright {
@@ -2069,7 +2072,7 @@ img.footer-logo {
 }
 
 .footer-bottom-line-copyright-sm .social-icons a {
-  margin-left: 10px; 
+  margin-left: 30px; /* Adjust spacing between social icons */
 }
 
 .footer-bottom-line-copyright-sm .social-icons img {
