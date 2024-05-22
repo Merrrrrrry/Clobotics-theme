@@ -308,7 +308,9 @@ height:auto;
 /*   <--- Search bar in Career page ---> */
 
 .search-bar-container-articles {
-  margin-top: 40px;
+  padding-top: 20px;
+  margin-top: 30px;
+  max-width: 485px;
 }
 
 .search-form-articles {
