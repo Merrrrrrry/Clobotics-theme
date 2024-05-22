@@ -629,18 +629,13 @@ h4.text-career {
 
 /* <------ Contact Form Career style ------> */
 
-.contact-form-career {
-  width: 100%; /* Adjusted to 100% to utilize full width */
-  margin: 0 auto;
-  background-color: #fff;
-  display: flex;
-  flex-direction: column; /* Ensure column layout */
-  align-items: center; /* Center align items */
-}
+/* <------ Contact Form Career style ------> */
 
-.contact-form-career .title {
-  text-align: center;
-  width: 100%;
+.contact-form-career {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
 }
 
 .contact-form-career input,
@@ -654,7 +649,7 @@ h4.text-career {
 
 .contact-form-career input:focus,
 .contact-form-career textarea:focus {
-  border-color: #757575 !important;
+  border-color: #757575;
 }
 
 .contact-form-career textarea {
@@ -669,7 +664,6 @@ h4.text-career {
   border-radius: 20px !important;
   cursor: pointer;
   margin-bottom: 100px;
-  width: 100% !important;
 }
 
 .contact-form-career input[type="submit"]:hover {
@@ -678,14 +672,11 @@ h4.text-career {
 
 .contact-form-career label {
   display: block;
-  width: 100%; /* Ensure labels take full width */
 }
 
 .contact-form-career .column {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center align items */
-  width: 100%;
 }
 
 .contact-form-career .upload-section {
@@ -693,7 +684,6 @@ h4.text-career {
   flex-direction: column;
   gap: 10px;
   width: 100%;
-  color: #888888;
 }
 
 .contact-form-career .upload-section label {
@@ -701,7 +691,7 @@ h4.text-career {
 }
 
 .contact-form-career p {
-  margin: 0;
+  margin: 0; 
 }
 
 @media (max-width: 768px) {
@@ -750,21 +740,24 @@ h4.text-career {
   display: inline-block;
   margin: 0;
   padding: 0 10px 20px;
-  text-align: center;
-  width: 100%;
+}
+
+.contact-form-container-career .contact-person-title {
+  margin-right: 20px;
 }
 
 @media (min-width: 769px) {
   .contact-form-container-career {
     display: flex;
-    justify-content: center; /* Center align items horizontally */
-    align-items: center; /* Center align items vertically */
+    align-items: center;
+    justify-content: space-between;
   }
 
   .contact-person-career, .contact-form-career {
     width: 48%;
   }
 }
+
 
 /* <------ Article page style ------> */
 
