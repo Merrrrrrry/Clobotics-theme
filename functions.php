@@ -256,6 +256,19 @@ function clobotics_ajax_search_wind_services() {
 add_action('wp_ajax_clobotics_search_wind_services', 'clobotics_ajax_search_wind_services');
 add_action('wp_ajax_nopriv_clobotics_search_wind_services', 'clobotics_ajax_search_wind_services');
 
+
+
+
+
+
+// Display articles by default
+function display_default_articles() {
+    if (!is_search()) {
+        clobotics_ajax_search_articles();
+    }
+}
+add_action('wp_loaded', 'display_default_articles');
+
 // Handle AJAX search for new articles
 function clobotics_ajax_search_articles() {
     $searchQuery = isset($_POST['search_query']) ? sanitize_text_field($_POST['search_query']) : '';
@@ -309,4 +322,3 @@ function clobotics_ajax_search_articles() {
 }
 add_action('wp_ajax_clobotics_ajax_search_articles', 'clobotics_ajax_search_articles');
 add_action('wp_ajax_nopriv_clobotics_ajax_search_articles', 'clobotics_ajax_search_articles');
-
