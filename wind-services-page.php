@@ -123,7 +123,7 @@ Template Name: Wind services
                             <?php
                             $icon1_id = get_field('icon_of_the_keypoint_1');
                             if ($icon1_id) :
-                                $icon1_image = get_field('icon-for-wind', $icon1_id);
+                                $icon1_image = get_field('icon-for-wind-servic', $icon1_id);
                                 if ($icon1_image) :
                             ?>
                                 <div class="list_icon">
@@ -136,7 +136,7 @@ Template Name: Wind services
                             <?php
                             $icon2_id = get_field('icon_of_the_keypoint_2');
                             if ($icon2_id) :
-                                $icon2_image = get_field('icon-for-wind', $icon2_id); 
+                                $icon2_image = get_field('icon-for-wind-servic', $icon2_id); 
                                 if ($icon2_image) :
                             ?>
                                 <div class="list_icon">
@@ -149,7 +149,7 @@ Template Name: Wind services
                             <?php
                             $icon3_id = get_field('icon_of_the_keypoint_3');
                             if ($icon3_id) :
-                                $icon3_image = get_field('icon-for-wind', $icon3_id); 
+                                $icon3_image = get_field('icon-for-wind-servic', $icon3_id); 
                                 if ($icon3_image) :
                             ?>
                                 <div class="list_icon">
