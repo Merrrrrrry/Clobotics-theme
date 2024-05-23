@@ -939,7 +939,7 @@ h4.text-career {
 
 #articles-container article {
   flex: 0 0 calc(33.333% - 100px);  
-  max-width: calc(20% - 100px);
+  max-width: calc(25% - 100px);
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
