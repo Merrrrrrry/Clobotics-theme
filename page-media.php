@@ -43,6 +43,67 @@ Template Name: Media
         
         <?php endwhile; wp_reset_query(); ?>
     </section>
+
+    
+
+<!-- Media Videos loop  (downloadable content section) -->
+    <section class="media_videos_content">
+        <?php 
+        $loop = new WP_Query(array('post_type' => 'media-video', 'posts_per_page' => -1)); 
+        while ($loop->have_posts()) : $loop->the_post(); 
+            $image = get_field('video_clip');
+            $name = get_field("video_description");
+        ?>
+        
+        <div class="downloadable-content">
+            <a href="<?php echo esc_url($image["url"]); ?>" title="Downloadable vidio clip of <?php echo esc_attr($name); ?>">DOWNLOAD</a>
+            <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($name); ?></p>
+        </div>
+        
+        
+        <?php endwhile; wp_reset_query(); ?>
+    </section>
+
+
+
+<!-- Media Certificates loop  (downloadable content section) -->
+    <section class="media_certificates_content">
+        <?php 
+        $loop = new WP_Query(array('post_type' => 'media-certificate', 'posts_per_page' => -1)); 
+        while ($loop->have_posts()) : $loop->the_post(); 
+            $image = get_field('certificate');
+            $name = get_field("certificate_description");
+        ?>
+        
+        <div class="downloadable-content">
+            <a href="<?php echo esc_url($image["url"]); ?>" title="Downloadable certificate '<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
+            <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($name); ?></p>
+        </div>
+        
+        
+        <?php endwhile; wp_reset_query(); ?>
+    </section>
+    
+
+
+
+<!-- Media Company presentations loop  (downloadable content section) -->
+    <section class="media_photos_content">
+        <?php 
+        $loop = new WP_Query(array('post_type' => 'media-presentation', 'posts_per_page' => -1)); 
+        while ($loop->have_posts()) : $loop->the_post(); 
+            $image = get_field('presentation');
+            $name = get_field("presentation_description");
+        ?>
+        
+        <div class="downloadable-content">
+            <a href="<?php echo esc_url($image["url"]); ?>" title="Downloadable presentation '<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
+            <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($name); ?></p>
+        </div>
+        
+        
+        <?php endwhile; wp_reset_query(); ?>
+    </section>
     
 
 
