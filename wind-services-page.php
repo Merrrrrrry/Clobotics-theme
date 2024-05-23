@@ -206,7 +206,7 @@ Template Name: Wind services
     <div class="slides">
         <?php
         $args = array(
-            'post_type' => 'customer-logos',
+            'post_type' => 'customers-logo',
             'posts_per_page' => -1,
         );
         $customer_logos = new WP_Query($args);
