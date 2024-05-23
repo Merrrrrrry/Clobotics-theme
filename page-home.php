@@ -21,7 +21,7 @@ Template Name: Home
     </div>
 
     <div class="hero-section-content">
-        <h1 class="title hero-title"> </h1>
+        <h1 class="title hero-title" style="display: none;">Clobotics home page</h1>
     </div>
 </div>
 
