@@ -15,7 +15,7 @@ Template Name: Home
 
 
 <!-- Hero section -->
-<div class="hero-section">
+<div class="hero-section hero-section-home">
     <div class="hero-section-background">
         <img class="image-hero" src="<?php echo get_template_directory_uri(); ?>/media/Hero-imgs/Hero_articles_page.jpg" alt="Hero image">
     </div>
