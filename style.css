@@ -956,7 +956,8 @@ h4.text-career {
 
 #articles-container article h3 {
   padding: 10px 0;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 15px;  
   text-align: left;
   color: #000000;
@@ -966,8 +967,8 @@ h4.text-career {
 }
 
 #articles-container article p {
-  padding: 0 10px 10px;
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 10px;  
   color: #000000;
   font-family: 'Open sans' sans-serif;
