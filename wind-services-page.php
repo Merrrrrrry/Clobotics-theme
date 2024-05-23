@@ -68,7 +68,7 @@ Template Name: Wind services
 <!-- Wind services presentation Video (code referenced from busters world) -->
         <div class="section-one">
         <video>
-        <source src="<?php echo get_template_directory_uri(); ?>/media/Wind_video" type="video/mp4">
+        <source src="<?php echo get_template_directory_uri(); ?>/media/Wind_video.mp4" type="video/mp4">
         </video>
         </div>
 
