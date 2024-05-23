@@ -1700,7 +1700,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   height: 100%;
   object-fit: cover;
   z-index: 1; 
-  object-position: center top;
+  object-position: center -70px;
 }
 
 .wind-call-to-action .content-wrapper {
