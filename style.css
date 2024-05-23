@@ -928,18 +928,20 @@ h4.text-career {
 
 #articles-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
+  padding: 10px; /* Optional: Add some padding to the container if needed */
 }
 
-#articles-container {
+#articles-container .owl-item {
   display: flex;
   justify-content: center;
+  padding: 10px;  /* Ensure spacing between items */
 }
 
 #articles-container article {
-  flex: 0 0 calc(33.333% - 100px);  
-  max-width: calc(25% - 100px);
+  flex: 0 0 calc(33.333% - 20px);  /* Three articles per row with spacing */
+  max-width: calc(33.333% - 20px);
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -955,23 +957,20 @@ h4.text-career {
 }
 
 #articles-container article h3 {
-  margin-bottom: 0px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 10px;  /* Simplify margin setting */
   font-size: 15px;  
   text-align: left;
   color: #000000;
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
 
 #articles-container article p {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 0 10px 10px;  /* Simplify margin setting */
   text-align: left;
   font-size: 11px;  
   color: #000000;
-  font-family: 'Open sans' sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
 }
 
