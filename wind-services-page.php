@@ -63,12 +63,14 @@ Template Name: Wind services
 
 
 
+
+
 <!-- Wind services presentation Video (code referenced from busters world) -->
-<div class="wind_presentation_video">
-    <video autoplay class="video-background"> 
-        <source src="<?php echo get_template_directory_uri(); ?> /....../..... .mp4" type="video/mp4">
-    </video>
-</div>
+        <div class="section-one">
+        <video>
+        <source src="<?php echo get_template_directory_uri(); ?>/media/Wind_video" type="video/mp4">
+        </video>
+        </div>
 
 
     
