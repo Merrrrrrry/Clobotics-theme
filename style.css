@@ -879,7 +879,7 @@ h4.text-career {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 20px; /* Adjust the gap between articles */
+  gap: 2px; /* Adjust the gap between articles */
 }
 
 #articles-container .col {
