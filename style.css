@@ -959,14 +959,19 @@ h4.text-career {
   margin: 10px;
   font-size: 15px;  
   text-align: left;
-  color: #333;
+  color: #000000;
   text-align: justify;
+  font-family: 'Roboto' sans-serif;
+  font-weight: 200;
 }
 
 #articles-container article p {
   padding: 0 10px 10px;
-  font-size: 0.9em;  /* Smaller font size */
-  color: #666;
+  margin: 10px;
+  font-size: 10px;  
+  color: #000000;
+  font-family: 'Open sans' sans-serif;
+  font-weight: 500;
 }
 
 
