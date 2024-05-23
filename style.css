@@ -956,6 +956,7 @@ h4.text-career {
 
 #articles-container article h3 {
   padding: 10px 0;
+  margin: 10px;
   font-size: 15px;  
   text-align: left;
   color: #333;
