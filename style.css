@@ -875,45 +875,38 @@ h4.text-career {
 
 /* <------ Article page style ------> */
 
-/* <------ Article page style ------> */
-
 #articles-container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 0px; /* Adjust the gap between articles */
 }
 
-#articles-container .owl-item {
-  display: flex;
-  justify-content: center;
-}
-
-#articles-container article {
-  flex: 0 0 calc(33.333% - 20px);
-  max-width: calc(33.333% - 20px);
-  margin-bottom: 20px;
+#articles-container .col {
+  flex: 0 0 calc(33.33% - 10px);
+  max-width: calc(33.33% - 10px);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   background: #fff;
-  padding: 10px;
 }
 
-#articles-container article img {
+#articles-container .col img {
   width: 100%;
-  height: 200px;  /* Fixed height for uniformity */
-  object-fit: cover;
+  height: auto;
+  margin: 0; /* Remove margins around images */
 }
 
-#articles-container article h3 {
-  padding: 10px 0;
-  font-size: 1.2em;
+#articles-container .col h3 {
+  padding: 10px 15px;
+  font-size: 24px; /* Adjust the text size */
   color: #333;
 }
 
-#articles-container article p {
-  padding: 0 10px 10px;
+#articles-container .col p {
+  padding: 0 15px 15px;
   color: #666;
+  font-size: 16px; /* Adjust the text size */
 }
 
 

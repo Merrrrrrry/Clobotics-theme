@@ -5,11 +5,6 @@ Template Name: New Articles
 ?>
 
 <?php get_header(); ?>
-<?php 
-    wp_enqueue_style("owl-carousel-style", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.carousel.min.css");
-    wp_enqueue_style("owl-carousel-style-theme", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.theme.default.min.css");
-    wp_enqueue_style("owl-carousel-custom-styles", get_stylesheet_directory_uri() . "/css/custom.owl-carousel.css");
-?>
 
 <body class="gray-body">
     <div class="hero-section">
@@ -37,12 +32,12 @@ Template Name: New Articles
             </form>
         </div>
 
-        <div id="articles-container" class="owl-carousel owl-theme row" style="margin: 4em;">
+        <div id="articles-container" class="row">
             <?php
-           
+            
             $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
 
-            
+          
             $args = array(
                 'post_type' => 'new-article',
                 'posts_per_page' => -1,
@@ -56,14 +51,13 @@ Template Name: New Articles
                 )
             );
 
-          
+            // Perform WP_Query
             $articles_query = new WP_Query($args);
-
 
             if ($articles_query->have_posts()) :
                 while ($articles_query->have_posts()) : $articles_query->the_post();
                     ?>
-                    <article class="col" style="margin: 1em;">
+                    <article class="col">
                         <a href="<?php the_permalink(); ?>">
                             <?php
                             $image = get_field('article_main_image');
@@ -85,26 +79,6 @@ Template Name: New Articles
             ?>
         </div>
     </main>
-
 </body>
-
-<?php 
-    wp_enqueue_script("jquery", "https://code.jquery.com/jquery-1.12.1.min.js");
-    wp_enqueue_script("carousel-script", get_stylesheet_directory_uri()."/js/plug-ins/OwlCarousel2/owl.carousel.min.js");
-?>
-<script>
-    jQuery(document).ready(function($) {
-        applyOwlCarousel({
-            loop: true,
-            items:3,  
-            nav: true,
-            dots: false,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            animateOut: 'fadeOut',
-            lazyLoad: true,
-        })
-    });
-</script>
 
 <?php get_footer(); ?>
