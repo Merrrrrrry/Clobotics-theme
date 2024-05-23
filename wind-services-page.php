@@ -192,7 +192,7 @@ Template Name: Wind services
     <img  class="wind-call-to-action-image" src="<?php echo get_template_directory_uri(); ?>/media/contact-us.png" alt="Contact us img">
         <div class="content-wrapper">
             <h2>Optimise your<br>wind turbines</h2>
-            <button class="btn optional">Contact us</button>
+            <a href="http://maria-grysevych.dk/clobotics/home/wind-services/contact/" class="btn optional">Contact us</a>
         </div>
 </section>
 
