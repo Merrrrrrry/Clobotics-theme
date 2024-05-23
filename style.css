@@ -261,6 +261,19 @@ height:auto;
   overflow: hidden;
 } */
 
+
+.home-video {
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-video video {
+  width: 100vw;
+  height: auto;
+  display: block; 
+  z-index: -1;  
+  
+}
 #two_main_directions_conteiner {
   display: flex;
   justify-content: center;
