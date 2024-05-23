@@ -16,8 +16,8 @@ Template Name: Home
 <!-- Hero section -->
 
 <div class="home-video">
-        <video id="sectionVideo" autoplay loop muted playsinline preload="auto">
-        <source src="<?php echo get_template_directory_uri(); ?>/media/logo-animaiton" type="video/mp4">
+        <video autoplay loop muted playsinline preload="auto">
+        <source src="<?php echo get_template_directory_uri(); ?>/media/Logo-animaiton.mp4" type="video/mp4">
         </video>
  </div>
 
