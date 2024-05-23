@@ -2055,7 +2055,7 @@ img.footer-logo {
   width: 1260px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding-top: 20px;
 }
 
