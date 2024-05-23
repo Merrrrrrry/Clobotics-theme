@@ -1606,9 +1606,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 
 /* -----------------WE TAKE CARE OF YOUR BLADES------------------- */
-.we-take-care{
-  padding-bottom: 850px;
-}
+
 
 .we-take-care-background-image {
   position: absolute;
@@ -1638,9 +1636,8 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 .we-take-care-content {
   text-align: right;
-  padding: 20px;
   margin-right: 190px;
-  margin-top: 130px;
+  margin-top: 120px;
   color: white;
   z-index: 1;
 }
