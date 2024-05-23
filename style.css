@@ -913,7 +913,7 @@ h4.text-career {
   padding: 0.5em 2em;
 }
 
-/* <------ Article single page  ------> */
+/* <------------------- Article single page  ------------------> */
 .image_container {
   text-align: center;
 }
@@ -924,7 +924,7 @@ h4.text-career {
   margin-bottom: 2em;
 }
 
-/* <------ Article page style ------> */
+/* <-------------------- Article page style --------------------> */
 
 #articles-container {
   display: flex;
@@ -1051,8 +1051,33 @@ h4.text-career {
 }
 
 
+/* <-------------------- MEDIA PAGE STYLE --------------------> */
 
-/* <------ Privacy & Cookie Policy style ------> */
+section.media_content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+.downloadable-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.preview_img {
+
+}
+
+.downloadable_content_link {
+
+}
+
+.description_of_dwnld_file {
+
+}
+
+/* <-------------------- Privacy & Cookie Policy style -------------------> */
 
 
 .download-buttons-container {

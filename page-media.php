@@ -26,21 +26,24 @@ Template Name: Media
         </div> 
 
 
-<!-- Media Photos loop  (downloadable content section) -->
-    <section class="media_photos_content">
+        <!-- Section Headline -->
+        <h2 class="title">Pictures</h2>
+        <!-- Media Photos loop  (downloadable content section) -->
+    <section class="media_content photos">
+        
         <?php 
         $loop = new WP_Query(array('post_type' => 'media-photos', 'posts_per_page' => -1)); 
         while ($loop->have_posts()) : $loop->the_post(); 
-            $image = get_field('photo_image');
+            $file = get_field('photo_image');
             $name = get_field("photo_description");
             $preview = get_field('preview_image');
         ?>
         
         <div class="downloadable-content">
 
-            <img src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
-            <a href="<?php echo esc_url($image["url"]); ?>" title="Downloadable image of <?php echo esc_attr($name); ?>">DOWNLOAD</a>
-            <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($name); ?></p>
+            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
+            <a class="downloadable_content_link" download="<?php echo esc_url(preg_replace('.*?\/([^\/]+)$','$1',$file["url"])); ?>" href="<?php echo esc_url($file["url"]); ?>" title="Downloadable image of <?php echo esc_attr($name); ?>">DOWNLOAD</a>
+            <p class="subtitle description_of_dwnld_file"><?php echo esc_html($name); ?></p>
         </div>
         
         
@@ -49,20 +52,23 @@ Template Name: Media
 
     
 
-<!-- Media Videos loop  (downloadable content section) -->
-    <section class="media_videos_content">
+    <!-- Section Headline -->
+    <h2 class="title">Videos and videoclips</h2>
+    <!-- Media Videos loop  (downloadable content section) -->
+    <section class="media_content videos">    
+            
         <?php 
         $loop = new WP_Query(array('post_type' => 'media-video', 'posts_per_page' => -1)); 
         while ($loop->have_posts()) : $loop->the_post(); 
-            $image = get_field('video_clip');
+            $file = get_field('video_clip');
             $name = get_field("video_description");
             $preview = get_field('preview_image');
         ?>
         
         <div class="downloadable-content">            
-            <img src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
-            <a href="<?php echo esc_url($image["url"]); ?>" title="Downloadable vidio clip of <?php echo esc_attr($name); ?>">DOWNLOAD</a>
-            <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($name); ?></p>
+            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
+            <a class="downloadable_content_link" download="<?php echo esc_url(preg_replace('.*?\/([^\/]+)$','$1',$file["url"])); ?>" href="<?php echo esc_url($file["url"]); ?>" title="Downloadable vidio clip of <?php echo esc_attr($name); ?>">DOWNLOAD</a>
+            <p class="subtitle description_of_dwnld_file"><?php echo esc_html($name); ?></p>
         </div>
         
         
@@ -70,21 +76,24 @@ Template Name: Media
     </section>
 
 
-
+    <!-- Section Headline -->
+    <h2 class="title">Certificates</h2>
+    
 <!-- Media Certificates loop  (downloadable content section) -->
-    <section class="media_certificates_content">
+    <section class="media_content certificates">        
+
         <?php 
         $loop = new WP_Query(array('post_type' => 'media-certificate', 'posts_per_page' => -1)); 
         while ($loop->have_posts()) : $loop->the_post(); 
-            $image = get_field('certificate');
+            $file = get_field('certificate');
             $name = get_field("certificate_description");
             $preview = get_field('preview_image');
         ?>
         
         <div class="downloadable-content">
-            <img src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
-            <a href="<?php echo esc_url($image["url"]); ?>" title="Downloadable certificate '<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
-            <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($name); ?></p>
+            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
+            <a class="downloadable_content_link" download="<?php echo esc_url(preg_replace('.*?\/([^\/]+)$','$1',$file["url"])); ?>" href="<?php echo esc_url($file["url"]); ?>" title="Downloadable certificate '<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
+            <p class="subtitle description_of_dwnld_file"><?php echo esc_html($name); ?></p>
         </div>
         
         
@@ -93,66 +102,48 @@ Template Name: Media
     
 
 
-
+    <!-- Section Headline -->
+    <h2 class="title">Company presentations</h2>
+    
 <!-- Media Company presentations loop  (downloadable content section) -->
-    <section class="media_presentations_content">
+    <section class="media_content presentations">        
+    
         <?php 
         $loop = new WP_Query(array('post_type' => 'media-presentation', 'posts_per_page' => -1)); 
         while ($loop->have_posts()) : $loop->the_post(); 
-            $image = get_field('presentation');
+            $file = get_field('presentation');
             $name = get_field("presentation_description");
             $preview = get_field('preview_image');
         ?>
         
         <div class="downloadable-content">
-            <img src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
-            <a href="<?php echo esc_url($image["url"]); ?>" title="Downloadable presentation '<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
-            <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($name); ?></p>
+            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
+            <a class="downloadable_content_link" download="<?php echo esc_url(preg_replace('.*?\/([^\/]+)$','$1',$file["url"])); ?>" href="<?php echo esc_url($file["url"]); ?>" title="Downloadable presentation '<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
+            <p class="subtitle description_of_dwnld_file"><?php echo esc_html($name); ?></p>
         </div>
         
         
         <?php endwhile; wp_reset_query(); ?>
     </section>
 
-
+    <!-- Section Headline -->
+    <h2 class="title">Clobotics Posters</h2>
     
-<!-- Media Additional files loop  (downloadable content section) -->
-    <section class="media_additional_files_content">
-        <?php 
-        $loop = new WP_Query(array('post_type' => 'media-additional-fil', 'posts_per_page' => -1)); 
-        while ($loop->have_posts()) : $loop->the_post(); 
-            $image = get_field('additional_file');
-            $name = get_field("file_description");
-            $preview = get_field('preview_image');
-        ?>
-        
-        <div class="downloadable-content">
-            <img src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
-            <a href="<?php echo esc_url($image["url"]); ?>" title="Downloadable file '<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
-            <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($name); ?></p>
-        </div>
-        
-        
-        <?php endwhile; wp_reset_query(); ?>
-    </section>
-    </section>
-
-
-
 <!-- Media Mission, Vision and Values posters loop  (downloadable content section) -->
-    <section class="media_additional_files_content">
+    <section class="media_content posters">        
+
         <?php 
         $loop = new WP_Query(array('post_type' => 'poster', 'posts_per_page' => -1)); 
         while ($loop->have_posts()) : $loop->the_post(); 
-            $image = get_field('poster_img');
+            $file = get_field('poster_img');
             $name = get_field("poster_description");
             $preview = get_field('preview_image');
         ?>
         
         <div class="downloadable-content">
-            <img src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
-            <a href="<?php echo esc_url($image["url"]); ?>" title="Downloadable posters'<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
-            <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($name); ?></p>
+            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
+            <a class="downloadable_content_link" download="<?php echo esc_url(preg_replace('.*?\/([^\/]+)$','$1',$file["url"])); ?>" href="<?php echo esc_url($file["url"]); ?>" title="Downloadable posters'<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
+            <p class="subtitle description_of_dwnld_file"><?php echo esc_html($name); ?></p>
         </div>
         
         
@@ -161,8 +152,30 @@ Template Name: Media
     
 
 
+    <!-- Section Headline -->
+    <h2 class="title">Additional files</h2>
+    
+<!-- Media Additional files loop  (downloadable content section) -->
+    <section class="media_content additional_files">        
 
-
+        <?php 
+        $loop = new WP_Query(array('post_type' => 'media-additional-fil', 'posts_per_page' => -1)); 
+        while ($loop->have_posts()) : $loop->the_post(); 
+            $file = get_field('additional_file');
+            $name = get_field("file_description");
+            $preview = get_field('preview_image');
+        ?>
+        
+        <div class="downloadable-content">
+            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
+            <a class="downloadable_content_link" download="<?php echo esc_url(preg_replace('.*?\/([^\/]+)$','$1',$file["url"])); ?>" href="<?php echo esc_url($file["url"]); ?>" title="Downloadable file '<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
+            <p class="subtitle description_of_dwnld_file"><?php echo esc_html($name); ?></p>
+        </div>
+        
+        
+        <?php endwhile; wp_reset_query(); ?>
+    </section>
+    </section>
 
 
 
