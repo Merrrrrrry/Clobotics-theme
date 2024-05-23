@@ -105,6 +105,12 @@ Template Name: Contact
 
 
 
+<video id="sectionVideo" autoplay loop muted playsinline preload="auto" width="210px">
+        <source src="<?php echo get_template_directory_uri(); ?>/media/Earth Globe 2.mp4" type="video/mp4">
+        </video>
+
+
+
 <!-- Subscribes for more  Section -->
 
 <section class="subscribe-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/media/sm-bg-rounded.png">
