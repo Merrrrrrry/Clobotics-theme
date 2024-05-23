@@ -875,42 +875,45 @@ h4.text-career {
 
 /* <------ Article page style ------> */
 
-/* <------ Article page style ------> */
-
 #articles-container {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px; 
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+#articles-container .owl-item {
+  display: flex;
+  justify-content: center;
 }
 
 #articles-container article {
-  flex: 0 0 calc(33.33% - 20px); /* Adjust to ensure three articles per row */
-  max-width: calc(33.33% - 20px); /* Adjust to ensure three articles per row */
+  flex: 0 0 calc(33.333% - 20px);  /* Three articles per row */
+  max-width: calc(33.333% - 20px);
+  margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   background: #fff;
-  margin-bottom: 20px;
+  padding: 10px;
 }
 
 #articles-container article img {
   width: 100%;
-  height: auto;
-  margin: 0; /* Remove margins around images */
+  height: 150px;  /* Fixed height for uniformity */
+  object-fit: cover;
 }
 
 #articles-container article h3 {
-  padding: 10px 15px;
-  font-size: 24px; /* Adjust the text size */
+  padding: 10px 0;
+  font-size: 1em;  /* Smaller font size */
   color: #333;
 }
 
 #articles-container article p {
-  padding: 0 15px 15px;
+  padding: 0 10px 10px;
+  font-size: 0.9em;  /* Smaller font size */
   color: #666;
-  font-size: 16px; /* Adjust the text size */
 }
-
 
 
 /* <------ Filter style ------> */
