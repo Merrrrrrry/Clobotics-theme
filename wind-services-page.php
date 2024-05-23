@@ -231,6 +231,11 @@ Template Name: Wind services
 </section>
 
 
+<div class="contact-person-image">
+        <img src="<?php echo get_field('transparent_png_of_customer_logo')['url']; ?>" alt="<?php echo get_field('transparent_png_of_customer_logo')['alt']; ?>">
+    </div>
+
+
 
 
 <section class="we-take-care">
