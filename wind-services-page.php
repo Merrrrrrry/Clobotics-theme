@@ -125,7 +125,7 @@ Template Name: Wind services
                             $icon1_id = get_field('icon_of_the_keypoint_1');
                             if ($icon1_id) :
                                 $icon1_image = get_field('icon_image_of_the_keypoint', $icon1_id);
-                                var_dump($icon1_image); // Debugging statement
+                                echo '<pre>'; print_r($icon1_image); echo '</pre>'; // Debugging statement
                                 if ($icon1_image) :
                             ?>
                                 <div class="list_icon">
@@ -139,6 +139,7 @@ Template Name: Wind services
                             $icon2_id = get_field('icon_of_the_keypoint_2');
                             if ($icon2_id) :
                                 $icon2_image = get_field('icon_image_of_the_keypoint', $icon2_id);
+                                echo '<pre>'; print_r($icon2_image); echo '</pre>'; // Debugging statement
                                 if ($icon2_image) :
                             ?>
                                 <div class="list_icon">
@@ -152,6 +153,7 @@ Template Name: Wind services
                             $icon3_id = get_field('icon_of_the_keypoint_3');
                             if ($icon3_id) :
                                 $icon3_image = get_field('icon_image_of_the_keypoint', $icon3_id);
+                                echo '<pre>'; print_r($icon3_image); echo '</pre>'; // Debugging statement
                                 if ($icon3_image) :
                             ?>
                                 <div class="list_icon">
