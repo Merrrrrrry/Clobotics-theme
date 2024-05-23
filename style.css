@@ -956,8 +956,10 @@ h4.text-career {
 
 #articles-container article h3 {
   padding: 10px 0;
-  font-size: 1em;  /* Smaller font size */
+  font-size: 15px;  
+  text-align: left;
   color: #333;
+  text-align: justify;
 }
 
 #articles-container article p {
