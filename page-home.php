@@ -21,6 +21,14 @@ Template Name: Home
         </video>
  </div>
 
+
+<div>
+    <video id="sectionVideo" autoplay loop muted playsinline preload="auto">
+        <source src="<?php echo get_template_directory_uri(); ?>/media/logo-animation.mp4" type="video/mp4">
+    </video>
+ </div>
+
+
 <!-- Wind and Retail directions Section -->
 
 <section id="two_main_directions_conteiner">
