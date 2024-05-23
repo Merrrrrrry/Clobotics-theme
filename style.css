@@ -252,8 +252,7 @@ height:auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   border-radius: 20px;
   text-align: center;
-  width: 40%;
-  margin: 0 3em;
+  width: 32%;  margin: 0 3em;
   margin-top: -20rem;
   position: static;
   padding: 0.5em 2em;
@@ -263,12 +262,13 @@ height:auto;
 .retail_and_wind_content > a {
   color: #000;
 }
-/* 
+
 .retail_and_wind_content > h2 {
   font-size: 45px; 
-} */
+  padding: 1em 0.5em;
+}
 
-.retail_and_wind_content > p.main_service_description {
+p.main_service_description {
   font-family: 'Open Sans';
   font-weight: 600;
   text-align: left;
