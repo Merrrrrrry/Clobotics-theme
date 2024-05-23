@@ -151,7 +151,7 @@ Template Name: Media
         
         <div class="downloadable-content">
             <img src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
-            <a href="<?php echo esc_url($image["url"]); ?>" title="Downloadable posters'<?php echo esc_attr($name); ?>'">>DOWNLOAD</a>
+            <a href="<?php echo esc_url($image["url"]); ?>" title="Downloadable posters'<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
             <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($name); ?></p>
         </div>
         
