@@ -254,12 +254,12 @@ height:auto;
   transform: translateX(-50%);
 }
 
-.home-video{
+/* .home-video{
   position: relative;
   width: 100%;
   max-width: 100%; 
   overflow: hidden;
-}
+} */
 
 #two_main_directions_conteiner {
   display: flex;
