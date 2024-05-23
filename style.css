@@ -1683,12 +1683,11 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 .wind-call-to-action {
   position: relative;
-  height: 100vh; /* Full viewport height */
+  height: 600vh; 
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white; /* Adjust based on your background image for readability */
   overflow: hidden;
 }
 
@@ -1699,16 +1698,14 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: 1; /* Ensure the image is behind the content */
+  z-index: 1; 
 }
 
 .wind-call-to-action .content-wrapper {
   position: relative;
-  z-index: 2; /* Ensure content is above the background image */
+  z-index: 2;
   max-width: 600px;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
-  border-radius: 10px;
 }
 
 
