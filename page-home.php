@@ -5,7 +5,7 @@ Template Name: Home
 ?>
 <?php get_header() ?>
 
-<body class="gray-body">
+
   <main>
 
     <?php while(have_posts()): the_post(); ?>
@@ -15,8 +15,7 @@ Template Name: Home
 
 <!-- Hero section -->
 
-
-
+<section class="home-content">
 <div class="home-video">
     <video id="sectionVideoHome" autoplay loop muted playsinline preload="auto">
         <source src="<?php echo get_template_directory_uri(); ?>/media/logo-animation.mp4" type="video/mp4">
@@ -47,6 +46,7 @@ Template Name: Home
     </div>
 
 
+</section>
 </section>
 
 <!-- Gap section -->
