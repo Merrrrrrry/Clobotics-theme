@@ -2015,6 +2015,7 @@ h1 {
 
 
 /*---------------- FOOTER -------------------- */
+
 img.footer-logo {
   max-width: 200px;
   max-height: 100px;
@@ -2102,21 +2103,50 @@ img.footer-logo {
   justify-content: center;
 }
 
-.social-icons img {
+.social-icons-2 img {
   width: 45px;
 }
 
-.footer .social-icons span {
+.footer .social-icons-2 span {
   color: white;
 }
 
-.social-icons a {
+.social-icons-2 a {
   display: block !important;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin-right: 12px !important;
 }
+
+.social-icons-2 span {
+  display: block;
+  /* margin-top: 5px; */
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+
+.social-icons-2 a {
+  display: flex; 
+  flex-direction: column;  
+  align-items: center;  
+  text-align: center;
+  margin-right: 20px; 
+}
+
+.social-icons-2 a:last-child {
+    margin-right: 0;
+}
+
+.social-icons-2 img{
+  align-items: center;  
+  text-align: center;
+
+}
+
+
+
 
 /* -------------------------------NAVBAR--------------------------------*/
 
