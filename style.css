@@ -242,9 +242,30 @@ height:auto;
 
 /* <--------- HOME PAGE --------->*/
 
+.home-content {
+  height: 100vh;
+}
+
+
+.home-video {
+  width: 100%;
+  overflow: hidden;
+  height: 60vh; 
+  padding-top: 0; 
+}
+
+.home-video video {
+  width: 100vw;
+  height: auto;
+  display: block; 
+  z-index: -1;  
+  object-position: center;
+
+}
 #two_main_directions_conteiner {
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 .retail_content, .wind_content {
@@ -259,7 +280,9 @@ height:auto;
   position: static;
   padding: 0.5em 2em 2em;
   cursor: pointer;
-}
+    margin-top: -15rem;
+  }
+
 
 h2.main_service_title {
     margin: 15px;  
