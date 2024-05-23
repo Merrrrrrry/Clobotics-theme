@@ -26,6 +26,31 @@ Template Name: Media
         </div> 
 
 
+<!-- Media Photos loop  (downloadable content section) -->
+    <section class="media_photos_content">
+        <?php 
+        $loop = new WP_Query(array('post_type' => 'media-photos', 'posts_per_page' => -1)); 
+        while ($loop->have_posts()) : $loop->the_post(); 
+            $image = get_field('photo_image');
+            $name = get_field("photo_description");
+        ?>
+        
+        <div class="downloadable-content">
+            <img src="<?php echo esc_url($image["url"]); ?>" alt="Downloadable image of <?php echo esc_attr($name); ?>">
+            <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($name); ?></p>
+        </div>
+        
+        
+        <?php endwhile; wp_reset_query(); ?>
+    </section>
+    
+
+
+
+
+
+
+
 </main>
     
 </body>
