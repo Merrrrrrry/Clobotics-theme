@@ -118,32 +118,44 @@ Template Name: Wind services
                     </div>
                 </div>
                 <div class="service-content">
-
-                <div class="service-keypoints">
+                    <div class="service-keypoints">
                         <div class="keypoint">
                             <?php
-                            $icon1 = get_field('icon_of_the_keypoint_1');
-                            if ($icon1) : ?>
+                            $icon1_id = get_field('icon_of_the_keypoint_1');
+                            if ($icon1_id) :
+                                $icon1_image = get_field('icon_image_field_name', $icon1_id); // Replace 'icon_image_field_name' with the actual field name in the 'icon-for-wind-servic' post type
+                                if ($icon1_image) :
+                            ?>
                                 <div class="list_icon">
-                                    <img class="list_icon_img" src="<?php echo esc_url($icon1['url']); ?>" alt="<?php echo esc_attr($icon1['alt']); ?>">
+                                    <img class="list_icon_img" src="<?php echo esc_url($icon1_image['url']); ?>" alt="<?php echo esc_attr($icon1_image['alt']); ?>">
                                 </div>
-                            <?php endif; ?>
+                            <?php endif; endif; ?>
                             <p><?php the_field('1st_keypoint'); ?></p>
                         </div>
                         <div class="keypoint">
+                            <?php
+                            $icon2_id = get_field('icon_of_the_keypoint_2');
+                            if ($icon2_id) :
+                                $icon2_image = get_field('icon_image_field_name', $icon2_id); // Replace 'icon_image_field_name' with the actual field name in the 'icon-for-wind-servic' post type
+                                if ($icon2_image) :
+                            ?>
                                 <div class="list_icon">
-                                <img class="list_icon_img" src="<?php $image = get_field('icon_of_the_keypoint_2');  echo esc_url($image["url"]); ?>" alt="icon image" /> 
+                                    <img class="list_icon_img" src="<?php echo esc_url($icon2_image['url']); ?>" alt="<?php echo esc_attr($icon2_image['alt']); ?>">
                                 </div>
+                            <?php endif; endif; ?>
                             <p><?php the_field('2nd_keypoint'); ?></p>
                         </div>
                         <div class="keypoint">
                             <?php
-                            $icon3 = get_field('icon_of_the_keypoint_3');
-                            if ($icon3) : ?>
+                            $icon3_id = get_field('icon_of_the_keypoint_3');
+                            if ($icon3_id) :
+                                $icon3_image = get_field('icon_image_field_name', $icon3_id); // Replace 'icon_image_field_name' with the actual field name in the 'icon-for-wind-servic' post type
+                                if ($icon3_image) :
+                            ?>
                                 <div class="list_icon">
-                                <img class="list_icon_img" src="<?php $image = get_field('icon_of_the_keypoint_3');  echo esc_url($image["url"]); ?>" alt="icon image" /> 
+                                    <img class="list_icon_img" src="<?php echo esc_url($icon3_image['url']); ?>" alt="<?php echo esc_attr($icon3_image['alt']); ?>">
                                 </div>
-                            <?php endif; ?>
+                            <?php endif; endif; ?>
                             <p><?php the_field('3rd_keypoint'); ?></p>
                         </div>
                     </div>
