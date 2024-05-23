@@ -240,6 +240,34 @@ height:auto;
 
 
 
+/* <--------- HOME PAGE --------->*/
+
+.two_main_directions_conteiner {
+  display: flex;
+  justify-content: center;
+}
+
+.retail_content, .wind_content {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  text-align: center;
+  width: 40%;
+  margin: 0 3em;
+  position: absolute;
+  padding: 0.5em 2em;
+  cursor: pointer;
+}
+
+.retail_content, .wind_content > h2 {
+  font-size: 45px;
+}
+.retail_content, .wind_content > p {
+  text-align: left;
+}
+
+
+
 /* <--- Career page --->*/
 
 .job-title {

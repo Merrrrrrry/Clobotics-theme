@@ -218,9 +218,6 @@ Template Name: About us
     <?php endif; ?>
 </section>
 
-<!-- !!!!!!!!!!!!!!! -->
-
-
 
 <!-- News Articles linking  Section -->
 
