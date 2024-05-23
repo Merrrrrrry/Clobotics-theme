@@ -61,30 +61,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  //articles
   jQuery(document).ready(function($) {
     function applyArticleStyles() {
         $('#articles-container').find('article').each(function() {
             $(this).css({
-                'flex': '0 0 calc(30% - 20px)',
-                'max-width': 'calc(30% - 20px)',
+                'flex': '0 0 calc(33.333% - 20px)',  // Adjusted to fit three articles per row in a container with some margin
+                'max-width': 'calc(33.333% - 20px)',
                 'margin-bottom': '20px',
                 'box-shadow': '0 0 10px rgba(0, 0, 0, 0.1)',
                 'border-radius': '10px',
                 'overflow': 'hidden',
-                'background': '#fff'
+                'background': '#fff',
+                'padding': '10px'
             });
             $(this).find('img').css({
                 'width': '100%',
-                'height': 'auto'
+                'height': '200px',  // Fixed height to ensure uniformity
+                'object-fit': 'cover'
             });
             $(this).find('h3').css({
-                'padding': '15px',
+                'padding': '10px 0',
                 'font-size': '1.2em',
                 'color': '#333'
             });
             $(this).find('p').css({
-                'padding': '0 15px 15px',
+                'padding': '0 10px 10px',
                 'color': '#666'
             });
         });
@@ -109,7 +110,26 @@ document.addEventListener('DOMContentLoaded', function () {
                 $('#articles-container').html(response);
                 // Apply article styles after search
                 applyArticleStyles();
+                // Reinitialize the carousel after search
+                $('#articles-container').owlCarousel('destroy');
+                initializeOwlCarousel();
             }
         });
     });
+
+    function initializeOwlCarousel() {
+        $('#articles-container').owlCarousel({
+            loop: true,
+            items: 3,  // Number of items per view
+            nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            animateOut: 'fadeOut',
+            lazyLoad: true
+        });
+    }
+
+    // Initialize the Owl Carousel
+    initializeOwlCarousel();
 });

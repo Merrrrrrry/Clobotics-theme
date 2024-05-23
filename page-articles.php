@@ -39,10 +39,10 @@ Template Name: New Articles
 
         <div id="articles-container" class="owl-carousel owl-theme row" style="margin: 4em;">
             <?php
-            // Check if search query exists
+           
             $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
 
-            // Define WP_Query args
+            
             $args = array(
                 'post_type' => 'new-article',
                 'posts_per_page' => -1,
@@ -56,7 +56,7 @@ Template Name: New Articles
                 )
             );
 
-            // Perform WP_Query
+          
             $articles_query = new WP_Query($args);
 
 
@@ -96,7 +96,7 @@ Template Name: New Articles
     jQuery(document).ready(function($) {
         applyOwlCarousel({
             loop: true,
-            items:6,
+            items:3,  
             nav: true,
             dots: false,
             autoplay: true,

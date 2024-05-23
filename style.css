@@ -307,44 +307,6 @@ height:auto;
 
 /*   <--- Search bar in Career page ---> */
 
-.search-bar-container-articles {
-  margin: 20px auto;
-  max-width: 485px;
-}
-
-.search-form-articles {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-} 
-
-.search-bar-articles {
-  display: flex;
-  border: 2px solid transparent;
-  border-radius: 20px; 
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-}
-
-#search-input-articles {
-  flex: 1;
-  padding: 10px 15px;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  width: 100%;
-}
-
-.search-button-articles {
-  background-color: #00B3EC;
-  border: none;
-  padding: 12px 24px; 
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 20px; 
-} 
 
 /* Search bar container */
 .search-bar-container {
@@ -842,6 +804,48 @@ h4.text-career {
 }
 
 
+/* <------ Article search bar style ------> */
+
+.search-bar-container-articles {
+  margin: 20px auto;
+  max-width: 485px;
+}
+
+.search-form-articles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+} 
+
+.search-bar-articles {
+  display: flex;
+  border: 2px solid transparent;
+  border-radius: 20px; 
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+#search-input-articles {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+.search-button-articles {
+  background-color: #00B3EC;
+  border: none;
+  padding: 12px 24px; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px; 
+} 
+
+
 /* <------ Article linking section ------> */
 
 
@@ -871,37 +875,47 @@ h4.text-career {
 
 /* <------ Article page style ------> */
 
+/* <------ Article page style ------> */
+
 #articles-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
 }
 
+#articles-container .owl-item {
+  display: flex;
+  justify-content: center;
+}
+
 #articles-container article {
-  flex: 0 0 calc(30% - 20px);
-  max-width: calc(30% - 20px);
+  flex: 0 0 calc(33.333% - 20px);
+  max-width: calc(33.333% - 20px);
   margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   background: #fff;
+  padding: 10px;
 }
 
 #articles-container article img {
   width: 100%;
-  height: auto;
+  height: 200px;  /* Fixed height for uniformity */
+  object-fit: cover;
 }
 
 #articles-container article h3 {
-  padding: 15px;
+  padding: 10px 0;
   font-size: 1.2em;
   color: #333;
 }
 
 #articles-container article p {
-  padding: 0 15px 15px;
+  padding: 0 10px 10px;
   color: #666;
 }
+
 
 
 /* <------ Filter style ------> */
