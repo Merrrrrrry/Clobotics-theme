@@ -125,6 +125,7 @@ Template Name: Wind services
                             $icon1_id = get_field('icon_of_the_keypoint_1');
                             if ($icon1_id) :
                                 $icon1_image = get_field('icon_image_of_the_keypoint', $icon1_id);
+                                var_dump($icon1_image); // Debugging statement
                                 if ($icon1_image) :
                             ?>
                                 <div class="list_icon">
