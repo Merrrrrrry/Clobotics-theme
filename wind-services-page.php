@@ -66,16 +66,18 @@ Template Name: Wind services
 
 
 <!-- Wind services presentation Video (code referenced from busters world) -->
-        <div class="section-one">
+        
+
+<div class="section-one">
         <video>
         <source src="<?php echo get_template_directory_uri(); ?>/media/Wind_video.mp4" type="video/mp4">
         </video>
-        </div>
+</div>
 
 
     
 
-<<!-- Search bar -->
+<!-- Search bar -->
 <div class="search-bar-container-2">
     <form id="search-form-2" method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form-2">
         <div class="search-bar-2">
