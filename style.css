@@ -260,22 +260,16 @@ height:auto;
   cursor: pointer;
 }
 
-.retail_and_wind_content > h2 {
+h2.main_service_title {
   padding: 1em 0.5em;
   color: #000000;
-
 }
 
 p.main_service_description {
   font-family: 'Open Sans';
   font-weight: 600;
-  font-size: 18px; 
+  color: #000000;
   text-align: left;
-}
-.retail_and_wind_content > div.btn.dark {
-  font-size: 18px; 
-  text-align: left;
-  
 }
 
 
