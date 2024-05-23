@@ -253,18 +253,28 @@ height:auto;
   color: #000000;
   border-radius: 20px;
   text-align: center;
-  width: 40%;
+  width: 32%;  
   margin: 0 3em;
-  position: absolute;
+  margin-top: -20rem;
+  position: static;
   padding: 0.5em 2em;
   cursor: pointer;
 }
 
-.retail_content, .wind_content > h2 {
-  font-size: 45px;
+.retail_and_wind_content > h2 {
+  padding: 1em 0.5em;
 }
-.retail_content, .wind_content > p {
+
+p.main_service_description {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 18px; 
   text-align: left;
+}
+.retail_and_wind_content > p {
+  font-size: 18px; 
+  text-align: left;
+  
 }
 
 
