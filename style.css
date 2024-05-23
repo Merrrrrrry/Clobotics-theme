@@ -267,7 +267,10 @@ height:auto;
 .retail_and_wind_content > h2 {
   font-size: 45px; 
 } */
-.retail_and_wind_content > p#main_service_description {
+
+.retail_and_wind_content > p.main_service_description {
+  font-family: 'Open Sans';
+  font-weight: 600;
   text-align: left;
   font-size: 18px;
 }
