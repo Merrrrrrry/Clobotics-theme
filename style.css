@@ -267,7 +267,7 @@ height:auto;
 .retail_and_wind_content > h2 {
   font-size: 45px; 
 } */
-.retail_and_wind_content > p {
+.retail_and_wind_content > p#main_service_description {
   text-align: left;
   font-size: 18px;
 }
