@@ -961,7 +961,6 @@ h4.text-career {
   font-size: 15px;  
   text-align: left;
   color: #000000;
-  text-align: justify;
   font-family: 'Roboto' sans-serif;
   font-weight: 300;
 }
@@ -969,6 +968,7 @@ h4.text-career {
 #articles-container article p {
   margin-left: 10px;
   margin-right: 10px;
+  text-align: left;
   font-size: 11px;  
   color: #000000;
   font-family: 'Open sans' sans-serif;
