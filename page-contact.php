@@ -110,7 +110,6 @@ Template Name: Contact
  </div>
 
 
-
 <!-- Subscribes for more  Section -->
 
 <section class="subscribe-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/media/sm-bg-rounded.png">
