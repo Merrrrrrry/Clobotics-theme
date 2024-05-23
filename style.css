@@ -264,6 +264,7 @@ height:auto;
 #two_main_directions_conteiner {
   display: flex;
   justify-content: center;
+  z-index: 1;
 }
 
 .retail_content, .wind_content {
