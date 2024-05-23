@@ -32,12 +32,12 @@ Template Name: New Articles
             </form>
         </div>
 
-        <div id="articles-container" class="row">
+        <div id="articles-container">
             <?php
-            
+            // Check if search query exists
             $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
 
-          
+            // Define WP_Query args
             $args = array(
                 'post_type' => 'new-article',
                 'posts_per_page' => -1,
