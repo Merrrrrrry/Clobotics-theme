@@ -250,6 +250,7 @@ height:auto;
 .home-video {
   width: 100%;
   overflow: hidden;
+  height: 70vh;
 }
 
 .home-video video {
@@ -257,6 +258,7 @@ height:auto;
   height: auto;
   display: block; 
   z-index: -1;  
+  object-position: center;
 
 }
 #two_main_directions_conteiner {
