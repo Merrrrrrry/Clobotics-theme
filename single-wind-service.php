@@ -112,6 +112,16 @@ Template Name: single-wind-service
 
 
 
+<section class="wind-call-to-action">
+    <img  class="wind-call-to-action-image" src="<?php echo get_template_directory_uri(); ?>/media/contact-us.png" alt="Contact us img">
+        <div class="content-wrapper">
+            <h2>Optimise your<br>wind turbines</h2>
+            <button class="optional">Contact us</button>
+        </div>
+</section>
+
+
+
     <!-- Other wind services linking  Section    Wind service -->
 
  <section class="wind_services_linking">
