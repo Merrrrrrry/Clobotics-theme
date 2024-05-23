@@ -263,10 +263,10 @@ height:auto;
 .retail_and_wind_content > a {
   color: #000;
 }
-
+/* 
 .retail_and_wind_content > h2 {
-  /* font-size: 45px; */
-}
+  font-size: 45px; 
+} */
 .retail_and_wind_content > p {
   text-align: left;
   font-size: 18px;
