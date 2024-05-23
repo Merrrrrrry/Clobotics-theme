@@ -1987,13 +1987,10 @@ h1 {
 
 
 /*---------------- FOOTER -------------------- */
-
 img.footer-logo {
   max-width: 200px;
   max-height: 100px;
 }
-
-
 
 .footer {
   background-color: #222222;
@@ -2011,18 +2008,17 @@ img.footer-logo {
 }
 
 .footer-column:first-child {
-  width: 33%; 
+  width: 33%;
 }
 
 .footer-column:nth-child(n+2) {
   width: calc(67% / 3 - 20px);
 }
 
-
-.footer-column .material-icons{
-  color:#ffffff;
+.footer-column .material-icons {
+  color: #ffffff;
   position: relative;
-            top: 6px;
+  top: 6px;
 }
 
 .footer-title {
@@ -2045,7 +2041,6 @@ img.footer-logo {
   display: inline-block;
 }
 
-
 .footer-contact-link {
   color: #fff;
   text-decoration: none;
@@ -2056,9 +2051,17 @@ img.footer-logo {
   margin-left: 5px;
 }
 
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+}
+
 .copyright {
   font-size: 12px;
-  margin-top: auto;
 }
 
 .copyright a {
@@ -2067,10 +2070,8 @@ img.footer-logo {
 }
 
 .footer .social-icons {
-  width: 100%;
   display: flex;
-  justify-content: flex-end;
-  margin-left: 20px;
+  gap: 20px;
 }
 
 .social-icons img {
@@ -2078,14 +2079,9 @@ img.footer-logo {
 }
 
 .footer .social-icons span {
-  color: white; 
+  color: white;
 }
 
-.copyright-sm {
-  display: flex; 
-  align-items: flex-end;
-}
-  
 /* -------------------------------NAVBAR--------------------------------*/
 
 .main-header {
