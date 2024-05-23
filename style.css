@@ -2125,7 +2125,11 @@ img.footer-logo {
   color: rgb(0, 0, 0);
   text-align: center;
 }
-
+.social-icons-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
 .social-icons-2 a {
   display: flex; 
