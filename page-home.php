@@ -29,18 +29,18 @@ Template Name: Home
 <!-- Wind and Retail directions Section -->
 
 <section id="two_main_directions_conteiner">
-    <div class="wind_content">
+    <div class=".retail_and_wind_content wind_content">
         <a href="http://maria-grysevych.dk/clobotics/home/wind-services/">
-            <h2 class="title section-title">Wind services</h2>
+            <h2 class="title">Wind services</h2>
             <p id="main_service_description" class="subtitle"><?php the_field('wind_direction_description'); ?></p>
             <div class="direction_button container_to_center">
                 <div class="btn dark">Explore Clobotics Wind</div>  
             </div>  
         </a>
     </div>
-    <div class="retail_content">
+    <div class=".retail_and_wind_content retail_content">
         <a href="http://maria-grysevych.dk/clobotics/home/retail-services/">
-            <h2 class="title section-title">Retail services</h2>
+            <h2 class="title">Retail services</h2>
             <p id="main_service_description" class="subtitle"><?php the_field('retail_direction_description'); ?></p>
             <div class="direction_button container_to_center">
                 <div href="http://maria-grysevych.dk/clobotics/home/retail-services/"class="btn dark">Explore Clobotics Retail</div>  
