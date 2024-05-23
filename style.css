@@ -242,7 +242,7 @@ height:auto;
 
 /* <--------- HOME PAGE --------->*/
 
-.two_main_directions_conteiner {
+#two_main_directions_conteiner {
   display: flex;
   justify-content: center;
 }
@@ -262,6 +262,12 @@ height:auto;
 
 .retail_content, .wind_content > h2 {
   font-size: 45px;
+}
+.retail_content > h2 {
+  font-size: 45px;
+}
+.retail_content > p {
+  text-align: left;
 }
 .retail_content, .wind_content > p {
   text-align: left;
