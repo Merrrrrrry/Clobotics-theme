@@ -191,9 +191,9 @@ section {
   z-index: -1;
 }
 
-/* .hero-section-home {
-  height: 500px;
-} */
+.hero-section-home {
+  height: 640px;
+} 
 
 .image-hero {
   width: 100%;
