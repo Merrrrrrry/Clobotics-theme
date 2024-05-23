@@ -88,7 +88,7 @@ Template Name: Media
 
 
 <!-- Media Company presentations loop  (downloadable content section) -->
-    <section class="media_photos_content">
+    <section class="media_presentations_content">
         <?php 
         $loop = new WP_Query(array('post_type' => 'media-presentation', 'posts_per_page' => -1)); 
         while ($loop->have_posts()) : $loop->the_post(); 
@@ -98,6 +98,55 @@ Template Name: Media
         
         <div class="downloadable-content">
             <a href="<?php echo esc_url($image["url"]); ?>" title="Downloadable presentation '<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
+            <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($name); ?></p>
+        </div>
+        
+        
+        <?php endwhile; wp_reset_query(); ?>
+    </section>
+
+
+    
+<!-- Media Additional files loop  (downloadable content section) -->
+    <section class="media_additional_files_content">
+        <?php 
+        $loop = new WP_Query(array('post_type' => 'media-additional-fil', 'posts_per_page' => -1)); 
+        while ($loop->have_posts()) : $loop->the_post(); 
+            $image = get_field('additional_file');
+            $name = get_field("file_description");
+        ?>
+        
+        <div class="downloadable-content">
+            <a href="<?php echo esc_url($image["url"]); ?>" title="Downloadable file '<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
+            <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($name); ?></p>
+        </div>
+        
+        
+        <?php endwhile; wp_reset_query(); ?>
+    </section>
+    </section>
+
+
+
+<!-- Media Mission, Vision and Values posters loop  (downloadable content section) -->
+    <section class="media_additional_files_content">
+        <?php 
+        $loop = new WP_Query(array('post_type' => 'poster', 'posts_per_page' => -1)); 
+        while ($loop->have_posts()) : $loop->the_post(); 
+            $image = get_field('poster_img');
+            $name = get_field("poster_description");
+            $preview = get_field('preview_image');
+        ?>
+        
+        <div class="downloadable-content">
+            <!-- <img src="
+            <?php 
+            // echo esc_url($image["url"]); ?>" alt="Downloadable posters '
+            <?php 
+            // echo esc_attr($name); 
+            ?>
+            '"> -->
+            <img src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
             <p class="subtitle" style="font-size: 24px; margin-right: 30px;"><?php echo esc_html($name); ?></p>
         </div>
         
