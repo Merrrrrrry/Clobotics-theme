@@ -198,6 +198,41 @@ Template Name: Wind services
 
 
 
+
+
+
+<section>
+    <h2>Our customers are Global Wind Companies</h2>
+    <div class="slides">
+        <?php
+        $args = array(
+            'post_type' => 'customer-logos',
+            'posts_per_page' => -1,
+        );
+        $customer_logos = new WP_Query($args);
+
+        if ($customer_logos->have_posts()) :
+            while ($customer_logos->have_posts()) : $customer_logos->the_post();
+                $logo_url = get_field('transparent_png_of_customer_logo'); 
+                $customer_website = get_field('link_to_their_website'); 
+
+                if ($logo_url) :
+        ?>
+            <a href="<?php echo esc_url($customer_website); ?>" target="_blank" class="customers_logo_link">
+                <img src="<?php echo esc_url($logo_url); ?>" class="customers_logo_image" alt="<?php the_title(); ?>">
+            </a>
+        <?php
+                endif;
+            endwhile;
+            wp_reset_postdata();
+        endif;
+        ?>
+    </div>
+</section>
+
+
+
+
 <section class="we-take-care">
 <img class="we-take-care-background-image" src="<?php echo get_template_directory_uri(); ?>/media/wind_blade.png" alt="We take care of your blades"> <br>
     <div class="we-take-care-content">
