@@ -242,7 +242,7 @@ height:auto;
 
 /* <--------- HOME PAGE --------->*/
 
-.two_main_directions_conteiner {
+#two_main_directions_conteiner {
   display: flex;
   justify-content: center;
 }
