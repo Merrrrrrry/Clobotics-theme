@@ -491,7 +491,7 @@ ul.position-list {
 /*   <--- Open Positions section ---> */
 .open-positions {
   text-align: center; 
-  margin: 0 70px; 
+  margin: 0 120px; 
 }
 
 .open-positions .title {
@@ -564,7 +564,7 @@ h4.text-career {
 .job-info {
   display: flex;
   justify-content: space-between;
-  margin: 20px 60px; 
+  padding: 20px 120px; 
 }
 
 .info-item {
@@ -598,7 +598,7 @@ h4.text-career {
 }
 
 .job-description {
-  margin: 40px 60px; 
+  padding: 40px 120px; 
   text-align: left; 
 }
 
@@ -608,8 +608,8 @@ h4.text-career {
 
 .contact-form-container-career {
   display: flex;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 120px;
+  padding-right: 120px;
 }
 
 
@@ -787,7 +787,7 @@ h4.text-career {
   }
 
   .contact-person-career, .contact-form-career {
-    width: 60%;
+    width: 80%;
   }
 }
 
