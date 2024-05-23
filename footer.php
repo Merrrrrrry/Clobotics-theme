@@ -26,7 +26,7 @@
         <div class="copyright">
             © 2024 CLOBOTICS ALL RIGHTS RESERVED - <a href="<?php echo esc_url(get_permalink(get_page_by_path('privacy-cookie-policy'))); ?>">PRIVACY & COOKIE POLICY</a>
         </div>
-        <div class="social-icons">
+        <div class="social-icons-2">
             <a href="https://www.linkedin.com/company/cloboticswindservices/">
                 <img src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png"  alt="LinkedIn"> <br>
                 <span>Wind</span>
