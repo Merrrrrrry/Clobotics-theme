@@ -243,7 +243,7 @@ height:auto;
 /* <--------- HOME PAGE --------->*/
 
 
-#sectionVideoHome {
+/* #sectionVideoHome {
   position: absolute;
   top: 0;            
   left: 0;           
@@ -254,7 +254,7 @@ height:auto;
   transform: translateX(-50%);
 }
 
-/* .home-video{
+.home-video{
   position: relative;
   width: 100%;
   max-width: 100%; 
