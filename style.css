@@ -254,7 +254,7 @@ height:auto;
   transform: translateX(-50%);
 }
 
-.video-container {
+.home-video{
   position: relative;
   width: 100%;
   max-width: 100%; 
