@@ -250,7 +250,8 @@ height:auto;
 .home-video {
   width: 100%;
   overflow: hidden;
-  height: 70vh;
+  height: 60vh; 
+  padding-top: 0; 
 }
 
 .home-video video {
@@ -279,7 +280,9 @@ height:auto;
   position: static;
   padding: 0.5em 2em 2em;
   cursor: pointer;
-}
+    margin-top: -15rem;
+  }
+
 
 h2.main_service_title {
     margin: 15px;  
