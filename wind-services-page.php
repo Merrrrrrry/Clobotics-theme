@@ -232,7 +232,7 @@ Template Name: Wind services
 
 
 <div class="contact-person-image">
-                    <img src="<?php echo get_field('transparent_png_of_customer_logo')['url']; ?>" alt="<?php echo get_field('customr_logo')['alt']; ?>">
+        <img src="<?php echo get_field('transparent_png_of_customer_logo')['url']; ?>" alt="<?php echo get_field('transparent_png_of_customer_logo')['alt']; ?>">
     </div>
 
 
