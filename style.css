@@ -1689,6 +1689,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   align-items: center;
   text-align: center;
   overflow: hidden;
+  color: #ffffff
 }
 
 .wind-call-to-action-image {
@@ -1699,6 +1700,7 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   height: 100%;
   object-fit: cover;
   z-index: 1; 
+  object-position: center top;
 }
 
 .wind-call-to-action .content-wrapper {

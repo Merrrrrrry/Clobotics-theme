@@ -116,7 +116,7 @@ Template Name: single-wind-service
     <img  class="wind-call-to-action-image" src="<?php echo get_template_directory_uri(); ?>/media/contact-us.png" alt="Contact us img">
         <div class="content-wrapper">
             <h2>Optimise your<br>wind turbines</h2>
-            <button class="optional">Contact us</button>
+            <button class="btn optional">Contact us</button>
         </div>
 </section>
 
