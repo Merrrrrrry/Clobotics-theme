@@ -63,25 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-  // Articles page
-
-  jQuery(document).ready(function($) {
-    function initializeOwlCarousel() {
-        $('#articles-container').owlCarousel({
-            loop: true,
-            items: 3,  // Number of items per view
-            nav: true,
-            dots: false,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            animateOut: 'fadeOut',
-            lazyLoad: true
-        });
-    }
-
-    // Initialize the Owl Carousel
-    initializeOwlCarousel();
-
+   //articles
+   jQuery(document).ready(function($) {
     $('#search-form-articles').on('submit', function(event) {
         event.preventDefault();
 
@@ -96,11 +79,7 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             success: function(response) {
                 $('#articles-container').html(response);
-                // Reinitialize the carousel after search
-                $('#articles-container').owlCarousel('destroy');
-                initializeOwlCarousel();
             }
         });
     });
 });
-

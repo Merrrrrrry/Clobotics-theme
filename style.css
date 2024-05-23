@@ -932,7 +932,7 @@ h4.text-career {
   justify-content: space-between;
 }
 
-#articles-container .owl-item {
+#articles-container {
   display: flex;
   justify-content: center;
 }
