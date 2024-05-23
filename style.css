@@ -250,6 +250,7 @@ height:auto;
 .retail_content, .wind_content {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  color: #000000;
   border-radius: 20px;
   text-align: center;
   width: 40%;

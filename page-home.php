@@ -29,22 +29,25 @@ Template Name: Home
 <!-- Wind and Retail directions Section -->
 
 <section id="two_main_directions_conteiner">
-    <a href="http://maria-grysevych.dk/clobotics/home/wind-services/">
-        <div class="wind_content">
+    <div class="wind_content">
+        <a href="http://maria-grysevych.dk/clobotics/home/wind-services/">
             <h2 class="title section-title">Wind services</h2>
             <p id="main_service_description" class="subtitle"><?php the_field('wind_direction_description'); ?></p>
             <div class="direction_button container_to_center">
-                <a href="http://maria-grysevych.dk/clobotics/home/wind-services/"class="btn dark">Explore Clobotics Wind</a>  
+                <div class="btn dark">Explore Clobotics Wind</div>  
             </div>  
-        </div>
-    </a>
-    <div class="retail_content">
-        <h2 class="title section-title">Retail services</h2>
-        <p id="main_service_description" class="subtitle"><?php the_field('retail_direction_description'); ?></p>
-        <div class="direction_button container_to_center">
-            <a href="http://maria-grysevych.dk/clobotics/home/retail-services/"class="btn dark">Explore Clobotics Retail</a>  
-        </div>
+        </a>
     </div>
+    <div class="retail_content">
+        <a href="http://maria-grysevych.dk/clobotics/home/retail-services/">
+            <h2 class="title section-title">Retail services</h2>
+            <p id="main_service_description" class="subtitle"><?php the_field('retail_direction_description'); ?></p>
+            <div class="direction_button container_to_center">
+                <div href="http://maria-grysevych.dk/clobotics/home/retail-services/"class="btn dark">Explore Clobotics Retail</div>  
+            </div>
+        </a>
+    </div>
+
 
 </section>
 
