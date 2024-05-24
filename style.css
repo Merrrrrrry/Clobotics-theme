@@ -256,12 +256,11 @@ height:auto;
 
 .home-video video {
   width: 100vw;
-  height: auto;
   display: block; 
   z-index: -1;  
   object-position: center;
-
 }
+
 #two_main_directions_conteiner {
   display: flex;
   justify-content: center;
