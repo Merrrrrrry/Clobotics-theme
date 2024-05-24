@@ -24,13 +24,7 @@ Template Name: Wind services
     </div>
 </div>
 
-    <!-- Hero Video (referenced from busters world) -->
-    <!-- <div class="hero-section-background">
-        <video autoplay muted loop class="video-background"> 
-            <source src="<?php echo get_template_directory_uri(); ?> /....../..... .mp4" type="video/mp4">
-        </video>
 
-    </div> -->
 
 
 
