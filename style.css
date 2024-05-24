@@ -1090,7 +1090,7 @@ img.preview_img {
   padding: 0 0.5em 0 0;
 }
 
-.preview_container a.downloadable_content_link,
+.downloadable-content a.downloadable_content_link,
 .preview_container a.preview_content_link,
 .preview_container .overlay.blue
 {
@@ -1098,7 +1098,7 @@ img.preview_img {
   visibility: hidden;
 }
 
-.preview_container:hover a.downloadable_content_link,
+.downloadable-content:hover a.downloadable_content_link,
 .preview_container:hover a.preview_content_link,
 .preview_container:hover .overlay.blue
 { visibility: visible; }
