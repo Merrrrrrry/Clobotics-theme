@@ -1921,62 +1921,51 @@ size: 10px;
 
 
 @media (max-width: 768px) {
-  .we-take-care {
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
   .we-take-care-content {
-    margin: 0;
-    margin-top: 50px;
+    margin: 0 20px;
     text-align: center;
   }
 
-  .we-take-care-text {
-    text-align: center;
+  .we-take-care-text h2 {
+    font-size: 2em; /* Adjust size for tablets */
   }
 
   .we-take-care-social-media {
-    justify-content: center;
     margin-top: 10px;
-    margin-bottom: 30px;
+    justify-content: center;
   }
 
   .we-take-care-social-media-item {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px;
+  }
+
+  .we-take-care-social-media-item img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .social_media_icon_text {
+    font-size: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .we-take-care {
-    padding: 15px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
   .we-take-care-content {
-    margin: 0;
-    margin-top: 30px;
+    margin: 0 10px;
     text-align: center;
   }
 
-  .we-take-care-text {
-    text-align: center;
+  .we-take-care-text h2 {
+    font-size: 1.5em; /* Adjust size for phones */
   }
 
   .we-take-care-social-media {
+    margin-top: 5px;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 20px;
   }
 
   .we-take-care-social-media-item {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 0 5px;
   }
 
   .we-take-care-social-media-item img {
@@ -1988,8 +1977,6 @@ size: 10px;
     font-size: 8px;
   }
 }
-
-
 
 
 
