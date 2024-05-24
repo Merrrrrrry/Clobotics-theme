@@ -1131,9 +1131,12 @@ img.download_icon {
   height: 1.25rem;
 }
 
-/* .description_of_dwnld_file {
-
-} */
+p.subtitle.description_of_dwnld_file {
+    display: inline-block;
+    width: 80%;
+    font-size: 18px;
+    font-weight: normal;
+}
 
 /* <-------------------- Privacy & Cookie Policy style -------------------> */
 
@@ -1513,8 +1516,13 @@ main {
   }
 
   /* <-------------------- MEDIA PAGE STYLE --------------------> */
+  p {
+    font-size: 20px;
+  }
+  
 
 section.media_content {
+  justify-content: center;
   gap: 0.5rem;
   padding: 0 1rem;
 }
@@ -1524,7 +1532,6 @@ a.btn.downloadable_content_link {
   visibility: visible;
   margin: 0 auto;
 }
-
 
 }
 
