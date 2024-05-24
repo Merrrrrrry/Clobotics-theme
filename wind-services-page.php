@@ -78,6 +78,7 @@ Template Name: Wind services
     
 
 <!-- Search bar -->
+<section class="subscribe-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/media/sm-bg-rounded.png">
 <div class="search-bar-container-2">
     <form id="search-form-2" method="get" action="<?php echo esc_url(get_permalink()); ?>" class="search-form-2">
         <div class="search-bar-2">
@@ -88,6 +89,8 @@ Template Name: Wind services
         </div>
     </form>
 </div>
+</section>
+
 
 <!-- Wind services list -->
 <ul id="service-list" class="service-list">

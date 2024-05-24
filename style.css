@@ -1508,58 +1508,44 @@ main {
 /* <------- Wind services section -------> */
 
 .service-list {
-  display: flex;
-  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Ensures three boxes per row */
 }
 
 .service-item {
-  flex: 1 1 calc(33.333% - 20px);
-  margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  background-color: #fff;
+  flex: 0 0 calc(33.333% - 10px); /* Ensures three items per row with some margin */
+  margin: 5px;
+  overflow: hidden;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: relative;
   text-align: center;
 }
 
-.service-main-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-.keypoint {
-  margin-top: 10px;
-}
-
-
-
-
-/* <------- List of wind services -------> */
-
-.service-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.service-item {
+.service-main-image {
   position: relative;
-  flex: 0 0 calc(33.333% - 20px);
-  margin: 10px;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
   overflow: hidden;
-  border-radius: 10px;
+}
+
+.service-main-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .overlay {
   position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -1569,7 +1555,6 @@ main {
 
 .service-content {
   padding: 15px;
-  background-color: #fff;
 }
 
 .service-keypoints {
@@ -1586,8 +1571,26 @@ main {
   margin: 0;
 }
 
-.keypoint-icon {
+.list_icon {
   margin-right: 10px;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #005bb5;
 }
 
 
