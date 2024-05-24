@@ -1102,7 +1102,7 @@ img.preview_img {
 {display: block;}
 
 
-.downloadable-content:hover .overlay {
+.downloadable-content:hover .downloadable-content .overlay {
   height: 100%;
   background-color: #00A5E3;
   opacity: 0.5;
