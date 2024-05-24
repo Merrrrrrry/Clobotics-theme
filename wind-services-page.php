@@ -68,19 +68,20 @@ Template Name: Wind services
 <!-- Wind services presentation Video -->
         
 
-<div class="section-one">
-        <video>
-        <source src="<?php echo get_template_directory_uri(); ?>/media/Wind_video.mp4" type="video/mp4">
-        </video>
-</div>
+
 
 
 <div class="video-wind">
     <video controls>
         <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/media/Wind_video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
     </video>
 </div>
+
+
+
+<video id="sectionVideo" autoplay loop muted playsinline preload="auto" width="210px">
+        <source src="<?php echo get_template_directory_uri(); ?>/media/Wind_video.mp4" type="video/mp4">
+ </video>
     
 
 <!-- Search bar -->
