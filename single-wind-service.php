@@ -21,7 +21,7 @@ Template Name: single-wind-service
                 <div class="keypoint">
                     <h3><?php the_field('1st_keypoint'); ?></h3>
                     <?php
-                    $icons1 = get_field('icon_relationship_of_the_keypoint_1');
+                    $icons1 = get_field('icon_of_the_keypoint_1');
                     if ($icons1) :
                         foreach ($icons1 as $icon1) :
                             $icon_image1 = get_field('icon_image_of_the_keypoint', $icon1->ID);
@@ -35,7 +35,7 @@ Template Name: single-wind-service
                 <div class="keypoint">
                     <h3><?php the_field('2nd_keypoint'); ?></h3>
                     <?php
-                    $icons2 = get_field('icon_relationship_of_the_keypoint_2');
+                    $icons2 = get_field('icon_of_the_keypoint_2');
                     if ($icons2) :
                         foreach ($icons2 as $icon2) :
                             $icon_image2 = get_field('icon_image_of_the_keypoint', $icon2->ID);
@@ -49,7 +49,7 @@ Template Name: single-wind-service
                 <div class="keypoint">
                     <h3><?php the_field('3rd_keypoint'); ?></h3>
                     <?php
-                    $icons3 = get_field('icon_relationship_of_the_keypoint_3');
+                    $icons3 = get_field('icon_of_the_keypoint_3');
                     if ($icons3) :
                         foreach ($icons3 as $icon3) :
                             $icon_image3 = get_field('icon_image_of_the_keypoint', $icon3->ID);
