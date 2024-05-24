@@ -1509,7 +1509,7 @@ main {
 
 /* <------- Wind services section -------> */
 
-.service-list {
+/* .service-list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
@@ -1518,14 +1518,18 @@ main {
 }
 
 .service-item {
-  flex: 1 1 calc(33.333% - 20px);
-  margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  text-align: center;
-}
+    position: relative;
+    flex: 0 0 calc(33.333% - 40px);
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    width: calc(33.33% - 20px);
+  }
+  
 
 .service-main-image img {
   max-width: 100%;
@@ -1535,7 +1539,7 @@ main {
 
 .keypoint {
   margin-top: 10px;
-}
+} */
 
 
 
@@ -1556,7 +1560,7 @@ main {
 
 .service-item {
   position: relative;
-  flex: 0 0 calc(33.333% - 20px);
+  flex: 0 0 calc(33.333% - 40px);
   margin: 10px;
   overflow: hidden;
   border-radius: 10px;
@@ -1590,12 +1594,12 @@ main {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
-  padding: 10px;
+  padding: 7px;
   box-sizing: border-box;
 }
 
 .service-content {
-  padding: 15px;
+  padding: 10px;
   background-color: #fff;
 }
 
