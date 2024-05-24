@@ -270,10 +270,11 @@ section.home-content {
   transform: translateY(-100px);
 }
 
-#two_main_directions_conteiner {
+section#two_main_directions_conteiner {
   display: flex;
   justify-content: center;
   position: relative;
+  margin-top: 0;
 }
 
 .retail_content, .wind_content {
@@ -1080,17 +1081,18 @@ section.media_content {
   flex-direction: column;
 }
 
-.preview_img {
+.downloadable-content a.downloadable_content_link,
+.downloadable-content a.preview_content_link
+{display: none;}
 
-}
+.downloadable-content:hover a.downloadable_content_link,
+.downloadable-content:hover a.preview_content_link
+{display: block;}
 
-.downloadable_content_link {
 
-}
+/* .description_of_dwnld_file {
 
-.description_of_dwnld_file {
-
-}
+} */
 
 /* <-------------------- Privacy & Cookie Policy style -------------------> */
 
@@ -1508,44 +1510,58 @@ main {
 /* <------- Wind services section -------> */
 
 .service-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.service-item {
+  flex: 1 1 calc(33.333% - 20px);
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.service-main-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.keypoint {
+  margin-top: 10px;
+}
+
+
+
+
+/* <------- List of wind services -------> */
+
+.service-list {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Ensures three boxes per row */
 }
 
 .service-item {
-  flex: 0 0 calc(33.333% - 10px); /* Ensures three items per row with some margin */
-  margin: 5px;
+  position: relative;
+  flex: 0 0 calc(33.333% - 20px);
+  margin: 10px;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  position: relative;
-  text-align: center;
-}
-
-.service-main-image {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
-  overflow: hidden;
-}
-
-.service-main-image img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .overlay {
   position: absolute;
   bottom: 0;
+  left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
@@ -1555,6 +1571,7 @@ main {
 
 .service-content {
   padding: 15px;
+  background-color: #fff;
 }
 
 .service-keypoints {
@@ -1571,17 +1588,9 @@ main {
   margin: 0;
 }
 
-.list_icon {
+.keypoint-icon {
   margin-right: 10px;
 }
-
-.btn-wrapper {
-  text-align: center;
-  margin-top: 20px;
-}
-
-
-
 
 
 

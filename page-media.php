@@ -53,7 +53,7 @@ Template Name: Media
     
 
     <!-- Section Headline -->
-    <h2 class="title">Videos and videoclips</h2>
+    <h2 class="title">Videos and video clips</h2>
     <!-- Media Videos loop  (downloadable content section) -->
     <section class="media_content videos">    
             
