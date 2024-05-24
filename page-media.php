@@ -192,7 +192,7 @@ Template Name: Media
         
         <?php endwhile; wp_reset_query(); ?>
     </section>
-    </section>
+
 
 
 <!-- Subscribes for more  Section -->
@@ -217,10 +217,7 @@ Template Name: Media
     </div>
 </section>
 
-
-
 </main>
+    
 </body>
-    <?php endwhile; ?>
-
 <?php get_footer(); ?>
