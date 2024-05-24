@@ -231,6 +231,41 @@ Template Name: Wind services
 </section>
 
 
+
+
+<section>
+    <h2>Our customers are Global Wind Companies</h2>
+    <div class="slides">
+        <?php
+        $args = array(
+            'post_type'      => 'customers-logo',
+            'posts_per_page' => -1,
+        );
+        $customer_logos = new WP_Query($args);
+
+        if ($customer_logos->have_posts()) :
+            while ($customer_logos->have_posts()) : $customer_logos->the_post();
+                $logo_url = get_field('transparent_png_of_customer_logo');
+                $customer_website = get_field('link_to_their_website');
+
+                if ($logo_url) :
+        ?>
+                    <a href="<?php echo esc_url($customer_website); ?>" target="_blank" class="customers_logo_link">
+                        <img src="<?php echo esc_url($logo_url); ?>" class="customers_logo_image" alt="<?php the_title(); ?>">
+                    </a>
+        <?php
+                endif;
+            endwhile;
+            wp_reset_postdata();
+        else :
+            // No posts found
+        endif;
+        ?>
+    </div>
+</section>
+
+
+
 <div class="contact-person-image">
         <img src="<?php echo get_field('transparent_png_of_customer_logo')['url']; ?>" alt="<?php echo get_field('transparent_png_of_customer_logo')['alt']; ?>">
     </div>
