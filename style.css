@@ -2287,6 +2287,7 @@ img.footer-logo {
   text-decoration: none;
   display: inline-block;
 }
+.footer-menu a:hover {color: #7bcdf3;}
 
 .footer-contact-link {
   color: #fff;

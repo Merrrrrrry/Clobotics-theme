@@ -1,7 +1,0 @@
-.downloadable-content a.downloadable_content_link,
-.downloadable-content a.preview_content_link
-{display: none;}
-
-.downloadable-content:hover a.downloadable_content_link,
-.downloadable-content:hover a.preview_content_link
-{display: block;}
