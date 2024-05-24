@@ -1086,28 +1086,28 @@ section.media_content {
 img.preview_img {
   width: 20rem;
   height: 12rem;
-  overflow: hidden;
   object-fit: cover;
   padding: 0 0.5em 0 0;
 }
 
-.downloadable-content a.downloadable_content_link,
-.downloadable-content .overlay,
-.downloadable-content a.preview_content_link
+.preview_container a.downloadable_content_link,
+.preview_container a.preview_content_link,
+.preview_container .overlay
 {
   display: block;
   visibility: hidden;
 }
 
-.downloadable-content:hover a.downloadable_content_link,
-.downloadable-content:hover a.preview_content_link
+.preview_container:hover a.downloadable_content_link,
+.preview_container:hover a.preview_content_link,
+.preview_container:hover .overlay
 { visibility: visible; }
 
 
 
 
 
-.downloadable-content:hover .overlay.blue {
+.preview_container:hover .overlay {
   height: 100%;
   background-color: #00A5E3;
   opacity: 0.5;
