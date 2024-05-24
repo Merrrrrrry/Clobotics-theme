@@ -8,7 +8,7 @@ Template Name: Home
     
 <?php get_header() ?>
 
-<body class="gray-body">
+<body class="homepage gray-body">
   <main>
 
     <?php while(have_posts()): the_post(); ?>
