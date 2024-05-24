@@ -1580,18 +1580,6 @@ main {
   margin-top: 20px;
 }
 
-.btn {
-  padding: 10px 20px;
-  background-color: #0073e6;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  display: inline-block;
-}
-
-.btn:hover {
-  background-color: #005bb5;
-}
 
 
 
