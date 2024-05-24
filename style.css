@@ -1710,9 +1710,10 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 .video-wind {
   position: relative;
-  width: 70%;
-  margin: 0 auto; 
+  width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 #playButton {
@@ -1728,7 +1729,6 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   border-radius: 5px;
   cursor: pointer;
 }
-
 
 
 

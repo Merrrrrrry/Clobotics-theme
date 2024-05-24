@@ -72,7 +72,7 @@ Template Name: Wind services
 
 
 <div class="video-wind">
-    <video controls>
+    <video controls width="70%">
         <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/media/wind_video.mp4" type="video/mp4">
     </video>
 </div>
