@@ -1107,7 +1107,7 @@ img.preview_img {
 
 
 
-.downloadable-content:hover .downloadable-content .overlay {
+.downloadable-content:hover .overlay.blue {
   height: 100%;
   background-color: #00A5E3;
   opacity: 0.5;
