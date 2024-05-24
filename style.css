@@ -1076,8 +1076,7 @@ section.media_content {
 
 
 .downloadable-content {
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
 
 .preview_container {
@@ -1085,8 +1084,8 @@ section.media_content {
 }
 
 img.preview_img {
-  width: 20em;
-  height: 12em;
+  width: 20rem;
+  height: 12rem;
   overflow: hidden;
   object-fit: cover;
   padding: 0 0.5em 0 0;
@@ -1095,11 +1094,14 @@ img.preview_img {
 .downloadable-content a.downloadable_content_link,
 .downloadable-content .overlay,
 .downloadable-content a.preview_content_link
-{display: none;}
+{
+  display: block;
+  visibility: hidden;
+}
 
 .downloadable-content:hover a.downloadable_content_link,
 .downloadable-content:hover a.preview_content_link
-{display: block;}
+{ visibility: visible; }
 
 
 .downloadable-content:hover .overlay.blue {
@@ -1108,6 +1110,18 @@ img.preview_img {
   opacity: 0.5;
   margin: 0;
   padding: 0;
+}
+
+a.btn.downloadable_content_link {
+  width: 50%;
+  position: relative;
+  margin: -7rem auto 7rem;
+}
+
+img.download_icon {
+  vertical-align: middle;
+  margin: 0 0.5em;
+  height: 1.25rem;
 }
 
 /* .description_of_dwnld_file {

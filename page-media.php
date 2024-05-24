@@ -40,7 +40,7 @@ Template Name: Media
         ?>
         
         <div class="downloadable-content">
-            <div class="preview_container"><div class="overlay"></div>
+            <div class="preview_container"><div class="overlay blue"></div>
             <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'"></div>
             <a class="btn downloadable_content_link" download="<?php echo preg_replace('/.*?\/([^\/]+)$/','$1',$file["url"]); ?>" href="<?php echo esc_url($file["url"]); ?>" title="Downloadable image of <?php echo esc_attr($name); ?>"><img class="download_icon" src="<?php echo get_template_directory_uri(); ?>/media/icon_download.png" alt="Download icon">Download</a>
             <p class="subtitle description_of_dwnld_file"><?php echo esc_html($name); ?></p>
