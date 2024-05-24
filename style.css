@@ -1081,14 +1081,27 @@ section.media_content {
   flex-direction: column;
 }
 
+.preview_container {
+  position: relative;
+}
+
 .downloadable-content a.downloadable_content_link,
+.downloadable-content .overlay,
 .downloadable-content a.preview_content_link
 {display: none;}
 
 .downloadable-content:hover a.downloadable_content_link,
+.downloadable-content:hover .overlay, 
 .downloadable-content:hover a.preview_content_link
 {display: block;}
 
+.downloadable-content .overlay {
+  height: 100%;
+  background-color: #00A5E3;
+  opacity: 0.5;
+  margin: 0;
+  padding: 0;
+}
 
 /* .description_of_dwnld_file {
 

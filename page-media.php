@@ -40,9 +40,9 @@ Template Name: Media
         ?>
         
         <div class="downloadable-content">
-
-            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
-            <a class="downloadable_content_link" download="<?php echo preg_replace('/.*?\/([^\/]+)$/','$1',$file["url"]); ?>" href="<?php echo esc_url($file["url"]); ?>" title="Downloadable image of <?php echo esc_attr($name); ?>">DOWNLOAD</a>
+            <div class="preview_container"><div class="overlay"></div>
+            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'"></div>
+            <a class="btn downloadable_content_link" download="<?php echo preg_replace('/.*?\/([^\/]+)$/','$1',$file["url"]); ?>" href="<?php echo esc_url($file["url"]); ?>" title="Downloadable image of <?php echo esc_attr($name); ?>"><img class="download_icon" src="<?php echo get_template_directory_uri(); ?>/media/icon_download.png" alt="Download icon">Download</a>
             <p class="subtitle description_of_dwnld_file"><?php echo esc_html($name); ?></p>
         </div>
         
@@ -65,8 +65,9 @@ Template Name: Media
             $preview = get_field('preview_image');
         ?>
         
-        <div class="downloadable-content">            
-            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
+        <div class="downloadable-content">
+            <div class="preview_container"><div class="overlay"></div>            
+            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'"></div>
             <a class="downloadable_content_link" download="<?php echo esc_url(preg_replace('.*?\/([^\/]+)$','$1',$file["url"])); ?>" href="<?php echo esc_url($file["url"]); ?>" title="Downloadable vidio clip of <?php echo esc_attr($name); ?>">DOWNLOAD</a>
             <p class="subtitle description_of_dwnld_file"><?php echo esc_html($name); ?></p>
         </div>
@@ -91,7 +92,8 @@ Template Name: Media
         ?>
         
         <div class="downloadable-content">
-            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
+            <div class="preview_container"><div class="overlay"></div>
+            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'"></div>
             <a class="downloadable_content_link" download="<?php echo esc_url(preg_replace('.*?\/([^\/]+)$','$1',$file["url"])); ?>" href="<?php echo esc_url($file["url"]); ?>" title="Downloadable certificate '<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
             <p class="subtitle description_of_dwnld_file"><?php echo esc_html($name); ?></p>
         </div>
@@ -117,7 +119,8 @@ Template Name: Media
         ?>
         
         <div class="downloadable-content">
-            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
+            <div class="preview_container"><div class="overlay"></div>
+            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'"></div>
             <a class="downloadable_content_link" download="<?php echo esc_url(preg_replace('.*?\/([^\/]+)$','$1',$file["url"])); ?>" href="<?php echo esc_url($file["url"]); ?>" title="Downloadable presentation '<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
             <p class="subtitle description_of_dwnld_file"><?php echo esc_html($name); ?></p>
         </div>
@@ -141,7 +144,8 @@ Template Name: Media
         ?>
         
         <div class="downloadable-content">
-            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
+            <div class="preview_container"><div class="overlay"></div>
+            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'"></div>
             <a class="downloadable_content_link" download="<?php echo esc_url(preg_replace('.*?\/([^\/]+)$','$1',$file["url"])); ?>" href="<?php echo esc_url($file["url"]); ?>" title="Downloadable posters'<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
             <p class="subtitle description_of_dwnld_file"><?php echo esc_html($name); ?></p>
         </div>
@@ -167,7 +171,8 @@ Template Name: Media
         ?>
         
         <div class="downloadable-content">
-            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'">
+            <div class="preview_container"><div class="overlay"></div>
+            <img class="preview_img" src="<?php echo esc_url($preview["url"]); ?>" alt="Preview of '<?php echo esc_attr($name); ?>'"></div>
             <a class="downloadable_content_link" download="<?php echo esc_url(preg_replace('.*?\/([^\/]+)$','$1',$file["url"])); ?>" href="<?php echo esc_url($file["url"]); ?>" title="Downloadable file '<?php echo esc_attr($name); ?>'">DOWNLOAD</a>
             <p class="subtitle description_of_dwnld_file"><?php echo esc_html($name); ?></p>
         </div>
