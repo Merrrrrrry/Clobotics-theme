@@ -1102,11 +1102,10 @@ img.preview_img {
 {display: block;}
 
 
-<<<<<<< Updated upstream
-.downloadable-content:hover .overlay.blue {
-=======
+
+
+
 .downloadable-content:hover .downloadable-content .overlay {
->>>>>>> Stashed changes
   height: 100%;
   background-color: #00A5E3;
   opacity: 0.5;
