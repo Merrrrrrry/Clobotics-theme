@@ -79,10 +79,6 @@ Template Name: Wind services
 
 
 
-<video id="sectionVideo" autoplay loop muted playsinline preload="auto" width="210px">
-        <source src="<?php echo get_template_directory_uri(); ?>/media/wind_video.mp4" type="video/mp4">
- </video>
-    
 
 <!-- Search bar -->
 <section class="subscribe-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/media/sm-bg-rounded.png">
