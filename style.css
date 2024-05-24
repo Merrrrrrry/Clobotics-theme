@@ -1553,7 +1553,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; 
-  padding: 130px;
+  padding: 30px 130px;
   gap: 30px;
   background-color: #F5F5F5;
 }
@@ -1574,7 +1574,7 @@ main {
 .service-main-image {
   position: relative;
   width: 100%;
-  padding-top: 25px;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
   overflow: hidden;
 }
 
@@ -1599,7 +1599,7 @@ main {
 }
 
 .service-content {
-  padding: 15px;
+  padding: 10px;
   background-color: #fff;
 }
 
@@ -2275,9 +2275,11 @@ img.footer-logo {
   padding: 15px;
 }
 
+
 body.homepage nav.navbar img {
   filter: invert(0.6) sepia(65%) contrast(5) hue-rotate(165deg);
 }
+
 
 .navbar-nav {
   list-style: none;
@@ -2347,7 +2349,7 @@ body.homepage .nav-link {
   color: #009FE8;
   text-decoration: none;
   padding: 5px 10px;
-  transition: 'background' 0.7s ease, color 0.3s ease;
+  transition: background 0.7s ease, color 0.3s ease;
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
