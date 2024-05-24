@@ -1576,6 +1576,7 @@ main {
   padding: 30px 130px;
   gap: 30px;
   background-color: #F5F5F5;
+  overflow: hidden;
 }
 
 .service-item {
