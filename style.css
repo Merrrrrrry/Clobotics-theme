@@ -1576,6 +1576,7 @@ main {
   padding: 30px 130px;
   gap: 30px;
   background-color: #F5F5F5;
+  overflow: hidden;
 }
 
 .service-item {
@@ -1614,12 +1615,12 @@ main {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
-  padding: 7px;
+  padding: 5px;
   box-sizing: border-box;
 }
 
 .service-content {
-  padding: 10px;
+  padding: 15px;
   background-color: #fff;
 }
 
