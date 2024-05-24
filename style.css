@@ -2275,13 +2275,12 @@ img.footer-logo {
   padding: 15px;
 }
 
-<<<<<<< Updated upstream
+
 body.homepage nav.navbar img {
   filter: invert(0.6) sepia(65%) contrast(5) hue-rotate(165deg);
 }
 
-=======
->>>>>>> Stashed changes
+
 .navbar-nav {
   list-style: none;
   margin: 0;
