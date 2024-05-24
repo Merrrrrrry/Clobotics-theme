@@ -1076,7 +1076,6 @@ section.media_content {
   padding: 0 5rem;
 }
 
-
 .downloadable-content {
   text-align: center;
 }
@@ -1122,7 +1121,7 @@ img.preview_img {
 a.btn.downloadable_content_link {
   width: 50%;
   position: relative;
-  margin: -7rem auto 7rem;
+  margin: -7rem auto 5rem;
 }
 
 img.download_icon {
@@ -1136,6 +1135,8 @@ p.subtitle.description_of_dwnld_file {
     width: 80%;
     font-size: 18px;
     font-weight: normal;
+    padding: 0;
+    margin: 0.25rem 0 1rem 0;
 }
 
 /* <-------------------- Privacy & Cookie Policy style -------------------> */
