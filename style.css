@@ -242,9 +242,9 @@ height:auto;
 
 /* <--------- HOME PAGE --------->*/
 
-.home-content {
+/* .home-content {
   height: 100vh;
-}
+} */
 
 
 
@@ -261,7 +261,7 @@ height:auto;
   display: block; 
   object-fit: cover; /* Cover the container without maintaining aspect ratio */
   object-position: center; /* Center the video */
-  transform: translateY(-600px);
+  transform: translateY(-400px);
 }
 
 #two_main_directions_conteiner {
