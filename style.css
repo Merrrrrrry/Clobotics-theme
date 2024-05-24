@@ -1710,7 +1710,8 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 .video-wind {
   position: relative;
-  width:100%;
+  width: 70%;
+  margin: 0 auto; 
   overflow: hidden;
 }
 
