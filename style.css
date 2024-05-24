@@ -1688,6 +1688,65 @@ margin-right: 10px;
 
 
 
+@media (max-width: 768px) {
+  .service-list {
+    padding: 20px 30px;
+    gap: 20px;
+  }
+
+  .service-item {
+    flex: 0 0 100%; /* One item per row */
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .service-main-image img {
+    object-fit: cover; /* Adjust if images need different styling */
+  }
+}
+
+@media (max-width: 480px) {
+  .service-list {
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .service-item {
+    flex: 0 0 100%; /* One item per row */
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .service-main-image img {
+    object-fit: cover; /* Adjust if images need different styling */
+  }
+
+  .service-content {
+    padding: 10px;
+  }
+
+  .service-keypoints {
+    padding-right: 0;
+  }
+
+  .keypoint {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+
+  .keypoint-icon {
+    margin-bottom: 5px;
+    margin-right: 0;
+  }
+
+  .keypoint p {
+    margin-left: 0;
+  }
+}
+
+
+
 
 
 /*We operate globally section*/
