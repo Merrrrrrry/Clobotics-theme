@@ -64,7 +64,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
    //articles
-   jQuery(document).ready(function($) {
+   //articles
+jQuery(document).ready(function($) {
     $('#search-form-articles').on('submit', function(event) {
         event.preventDefault();
 
@@ -79,6 +80,9 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             success: function(response) {
                 $('#articles-container').html(response);
+
+                // Re-apply margin styles to articles
+                $('#articles-container article').css('margin', '1em');
             }
         });
     });
