@@ -1092,7 +1092,7 @@ img.preview_img {
 
 .preview_container a.downloadable_content_link,
 .preview_container a.preview_content_link,
-.preview_container .overlay
+.preview_container .overlay.blue
 {
   display: block;
   visibility: hidden;
@@ -1100,14 +1100,14 @@ img.preview_img {
 
 .preview_container:hover a.downloadable_content_link,
 .preview_container:hover a.preview_content_link,
-.preview_container:hover .overlay
+.preview_container:hover .overlay.blue
 { visibility: visible; }
 
 
 
 
 
-.preview_container:hover .overlay {
+.preview_container:hover .overlay.blue {
   height: 100%;
   background-color: #00A5E3;
   opacity: 0.5;
