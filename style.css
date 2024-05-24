@@ -250,12 +250,12 @@ height:auto;
 .home-video {
   width: 100%;
   overflow: hidden;
-  height: 60vh; 
+  height: 20vh; 
   padding-top: -600px; 
 }
 
 .home-video video {
-  width: 100vw;
+  /* width: 100vw; */
   display: block; 
   z-index: -1;  
   object-position: center;
