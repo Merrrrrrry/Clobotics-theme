@@ -251,7 +251,7 @@ height:auto;
   width: 100%;
   overflow: hidden;
   height: 60vh; 
-  padding-top: 0; 
+  padding-top: -200px; 
 }
 
 .home-video video {
