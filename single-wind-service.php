@@ -19,33 +19,19 @@ Template Name: single-wind-service
             <h1 class="service-title"><?php the_field('service_title'); ?></h1>
 
             <div class="service-keypoints">
-                <div class="keypoint">
-                    <h3><?php the_field('1st_keypoint'); ?></h3>
-                    <?php
-                    $icon1 = get_field('icon_of_the_keypoint_1');
-                    if ($icon1) : ?>
-                        <img src="<?php echo esc_url($icon1['url']); ?>" alt="<?php echo esc_attr($icon1['alt']); ?>">
-                    <?php endif; ?>
-                    <p><?php the_field('1st_keypoint_subtitle_meta_description'); ?></p>
-                </div>
-                <div class="keypoint">
-                    <h3><?php the_field('2nd_keypoint'); ?></h3>
-                    <?php
-                    $icon2 = get_field('icon_of_the_keypoint_2');
-                    if ($icon2) : ?>
-                        <img src="<?php echo esc_url($icon2['url']); ?>" alt="<?php echo esc_attr($icon2['alt']); ?>">
-                    <?php endif; ?>
-                    <p><?php the_field('2nd_keypoint_subtitle_meta_description'); ?></p>
-                </div>
-                <div class="keypoint">
-                    <h3><?php the_field('3rd_keypoint'); ?></h3>
-                    <?php
-                    $icon3 = get_field('icon_of_the_keypoint_3');
-                    if ($icon3) : ?>
-                        <img src="<?php echo esc_url($icon3['url']); ?>" alt="<?php echo esc_attr($icon3['alt']); ?>">
-                    <?php endif; ?>
-                    <p><?php the_field('3rd_keypoint_subtitle_meta_description'); ?></p>
-                </div>
+                <?php if (have_rows('keypoints')) : ?>
+                    <?php while (have_rows('keypoints')) : the_row(); ?>
+                        <div class="keypoint">
+                            <h3><?php the_sub_field('keypoint_title'); ?></h3>
+                            <?php
+                            $icon = get_sub_field('keypoint_icon');
+                            if ($icon) : ?>
+                                <img src="<?php echo esc_url($icon['url']); ?>" alt="<?php echo esc_attr($icon['alt']); ?>">
+                            <?php endif; ?>
+                            <p><?php the_sub_field('keypoint_description'); ?></p>
+                        </div>
+                    <?php endwhile; ?>
+                <?php endif; ?>
             </div>
 
             <h2><?php the_field('short_article_title'); ?></h2>
@@ -61,38 +47,32 @@ Template Name: single-wind-service
         </div>
     </section>
 
-    <!-- Other wind services linking  Section -->
+    <!-- Other wind services linking Section -->
     <section class="wind_services_linking">
         <h3 class="title">Discover Clobotics with our articles!</h3>
 
         <div class="news_articles_linking_container owl-carousel owl-theme">
             <?php $loop = new WP_Query(array('post_type' => 'wind-service', 'posts_per_page' => -1)); ?>
             <?php while ($loop->have_posts()) : $loop->the_post(); ?>
-                <div class="service_single_container owl-carousel">
-                    <img class="service_image_in_loop" src="<?php $image = get_field('service_main_image'); echo esc_url($image['url']); ?>" alt="Article image">
+                <div class="service_single_container">
+                    <?php
+                    $image = get_field('service_main_image');
+                    if ($image) : ?>
+                        <img class="service_image_in_loop" src="<?php echo esc_url($image['url']); ?>" alt="Article image">
+                    <?php endif; ?>
                     <h4 class="title"><?php the_field('service_title'); ?></h4>
 
                     <div class="keypoints_container">
-                        <?php
-                        $icon1 = get_field('icon_of_the_keypoint_1');
-                        if ($icon1) : ?>
-                            <img class="icon" src="<?php echo esc_url($icon1['url']); ?>" alt="Service keypoint icon 1">
+                        <?php if (have_rows('keypoints')) : ?>
+                            <?php while (have_rows('keypoints')) : the_row(); ?>
+                                <?php
+                                $icon = get_sub_field('keypoint_icon');
+                                if ($icon) : ?>
+                                    <img class="icon" src="<?php echo esc_url($icon['url']); ?>" alt="Service keypoint icon">
+                                <?php endif; ?>
+                                <p class="subtitle"><?php the_sub_field('keypoint_description'); ?></p>
+                            <?php endwhile; ?>
                         <?php endif; ?>
-                        <p class="subtitle"><?php the_field('meta_description_short'); ?></p>
-
-                        <?php
-                        $icon2 = get_field('icon_of_the_keypoint_2');
-                        if ($icon2) : ?>
-                            <img class="icon" src="<?php echo esc_url($icon2['url']); ?>" alt="Service keypoint icon 2">
-                        <?php endif; ?>
-                        <p class="subtitle"><?php the_field('meta_description_short'); ?></p>
-
-                        <?php
-                        $icon3 = get_field('icon_of_the_keypoint_3');
-                        if ($icon3) : ?>
-                            <img class="icon" src="<?php echo esc_url($icon3['url']); ?>" alt="Service keypoint icon 3">
-                        <?php endif; ?>
-                        <p class="subtitle"><?php the_field('meta_description_short'); ?></p>
                     </div>
                 </div>
             <?php endwhile; wp_reset_query(); ?>
