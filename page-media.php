@@ -25,6 +25,8 @@ Template Name: Media
             </div>
         </div> 
 
+<!-- Gap section -->
+<div style="height: rem;"></div>
 
         <!-- Section Headline -->
         <h2 class="title">Pictures</h2>
@@ -51,6 +53,8 @@ Template Name: Media
     </section>
 
     
+<!-- Gap section -->
+<div style="height: 6rem;"></div>
 
     <!-- Section Headline -->
     <h2 class="title">Videos and video clips</h2>
@@ -76,6 +80,8 @@ Template Name: Media
         <?php endwhile; wp_reset_query(); ?>
     </section>
 
+<!-- Gap section -->
+<div style="height: 6rem;"></div>
 
     <!-- Section Headline -->
     <h2 class="title">Certificates</h2>
@@ -103,6 +109,8 @@ Template Name: Media
     </section>
     
 
+<!-- Gap section -->
+<div style="height: 6rem;"></div>
 
     <!-- Section Headline -->
     <h2 class="title">Company presentations</h2>
@@ -128,6 +136,8 @@ Template Name: Media
         
         <?php endwhile; wp_reset_query(); ?>
     </section>
+<!-- Gap section -->
+<div style="height: 6rem;"></div>
 
     <!-- Section Headline -->
     <h2 class="title">Clobotics Posters</h2>
@@ -155,6 +165,8 @@ Template Name: Media
     </section>
     
 
+<!-- Gap section -->
+<div style="height: 6rem;"></div>
 
     <!-- Section Headline -->
     <h2 class="title">Additional files</h2>
@@ -183,6 +195,33 @@ Template Name: Media
     </section>
 
 
+<!-- Subscribes for more  Section -->
+
+<section class="subscribe-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/media/sm-bg-rounded.png">
+    <div class="content-wrapper">
+        <h2>Subscribe for more!</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/company/cloboticswindservices/">
+                <img src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png" alt="LinkedIn"> <br>
+                <span>Wind</span>
+            </a>
+            <a href="https://www.linkedin.com/company/clobotics/">
+                <img src="<?php echo get_template_directory_uri(); ?>/media/linkedin-logo.png" alt="LinkedIn"> <br>
+                <span>Retail</span>
+            </a>
+            <a href="https://vimeo.com/681845431">
+                <img src="<?php echo get_template_directory_uri(); ?>/media/vimeo-logo.png" alt="Vimeo"> <br>
+                <span>Vimeo</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+</main>
+</body>
+    <?php endwhile; ?>
 
 </main>
     
