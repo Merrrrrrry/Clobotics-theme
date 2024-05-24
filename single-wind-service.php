@@ -97,11 +97,9 @@ Template Name: single-wind-service
 
                 <div class="keypoints_container">
                     <img class="icon" src="<?php $image = get_field('icon_of_the_keypoint_1');  echo esc_url($image["url"]); ?>" alt="Service keypoint icon 1" /> 
-                    <!-- <p class="subtitle"><?php the_field('meta_description_short'); ?></p>   -->
                     <img class="icon" src="<?php $image = get_field('icon_of_the_keypoint_2');  echo esc_url($image["url"]); ?>" alt="Service keypoint icon 2" /> 
-                    <!-- <p class="subtitle"><?php the_field('meta_description_short'); ?></p>  -->
                     <img class="icon" src="<?php $image = get_field('icon_of_the_keypoint_3');  echo esc_url($image["url"]); ?>" alt="Service keypoint icon 3" /> 
-                    <!-- <p class="subtitle"><?php the_field('meta_description_short'); ?></p>   -->
+
                 </div>            
             </div> 
 
@@ -110,6 +108,7 @@ Template Name: single-wind-service
 
 </section>
 
+<!-- <p class="subtitle"><?php the_field('meta_description_short'); ?></p>   -->
 
 <?php 
     wp_enqueue_script("jquery", "https://code.jquery.com/jquery-1.12.1.min.js");
