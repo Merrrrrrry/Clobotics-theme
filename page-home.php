@@ -4,11 +4,11 @@ Template Name: Home
 */
 ?>
 
-<body class="gray-body">
+
     
 <?php get_header() ?>
 
-
+<body class="gray-body">
   <main>
 
     <?php while(have_posts()): the_post(); ?>
