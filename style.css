@@ -1104,7 +1104,10 @@ img.preview_img {
 { visibility: visible; }
 
 
-.downloadable-content:hover .overlay.blue {
+
+
+
+.downloadable-content:hover .downloadable-content .overlay {
   height: 100%;
   background-color: #00A5E3;
   opacity: 0.5;
@@ -1627,8 +1630,8 @@ main {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
   padding: 5px;
   box-sizing: border-box;
 }
@@ -1697,6 +1700,33 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
 
 .we_operate_globally_container {text-align: center;}
 .we_operate_globally_container img.we_operate_globally-img {max-height: 80vh;}
+
+
+
+
+
+
+/*----------------------WIND VIDEO -----------------------*/
+
+.video-wind {
+  position: relative;
+  width:100%;
+  overflow: hidden;
+}
+
+#playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 
 
 
