@@ -22,9 +22,7 @@ Template Name: Contact
             </div>
         </div> 
 
-        <video id="sectionVideo" autoplay loop muted playsinline preload="auto" width="210px">
-        <source src="<?php echo get_template_directory_uri(); ?>/media/Wind_video.mp4" type="video/mp4">
- </video>
+
 <!--- Contact form section --->
 
 <section>
