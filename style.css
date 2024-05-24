@@ -2317,6 +2317,10 @@ img.footer-logo {
   width: 100%;
 }
 
+body.homepage .nav-link {
+  color:#002D61;
+}
+
 .dropdown-menu {
   display: none;
   position: absolute;
