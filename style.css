@@ -2276,7 +2276,7 @@ img.footer-logo {
 }
 
 body.homepage nav.navbar img {
-  filter: invert(0.6) sepia(95%) contrast(3) hue-rotate(165deg);
+  filter: invert(0.6) sepia(65%) contrast(5) hue-rotate(165deg);
 }
 
 .navbar-nav {
