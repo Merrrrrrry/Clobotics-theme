@@ -4,6 +4,8 @@ Template Name: Home
 */
 ?>
 
+<body class="gray-body">
+    
 <?php get_header() ?>
 
 
