@@ -218,8 +218,9 @@ Template Name: Media
 </section>
 
 
+
+</main>
+</body>
     <?php endwhile; ?>
 
-    
-</body>
 <?php get_footer(); ?>
