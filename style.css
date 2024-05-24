@@ -1712,6 +1712,8 @@ ul.img_selector li.selected:hover {box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);}
   position: relative;
   width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 #playButton {
