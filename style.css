@@ -202,6 +202,10 @@ section {
   object-position: top;
 }
 
+.hero-wind-img {
+  object-position: 0;
+}
+
 .hero-section-content {
   position: absolute;
   top: 50%;
@@ -242,10 +246,12 @@ height:auto;
 
 /* <--------- HOME PAGE --------->*/
 
-/* .home-content {
-  height: 100vh;
-} */
 
+section.home-content {
+  height: 100vh;
+  padding: 0;
+  margin-top: 0;
+}
 
 
 .home-video {
@@ -267,7 +273,7 @@ height:auto;
 #two_main_directions_conteiner {
   display: flex;
   justify-content: center;
-  z-index: 1;
+  position: relative;
 }
 
 .retail_content, .wind_content {
