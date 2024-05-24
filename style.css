@@ -241,18 +241,15 @@ height:auto;
 
 
 /* <--------- HOME PAGE --------->*/
-
 .home-content {
   height: 100vh;
 }
 
-
-
 .home-video {
-  position: relative; /* Ensure correct positioning */
   width: 100%;
-  height: 100%; /* Take up the full height of the parent container */
   overflow: hidden;
+  height: 100%; /* Ensure the container takes up the full height of the parent */
+  position: relative; /* Enable relative positioning */
 }
 
 .home-video video {
@@ -261,6 +258,7 @@ height:auto;
   display: block; 
   object-fit: cover; /* Cover the container without maintaining aspect ratio */
   object-position: center; /* Center the video */
+  transform: translateY(-600px); /* Move the video 600px up */
 }
 
 #two_main_directions_conteiner {
