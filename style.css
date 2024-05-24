@@ -1072,6 +1072,8 @@ section.media_content {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  justify-content: left;
+  padding: 0 5rem;
 }
 
 
@@ -1081,33 +1083,35 @@ section.media_content {
 
 .preview_container {
   position: relative;
+  display: inline-block;
+  font-size: 0;
 }
 
 img.preview_img {
   width: 20rem;
   height: 12rem;
   object-fit: cover;
-  padding: 0 0.5em 0 0;
+  padding: 0;
 }
 
 .downloadable-content a.downloadable_content_link,
-.preview_container a.preview_content_link,
-.preview_container .overlay.blue
+.downloadable-content a.preview_content_link,
+.downloadable-content .overlay.blue
 {
   display: block;
   visibility: hidden;
 }
 
 .downloadable-content:hover a.downloadable_content_link,
-.preview_container:hover a.preview_content_link,
-.preview_container:hover .overlay.blue
+.downloadable-content:hover a.preview_content_link,
+.downloadable-content:hover .overlay.blue
 { visibility: visible; }
 
 
 
 
 
-.preview_container:hover .overlay.blue {
+.downloadable-content:hover .overlay.blue {
   height: 100%;
   background-color: #00A5E3;
   opacity: 0.5;
@@ -1507,6 +1511,21 @@ main {
   .we_operate_globally-img {
     margin-bottom: 20px;
   }
+
+  /* <-------------------- MEDIA PAGE STYLE --------------------> */
+
+section.media_content {
+  gap: 0.5rem;
+  padding: 0 1rem;
+}
+
+a.btn.downloadable_content_link {
+  width: 75%;
+  visibility: visible;
+  margin: 0 auto;
+}
+
+
 }
 
 
