@@ -259,6 +259,7 @@ height:auto;
   display: block; 
   z-index: -1;  
   object-position: center;
+  padding-top: -600px; 
 }
 
 #two_main_directions_conteiner {
