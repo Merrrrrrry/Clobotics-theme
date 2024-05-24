@@ -65,7 +65,7 @@ Template Name: Wind services
 
 
 
-<!-- Wind services presentation Video (code referenced from busters world) -->
+<!-- Wind services presentation Video -->
         
 
 <div class="section-one">
@@ -75,6 +75,12 @@ Template Name: Wind services
 </div>
 
 
+<div class="video-wind">
+    <video controls>
+        <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/media/Wind_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
     
 
 <!-- Search bar -->
