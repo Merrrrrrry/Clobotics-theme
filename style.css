@@ -372,10 +372,9 @@ ul.position-list {
 .search-bar-container {
   background-color: white;
   border-radius: 18px;
-  padding: 20px;
+  padding: 30px;
   margin: -50px auto 0 auto;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
-  height: 120px; 
   max-width: 485px;
 
 }    
@@ -408,7 +407,7 @@ ul.position-list {
 .search-button {
   background-color: #00B3EC;
   border: none;
-  padding: 12px 24px; 
+  padding: 12px 24px !important; 
   cursor: pointer;
   display: flex;
   align-items: center;
