@@ -407,12 +407,12 @@ ul.position-list {
 .search-button {
   background-color: #00B3EC;
   border: none;
-  padding: 12px 13px; 
+  padding: 12px 15px; 
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px; 
+  border-radius: 22px; 
 } 
 
 
@@ -896,12 +896,12 @@ h4.text-career {
 .search-button-articles {
   background-color: #00B3EC;
   border: none;
-  padding: 12px 13px; 
+  padding: 12px 15px; 
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 20px; 
+  border-radius: 22px; 
 } 
 
 
