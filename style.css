@@ -2019,7 +2019,6 @@ size: 10px;
   border-radius: 8px; /* Example border radius */
   display: flex;
   align-items: center; /* Center items vertically */
-  gap: 10px; /* Space between icon and text */
 }
 
 .keypoint h3 {
@@ -2034,12 +2033,9 @@ size: 10px;
 }
 
 .keypoint h3, .keypoint p {
-  display: inline-block;
-  vertical-align: middle;
   margin: 0;
 }
 
-/* Responsive design */
 @media (max-width: 1200px) {
   .wind_services_linking {
       padding: 20px 60px; /* Reduce padding for medium screens */
@@ -2055,6 +2051,14 @@ size: 10px;
   }
   .keypoint {
       flex: 1 1 100%; /* Each keypoint takes full width of the row */
+  }
+  .keypoint {
+      display: block;
+      text-align: center;
+  }
+  .keypoint img.icon {
+      margin: 0 auto 10px; /* Center icon and add margin below */
+      display: block;
   }
 }
 
