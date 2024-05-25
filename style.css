@@ -1955,11 +1955,11 @@ size: 10px;
   
   .icon_list {
     width: 40px;
-    padding-right: 7px;
+    padding-right: 10px;
   }
   
   .btn_list {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
   }
   
   @media (max-width: 768px) {
@@ -1999,7 +1999,7 @@ size: 10px;
       padding: 10px;
     }
   
-    .service-keypoints {
+    .service-keypoints_list {
       padding-right: 0;
     }
   
@@ -2009,12 +2009,12 @@ size: 10px;
       margin-bottom: 10px;
     }
   
-    .keypoint-icon {
+    .keypoint-icon_list {
       margin-bottom: 5px;
       margin-right: 0;
     }
   
-    .keypoint p {
+    .keypoint_list p {
       margin-left: 0;
     }
   } 
