@@ -1715,6 +1715,7 @@ cursor: pointer;
 
 .slides {
   display: flex;
+  display: inline-block;
   animation: slideAnimation linear infinite;
   white-space: nowrap;
 }
