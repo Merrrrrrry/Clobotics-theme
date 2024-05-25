@@ -2091,26 +2091,20 @@ size: 10px;
 
 /*--------------------------- Wind single other services ----------------------------*/
 
-
-.wind_services_linking {
-  padding: 30px 130px;
-  background-color: #F5F5F5;
-}
-
-.wind_services_linking .title {
-  font-size: 1.5em;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-.wind_services_linking .news_articles_linking_container {
+.owl-item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; 
+  padding: 30px 130px;
   gap: 30px;
-}
-
-.wind_services_linking .service_single_conteiner {
+  background-color: #F5F5F5;
+  overflow: hidden;
+  }
+  
+  .service-item {
   position: relative;
   flex: 0 0 calc(33.333% - 40px);
   margin: 10px;
@@ -2118,91 +2112,129 @@ size: 10px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #fff;
+  position: relative;
   text-align: center;
-}
-
-.wind_services_linking .service_image_in_loop {
+  width: calc(33.33% - 20px);
+  }
+  
+  .service-main-image {
+  position: relative;
   width: 100%;
   padding-top: 70%;
+  overflow: hidden;
+  }
+  
+  .service-main-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-bottom: 1px solid #ddd;
-}
-
-.wind_services_linking .service_single_conteiner .title {
-  padding: 10px;
-  font-size: 1.2em;
-  background-color: #fff;
-}
-
-.wind_services_linking .keypoints_container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  }
+  
+  .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 2px;
+  box-sizing: border-box;
+  }
+  
+  .service-content {
   padding: 20px;
   background-color: #fff;
-}
-
-.wind_services_linking .icon_list {
-  width: 40px;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 768px) {
-  .wind_services_linking {
-    padding: 20px 30px;
-    gap: 20px;
   }
-
-  .wind_services_linking .service_single_conteiner {
-    flex: 0 0 100%;
-    width: 100%;
-    margin: 10px 0;
+  
+  .service-keypoints_list {
+  padding-right: 15px;
+  margin: 0px;
   }
-
-  .wind_services_linking .service_image_in_loop {
-    object-fit: cover;
+  
+  
+  .keypoint_list {
+  display: flex;
+  align-items: center;
+  margin: 0px;
   }
-
-  .wind_services_linking .keypoints_container {
-    padding: 20px;
+  
+  .keypoint_list p {
+  padding-bottom: 10px;
   }
-}
-
-@media (max-width: 480px) {
-  .wind_services_linking {
-    padding: 15px 20px;
-    gap: 15px;
+  
+  .keypoint-icon {
+  margin-right: 10px;
   }
-
-  .wind_services_linking .service_single_conteiner {
-    flex: 0 0 100%;
-    width: 100%;
-    margin: 10px 0;
+  
+  .icon_list {
+    width: 40px;
+    padding-right: 15px;
   }
-
-  .wind_services_linking .service_image_in_loop {
-    object-fit: cover;
+  
+  .btn_list {
+    margin-bottom: 15px;
   }
-
-  .wind_services_linking .keypoints_container {
-    padding: 10px;
+  
+  @media (max-width: 768px) {
+    .service-list {
+      padding: 20px 30px;
+      gap: 20px;
+    }
+  
+    .service-item {
+      flex: 0 0 100%; 
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .service-main-image img {
+      object-fit: cover; 
+    }
   }
+  
+  @media (max-width: 480px) {
+    .service-list {
+      padding: 15px 20px;
+      gap: 15px;
+    }
+  
+    .service-item {
+      flex: 0 0 100%; 
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .service-main-image img {
+      object-fit: cover; 
+    }
+  
+    .service-content {
+      padding: 10px;
+    }
+  
+    .service-keypoints_list {
+      padding-right: 0;
+    }
+  
+    .keypoint_list {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 10px;
+    }
+  
+    .keypoint-icon_list {
+      margin-bottom: 5px;
+      margin-right: 0;
+    }
+  
+    .keypoint_list p {
+      margin-left: 0;
+    }
+  } 
 
-  .wind_services_linking .keypoints_container {
-    padding-right: 0;
-  }
-
-  .wind_services_linking .keypoint_list {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px;
-  }
-
-  .wind_services_linking .icon_list {
-    margin-bottom: 5px;
-    margin-right: 0;
-  }
-}
 
 
 /*--------------------------- Wind single short text ----------------------------*/
