@@ -30,7 +30,6 @@ Template Name: single-wind-service
                             <?php endif;
                         endforeach;
                     endif; ?>
-                    <p><?php the_field('1st_keypoint_subtitle_meta_description'); ?></p>
                 </div>
                 <div class="keypoint">
                     <h3><?php the_field('2nd_keypoint'); ?></h3>
@@ -44,7 +43,6 @@ Template Name: single-wind-service
                             <?php endif;
                         endforeach;
                     endif; ?>
-                    <p><?php the_field('2nd_keypoint_subtitle_meta_description'); ?></p>
                 </div>
                 <div class="keypoint">
                     <h3><?php the_field('3rd_keypoint'); ?></h3>
@@ -58,7 +56,6 @@ Template Name: single-wind-service
                             <?php endif;
                         endforeach;
                     endif; ?>
-                    <p><?php the_field('3rd_keypoint_subtitle_meta_description'); ?></p>
                 </div>
             </div>
 

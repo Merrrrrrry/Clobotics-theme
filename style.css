@@ -2017,13 +2017,13 @@ size: 10px;
   box-sizing: border-box; /* Include padding in width calculation */
   background-color: #fff; /* Example background color for each keypoint */
   padding: 15px; /* Example padding inside each keypoint */
-  border: 1px solid #ddd; /* Example border */
   border-radius: 8px; /* Example border radius */
+  display: flex;
+  align-items: center;
 }
 
 .keypoint h3 {
-  margin-top: 0;
-  margin-bottom: 10px; /* Space between title and icons */
+  margin: 0;
   font-size: 1.2em;
 }
 
@@ -2034,13 +2034,10 @@ size: 10px;
   vertical-align: middle; /* Align icon with text */
 }
 
-.keypoint p {
-  margin-top: 10px;
-}
-
 .keypoint h3, .keypoint p {
   display: inline-block;
   vertical-align: middle;
+  margin: 0;
 }
 
 
