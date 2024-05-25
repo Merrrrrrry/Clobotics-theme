@@ -263,16 +263,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-
-
-<div class="contact-person-image">
-        <img src="<?php echo get_field('transparent_png_of_customer_logo')['url']; ?>" alt="<?php echo get_field('transparent_png_of_customer_logo')['alt']; ?>">
-    </div>
-
-
-
-
 <section class="we-take-care">
 <img class="we-take-care-background-image" src="<?php echo get_template_directory_uri(); ?>/media/wind_blade.png" alt="We take care of your blades"> <br>
     <div class="we-take-care-content">
