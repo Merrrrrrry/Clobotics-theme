@@ -24,14 +24,20 @@ Template Name: Contact
 
 
 <!--- Contact form section --->
+<div class="contact-form">
+    <?php echo do_shortcode( '[contact-form-7 id="8f0e96f" title="Clobotics contact form"]' ); ?>
+    <style>
+        .contact-form select::after {
+            content: '\e313'; 
+            font-family: 'Material Icons'; 
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    </style>
+</div>
 
-<section>
-    <div class="contact-form">
-        <?php echo do_shortcode( '[contact-form-7 id="8f0e96f" title="Clobotics contact form"]' ); ?>
-    </div>
-</section>
-
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 <div class="background-white">
  <!-- Clobotics contact your office -->
