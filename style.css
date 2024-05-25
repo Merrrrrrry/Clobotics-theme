@@ -1610,6 +1610,13 @@ margin-top: 10px;
 
 /* <------- List of wind services -------> */
 
+.pdf-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 .service-list {
 list-style: none;
 padding: 0;
