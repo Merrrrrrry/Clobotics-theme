@@ -1996,7 +1996,7 @@ size: 10px;
 
 
 .wind_services_linking {
-  padding: 20px 130px; /* 130px padding left and right */
+  padding: 20px 130px; /* 20px padding top and bottom, 130px padding left and right */
   background-color: #f9f9f9; /* Example background color */
 }
 
@@ -2015,9 +2015,10 @@ size: 10px;
   flex: 1 1 calc(33.333% - 20px); /* Each keypoint takes up 1/3 of the row minus the gap */
   box-sizing: border-box; /* Include padding in width calculation */
   background-color: #fff; /* Example background color for each keypoint */
-  padding: 15px; /* Example padding inside each keypoint */
+  padding: 20px; /* Example padding inside each keypoint */
   border-radius: 8px; /* Example border radius */
   display: flex;
+  justify-content: center; /* Center items horizontally */
   align-items: center; /* Center items vertically */
 }
 
@@ -2052,15 +2053,8 @@ size: 10px;
   .keypoint {
       flex: 1 1 100%; /* Each keypoint takes full width of the row */
   }
-  .keypoint {
-      display: block;
-      text-align: center;
-  }
-  .keypoint img.icon {
-      margin: 0 auto 10px; /* Center icon and add margin below */
-      display: block;
-  }
 }
+
 
 
 

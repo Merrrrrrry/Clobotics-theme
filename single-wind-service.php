@@ -33,7 +33,7 @@ Template Name: single-wind-service
                     <h3><?php the_field('1st_keypoint'); ?></h3>
                 </div>
                 <div class="keypoint">
-                    <h3><?php the_field('2nd_keypoint'); ?></h3>
+                    
                     <?php
                     $icons2 = get_field('icon_of_the_keypoint_2');
                     if ($icons2) :
@@ -44,9 +44,10 @@ Template Name: single-wind-service
                             <?php endif;
                         endforeach;
                     endif; ?>
+                    <h3><?php the_field('2nd_keypoint'); ?></h3>
                 </div>
                 <div class="keypoint">
-                    <h3><?php the_field('3rd_keypoint'); ?></h3>
+                    
                     <?php
                     $icons3 = get_field('icon_of_the_keypoint_3');
                     if ($icons3) :
@@ -57,6 +58,7 @@ Template Name: single-wind-service
                             <?php endif;
                         endforeach;
                     endif; ?>
+                    <h3><?php the_field('3rd_keypoint'); ?></h3>
                 </div>
             </div>
 
