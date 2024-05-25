@@ -80,6 +80,15 @@ Template Name: single-wind-service
     <?php endwhile; ?>
 
 
+    <?php
+$pdf_file_button = get_field('pdf_file_button'); // Assuming 'pdf_file_button' is the field name for the PDF file
+if ($pdf_file_button) : ?>
+    <div class="pdf-button-container">
+        <a href="<?php echo esc_url($pdf_file_button['url']); ?>" class="pdf-button btn dark" download>Download PDF</a>
+    </div>
+<?php endif; ?>
+
+
 <section class="wind-call-to-action">
     <img  class="wind-call-to-action-image" src="<?php echo get_template_directory_uri(); ?>/media/contact-us.png" alt="Contact us img">
         <div class="content-wrapper">
@@ -118,7 +127,7 @@ Template Name: single-wind-service
                             <?php endif;
                         endforeach;
                     endif; ?>
-                    
+
                     <?php
                     $icons2 = get_field('icon_of_the_keypoint_2');
                     if ($icons2) :
