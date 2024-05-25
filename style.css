@@ -1701,35 +1701,40 @@ cursor: pointer;
 
 
 
+
 /*----------------------CUSTOMERS' LOGOS -----------------------*/
 
-
-.customers_logo_link {
-  display: inline-block !important;
-  margin-right: 50px !important;
-}
-
-.customers_logo_image {
-  max-width: 140px !important;
-  height: auto !important;
-}
-
-.slides .customers_logo_link {
-  display: inline-block !important;
+.slides-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .slides {
-  display: inline-block !important;
-  animation: slideAnimation 20s linear infinite !important;
-  overflow: hidden;
-  overflow-x: auto !important;
-  white-space: nowrap !important;
+  display: flex;
+  animation: slideAnimation linear infinite;
+  white-space: nowrap;
+}
+
+.customers_logo_link {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.customers_logo_image {
+  max-width: 140px;
+  height: auto;
 }
 
 @keyframes slideAnimation {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-100% - 10px)); }
+  from {
+      transform: translateX(0);
+  }
+  to {
+      transform: translateX(-50%);
+  }
 }
+
 
 
 

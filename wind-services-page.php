@@ -204,82 +204,65 @@ Template Name: Wind services
 
 <section>
     <h2>Our customers are Global Wind Companies</h2>
-    <div class="slides">
-        <?php
-        $args = array(
-            'post_type' => 'customers-logo',
-            'posts_per_page' => -1,
-        );
-        $customer_logos = new WP_Query($args);
+    <div class="slides-wrapper">
+        <div class="slides">
+            <?php
+            $args = array(
+                'post_type' => 'customers-logo',
+                'posts_per_page' => -1,
+            );
+            $customer_logos = new WP_Query($args);
 
-        if ($customer_logos->have_posts()) :
-            while ($customer_logos->have_posts()) : $customer_logos->the_post();
-                // Fetch the image field as an array
-                $logo_image = get_field('transparent_png_of_customer_logo');
-                $customer_website = get_field('link_to_their_website');
+            if ($customer_logos->have_posts()) :
+                while ($customer_logos->have_posts()) : $customer_logos->the_post();
+                    $logo_image = get_field('transparent_png_of_customer_logo');
+                    $customer_website = get_field('link_to_their_website');
 
-                if ($logo_image) :
-                    $logo_url = $logo_image['url'];
-                    $logo_alt = $logo_image['alt'];
-                    // Debugging
-                    error_log("Logo URL: " . $logo_url);
-                    error_log("Customer Website: " . $customer_website);
-        ?>
-            <a href="<?php echo esc_url($customer_website); ?>" target="_blank" class="customers_logo_link">
-                <img src="<?php echo esc_url($logo_url); ?>" class="customers_logo_image" alt="<?php echo esc_attr($logo_alt); ?>">
-            </a>
-        <?php
-                else:
-                    // Debugging
-                    echo '<!-- No logo URL found for post ID: ' . get_the_ID() . ' -->';
-                    error_log("No logo URL found for post ID: " . get_the_ID());
-                endif;
-            endwhile;
-            wp_reset_postdata();
-        else:
-            // Debugging
-            echo '<!-- No customer logos found. -->';
-            error_log("No customer logos found.");
-        endif;
-        ?>
+                    if ($logo_image) :
+                        $logo_url = $logo_image['url'];
+                        $logo_alt = $logo_image['alt'];
+            ?>
+                <a href="<?php echo esc_url($customer_website); ?>" target="_blank" class="customers_logo_link">
+                    <img src="<?php echo esc_url($logo_url); ?>" class="customers_logo_image" alt="<?php echo esc_attr($logo_alt); ?>">
+                </a>
+            <?php
+                    endif;
+                endwhile;
+                wp_reset_postdata();
+            else:
+                echo '<!-- No customer logos found. -->';
+            endif;
+            ?>
+        </div>
     </div>
 </section>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelector('.slides');
+    const slidesWrapper = document.querySelector('.slides-wrapper');
+    const slidesContent = slides.innerHTML;
+    const logos = document.querySelectorAll('.customers_logo_link');
+    let totalWidth = 0;
+
+    logos.forEach(logo => {
+        totalWidth += logo.offsetWidth + parseInt(window.getComputedStyle(logo).marginRight);
+    });
+
+    // Duplicate the content
+    slides.innerHTML += slidesContent;
+
+    // Calculate the animation duration based on the total width
+    const animationDuration = totalWidth / 100; 
+    slides.style.animationDuration = animationDuration + 's';
+
+    // Seamless looping
+    slides.style.width = `${totalWidth * 2}px`;
+});
+</script>
 
 
 
-
-
-<section>
-    <h2>Our customers are Global Wind Companies</h2>
-    <div class="slides">
-        <?php
-        $args = array(
-            'post_type'      => 'customers-logo',
-            'posts_per_page' => -1,
-        );
-        $customer_logos = new WP_Query($args);
-
-        if ($customer_logos->have_posts()) :
-            while ($customer_logos->have_posts()) : $customer_logos->the_post();
-                $logo_url = get_field('transparent_png_of_customer_logo');
-                $customer_website = get_field('link_to_their_website');
-
-                if ($logo_url) :
-        ?>
-                    <a href="<?php echo esc_url($customer_website); ?>" target="_blank" class="customers_logo_link">
-                        <img src="<?php echo esc_url($logo_url); ?>" class="customers_logo_image" alt="<?php the_title(); ?>">
-                    </a>
-        <?php
-                endif;
-            endwhile;
-            wp_reset_postdata();
-        else :
-            // No posts found
-        endif;
-        ?>
-    </div>
-</section>
 
 
 
