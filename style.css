@@ -1610,7 +1610,7 @@ margin-top: 10px;
 
 /* <------- List of wind services -------> */
 
-.pdf-button {
+.pdf-button.btn.dark {
   display: inline-flex;
   align-items: center;
   justify-content: center;
