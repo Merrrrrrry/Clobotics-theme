@@ -1995,9 +1995,8 @@ size: 10px;
 /*--------------------------- 3 keypoints ----------------------------*/
 
 
-
 .wind_services_linking {
-  padding: 20px;
+  padding: 20px 130px; /* 130px padding left and right */
   background-color: #f9f9f9; /* Example background color */
 }
 
@@ -2019,7 +2018,8 @@ size: 10px;
   padding: 15px; /* Example padding inside each keypoint */
   border-radius: 8px; /* Example border radius */
   display: flex;
-  align-items: center;
+  align-items: center; /* Center items vertically */
+  gap: 10px; /* Space between icon and text */
 }
 
 .keypoint h3 {
@@ -2028,10 +2028,9 @@ size: 10px;
 }
 
 .keypoint img.icon {
-  width: 40px; /* Icon size */
-  height: 40px; /* Icon size */
+  width: 50px; /* Bigger icon size */
+  height: 50px; /* Bigger icon size */
   margin-right: 10px; /* Space between icon and text */
-  vertical-align: middle; /* Align icon with text */
 }
 
 .keypoint h3, .keypoint p {
@@ -2040,6 +2039,24 @@ size: 10px;
   margin: 0;
 }
 
+/* Responsive design */
+@media (max-width: 1200px) {
+  .wind_services_linking {
+      padding: 20px 60px; /* Reduce padding for medium screens */
+  }
+  .keypoint {
+      flex: 1 1 calc(50% - 20px); /* Each keypoint takes up 1/2 of the row minus the gap */
+  }
+}
+
+@media (max-width: 768px) {
+  .wind_services_linking {
+      padding: 20px 30px; /* Reduce padding for small screens */
+  }
+  .keypoint {
+      flex: 1 1 100%; /* Each keypoint takes full width of the row */
+  }
+}
 
 
 
