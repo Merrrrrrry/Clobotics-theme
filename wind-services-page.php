@@ -170,7 +170,7 @@ Template Name: Wind services
                     </div>
 
                     <div class="btn-wrapper">
-                        <a href="<?php the_permalink(); ?>" class="btn">Read more</a>
+                        <a href="<?php the_permalink(); ?>" class="btn btn_list">Read more</a>
                     </div>
                 </div>
             </li>

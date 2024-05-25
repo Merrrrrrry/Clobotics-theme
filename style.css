@@ -1958,7 +1958,9 @@ size: 10px;
     padding-right: 7px;
   }
   
-  
+  .btn_list {
+    padding-bottom: 10px;
+  }
   
   @media (max-width: 768px) {
     .service-list {
