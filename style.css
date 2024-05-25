@@ -1946,7 +1946,7 @@ size: 10px;
   }
   
   .keypoint_list p {
-  margin: 0;
+  padding-bottom: 10px;
   }
   
   .keypoint-icon {
@@ -2033,7 +2033,7 @@ size: 10px;
   margin-bottom: 15px;
 }
 
-.service-keypoints {
+.service-keypoints_single_top {
   display: flex;
   flex-wrap: wrap;
   gap: 20px; 
