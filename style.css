@@ -2361,7 +2361,6 @@ width: 300px;
 
 .contact-form label {
 display: block;
-margin-bottom: 10px; 
 position: relative; 
 }
 
@@ -2372,7 +2371,6 @@ position: relative;
 .contact-form textarea {
 width: 100%;
 padding: 10px;
-margin-bottom: 10px;
 border: 1px solid #000000;
 border-radius: 10px;
 background-color: white;
@@ -2413,6 +2411,7 @@ border: none;
 border-radius: 10px;
 cursor: pointer;
 width: 90%;
+margin-top: 10px;
 }
 
 .wpcf7 span.wpcf7-not-valid-tip {
@@ -2421,7 +2420,7 @@ display: none;
 
 
 .contact-form textarea {
-  height: 150px; 
+  height: 200px; 
 }
 
 .contact-form select {
