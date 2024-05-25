@@ -218,18 +218,28 @@ Template Name: Wind services
                 $customer_website = get_field('link_to_their_website'); 
 
                 if ($logo_url) :
+                    // Debugging
+                    error_log("Logo URL: " . $logo_url);
+                    error_log("Customer Website: " . $customer_website);
         ?>
             <a href="<?php echo esc_url($customer_website); ?>" target="_blank" class="customers_logo_link">
                 <img src="<?php echo esc_url($logo_url); ?>" class="customers_logo_image" alt="<?php the_title(); ?>">
             </a>
         <?php
+                else:
+                    // Debugging
+                    error_log("No logo URL found for post ID: " . get_the_ID());
                 endif;
             endwhile;
             wp_reset_postdata();
+        else:
+            // Debugging
+            error_log("No customer logos found.");
         endif;
         ?>
     </div>
 </section>
+
 
 
 
