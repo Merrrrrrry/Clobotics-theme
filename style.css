@@ -2028,7 +2028,7 @@ size: 10px;
 /*--------------------------- 3 keypoints ----------------------------*/
 
 .wind_services_linking {
-  padding: 20px 0; 
+  padding: 20px 0;
 }
 
 .service-title {
@@ -2040,14 +2040,20 @@ size: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 130px;
 }
 
 .keypoint_list {
   display: flex;
   align-items: center;
-  padding: 70px;
-  flex: 1;
+  padding: 70px 0;
+}
+
+.keypoint_list:first-child {
+  margin-left: 130px;
+}
+
+.keypoint_list:last-child {
+  margin-right: 130px;
 }
 
 .keypoint_list img.icon_list {
@@ -2061,19 +2067,31 @@ size: 10px;
 }
 
 @media (max-width: 1200px) {
-  .service-keypoints_list {
-    margin: 0 60px;
+  .keypoint_list:first-child {
+    margin-left: 60px;
+  }
+
+  .keypoint_list:last-child {
+    margin-right: 60px;
   }
 }
 
 @media (max-width: 768px) {
   .service-keypoints_list {
     flex-direction: column;
-    margin: 0 30px;
+    align-items: flex-start;
   }
 
   .keypoint_list {
     padding: 30px 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .keypoint_list:first-child,
+  .keypoint_list:last-child {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
