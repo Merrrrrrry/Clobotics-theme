@@ -71,12 +71,13 @@ Template Name: single-wind-service
             <?php
             $pdf_file_button = get_field('pdf_file_button');
             if ($pdf_file_button) : ?>
-                <a href="<?php echo esc_url($pdf_file_button); ?>" class="pdf-button btn dark" target="_blank">Service PDF document </a>
+                <div class="pdf-button-container">
+                    <a href="<?php echo esc_url($pdf_file_button); ?>" class="pdf-button" target="_blank">Download PDF</a>
+                </div>
             <?php endif; ?>
             
         </article>
     <?php endwhile; ?>
-</main>
 
 
 <section class="wind-call-to-action">
