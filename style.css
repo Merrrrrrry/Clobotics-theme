@@ -2033,7 +2033,7 @@ size: 10px;
   align-items: center;
 }
 
-.keypoint {
+.keypoints_container .keypoint {
   flex: 1 1 1 calc(33.333% -20px);
   padding: 70px; 
   display: flex;
