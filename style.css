@@ -2094,6 +2094,7 @@ size: 10px;
 
   .keypoint_list img.icon_list {
     margin-right: 0;
+    margin-left: 0px;
     margin-bottom: 10px;
   }
 
