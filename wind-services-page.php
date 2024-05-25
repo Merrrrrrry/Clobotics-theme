@@ -62,14 +62,14 @@ Template Name: Wind services
 <!-- Wind services presentation Video -->
         
 
-
-
-
-<div class="video-wind">
-    <video controls width="70%">
-        <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/media/wind_video.mp4" type="video/mp4">
-    </video>
-</div>
+<section>
+    <h2>headline before video otherwise it's ugly</h2>
+    <div class="video-wind">
+        <video controls width="70%">
+            <source src="<?php echo esc_url( get_template_directory_uri() ); ?>/media/wind_video.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
 
 
 
@@ -125,7 +125,7 @@ Template Name: Wind services
                 <div class="service-content">
                     <div class="service-keypoints">
                         <div class="keypoint">
-                            
+
                         <?php
                     $icons1 = get_field('icon_of_the_keypoint_1');
                     if ($icons1) :

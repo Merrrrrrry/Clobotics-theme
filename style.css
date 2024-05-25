@@ -1676,7 +1676,7 @@ left: 0;
 width: 100%;
 background-color: rgba(255, 255, 255, 0.5);
 color: #000000;
-padding: 5px;
+padding: 2px;
 box-sizing: border-box;
 }
 
@@ -1692,7 +1692,7 @@ padding-right: 15px;
 .keypoint {
 display: flex;
 align-items: center;
-margin-bottom: 10px;
+margin-bottom: 0px;
 }
 
 .keypoint p {
