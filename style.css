@@ -1626,146 +1626,145 @@ margin-top: 10px;
 
 
 
-.service-list {
-list-style: none;
-padding: 0;
-margin: 0;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between; 
-padding: 30px 130px;
-/* gap: 30px; */
-background-color: #F5F5F5;
-overflow: hidden;
+.service-list-container .service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  padding: 30px 130px;
+  background-color: #F5F5F5;
+  overflow: hidden;
 }
 
-.service-item {
-position: relative;
-flex: 0 0 calc(33.333% - 40px);
-margin: 10px;
-overflow: hidden;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-background-color: #fff;
-position: relative;
-text-align: center;
-width: calc(33.33% - 20px);
+.service-list-container .service-item {
+  position: relative;
+  flex: 0 0 calc(33.333% - 40px);
+  margin: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  position: relative;
+  text-align: center;
+  width: calc(33.33% - 20px);
 }
 
-.service-main-image {
-position: relative;
-width: 100%;
-padding-top: 70%;
-overflow: hidden;
+.service-list-container .service-main-image {
+  position: relative;
+  width: 100%;
+  padding-top: 70%;
+  overflow: hidden;
 }
 
-.service-main-image img {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-object-fit: cover;
+.service-list-container .service-main-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.overlay {
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-background-color: rgba(0, 0, 0, 0.5);
-color: #ffffff;
-padding: 2px;
-box-sizing: border-box;
+.service-list-container .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  padding: 2px;
+  box-sizing: border-box;
 }
 
-.service-content {
-padding: 20px;
-background-color: #fff;
+.service-list-container .service-content {
+  padding: 20px;
+  background-color: #fff;
 }
 
-.service-keypoints {
-padding-right: 15px;
-margin: 0px;
+.service-list-container .service-keypoints {
+  padding-right: 15px;
+  margin: 0px;
 }
 
-
-.keypoint {
-display: flex;
-align-items: center;
-margin: 0px;
+.service-list-container .keypoint {
+  display: flex;
+  align-items: center;
+  margin: 0px;
 }
 
-.keypoint p {
-margin: 0;
+.service-list-container .keypoint p {
+  margin: 0;
 }
 
-.keypoint-icon {
-margin-right: 10px;
+.service-list-container .keypoint-icon {
+  margin-right: 10px;
 }
 
-.icon {
+.service-list-container .icon {
   width: 40px;
 }
 
 
 
 @media (max-width: 768px) {
-  .service-list {
+  .service-list-container .service-list {
     padding: 20px 30px;
     gap: 20px;
   }
 
-  .service-item {
+  .service-list-container .service-item {
     flex: 0 0 100%; /* One item per row */
     width: 100%;
     margin: 10px 0;
   }
 
-  .service-main-image img {
+  .service-list-container .service-main-image img {
     object-fit: cover; /* Adjust if images need different styling */
   }
 }
 
 @media (max-width: 480px) {
-  .service-list {
+  .service-list-container .service-list {
     padding: 15px 20px;
     gap: 15px;
   }
 
-  .service-item {
+  .service-list-container .service-item {
     flex: 0 0 100%; /* One item per row */
     width: 100%;
     margin: 10px 0;
   }
 
-  .service-main-image img {
+  .service-list-container .service-main-image img {
     object-fit: cover; /* Adjust if images need different styling */
   }
 
-  .service-content {
+  .service-list-container .service-content {
     padding: 10px;
   }
 
-  .service-keypoints {
+  .service-list-container .service-keypoints {
     padding-right: 0;
   }
 
-  .keypoint {
+  .service-list-container .keypoint {
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 10px;
   }
 
-  .keypoint-icon {
+  .service-list-container .keypoint-icon {
     margin-bottom: 5px;
     margin-right: 0;
   }
 
-  .keypoint p {
+  .service-list-container .keypoint p {
     margin-left: 0;
   }
 }
+
 
 
 
@@ -2033,7 +2032,7 @@ size: 10px;
   align-items: center;
 }
 
-.keypoints_container .keypoint {
+.service-container .keypoint{
   flex: 1 1 1 calc(33.333% -20px);
   padding: 70px; 
   display: flex;
