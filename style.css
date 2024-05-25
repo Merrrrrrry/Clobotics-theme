@@ -2082,8 +2082,6 @@ size: 10px;
 
 
 
-
-
 /*--------------------------- Wind call to action ----------------------------*/
 
 .wind-call-to-action {
@@ -2115,6 +2113,25 @@ max-width: 600px;
 padding: 20px;
 }
 
+@media (max-width: 768px) {
+  .wind-call-to-action {
+    height: 50vh; /* Decrease height for smaller screens */
+  }
+  
+  .wind-call-to-action h2 {
+    font-size: 1.2em; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .wind-call-to-action {
+    height: 40vh; /* Further decrease height for extra small screens */
+  }
+  
+  .wind-call-to-action h2 {
+    font-size: 1em; /* Decrease font size for extra small screens */
+  }
+}
 
 
 
