@@ -1959,7 +1959,7 @@ size: 10px;
   
   
   
-  /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     .service-list {
       padding: 20px 30px;
       gap: 20px;
@@ -2000,7 +2000,7 @@ size: 10px;
       padding-right: 0;
     }
   
-    .keypoint {
+    .keypoint_list {
       flex-direction: column;
       align-items: flex-start;
       margin-bottom: 10px;
@@ -2014,7 +2014,7 @@ size: 10px;
     .keypoint p {
       margin-left: 0;
     }
-  } */
+  } 
 
 
 
@@ -2041,7 +2041,7 @@ size: 10px;
   align-items: center;
 }
 
-.keypoint {
+.keypoint_single_top {
   flex: 1 1 1 calc(33.333% -20px);
   padding: 70px; 
   display: flex;
@@ -2049,17 +2049,17 @@ size: 10px;
   align-items: center;
 }
 
-.keypoint h3 {
+.keypoint_single_top h3 {
   margin: 0;
 }
 
-.keypoint img.icon {
+.keypoint_single_top img.icon_single_top {
   /* width: 50px;  */
   height: 50px;
   margin-right: 15px;
 }
 
-.keypoint h3, .keypoint p {
+.keypoint_single_top h3, .keypoint_single_top p {
   margin: 0;
 }
 
@@ -2068,7 +2068,7 @@ size: 10px;
       padding: 20px 60px; 
   }
 
-  .keypoint {
+  .keypoint_single_top {
      flex: 1 1 1 calc(33.333% -10px);
     
   }
@@ -2078,7 +2078,7 @@ size: 10px;
   .wind_services_linking {
       padding: 20px 30px; 
   }
-  .keypoint {
+  .keypoint_single_top {
       flex: 1 1 100%; 
   }
 }

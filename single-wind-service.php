@@ -18,7 +18,7 @@ Template Name: single-wind-service
             <h1 class="service-title"><?php the_field('service_title'); ?></h1>
 
             <div class="service-keypoints">
-                <div class="keypoint">
+                <div class="keypoint_single_top">
                     
                     <?php
                     $icons1 = get_field('icon_of_the_keypoint_1');
@@ -26,7 +26,7 @@ Template Name: single-wind-service
                         foreach ($icons1 as $icon1) :
                             $icon_image1 = get_field('icon_image_of_the_keypoint', $icon1->ID);
                             if ($icon_image1) : ?>
-                                <img src="<?php echo esc_url($icon_image1['url']); ?>" alt="<?php echo esc_attr($icon_image1['alt']); ?>" class="icon">
+                                <img src="<?php echo esc_url($icon_image1['url']); ?>" alt="<?php echo esc_attr($icon_image1['alt']); ?>" class="icon_single_top">
                             <?php endif;
                         endforeach;
                     endif; ?>
@@ -40,7 +40,7 @@ Template Name: single-wind-service
                         foreach ($icons2 as $icon2) :
                             $icon_image2 = get_field('icon_image_of_the_keypoint', $icon2->ID);
                             if ($icon_image2) : ?>
-                                <img src="<?php echo esc_url($icon_image2['url']); ?>" alt="<?php echo esc_attr($icon_image2['alt']); ?>" class="icon">
+                                <img src="<?php echo esc_url($icon_image2['url']); ?>" alt="<?php echo esc_attr($icon_image2['alt']); ?>" class="icon_single_top">
                             <?php endif;
                         endforeach;
                     endif; ?>
@@ -54,7 +54,7 @@ Template Name: single-wind-service
                         foreach ($icons3 as $icon3) :
                             $icon_image3 = get_field('icon_image_of_the_keypoint', $icon3->ID);
                             if ($icon_image3) : ?>
-                                <img src="<?php echo esc_url($icon_image3['url']); ?>" alt="<?php echo esc_attr($icon_image3['alt']); ?>" class="icon">
+                                <img src="<?php echo esc_url($icon_image3['url']); ?>" alt="<?php echo esc_attr($icon_image3['alt']); ?>" class="icon_single_top">
                             <?php endif;
                         endforeach;
                     endif; ?>
@@ -118,7 +118,7 @@ Template Name: single-wind-service
                         foreach ($icons1 as $icon1) :
                             $icon_image1 = get_field('icon_image_of_the_keypoint', $icon1->ID);
                             if ($icon_image1) : ?>
-                                <img src="<?php echo esc_url($icon_image1['url']); ?>" alt="<?php echo esc_attr($icon_image1['alt']); ?>" class="icon">
+                                <img src="<?php echo esc_url($icon_image1['url']); ?>" alt="<?php echo esc_attr($icon_image1['alt']); ?>" class="icon_list">
                             <?php endif;
                         endforeach;
                     endif; ?>
@@ -129,7 +129,7 @@ Template Name: single-wind-service
                         foreach ($icons2 as $icon2) :
                             $icon_image2 = get_field('icon_image_of_the_keypoint', $icon2->ID);
                             if ($icon_image2) : ?>
-                                <img src="<?php echo esc_url($icon_image2['url']); ?>" alt="<?php echo esc_attr($icon_image2['alt']); ?>" class="icon">
+                                <img src="<?php echo esc_url($icon_image2['url']); ?>" alt="<?php echo esc_attr($icon_image2['alt']); ?>" class="icon_list">
                             <?php endif;
                         endforeach;
                     endif; ?>
@@ -140,7 +140,7 @@ Template Name: single-wind-service
                         foreach ($icons3 as $icon3) :
                             $icon_image3 = get_field('icon_image_of_the_keypoint', $icon3->ID);
                             if ($icon_image3) : ?>
-                                <img src="<?php echo esc_url($icon_image3['url']); ?>" alt="<?php echo esc_attr($icon_image3['alt']); ?>" class="icon">
+                                <img src="<?php echo esc_url($icon_image3['url']); ?>" alt="<?php echo esc_attr($icon_image3['alt']); ?>" class="icon_list">
                             <?php endif;
                         endforeach;
                     endif; ?>
