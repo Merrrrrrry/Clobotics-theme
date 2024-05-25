@@ -1703,34 +1703,32 @@ cursor: pointer;
 
 /*----------------------CUSTOMERS' LOGOS -----------------------*/
 
-
 .customers_logo_link {
-display: inline-block !important;
-margin-right: 50px !important;
+  display: inline-block !important;
+  margin-right: 50px !important;
 }
 
 .customers_logo_image {
-max-width: 140px !important;
-height: auto !important;
+  max-width: 140px !important;
+  height: auto !important;
 }
 
 .slides .customers_logo_link {
-display: inline-block !important;
+  display: inline-block !important;
 }
 
 .slides {
-display: inline-block !important;
-animation: slideAnimation 20s linear infinite !important;
-overflow: hidden;
-overflow-x: auto !important;
-white-space: nowrap !important;
+  display: inline-block !important;
+  animation: slideAnimation 20s linear infinite !important;
+  overflow: hidden;
+  overflow-x: auto !important;
+  white-space: nowrap !important;
 }
 
 @keyframes slideAnimation {
-0% { transform: translateX(0); }
-100% { transform: translateX(calc(-100% - 10px)); }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-100% - 10px)); }
 }
-
 
 
 
