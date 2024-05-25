@@ -1687,12 +1687,14 @@ background-color: #fff;
 
 .service-keypoints {
 padding-right: 15px;
+margin: 0px;
 }
+
 
 .keypoint {
 display: flex;
 align-items: center;
-margin-bottom: 0px;
+margin: 0px;
 }
 
 .keypoint p {
