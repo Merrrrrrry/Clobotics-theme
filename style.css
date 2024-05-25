@@ -2339,7 +2339,8 @@ background-color: #fff;
 display: flex;
 justify-content: center;
 align-items: center;
-width: 100%
+width: 100%;
+margin: -100px auto 0 auto;
 }
 
 .contact-form {
@@ -2351,7 +2352,7 @@ width: 100%
 .contact-form .column {
 flex: 1;
 padding: 10px; 
-width: 400px;
+width: 300px;
 }
 
 .contact-form label {
@@ -2407,7 +2408,7 @@ padding: 10px 20px;
 border: none;
 border-radius: 10px;
 cursor: pointer;
-width: 100%;
+width: 300px;
 }
 
 .wpcf7 span.wpcf7-not-valid-tip {
