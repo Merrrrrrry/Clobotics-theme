@@ -67,9 +67,16 @@ Template Name: single-wind-service
                 <p><?php the_field('short_article_text'); ?></p>
                     
             </section>
+
+            <?php
+            $pdf_file_button = get_field('pdf_file_button');
+            if ($pdf_file_button) : ?>
+                <a href="<?php echo esc_url($pdf_file_button); ?>" class="pdf-button btn dark" target="_blank">Service PDF document </a>
+            <?php endif; ?>
+            
         </article>
     <?php endwhile; ?>
-
+</main>
 
 
 <section class="wind-call-to-action">
