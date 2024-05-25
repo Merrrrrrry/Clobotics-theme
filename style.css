@@ -1997,7 +1997,6 @@ size: 10px;
 
 
 .wind_services_linking {
-  /* Add any specific styling for the section */
   padding: 20px;
   background-color: #f9f9f9; /* Example background color */
 }
@@ -2005,7 +2004,7 @@ size: 10px;
 .news_articles_linking_container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Optional: Add some space between items */
+  gap: 20px; /* Space between items */
 }
 
 .service_single_conteiner {
@@ -2034,9 +2033,9 @@ size: 10px;
   gap: 10px; /* Space between keypoints */
 }
 
-.keypoints_container img.icon {
-  width: 30px; /* Adjust icon size as needed */
-  height: auto;
+.keypoints_container .icon {
+  width: 40px; /* Adjust icon size to 40px */
+  height: 40px; /* Set height to 40px */
   margin-right: 10px; /* Space between icon and text */
 }
 
@@ -2045,7 +2044,7 @@ size: 10px;
   align-items: center;
 }
 
-.keypoints_container .keypoint .text {
+.keypoints_container .text {
   flex: 1; /* Allow text to take remaining space */
 }
 
