@@ -2423,7 +2423,13 @@ display: none;
   height: 240px; 
 }
 
-
+.contact-form select {
+  appearance: none;
+  background-image: url('https://fonts.gstatic.com/s/i/materialicons/keyboard_arrow_down/v10/24px.svg');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  padding-right: 30px;
+}
 
 .contact-form select::after {
   content: '\e313'; 
