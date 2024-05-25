@@ -2331,7 +2331,6 @@ padding: 20px;
 /*CONTACT FORM*/
 
 .contact-form-container {
-max-width:max-content;
 margin: 20px;
 padding: 100px;
 border-radius: 15px;
@@ -2340,6 +2339,7 @@ background-color: #fff;
 display: flex;
 justify-content: center;
 align-items: center;
+width: 100%
 }
 
 .contact-form {
@@ -2348,9 +2348,10 @@ justify-content:center;
 width: 100%
 }
 
-.column {
+.contact-form .column {
 flex: 1;
-padding: 10px;
+padding: 10px; 
+width: 400px;
 }
 
 .contact-form label {
