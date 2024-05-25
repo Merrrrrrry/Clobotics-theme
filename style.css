@@ -2044,21 +2044,20 @@ size: 10px;
 }
 
 .keypoint_list {
-  flex: 1;
-  padding: 70px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-}
-
-.keypoint_list h3 {
-  margin: 0;
-  text-align: center;
+  padding: 70px;
+  flex: 1;
 }
 
 .keypoint_list img.icon_list {
   height: 50px;
-  margin-bottom: 15px;
+  margin-right: 15px;
+}
+
+.keypoint_list h3 {
+  margin: 0;
+  text-align: left;
 }
 
 @media (max-width: 1200px) {
@@ -2077,7 +2076,6 @@ size: 10px;
     padding: 30px 0;
   }
 }
-
 
 
 

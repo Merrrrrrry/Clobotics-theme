@@ -35,7 +35,6 @@ Template Name: single-wind-service
 
     <?php while (have_posts()) : the_post(); ?>
         <article <?php post_class(); ?>>
-            <h1 class="service-title"><?php the_field('service_title'); ?></h1>
 
             <div class="service-keypoints_list">
                 <div class="keypoint_list">
