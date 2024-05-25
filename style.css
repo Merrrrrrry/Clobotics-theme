@@ -1933,19 +1933,19 @@ size: 10px;
   background-color: #fff;
   }
   
-  .service-keypoints {
+  .service-keypoints_list {
   padding-right: 15px;
   margin: 0px;
   }
   
   
-  .keypoint {
+  .keypoint_list {
   display: flex;
   align-items: center;
   margin: 0px;
   }
   
-  .keypoint p {
+  .keypoint_list p {
   margin: 0;
   }
   
@@ -1953,7 +1953,7 @@ size: 10px;
   margin-right: 10px;
   }
   
-  .icon {
+  .icon_list {
     width: 40px;
   }
   

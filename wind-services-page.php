@@ -123,7 +123,7 @@ Template Name: Wind services
                     </div>
                 </div>
                 <div class="service-content">
-                    <div class="service-keypoints">
+                    <div class="service-keypoints_list">
                         <div class="keypoint_list">
 
                         <?php
