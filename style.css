@@ -1711,13 +1711,15 @@ cursor: pointer;
   overflow: hidden;
   position: relative;
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .slides {
   display: flex;
-  align-content: baseline;
   animation: slideAnimation linear infinite;
   white-space: nowrap;
+  align-items: center;
 }
 
 .customers_logo_link {
@@ -1729,6 +1731,8 @@ cursor: pointer;
 .customers_logo_image {
   max-width: 140px;
   height: auto;
+  display: block;
+  max-height: 60px;
 }
 
 @keyframes slideAnimation {
