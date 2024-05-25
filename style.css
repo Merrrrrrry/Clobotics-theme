@@ -2011,7 +2011,7 @@ size: 10px;
 }
 
 .keypoint {
-  flex: 1 1 calc(33.333% - 20px);
+  flex: 1 1 calc(33.333% - 20px) !important;
   padding: 20px; 
   display: flex;
   justify-content: center;
@@ -2039,6 +2039,11 @@ size: 10px;
   }
   .keypoint {
       flex: 1 1 calc(50% - 20px);
+  }
+
+  .keypoint {
+     flex: 1 1 calc(33.333% - 20px);
+    
   }
 }
 
