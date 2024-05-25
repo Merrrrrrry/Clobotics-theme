@@ -2010,7 +2010,7 @@ size: 10px;
 }
 
 .keypoint {
-  flex: 1 1 calc(33.333%);
+  flex: 1 1 1 calc(33.333%);
   padding: 20px; 
   display: flex;
   justify-content: center;
