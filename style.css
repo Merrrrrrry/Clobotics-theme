@@ -1703,6 +1703,8 @@ cursor: pointer;
 
 
 
+
+
 /*----------------------CUSTOMERS' LOGOS -----------------------*/
 
 .slides-wrapper {
@@ -1712,6 +1714,7 @@ cursor: pointer;
 }
 
 .slides {
+  display: flex;
   animation: slideAnimation linear infinite;
   white-space: nowrap;
 }

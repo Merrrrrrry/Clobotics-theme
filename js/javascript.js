@@ -40,6 +40,35 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+
+// Logo slider JS
+document.addEventListener("DOMContentLoaded", function() {
+    const slides = document.querySelector('.slides');
+    const slidesWrapper = document.querySelector('.slides-wrapper');
+    const originalContent = slides.innerHTML;
+    const logos = document.querySelectorAll('.customers_logo_link');
+    let totalWidth = 0;
+
+    logos.forEach(logo => {
+        totalWidth += logo.offsetWidth + parseInt(window.getComputedStyle(logo).marginRight);
+    });
+
+    // Duplicate the content to ensure seamless animation
+    slides.innerHTML += originalContent;
+
+    // Calculate the animation duration based on the total width
+    const animationDuration = totalWidth / 100; // Adjust this value as needed
+    slides.style.animationDuration = animationDuration + 's';
+
+    // Seamless looping
+    slides.style.width = `${totalWidth * 2}px`;
+});
+
+
+
+
+
+
 // Company History Timeline JS
 
 document.addEventListener("DOMContentLoaded", function() {

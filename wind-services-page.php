@@ -240,29 +240,6 @@ Template Name: Wind services
     </div>
 </section>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-    const slides = document.querySelector('.slides');
-    const slidesWrapper = document.querySelector('.slides-wrapper');
-    const slidesContent = slides.innerHTML;
-    const logos = document.querySelectorAll('.customers_logo_link');
-    let totalWidth = 0;
-
-    logos.forEach(logo => {
-        totalWidth += logo.offsetWidth + parseInt(window.getComputedStyle(logo).marginRight);
-    });
-
-    // Duplicate the content
-    slides.innerHTML += slidesContent;
-
-    // Calculate the animation duration based on the total width
-    const animationDuration = totalWidth / 100; 
-    slides.style.animationDuration = animationDuration + 's';
-
-    // Seamless looping
-    slides.style.width = `${totalWidth * 2}px`;
-});
-</script>
 
 
 
