@@ -1611,7 +1611,7 @@ margin-top: 10px;
 /* <------- List of wind services -------> */
 
 .pdf-button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
 }
