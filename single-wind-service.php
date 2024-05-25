@@ -99,8 +99,28 @@ Template Name: single-wind-service
                 <h4 class="title"><?php the_field('service_title'); ?></h4>
 
                 <div class="keypoints_container">
-                    <img class="icon" src="<?php $image = get_field('icon_of_the_keypoint_1');  echo esc_url($image["url"]); ?>" alt="Service keypoint icon 1" /> 
-                    <img class="icon" src="<?php $image = get_field('icon_of_the_keypoint_2');  echo esc_url($image["url"]); ?>" alt="Service keypoint icon 2" /> 
+
+                <?php
+                    $icons1 = get_field('icon_of_the_keypoint_1');
+                    if ($icons1) :
+                        foreach ($icons1 as $icon1) :
+                            $icon_image1 = get_field('icon_image_of_the_keypoint', $icon1->ID);
+                            if ($icon_image1) : ?>
+                                <img src="<?php echo esc_url($icon_image1['url']); ?>" alt="<?php echo esc_attr($icon_image1['alt']); ?>" class="icon">
+                            <?php endif;
+                        endforeach;
+                    endif; ?>
+                    
+                    <?php
+                    $icons2 = get_field('icon_of_the_keypoint_2');
+                    if ($icons2) :
+                        foreach ($icons2 as $icon2) :
+                            $icon_image2 = get_field('icon_image_of_the_keypoint', $icon2->ID);
+                            if ($icon_image2) : ?>
+                                <img src="<?php echo esc_url($icon_image2['url']); ?>" alt="<?php echo esc_attr($icon_image2['alt']); ?>" class="icon">
+                            <?php endif;
+                        endforeach;
+                    endif; ?>
 
                     <?php
                     $icons3 = get_field('icon_of_the_keypoint_3');
@@ -112,7 +132,7 @@ Template Name: single-wind-service
                             <?php endif;
                         endforeach;
                     endif; ?>
-                    
+
                 </div>            
             </div> 
 
