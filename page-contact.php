@@ -31,13 +31,6 @@ Template Name: Contact
     </div>
 </section>
 
-<script>
-        // JavaScript to adjust the select dropdown icon
-        document.addEventListener("DOMContentLoaded", function() {
-            const select = document.querySelector('.contact-form select');
-            select.style.backgroundImage = "url('data:image/svg+xml;charset=US-ASCII,%3csvg xmlns%3d%27http%3a//www.w3.org/2000/svg%27 viewBox%3d%270 0 140 140%27%3e%3cpolygon points%3d%2740,50 70,100 100,50%27 style%3d%27fill%3a%23000000%3b%27/%3e%3c/svg%3e')";
-        });
-    </script>
 
 <div class="background-white">
  <!-- Clobotics contact your office -->
