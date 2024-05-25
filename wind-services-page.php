@@ -205,7 +205,7 @@ Template Name: Wind services
 <section>
     <h2>Our customers are Global Wind Companies</h2>
 
-    <div style="height: 50px;"></div>
+    <div style="height: 30px;"></div>
 
     <div class="slides-wrapper">
         <div class="slides">
