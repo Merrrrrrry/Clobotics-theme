@@ -13,6 +13,26 @@ Template Name: single-wind-service
 <body>
 
 <main>
+
+
+
+
+
+
+<div class="hero-section">
+            <div class="hero-section-background white_svg">
+                <img class="image-hero" id="article_main_img" src="<?php $image = get_field('service_main_image'); echo esc_url($image["url"]); ?>" alt="Main image of service" /> 
+            </div>
+
+            <div class="hero-section-content">
+                <h1 class="title hero-title"><?php the_field('service_title'); ?></h1>
+            </div>
+</div>
+
+
+
+
+
     <?php while (have_posts()) : the_post(); ?>
         <article <?php post_class(); ?>>
             <h1 class="service-title"><?php the_field('service_title'); ?></h1>
