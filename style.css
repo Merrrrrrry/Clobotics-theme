@@ -2037,9 +2037,6 @@ size: 10px;
   .wind_services_linking {
       padding: 20px 60px; 
   }
-  .keypoint {
-      flex: 1 1 calc(50% - 20px);
-  }
 
   .keypoint {
      flex: 1 1 calc(33.333% - 20px);
