@@ -1732,7 +1732,7 @@ cursor: pointer;
   max-width: 140px;
   height: auto;
   display: block;
-  max-height: 60px;
+  max-height: 80px;
 }
 
 @keyframes slideAnimation {
