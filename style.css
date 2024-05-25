@@ -1996,8 +1996,7 @@ size: 10px;
 
 
 .wind_services_linking {
-  padding: 20px 130px; /* 20px padding top and bottom, 130px padding left and right */
-  background-color: #f9f9f9; /* Example background color */
+  padding: 20px 130px; 
 }
 
 .service-title {
@@ -2008,18 +2007,15 @@ size: 10px;
 .service-keypoints {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Space between keypoints */
+  gap: 20px; 
 }
 
 .keypoint {
-  flex: 1 1 calc(33.333% - 20px); /* Each keypoint takes up 1/3 of the row minus the gap */
-  box-sizing: border-box; /* Include padding in width calculation */
-  background-color: #fff; /* Example background color for each keypoint */
-  padding: 20px; /* Example padding inside each keypoint */
-  border-radius: 8px; /* Example border radius */
+  flex: 1 1 calc(33.333% - 20px);
+  padding: 20px; 
   display: flex;
-  justify-content: center; /* Center items horizontally */
-  align-items: center; /* Center items vertically */
+  justify-content: center;
+  align-items: center;
 }
 
 .keypoint h3 {
@@ -2028,9 +2024,9 @@ size: 10px;
 }
 
 .keypoint img.icon {
-  width: 50px; /* Bigger icon size */
-  height: 50px; /* Bigger icon size */
-  margin-right: 10px; /* Space between icon and text */
+  /* width: 50px;  */
+  height: 50px;
+  margin-right: 15px;
 }
 
 .keypoint h3, .keypoint p {
@@ -2039,19 +2035,19 @@ size: 10px;
 
 @media (max-width: 1200px) {
   .wind_services_linking {
-      padding: 20px 60px; /* Reduce padding for medium screens */
+      padding: 20px 60px; 
   }
   .keypoint {
-      flex: 1 1 calc(50% - 20px); /* Each keypoint takes up 1/2 of the row minus the gap */
+      flex: 1 1 calc(50% - 20px);
   }
 }
 
 @media (max-width: 768px) {
   .wind_services_linking {
-      padding: 20px 30px; /* Reduce padding for small screens */
+      padding: 20px 30px; 
   }
   .keypoint {
-      flex: 1 1 100%; /* Each keypoint takes full width of the row */
+      flex: 1 1 100%; 
   }
 }
 
