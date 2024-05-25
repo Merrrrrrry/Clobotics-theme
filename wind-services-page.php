@@ -214,24 +214,37 @@ Template Name: Wind services
 
         if ($customer_logos->have_posts()) :
             while ($customer_logos->have_posts()) : $customer_logos->the_post();
-                $logo_url = get_field('transparent_png_of_customer_logo'); 
-                $customer_website = get_field('link_to_their_website'); 
+                // Fetch the image field as an array
+                $logo_image = get_field('transparent_png_of_customer_logo');
+                $customer_website = get_field('link_to_their_website');
 
-                if ($logo_url) :
+                if ($logo_image) :
+                    $logo_url = $logo_image['url'];
+                    $logo_alt = $logo_image['alt'];
+                    // Debugging
+                    error_log("Logo URL: " . $logo_url);
+                    error_log("Customer Website: " . $customer_website);
         ?>
             <a href="<?php echo esc_url($customer_website); ?>" target="_blank" class="customers_logo_link">
-                <img src="<?php echo esc_url($logo_url); ?>" class="customers_logo_image" alt="<?php the_title(); ?>">
+                <img src="<?php echo esc_url($logo_url); ?>" class="customers_logo_image" alt="<?php echo esc_attr($logo_alt); ?>">
             </a>
         <?php
+                else:
+                    // Debugging
+                    echo '<!-- No logo URL found for post ID: ' . get_the_ID() . ' -->';
+                    error_log("No logo URL found for post ID: " . get_the_ID());
                 endif;
             endwhile;
             wp_reset_postdata();
         else:
+            // Debugging
             echo '<!-- No customer logos found. -->';
+            error_log("No customer logos found.");
         endif;
         ?>
     </div>
 </section>
+
 
 
 
