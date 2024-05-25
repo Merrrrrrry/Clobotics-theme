@@ -2371,7 +2371,7 @@ position: relative;
 .contact-form textarea {
 width: 100%;
 padding: 10px;
-border: 1px solid #000000;
+border: 1px solid gray;
 border-radius: 10px;
 background-color: white;
 box-sizing: border-box;
@@ -2429,15 +2429,6 @@ display: none;
   background-repeat: no-repeat;
   background-position: right 10px center;
   padding-right: 30px;
-}
-
-.contact-form select::after {
-  content: '\e313'; 
-  font-family: 'Material Icons'; 
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 
