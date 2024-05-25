@@ -65,25 +65,15 @@ Template Name: single-wind-service
             <section class="wind_single_text">
                 <h2><?php the_field('short_article_title'); ?></h2>
                 <p><?php the_field('short_article_text'); ?></p>
-                    
-            </section>
-
-            <?php
-            $pdf_file_button = get_field('pdf_file_button');
-            if ($pdf_file_button) : ?>
-                <div class="pdf-button-container">
-                    <a href="<?php echo esc_url($pdf_file_button); ?>" class="pdf-button btn dark" target="_blank">Service PDF document</a>
-                </div>
-            <?php endif; ?>
-
-
-                        <?php
+                <?php
             $pdf_file_button = get_field('pdf_file_button'); 
             if ($pdf_file_button) : ?>
                 <div class="pdf-button-container">
                     <a href="<?php echo esc_url($pdf_file_button['url']); ?>" class="pdf-button btn dark" target="_blank">Service PDF document</a>
                 </div>
             <?php endif; ?>
+                    
+            </section>
 
 
 
@@ -162,8 +152,6 @@ Template Name: single-wind-service
     </div>
 
 </section>
-
-<!-- <p class="subtitle"><?php the_field('meta_description_short'); ?></p>   -->
 
 <?php 
     wp_enqueue_script("jquery", "https://code.jquery.com/jquery-1.12.1.min.js");
