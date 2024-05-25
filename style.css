@@ -2039,6 +2039,7 @@ size: 10px;
 .service-keypoints_single_top {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   gap: 20px; 
   justify-content: center;
   align-items: center;
@@ -2091,7 +2092,7 @@ size: 10px;
 
 /*--------------------------- Wind single other services ----------------------------*/
 
-.owl-item {
+.service-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -2104,7 +2105,7 @@ size: 10px;
   overflow: hidden;
   }
   
-  .service-item {
+  .owl-item {
   position: relative;
   flex: 0 0 calc(33.333% - 40px);
   margin: 10px;
