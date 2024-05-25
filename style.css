@@ -2012,8 +2012,8 @@ size: 10px;
 }
 
 .keypoint {
-  flex: 1 1 1 calc(33.333% -60px);
-  padding: 20px; 
+  flex: 1 1 1 calc(33.333% -20px);
+  padding: 60px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2021,7 +2021,6 @@ size: 10px;
 
 .keypoint h3 {
   margin: 0;
-  font-size: 1.2em;
 }
 
 .keypoint img.icon {
