@@ -2013,7 +2013,7 @@ size: 10px;
 
 .keypoint {
   flex: 1 1 1 calc(33.333% -20px);
-  padding: 60px; 
+  padding: 70px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2051,6 +2051,16 @@ size: 10px;
   .keypoint {
       flex: 1 1 100%; 
   }
+}
+
+
+
+
+
+/*--------------------------- Wind single short text ----------------------------*/
+
+.wind_single_text {
+  padding: 20px 130px; 
 }
 
 

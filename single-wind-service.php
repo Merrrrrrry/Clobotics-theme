@@ -62,8 +62,11 @@ Template Name: single-wind-service
                 </div>
             </div>
 
-            <h2><?php the_field('short_article_title'); ?></h2>
-            <p><?php the_field('short_article_text'); ?></p>
+            <section class="wind_single_text">
+                <h2><?php the_field('short_article_title'); ?></h2>
+                <p><?php the_field('short_article_text'); ?></p>
+                    
+            </section>
         </article>
     <?php endwhile; ?>
 
@@ -98,8 +101,18 @@ Template Name: single-wind-service
                 <div class="keypoints_container">
                     <img class="icon" src="<?php $image = get_field('icon_of_the_keypoint_1');  echo esc_url($image["url"]); ?>" alt="Service keypoint icon 1" /> 
                     <img class="icon" src="<?php $image = get_field('icon_of_the_keypoint_2');  echo esc_url($image["url"]); ?>" alt="Service keypoint icon 2" /> 
-                    <img class="icon" src="<?php $image = get_field('icon_of_the_keypoint_3');  echo esc_url($image["url"]); ?>" alt="Service keypoint icon 3" /> 
 
+                    <?php
+                    $icons3 = get_field('icon_of_the_keypoint_3');
+                    if ($icons3) :
+                        foreach ($icons3 as $icon3) :
+                            $icon_image3 = get_field('icon_image_of_the_keypoint', $icon3->ID);
+                            if ($icon_image3) : ?>
+                                <img src="<?php echo esc_url($icon_image3['url']); ?>" alt="<?php echo esc_attr($icon_image3['alt']); ?>" class="icon">
+                            <?php endif;
+                        endforeach;
+                    endif; ?>
+                    
                 </div>            
             </div> 
 
