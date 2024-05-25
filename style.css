@@ -2423,13 +2423,7 @@ display: none;
   height: 240px; 
 }
 
-.contact-form select {
-  appearance: none;
-  background-image: url('data:image/svg+xml;charset=US-ASCII,%3csvg xmlns%3d%27http%3a//www.w3.org/2000/svg%27 viewBox%3d%270 0 140 140%27%3e%3cpolygon points%3d%2740,50 70,100 100,50%27 style%3d%27fill%3a%23000000%3b%27/%3e%3c/svg%3e'); /* Add custom down arrow icon */
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  padding-right: 30px;
-}
+
 
 .contact-form select::after {
   content: '\e313'; 
