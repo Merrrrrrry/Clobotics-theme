@@ -19,7 +19,7 @@ Template Name: single-wind-service
 
             <div class="service-keypoints">
                 <div class="keypoint">
-                    <h3><?php the_field('1st_keypoint'); ?></h3>
+                    
                     <?php
                     $icons1 = get_field('icon_of_the_keypoint_1');
                     if ($icons1) :
@@ -30,6 +30,7 @@ Template Name: single-wind-service
                             <?php endif;
                         endforeach;
                     endif; ?>
+                    <h3><?php the_field('1st_keypoint'); ?></h3>
                 </div>
                 <div class="keypoint">
                     <h3><?php the_field('2nd_keypoint'); ?></h3>
