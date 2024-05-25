@@ -1955,11 +1955,11 @@ size: 10px;
   
   .icon_list {
     width: 40px;
-    padding-right: 10px;
+    padding-right: 15px;
   }
   
   .btn_list {
-    padding-bottom: 15px;
+    margin-bottom: 15px;
   }
   
   @media (max-width: 768px) {
