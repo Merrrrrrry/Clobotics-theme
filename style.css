@@ -2053,6 +2053,40 @@ size: 10px;
 
 
 
+/*--------------------------- Wind call to action ----------------------------*/
+
+.wind-call-to-action {
+position: relative;
+height: 65vh; 
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+overflow: hidden;
+color: #ffffff
+}
+
+.wind-call-to-action-image {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: 1; 
+object-position: center -50px;
+}
+
+.wind-call-to-action .content-wrapper {
+position: relative;
+z-index: 2;
+max-width: 600px;
+padding: 20px;
+}
+
+
+
+
 
 
 
