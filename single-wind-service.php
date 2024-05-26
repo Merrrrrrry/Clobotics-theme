@@ -137,7 +137,10 @@ Template Name: single-wind-service
                         foreach ($icons1 as $icon1) :
                             $icon_image1 = get_field('icon_image_of_the_keypoint', $icon1->ID);
                             if ($icon_image1) : ?>
-                                <img src="<?php echo esc_url($icon_image1['url']); ?>" alt="<?php echo esc_attr($icon_image1['alt']); ?>" class="icon_list">
+                                <div class="keypoint_list"> </div>
+                                    <img src="<?php echo esc_url($icon_image1['url']); ?>" alt="<?php echo esc_attr($icon_image1['alt']); ?>" class="icon_list">
+                                    <p><?php the_field('1st_keypoint'); ?></p>
+                                </div>
                             <?php endif;
                         endforeach;
                     endif; ?>
@@ -148,7 +151,10 @@ Template Name: single-wind-service
                         foreach ($icons2 as $icon2) :
                             $icon_image2 = get_field('icon_image_of_the_keypoint', $icon2->ID);
                             if ($icon_image2) : ?>
+                                <div class="keypoint_list">  
                                 <img src="<?php echo esc_url($icon_image2['url']); ?>" alt="<?php echo esc_attr($icon_image2['alt']); ?>" class="icon_list">
+                                <p><?php the_field('2nd_keypoint'); ?></p>
+                                </div>
                             <?php endif;
                         endforeach;
                     endif; ?>
@@ -159,7 +165,10 @@ Template Name: single-wind-service
                         foreach ($icons3 as $icon3) :
                             $icon_image3 = get_field('icon_image_of_the_keypoint', $icon3->ID);
                             if ($icon_image3) : ?>
+                                <div class="keypoint_list">  
                                 <img src="<?php echo esc_url($icon_image3['url']); ?>" alt="<?php echo esc_attr($icon_image3['alt']); ?>" class="icon_list">
+                                <p><?php the_field('3rd_keypoint'); ?></p>
+                                </div>
                             <?php endif;
                         endforeach;
                     endif; ?>
