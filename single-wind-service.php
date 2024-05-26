@@ -131,7 +131,7 @@ Template Name: single-wind-service
 
                 <div class="keypoints_container">
 
-                    <div class="keypoint_list"> </div>
+                    <div class="keypoint_list">
                     <?php
                         $icons1 = get_field('icon_of_the_keypoint_1');
                         if ($icons1) :
