@@ -38,9 +38,10 @@
                         <!-- we will add loop with wind single later-->
                                 <?php $loop = new WP_Query( array( 'post_type' => 'wind-service', 'posts_per_page' => -1 ) ); ?>
                                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                            <div class="service_link_single_conteiner">
-                                <a href="<?php the_permalink(the_field("service_title")); ?>"><?php the_field('service_title'); ?></a>
-                            </div>
+                                    <div class="service_link_single_conteiner">
+                                        <a href="<?php the_permalink(the_field("service_title")); ?>"><?php the_field('service_title'); ?></a>
+                                    </div>
+                                <?php endwhile; wp_reset_query(); ?>
                     </div>
                 </li>
                 <li class="nav-item">
