@@ -39,7 +39,7 @@
                                 <?php $loop = new WP_Query( array( 'post_type' => 'wind-service', 'posts_per_page' => -1 ) ); ?>
                                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                             <div class="service_link_single_conteiner">
-                                <a href="<?php the_permalink(the_field("service_title");); ?>"><?php the_field('service_title'); ?></a>
+                                <a href="<?php the_permalink(the_field("service_title")); ?>"><?php the_field('service_title'); ?></a>
                             </div>
                     </div>
                 </li>
