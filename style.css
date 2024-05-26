@@ -1397,9 +1397,6 @@ margin: 0 0.5em 1em;
 
 
 
-
-
-/*---------------------------WIND SERVICES PAGE----------------------------*/
 /*---------------------------WIND SERVICES PAGE----------------------------*/
 
 /* We operate globaly */
@@ -1541,6 +1538,17 @@ display: block;
     margin-bottom: 20px;
   }
 }
+
+/*---------------------------WIND SERVICES SINGLE PAGE----------------------------*/
+
+.service_single_conteiner img.service_image_in_loop {
+  max-height: 250px;
+  object-fit: cover;
+}
+
+
+
+
 
 
 /* <-------------------- MEDIA PAGE STYLE --------------------> */
