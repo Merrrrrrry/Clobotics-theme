@@ -189,7 +189,7 @@ Template Name: Wind services
 
 
 
-<section class="wind-call-to-action">
+<section class="wind-call-to-action" style="margin: 0;">
     <img  class="wind-call-to-action-image" src="<?php echo get_template_directory_uri(); ?>/media/contact-us.png" alt="Contact us img">
         <div class="content-wrapper">
             <h2>Optimise your<br>wind turbines</h2>
