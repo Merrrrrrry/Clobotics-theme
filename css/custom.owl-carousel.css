@@ -37,7 +37,8 @@
 
 /* WIND SINGLE STYLE */
 
-.owl-carousel .owl-item .keypoints_container > img {
+.owl-carousel .owl-item .keypoints_container .keypoint_list img {
     max-height: 40px;
     width: auto;
-    display: inline-block;}
+    display: inline-block;
+}
