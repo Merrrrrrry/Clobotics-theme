@@ -801,6 +801,37 @@ padding-bottom: 20px;
 
 
 
+
+
+
+
+
+
+.contact-form-container-career {
+  margin: 20px;
+  padding: 100px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: -200px auto 0 auto;
+  }
+  
+  .contact-form-career {
+  display: flex;
+  justify-content:center;
+  width: 100%
+  }
+
+  .upload-section{
+    display: flex;
+    flex-direction: row;
+  }
+
+
 .contact-form-career label,
 .contact-form-career .upload-section label,
 .contact-form-career .codedropz-upload-inner h3,
