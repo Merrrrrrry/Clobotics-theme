@@ -131,47 +131,47 @@ Template Name: single-wind-service
 
                 <div class="keypoints_container">
 
-                <?php
-                    $icons1 = get_field('icon_of_the_keypoint_1');
-                    if ($icons1) :
-                        foreach ($icons1 as $icon1) :
-                            $icon_image1 = get_field('icon_image_of_the_keypoint', $icon1->ID);
-                            if ($icon_image1) : ?>
-                                <div class="keypoint_list"> </div>
+                    <div class="keypoint_list"> </div>
+                    <?php
+                        $icons1 = get_field('icon_of_the_keypoint_1');
+                        if ($icons1) :
+                            foreach ($icons1 as $icon1) :
+                                $icon_image1 = get_field('icon_image_of_the_keypoint', $icon1->ID);
+                                if ($icon_image1) : ?>
                                     <img src="<?php echo esc_url($icon_image1['url']); ?>" alt="<?php echo esc_attr($icon_image1['alt']); ?>" class="icon_list">
-                                    <p><?php the_field('1st_keypoint'); ?></p>
-                                </div>
-                            <?php endif;
-                        endforeach;
-                    endif; ?>
+                                <?php endif;
+                            endforeach;
+                        endif; ?>
+                        <p><?php the_field('1st_keypoint'); ?></p>
+                    </div>
 
+                    <div class="keypoint_list">  
                     <?php
-                    $icons2 = get_field('icon_of_the_keypoint_2');
-                    if ($icons2) :
-                        foreach ($icons2 as $icon2) :
-                            $icon_image2 = get_field('icon_image_of_the_keypoint', $icon2->ID);
-                            if ($icon_image2) : ?>
-                                <div class="keypoint_list">  
-                                <img src="<?php echo esc_url($icon_image2['url']); ?>" alt="<?php echo esc_attr($icon_image2['alt']); ?>" class="icon_list">
-                                <p><?php the_field('2nd_keypoint'); ?></p>
-                                </div>
-                            <?php endif;
-                        endforeach;
-                    endif; ?>
+                        $icons2 = get_field('icon_of_the_keypoint_2');
+                        if ($icons2) :
+                            foreach ($icons2 as $icon2) :
+                                $icon_image2 = get_field('icon_image_of_the_keypoint', $icon2->ID);
+                                if ($icon_image2) : ?>
+                                    <img src="<?php echo esc_url($icon_image2['url']); ?>" alt="<?php echo esc_attr($icon_image2['alt']); ?>" class="icon_list">
+                                <?php endif;
+                            endforeach;
+                        endif; ?>
+                        <p><?php the_field('2nd_keypoint'); ?></p>
+                    </div>
 
+                    <div class="keypoint_list">  
                     <?php
-                    $icons3 = get_field('icon_of_the_keypoint_3');
-                    if ($icons3) :
-                        foreach ($icons3 as $icon3) :
-                            $icon_image3 = get_field('icon_image_of_the_keypoint', $icon3->ID);
-                            if ($icon_image3) : ?>
-                                <div class="keypoint_list">  
-                                <img src="<?php echo esc_url($icon_image3['url']); ?>" alt="<?php echo esc_attr($icon_image3['alt']); ?>" class="icon_list">
-                                <p><?php the_field('3rd_keypoint'); ?></p>
-                                </div>
-                            <?php endif;
-                        endforeach;
-                    endif; ?>
+                        $icons3 = get_field('icon_of_the_keypoint_3');
+                        if ($icons3) :
+                            foreach ($icons3 as $icon3) :
+                                $icon_image3 = get_field('icon_image_of_the_keypoint', $icon3->ID);
+                                if ($icon_image3) : ?>
+                                    <img src="<?php echo esc_url($icon_image3['url']); ?>" alt="<?php echo esc_attr($icon_image3['alt']); ?>" class="icon_list">
+                                <?php endif;
+                            endforeach;
+                        endif; ?>
+                        <p><?php the_field('3rd_keypoint'); ?></p>
+                    </div>
 
                 </div>            
             </div> 

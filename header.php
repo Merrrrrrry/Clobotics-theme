@@ -35,7 +35,7 @@
                 <li class="nav-item dropdown">
                     <a href="http://maria-grysevych.dk/clobotics/home/wind-services/" class="nav-link">Wind <span class="dropdown-arrow">&#9662;</span></a>
                     <div class="dropdown-menu">
-                        <!-- we will add loop with wind single later-->
+                        <!-- loop with wind single dynamic links -->
                             <?php $loop = new WP_Query( array( 'post_type' => 'wind-service', 'posts_per_page' => -1 ) ); ?>
                             <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                                 <div class="service_link_single_conteiner">
