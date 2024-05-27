@@ -2902,7 +2902,7 @@ display: inline-block;
 vertical-align: bottom;
 }
 
-.nav-link:hover::after {
+.nav-item:not(.dropdown) .nav-link:hover::after {
 content: '';
 position: absolute;
 left: 0;
@@ -2913,7 +2913,7 @@ background: rgb(255, 255, 255);
 transition: width 0.7s ease;
 }
 
-.nav-link:hover::after {
+.nav-item:not(.dropdown) .nav-link:hover::after {
 content: '';
 position: absolute;
 left: 0;
