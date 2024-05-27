@@ -49,3 +49,24 @@
         width: auto;
         display: inline-block;
     }
+
+    section.wind_services_linking .owl-nav {
+        font-size: 4rem;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: -2.5rem;
+    }
+    section.wind_services_linking .owl-nav button[class*=owl-] {
+        display: block;
+        height: 50px;
+        width: 50px;
+        background: #ddd;
+        border-radius: 50%;
+    }
+    section.wind_services_linking .owl-nav button[class*=owl-]:hover {background: #efefef;}
+    
+    section.wind_services_linking .owl-nav button[class*=owl-] > span {
+        display: block;
+        margin-top: -25px;
+    }
+    section.wind_services_linking .owl-dots {margin-bottom: 1.5rem;}
