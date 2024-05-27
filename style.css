@@ -226,7 +226,9 @@ fill: #f5f5f5;
 stroke-width: 0px;
 }
 
-.hero-section-background:after {
+
+.hero-section-background:after, 
+.home-video:after  {
 content: url(media/Hero-imgs/hero-cut-forms/cut-form-grey-website-format.svg);
 position: absolute;
 left: 0;
@@ -975,7 +977,6 @@ margin-bottom: 2em;
   margin: 0 auto;
   max-width: 95vw;
   flex-wrap: wrap;
-  justify-content: left;
 }
 
 #articles-container article {
@@ -2142,7 +2143,7 @@ size: 10px;
 /*--------------------------- WIND SERVICES SINGLE PAGE ----------------------------*/
 
     .service_single_conteiner img.service_image_in_loop {
-      max-height: 200px;
+      height: 200px;
       object-fit: cover;
     }
     .service_single_conteiner h4 {
