@@ -2108,6 +2108,11 @@ size: 10px;
   margin-right: 15px;
 }
 
+.keypoints_container .keypoint_list {
+  margin-left: 2rem;
+  padding: 0;
+}
+
 .keypoint_list h3 {
   margin: 0;
   text-align: left;
