@@ -36,9 +36,16 @@
 }
 
 /* WIND SINGLE STYLE */
+    .news_articles_linking_container.owl-carousel.owl-theme {
+        padding: 0 1rem;
+        box-sizing: border-box;
+    }
+    .news_articles_linking_container.owl-carousel .owl-item {
+        padding-bottom: 1rem;
+    }
 
-.owl-carousel .owl-item .keypoints_container .keypoint_list img {
-    max-height: 40px;
-    width: auto;
-    display: inline-block;
-}
+    .owl-carousel .owl-item .keypoints_container .keypoint_list img {
+        max-height: 40px;
+        width: auto;
+        display: inline-block;
+    }

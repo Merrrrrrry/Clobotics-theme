@@ -2187,16 +2187,12 @@ size: 10px;
   overflow: hidden;
   }
   
-  .owl-item {
-  position: relative;
-  flex: 0 0 calc(33.333% - 40px);
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
-  position: relative;
-  text-align: center;
-  width: calc(33.33% - 20px);
+  .owl-item > .service_single_conteiner {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+    background-color: #fff;
   }
   
   .service-main-image {
