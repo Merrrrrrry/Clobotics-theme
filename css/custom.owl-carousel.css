@@ -63,10 +63,14 @@
         background: #ddd;
         border-radius: 50%;
     }
-    section.wind_services_linking .owl-nav button[class*=owl-]:hover {background: #efefef;}
+    section.wind_services_linking .owl-nav button[class*=owl-]:hover { background: #efefef; }
     
     section.wind_services_linking .owl-nav button[class*=owl-] > span {
         display: block;
         margin-top: -25px;
     }
-    section.wind_services_linking .owl-dots {margin-bottom: 1.5rem;}
+    section.wind_services_linking .owl-dots { margin-bottom: 1.5rem; }
+
+    @media (max-width: 578px) {
+        section.wind_services_linking .owl-nav { justify-content: space-between; }
+    }

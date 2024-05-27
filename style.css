@@ -2167,6 +2167,12 @@ size: 10px;
   .keypoint_list h3 {
     text-align: center;
   }
+
+  .keypoints_container .keypoint_list { 
+    margin-left: 1rem;
+    flex-direction: row;
+  }
+
 }
 
 
