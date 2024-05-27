@@ -190,7 +190,7 @@ Template Name: single-wind-service
         applyOwlCarousel({
             loop: true,
             items:5,
-            nav: true,
+            margin:10,
             dots: true,
             autoplay: true,
             autoplayTimeout: 7000,
