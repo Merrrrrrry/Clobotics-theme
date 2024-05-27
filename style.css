@@ -960,15 +960,21 @@ margin-bottom: 2em;
 
 /* <-------------------- Article page style --------------------> */
 
-#articles-container {
-display: flex;
-flex-wrap: nowrap;
-justify-content: space-between;
+.articles-page-container.global {
+ text-align: center;
+}
+
+#articles-page-container {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
 }
 
 #articles-container {
-display: flex;
-justify-content: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 #articles-container article {
