@@ -19,7 +19,7 @@ Template Name: Home
 <!-- Hero section -->
 
 <section class="home-content">
-<div class="home-video">
+<div class="home-video short_format">
     <video id="sectionVideoHome" autoplay loop muted playsinline preload="auto">
         <source src="<?php echo get_template_directory_uri(); ?>/media/logo-animation.mp4" type="video/mp4">
     </video>

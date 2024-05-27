@@ -237,6 +237,10 @@ width: calc(100% + 2px);
 height:auto;
 }
 
+.home-video.short_format:after  {
+  bottom: 70px;
+}
+
 .hero-section-background.white_svg:after {
 content: url(media/Hero-imgs/hero-cut-forms/cut-form-white-website-format.svg);
 }
