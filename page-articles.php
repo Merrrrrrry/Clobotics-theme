@@ -37,54 +37,53 @@ Template Name: New Articles
                 </div>
             </form>
         </div>
-        <div class="articles-page-container global">
-            <div id="articles-page-container" style="margin: 4em;">
-                <?php
-                // Check if search query exists
-                $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
 
-                // Define WP_Query args
-                $args = array(
-                    'post_type' => 'new-article',
-                    'posts_per_page' => -1,
-                    'meta_query' => array(
-                        'relation' => 'OR',
-                        array(
-                            'key' => 'new_article_title',
-                            'value' => $search_query,
-                            'compare' => 'LIKE'
-                        )
+        <div id="articles-container" class="global_list" style="margin: 4em;">
+            <?php
+            // Check if search query exists
+            $search_query = isset($_GET['search_query']) ? sanitize_text_field($_GET['search_query']) : '';
+
+            // Define WP_Query args
+            $args = array(
+                'post_type' => 'new-article',
+                'posts_per_page' => -1,
+                'meta_query' => array(
+                    'relation' => 'OR',
+                    array(
+                        'key' => 'new_article_title',
+                        'value' => $search_query,
+                        'compare' => 'LIKE'
                     )
-                );
+                )
+            );
 
-                // Perform WP_Query
-                $articles_query = new WP_Query($args);
+            // Perform WP_Query
+            $articles_query = new WP_Query($args);
 
 
-                if ($articles_query->have_posts()) :
-                    while ($articles_query->have_posts()) : $articles_query->the_post();
-                        ?>
-                        <article class="col" style="margin: 1em;">
-                            <a href="<?php the_permalink(); ?>">
-                                <?php
-                                $image = get_field('article_main_image');
-                                if ($image) :
-                                    echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '">';
-                                endif;
-                                ?>
-                                <h3><?php the_field('new_article_title'); ?></h3>
-                                <p><?php the_field('meta_description_short'); ?></p>
-                            </a>
-                        </article>
-                    <?php
-                    endwhile;
+            if ($articles_query->have_posts()) :
+                while ($articles_query->have_posts()) : $articles_query->the_post();
+                    ?>
+                    <article class="col" style="margin: 1em;">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php
+                            $image = get_field('article_main_image');
+                            if ($image) :
+                                echo '<img src="' . esc_url($image['url']) . '" alt="' . esc_attr($image['alt']) . '">';
+                            endif;
+                            ?>
+                            <h3><?php the_field('new_article_title'); ?></h3>
+                            <p><?php the_field('meta_description_short'); ?></p>
+                        </a>
+                    </article>
+                <?php
+                endwhile;
 
-                    wp_reset_postdata();
-                else :
-                    echo '<p>No articles found.</p>';
-                endif;
-                ?>
-            </div>
+                wp_reset_postdata();
+            else :
+                echo '<p>No articles found.</p>';
+            endif;
+            ?>
         </div>
     </main>
 
