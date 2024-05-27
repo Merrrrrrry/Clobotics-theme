@@ -204,7 +204,7 @@ Template Name: single-wind-service
                 1200:{
                     items:5
                 }
-            }
+            },
             nav: true,
             dots: true,
             // autoplay: true,
