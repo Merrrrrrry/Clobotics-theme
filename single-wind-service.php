@@ -189,7 +189,7 @@ Template Name: single-wind-service
     jQuery(document).ready(function($) {
         applyOwlCarousel({
             loop: true,
-            items:5,
+            items:4,
             margin:10,
             dots: true,
             autoplay: true,
