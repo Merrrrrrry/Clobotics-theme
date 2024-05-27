@@ -67,27 +67,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-
-// Company History Timeline JS
-
-document.addEventListener("DOMContentLoaded", function() {
-    const items = document.querySelectorAll(".company-history-item");
-
-    window.addEventListener("scroll", function() {
-        const triggerBottom = window.innerHeight / 5 * 4;
-
-        items.forEach(item => {
-            const itemTop = item.getBoundingClientRect().top;
-
-            if (itemTop < triggerBottom) {
-                item.classList.add("show");
-            } else {
-                item.classList.remove("show");
-            }
-        });
-    });
-});
 // Function for filtering REGIONs and JOB positons for "meet our team" on About us page
 document.addEventListener('DOMContentLoaded', function () {
     const filterButtons = document.querySelectorAll('.filter-btn');
