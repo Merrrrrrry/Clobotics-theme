@@ -36,11 +36,11 @@
 }
 
 /* WIND SINGLE STYLE */
-    .news_articles_linking_container.owl-carousel.owl-theme {
+    .news_articles_linking_container.wind.owl-carousel.owl-theme {
         padding: 0 1rem;
         box-sizing: border-box;
     }
-    .news_articles_linking_container.owl-carousel .owl-item {
+    .news_articles_linking_container.wind.owl-carousel .owl-item {
         padding-bottom: 1rem;
     }
 

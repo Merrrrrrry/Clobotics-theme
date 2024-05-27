@@ -120,7 +120,7 @@ Template Name: single-wind-service
  <section class="wind_services_linking">
     <h3 class="title">Discover Clobotics with our articles!</h3>
 
-    <div class="news_articles_linking_container  owl-carousel owl-theme">
+    <div class="news_articles_linking_container wind owl-carousel owl-theme">
 
         <?php $loop = new WP_Query( array( 'post_type' => 'wind-service', 'posts_per_page' => -1 ) ); ?>
         <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
