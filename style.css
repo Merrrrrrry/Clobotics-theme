@@ -1552,10 +1552,13 @@ gap: 0.5rem;
 padding: 0 1rem;
 }
 
-a.btn.downloadable_content_link {
-width: 75%;
-visibility: visible;
-margin: 0 auto;
+
+@media (max-width: 768px) {  
+  a.btn.downloadable_content_link {
+    width: 75%;
+    visibility: visible;
+    margin: 0 auto;
+  }
 }
 
 
