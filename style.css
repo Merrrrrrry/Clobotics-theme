@@ -1539,17 +1539,6 @@ display: block;
   }
 }
 
-/*---------------------------WIND SERVICES SINGLE PAGE----------------------------*/
-
-.service_single_conteiner img.service_image_in_loop {
-  max-height: 250px;
-  object-fit: cover;
-}
-
-
-
-
-
 
 /* <-------------------- MEDIA PAGE STYLE --------------------> */
 p {
@@ -2108,15 +2097,39 @@ size: 10px;
   margin-right: 15px;
 }
 
-.keypoints_container .keypoint_list {
-  margin-left: 2rem;
-  padding: 0;
-}
-
 .keypoint_list h3 {
   margin: 0;
   text-align: left;
 }
+
+
+
+/*--------------------------- WIND SERVICES SINGLE PAGE ----------------------------*/
+
+    .service_single_conteiner img.service_image_in_loop {
+      max-height: 200px;
+      object-fit: cover;
+    }
+    .service_single_conteiner h4 {
+      position: relative;
+      font-weight: 300;
+      background: #ffffff88;
+      margin-top: -60px;
+      margin-bottom: 0;
+      padding: 15px 0;
+    }
+
+
+    .keypoints_container .keypoint_list {
+      margin-left: 2rem;
+      padding: 0;
+    }
+
+    .keypoints_container .keypoint_list > p {
+      text-align: left;
+      font-size: 1rem;
+    }
+
 
 @media (max-width: 1200px) {
   .keypoint_list:first-child {
