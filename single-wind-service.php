@@ -191,9 +191,10 @@ Template Name: single-wind-service
             loop: true,
             items:4,
             margin:10,
+            nav: true,
             dots: true,
-            autoplay: true,
-            autoplayTimeout: 7000,
+            // autoplay: true,
+            // autoplayTimeout: 7000,
             lazyLoad: true,
         })
     });
