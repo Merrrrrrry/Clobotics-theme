@@ -631,6 +631,8 @@ padding-right: 120px;
 display: flex;
 flex-direction: column;
 align-items: center;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
 }
 
 .contact-person-details {
@@ -693,8 +695,6 @@ margin-bottom: 5px;
 .contact-form-career {
 width: 100%;
 background-color: #fff;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-
 }
 
 .contact-form-career input,
