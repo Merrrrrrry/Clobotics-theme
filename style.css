@@ -1130,9 +1130,7 @@ background: #0099ff;
 color: #fff;
 }
 
-.meet-our-team-box-content {
-  border-radius: 15px;
-}
+
 
 /* <-------------------- MEDIA PAGE STYLE --------------------> */
 
@@ -1412,7 +1410,7 @@ display: block; /* to show the first 8 boxes of loop*/
 
 .box-shadow-inset {
   box-shadow: 0px -12px 11px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 90px;
+  border-radius: 15px;
   margin: 2rem;
 }
 
