@@ -3112,3 +3112,27 @@ align-items: center;
 text-align: center;
 
 }
+
+
+
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+  }
+  .footer .footer-column:first-child
+  , .footer .footer-column:nth-child(4)
+   {
+    width: 100%;
+  }
+  .footer .footer-column {
+    width: 50%;
+    margin: 0;
+  }
+  .footer-bottom {
+    width: 100%;
+    flex-direction: column;
+  }
+
+}
