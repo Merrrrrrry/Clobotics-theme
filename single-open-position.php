@@ -75,8 +75,8 @@ Template Name: single-open-position
 
         <div class="contact-form-container-career" id="contact-form-container-career">
             <div class="contact-person-career">
-                <div class="contact-person-career-box">
                 <h2 class="title contact-person-title">Contact person</h2>
+                <div class="contact-person-career-box">
                 <div class="contact-person-image">
                     <img src="<?php echo get_field('contact_person_image')['url']; ?>" alt="<?php echo get_field('contact_person_image')['alt']; ?>">
                 </div>
