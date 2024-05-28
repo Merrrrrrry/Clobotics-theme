@@ -963,6 +963,7 @@ overflow: hidden;
 margin: auto;
 margin-top: 2em;
 margin-bottom: 2em;
+max-width: 80%;
 }
 
 /* <-------------------- Article page style --------------------> */
@@ -1129,7 +1130,7 @@ background: #0099ff;
 color: #fff;
 }
 
-.meet-our-team-box-content box-shadow-inset {
+.meet-our-team-box-content {
   border-radius: 15px;
 }
 
