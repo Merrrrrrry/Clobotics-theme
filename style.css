@@ -696,13 +696,13 @@ background-color: #fff;
 }
 
 .contact-form-career input,
-.contact-form-career textarea {
+/* .contact-form-career textarea {
 width: 100%;
 padding: 10px;
 border: 1px solid #bdbdbd;
 border-radius: 13px;
 box-sizing: border-box;
-}
+} */
 
 
 .contact-form-career textarea {
