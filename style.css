@@ -631,7 +631,10 @@ padding-right: 120px;
 display: flex;
 flex-direction: column;
 align-items: center;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+.contact-person-career-box{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 
 }
 

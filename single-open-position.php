@@ -75,6 +75,7 @@ Template Name: single-open-position
 
         <div class="contact-form-container-career" id="contact-form-container-career">
             <div class="contact-person-career">
+                <div class="contact-person-career-box">
                 <h2 class="title contact-person-title">Contact person</h2>
                 <div class="contact-person-image">
                     <img src="<?php echo get_field('contact_person_image')['url']; ?>" alt="<?php echo get_field('contact_person_image')['alt']; ?>">
@@ -102,6 +103,7 @@ Template Name: single-open-position
                                 <img src="<?php echo $contact_vimeo_icon['url']; ?>" alt="<?php echo $contact_vimeo_icon['alt']; ?>">
                             </a>
                         <?php endif; ?>
+                    </div>
                     </div>
                 </div>
             </div>
