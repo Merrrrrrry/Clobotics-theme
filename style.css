@@ -956,6 +956,7 @@ padding: 0.5em 2em;
 /* <------------------- Article single page  ------------------> */
 .image_container {
 text-align: center;
+overflow: hidden;
 }
 
 .news_article_content_img {
@@ -1128,6 +1129,9 @@ background: #0099ff;
 color: #fff;
 }
 
+.meet-our-team-box-content box-shadow-inset {
+  border-radius: 15px;
+}
 
 /* <-------------------- MEDIA PAGE STYLE --------------------> */
 
