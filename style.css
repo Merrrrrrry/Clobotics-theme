@@ -3117,6 +3117,9 @@ text-align: center;
 
 
 @media (max-width: 768px) {
+  
+  .subscribe-section {background-position: center;}
+  
   .footer {
     padding: 0.5rem 1rem;
     flex-wrap: wrap;
