@@ -9,8 +9,8 @@ Template Name: About us
     wp_enqueue_style("owl-carousel-style", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.carousel.min.css");
     wp_enqueue_style("owl-carousel-style-theme", get_stylesheet_directory_uri() . "/js/plug-ins/OwlCarousel2/owl.theme.default.min.css");
     wp_enqueue_style("owl-carousel-custom-styles", get_stylesheet_directory_uri() . "/css/custom.owl-carousel.css");
-    
-    wp_enqueue_style("owl-carousel-custom-styles", get_stylesheet_directory_uri() . "/css/mobi.css");
+
+    wp_enqueue_style("owl-carousel-mobi-styles", get_stylesheet_directory_uri() . "/css/mobi.css");
 ?>
 <body>
 <main>
