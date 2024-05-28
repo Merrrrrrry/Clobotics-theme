@@ -1,0 +1,75 @@
+@media (max-width: 768px) {
+    section { margin-top: 2rem; }
+    
+    
+    #meet_our_team .filters_container {
+      flex-direction: column-reverse;
+      padding: 0 1rem;
+      margin-top: 0;
+    }
+    #position-filters { flex-wrap: wrap; margin-bottom: 1rem;}
+    
+    .meet-our-team_main_content > .meet-our-team-box-content {
+      width: 100%;  
+    }
+    
+    .article_secondary_main.one_company_two_directions .two_directions_collage_img {
+      padding: 0;
+      width: 90%;
+      margin: 1.5rem 0 3rem 0;
+    }
+    .article_secondary_main.one_company_two_directions .title.section-title.dark_line {
+      margin: 0 !important;
+    }
+    .article_secondary_main.one_company_two_directions .right_and_left {
+      flex-direction: column;
+      margin-top: 1rem;
+      padding-bottom: 0;
+    }
+    .article_secondary_main.one_company_two_directions .left.flex
+    , .article_secondary_main.one_company_two_directions .right.flex
+    {
+      width: 100%;
+      margin: 0;
+      padding: 0 1rem;
+      box-sizing: border-box;
+      text-align: justify;
+    }
+  
+    .article_secondary_main.one_company_two_directions .btn { margin: 1em auto !important; }
+  
+    .article_main.who-we-are .who-we-are_content { margin: 0; width: 100%;text-align: justify;padding: 0 1rem;box-sizing: border-box;}
+    .article_main.who-we-are p.subtitle { text-align: center; }
+    .article_main.who-we-are .who-we-are-img_1 { display: none; }
+    
+    .join_us_container .join_us_content_container {
+      margin-top: 0;
+      padding: 0;
+      background: #002d61;
+    }  
+    .join_us_container .join_us_content_container h3 { margin: 0; width: 100%;padding: 0.75em 0.5em 0;box-sizing: border-box;}  
+    .join_us_container .join_us_content_container .subtitle_special { margin: 0; padding: 0.5em 0 1em;}
+    .join_or_contact_us_btns {
+      margin-top: -2rem;
+      padding: 0 1rem 2rem;
+      display: flex;
+      justify-content: space-around;
+    }
+    .join_or_contact_us_btns a.btn.light {margin: 0;}
+
+
+    
+    .news_articles_single_container .white_container_for_linking {
+        position: relative;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .news_articles_single_container .white_container_for_linking h3 {
+        font-size: 1rem;
+    }
+    .news_articles_single_container .white_container_for_linking p {
+        display: none;
+    }
+    .news_articles_linking .owl-item .news_articles_single_container img { height: 200px; }
+  
+  }
