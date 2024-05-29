@@ -2462,33 +2462,33 @@ padding: 20px;
 /*CONTACT FORM*/
 
 .contact-form-container {
-margin: 20px;
-padding: 50px;
-border-radius: 15px;
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-background-color: #fff;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-margin: -200px auto 0 auto;
+  margin: 20px;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: -200px auto 0 auto;
 }
 
 .contact-form {
-display: flex;
-justify-content:center;
-width: 100%
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .contact-form .column {
-flex: 1;
-padding: 10px; 
-width: 300px;
+  flex: 1;
+  padding: 10px;
+  width: 300px;
 }
 
 .contact-form label {
-display: block;
-position: relative; 
+  display: block;
+  position: relative;
 }
 
 .contact-form input[type="text"],
@@ -2496,57 +2496,12 @@ position: relative;
 .contact-form input[type="email"],
 .contact-form select,
 .contact-form textarea {
-width: 100%;
-padding: 10px;
-border: 1px solid gray;
-border-radius: 10px;
-background-color: white;
-box-sizing: border-box;
-}
-
-.contact-form select {
-appearance: none;
-}
-
-.contact-form input[type="text"]:required::after,
-.contact-form input[type="tel"]:required::after,
-.contact-form input[type="email"]:required::after,
-.contact-form select:required::after,
-.contact-form textarea:required::after {
-content: "*"; 
-/* color: transparent;  */
-position: absolute; 
-top: 10%; 
-right: 50px; 
-transform: translateY(-100%); 
-}
-
-.contact-form input[type="text"]:focus::after,
-.contact-form input[type="tel"]:focus::after,
-.contact-form input[type="email"]:focus::after,
-.contact-form select:focus::after,
-.contact-form textarea:focus::after {
-color: #000000; 
-}
-
-.wpcf7 input[type="submit"] {
-background-color: #01A7E6;
-color: #fff;
-padding: 10px 20px;
-border: none;
-border-radius: 10px;
-cursor: pointer;
-width: 100%;
-margin-top: 10px;
-}
-
-.wpcf7 span.wpcf7-not-valid-tip {
-display: none;
-}
-
-
-.contact-form textarea {
-  height: 240px; 
+  width: 100%;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  background-color: white;
+  box-sizing: border-box;
 }
 
 .contact-form select {
@@ -2557,10 +2512,49 @@ display: none;
   padding-right: 30px;
 }
 
+.contact-form input[type="text"]:required::after,
+.contact-form input[type="tel"]:required::after,
+.contact-form input[type="email"]:required::after,
+.contact-form select:required::after,
+.contact-form textarea:required::after {
+  content: "*";
+  position: absolute;
+  top: 10%;
+  right: 50px;
+  transform: translateY(-100%);
+}
+
+.contact-form input[type="text"]:focus::after,
+.contact-form input[type="tel"]:focus::after,
+.contact-form input[type="email"]:focus::after,
+.contact-form select:focus::after,
+.contact-form textarea:focus::after {
+  color: #000000;
+}
+
+.wpcf7 input[type="submit"] {
+  background-color: #01A7E6;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.wpcf7 span.wpcf7-not-valid-tip {
+  display: none;
+}
+
+.contact-form textarea {
+  height: 240px;
+}
 
 .contact-form p {
   margin: 0;
 }
+
 
 
 /*CONTACT LOCAL OFFICE CLOBOTICS*/
