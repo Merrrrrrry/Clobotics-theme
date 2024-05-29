@@ -1401,7 +1401,9 @@ text-align: center;
 .meet-our-team-box-content > img {
 max-width: 100%;
 }
-
+.meet-our-team-box-content{
+  margin:0;
+}
 /*
 .box-shadow {
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
