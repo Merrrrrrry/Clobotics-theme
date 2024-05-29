@@ -620,296 +620,206 @@ text-align: left;
 
 /* <------ Contact Person Career style ------> */
 
-.contact-form-container-career {
-display: flex;
-padding-left: 120px;
-padding-right: 120px;
-}
-
-
-.contact-person-career {
-display: flex;
-flex-direction: column;
-align-items: center;
-
-}
-.contact-person-career-box{
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  padding: 50px;
-  border-radius:15px;
-
-}
-
-.contact-person-details {
-text-align: center;
-}
-
-.contact-person-image img {
-width: 300px;
-height: 300px;
-object-fit: cover;
-}
-
-.phone-career {
-display: flex;
-align-items: center;
-justify-content: center;
-margin-bottom: 5px;
-}
-
-.phone-career i {
-font-size: 24px;
-color: #000000;
-margin-right: 5px;
-}
-
-.contact-links a {
-margin: 0 5px;
-}
-
-.contact-links img {
-width: 40px;
-height: 40px;
-}
-
-.contact-person-name {
-font-family: 'Roboto', sans-serif;
-font-size: 25px;
-font-weight: 200;
-margin-top: 10px;
-margin-bottom: 1px;
-}
-
-.contact-person-position {
-margin: 0;
-font-family: 'Open Sans', sans-serif;
-font-size: 20px;
-font-weight: 500;
-margin-bottom: 5px;
-}
-
-.contact-person-phone {
-margin: 0;
-font-size: 15px;
-margin-bottom: 5px;
-}
-
-
 /* <------ Contact Form Career style ------> */
-
 
 .contact-form-career {
   width: 100%;
   background-color: #fff;
-}
-
-
-.contact-form-career input,
-.contact-form-career textarea {
+  margin: 10 0 !important;
+  }
+  
+  .contact-form-container-career {
+    margin: 10 0 !important;
+  }
+  
+  .contact-form-career input,
+  .contact-form-career textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #bdbdbd;
   border-radius: 13px;
   box-sizing: border-box;
-  margin: 10px 0;
-}
-
-.wpcf7 {
-  margin: 10px 0;
-}
-
-.contact-form-career textarea {
+  }
+  
+  
+  .contact-form-career textarea {
   height: 150px;
-  margin: 10px 0;
-}
-
-.contact-form-career input[type="submit"] {
+  }
+  
+  .contact-form-career input[type="submit"] {
   width: 100%;
   background-color: #01A7E6;
   color: #fff;
   padding: 8px 20px;
   border-radius: 20px !important;
   cursor: pointer;
-  margin: 10px 0;
-  margin-bottom: 100px; /* This can be reduced if the gap is too large */
-}
-
-.contact-form-career input[type="submit"]:hover {
+  margin-bottom: 100px;
+  }
+  
+  .contact-form-career input[type="submit"]:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.contact-form-career label {
+  }
+  
+  .contact-form-career label {
   display: block;
-
-}
-
-.contact-form-career .column {
+  }
+  
+  .contact-form-career .column {
   display: flex;
   flex-direction: column;
-}
-
-.contact-form-career .upload-section {
+  }
+  
+  .contact-form-career .upload-section {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100%;
-}
-
-.contact-form-career .upload-section label {
+  }
+  
+  .contact-form-career .upload-section label {
   width: 100%;
-}
-
-.contact-form-career p {
-  margin: 10px 0; 
-}
-
-@media (max-width: 768px) {
+  }
+  
+  .contact-form-career p {
+  margin: 0; 
+  }
+  
+  @media (max-width: 768px) {
   .contact-form-container-career {
     flex-direction: column;
     width: 100%;
-    
   }
-
+  
+  
   .codedropz-upload-wrapper {
     width: 100%;
   }
-
+  
   .contact-form-career .upload-section label {
     width: 100%;
   }
-}
-
-.codedropz-upload-inner h3 {
+  }
+  
+  .codedropz-upload-inner h3 {
   font-size: 18px !important;
   font-weight: 300;
   line-height: 20px !important;
   font-family: 'Roboto', sans-serif;
-}
-
-.codedropz-upload-handler {
+  }
+  
+  .codedropz-upload-handler {
   border: 1px solid #bdbdbd;
   border-radius: 10px;
   margin-bottom: 10px;
   position: relative;
-}
-
-.codedropz-upload-inner {
+  }
+  
+  .codedropz-upload-inner {
   overflow: hidden;
   width: 100%;
   white-space: nowrap;
   text-align: center;
   text-overflow: ellipsis;
   font-weight: inherit;
-}
-
-.contact-form-container-career h2 {
+  }
+  
+  .contact-form-container-career h2 {
   display: block;
   margin: 0;
   padding-bottom: 20px;
-}
-
-@media (min-width: 769px) {
+  }
+  
+  
+  @media (min-width: 769px) {
   .contact-form-container-career {
     display: flex;
     align-items: flex-start;
     justify-content: center;
   }
-
+}
+  
   .contact-person-career, .contact-form-career {
     width: 80%;
   }
-}
-
-
-
-
-
-
-
 
 
 
 .wpcf7 {
   justify-content: center;
   align-items: center;
-  }
+}
   
-  .wpcf7 form .wpcf7-response-output {
-    text-align: center;
-    margin-left: 110px;
-  }
+.wpcf7 form .wpcf7-response-output {
+  text-align: center;
+  margin-left: 110px;
+}
   
-  .contact-form-career {
-  justify-content:center;
-  }
+.contact-form-career {
+  justify-content: center;
+}
 
-.contact-form-career .upload-section{
-    display: flex;
-  }
-
+.contact-form-career .upload-section {
+  display: flex;
+}
 
 .contact-form-career label,
 .contact-form-career .upload-section label,
 .contact-form-career .codedropz-upload-inner h3,
 .contact-form-career p {
-color: gray;
-font-size: 14px;
+  color: gray;
+  font-size: 14px;
 }
-
 
 .contact-form-career input::placeholder,
 .contact-form-career textarea::placeholder {
-color: gray;
+  color: gray;
 }
-
 
 .contact-form-career input,
 .contact-form-career textarea {
-color: gray;
+  color: gray;
 }
 
-
 .cd-upload-btn {
-color: #01A7E6;
+  color: #01A7E6;
 }
 
 .wpcf7 form .wpcf7-response-output {
-margin-bottom: 30px;
-padding: 0;
-border: none;
-text-align: center;
-color: #01A7E6;
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  color: #01A7E6;
 }
 
 .dnd-upload-status .dnd-upload-image {
-width: 40px;
-height: 40px;
-border: 1px solid gray;
-text-align: center;
-border-radius: 100%;
-position: relative;
+  width: 40px;
+  height: 40px;
+  border: 1px solid gray;
+  text-align: center;
+  border-radius: 100%;
+  position: relative;
 }
 
 .dnd-upload-status .dnd-upload-details .name {
-color: gray;
+  color: gray;
 }
 
 .dnd-upload-status .dnd-upload-details .name em {
-color: gray;
-font-weight: 500;
+  color: gray;
+  font-weight: 500;
 }
 
 .dnd-upload-status .dnd-upload-details .dnd-progress-bar span {
-background: #01A7E6;
-display: block;
-font-size: 11px;
-text-align: right;
-color: #fff;
-height: 100%;
-width: 0;
-line-height: 14px;
+  background: #01A7E6;
+  display: block;
+  font-size: 11px;
+  text-align: right;
+  color: #fff;
+  height: 100%;
+  width: 0;
+  line-height: 14px;
 }
-
 
 /* <------ Article search bar style ------> */
 
