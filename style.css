@@ -2380,9 +2380,10 @@ size: 10px;
 
 /*--------------------------- Wind single short text ----------------------------*/
 
-/* .wind_single_text {
+ .wind_single_text {
   padding: 0px 130px; 
-} */
+  margin:0;
+}
 
 @media (max-width: 480px) {
   .service-list {
