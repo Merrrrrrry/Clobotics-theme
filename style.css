@@ -1401,9 +1401,7 @@ text-align: center;
 .meet-our-team-box-content > img {
 max-width: 100%;
 }
-.meet-our-team-box-content{
-  margin:0;
-}
+
 /*
 .box-shadow {
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -1415,8 +1413,8 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 .meet-our-team-box-content {
 display: none; /* to hide all boxes */
-margin:15px !important; 
-padding:0;
+/* margin:15px !important; 
+padding:0; */
 }
 .meet-our-team-box-content:nth-child(-n+8) {
 display: block; /* to show the first 8 boxes of loop*/
@@ -1426,7 +1424,7 @@ display: block; /* to show the first 8 boxes of loop*/
 .box-shadow-inset {
   box-shadow: 0px -12px 11px 1px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
-  margin: 15px;
+  margin: 10px;
 }
 
 #position-filters {
