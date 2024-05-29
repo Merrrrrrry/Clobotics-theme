@@ -2020,7 +2020,7 @@ size: 10px;
   flex-direction: column;
   }
   
-  /* .service-keypoints_list {
+  .service-keypoints_list {
   padding-right: 15px;
   margin: 0px;
   }
@@ -2046,7 +2046,7 @@ size: 10px;
   
   .btn_list {
     margin-bottom: 15px;
-  } */
+  }
 
   
   @media (max-width: 768px) {
@@ -2136,13 +2136,13 @@ size: 10px;
   padding: 70px 0;
 }
 
-.keypoint_list:first-child {
+/* .keypoint_list:first-child {
   margin-left: 130px;
-}
-
+} */
+/* 
 .keypoint_list:last-child {
   margin-right: 130px;
-}
+} */
 
 .keypoint_list img.icon_list {
   height: 50px;
