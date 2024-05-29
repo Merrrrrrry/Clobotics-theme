@@ -2877,6 +2877,10 @@ color: #fff;
 text-decoration: none;
 }
 
+.social-icons{
+  padding-left: 300px;
+}
+
 .social-icons-2 {
 width: 0% !important;
 display: flex;
