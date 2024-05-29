@@ -2016,6 +2016,8 @@ size: 10px;
   .service-content {
   padding: 20px;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
   }
   
   .service-keypoints_list {
@@ -2046,6 +2048,10 @@ size: 10px;
   
   .btn_list {
     margin-bottom: 15px;
+  }
+
+  .keypoint_list:first-child{
+    margin-left: 0px;
   }
   
   @media (max-width: 768px) {
