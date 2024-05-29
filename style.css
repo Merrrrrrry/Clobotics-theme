@@ -2863,8 +2863,8 @@ margin-left: 5px;
 .footer-bottom {
 width: 1260px;
 display: flex;
-/* justify-content: space-between;
-align-items: baseline; */
+justify-content: space-between;
+align-items: baseline;
 padding-top: 20px;
 }
 
@@ -2881,7 +2881,6 @@ text-decoration: none;
 width: 0% !important;
 display: flex;
 justify-content: none !important;
-padding-left: 300px;
 }
 
 .social-icons img {
