@@ -2881,6 +2881,7 @@ text-decoration: none;
 width: 0% !important;
 display: flex;
 justify-content: none !important;
+padding-left: 300px;
 }
 
 .social-icons img {
