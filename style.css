@@ -1063,7 +1063,9 @@ font-weight: 600;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-padding: 0 6em 2em;
+/* padding: 0 6em 2em; */
+padding-left: 130px;
+padding-right:130px;
 }
 
 /* Filters style for btn-section above meet our team*/
@@ -1387,6 +1389,8 @@ margin: auto;
 .meet-our-team_main_content {
 display: flex;
 flex-wrap: wrap;
+padding-left: 130px;
+padding-right: 130px;
 }
 
 .meet-our-team_main_content > .meet-our-team-box-content {
