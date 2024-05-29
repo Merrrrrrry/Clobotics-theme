@@ -723,6 +723,7 @@ margin: 10 0px;
 
 .contact-form-career textarea {
 height: 150px;
+margin:10 0px;
 }
 
 .contact-form-career input[type="submit"] {
@@ -733,6 +734,7 @@ padding: 8px 20px;
 border-radius: 20px !important;
 cursor: pointer;
 margin-bottom: 100px;
+margin:10 0px;
 }
 
 .contact-form-career input[type="submit"]:hover {
