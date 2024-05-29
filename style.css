@@ -569,7 +569,7 @@ margin-top: 35px; /* Just to make a gap in between the paragraph and button */
 
 #apply-button {
 position: absolute;
-bottom: -20px; 
+bottom: 200px; 
 left: 50%;
 transform: translateX(-50%);
 z-index: 1; 
