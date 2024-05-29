@@ -36,8 +36,8 @@ Template Name: single-wind-service
     <?php while (have_posts()) : the_post(); ?>
         <article <?php post_class(); ?>>
 
-            <div class="service-keypoints_list">
-                <div class="keypoint_list">
+            <div class="service-keypoints_top">
+                <div class="keypoint_top">
                     
                     <?php
                     $icons1 = get_field('icon_of_the_keypoint_1');
