@@ -703,6 +703,10 @@ background-color: #fff;
 margin: 10 0 !important;
 }
 
+.wpcf7-form-control-wrap {
+  margin: 10 0 !important;
+}
+
 .contact-form-career input,
 .contact-form-career textarea {
 width: 100%;
