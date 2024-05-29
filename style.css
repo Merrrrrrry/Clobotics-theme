@@ -2415,6 +2415,8 @@ height: 100%;
 object-fit: cover;
 z-index: 1; 
 object-position: center -50px;
+margin:0;
+padding: 20px 0px;
 }
 
 .wind-call-to-action .content-wrapper {
