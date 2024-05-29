@@ -51,7 +51,7 @@ Template Name: single-wind-service
                     endif; ?>
                     <h3><?php the_field('1st_keypoint'); ?></h3>
                 </div>
-                <div class="keypoint_topt">
+                <div class="keypoint_top">
                     
                     <?php
                     $icons2 = get_field('icon_of_the_keypoint_2');
