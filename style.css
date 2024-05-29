@@ -1415,6 +1415,8 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 .meet-our-team-box-content {
 display: none; /* to hide all boxes */
+margin:0;
+padding:0;
 }
 .meet-our-team-box-content:nth-child(-n+8) {
 display: block; /* to show the first 8 boxes of loop*/
