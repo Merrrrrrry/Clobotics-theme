@@ -1415,7 +1415,7 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
 .meet-our-team-box-content {
 display: none; /* to hide all boxes */
-margin:20px !important; 
+margin:30px !important; 
 padding:0;
 }
 .meet-our-team-box-content:nth-child(-n+8) {
