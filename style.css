@@ -697,17 +697,12 @@ margin-bottom: 5px;
 
 /* <------ Contact Form Career style ------> */
 
-/* <------ Contact Form Career style ------> */
 
 .contact-form-career {
   width: 100%;
   background-color: #fff;
-  margin: 10px 0 !important;
 }
 
-span.wpcf7-form-control-wrap {
-  margin: 10px 0 !important;
-}
 
 .contact-form-career input,
 .contact-form-career textarea {
@@ -741,18 +736,16 @@ span.wpcf7-form-control-wrap {
 
 .contact-form-career input[type="submit"]:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  margin: 10px 0;
 }
 
 .contact-form-career label {
   display: block;
-  margin: 10px 0;
+
 }
 
 .contact-form-career .column {
   display: flex;
   flex-direction: column;
-  margin: 10px 0;
 }
 
 .contact-form-career .upload-section {
@@ -760,12 +753,10 @@ span.wpcf7-form-control-wrap {
   flex-direction: column;
   gap: 10px;
   width: 100%;
-  margin: 10px 0;
 }
 
 .contact-form-career .upload-section label {
   width: 100%;
-  margin: 10px 0;
 }
 
 .contact-form-career p {
@@ -776,7 +767,7 @@ span.wpcf7-form-control-wrap {
   .contact-form-container-career {
     flex-direction: column;
     width: 100%;
-    margin: 10px 0;
+    
   }
 
   .codedropz-upload-wrapper {
@@ -822,7 +813,6 @@ span.wpcf7-form-control-wrap {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    margin: 10px 0;
   }
 
   .contact-person-career, .contact-form-career {
