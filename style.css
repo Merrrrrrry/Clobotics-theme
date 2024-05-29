@@ -2027,6 +2027,8 @@ size: 10px;
   .keypoint_list {
   align-items: center;
   margin: 0px;
+  display: flex;
+  flex-direction: column;
   }
   
   .keypoint_list p {
