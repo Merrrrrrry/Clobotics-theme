@@ -703,7 +703,7 @@ background-color: #fff;
 margin: 10 0 !important;
 }
 
-.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
+span.wpcf7-form-control-wrap {
   margin: 10 0 !important;
 }
 
