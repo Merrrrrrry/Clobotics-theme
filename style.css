@@ -714,9 +714,12 @@ padding: 10px;
 border: 1px solid #bdbdbd;
 border-radius: 13px;
 box-sizing: border-box;
-margin-bottom: 10 0px;
+margin: 10 0px;
 }
 
+form.wpcf-form.init {
+  margin:10 0px;
+}
 
 .contact-form-career textarea {
 height: 150px;
