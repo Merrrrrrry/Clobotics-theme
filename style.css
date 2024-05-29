@@ -697,139 +697,139 @@ margin-bottom: 5px;
 
 /* <------ Contact Form Career style ------> */
 
+/* <------ Contact Form Career style ------> */
+
 .contact-form-career {
-width: 100%;
-background-color: #fff;
-margin: 10 0 !important;
+  width: 100%;
+  background-color: #fff;
+  margin: 10px 0 !important;
 }
 
 span.wpcf7-form-control-wrap {
-  margin: 10 0 !important;
+  margin: 10px 0 !important;
 }
 
 .contact-form-career input,
 .contact-form-career textarea {
-width: 100%;
-padding: 10px;
-border: 1px solid #bdbdbd;
-border-radius: 13px;
-box-sizing: border-box;
-margin: 10 0px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bdbdbd;
+  border-radius: 13px;
+  box-sizing: border-box;
+  margin: 10px 0;
 }
 
 .wpcf7 {
-  margin:10 0px;
+  margin: 10px 0;
 }
 
 .contact-form-career textarea {
-height: 150px;
-margin:10 0px;
+  height: 150px;
+  margin: 10px 0;
 }
 
 .contact-form-career input[type="submit"] {
-width: 100%;
-background-color: #01A7E6;
-color: #fff;
-padding: 8px 20px;
-border-radius: 20px !important;
-cursor: pointer;
-margin-bottom: 100px;
-margin:10 0px;
+  width: 100%;
+  background-color: #01A7E6;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px !important;
+  cursor: pointer;
+  margin: 10px 0;
+  margin-bottom: 100px; /* This can be reduced if the gap is too large */
 }
 
 .contact-form-career input[type="submit"]:hover {
-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-margin:10 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 10px 0;
 }
 
 .contact-form-career label {
-display: block;
-margin:10 0px;
+  display: block;
+  margin: 10px 0;
 }
 
 .contact-form-career .column {
-display: flex;
-flex-direction: column;
-margin:10 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
 }
 
 .contact-form-career .upload-section {
-display: flex;
-flex-direction: column;
-gap: 10px;
-width: 100%;
-margin:10 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin: 10px 0;
 }
 
 .contact-form-career .upload-section label {
-width: 100%;
-margin:10 0px;
+  width: 100%;
+  margin: 10px 0;
 }
 
 .contact-form-career p {
-margin: 0; 
-margin:10 0px;
+  margin: 10px 0; 
 }
 
 @media (max-width: 768px) {
-.contact-form-container-career {
-  flex-direction: column;
-  width: 100%;
-  margin:10 0px;
-}
+  .contact-form-container-career {
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0;
+  }
 
+  .codedropz-upload-wrapper {
+    width: 100%;
+  }
 
-.codedropz-upload-wrapper {
-  width: 100%;
-}
-
-.contact-form-career .upload-section label {
-  width: 100%;
-}
+  .contact-form-career .upload-section label {
+    width: 100%;
+  }
 }
 
 .codedropz-upload-inner h3 {
-font-size: 18px !important;
-font-weight: 300;
-line-height: 20px !important;
-font-family: 'Roboto', sans-serif;
+  font-size: 18px !important;
+  font-weight: 300;
+  line-height: 20px !important;
+  font-family: 'Roboto', sans-serif;
 }
 
 .codedropz-upload-handler {
-border: 1px solid #bdbdbd;
-border-radius: 10px;
-margin-bottom: 10px;
-position: relative;
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  position: relative;
 }
 
 .codedropz-upload-inner {
-overflow: hidden;
-width: 100%;
-white-space: nowrap;
-text-align: center;
-text-overflow: ellipsis;
-font-weight: inherit;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  text-align: center;
+  text-overflow: ellipsis;
+  font-weight: inherit;
 }
 
 .contact-form-container-career h2 {
-display: block;
-margin: 0;
-padding-bottom: 20px;
+  display: block;
+  margin: 0;
+  padding-bottom: 20px;
 }
-
 
 @media (min-width: 769px) {
-.contact-form-container-career {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  margin:10 0px;
+  .contact-form-container-career {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+  }
+
+  .contact-person-career, .contact-form-career {
+    width: 80%;
+  }
 }
 
-.contact-person-career, .contact-form-career {
-  width: 80%;
-}
-}
 
 
 
