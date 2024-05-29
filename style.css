@@ -2458,7 +2458,6 @@ padding: 20px;
 
 
 
-
 /*CONTACT FORM*/
 
 .contact-form-container {
@@ -2486,9 +2485,9 @@ padding: 20px;
   width: 300px;
 }
 
+/* Remove label styling since placeholders are used */
 .contact-form label {
-  display: block;
-  position: relative;
+  display: none;
 }
 
 .contact-form input[type="text"],
