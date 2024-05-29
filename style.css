@@ -703,7 +703,7 @@ background-color: #fff;
 margin: 10 0 !important;
 }
 
-.contact-form-container-career {
+.wpcf7-form-control.wpcf7-text.wpcf7-validates-as-required {
   margin: 10 0 !important;
 }
 
