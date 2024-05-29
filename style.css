@@ -2381,7 +2381,7 @@ size: 10px;
 /*--------------------------- Wind single short text ----------------------------*/
 
 .wind_single_text {
-  padding: 20px 130px; 
+  padding: 0px 130px; 
 }
 
 @media (max-width: 480px) {
@@ -2864,7 +2864,7 @@ margin-left: 5px;
 width: 1260px;
 display: flex;
 justify-content: space-between;
-/* align-items: baseline; */
+align-items: baseline;
 padding-top: 20px;
 }
 
@@ -2877,11 +2877,6 @@ color: #fff;
 text-decoration: none;
 }
 
-.social-icons{
-  padding-left: 300px;
- margin-left: 300px;
-
-}
 
 .social-icons-2 {
 width: 0% !important;
